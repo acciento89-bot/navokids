@@ -1,4 +1,4 @@
-name: Inspect EAS Android Builds
+name: Submit NavoKids to Google Play Internal
 
 on:
   push:
@@ -7,9 +7,9 @@ on:
       - ".github/workflows/eas-build.yml"
 
 jobs:
-  inspect:
+  submit:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -20,5 +20,5 @@ jobs:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
       - run: npm ci
-      - name: List Android builds
-        run: eas build:list --platform android --limit 5 --json --non-interactive
+      - name: Submit Android build to internal track
+        run: eas submit --platform android --id b14ad7d6-226f-414d-9de0-4c350b3d1285 --profile production --non-interactive --wait

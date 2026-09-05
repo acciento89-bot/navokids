@@ -1,0 +1,3 @@
+# NavoKids
+
+Initial repository setup.

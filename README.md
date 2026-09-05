@@ -2,10 +2,12 @@
 
 Eine werbefreie, zweisprachige Lernspiel-App für Kinder von etwa 3 bis 7 Jahren. Eine gemeinsame React-Native-Codebasis bedient iOS, iPadOS und Android.
 
-## Enthalten im ersten spielbaren Stand
+## Enthalten in Version 0.2.0
 
 - fünf Lerninseln: Zahlen, Farben, Tiere, Buchstaben und Wörter
-- jeweils zwei kostenlose Stufen mit insgesamt 30 gesprochenen Aufgaben
+- sechs Stufen je Insel mit insgesamt 90 unterschiedlichen gesprochenen Aufgaben
+- die ersten zwei Stufen jeder Insel sind kostenlos
+- altersgerechte Varianten für 3–4 und 5–7 Jahre
 - automatische deutsche und englische Sprachausgabe
 - Wiederholen-Schaltfläche für jede Aufgabe
 - gesprochenes Erfolgsfeedback und gesprochene Hilfestellungen
@@ -19,18 +21,21 @@ Eine werbefreie, zweisprachige Lernspiel-App für Kinder von etwa 3 bis 7 Jahren
 
 ## Lokal starten
 
-Voraussetzungen: Node.js 22.13 oder neuer sowie ein iOS-/Android-Simulator oder Testgerät.
+Voraussetzungen: Node.js 22.13 oder neuer sowie Xcode oder Android Studio mit einem Simulator beziehungsweise Testgerät.
 
 ```bash
-npm install
-npm run start
+npm ci
+npm run ios
+npm run android
 ```
 
-Für die reine Oberfläche kann Expo gestartet werden. Die Kaufanbindung enthält nativen Code und benötigt deshalb einen Development Build:
+Die Kaufanbindung enthält nativen Code und funktioniert nicht in Expo Go. Ein installierbarer Android-UI-Testbuild wird nach Änderungen auf `main` automatisch vom Workflow **Android Internal APK** erstellt und 14 Tage als GitHub-Artefakt bereitgestellt.
+
+Store-Builds werden nach der ersten Expo-/EAS-Projektverknüpfung manuell über den Workflow **EAS Store Builds** gestartet:
 
 ```bash
-npx eas build --profile development --platform ios
-npx eas build --profile development --platform android
+npx eas build --profile preview --platform android
+npx eas build --profile production --platform all
 ```
 
 ## Store-Produkte
@@ -41,7 +46,17 @@ Die App erwartet folgende Produktkennungen in App Store Connect und Google Play 
 - `com.kamilunavo.navokids.yearly`
 - `com.kamilunavo.navokids.lifetime`
 
-Ein erfolgreicher oder wiederhergestellter Store-Kauf schaltet Premium für alle lokalen Kinderprofile frei. Abgebrochene und ausstehende Käufe entsperren keine Inhalte.
+Ein erfolgreicher oder wiederhergestellter Store-Kauf schaltet Premium für alle lokalen Kinderprofile frei. Der aktive Store-Anspruch wird bei jedem App-Start erneut abgeglichen. Abgebrochene, ausstehende oder abgelaufene Käufe entsperren keine Inhalte.
+
+## Qualitätsprüfungen
+
+```bash
+npm run typecheck
+npm run content:check
+npm run store:check
+```
+
+Der Store-Check prüft Buildnummern, Paketkennungen, Produktkennungen, EAS-Profile und die Zeichenlimits der zweisprachigen Store-Texte.
 
 ## Datenschutz-Grundsatz
 

@@ -5,11 +5,12 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "typecheck": "tsc --noEmit",
-    "content:check": "node scripts/validate-content.cjs"
+    "content:check": "node scripts/validate-content.cjs",
+    "store:check": "node scripts/validate-store-config.cjs",
+    "prebuild:android": "expo prebuild --platform android --clean"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",

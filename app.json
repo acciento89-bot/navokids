@@ -16,20 +16,19 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.kamilunavo.navokids",
+      "buildNumber": "1",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
       "package": "com.kamilunavo.navokids",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon-foreground.png",
         "backgroundColor": "#25C7C8"
       },
       "permissions": []
-    },
-    "web": {
-      "bundler": "metro"
     }
   }
 }

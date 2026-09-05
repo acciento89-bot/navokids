@@ -1,0 +1,47 @@
+name: Android Internal APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "App.tsx"
+      - "app.json"
+      - "package.json"
+      - "package-lock.json"
+      - "src/**"
+      - "assets/**"
+      - ".github/workflows/android-internal.yml"
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v4
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run content:check
+      - run: npm run store:check
+      - name: Generate native Android project
+        run: npm run prebuild:android
+        env:
+          CI: "1"
+      - name: Build installable debug APK
+        working-directory: android
+        run: ./gradlew assembleDebug --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: navokids-android-internal-v0.2.0-build1
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 14

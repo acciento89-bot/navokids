@@ -1,0 +1,7 @@
+NavoKids is an ad-free educational app for children ages 3–7. The app requires no user account and does not collect personal information from the child. Nickname, age group, avatar, and learning progress remain only on the device.
+
+The first two stages of every learning island are free. Premium stages and purchases can only be reached after solving the arithmetic challenge in the protected parent area.
+
+Every task and feedback message is spoken aloud. The Discoverer level for ages 3–4 uses two answer choices, slower speech, and visible hints. The Adventurer level for ages 5–7 uses three answer choices and more challenging activities.
+
+There are no ads, no external links in the child area, and no access to the camera, microphone, photos, contacts, or location.

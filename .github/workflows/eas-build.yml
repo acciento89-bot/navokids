@@ -1,43 +1,42 @@
-name: EAS Store Builds
+name: Monitor EAS Android Build
 
 on:
-  workflow_dispatch:
-    inputs:
-      platform:
-        description: Platform to build
-        required: true
-        type: choice
-        options: [android, ios, all]
-        default: android
   push:
     branches: [eas-bootstrap]
     paths:
       - ".github/workflows/eas-build.yml"
 
 jobs:
-  build:
+  monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     env:
-      BUILD_PLATFORM: ${{ inputs.platform || 'android' }}
+      BUILD_ID: b14ad7d6-226f-414d-9de0-4c350b3d1285
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: npm
       - uses: expo/expo-github-action@v8
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
-      - run: npm ci
-      - run: npm run typecheck
-      - run: npm run content:check
-      - run: npm run store:check
-      - name: Link EAS project on first run
+      - name: Wait for Android build
+        shell: bash
         run: |
-          if ! node -e "const app=require('./app.json'); process.exit(app.expo.extra?.eas?.projectId ? 0 : 1)"; then
-            eas init --force --non-interactive
-          fi
-      - name: Start store build
-        run: eas build --platform "$BUILD_PLATFORM" --profile production --non-interactive --no-wait
+          for attempt in {1..50}; do
+            build_json="$(eas build:view "$BUILD_ID" --json --non-interactive)"
+            build_status="$(printf '%s' "$build_json" | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>console.log(JSON.parse(s).status))")"
+            echo "EAS_BUILD_STATUS=$build_status"
+            if [ "$build_status" = "FINISHED" ]; then
+              printf '%s' "$build_json" | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{const b=JSON.parse(s); console.log('EAS_BUILD_URL='+(b.artifacts?.buildUrl || b.artifacts?.applicationArchiveUrl || 'available in Expo dashboard'))})"
+              exit 0
+            fi
+            if [ "$build_status" = "ERRORED" ] || [ "$build_status" = "CANCELED" ]; then
+              printf '%s\n' "$build_json"
+              exit 1
+            fi
+            sleep 30
+          done
+          echo "Build did not finish within the monitoring window."
+          exit 1

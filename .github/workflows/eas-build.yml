@@ -7,8 +7,8 @@ on:
         description: Platform to build
         required: true
         type: choice
-        options: [all, ios, android]
-        default: all
+        options: [android, ios, all]
+        default: android
 
 jobs:
   build:

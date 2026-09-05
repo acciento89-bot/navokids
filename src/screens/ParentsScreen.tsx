@@ -2,15 +2,19 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { categories } from '../data/learningContent';
 import { copy, t } from '../i18n';
 import { colors, shadows } from '../theme';
-import { Language, Progress } from '../types';
+import { ChildProfile, Language, Progress } from '../types';
 
-export function ParentsScreen({ language, progress, onBack }: { language: Language; progress: Progress; onBack: () => void }) {
+export function ParentsScreen({ language, progress, profiles, activeProfileId, premiumUnlocked, onBack, onAddProfile, onSwitchProfile, onPremium }: { language: Language; progress: Progress; profiles: ChildProfile[]; activeProfileId: string; premiumUnlocked: boolean; onBack: () => void; onAddProfile: () => void; onSwitchProfile: () => void; onPremium: () => void }) {
   const completed = Object.values(progress).reduce((sum, value) => sum + value.completedQuestions, 0);
-  const percent = Math.round((completed / 30) * 100);
+  const percent = Math.round((completed / 90) * 100);
   return (
     <ScrollView contentContainerStyle={styles.content}>
       <View style={styles.topbar}><Pressable onPress={onBack} style={styles.back}><Text style={styles.backText}>‹</Text></Pressable><Text style={styles.title}>{t(copy.parentArea, language)}</Text></View>
       <Text style={styles.intro}>{t(copy.dashboardIntro, language)}</Text>
+      <View style={styles.profileStrip}>
+        <View style={styles.profileInfo}><Text style={styles.profileAvatar}>{profiles.find((profile) => profile.id === activeProfileId)?.avatar}</Text><View><Text style={styles.profileName}>{profiles.find((profile) => profile.id === activeProfileId)?.nickname}</Text><Text style={styles.profileMeta}>{profiles.length} {language === 'de' ? 'Kinderprofil(e)' : 'child profile(s)'}</Text></View></View>
+        <Pressable onPress={onSwitchProfile} style={styles.smallButton}><Text style={styles.smallButtonText}>{language === 'de' ? 'Wechseln' : 'Switch'}</Text></Pressable>
+      </View>
       <View style={styles.overview}>
         <View style={styles.ring}><Text style={styles.percent}>{percent}%</Text><Text style={styles.ringLabel}>{t(copy.weeklyProgress, language)}</Text></View>
         <View style={styles.stats}><Text style={styles.statValue}>{completed}</Text><Text style={styles.statLabel}>{language === 'de' ? 'Aufgaben gelöst' : 'Activities solved'}</Text><Text style={styles.statValue}>{Object.values(progress).reduce((sum, value) => sum + value.stars, 0)} ⭐</Text><Text style={styles.statLabel}>{language === 'de' ? 'Sterne gesammelt' : 'Stars collected'}</Text></View>
@@ -18,11 +22,13 @@ export function ParentsScreen({ language, progress, onBack }: { language: Langua
       <Text style={styles.sectionTitle}>{language === 'de' ? 'Fortschritt nach Kategorie' : 'Progress by category'}</Text>
       <View style={styles.list}>
         {categories.map((category) => {
-          const value = Math.min(100, Math.round((progress[category.id].completedQuestions / 6) * 100));
+          const value = Math.min(100, Math.round((progress[category.id].completedQuestions / 18) * 100));
           return <View key={category.id} style={styles.category}><View style={[styles.categoryIcon, { backgroundColor: category.lightColor }]}><Text style={[styles.categoryIconText, { color: category.color }]}>{category.icon}</Text></View><View style={styles.categoryMain}><View style={styles.categoryHeader}><Text style={styles.categoryTitle}>{t(category.title, language)}</Text><Text style={styles.categoryPercent}>{value}%</Text></View><View style={styles.track}><View style={[styles.fill, { width: `${value}%`, backgroundColor: category.color }]} /></View></View></View>;
         })}
       </View>
       <View style={styles.recommendation}><Text style={styles.recommendationIcon}>🌱</Text><View style={styles.recommendationCopy}><Text style={styles.recommendationTitle}>{language === 'de' ? 'Nächste Empfehlung' : 'Next recommendation'}</Text><Text style={styles.recommendationText}>{language === 'de' ? 'Eine kurze Wiederholung auf der Zahleninsel festigt das Gelernte.' : 'A short Numbers Island review will strengthen recent learning.'}</Text></View></View>
+      <Pressable onPress={onPremium} style={[styles.premium, premiumUnlocked && styles.premiumActive]}><Text style={styles.premiumIcon}>{premiumUnlocked ? '✓' : '★'}</Text><View style={styles.premiumCopy}><Text style={styles.premiumTitle}>{premiumUnlocked ? (language === 'de' ? 'Premium ist aktiv' : 'Premium is active') : 'NavoKids Premium'}</Text><Text style={styles.premiumText}>{premiumUnlocked ? (language === 'de' ? 'Alle Lernstufen sind freigeschaltet.' : 'All learning stages are unlocked.') : (language === 'de' ? 'Alle Lerninseln und Stufen freischalten' : 'Unlock every learning island and stage')}</Text></View><Text style={styles.premiumArrow}>›</Text></Pressable>
+      {profiles.length < 4 && <Pressable onPress={onAddProfile} style={styles.addProfile}><Text style={styles.addProfileText}>+ {language === 'de' ? 'Kinderprofil hinzufügen' : 'Add child profile'}</Text></Pressable>}
       <View style={styles.privacy}><Text style={styles.privacyTitle}>{language === 'de' ? 'Datenschutz für Kinder' : 'Children’s privacy'}</Text><Text style={styles.privacyText}>{language === 'de' ? 'Der Fortschritt bleibt auf diesem Gerät. Es werden keine Werbe-ID, kein Standort und keine persönlichen Kinderdaten erfasst.' : 'Progress stays on this device. No advertising ID, location, or personal child data is collected.'}</Text></View>
     </ScrollView>
   );
@@ -35,6 +41,9 @@ const styles = StyleSheet.create({
   backText: { color: colors.ink, fontSize: 40, lineHeight: 40 },
   title: { color: colors.ink, fontSize: 27, fontWeight: '900' },
   intro: { color: colors.muted, fontSize: 16, lineHeight: 23, fontWeight: '600', marginTop: 18 },
+  profileStrip: { backgroundColor: colors.paper, borderRadius: 22, padding: 14, marginTop: 17, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+  profileInfo: { flexDirection: 'row', alignItems: 'center', gap: 10 }, profileAvatar: { fontSize: 33 }, profileName: { color: colors.ink, fontSize: 17, fontWeight: '900' }, profileMeta: { color: colors.muted, fontSize: 11, fontWeight: '700', marginTop: 2 },
+  smallButton: { backgroundColor: '#E3F5F1', borderRadius: 14, paddingHorizontal: 13, paddingVertical: 9 }, smallButtonText: { color: colors.tealDark, fontSize: 12, fontWeight: '900' },
   overview: { backgroundColor: colors.paper, borderRadius: 30, padding: 22, marginTop: 20, flexDirection: 'row', alignItems: 'center', gap: 22, ...shadows.card },
   ring: { width: 130, height: 130, borderRadius: 65, borderWidth: 14, borderColor: colors.teal, alignItems: 'center', justifyContent: 'center' },
   percent: { color: colors.ink, fontSize: 29, fontWeight: '900' },
@@ -58,6 +67,8 @@ const styles = StyleSheet.create({
   recommendationCopy: { flex: 1 },
   recommendationTitle: { color: '#245D37', fontSize: 16, fontWeight: '900' },
   recommendationText: { color: '#416D50', fontSize: 13, lineHeight: 19, fontWeight: '600', marginTop: 4 },
+  premium: { backgroundColor: '#FFF1BC', borderRadius: 24, padding: 17, marginTop: 14, flexDirection: 'row', alignItems: 'center', gap: 12 }, premiumActive: { backgroundColor: '#DFF5E7' }, premiumIcon: { width: 39, height: 39, borderRadius: 14, backgroundColor: colors.yellow, color: '#FFF', textAlign: 'center', lineHeight: 39, fontSize: 22, fontWeight: '900' }, premiumCopy: { flex: 1 }, premiumTitle: { color: colors.ink, fontSize: 16, fontWeight: '900' }, premiumText: { color: colors.muted, fontSize: 12, lineHeight: 17, fontWeight: '600', marginTop: 2 }, premiumArrow: { color: colors.ink, fontSize: 32 },
+  addProfile: { borderWidth: 2, borderStyle: 'dashed', borderColor: '#A8C5BF', borderRadius: 20, padding: 16, marginTop: 14, alignItems: 'center' }, addProfileText: { color: colors.tealDark, fontSize: 14, fontWeight: '900' },
   privacy: { backgroundColor: colors.paper, borderRadius: 24, padding: 18, marginTop: 14 },
   privacyTitle: { color: colors.ink, fontSize: 16, fontWeight: '900' },
   privacyText: { color: colors.muted, fontSize: 13, lineHeight: 19, marginTop: 5 },

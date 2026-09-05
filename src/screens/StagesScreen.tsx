@@ -3,7 +3,7 @@ import { t } from '../i18n';
 import { colors, shadows } from '../theme';
 import { Language, LearningCategory } from '../types';
 
-export function StagesScreen({ category, language, completedQuestions, onBack, onStage }: { category: LearningCategory; language: Language; completedQuestions: number; onBack: () => void; onStage: (stage: number) => void }) {
+export function StagesScreen({ category, language, completedQuestions, premiumUnlocked, onBack, onStage }: { category: LearningCategory; language: Language; completedQuestions: number; premiumUnlocked: boolean; onBack: () => void; onStage: (stage: number) => void }) {
   return (
     <ScrollView contentContainerStyle={[styles.content, { backgroundColor: category.lightColor }]}>
       <View style={styles.header}>
@@ -15,15 +15,16 @@ export function StagesScreen({ category, language, completedQuestions, onBack, o
       <View style={styles.path}>
         {[1, 2, 3, 4, 5, 6].map((stage) => {
           const free = stage <= 2;
+          const available = free || premiumUnlocked;
           const complete = completedQuestions >= stage * 3;
           return (
-            <Pressable key={stage} onPress={() => onStage(stage)} style={({ pressed }) => [styles.stage, !free && styles.lockedStage, pressed && styles.pressed]}>
-              <View style={[styles.stageNumber, { backgroundColor: free ? category.color : '#AAB6B7' }]}><Text style={styles.stageNumberText}>{free ? stage : '🔒'}</Text></View>
+            <Pressable key={stage} onPress={() => onStage(stage)} style={({ pressed }) => [styles.stage, !available && styles.lockedStage, pressed && styles.pressed]}>
+              <View style={[styles.stageNumber, { backgroundColor: available ? category.color : '#AAB6B7' }]}><Text style={styles.stageNumberText}>{available ? stage : '🔒'}</Text></View>
               <View style={styles.stageCopy}>
                 <Text style={styles.stageTitle}>{language === 'de' ? `Stufe ${stage}` : `Stage ${stage}`}</Text>
-                <Text style={styles.stageSubtitle}>{free ? (complete ? (language === 'de' ? 'Geschafft!' : 'Completed!') : (language === 'de' ? 'Kostenlos spielen' : 'Play for free')) : 'NavoKids Premium'}</Text>
+                <Text style={styles.stageSubtitle}>{complete ? (language === 'de' ? 'Geschafft!' : 'Completed!') : free ? (language === 'de' ? 'Kostenlos spielen' : 'Play for free') : premiumUnlocked ? (language === 'de' ? 'Freigeschaltet' : 'Unlocked') : 'NavoKids Premium'}</Text>
               </View>
-              <Text style={styles.stars}>{complete ? '⭐⭐⭐' : free ? '☆ ☆ ☆' : ''}</Text>
+              <Text style={styles.stars}>{complete ? '⭐⭐⭐' : available ? '☆ ☆ ☆' : ''}</Text>
             </Pressable>
           );
         })}

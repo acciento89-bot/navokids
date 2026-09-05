@@ -14,7 +14,10 @@ const englishAnswerLabels: Record<string, string> = {
 };
 
 export function GameScreen({ category, stage, language, onBack, onCompleted }: { category: LearningCategory; stage: number; language: Language; onBack: () => void; onCompleted: (answered: number) => void }) {
-  const questions = useMemo(() => category.questions.slice((stage - 1) * 3, stage * 3), [category, stage]);
+  const questions = useMemo(() => {
+    const offset = ((stage - 1) * 3) % category.questions.length;
+    return [...category.questions.slice(offset), ...category.questions.slice(0, offset)].slice(0, 3);
+  }, [category, stage]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState(false);

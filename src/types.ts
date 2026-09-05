@@ -3,10 +3,13 @@ export type Language = 'de' | 'en';
 export type CategoryId = 'numbers' | 'colors' | 'animals' | 'letters' | 'words';
 
 export type Screen =
+  | { name: 'setup'; mode: 'first' | 'add' }
+  | { name: 'profiles' }
   | { name: 'world' }
   | { name: 'stages'; categoryId: CategoryId }
   | { name: 'game'; categoryId: CategoryId; stage: number }
-  | { name: 'parents' };
+  | { name: 'parents' }
+  | { name: 'premium' };
 
 export interface LocalizedText {
   de: string;
@@ -40,3 +43,21 @@ export interface LearningCategory {
 }
 
 export type Progress = Record<CategoryId, { completedQuestions: number; stars: number }>;
+
+export type AgeGroup = 'discoverer' | 'adventurer';
+
+export interface ChildProfile {
+  id: string;
+  nickname: string;
+  avatar: string;
+  ageGroup: AgeGroup;
+  progress: Progress;
+  createdAt: string;
+}
+
+export interface AppState {
+  profiles: ChildProfile[];
+  activeProfileId: string | null;
+  premiumUnlocked: boolean;
+  language: Language;
+}

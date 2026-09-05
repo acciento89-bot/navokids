@@ -12,6 +12,7 @@
       "backgroundColor": "#FFF8E8"
     },
     "assetBundlePatterns": ["**/*"],
+    "plugins": ["expo-iap"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.kamilunavo.navokids",

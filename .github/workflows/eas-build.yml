@@ -20,5 +20,5 @@ jobs:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
       - run: npm ci
-      - name: Submit signed iOS build to TestFlight
+      - name: Submit configured iOS build to TestFlight
         run: eas submit --platform ios --id 3b5b4a68-d4b2-4a77-abbc-11a871454070 --profile production --non-interactive --wait

@@ -7,8 +7,8 @@ on:
         description: Platform to build
         required: true
         type: choice
-        options: [all, ios, android]
-        default: all
+        options: [android, ios, all]
+        default: android
   push:
     branches: [eas-bootstrap]
     paths:
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      BUILD_PLATFORM: ${{ inputs.platform || 'all' }}
+      BUILD_PLATFORM: ${{ inputs.platform || 'android' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

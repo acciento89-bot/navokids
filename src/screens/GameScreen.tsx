@@ -6,6 +6,13 @@ import { speak, stopSpeaking } from '../services/speech';
 import { colors, shadows } from '../theme';
 import { Language, LearningCategory } from '../types';
 
+const englishAnswerLabels: Record<string, string> = {
+  red: 'Red', blue: 'Blue', green: 'Green', yellow: 'Yellow', purple: 'Purple', orange: 'Orange', pink: 'Pink', brown: 'Brown',
+  dog: 'Dog', cat: 'Cat', fish: 'Fish', moon: 'Moon', sun: 'Sun', star: 'Star', tree: 'Tree', house: 'House', car: 'Car',
+  flower: 'Flower', grass: 'Grass', ice: 'Ice', elephant: 'Elephant', butterfly: 'Butterfly',
+  rainbow: 'Rain + bow', raincoat: 'Rain + coat', sunflower: 'Sun + flower',
+};
+
 export function GameScreen({ category, stage, language, onBack, onCompleted }: { category: LearningCategory; stage: number; language: Language; onBack: () => void; onCompleted: (answered: number) => void }) {
   const questions = useMemo(() => category.questions.slice((stage - 1) * 3, stage * 3), [category, stage]);
   const [index, setIndex] = useState(0);
@@ -55,9 +62,10 @@ export function GameScreen({ category, stage, language, onBack, onCompleted }: {
           const chosen = selected === answer.id;
           const correct = isCorrect && answer.id === question.correctAnswerId;
           const wrong = chosen && !isCorrect;
+          const answerLabel = language === 'en' ? englishAnswerLabels[answer.id] ?? answer.label : answer.label;
           return (
             <Pressable key={answer.id} disabled={isCorrect} onPress={() => choose(answer.id)} style={({ pressed }) => [styles.answer, answer.color ? { backgroundColor: answer.color, borderColor: answer.color } : null, correct && styles.correct, wrong && styles.wrong, pressed && styles.pressed]}>
-              <Text style={[styles.answerText, answer.color && styles.colorAnswerText]}>{answer.label}</Text>
+              <Text style={[styles.answerText, answer.color && styles.colorAnswerText]}>{answerLabel}</Text>
             </Pressable>
           );
         })}

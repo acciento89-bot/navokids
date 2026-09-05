@@ -34,5 +34,10 @@ jobs:
       - run: npm run typecheck
       - run: npm run content:check
       - run: npm run store:check
+      - name: Link EAS project on first run
+        run: |
+          if ! node -e "const app=require('./app.json'); process.exit(app.expo.extra?.eas?.projectId ? 0 : 1)"; then
+            eas init --force --non-interactive
+          fi
       - name: Start store build
         run: eas build --platform "$BUILD_PLATFORM" --profile production --non-interactive --no-wait

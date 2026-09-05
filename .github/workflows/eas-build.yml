@@ -1,4 +1,4 @@
-name: Submit NavoKids to Google Play Internal
+name: Build NavoKids for iOS
 
 on:
   push:
@@ -7,18 +7,22 @@ on:
       - ".github/workflows/eas-build.yml"
 
 jobs:
-  submit:
+  build_ios:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+          cache: npm
       - uses: expo/expo-github-action@v8
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
       - run: npm ci
-      - name: Submit Android build to internal track
-        run: eas submit --platform android --id b14ad7d6-226f-414d-9de0-4c350b3d1285 --profile production --non-interactive --wait
+      - run: npm run typecheck
+      - run: npm run content:check
+      - run: npm run store:check
+      - name: Build signed iOS production app
+        run: eas build --platform ios --profile production --non-interactive

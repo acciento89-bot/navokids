@@ -29,6 +29,12 @@
         "backgroundColor": "#25C7C8"
       },
       "permissions": []
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f5a27773-ed29-4bf3-a66f-8ad867b183b7"
+      }
+    },
+    "owner": "acciento"
   }
 }

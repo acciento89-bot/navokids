@@ -19,5 +19,6 @@ jobs:
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
+      - run: npm ci
       - name: List Android builds
         run: eas build:list --platform android --limit 5 --json --non-interactive

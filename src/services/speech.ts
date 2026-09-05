@@ -1,5 +1,5 @@
 import * as Speech from 'expo-speech';
-import { AudioPlayer, createAudioPlayer } from 'expo-audio';
+import { AudioPlayer, createAudioPlayer, setAudioModeAsync } from 'expo-audio';
 import { naviVoiceAssets } from '../generated/naviVoiceManifest';
 import { Language } from '../types';
 
@@ -15,12 +15,81 @@ const preferredNames: Record<Language, string[]> = {
 
 const selectedVoices: Partial<Record<Language, string>> = {};
 let activePlayer: AudioPlayer | undefined;
+let activeSubscription: { remove: () => void } | undefined;
+let activeLoadTimeout: ReturnType<typeof setTimeout> | undefined;
+let playbackRequest = 0;
+let audioSessionPromise: Promise<void> | undefined;
+
+function ensureAudioSession() {
+  audioSessionPromise ??= setAudioModeAsync({
+    allowsRecording: false,
+    interruptionMode: 'doNotMix',
+    playsInSilentMode: true,
+    shouldPlayInBackground: false,
+    shouldRouteThroughEarpiece: false,
+  }).catch((error) => {
+    audioSessionPromise = undefined;
+    throw error;
+  });
+  return audioSessionPromise;
+}
 
 function stopVoicePack() {
-  if (!activePlayer) return;
-  activePlayer.pause();
-  activePlayer.remove();
+  if (activeLoadTimeout) clearTimeout(activeLoadTimeout);
+  activeLoadTimeout = undefined;
+  activeSubscription?.remove();
+  activeSubscription = undefined;
+  activePlayer?.pause();
+  activePlayer?.remove();
   activePlayer = undefined;
+}
+
+async function playVoicePack(asset: number, request: number) {
+  await ensureAudioSession();
+  if (request !== playbackRequest) return false;
+
+  const player = createAudioPlayer(asset, { downloadFirst: true, updateInterval: 100 });
+  activePlayer = player;
+  player.volume = 1;
+
+  return new Promise<boolean>((resolve) => {
+    let started = false;
+    let resolved = false;
+
+    const resolveOnce = (value: boolean) => {
+      if (resolved) return;
+      resolved = true;
+      resolve(value);
+    };
+
+    const startWhenReady = () => {
+      if (started || activePlayer !== player || request !== playbackRequest) return;
+      started = true;
+      if (activeLoadTimeout) clearTimeout(activeLoadTimeout);
+      activeLoadTimeout = undefined;
+      player.play();
+      resolveOnce(true);
+    };
+
+    activeSubscription = player.addListener('playbackStatusUpdate', (status) => {
+      if (activePlayer !== player || request !== playbackRequest) return;
+      if (status.error) {
+        stopVoicePack();
+        resolveOnce(false);
+        return;
+      }
+      if (status.isLoaded) startWhenReady();
+      if (status.didJustFinish) stopVoicePack();
+    });
+
+    activeLoadTimeout = setTimeout(() => {
+      if (started || activePlayer !== player) return;
+      stopVoicePack();
+      resolveOnce(false);
+    }, 5000);
+
+    if (player.isLoaded) startWhenReady();
+  });
 }
 
 async function naviVoice(language: Language) {
@@ -48,24 +117,22 @@ async function naviVoice(language: Language) {
 }
 
 export async function speak(text: string, language: Language, slower = false, clipKey?: string) {
-  await stopSpeaking();
+  const request = ++playbackRequest;
+  stopVoicePack();
+  await Speech.stop();
+  if (request !== playbackRequest) return;
 
   const asset = clipKey ? naviVoiceAssets[language][clipKey] : undefined;
   if (asset) {
-    const player = createAudioPlayer(asset, { downloadFirst: true, updateInterval: 250 });
-    activePlayer = player;
-    player.volume = 1;
-    const subscription = player.addListener('playbackStatusUpdate', (status) => {
-      if (!status.didJustFinish || activePlayer !== player) return;
-      subscription.remove();
-      player.remove();
-      activePlayer = undefined;
-    });
-    player.play();
-    return;
+    try {
+      if (await playVoicePack(asset, request)) return;
+    } catch {
+      stopVoicePack();
+    }
   }
 
   const voice = await naviVoice(language);
+  if (request !== playbackRequest) return;
   Speech.speak(text, {
     language: languageCodes[language],
     voice,
@@ -77,6 +144,7 @@ export async function speak(text: string, language: Language, slower = false, cl
 }
 
 export async function stopSpeaking() {
+  playbackRequest += 1;
   stopVoicePack();
   await Speech.stop();
 }

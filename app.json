@@ -12,7 +12,7 @@
       "backgroundColor": "#FFF8E8"
     },
     "assetBundlePatterns": ["**/*"],
-    "plugins": ["expo-iap"],
+    "plugins": ["expo-iap", "expo-audio"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.kamilunavo.navokids",

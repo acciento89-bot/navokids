@@ -1,0 +1,42 @@
+name: Generate Navi Voice Pack
+
+on:
+  workflow_dispatch:
+    inputs:
+      voice:
+        description: Approved OpenAI voice
+        required: true
+        type: choice
+        options: [marin, cedar, coral]
+        default: marin
+
+permissions:
+  contents: write
+
+jobs:
+  generate-pack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Generate offline German and English voice pack
+        run: npm run voice:generate
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          NAVI_VOICE: ${{ inputs.voice }}
+      - run: npm run typecheck
+      - name: Commit generated audio to the selected branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/audio src/generated/naviVoiceManifest.ts
+          git diff --cached --quiet && exit 0
+          git commit -m "feat: add approved offline Navi voice pack"
+          git push origin HEAD:${{ github.ref_name }}

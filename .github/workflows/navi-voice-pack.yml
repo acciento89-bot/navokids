@@ -9,6 +9,10 @@ on:
         type: choice
         options: [marin, cedar, coral]
         default: marin
+  push:
+    branches: [feat/navi-voice-pack]
+    paths:
+      - ".github/navi-voice-choice.txt"
 
 permissions:
   contents: write

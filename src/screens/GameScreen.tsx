@@ -4,7 +4,7 @@ import { SpeakerButton } from '../components/SpeakerButton';
 import { copy, t } from '../i18n';
 import { speak, stopSpeaking } from '../services/speech';
 import { colors, shadows } from '../theme';
-import { Language, LearningCategory } from '../types';
+import { AgeGroup, Answer, Language, LearningCategory } from '../types';
 
 const englishAnswerLabels: Record<string, string> = {
   red: 'Red', blue: 'Blue', green: 'Green', yellow: 'Yellow', purple: 'Purple', orange: 'Orange', pink: 'Pink', brown: 'Brown',
@@ -13,10 +13,21 @@ const englishAnswerLabels: Record<string, string> = {
   rainbow: 'Rain + bow', raincoat: 'Rain + coat', sunflower: 'Sun + flower',
 };
 
-export function GameScreen({ category, stage, language, onBack, onCompleted }: { category: LearningCategory; stage: number; language: Language; onBack: () => void; onCompleted: (answered: number) => void }) {
+const localizedAnswerLabel = (answer: Answer, language: Language) =>
+  typeof answer.label === 'string' ? (language === 'en' ? englishAnswerLabels[answer.id] ?? answer.label : answer.label) : t(answer.label, language);
+
+const answersForAge = (answers: Answer[], correctAnswerId: string, ageGroup: AgeGroup, questionId: string) => {
+  if (ageGroup === 'adventurer') return answers;
+  const correct = answers.find((answer) => answer.id === correctAnswerId);
+  const distractor = answers.find((answer) => answer.id !== correctAnswerId);
+  if (!correct || !distractor) return answers;
+  return questionId.charCodeAt(questionId.length - 1) % 2 === 0 ? [distractor, correct] : [correct, distractor];
+};
+
+export function GameScreen({ category, stage, language, ageGroup, onBack, onCompleted }: { category: LearningCategory; stage: number; language: Language; ageGroup: AgeGroup; onBack: () => void; onCompleted: (answered: number) => void }) {
   const questions = useMemo(() => {
-    const offset = ((stage - 1) * 3) % category.questions.length;
-    return [...category.questions.slice(offset), ...category.questions.slice(0, offset)].slice(0, 3);
+    const offset = (stage - 1) * 3;
+    return category.questions.slice(offset, offset + 3);
   }, [category, stage]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -25,11 +36,12 @@ export function GameScreen({ category, stage, language, onBack, onCompleted }: {
   const question = questions[index];
 
   useEffect(() => {
-    if (question) speak(t(question.prompt, language), language, true);
+    if (question) speak(t(question.prompt, language), language, ageGroup === 'discoverer');
     return () => { stopSpeaking(); };
-  }, [question, language]);
+  }, [question, language, ageGroup]);
 
   if (!question) return null;
+  const visibleAnswers = answersForAge(question.answers, question.correctAnswerId, ageGroup, question.id);
 
   const choose = (answerId: string) => {
     setSelected(answerId);
@@ -57,15 +69,16 @@ export function GameScreen({ category, stage, language, onBack, onCompleted }: {
       </View>
       <View style={styles.promptRow}>
         <Text style={styles.prompt}>{t(question.prompt, language)}</Text>
-        <SpeakerButton label={t(copy.listenAgain, language)} onPress={() => speak(t(question.prompt, language), language, true)} />
+        <SpeakerButton label={t(copy.listenAgain, language)} onPress={() => speak(t(question.prompt, language), language, ageGroup === 'discoverer')} />
       </View>
       <View style={styles.visualCard}><Text style={styles.visual}>{question.visual}</Text></View>
+      {ageGroup === 'discoverer' && <Text style={styles.discovererHint}>💡 {t(question.hint, language)}</Text>}
       <View style={styles.answers}>
-        {question.answers.map((answer) => {
+        {visibleAnswers.map((answer) => {
           const chosen = selected === answer.id;
           const correct = isCorrect && answer.id === question.correctAnswerId;
           const wrong = chosen && !isCorrect;
-          const answerLabel = language === 'en' ? englishAnswerLabels[answer.id] ?? answer.label : answer.label;
+          const answerLabel = localizedAnswerLabel(answer, language);
           return (
             <Pressable key={answer.id} disabled={isCorrect} onPress={() => choose(answer.id)} style={({ pressed }) => [styles.answer, answer.color ? { backgroundColor: answer.color, borderColor: answer.color } : null, correct && styles.correct, wrong && styles.wrong, pressed && styles.pressed]}>
               <Text style={[styles.answerText, answer.color && styles.colorAnswerText]}>{answerLabel}</Text>
@@ -95,6 +108,7 @@ const styles = StyleSheet.create({
   prompt: { flex: 1, color: colors.ink, fontSize: 27, lineHeight: 34, fontWeight: '900' },
   visualCard: { flex: 1, minHeight: 180, maxHeight: 300, borderRadius: 34, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', padding: 20, ...shadows.card },
   visual: { color: colors.ink, fontSize: 44, fontWeight: '900', textAlign: 'center', letterSpacing: 2 },
+  discovererHint: { color: colors.muted, fontSize: 14, lineHeight: 20, fontWeight: '800', textAlign: 'center', marginTop: 12 },
   answers: { flexDirection: 'row', gap: 11, marginTop: 20 },
   answer: { flex: 1, minHeight: 84, borderRadius: 24, backgroundColor: colors.paper, borderWidth: 4, borderColor: 'transparent', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 8, ...shadows.card },
   answerText: { color: colors.ink, fontSize: 25, fontWeight: '900', textAlign: 'center' },

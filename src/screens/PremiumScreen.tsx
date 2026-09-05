@@ -1,88 +1,16 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect } from 'react';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { Purchase, useIAP } from 'expo-iap';
-import { allProductIds, productIds, subscriptionProductIds } from '../config/products';
+import { productIds } from '../config/products';
+import { PremiumPlanId, PremiumStoreController } from '../services/usePremiumStore';
 import { colors, shadows } from '../theme';
 import { Language } from '../types';
 
-type PlanId = keyof typeof productIds;
+export function PremiumScreen({ language, store, onBack, onUnlocked }: { language: Language; store: PremiumStoreController; onBack: () => void; onUnlocked: () => void }) {
+  const { connected, products, processing, message, entitled, buy, restore } = store;
+  useEffect(() => { if (entitled) onUnlocked(); }, [entitled, onUnlocked]);
+  const displayPrice = (id: string, fallback: string) => products.find((product) => product.id === id)?.displayPrice ?? fallback;
 
-export function PremiumScreen({ language, onBack, onUnlocked }: { language: Language; onBack: () => void; onUnlocked: () => void }) {
-  const [message, setMessage] = useState<string | null>(null);
-  const [processing, setProcessing] = useState(false);
-  const handledTransactions = useRef(new Set<string>());
-  const [completedPurchase, setCompletedPurchase] = useState<Purchase | null>(null);
-  const { connected, products, subscriptions, availablePurchases, fetchProducts, requestPurchase, finishTransaction, restorePurchases, getAvailablePurchases } = useIAP({
-    onPurchaseSuccess: setCompletedPurchase,
-    onPurchaseError: (error) => { setProcessing(false); setMessage(error.message); },
-    onError: (error) => { setProcessing(false); setMessage(error.message); },
-  });
-
-  useEffect(() => {
-    if (!connected) return;
-    Promise.all([
-      fetchProducts({ skus: [productIds.lifetime], type: 'in-app' }),
-      fetchProducts({ skus: subscriptionProductIds, type: 'subs' }),
-    ]).catch((error: Error) => setMessage(error.message));
-  }, [connected, fetchProducts]);
-
-  useEffect(() => {
-    if (!completedPurchase || handledTransactions.current.has(completedPurchase.id)) return;
-    handledTransactions.current.add(completedPurchase.id);
-    const complete = async () => {
-      if (!allProductIds.includes(completedPurchase.productId as typeof allProductIds[number])) return;
-      await finishTransaction({ purchase: completedPurchase, isConsumable: false });
-      setProcessing(false);
-      onUnlocked();
-    };
-    complete().catch((error: Error) => { setProcessing(false); setMessage(error.message); });
-  }, [completedPurchase, finishTransaction, onUnlocked]);
-
-  useEffect(() => {
-    if (availablePurchases.some((purchase) => allProductIds.includes(purchase.productId as typeof allProductIds[number]))) onUnlocked();
-  }, [availablePurchases, onUnlocked]);
-
-  const storeProducts = useMemo(() => [...products, ...subscriptions], [products, subscriptions]);
-  const displayPrice = (id: string, fallback: string) => storeProducts.find((product) => product.id === id)?.displayPrice ?? fallback;
-
-  const buy = async (plan: PlanId) => {
-    const sku = productIds[plan];
-    setMessage(null);
-    setProcessing(true);
-    try {
-      if (plan === 'lifetime') {
-        await requestPurchase({ type: 'in-app', request: { apple: { sku }, google: { skus: [sku] } } });
-      } else {
-        const subscription = subscriptions.find((item) => item.id === sku);
-        const offerToken = subscription?.platform === 'android' ? subscription.subscriptionOffers[0]?.offerTokenAndroid : undefined;
-        await requestPurchase({
-          type: 'subs',
-          request: {
-            apple: { sku },
-            google: { skus: [sku], subscriptionOffers: offerToken ? [{ sku, offerToken }] : undefined },
-          },
-        });
-      }
-    } catch (error) {
-      setProcessing(false);
-      setMessage(error instanceof Error ? error.message : (language === 'de' ? 'Der Kauf konnte nicht gestartet werden.' : 'The purchase could not be started.'));
-    }
-  };
-
-  const restore = async () => {
-    setProcessing(true); setMessage(null);
-    try {
-      await restorePurchases();
-      await getAvailablePurchases();
-      setProcessing(false);
-      setMessage(language === 'de' ? 'Käufe wurden geprüft.' : 'Purchases were checked.');
-    } catch (error) {
-      setProcessing(false);
-      setMessage(error instanceof Error ? error.message : (language === 'de' ? 'Wiederherstellung fehlgeschlagen.' : 'Restore failed.'));
-    }
-  };
-
-  const plans: { id: PlanId; title: string; subtitle: string; price: string; recommended?: boolean }[] = [
+  const plans: { id: PremiumPlanId; title: string; subtitle: string; price: string; recommended?: boolean }[] = [
     { id: 'yearly', title: language === 'de' ? 'Jahresabo' : 'Yearly', subtitle: language === 'de' ? 'Bestes Preis-Leistungs-Verhältnis' : 'Best overall value', price: displayPrice(productIds.yearly, '29,99 €'), recommended: true },
     { id: 'monthly', title: language === 'de' ? 'Monatlich' : 'Monthly', subtitle: language === 'de' ? 'Jederzeit kündbar' : 'Cancel anytime', price: displayPrice(productIds.monthly, '4,99 €') },
     { id: 'lifetime', title: language === 'de' ? 'Dauerhaft' : 'Lifetime', subtitle: language === 'de' ? 'Einmal zahlen, dauerhaft lernen' : 'Pay once, learn forever', price: displayPrice(productIds.lifetime, '59,99 €') },

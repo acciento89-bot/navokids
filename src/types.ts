@@ -18,7 +18,7 @@ export interface LocalizedText {
 
 export interface Answer {
   id: string;
-  label: string;
+  label: string | LocalizedText;
   color?: string;
 }
 
@@ -59,5 +59,6 @@ export interface AppState {
   profiles: ChildProfile[];
   activeProfileId: string | null;
   premiumUnlocked: boolean;
+  premiumLastVerifiedAt?: string;
   language: Language;
 }

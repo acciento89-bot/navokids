@@ -13,6 +13,7 @@ import { ProfileSetupScreen } from './src/screens/ProfileSetupScreen';
 import { StagesScreen } from './src/screens/StagesScreen';
 import { WorldScreen } from './src/screens/WorldScreen';
 import { colors } from './src/theme';
+import { usePremiumStore } from './src/services/usePremiumStore';
 import { AppState, CategoryId, ChildProfile, Language, Progress, Screen } from './src/types';
 
 const STORAGE_KEY = 'navokids-state-v2';
@@ -25,6 +26,12 @@ export default function App() {
   const [hydrated, setHydrated] = useState(false);
   const [gateVisible, setGateVisible] = useState(false);
   const [gateTarget, setGateTarget] = useState<'parents' | 'premium' | 'addProfile'>('parents');
+
+  const reconcilePremium = useCallback((premiumUnlocked: boolean, premiumLastVerifiedAt: string) => {
+    if (!hydrated) return;
+    setAppState((current) => ({ ...current, premiumUnlocked, premiumLastVerifiedAt }));
+  }, [hydrated]);
+  const premiumStore = usePremiumStore(reconcilePremium);
 
   useEffect(() => {
     const load = async () => {
@@ -112,11 +119,6 @@ export default function App() {
     setScreen({ name: 'stages', categoryId });
   };
 
-  const unlockPremium = useCallback(() => {
-    setAppState((current) => ({ ...current, premiumUnlocked: true }));
-    setScreen({ name: 'parents' });
-  }, []);
-
   if (!hydrated) return <View style={styles.loading} />;
 
   return (
@@ -126,9 +128,9 @@ export default function App() {
       {screen.name === 'profiles' && <ProfilePickerScreen language={appState.language} profiles={appState.profiles} onSelect={selectProfile} onAdd={() => requestGate('addProfile')} />}
       {screen.name === 'world' && activeProfile && <WorldScreen language={appState.language} profile={activeProfile} onLanguageChange={setLanguage} onCategoryPress={(categoryId) => setScreen({ name: 'stages', categoryId })} onParentsPress={() => requestGate('parents')} onProfilePress={() => setScreen({ name: 'profiles' })} />}
       {screen.name === 'stages' && activeProfile && <StagesScreen category={categoryById(screen.categoryId)} language={appState.language} completedQuestions={activeProfile.progress[screen.categoryId].completedQuestions} premiumUnlocked={appState.premiumUnlocked} onBack={() => setScreen({ name: 'world' })} onStage={(stage) => requestStage(screen.categoryId, stage)} />}
-      {screen.name === 'game' && <GameScreen category={categoryById(screen.categoryId)} stage={screen.stage} language={appState.language} onBack={() => setScreen({ name: 'stages', categoryId: screen.categoryId })} onCompleted={(answered) => completeStage(screen.categoryId, screen.stage, answered)} />}
+      {screen.name === 'game' && activeProfile && <GameScreen category={categoryById(screen.categoryId)} stage={screen.stage} language={appState.language} ageGroup={activeProfile.ageGroup} onBack={() => setScreen({ name: 'stages', categoryId: screen.categoryId })} onCompleted={(answered) => completeStage(screen.categoryId, screen.stage, answered)} />}
       {screen.name === 'parents' && activeProfile && <ParentsScreen language={appState.language} progress={activeProfile.progress} profiles={appState.profiles} activeProfileId={activeProfile.id} premiumUnlocked={appState.premiumUnlocked} onBack={() => setScreen({ name: 'world' })} onAddProfile={() => setScreen({ name: 'setup', mode: 'add' })} onSwitchProfile={() => setScreen({ name: 'profiles' })} onPremium={() => !appState.premiumUnlocked && setScreen({ name: 'premium' })} />}
-      {screen.name === 'premium' && <PremiumScreen language={appState.language} onBack={() => setScreen({ name: 'parents' })} onUnlocked={unlockPremium} />}
+      {screen.name === 'premium' && <PremiumScreen language={appState.language} store={premiumStore} onBack={() => setScreen({ name: 'parents' })} onUnlocked={() => setScreen({ name: 'parents' })} />}
       <ParentGate visible={gateVisible} language={appState.language} onCancel={() => setGateVisible(false)} onSuccess={() => {
         setGateVisible(false);
         if (gateTarget === 'parents') setScreen({ name: 'parents' });

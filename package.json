@@ -1,6 +1,6 @@
 {
   "name": "navokids",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "content:check": "node scripts/validate-content.cjs"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",

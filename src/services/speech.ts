@@ -1,4 +1,6 @@
 import * as Speech from 'expo-speech';
+import { AudioPlayer, createAudioPlayer } from 'expo-audio';
+import { naviVoiceAssets } from '../generated/naviVoiceManifest';
 import { Language } from '../types';
 
 const languageCodes: Record<Language, string> = {
@@ -12,6 +14,14 @@ const preferredNames: Record<Language, string[]> = {
 };
 
 const selectedVoices: Partial<Record<Language, string>> = {};
+let activePlayer: AudioPlayer | undefined;
+
+function stopVoicePack() {
+  if (!activePlayer) return;
+  activePlayer.pause();
+  activePlayer.remove();
+  activePlayer = undefined;
+}
 
 async function naviVoice(language: Language) {
   if (selectedVoices[language]) return selectedVoices[language];
@@ -37,8 +47,24 @@ async function naviVoice(language: Language) {
   return selectedVoices[language];
 }
 
-export async function speak(text: string, language: Language, slower = false) {
-  await Speech.stop();
+export async function speak(text: string, language: Language, slower = false, clipKey?: string) {
+  await stopSpeaking();
+
+  const asset = clipKey ? naviVoiceAssets[language][clipKey] : undefined;
+  if (asset) {
+    const player = createAudioPlayer(asset, { downloadFirst: true, updateInterval: 250 });
+    activePlayer = player;
+    player.volume = 1;
+    const subscription = player.addListener('playbackStatusUpdate', (status) => {
+      if (!status.didJustFinish || activePlayer !== player) return;
+      subscription.remove();
+      player.remove();
+      activePlayer = undefined;
+    });
+    player.play();
+    return;
+  }
+
   const voice = await naviVoice(language);
   Speech.speak(text, {
     language: languageCodes[language],
@@ -50,6 +76,7 @@ export async function speak(text: string, language: Language, slower = false) {
   });
 }
 
-export function stopSpeaking() {
-  return Speech.stop();
+export async function stopSpeaking() {
+  stopVoicePack();
+  await Speech.stop();
 }

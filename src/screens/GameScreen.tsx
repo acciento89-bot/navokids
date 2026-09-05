@@ -4,6 +4,7 @@ import { SpeakerButton } from '../components/SpeakerButton';
 import { QUESTIONS_PER_STAGE, STAGES_PER_CATEGORY } from '../config/learning';
 import { copy, t } from '../i18n';
 import { speak, stopSpeaking } from '../services/speech';
+import { commonVoiceKey, questionVoiceKey } from '../services/naviVoiceKeys';
 import { colors, shadows } from '../theme';
 import { AgeGroup, Answer, Language, LearningCategory } from '../types';
 
@@ -40,7 +41,7 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
   const question = questions[index];
 
   useEffect(() => {
-    if (question) speak(t(question.prompt, language), language, ageGroup === 'discoverer');
+    if (question) speak(t(question.prompt, language), language, ageGroup === 'discoverer', questionVoiceKey(question.id, 'prompt'));
     return () => { stopSpeaking(); };
   }, [question, language, ageGroup]);
 
@@ -51,11 +52,17 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
     setSelected(answerId);
     if (answerId === question.correctAnswerId) {
       setIsCorrect(true);
-      speak(t(question.success, language), language);
+      speak(t(question.success, language), language, false, questionVoiceKey(question.id, 'success'));
     } else {
       const nextAttempts = wrongAttempts + 1;
       setWrongAttempts(nextAttempts);
-      speak(nextAttempts >= 2 ? t(question.hint, language) : t(copy.wrong, language), language, true);
+      const useHint = nextAttempts >= 2;
+      speak(
+        useHint ? t(question.hint, language) : t(copy.wrong, language),
+        language,
+        true,
+        useHint ? questionVoiceKey(question.id, 'hint') : commonVoiceKey.wrong,
+      );
     }
   };
 
@@ -73,7 +80,7 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
       </View>
       <View style={styles.promptRow}>
         <Text style={styles.prompt}>{t(question.prompt, language)}</Text>
-        <SpeakerButton label={t(copy.listenAgain, language)} onPress={() => speak(t(question.prompt, language), language, ageGroup === 'discoverer')} />
+        <SpeakerButton label={t(copy.listenAgain, language)} onPress={() => speak(t(question.prompt, language), language, ageGroup === 'discoverer', questionVoiceKey(question.id, 'prompt'))} />
       </View>
       <View style={styles.visualCard}><Text style={styles.visual}>{question.visual}</Text></View>
       {ageGroup === 'discoverer' && <Text style={styles.discovererHint}>💡 {t(question.hint, language)}</Text>}

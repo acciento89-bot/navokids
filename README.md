@@ -2,19 +2,19 @@
 
 Eine werbefreie, zweisprachige Lernspiel-App für Kinder von etwa 3 bis 7 Jahren. Eine gemeinsame React-Native-Codebasis bedient iOS, iPadOS und Android.
 
-## Enthalten in Version 0.2.0
+## Enthalten in Version 0.3.0
 
 - fünf Lerninseln: Zahlen, Farben, Tiere, Buchstaben und Wörter
-- sechs Stufen je Insel mit insgesamt 90 unterschiedlichen gesprochenen Aufgaben
+- 30 Stufen je Insel – 150 Missionen mit 450 gesprochenen Aufgabenrunden
 - die ersten zwei Stufen jeder Insel sind kostenlos
 - altersgerechte Varianten für 3–4 und 5–7 Jahre
-- automatische deutsche und englische Sprachausgabe
+- kindlich abgestimmte deutsche und englische Navi-Sprachausgabe mit bevorzugten Enhanced-Stimmen
 - Wiederholen-Schaltfläche für jede Aufgabe
 - gesprochenes Erfolgsfeedback und gesprochene Hilfestellungen
 - lokaler Lernfortschritt ohne Kinderkonto
-- geschützter Elternbereich mit Fortschrittsübersicht
+- geschützter Elternbereich mit Fortschrittsübersicht und wechselnden Lernempfehlungen
 - bis zu vier getrennte Kinderprofile mit Altersstufe
-- animierte Lernreise als Inselkarte
+- illustrierte Abenteuerkarte mit fünf verbundenen Lerninseln
 - Premium-Stufen hinter einer Elternschranke
 - native Apple- und Google-Kaufanbindung mit Wiederherstellung
 - responsives, kindgerechtes Design für Smartphones und Tablets

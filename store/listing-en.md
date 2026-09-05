@@ -10,7 +10,7 @@ Play, learn, and discover
 
 ## Promotional text
 
-Join Navi on five colorful learning islands with spoken activities, age-adjusted challenges, and a protected progress dashboard for parents.
+Join Navi on 150 missions across five colorful learning islands with spoken activities and a protected progress dashboard for parents.
 
 ## Description
 
@@ -24,7 +24,9 @@ NavoKids turns early learning into an adventure. Friendly red panda Navi guides 
 
 Every activity is spoken aloud, so children do not need to be confident readers. Discoverer mode for ages 3–4 provides visible hints and two answer choices. Adventurer mode for ages 5–7 provides three choices and more challenging activities.
 
-Parents can create multiple local child profiles and follow progress for every learning island in the protected parent area.
+Navi’s illustrated adventure map offers 30 stages per island. Missions gradually become more challenging and combine repetition with fresh challenges.
+
+Parents can create multiple local child profiles, follow progress for every learning island, and receive changing recommendations for the next learning mission.
 
 The first two stages of every island are free. Additional stages can be unlocked from the protected parent area.
 

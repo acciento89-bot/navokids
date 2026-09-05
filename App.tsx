@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { SafeAreaView, StyleSheet, View } from 'react-native';
 import { ParentGate } from './src/components/ParentGate';
 import { categoryById } from './src/data/learningContent';
+import { QUESTIONS_PER_STAGE } from './src/config/learning';
 import { createEmptyProgress } from './src/data/progress';
 import { GameScreen } from './src/screens/GameScreen';
 import { ParentsScreen } from './src/screens/ParentsScreen';
@@ -109,7 +110,7 @@ export default function App() {
           progress: {
             ...profile.progress,
             [categoryId]: {
-              completedQuestions: Math.max(previous.completedQuestions, stage * answered),
+              completedQuestions: Math.max(previous.completedQuestions, stage * QUESTIONS_PER_STAGE),
               stars: Math.max(previous.stars, stage * 3),
             },
           },

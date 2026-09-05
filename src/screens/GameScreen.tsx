@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { SpeakerButton } from '../components/SpeakerButton';
+import { QUESTIONS_PER_STAGE, STAGES_PER_CATEGORY } from '../config/learning';
 import { copy, t } from '../i18n';
 import { speak, stopSpeaking } from '../services/speech';
 import { colors, shadows } from '../theme';
@@ -26,8 +27,11 @@ const answersForAge = (answers: Answer[], correctAnswerId: string, ageGroup: Age
 
 export function GameScreen({ category, stage, language, ageGroup, onBack, onCompleted }: { category: LearningCategory; stage: number; language: Language; ageGroup: AgeGroup; onBack: () => void; onCompleted: (answered: number) => void }) {
   const questions = useMemo(() => {
-    const offset = (stage - 1) * 3;
-    return category.questions.slice(offset, offset + 3);
+    const difficultyBand = Math.min(2, Math.floor(((stage - 1) * 3) / STAGES_PER_CATEGORY));
+    const bandSize = Math.floor(category.questions.length / 3);
+    const pool = category.questions.slice(difficultyBand * bandSize, (difficultyBand + 1) * bandSize);
+    const offset = ((stage - 1) * 5 + difficultyBand) % pool.length;
+    return Array.from({ length: QUESTIONS_PER_STAGE }, (_, index) => pool[(offset + index * 2) % pool.length]).filter((item): item is NonNullable<typeof item> => Boolean(item));
   }, [category, stage]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);

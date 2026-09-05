@@ -1,3 +1,4 @@
+import { useEffect, useMemo, useState } from 'react';
 import { Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 import { copy, t } from '../i18n';
 import { colors, shadows } from '../theme';
@@ -11,17 +12,43 @@ interface Props {
 }
 
 export function ParentGate({ visible, language, onCancel, onSuccess }: Props) {
+  const [challengeSeed, setChallengeSeed] = useState(0);
+  const challenge = useMemo(() => {
+    const useSubtraction = challengeSeed % 3 === 2;
+    const first = 6 + ((challengeSeed * 7 + 3) % 13);
+    const second = 2 + ((challengeSeed * 5 + 1) % 7);
+    const left = useSubtraction ? Math.max(first, second + 3) : first;
+    const right = useSubtraction ? Math.min(second, left - 2) : second;
+    const result = useSubtraction ? left - right : left + right;
+    const candidates = [result - 2, result, result + 2];
+    const rotation = challengeSeed % candidates.length;
+    return {
+      label: `${left} ${useSubtraction ? '−' : '+'} ${right} = ?`,
+      result,
+      answers: [...candidates.slice(rotation), ...candidates.slice(0, rotation)],
+    };
+  }, [challengeSeed]);
+
+  useEffect(() => {
+    if (visible) setChallengeSeed(Math.floor(Date.now() / 1000) % 997);
+  }, [visible]);
+
+  const answer = (value: number) => {
+    if (value === challenge.result) onSuccess();
+    else setChallengeSeed((current) => current + 1);
+  };
+
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onCancel}>
       <View style={styles.backdrop}>
         <View style={styles.card}>
           <Text style={styles.eyebrow}>{t(copy.parentArea, language)}</Text>
           <Text style={styles.title}>{t(copy.parentGate, language)}</Text>
-          <Text style={styles.math}>8 + 5 = ?</Text>
+          <Text style={styles.math}>{challenge.label}</Text>
           <View style={styles.answers}>
-            {[11, 13, 15].map((answer) => (
-              <Pressable key={answer} onPress={() => answer === 13 && onSuccess()} style={({ pressed }) => [styles.answer, pressed && styles.pressed]}>
-                <Text style={styles.answerText}>{answer}</Text>
+            {challenge.answers.map((value) => (
+              <Pressable key={value} onPress={() => answer(value)} style={({ pressed }) => [styles.answer, pressed && styles.pressed]}>
+                <Text style={styles.answerText}>{value}</Text>
               </Pressable>
             ))}
           </View>

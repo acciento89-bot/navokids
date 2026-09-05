@@ -29,6 +29,14 @@ export function usePremiumStore(onEntitlementChange: (unlocked: boolean, verifie
     onError: (error) => { setProcessing(false); setMessage(error.message); },
   });
 
+  const refreshProducts = useCallback(async () => {
+    setMessage(null);
+    await Promise.all([
+      fetchProducts({ skus: [productIds.lifetime], type: 'in-app' }),
+      fetchProducts({ skus: subscriptionProductIds, type: 'subs' }),
+    ]);
+  }, [fetchProducts]);
+
   const refreshEntitlement = useCallback(async () => {
     await Promise.all([
       getAvailablePurchases(),
@@ -39,12 +47,8 @@ export function usePremiumStore(onEntitlementChange: (unlocked: boolean, verifie
 
   useEffect(() => {
     if (!connected) return;
-    Promise.all([
-      fetchProducts({ skus: [productIds.lifetime], type: 'in-app' }),
-      fetchProducts({ skus: subscriptionProductIds, type: 'subs' }),
-      refreshEntitlement(),
-    ]).catch((error: Error) => setMessage(error.message));
-  }, [connected, fetchProducts, refreshEntitlement]);
+    Promise.all([refreshProducts(), refreshEntitlement()]).catch((error: Error) => setMessage(error.message));
+  }, [connected, refreshEntitlement, refreshProducts]);
 
   const entitled = useMemo(() => {
     const ownsLifetime = availablePurchases.some((purchase) => purchase.productId === productIds.lifetime);
@@ -72,6 +76,15 @@ export function usePremiumStore(onEntitlementChange: (unlocked: boolean, verifie
   const buy = useCallback(async (plan: PremiumPlanId) => {
     const sku = productIds[plan];
     setMessage(null);
+    if (!connected) {
+      setMessage('STORE_NOT_CONNECTED');
+      return;
+    }
+    const available = [...products, ...subscriptions].some((item) => item.id === sku);
+    if (!available) {
+      setMessage('PRODUCT_NOT_AVAILABLE');
+      return;
+    }
     setProcessing(true);
     try {
       if (plan === 'lifetime') {
@@ -89,9 +102,10 @@ export function usePremiumStore(onEntitlementChange: (unlocked: boolean, verifie
       }
     } catch (error) {
       setProcessing(false);
-      setMessage(error instanceof Error ? error.message : 'Purchase could not be started.');
+      const errorMessage = error instanceof Error ? error.message : 'Purchase could not be started.';
+      setMessage(/sku|product.*not.*found|item.*unavailable/i.test(errorMessage) ? 'PRODUCT_NOT_AVAILABLE' : errorMessage);
     }
-  }, [requestPurchase, subscriptions]);
+  }, [connected, products, requestPurchase, subscriptions]);
 
   const restore = useCallback(async () => {
     setProcessing(true);
@@ -113,6 +127,7 @@ export function usePremiumStore(onEntitlementChange: (unlocked: boolean, verifie
     message,
     entitled,
     storeChecked,
+    refreshProducts,
     buy,
     restore,
   };

@@ -10,7 +10,7 @@ Lernen, spielen, entdecken
 
 ## Werbetext
 
-Gemeinsam mit Navi entdecken Kinder fünf bunte Lerninseln – mit gesprochenen Aufgaben, altersgerechten Stufen und Fortschrittsübersicht für Eltern.
+Gemeinsam mit Navi entdecken Kinder 150 Missionen auf fünf bunten Lerninseln – mit gesprochenen Aufgaben und Fortschrittsübersicht für Eltern.
 
 ## Beschreibung
 
@@ -24,7 +24,9 @@ Mit NavoKids wird Lernen zu einer Reise. Der freundliche rote Panda Navi begleit
 
 Jede Aufgabe wird deutlich vorgelesen. Kinder müssen deshalb noch nicht sicher lesen können. Die Lernstufe „Entdecker“ für 3–4 Jahre bietet größere Hilfen und zwei Antwortmöglichkeiten. „Abenteurer“ für 5–7 Jahre bietet drei Antwortmöglichkeiten und anspruchsvollere Übungen.
 
-Eltern können mehrere lokale Kinderprofile anlegen und den Fortschritt jeder Lerninsel im geschützten Elternbereich verfolgen.
+Auf Navis illustrierter Abenteuerkarte warten 30 Stufen je Insel. Die Missionen werden zunehmend anspruchsvoller und verbinden Wiederholung mit neuen Herausforderungen.
+
+Eltern können mehrere lokale Kinderprofile anlegen, den Fortschritt jeder Lerninsel verfolgen und erhalten wechselnde Empfehlungen für die nächste Lernmission.
 
 Die ersten zwei Stufen jeder Lerninsel sind kostenlos spielbar. Weitere Stufen können im geschützten Elternbereich freigeschaltet werden.
 

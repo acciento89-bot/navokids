@@ -1,5 +1,6 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { t } from '../i18n';
+import { FREE_STAGES_PER_CATEGORY, QUESTIONS_PER_STAGE, STAGES_PER_CATEGORY } from '../config/learning';
 import { colors, shadows } from '../theme';
 import { Language, LearningCategory } from '../types';
 
@@ -13,16 +14,16 @@ export function StagesScreen({ category, language, completedQuestions, premiumUn
         <Text style={styles.subtitle}>{t(category.subtitle, language)}</Text>
       </View>
       <View style={styles.path}>
-        {[1, 2, 3, 4, 5, 6].map((stage) => {
-          const free = stage <= 2;
+        {Array.from({ length: STAGES_PER_CATEGORY }, (_, index) => index + 1).map((stage) => {
+          const free = stage <= FREE_STAGES_PER_CATEGORY;
           const available = free || premiumUnlocked;
-          const complete = completedQuestions >= stage * 3;
+          const complete = completedQuestions >= stage * QUESTIONS_PER_STAGE;
           return (
             <Pressable key={stage} onPress={() => onStage(stage)} style={({ pressed }) => [styles.stage, !available && styles.lockedStage, pressed && styles.pressed]}>
               <View style={[styles.stageNumber, { backgroundColor: available ? category.color : '#AAB6B7' }]}><Text style={styles.stageNumberText}>{available ? stage : '🔒'}</Text></View>
               <View style={styles.stageCopy}>
                 <Text style={styles.stageTitle}>{language === 'de' ? `Stufe ${stage}` : `Stage ${stage}`}</Text>
-                <Text style={styles.stageSubtitle}>{complete ? (language === 'de' ? 'Geschafft!' : 'Completed!') : free ? (language === 'de' ? 'Kostenlos spielen' : 'Play for free') : premiumUnlocked ? (language === 'de' ? 'Freigeschaltet' : 'Unlocked') : 'NavoKids Premium'}</Text>
+                <Text style={styles.stageSubtitle}>{complete ? (language === 'de' ? 'Geschafft!' : 'Completed!') : free ? (language === 'de' ? 'Kostenlos spielen' : 'Play for free') : premiumUnlocked ? (language === 'de' ? 'Neue Mission' : 'New mission') : 'NavoKids Premium'}</Text>
               </View>
               <Text style={styles.stars}>{complete ? '⭐⭐⭐' : available ? '☆ ☆ ☆' : ''}</Text>
             </Pressable>

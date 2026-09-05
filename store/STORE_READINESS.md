@@ -3,11 +3,11 @@
 ## App identity
 
 - App name: NavoKids – Lerninseln
-- Version: 0.2.0
+- Version: 0.3.0
 - iOS bundle ID: `com.kamilunavo.navokids`
 - Android application ID: `com.kamilunavo.navokids`
-- iOS build number: 1
-- Android version code: 1
+- iOS build number: 2
+- Android version code: 4
 - Primary category: Education
 - Age group: 3–7, parent-guided
 
@@ -17,7 +17,7 @@
 - Yearly: `com.kamilunavo.navokids.yearly`
 - Lifetime: `com.kamilunavo.navokids.lifetime`
 - Stages 1–2 of every island are free.
-- Stages 3–6 require Premium.
+- Stages 3–30 require Premium.
 - Purchases are only reachable through the parental gate.
 
 ## Privacy declaration
@@ -39,9 +39,6 @@ The URLs above must be published and checked before either store submission.
 
 ## Remaining account-side work
 
-1. Initialize/link the Expo project and store its generated EAS project ID in app config. The first connected run must be interactive.
-2. Create all three products in App Store Connect and Google Play Console.
-3. Create the first iOS and Android production builds interactively so signing credentials exist.
-4. Add `EXPO_TOKEN` to GitHub Actions for later non-interactive builds.
-5. Add App Store Connect and Google Play service credentials for automated submission.
-6. Add server-side receipt validation before public production release.
+1. Create all three products in App Store Connect and Google Play Console and move them to a testable/ready state.
+2. Add Google Play service credentials for automated Android submission.
+3. Add server-side receipt validation before public production release.

@@ -1,12 +1,23 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { categories } from '../data/learningContent';
+import { QUESTIONS_PER_STAGE, STAGES_PER_CATEGORY, TOTAL_QUESTIONS, TOTAL_QUESTIONS_PER_CATEGORY } from '../config/learning';
 import { copy, t } from '../i18n';
 import { colors, shadows } from '../theme';
 import { ChildProfile, Language, Progress } from '../types';
 
 export function ParentsScreen({ language, progress, profiles, activeProfileId, premiumUnlocked, onBack, onAddProfile, onSwitchProfile, onPremium }: { language: Language; progress: Progress; profiles: ChildProfile[]; activeProfileId: string; premiumUnlocked: boolean; onBack: () => void; onAddProfile: () => void; onSwitchProfile: () => void; onPremium: () => void }) {
   const completed = Object.values(progress).reduce((sum, value) => sum + value.completedQuestions, 0);
-  const percent = Math.round((completed / 90) * 100);
+  const percent = Math.min(100, Math.round((completed / TOTAL_QUESTIONS) * 100));
+  const focusCategory = [...categories].sort((a, b) => progress[a.id].completedQuestions - progress[b.id].completedQuestions)[0] ?? categories[0];
+  const focusProgress = focusCategory ? progress[focusCategory.id].completedQuestions : 0;
+  const focusStage = Math.min(STAGES_PER_CATEGORY, Math.floor(focusProgress / QUESTIONS_PER_STAGE) + 1);
+  const recommendationVariant = (completed + Object.values(progress).reduce((sum, value) => sum + value.stars, 0)) % 4;
+  const recommendation = focusCategory ? [
+    language === 'de' ? `Als Nächstes: Stufe ${focusStage} auf der ${t(focusCategory.title, language)}-Insel.` : `Next: Stage ${focusStage} on ${t(focusCategory.title, language)} Island.`,
+    language === 'de' ? `${t(focusCategory.title, language)} hat aktuell das meiste Übungspotenzial. Eine kurze Runde reicht.` : `${t(focusCategory.title, language)} currently has the most room to grow. One short round is enough.`,
+    language === 'de' ? `Heute empfiehlt Navi eine neue Mission auf der ${t(focusCategory.title, language)}-Insel.` : `Today Navi recommends a new mission on ${t(focusCategory.title, language)} Island.`,
+    language === 'de' ? `Für einen ausgewogenen Lernmix geht es mit ${t(focusCategory.title, language)}, Stufe ${focusStage}, weiter.` : `For a balanced learning mix, continue with ${t(focusCategory.title, language)}, Stage ${focusStage}.`,
+  ][recommendationVariant] : '';
   return (
     <ScrollView contentContainerStyle={styles.content}>
       <View style={styles.topbar}><Pressable onPress={onBack} style={styles.back}><Text style={styles.backText}>‹</Text></Pressable><Text style={styles.title}>{t(copy.parentArea, language)}</Text></View>
@@ -22,11 +33,11 @@ export function ParentsScreen({ language, progress, profiles, activeProfileId, p
       <Text style={styles.sectionTitle}>{language === 'de' ? 'Fortschritt nach Kategorie' : 'Progress by category'}</Text>
       <View style={styles.list}>
         {categories.map((category) => {
-          const value = Math.min(100, Math.round((progress[category.id].completedQuestions / 18) * 100));
+          const value = Math.min(100, Math.round((progress[category.id].completedQuestions / TOTAL_QUESTIONS_PER_CATEGORY) * 100));
           return <View key={category.id} style={styles.category}><View style={[styles.categoryIcon, { backgroundColor: category.lightColor }]}><Text style={[styles.categoryIconText, { color: category.color }]}>{category.icon}</Text></View><View style={styles.categoryMain}><View style={styles.categoryHeader}><Text style={styles.categoryTitle}>{t(category.title, language)}</Text><Text style={styles.categoryPercent}>{value}%</Text></View><View style={styles.track}><View style={[styles.fill, { width: `${value}%`, backgroundColor: category.color }]} /></View></View></View>;
         })}
       </View>
-      <View style={styles.recommendation}><Text style={styles.recommendationIcon}>🌱</Text><View style={styles.recommendationCopy}><Text style={styles.recommendationTitle}>{language === 'de' ? 'Nächste Empfehlung' : 'Next recommendation'}</Text><Text style={styles.recommendationText}>{language === 'de' ? 'Eine kurze Wiederholung auf der Zahleninsel festigt das Gelernte.' : 'A short Numbers Island review will strengthen recent learning.'}</Text></View></View>
+      <View style={styles.recommendation}><Text style={styles.recommendationIcon}>🧭</Text><View style={styles.recommendationCopy}><Text style={styles.recommendationTitle}>{language === 'de' ? 'Navis nächste Empfehlung' : 'Navi’s next recommendation'}</Text><Text style={styles.recommendationText}>{recommendation}</Text></View></View>
       <Pressable onPress={onPremium} style={[styles.premium, premiumUnlocked && styles.premiumActive]}><Text style={styles.premiumIcon}>{premiumUnlocked ? '✓' : '★'}</Text><View style={styles.premiumCopy}><Text style={styles.premiumTitle}>{premiumUnlocked ? (language === 'de' ? 'Premium ist aktiv' : 'Premium is active') : 'NavoKids Premium'}</Text><Text style={styles.premiumText}>{premiumUnlocked ? (language === 'de' ? 'Alle Lernstufen sind freigeschaltet.' : 'All learning stages are unlocked.') : (language === 'de' ? 'Alle Lerninseln und Stufen freischalten' : 'Unlock every learning island and stage')}</Text></View><Text style={styles.premiumArrow}>›</Text></Pressable>
       {profiles.length < 4 && <Pressable onPress={onAddProfile} style={styles.addProfile}><Text style={styles.addProfileText}>+ {language === 'de' ? 'Kinderprofil hinzufügen' : 'Add child profile'}</Text></Pressable>}
       <View style={styles.privacy}><Text style={styles.privacyTitle}>{language === 'de' ? 'Datenschutz für Kinder' : 'Children’s privacy'}</Text><Text style={styles.privacyText}>{language === 'de' ? 'Der Fortschritt bleibt auf diesem Gerät. Es werden keine Werbe-ID, kein Standort und keine persönlichen Kinderdaten erfasst.' : 'Progress stays on this device. No advertising ID, location, or personal child data is collected.'}</Text></View>

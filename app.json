@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "NavoKids – Lerninseln",
+    "slug": "navokids",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/navi-mascot-optimized.png",
+    "splash": {
+      "image": "./assets/navi-mascot-optimized.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF8E8"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kamilunavo.navokids",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.kamilunavo.navokids",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/navi-mascot-optimized.png",
+        "backgroundColor": "#FFF8E8"
+      },
+      "permissions": []
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

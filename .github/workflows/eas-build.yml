@@ -25,7 +25,7 @@ jobs:
         shell: bash
         run: |
           for attempt in {1..50}; do
-            build_json="$(eas build:view "$BUILD_ID" --json --non-interactive)"
+            build_json="$(eas build:view "$BUILD_ID" --json)"
             build_status="$(printf '%s' "$build_json" | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>console.log(JSON.parse(s).status))")"
             echo "EAS_BUILD_STATUS=$build_status"
             if [ "$build_status" = "FINISHED" ]; then

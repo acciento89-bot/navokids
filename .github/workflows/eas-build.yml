@@ -9,11 +9,17 @@ on:
         type: choice
         options: [all, ios, android]
         default: all
+  push:
+    branches: [eas-bootstrap]
+    paths:
+      - ".github/workflows/eas-build.yml"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    env:
+      BUILD_PLATFORM: ${{ inputs.platform || 'all' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -29,4 +35,4 @@ jobs:
       - run: npm run content:check
       - run: npm run store:check
       - name: Start store build
-        run: eas build --platform "${{ inputs.platform }}" --profile production --non-interactive --no-wait
+        run: eas build --platform "$BUILD_PLATFORM" --profile production --non-interactive --no-wait

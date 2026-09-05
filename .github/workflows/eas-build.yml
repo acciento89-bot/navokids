@@ -1,4 +1,4 @@
-name: Build NavoKids for iOS
+name: Submit NavoKids to TestFlight
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
       - ".github/workflows/eas-build.yml"
 
 jobs:
-  build_ios:
+  submit_ios:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -15,14 +15,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: npm
       - uses: expo/expo-github-action@v8
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
       - run: npm ci
-      - run: npm run typecheck
-      - run: npm run content:check
-      - run: npm run store:check
-      - name: Build signed iOS production app
-        run: eas build --platform ios --profile production --non-interactive
+      - name: Submit signed iOS build to TestFlight
+        run: eas submit --platform ios --id 3b5b4a68-d4b2-4a77-abbc-11a871454070 --profile production --non-interactive --wait

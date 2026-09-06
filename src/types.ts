@@ -26,6 +26,8 @@ export interface Question {
   id: string;
   prompt: LocalizedText;
   visual: string;
+  showNavi?: boolean;
+  conceptKey?: string;
   answers: Answer[];
   correctAnswerId: string;
   success: LocalizedText;

@@ -17,12 +17,13 @@ export const categories: LearningCategory[] = [
     "questionsByAge": {
       "discoverer": [
         {
-          "id": "dnu1",
+          "id": "d2nu1",
           "prompt": {
-            "de": "Tippe auf die Zahl 1 an der Schatzkiste.",
-            "en": "Tap number 1 by the treasure chest."
+            "de": "Navi zeigt dir dieses Bild: Apfel und die Zahl 1. Finde dieselbe Zahl.",
+            "en": "Navi shows you a apple and number 1. Find the same number."
           },
-          "visual": "",
+          "visual": "🍎   1",
+          "showNavi": true,
           "answers": [
             {
               "id": "1",
@@ -35,264 +36,21 @@ export const categories: LearningCategory[] = [
           ],
           "correctAnswerId": "1",
           "success": {
-            "de": "Ja! Das ist die 1.",
-            "en": "Yes! That is 1."
+            "de": "Ja! Du hast die Zahl 1 gefunden.",
+            "en": "Yes! You found number 1."
           },
           "hint": {
-            "de": "Navi sagt die Zahl noch einmal: 1.",
-            "en": "Navi says the number again: 1."
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
           }
         },
         {
-          "id": "dnu2",
+          "id": "d2nu2",
           "prompt": {
-            "de": "Tippe auf die Zahl 2 am Segel.",
-            "en": "Tap number 2 by the sail."
+            "de": "Zähle auf der weißen Karte: blaues Quadrat. Wie viele Bilder sind es?",
+            "en": "Count the blue square pictures on the white card. How many are there?"
           },
-          "visual": "",
-          "answers": [
-            {
-              "id": "3",
-              "label": "3"
-            },
-            {
-              "id": "2",
-              "label": "2"
-            }
-          ],
-          "correctAnswerId": "2",
-          "success": {
-            "de": "Ja! Das ist die 2.",
-            "en": "Yes! That is 2."
-          },
-          "hint": {
-            "de": "Navi sagt die Zahl noch einmal: 2.",
-            "en": "Navi says the number again: 2."
-          }
-        },
-        {
-          "id": "dnu3",
-          "prompt": {
-            "de": "Tippe auf die Zahl 3 am Wegweiser.",
-            "en": "Tap number 3 by the signpost."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "3",
-              "label": "3"
-            },
-            {
-              "id": "4",
-              "label": "4"
-            }
-          ],
-          "correctAnswerId": "3",
-          "success": {
-            "de": "Ja! Das ist die 3.",
-            "en": "Yes! That is 3."
-          },
-          "hint": {
-            "de": "Navi sagt die Zahl noch einmal: 3.",
-            "en": "Navi says the number again: 3."
-          }
-        },
-        {
-          "id": "dnu4",
-          "prompt": {
-            "de": "Tippe auf die Zahl 4 auf der Landkarte.",
-            "en": "Tap number 4 on the map."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "5",
-              "label": "5"
-            },
-            {
-              "id": "4",
-              "label": "4"
-            }
-          ],
-          "correctAnswerId": "4",
-          "success": {
-            "de": "Ja! Das ist die 4.",
-            "en": "Yes! That is 4."
-          },
-          "hint": {
-            "de": "Navi sagt die Zahl noch einmal: 4.",
-            "en": "Navi says the number again: 4."
-          }
-        },
-        {
-          "id": "dnu5",
-          "prompt": {
-            "de": "Tippe auf die Zahl 5 in der Höhle.",
-            "en": "Tap number 5 in the cave."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "5",
-              "label": "5"
-            },
-            {
-              "id": "4",
-              "label": "4"
-            }
-          ],
-          "correctAnswerId": "5",
-          "success": {
-            "de": "Ja! Das ist die 5.",
-            "en": "Yes! That is 5."
-          },
-          "hint": {
-            "de": "Navi sagt die Zahl noch einmal: 5.",
-            "en": "Navi says the number again: 5."
-          }
-        },
-        {
-          "id": "dnu6",
-          "prompt": {
-            "de": "Tippe auf die Zahl 1 am Boot.",
-            "en": "Tap number 1 by the boat."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "2",
-              "label": "2"
-            },
-            {
-              "id": "1",
-              "label": "1"
-            }
-          ],
-          "correctAnswerId": "1",
-          "success": {
-            "de": "Ja! Das ist die 1.",
-            "en": "Yes! That is 1."
-          },
-          "hint": {
-            "de": "Navi sagt die Zahl noch einmal: 1.",
-            "en": "Navi says the number again: 1."
-          }
-        },
-        {
-          "id": "dnu7",
-          "prompt": {
-            "de": "Tippe auf die Zahl 2 bei der Fahne.",
-            "en": "Tap number 2 by the flag."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "2",
-              "label": "2"
-            },
-            {
-              "id": "3",
-              "label": "3"
-            }
-          ],
-          "correctAnswerId": "2",
-          "success": {
-            "de": "Ja! Das ist die 2.",
-            "en": "Yes! That is 2."
-          },
-          "hint": {
-            "de": "Navi sagt die Zahl noch einmal: 2.",
-            "en": "Navi says the number again: 2."
-          }
-        },
-        {
-          "id": "dnu8",
-          "prompt": {
-            "de": "Tippe auf die Zahl 3 an der Brücke.",
-            "en": "Tap number 3 by the bridge."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "4",
-              "label": "4"
-            },
-            {
-              "id": "3",
-              "label": "3"
-            }
-          ],
-          "correctAnswerId": "3",
-          "success": {
-            "de": "Ja! Das ist die 3.",
-            "en": "Yes! That is 3."
-          },
-          "hint": {
-            "de": "Navi sagt die Zahl noch einmal: 3.",
-            "en": "Navi says the number again: 3."
-          }
-        },
-        {
-          "id": "dnu9",
-          "prompt": {
-            "de": "Tippe auf die Zahl 4 am Rucksack.",
-            "en": "Tap number 4 by the backpack."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "4",
-              "label": "4"
-            },
-            {
-              "id": "5",
-              "label": "5"
-            }
-          ],
-          "correctAnswerId": "4",
-          "success": {
-            "de": "Ja! Das ist die 4.",
-            "en": "Yes! That is 4."
-          },
-          "hint": {
-            "de": "Navi sagt die Zahl noch einmal: 4.",
-            "en": "Navi says the number again: 4."
-          }
-        },
-        {
-          "id": "dnu10",
-          "prompt": {
-            "de": "Tippe auf die Zahl 5 am Leuchtturm.",
-            "en": "Tap number 5 by the lighthouse."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "4",
-              "label": "4"
-            },
-            {
-              "id": "5",
-              "label": "5"
-            }
-          ],
-          "correctAnswerId": "5",
-          "success": {
-            "de": "Ja! Das ist die 5.",
-            "en": "Yes! That is 5."
-          },
-          "hint": {
-            "de": "Navi sagt die Zahl noch einmal: 5.",
-            "en": "Navi says the number again: 5."
-          }
-        },
-        {
-          "id": "dnu11",
-          "prompt": {
-            "de": "Wie viele Hund-Bilder siehst du?",
-            "en": "How many Dog pictures can you see?"
-          },
-          "visual": "🐶",
+          "visual": "🟦",
           "answers": [
             {
               "id": "2",
@@ -314,12 +72,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu12",
+          "id": "d2nu3",
           "prompt": {
-            "de": "Wie viele Katze-Bilder siehst du?",
-            "en": "How many Cat pictures can you see?"
+            "de": "Navi zeigt die Zahl 1. Auf welcher Antwortkarte siehst du diese Menge? Suche: gelbes Quadrat.",
+            "en": "Navi shows number 1. Which answer card shows that many yellow square pictures?"
           },
-          "visual": "🐱 🐱",
+          "visual": "1",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-0-correct",
+              "label": "🟨"
+            },
+            {
+              "id": "quantity-0-other",
+              "label": "🟨 🟨"
+            }
+          ],
+          "correctAnswerId": "quantity-0-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 1 Bilder.",
+            "en": "Exactly! That answer shows 1 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 1 und stoppe dann.",
+            "en": "Count to 1 and then stop."
+          }
+        },
+        {
+          "id": "d2nu4",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Erdbeere und die Zahl 2. Finde dieselbe Zahl.",
+            "en": "Navi shows you a strawberry and number 2. Find the same number."
+          },
+          "visual": "🍓   2",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "3",
+              "label": "3"
+            },
+            {
+              "id": "2",
+              "label": "2"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Ja! Du hast die Zahl 2 gefunden.",
+            "en": "Yes! You found number 2."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu5",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: blauer Diamant. Wie viele Bilder sind es?",
+            "en": "Count the blue diamond pictures on the white card. How many are there?"
+          },
+          "visual": "🔷 🔷",
           "answers": [
             {
               "id": "2",
@@ -341,12 +155,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu13",
+          "id": "d2nu6",
           "prompt": {
-            "de": "Wie viele Maus-Bilder siehst du?",
-            "en": "How many Mouse pictures can you see?"
+            "de": "Navi zeigt die Zahl 2. Auf welcher Antwortkarte siehst du diese Menge? Suche: Zitrone.",
+            "en": "Navi shows number 2. Which answer card shows that many lemon pictures?"
           },
-          "visual": "🐭 🐭 🐭",
+          "visual": "2",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-1-other",
+              "label": "🍋 🍋 🍋"
+            },
+            {
+              "id": "quantity-1-correct",
+              "label": "🍋 🍋"
+            }
+          ],
+          "correctAnswerId": "quantity-1-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 2 Bilder.",
+            "en": "Exactly! That answer shows 2 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 2 und stoppe dann.",
+            "en": "Count to 2 and then stop."
+          }
+        },
+        {
+          "id": "d2nu7",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Kirschen und die Zahl 3. Finde dieselbe Zahl.",
+            "en": "Navi shows you a cherries and number 3. Find the same number."
+          },
+          "visual": "🍒   3",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "3",
+              "label": "3"
+            },
+            {
+              "id": "4",
+              "label": "4"
+            }
+          ],
+          "correctAnswerId": "3",
+          "success": {
+            "de": "Ja! Du hast die Zahl 3 gefunden.",
+            "en": "Yes! You found number 3."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu8",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: grüner Kreis. Wie viele Bilder sind es?",
+            "en": "Count the green circle pictures on the white card. How many are there?"
+          },
+          "visual": "🟢 🟢 🟢",
           "answers": [
             {
               "id": "4",
@@ -368,12 +238,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu14",
+          "id": "d2nu9",
           "prompt": {
-            "de": "Wie viele Hase-Bilder siehst du?",
-            "en": "How many Rabbit pictures can you see?"
+            "de": "Navi zeigt die Zahl 3. Auf welcher Antwortkarte siehst du diese Menge? Suche: Banane.",
+            "en": "Navi shows number 3. Which answer card shows that many banana pictures?"
           },
-          "visual": "🐰 🐰 🐰 🐰",
+          "visual": "3",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-2-correct",
+              "label": "🍌 🍌 🍌"
+            },
+            {
+              "id": "quantity-2-other",
+              "label": "🍌 🍌 🍌 🍌"
+            }
+          ],
+          "correctAnswerId": "quantity-2-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 3 Bilder.",
+            "en": "Exactly! That answer shows 3 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 3 und stoppe dann.",
+            "en": "Count to 3 and then stop."
+          }
+        },
+        {
+          "id": "d2nu10",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Tomate und die Zahl 4. Finde dieselbe Zahl.",
+            "en": "Navi shows you a tomato and number 4. Find the same number."
+          },
+          "visual": "🍅   4",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "5",
+              "label": "5"
+            },
+            {
+              "id": "4",
+              "label": "4"
+            }
+          ],
+          "correctAnswerId": "4",
+          "success": {
+            "de": "Ja! Du hast die Zahl 4 gefunden.",
+            "en": "Yes! You found number 4."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu11",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: grünes Herz. Wie viele Bilder sind es?",
+            "en": "Count the green heart pictures on the white card. How many are there?"
+          },
+          "visual": "💚 💚 💚 💚",
           "answers": [
             {
               "id": "4",
@@ -395,12 +321,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu15",
+          "id": "d2nu12",
           "prompt": {
-            "de": "Wie viele Fuchs-Bilder siehst du?",
-            "en": "How many Fox pictures can you see?"
+            "de": "Navi zeigt die Zahl 4. Auf welcher Antwortkarte siehst du diese Menge? Suche: Stern.",
+            "en": "Navi shows number 4. Which answer card shows that many star pictures?"
           },
-          "visual": "🦊 🦊 🦊 🦊 🦊",
+          "visual": "4",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-3-other",
+              "label": "🌟 🌟 🌟 🌟 🌟"
+            },
+            {
+              "id": "quantity-3-correct",
+              "label": "🌟 🌟 🌟 🌟"
+            }
+          ],
+          "correctAnswerId": "quantity-3-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 4 Bilder.",
+            "en": "Exactly! That answer shows 4 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 4 und stoppe dann.",
+            "en": "Count to 4 and then stop."
+          }
+        },
+        {
+          "id": "d2nu13",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: rotes Herz und die Zahl 5. Finde dieselbe Zahl.",
+            "en": "Navi shows you a red heart and number 5. Find the same number."
+          },
+          "visual": "❤️   5",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "5",
+              "label": "5"
+            },
+            {
+              "id": "4",
+              "label": "4"
+            }
+          ],
+          "correctAnswerId": "5",
+          "success": {
+            "de": "Ja! Du hast die Zahl 5 gefunden.",
+            "en": "Yes! You found number 5."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu14",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: grünes Quadrat. Wie viele Bilder sind es?",
+            "en": "Count the green square pictures on the white card. How many are there?"
+          },
+          "visual": "🟩 🟩 🟩 🟩 🟩",
           "answers": [
             {
               "id": "4",
@@ -422,12 +404,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu16",
+          "id": "d2nu15",
           "prompt": {
-            "de": "Wie viele Bär-Bilder siehst du?",
-            "en": "How many Bear pictures can you see?"
+            "de": "Navi zeigt die Zahl 5. Auf welcher Antwortkarte siehst du diese Menge? Suche: orangefarbener Kreis.",
+            "en": "Navi shows number 5. Which answer card shows that many orange circle pictures?"
           },
-          "visual": "🐻",
+          "visual": "5",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-4-correct",
+              "label": "🟠 🟠 🟠 🟠 🟠"
+            },
+            {
+              "id": "quantity-4-other",
+              "label": "🟠 🟠 🟠 🟠"
+            }
+          ],
+          "correctAnswerId": "quantity-4-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 5 Bilder.",
+            "en": "Exactly! That answer shows 5 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 5 und stoppe dann.",
+            "en": "Count to 5 and then stop."
+          }
+        },
+        {
+          "id": "d2nu16",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Feuerwehrauto und die Zahl 1. Finde dieselbe Zahl.",
+            "en": "Navi shows you a fire truck and number 1. Find the same number."
+          },
+          "visual": "🚒   1",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "2",
+              "label": "2"
+            },
+            {
+              "id": "1",
+              "label": "1"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Ja! Du hast die Zahl 1 gefunden.",
+            "en": "Yes! You found number 1."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu17",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: grüner Apfel. Wie viele Bilder sind es?",
+            "en": "Count the green apple pictures on the white card. How many are there?"
+          },
+          "visual": "🍏",
           "answers": [
             {
               "id": "1",
@@ -449,12 +487,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu17",
+          "id": "d2nu18",
           "prompt": {
-            "de": "Wie viele Löwe-Bilder siehst du?",
-            "en": "How many Lion pictures can you see?"
+            "de": "Navi zeigt die Zahl 1. Auf welcher Antwortkarte siehst du diese Menge? Suche: orangefarbenes Herz.",
+            "en": "Navi shows number 1. Which answer card shows that many orange heart pictures?"
           },
-          "visual": "🦁 🦁",
+          "visual": "1",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-5-other",
+              "label": "🧡 🧡"
+            },
+            {
+              "id": "quantity-5-correct",
+              "label": "🧡"
+            }
+          ],
+          "correctAnswerId": "quantity-5-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 1 Bilder.",
+            "en": "Exactly! That answer shows 1 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 1 und stoppe dann.",
+            "en": "Count to 1 and then stop."
+          }
+        },
+        {
+          "id": "d2nu19",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: blauer Kreis und die Zahl 2. Finde dieselbe Zahl.",
+            "en": "Navi shows you a blue circle and number 2. Find the same number."
+          },
+          "visual": "🔵   2",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "2",
+              "label": "2"
+            },
+            {
+              "id": "3",
+              "label": "3"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Ja! Du hast die Zahl 2 gefunden.",
+            "en": "Yes! You found number 2."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu20",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: Brokkoli. Wie viele Bilder sind es?",
+            "en": "Count the broccoli pictures on the white card. How many are there?"
+          },
+          "visual": "🥦 🥦",
           "answers": [
             {
               "id": "3",
@@ -476,12 +570,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu18",
+          "id": "d2nu21",
           "prompt": {
-            "de": "Wie viele Tiger-Bilder siehst du?",
-            "en": "How many Tiger pictures can you see?"
+            "de": "Navi zeigt die Zahl 2. Auf welcher Antwortkarte siehst du diese Menge? Suche: orangefarbenes Quadrat.",
+            "en": "Navi shows number 2. Which answer card shows that many orange square pictures?"
           },
-          "visual": "🐯 🐯 🐯",
+          "visual": "2",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-6-correct",
+              "label": "🟧 🟧"
+            },
+            {
+              "id": "quantity-6-other",
+              "label": "🟧 🟧 🟧"
+            }
+          ],
+          "correctAnswerId": "quantity-6-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 2 Bilder.",
+            "en": "Exactly! That answer shows 2 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 2 und stoppe dann.",
+            "en": "Count to 2 and then stop."
+          }
+        },
+        {
+          "id": "d2nu22",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: blaues Herz und die Zahl 3. Finde dieselbe Zahl.",
+            "en": "Navi shows you a blue heart and number 3. Find the same number."
+          },
+          "visual": "💙   3",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "4",
+              "label": "4"
+            },
+            {
+              "id": "3",
+              "label": "3"
+            }
+          ],
+          "correctAnswerId": "3",
+          "success": {
+            "de": "Ja! Du hast die Zahl 3 gefunden.",
+            "en": "Yes! You found number 3."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu23",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: Gurke. Wie viele Bilder sind es?",
+            "en": "Count the cucumber pictures on the white card. How many are there?"
+          },
+          "visual": "🥒 🥒 🥒",
           "answers": [
             {
               "id": "3",
@@ -503,12 +653,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu19",
+          "id": "d2nu24",
           "prompt": {
-            "de": "Wie viele Elefant-Bilder siehst du?",
-            "en": "How many Elephant pictures can you see?"
+            "de": "Navi zeigt die Zahl 3. Auf welcher Antwortkarte siehst du diese Menge? Suche: Orange.",
+            "en": "Navi shows number 3. Which answer card shows that many orange fruit pictures?"
           },
-          "visual": "🐘 🐘 🐘 🐘",
+          "visual": "3",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-7-other",
+              "label": "🍊 🍊 🍊 🍊"
+            },
+            {
+              "id": "quantity-7-correct",
+              "label": "🍊 🍊 🍊"
+            }
+          ],
+          "correctAnswerId": "quantity-7-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 3 Bilder.",
+            "en": "Exactly! That answer shows 3 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 3 und stoppe dann.",
+            "en": "Count to 3 and then stop."
+          }
+        },
+        {
+          "id": "d2nu25",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Heidelbeeren und die Zahl 4. Finde dieselbe Zahl.",
+            "en": "Navi shows you a blueberries and number 4. Find the same number."
+          },
+          "visual": "🫐   4",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "4",
+              "label": "4"
+            },
+            {
+              "id": "5",
+              "label": "5"
+            }
+          ],
+          "correctAnswerId": "4",
+          "success": {
+            "de": "Ja! Du hast die Zahl 4 gefunden.",
+            "en": "Yes! You found number 4."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu26",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: gelber Kreis. Wie viele Bilder sind es?",
+            "en": "Count the yellow circle pictures on the white card. How many are there?"
+          },
+          "visual": "🟡 🟡 🟡 🟡",
           "answers": [
             {
               "id": "5",
@@ -530,12 +736,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu20",
+          "id": "d2nu27",
           "prompt": {
-            "de": "Wie viele Giraffe-Bilder siehst du?",
-            "en": "How many Giraffe pictures can you see?"
+            "de": "Navi zeigt die Zahl 4. Auf welcher Antwortkarte siehst du diese Menge? Suche: Karotte.",
+            "en": "Navi shows number 4. Which answer card shows that many carrot pictures?"
           },
-          "visual": "🦒 🦒 🦒 🦒 🦒",
+          "visual": "4",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-8-correct",
+              "label": "🥕 🥕 🥕 🥕"
+            },
+            {
+              "id": "quantity-8-other",
+              "label": "🥕 🥕 🥕 🥕 🥕"
+            }
+          ],
+          "correctAnswerId": "quantity-8-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 4 Bilder.",
+            "en": "Exactly! That answer shows 4 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 4 und stoppe dann.",
+            "en": "Count to 4 and then stop."
+          }
+        },
+        {
+          "id": "d2nu28",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Wassertropfen und die Zahl 5. Finde dieselbe Zahl.",
+            "en": "Navi shows you a water drop and number 5. Find the same number."
+          },
+          "visual": "💧   5",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "4",
+              "label": "4"
+            },
+            {
+              "id": "5",
+              "label": "5"
+            }
+          ],
+          "correctAnswerId": "5",
+          "success": {
+            "de": "Ja! Du hast die Zahl 5 gefunden.",
+            "en": "Yes! You found number 5."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu29",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: gelbes Herz. Wie viele Bilder sind es?",
+            "en": "Count the yellow heart pictures on the white card. How many are there?"
+          },
+          "visual": "💛 💛 💛 💛 💛",
           "answers": [
             {
               "id": "5",
@@ -557,12 +819,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu21",
+          "id": "d2nu30",
           "prompt": {
-            "de": "Wie viele Zebra-Bilder siehst du?",
-            "en": "How many Zebra pictures can you see?"
+            "de": "Navi zeigt die Zahl 5. Auf welcher Antwortkarte siehst du diese Menge? Suche: Kürbis.",
+            "en": "Navi shows number 5. Which answer card shows that many pumpkin pictures?"
           },
-          "visual": "🦓",
+          "visual": "5",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-9-other",
+              "label": "🎃 🎃 🎃 🎃"
+            },
+            {
+              "id": "quantity-9-correct",
+              "label": "🎃 🎃 🎃 🎃 🎃"
+            }
+          ],
+          "correctAnswerId": "quantity-9-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 5 Bilder.",
+            "en": "Exactly! That answer shows 5 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 5 und stoppe dann.",
+            "en": "Count to 5 and then stop."
+          }
+        },
+        {
+          "id": "d2nu31",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: blaues Quadrat und die Zahl 1. Finde dieselbe Zahl.",
+            "en": "Navi shows you a blue square and number 1. Find the same number."
+          },
+          "visual": "🟦   1",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "1",
+              "label": "1"
+            },
+            {
+              "id": "2",
+              "label": "2"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Ja! Du hast die Zahl 1 gefunden.",
+            "en": "Yes! You found number 1."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu32",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: gelbes Quadrat. Wie viele Bilder sind es?",
+            "en": "Count the yellow square pictures on the white card. How many are there?"
+          },
+          "visual": "🟨",
           "answers": [
             {
               "id": "2",
@@ -584,12 +902,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu22",
+          "id": "d2nu33",
           "prompt": {
-            "de": "Wie viele Affe-Bilder siehst du?",
-            "en": "How many Monkey pictures can you see?"
+            "de": "Navi zeigt die Zahl 1. Auf welcher Antwortkarte siehst du diese Menge? Suche: lilafarbener Kreis.",
+            "en": "Navi shows number 1. Which answer card shows that many purple circle pictures?"
           },
-          "visual": "🐒 🐒",
+          "visual": "1",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-10-correct",
+              "label": "🟣"
+            },
+            {
+              "id": "quantity-10-other",
+              "label": "🟣 🟣"
+            }
+          ],
+          "correctAnswerId": "quantity-10-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 1 Bilder.",
+            "en": "Exactly! That answer shows 1 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 1 und stoppe dann.",
+            "en": "Count to 1 and then stop."
+          }
+        },
+        {
+          "id": "d2nu34",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: blauer Diamant und die Zahl 2. Finde dieselbe Zahl.",
+            "en": "Navi shows you a blue diamond and number 2. Find the same number."
+          },
+          "visual": "🔷   2",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "3",
+              "label": "3"
+            },
+            {
+              "id": "2",
+              "label": "2"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Ja! Du hast die Zahl 2 gefunden.",
+            "en": "Yes! You found number 2."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu35",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: Zitrone. Wie viele Bilder sind es?",
+            "en": "Count the lemon pictures on the white card. How many are there?"
+          },
+          "visual": "🍋 🍋",
           "answers": [
             {
               "id": "2",
@@ -611,12 +985,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu23",
+          "id": "d2nu36",
           "prompt": {
-            "de": "Wie viele Kuh-Bilder siehst du?",
-            "en": "How many Cow pictures can you see?"
+            "de": "Navi zeigt die Zahl 2. Auf welcher Antwortkarte siehst du diese Menge? Suche: lilafarbenes Herz.",
+            "en": "Navi shows number 2. Which answer card shows that many purple heart pictures?"
           },
-          "visual": "🐮 🐮 🐮",
+          "visual": "2",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-11-other",
+              "label": "💜 💜 💜"
+            },
+            {
+              "id": "quantity-11-correct",
+              "label": "💜 💜"
+            }
+          ],
+          "correctAnswerId": "quantity-11-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 2 Bilder.",
+            "en": "Exactly! That answer shows 2 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 2 und stoppe dann.",
+            "en": "Count to 2 and then stop."
+          }
+        },
+        {
+          "id": "d2nu37",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: grüner Kreis und die Zahl 3. Finde dieselbe Zahl.",
+            "en": "Navi shows you a green circle and number 3. Find the same number."
+          },
+          "visual": "🟢   3",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "3",
+              "label": "3"
+            },
+            {
+              "id": "4",
+              "label": "4"
+            }
+          ],
+          "correctAnswerId": "3",
+          "success": {
+            "de": "Ja! Du hast die Zahl 3 gefunden.",
+            "en": "Yes! You found number 3."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu38",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: Banane. Wie viele Bilder sind es?",
+            "en": "Count the banana pictures on the white card. How many are there?"
+          },
+          "visual": "🍌 🍌 🍌",
           "answers": [
             {
               "id": "4",
@@ -638,12 +1068,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu24",
+          "id": "d2nu39",
           "prompt": {
-            "de": "Wie viele Schwein-Bilder siehst du?",
-            "en": "How many Pig pictures can you see?"
+            "de": "Navi zeigt die Zahl 3. Auf welcher Antwortkarte siehst du diese Menge? Suche: lilafarbenes Quadrat.",
+            "en": "Navi shows number 3. Which answer card shows that many purple square pictures?"
           },
-          "visual": "🐷 🐷 🐷 🐷",
+          "visual": "3",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-12-correct",
+              "label": "🟪 🟪 🟪"
+            },
+            {
+              "id": "quantity-12-other",
+              "label": "🟪 🟪 🟪 🟪"
+            }
+          ],
+          "correctAnswerId": "quantity-12-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 3 Bilder.",
+            "en": "Exactly! That answer shows 3 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 3 und stoppe dann.",
+            "en": "Count to 3 and then stop."
+          }
+        },
+        {
+          "id": "d2nu40",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: grünes Herz und die Zahl 4. Finde dieselbe Zahl.",
+            "en": "Navi shows you a green heart and number 4. Find the same number."
+          },
+          "visual": "💚   4",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "5",
+              "label": "5"
+            },
+            {
+              "id": "4",
+              "label": "4"
+            }
+          ],
+          "correctAnswerId": "4",
+          "success": {
+            "de": "Ja! Du hast die Zahl 4 gefunden.",
+            "en": "Yes! You found number 4."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu41",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: Stern. Wie viele Bilder sind es?",
+            "en": "Count the star pictures on the white card. How many are there?"
+          },
+          "visual": "🌟 🌟 🌟 🌟",
           "answers": [
             {
               "id": "4",
@@ -665,12 +1151,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu25",
+          "id": "d2nu42",
           "prompt": {
-            "de": "Wie viele Pferd-Bilder siehst du?",
-            "en": "How many Horse pictures can you see?"
+            "de": "Navi zeigt die Zahl 4. Auf welcher Antwortkarte siehst du diese Menge? Suche: Weintrauben.",
+            "en": "Navi shows number 4. Which answer card shows that many grapes pictures?"
           },
-          "visual": "🐴 🐴 🐴 🐴 🐴",
+          "visual": "4",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-13-other",
+              "label": "🍇 🍇 🍇 🍇 🍇"
+            },
+            {
+              "id": "quantity-13-correct",
+              "label": "🍇 🍇 🍇 🍇"
+            }
+          ],
+          "correctAnswerId": "quantity-13-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 4 Bilder.",
+            "en": "Exactly! That answer shows 4 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 4 und stoppe dann.",
+            "en": "Count to 4 and then stop."
+          }
+        },
+        {
+          "id": "d2nu43",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: grünes Quadrat und die Zahl 5. Finde dieselbe Zahl.",
+            "en": "Navi shows you a green square and number 5. Find the same number."
+          },
+          "visual": "🟩   5",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "5",
+              "label": "5"
+            },
+            {
+              "id": "4",
+              "label": "4"
+            }
+          ],
+          "correctAnswerId": "5",
+          "success": {
+            "de": "Ja! Du hast die Zahl 5 gefunden.",
+            "en": "Yes! You found number 5."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu44",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: orangefarbener Kreis. Wie viele Bilder sind es?",
+            "en": "Count the orange circle pictures on the white card. How many are there?"
+          },
+          "visual": "🟠 🟠 🟠 🟠 🟠",
           "answers": [
             {
               "id": "4",
@@ -692,12 +1234,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu26",
+          "id": "d2nu45",
           "prompt": {
-            "de": "Wie viele Schaf-Bilder siehst du?",
-            "en": "How many Sheep pictures can you see?"
+            "de": "Navi zeigt die Zahl 5. Auf welcher Antwortkarte siehst du diese Menge? Suche: Aubergine.",
+            "en": "Navi shows number 5. Which answer card shows that many eggplant pictures?"
           },
-          "visual": "🐑",
+          "visual": "5",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-14-correct",
+              "label": "🍆 🍆 🍆 🍆 🍆"
+            },
+            {
+              "id": "quantity-14-other",
+              "label": "🍆 🍆 🍆 🍆"
+            }
+          ],
+          "correctAnswerId": "quantity-14-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 5 Bilder.",
+            "en": "Exactly! That answer shows 5 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 5 und stoppe dann.",
+            "en": "Count to 5 and then stop."
+          }
+        },
+        {
+          "id": "d2nu46",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: grüner Apfel und die Zahl 1. Finde dieselbe Zahl.",
+            "en": "Navi shows you a green apple and number 1. Find the same number."
+          },
+          "visual": "🍏   1",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "2",
+              "label": "2"
+            },
+            {
+              "id": "1",
+              "label": "1"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Ja! Du hast die Zahl 1 gefunden.",
+            "en": "Yes! You found number 1."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu47",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: orangefarbenes Herz. Wie viele Bilder sind es?",
+            "en": "Count the orange heart pictures on the white card. How many are there?"
+          },
+          "visual": "🧡",
           "answers": [
             {
               "id": "1",
@@ -719,12 +1317,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu27",
+          "id": "d2nu48",
           "prompt": {
-            "de": "Wie viele Ziege-Bilder siehst du?",
-            "en": "How many Goat pictures can you see?"
+            "de": "Navi zeigt die Zahl 1. Auf welcher Antwortkarte siehst du diese Menge? Suche: rosa Herz.",
+            "en": "Navi shows number 1. Which answer card shows that many pink heart pictures?"
           },
-          "visual": "🐐 🐐",
+          "visual": "1",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-15-other",
+              "label": "🩷 🩷"
+            },
+            {
+              "id": "quantity-15-correct",
+              "label": "🩷"
+            }
+          ],
+          "correctAnswerId": "quantity-15-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 1 Bilder.",
+            "en": "Exactly! That answer shows 1 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 1 und stoppe dann.",
+            "en": "Count to 1 and then stop."
+          }
+        },
+        {
+          "id": "d2nu49",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Brokkoli und die Zahl 2. Finde dieselbe Zahl.",
+            "en": "Navi shows you a broccoli and number 2. Find the same number."
+          },
+          "visual": "🥦   2",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "2",
+              "label": "2"
+            },
+            {
+              "id": "3",
+              "label": "3"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Ja! Du hast die Zahl 2 gefunden.",
+            "en": "Yes! You found number 2."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu50",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: orangefarbenes Quadrat. Wie viele Bilder sind es?",
+            "en": "Count the orange square pictures on the white card. How many are there?"
+          },
+          "visual": "🟧 🟧",
           "answers": [
             {
               "id": "3",
@@ -746,12 +1400,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu28",
+          "id": "d2nu51",
           "prompt": {
-            "de": "Wie viele Huhn-Bilder siehst du?",
-            "en": "How many Chicken pictures can you see?"
+            "de": "Navi zeigt die Zahl 2. Auf welcher Antwortkarte siehst du diese Menge? Suche: rosa Blume.",
+            "en": "Navi shows number 2. Which answer card shows that many pink flower pictures?"
           },
-          "visual": "🐔 🐔 🐔",
+          "visual": "2",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-16-correct",
+              "label": "🌸 🌸"
+            },
+            {
+              "id": "quantity-16-other",
+              "label": "🌸 🌸 🌸"
+            }
+          ],
+          "correctAnswerId": "quantity-16-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 2 Bilder.",
+            "en": "Exactly! That answer shows 2 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 2 und stoppe dann.",
+            "en": "Count to 2 and then stop."
+          }
+        },
+        {
+          "id": "d2nu52",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Gurke und die Zahl 3. Finde dieselbe Zahl.",
+            "en": "Navi shows you a cucumber and number 3. Find the same number."
+          },
+          "visual": "🥒   3",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "4",
+              "label": "4"
+            },
+            {
+              "id": "3",
+              "label": "3"
+            }
+          ],
+          "correctAnswerId": "3",
+          "success": {
+            "de": "Ja! Du hast die Zahl 3 gefunden.",
+            "en": "Yes! You found number 3."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu53",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: Orange. Wie viele Bilder sind es?",
+            "en": "Count the orange fruit pictures on the white card. How many are there?"
+          },
+          "visual": "🍊 🍊 🍊",
           "answers": [
             {
               "id": "3",
@@ -773,417 +1483,41 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu29",
+          "id": "d2nu54",
           "prompt": {
-            "de": "Wie viele Ente-Bilder siehst du?",
-            "en": "How many Duck pictures can you see?"
+            "de": "Navi zeigt die Zahl 3. Auf welcher Antwortkarte siehst du diese Menge? Suche: Flamingo.",
+            "en": "Navi shows number 3. Which answer card shows that many flamingo pictures?"
           },
-          "visual": "🦆 🦆 🦆 🦆",
+          "visual": "3",
+          "showNavi": true,
           "answers": [
             {
-              "id": "5",
-              "label": "5"
+              "id": "quantity-17-other",
+              "label": "🦩 🦩 🦩 🦩"
             },
             {
-              "id": "4",
-              "label": "4"
+              "id": "quantity-17-correct",
+              "label": "🦩 🦩 🦩"
             }
           ],
-          "correctAnswerId": "4",
+          "correctAnswerId": "quantity-17-correct",
           "success": {
-            "de": "Richtig gezählt! Es sind 4.",
-            "en": "Great counting! There are 4."
+            "de": "Genau! Diese Antwort zeigt 3 Bilder.",
+            "en": "Exactly! That answer shows 3 pictures."
           },
           "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
+            "de": "Zähle bis 3 und stoppe dann.",
+            "en": "Count to 3 and then stop."
           }
         },
         {
-          "id": "dnu30",
+          "id": "d2nu55",
           "prompt": {
-            "de": "Wie viele Eule-Bilder siehst du?",
-            "en": "How many Owl pictures can you see?"
+            "de": "Navi zeigt dir dieses Bild: gelber Kreis und die Zahl 4. Finde dieselbe Zahl.",
+            "en": "Navi shows you a yellow circle and number 4. Find the same number."
           },
-          "visual": "🦉 🦉 🦉 🦉 🦉",
-          "answers": [
-            {
-              "id": "5",
-              "label": "5"
-            },
-            {
-              "id": "4",
-              "label": "4"
-            }
-          ],
-          "correctAnswerId": "5",
-          "success": {
-            "de": "Richtig gezählt! Es sind 5.",
-            "en": "Great counting! There are 5."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu31",
-          "prompt": {
-            "de": "Wie viele Fisch-Bilder siehst du?",
-            "en": "How many Fish pictures can you see?"
-          },
-          "visual": "🐟",
-          "answers": [
-            {
-              "id": "2",
-              "label": "2"
-            },
-            {
-              "id": "1",
-              "label": "1"
-            }
-          ],
-          "correctAnswerId": "1",
-          "success": {
-            "de": "Richtig gezählt! Es sind 1.",
-            "en": "Great counting! There are 1."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu32",
-          "prompt": {
-            "de": "Wie viele Wal-Bilder siehst du?",
-            "en": "How many Whale pictures can you see?"
-          },
-          "visual": "🐋 🐋",
-          "answers": [
-            {
-              "id": "2",
-              "label": "2"
-            },
-            {
-              "id": "3",
-              "label": "3"
-            }
-          ],
-          "correctAnswerId": "2",
-          "success": {
-            "de": "Richtig gezählt! Es sind 2.",
-            "en": "Great counting! There are 2."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu33",
-          "prompt": {
-            "de": "Wie viele Delfin-Bilder siehst du?",
-            "en": "How many Dolphin pictures can you see?"
-          },
-          "visual": "🐬 🐬 🐬",
-          "answers": [
-            {
-              "id": "4",
-              "label": "4"
-            },
-            {
-              "id": "3",
-              "label": "3"
-            }
-          ],
-          "correctAnswerId": "3",
-          "success": {
-            "de": "Richtig gezählt! Es sind 3.",
-            "en": "Great counting! There are 3."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu34",
-          "prompt": {
-            "de": "Wie viele Hai-Bilder siehst du?",
-            "en": "How many Shark pictures can you see?"
-          },
-          "visual": "🦈 🦈 🦈 🦈",
-          "answers": [
-            {
-              "id": "4",
-              "label": "4"
-            },
-            {
-              "id": "5",
-              "label": "5"
-            }
-          ],
-          "correctAnswerId": "4",
-          "success": {
-            "de": "Richtig gezählt! Es sind 4.",
-            "en": "Great counting! There are 4."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu35",
-          "prompt": {
-            "de": "Wie viele Oktopus-Bilder siehst du?",
-            "en": "How many Octopus pictures can you see?"
-          },
-          "visual": "🐙 🐙 🐙 🐙 🐙",
-          "answers": [
-            {
-              "id": "4",
-              "label": "4"
-            },
-            {
-              "id": "5",
-              "label": "5"
-            }
-          ],
-          "correctAnswerId": "5",
-          "success": {
-            "de": "Richtig gezählt! Es sind 5.",
-            "en": "Great counting! There are 5."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu36",
-          "prompt": {
-            "de": "Wie viele Krabbe-Bilder siehst du?",
-            "en": "How many Crab pictures can you see?"
-          },
-          "visual": "🦀",
-          "answers": [
-            {
-              "id": "1",
-              "label": "1"
-            },
-            {
-              "id": "2",
-              "label": "2"
-            }
-          ],
-          "correctAnswerId": "1",
-          "success": {
-            "de": "Richtig gezählt! Es sind 1.",
-            "en": "Great counting! There are 1."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu37",
-          "prompt": {
-            "de": "Wie viele Biene-Bilder siehst du?",
-            "en": "How many Bee pictures can you see?"
-          },
-          "visual": "🐝 🐝",
-          "answers": [
-            {
-              "id": "3",
-              "label": "3"
-            },
-            {
-              "id": "2",
-              "label": "2"
-            }
-          ],
-          "correctAnswerId": "2",
-          "success": {
-            "de": "Richtig gezählt! Es sind 2.",
-            "en": "Great counting! There are 2."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu38",
-          "prompt": {
-            "de": "Wie viele Schmetterling-Bilder siehst du?",
-            "en": "How many Butterfly pictures can you see?"
-          },
-          "visual": "🦋 🦋 🦋",
-          "answers": [
-            {
-              "id": "3",
-              "label": "3"
-            },
-            {
-              "id": "4",
-              "label": "4"
-            }
-          ],
-          "correctAnswerId": "3",
-          "success": {
-            "de": "Richtig gezählt! Es sind 3.",
-            "en": "Great counting! There are 3."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu39",
-          "prompt": {
-            "de": "Wie viele Schnecke-Bilder siehst du?",
-            "en": "How many Snail pictures can you see?"
-          },
-          "visual": "🐌 🐌 🐌 🐌",
-          "answers": [
-            {
-              "id": "5",
-              "label": "5"
-            },
-            {
-              "id": "4",
-              "label": "4"
-            }
-          ],
-          "correctAnswerId": "4",
-          "success": {
-            "de": "Richtig gezählt! Es sind 4.",
-            "en": "Great counting! There are 4."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu40",
-          "prompt": {
-            "de": "Wie viele Frosch-Bilder siehst du?",
-            "en": "How many Frog pictures can you see?"
-          },
-          "visual": "🐸 🐸 🐸 🐸 🐸",
-          "answers": [
-            {
-              "id": "5",
-              "label": "5"
-            },
-            {
-              "id": "4",
-              "label": "4"
-            }
-          ],
-          "correctAnswerId": "5",
-          "success": {
-            "de": "Richtig gezählt! Es sind 5.",
-            "en": "Great counting! There are 5."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu41",
-          "prompt": {
-            "de": "Wie viele Schildkröte-Bilder siehst du?",
-            "en": "How many Turtle pictures can you see?"
-          },
-          "visual": "🐢",
-          "answers": [
-            {
-              "id": "2",
-              "label": "2"
-            },
-            {
-              "id": "1",
-              "label": "1"
-            }
-          ],
-          "correctAnswerId": "1",
-          "success": {
-            "de": "Richtig gezählt! Es sind 1.",
-            "en": "Great counting! There are 1."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu42",
-          "prompt": {
-            "de": "Wie viele Apfel-Bilder siehst du?",
-            "en": "How many Apple pictures can you see?"
-          },
-          "visual": "🍎 🍎",
-          "answers": [
-            {
-              "id": "2",
-              "label": "2"
-            },
-            {
-              "id": "3",
-              "label": "3"
-            }
-          ],
-          "correctAnswerId": "2",
-          "success": {
-            "de": "Richtig gezählt! Es sind 2.",
-            "en": "Great counting! There are 2."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu43",
-          "prompt": {
-            "de": "Wie viele Birne-Bilder siehst du?",
-            "en": "How many Pear pictures can you see?"
-          },
-          "visual": "🍐 🍐 🍐",
-          "answers": [
-            {
-              "id": "4",
-              "label": "4"
-            },
-            {
-              "id": "3",
-              "label": "3"
-            }
-          ],
-          "correctAnswerId": "3",
-          "success": {
-            "de": "Richtig gezählt! Es sind 3.",
-            "en": "Great counting! There are 3."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu44",
-          "prompt": {
-            "de": "Wie viele Banane-Bilder siehst du?",
-            "en": "How many Banana pictures can you see?"
-          },
-          "visual": "🍌 🍌 🍌 🍌",
+          "visual": "🟡   4",
+          "showNavi": true,
           "answers": [
             {
               "id": "4",
@@ -1196,127 +1530,19 @@ export const categories: LearningCategory[] = [
           ],
           "correctAnswerId": "4",
           "success": {
-            "de": "Richtig gezählt! Es sind 4.",
-            "en": "Great counting! There are 4."
+            "de": "Ja! Du hast die Zahl 4 gefunden.",
+            "en": "Yes! You found number 4."
           },
           "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
           }
         },
         {
-          "id": "dnu45",
+          "id": "d2nu56",
           "prompt": {
-            "de": "Wie viele Erdbeere-Bilder siehst du?",
-            "en": "How many Strawberry pictures can you see?"
-          },
-          "visual": "🍓 🍓 🍓 🍓 🍓",
-          "answers": [
-            {
-              "id": "4",
-              "label": "4"
-            },
-            {
-              "id": "5",
-              "label": "5"
-            }
-          ],
-          "correctAnswerId": "5",
-          "success": {
-            "de": "Richtig gezählt! Es sind 5.",
-            "en": "Great counting! There are 5."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu46",
-          "prompt": {
-            "de": "Wie viele Kirsche-Bilder siehst du?",
-            "en": "How many Cherry pictures can you see?"
-          },
-          "visual": "🍒",
-          "answers": [
-            {
-              "id": "1",
-              "label": "1"
-            },
-            {
-              "id": "2",
-              "label": "2"
-            }
-          ],
-          "correctAnswerId": "1",
-          "success": {
-            "de": "Richtig gezählt! Es sind 1.",
-            "en": "Great counting! There are 1."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu47",
-          "prompt": {
-            "de": "Wie viele Traube-Bilder siehst du?",
-            "en": "How many Grape pictures can you see?"
-          },
-          "visual": "🍇 🍇",
-          "answers": [
-            {
-              "id": "3",
-              "label": "3"
-            },
-            {
-              "id": "2",
-              "label": "2"
-            }
-          ],
-          "correctAnswerId": "2",
-          "success": {
-            "de": "Richtig gezählt! Es sind 2.",
-            "en": "Great counting! There are 2."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu48",
-          "prompt": {
-            "de": "Wie viele Zitrone-Bilder siehst du?",
-            "en": "How many Lemon pictures can you see?"
-          },
-          "visual": "🍋 🍋 🍋",
-          "answers": [
-            {
-              "id": "3",
-              "label": "3"
-            },
-            {
-              "id": "4",
-              "label": "4"
-            }
-          ],
-          "correctAnswerId": "3",
-          "success": {
-            "de": "Richtig gezählt! Es sind 3.",
-            "en": "Great counting! There are 3."
-          },
-          "hint": {
-            "de": "Zeige beim Zählen auf jedes Bild.",
-            "en": "Point to every picture while you count."
-          }
-        },
-        {
-          "id": "dnu49",
-          "prompt": {
-            "de": "Wie viele Karotte-Bilder siehst du?",
-            "en": "How many Carrot pictures can you see?"
+            "de": "Zähle auf der weißen Karte: Karotte. Wie viele Bilder sind es?",
+            "en": "Count the carrot pictures on the white card. How many are there?"
           },
           "visual": "🥕 🥕 🥕 🥕",
           "answers": [
@@ -1340,12 +1566,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu50",
+          "id": "d2nu57",
           "prompt": {
-            "de": "Wie viele Tomate-Bilder siehst du?",
-            "en": "How many Tomato pictures can you see?"
+            "de": "Navi zeigt die Zahl 4. Auf welcher Antwortkarte siehst du diese Menge? Suche: Ferkel.",
+            "en": "Navi shows number 4. Which answer card shows that many piglet pictures?"
           },
-          "visual": "🍅 🍅 🍅 🍅 🍅",
+          "visual": "4",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-18-correct",
+              "label": "🐷 🐷 🐷 🐷"
+            },
+            {
+              "id": "quantity-18-other",
+              "label": "🐷 🐷 🐷 🐷 🐷"
+            }
+          ],
+          "correctAnswerId": "quantity-18-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 4 Bilder.",
+            "en": "Exactly! That answer shows 4 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 4 und stoppe dann.",
+            "en": "Count to 4 and then stop."
+          }
+        },
+        {
+          "id": "d2nu58",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: gelbes Herz und die Zahl 5. Finde dieselbe Zahl.",
+            "en": "Navi shows you a yellow heart and number 5. Find the same number."
+          },
+          "visual": "💛   5",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "4",
+              "label": "4"
+            },
+            {
+              "id": "5",
+              "label": "5"
+            }
+          ],
+          "correctAnswerId": "5",
+          "success": {
+            "de": "Ja! Du hast die Zahl 5 gefunden.",
+            "en": "Yes! You found number 5."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu59",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: Kürbis. Wie viele Bilder sind es?",
+            "en": "Count the pumpkin pictures on the white card. How many are there?"
+          },
+          "visual": "🎃 🎃 🎃 🎃 🎃",
           "answers": [
             {
               "id": "5",
@@ -1367,12 +1649,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu51",
+          "id": "d2nu60",
           "prompt": {
-            "de": "Wie viele Brot-Bilder siehst du?",
-            "en": "How many Bread pictures can you see?"
+            "de": "Navi zeigt die Zahl 5. Auf welcher Antwortkarte siehst du diese Menge? Suche: rosa Schleife.",
+            "en": "Navi shows number 5. Which answer card shows that many pink bow pictures?"
           },
-          "visual": "🍞",
+          "visual": "5",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-19-other",
+              "label": "🎀 🎀 🎀 🎀"
+            },
+            {
+              "id": "quantity-19-correct",
+              "label": "🎀 🎀 🎀 🎀 🎀"
+            }
+          ],
+          "correctAnswerId": "quantity-19-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 5 Bilder.",
+            "en": "Exactly! That answer shows 5 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 5 und stoppe dann.",
+            "en": "Count to 5 and then stop."
+          }
+        },
+        {
+          "id": "d2nu61",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: gelbes Quadrat und die Zahl 1. Finde dieselbe Zahl.",
+            "en": "Navi shows you a yellow square and number 1. Find the same number."
+          },
+          "visual": "🟨   1",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "1",
+              "label": "1"
+            },
+            {
+              "id": "2",
+              "label": "2"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Ja! Du hast die Zahl 1 gefunden.",
+            "en": "Yes! You found number 1."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu62",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: lilafarbener Kreis. Wie viele Bilder sind es?",
+            "en": "Count the purple circle pictures on the white card. How many are there?"
+          },
+          "visual": "🟣",
           "answers": [
             {
               "id": "2",
@@ -1394,12 +1732,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu52",
+          "id": "d2nu63",
           "prompt": {
-            "de": "Wie viele Käse-Bilder siehst du?",
-            "en": "How many Cheese pictures can you see?"
+            "de": "Navi zeigt die Zahl 1. Auf welcher Antwortkarte siehst du diese Menge? Suche: brauner Kreis.",
+            "en": "Navi shows number 1. Which answer card shows that many brown circle pictures?"
           },
-          "visual": "🧀 🧀",
+          "visual": "1",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-20-correct",
+              "label": "🟤"
+            },
+            {
+              "id": "quantity-20-other",
+              "label": "🟤 🟤"
+            }
+          ],
+          "correctAnswerId": "quantity-20-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 1 Bilder.",
+            "en": "Exactly! That answer shows 1 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 1 und stoppe dann.",
+            "en": "Count to 1 and then stop."
+          }
+        },
+        {
+          "id": "d2nu64",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Zitrone und die Zahl 2. Finde dieselbe Zahl.",
+            "en": "Navi shows you a lemon and number 2. Find the same number."
+          },
+          "visual": "🍋   2",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "3",
+              "label": "3"
+            },
+            {
+              "id": "2",
+              "label": "2"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Ja! Du hast die Zahl 2 gefunden.",
+            "en": "Yes! You found number 2."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu65",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: lilafarbenes Herz. Wie viele Bilder sind es?",
+            "en": "Count the purple heart pictures on the white card. How many are there?"
+          },
+          "visual": "💜 💜",
           "answers": [
             {
               "id": "2",
@@ -1421,12 +1815,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu53",
+          "id": "d2nu66",
           "prompt": {
-            "de": "Wie viele Milch-Bilder siehst du?",
-            "en": "How many Milk pictures can you see?"
+            "de": "Navi zeigt die Zahl 2. Auf welcher Antwortkarte siehst du diese Menge? Suche: braunes Herz.",
+            "en": "Navi shows number 2. Which answer card shows that many brown heart pictures?"
           },
-          "visual": "🥛 🥛 🥛",
+          "visual": "2",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-21-other",
+              "label": "🤎 🤎 🤎"
+            },
+            {
+              "id": "quantity-21-correct",
+              "label": "🤎 🤎"
+            }
+          ],
+          "correctAnswerId": "quantity-21-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 2 Bilder.",
+            "en": "Exactly! That answer shows 2 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 2 und stoppe dann.",
+            "en": "Count to 2 and then stop."
+          }
+        },
+        {
+          "id": "d2nu67",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Banane und die Zahl 3. Finde dieselbe Zahl.",
+            "en": "Navi shows you a banana and number 3. Find the same number."
+          },
+          "visual": "🍌   3",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "3",
+              "label": "3"
+            },
+            {
+              "id": "4",
+              "label": "4"
+            }
+          ],
+          "correctAnswerId": "3",
+          "success": {
+            "de": "Ja! Du hast die Zahl 3 gefunden.",
+            "en": "Yes! You found number 3."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu68",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: lilafarbenes Quadrat. Wie viele Bilder sind es?",
+            "en": "Count the purple square pictures on the white card. How many are there?"
+          },
+          "visual": "🟪 🟪 🟪",
           "answers": [
             {
               "id": "4",
@@ -1448,12 +1898,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu54",
+          "id": "d2nu69",
           "prompt": {
-            "de": "Wie viele Wasser-Bilder siehst du?",
-            "en": "How many Water pictures can you see?"
+            "de": "Navi zeigt die Zahl 3. Auf welcher Antwortkarte siehst du diese Menge? Suche: Braunbär.",
+            "en": "Navi shows number 3. Which answer card shows that many brown bear pictures?"
           },
-          "visual": "💧 💧 💧 💧",
+          "visual": "3",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-22-correct",
+              "label": "🐻 🐻 🐻"
+            },
+            {
+              "id": "quantity-22-other",
+              "label": "🐻 🐻 🐻 🐻"
+            }
+          ],
+          "correctAnswerId": "quantity-22-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 3 Bilder.",
+            "en": "Exactly! That answer shows 3 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 3 und stoppe dann.",
+            "en": "Count to 3 and then stop."
+          }
+        },
+        {
+          "id": "d2nu70",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Stern und die Zahl 4. Finde dieselbe Zahl.",
+            "en": "Navi shows you a star and number 4. Find the same number."
+          },
+          "visual": "🌟   4",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "5",
+              "label": "5"
+            },
+            {
+              "id": "4",
+              "label": "4"
+            }
+          ],
+          "correctAnswerId": "4",
+          "success": {
+            "de": "Ja! Du hast die Zahl 4 gefunden.",
+            "en": "Yes! You found number 4."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu71",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: Weintrauben. Wie viele Bilder sind es?",
+            "en": "Count the grapes pictures on the white card. How many are there?"
+          },
+          "visual": "🍇 🍇 🍇 🍇",
           "answers": [
             {
               "id": "4",
@@ -1475,12 +1981,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu55",
+          "id": "d2nu72",
           "prompt": {
-            "de": "Wie viele Haus-Bilder siehst du?",
-            "en": "How many House pictures can you see?"
+            "de": "Navi zeigt die Zahl 4. Auf welcher Antwortkarte siehst du diese Menge? Suche: Schokolade.",
+            "en": "Navi shows number 4. Which answer card shows that many chocolate pictures?"
           },
-          "visual": "🏠 🏠 🏠 🏠 🏠",
+          "visual": "4",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-23-other",
+              "label": "🍫 🍫 🍫 🍫 🍫"
+            },
+            {
+              "id": "quantity-23-correct",
+              "label": "🍫 🍫 🍫 🍫"
+            }
+          ],
+          "correctAnswerId": "quantity-23-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 4 Bilder.",
+            "en": "Exactly! That answer shows 4 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 4 und stoppe dann.",
+            "en": "Count to 4 and then stop."
+          }
+        },
+        {
+          "id": "d2nu73",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: orangefarbener Kreis und die Zahl 5. Finde dieselbe Zahl.",
+            "en": "Navi shows you a orange circle and number 5. Find the same number."
+          },
+          "visual": "🟠   5",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "5",
+              "label": "5"
+            },
+            {
+              "id": "4",
+              "label": "4"
+            }
+          ],
+          "correctAnswerId": "5",
+          "success": {
+            "de": "Ja! Du hast die Zahl 5 gefunden.",
+            "en": "Yes! You found number 5."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu74",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: Aubergine. Wie viele Bilder sind es?",
+            "en": "Count the eggplant pictures on the white card. How many are there?"
+          },
+          "visual": "🍆 🍆 🍆 🍆 🍆",
           "answers": [
             {
               "id": "4",
@@ -1502,12 +2064,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu56",
+          "id": "d2nu75",
           "prompt": {
-            "de": "Wie viele Schule-Bilder siehst du?",
-            "en": "How many School pictures can you see?"
+            "de": "Navi zeigt die Zahl 5. Auf welcher Antwortkarte siehst du diese Menge? Suche: Haselnuss.",
+            "en": "Navi shows number 5. Which answer card shows that many hazelnut pictures?"
           },
-          "visual": "🏫",
+          "visual": "5",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-24-correct",
+              "label": "🌰 🌰 🌰 🌰 🌰"
+            },
+            {
+              "id": "quantity-24-other",
+              "label": "🌰 🌰 🌰 🌰"
+            }
+          ],
+          "correctAnswerId": "quantity-24-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 5 Bilder.",
+            "en": "Exactly! That answer shows 5 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 5 und stoppe dann.",
+            "en": "Count to 5 and then stop."
+          }
+        },
+        {
+          "id": "d2nu76",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: orangefarbenes Herz und die Zahl 1. Finde dieselbe Zahl.",
+            "en": "Navi shows you a orange heart and number 1. Find the same number."
+          },
+          "visual": "🧡   1",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "2",
+              "label": "2"
+            },
+            {
+              "id": "1",
+              "label": "1"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Ja! Du hast die Zahl 1 gefunden.",
+            "en": "Yes! You found number 1."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu77",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: rosa Herz. Wie viele Bilder sind es?",
+            "en": "Count the pink heart pictures on the white card. How many are there?"
+          },
+          "visual": "🩷",
           "answers": [
             {
               "id": "1",
@@ -1529,12 +2147,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu57",
+          "id": "d2nu78",
           "prompt": {
-            "de": "Wie viele Auto-Bilder siehst du?",
-            "en": "How many Car pictures can you see?"
+            "de": "Navi zeigt die Zahl 1. Auf welcher Antwortkarte siehst du diese Menge? Suche: Apfel.",
+            "en": "Navi shows number 1. Which answer card shows that many apple pictures?"
           },
-          "visual": "🚗 🚗",
+          "visual": "1",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-25-other",
+              "label": "🍎 🍎"
+            },
+            {
+              "id": "quantity-25-correct",
+              "label": "🍎"
+            }
+          ],
+          "correctAnswerId": "quantity-25-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 1 Bilder.",
+            "en": "Exactly! That answer shows 1 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 1 und stoppe dann.",
+            "en": "Count to 1 and then stop."
+          }
+        },
+        {
+          "id": "d2nu79",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: orangefarbenes Quadrat und die Zahl 2. Finde dieselbe Zahl.",
+            "en": "Navi shows you a orange square and number 2. Find the same number."
+          },
+          "visual": "🟧   2",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "2",
+              "label": "2"
+            },
+            {
+              "id": "3",
+              "label": "3"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Ja! Du hast die Zahl 2 gefunden.",
+            "en": "Yes! You found number 2."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu80",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: rosa Blume. Wie viele Bilder sind es?",
+            "en": "Count the pink flower pictures on the white card. How many are there?"
+          },
+          "visual": "🌸 🌸",
           "answers": [
             {
               "id": "3",
@@ -1556,12 +2230,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu58",
+          "id": "d2nu81",
           "prompt": {
-            "de": "Wie viele Bus-Bilder siehst du?",
-            "en": "How many Bus pictures can you see?"
+            "de": "Navi zeigt die Zahl 2. Auf welcher Antwortkarte siehst du diese Menge? Suche: Erdbeere.",
+            "en": "Navi shows number 2. Which answer card shows that many strawberry pictures?"
           },
-          "visual": "🚌 🚌 🚌",
+          "visual": "2",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-26-correct",
+              "label": "🍓 🍓"
+            },
+            {
+              "id": "quantity-26-other",
+              "label": "🍓 🍓 🍓"
+            }
+          ],
+          "correctAnswerId": "quantity-26-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 2 Bilder.",
+            "en": "Exactly! That answer shows 2 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 2 und stoppe dann.",
+            "en": "Count to 2 and then stop."
+          }
+        },
+        {
+          "id": "d2nu82",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Orange und die Zahl 3. Finde dieselbe Zahl.",
+            "en": "Navi shows you a orange fruit and number 3. Find the same number."
+          },
+          "visual": "🍊   3",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "4",
+              "label": "4"
+            },
+            {
+              "id": "3",
+              "label": "3"
+            }
+          ],
+          "correctAnswerId": "3",
+          "success": {
+            "de": "Ja! Du hast die Zahl 3 gefunden.",
+            "en": "Yes! You found number 3."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu83",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: Flamingo. Wie viele Bilder sind es?",
+            "en": "Count the flamingo pictures on the white card. How many are there?"
+          },
+          "visual": "🦩 🦩 🦩",
           "answers": [
             {
               "id": "3",
@@ -1583,12 +2313,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu59",
+          "id": "d2nu84",
           "prompt": {
-            "de": "Wie viele Zug-Bilder siehst du?",
-            "en": "How many Train pictures can you see?"
+            "de": "Navi zeigt die Zahl 3. Auf welcher Antwortkarte siehst du diese Menge? Suche: Kirschen.",
+            "en": "Navi shows number 3. Which answer card shows that many cherries pictures?"
           },
-          "visual": "🚆 🚆 🚆 🚆",
+          "visual": "3",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-27-other",
+              "label": "🍒 🍒 🍒 🍒"
+            },
+            {
+              "id": "quantity-27-correct",
+              "label": "🍒 🍒 🍒"
+            }
+          ],
+          "correctAnswerId": "quantity-27-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 3 Bilder.",
+            "en": "Exactly! That answer shows 3 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 3 und stoppe dann.",
+            "en": "Count to 3 and then stop."
+          }
+        },
+        {
+          "id": "d2nu85",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Karotte und die Zahl 4. Finde dieselbe Zahl.",
+            "en": "Navi shows you a carrot and number 4. Find the same number."
+          },
+          "visual": "🥕   4",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "4",
+              "label": "4"
+            },
+            {
+              "id": "5",
+              "label": "5"
+            }
+          ],
+          "correctAnswerId": "4",
+          "success": {
+            "de": "Ja! Du hast die Zahl 4 gefunden.",
+            "en": "Yes! You found number 4."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu86",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: Ferkel. Wie viele Bilder sind es?",
+            "en": "Count the piglet pictures on the white card. How many are there?"
+          },
+          "visual": "🐷 🐷 🐷 🐷",
           "answers": [
             {
               "id": "5",
@@ -1610,12 +2396,68 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu60",
+          "id": "d2nu87",
           "prompt": {
-            "de": "Wie viele Fahrrad-Bilder siehst du?",
-            "en": "How many Bicycle pictures can you see?"
+            "de": "Navi zeigt die Zahl 4. Auf welcher Antwortkarte siehst du diese Menge? Suche: Tomate.",
+            "en": "Navi shows number 4. Which answer card shows that many tomato pictures?"
           },
-          "visual": "🚲 🚲 🚲 🚲 🚲",
+          "visual": "4",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "quantity-28-correct",
+              "label": "🍅 🍅 🍅 🍅"
+            },
+            {
+              "id": "quantity-28-other",
+              "label": "🍅 🍅 🍅 🍅 🍅"
+            }
+          ],
+          "correctAnswerId": "quantity-28-correct",
+          "success": {
+            "de": "Genau! Diese Antwort zeigt 4 Bilder.",
+            "en": "Exactly! That answer shows 4 pictures."
+          },
+          "hint": {
+            "de": "Zähle bis 4 und stoppe dann.",
+            "en": "Count to 4 and then stop."
+          }
+        },
+        {
+          "id": "d2nu88",
+          "prompt": {
+            "de": "Navi zeigt dir dieses Bild: Kürbis und die Zahl 5. Finde dieselbe Zahl.",
+            "en": "Navi shows you a pumpkin and number 5. Find the same number."
+          },
+          "visual": "🎃   5",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "4",
+              "label": "4"
+            },
+            {
+              "id": "5",
+              "label": "5"
+            }
+          ],
+          "correctAnswerId": "5",
+          "success": {
+            "de": "Ja! Du hast die Zahl 5 gefunden.",
+            "en": "Yes! You found number 5."
+          },
+          "hint": {
+            "de": "Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.",
+            "en": "Match the number on Navi's card with the two answers."
+          }
+        },
+        {
+          "id": "d2nu89",
+          "prompt": {
+            "de": "Zähle auf der weißen Karte: rosa Schleife. Wie viele Bilder sind es?",
+            "en": "Count the pink bow pictures on the white card. How many are there?"
+          },
+          "visual": "🎀 🎀 🎀 🎀 🎀",
           "answers": [
             {
               "id": "5",
@@ -1637,813 +2479,31 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dnu61",
+          "id": "d2nu90",
           "prompt": {
-            "de": "Welche Karte zeigt mehr Boot-Bilder?",
-            "en": "Which card shows more Boat pictures?"
+            "de": "Navi zeigt die Zahl 5. Auf welcher Antwortkarte siehst du diese Menge? Suche: rotes Herz.",
+            "en": "Navi shows number 5. Which answer card shows that many red heart pictures?"
           },
-          "visual": "",
+          "visual": "5",
+          "showNavi": true,
           "answers": [
             {
-              "id": "group-0-correct",
-              "label": "⛵ ⛵"
+              "id": "quantity-29-other",
+              "label": "❤️ ❤️ ❤️ ❤️"
             },
             {
-              "id": "group-0-other",
-              "label": "⛵"
+              "id": "quantity-29-correct",
+              "label": "❤️ ❤️ ❤️ ❤️ ❤️"
             }
           ],
-          "correctAnswerId": "group-0-correct",
+          "correctAnswerId": "quantity-29-correct",
           "success": {
-            "de": "Genau! 2 ist mehr als 1.",
-            "en": "Exactly! 2 is more than 1."
+            "de": "Genau! Diese Antwort zeigt 5 Bilder.",
+            "en": "Exactly! That answer shows 5 pictures."
           },
           "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu62",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Flugzeug-Bilder?",
-            "en": "Which card shows fewer Airplane pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-1-other",
-              "label": "✈️ ✈️ ✈️"
-            },
-            {
-              "id": "group-1-correct",
-              "label": "✈️ ✈️"
-            }
-          ],
-          "correctAnswerId": "group-1-correct",
-          "success": {
-            "de": "Genau! 2 ist weniger als 3.",
-            "en": "Exactly! 2 is fewer than 3."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu63",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Sonne-Bilder?",
-            "en": "Which card shows more Sun pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-2-correct",
-              "label": "☀️ ☀️ ☀️ ☀️"
-            },
-            {
-              "id": "group-2-other",
-              "label": "☀️ ☀️ ☀️"
-            }
-          ],
-          "correctAnswerId": "group-2-correct",
-          "success": {
-            "de": "Genau! 4 ist mehr als 3.",
-            "en": "Exactly! 4 is more than 3."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu64",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Mond-Bilder?",
-            "en": "Which card shows fewer Moon pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-3-other",
-              "label": "🌙 🌙"
-            },
-            {
-              "id": "group-3-correct",
-              "label": "🌙"
-            }
-          ],
-          "correctAnswerId": "group-3-correct",
-          "success": {
-            "de": "Genau! 1 ist weniger als 2.",
-            "en": "Exactly! 1 is fewer than 2."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu65",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Stern-Bilder?",
-            "en": "Which card shows more Star pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-4-correct",
-              "label": "⭐ ⭐ ⭐"
-            },
-            {
-              "id": "group-4-other",
-              "label": "⭐ ⭐"
-            }
-          ],
-          "correctAnswerId": "group-4-correct",
-          "success": {
-            "de": "Genau! 3 ist mehr als 2.",
-            "en": "Exactly! 3 is more than 2."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu66",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Wolke-Bilder?",
-            "en": "Which card shows fewer Cloud pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-5-other",
-              "label": "☁️ ☁️ ☁️ ☁️"
-            },
-            {
-              "id": "group-5-correct",
-              "label": "☁️ ☁️ ☁️"
-            }
-          ],
-          "correctAnswerId": "group-5-correct",
-          "success": {
-            "de": "Genau! 3 ist weniger als 4.",
-            "en": "Exactly! 3 is fewer than 4."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu67",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Baum-Bilder?",
-            "en": "Which card shows more Tree pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-6-correct",
-              "label": "🌳 🌳"
-            },
-            {
-              "id": "group-6-other",
-              "label": "🌳"
-            }
-          ],
-          "correctAnswerId": "group-6-correct",
-          "success": {
-            "de": "Genau! 2 ist mehr als 1.",
-            "en": "Exactly! 2 is more than 1."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu68",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Blume-Bilder?",
-            "en": "Which card shows fewer Flower pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-7-other",
-              "label": "🌸 🌸 🌸"
-            },
-            {
-              "id": "group-7-correct",
-              "label": "🌸 🌸"
-            }
-          ],
-          "correctAnswerId": "group-7-correct",
-          "success": {
-            "de": "Genau! 2 ist weniger als 3.",
-            "en": "Exactly! 2 is fewer than 3."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu69",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Gras-Bilder?",
-            "en": "Which card shows more Grass pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-8-correct",
-              "label": "🌱 🌱 🌱 🌱"
-            },
-            {
-              "id": "group-8-other",
-              "label": "🌱 🌱 🌱"
-            }
-          ],
-          "correctAnswerId": "group-8-correct",
-          "success": {
-            "de": "Genau! 4 ist mehr als 3.",
-            "en": "Exactly! 4 is more than 3."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu70",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Berg-Bilder?",
-            "en": "Which card shows fewer Mountain pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-9-other",
-              "label": "⛰️ ⛰️"
-            },
-            {
-              "id": "group-9-correct",
-              "label": "⛰️"
-            }
-          ],
-          "correctAnswerId": "group-9-correct",
-          "success": {
-            "de": "Genau! 1 ist weniger als 2.",
-            "en": "Exactly! 1 is fewer than 2."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu71",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Fluss-Bilder?",
-            "en": "Which card shows more River pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-10-correct",
-              "label": "🏞️ 🏞️ 🏞️"
-            },
-            {
-              "id": "group-10-other",
-              "label": "🏞️ 🏞️"
-            }
-          ],
-          "correctAnswerId": "group-10-correct",
-          "success": {
-            "de": "Genau! 3 ist mehr als 2.",
-            "en": "Exactly! 3 is more than 2."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu72",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Buch-Bilder?",
-            "en": "Which card shows fewer Book pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-11-other",
-              "label": "📘 📘 📘 📘"
-            },
-            {
-              "id": "group-11-correct",
-              "label": "📘 📘 📘"
-            }
-          ],
-          "correctAnswerId": "group-11-correct",
-          "success": {
-            "de": "Genau! 3 ist weniger als 4.",
-            "en": "Exactly! 3 is fewer than 4."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu73",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Stift-Bilder?",
-            "en": "Which card shows more Pencil pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-12-correct",
-              "label": "✏️ ✏️"
-            },
-            {
-              "id": "group-12-other",
-              "label": "✏️"
-            }
-          ],
-          "correctAnswerId": "group-12-correct",
-          "success": {
-            "de": "Genau! 2 ist mehr als 1.",
-            "en": "Exactly! 2 is more than 1."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu74",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Ball-Bilder?",
-            "en": "Which card shows fewer Ball pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-13-other",
-              "label": "⚽ ⚽ ⚽"
-            },
-            {
-              "id": "group-13-correct",
-              "label": "⚽ ⚽"
-            }
-          ],
-          "correctAnswerId": "group-13-correct",
-          "success": {
-            "de": "Genau! 2 ist weniger als 3.",
-            "en": "Exactly! 2 is fewer than 3."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu75",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Puppe-Bilder?",
-            "en": "Which card shows more Doll pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-14-correct",
-              "label": "🪆 🪆 🪆 🪆"
-            },
-            {
-              "id": "group-14-other",
-              "label": "🪆 🪆 🪆"
-            }
-          ],
-          "correctAnswerId": "group-14-correct",
-          "success": {
-            "de": "Genau! 4 ist mehr als 3.",
-            "en": "Exactly! 4 is more than 3."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu76",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Trommel-Bilder?",
-            "en": "Which card shows fewer Drum pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-15-other",
-              "label": "🥁 🥁"
-            },
-            {
-              "id": "group-15-correct",
-              "label": "🥁"
-            }
-          ],
-          "correctAnswerId": "group-15-correct",
-          "success": {
-            "de": "Genau! 1 ist weniger als 2.",
-            "en": "Exactly! 1 is fewer than 2."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu77",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Uhr-Bilder?",
-            "en": "Which card shows more Clock pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-16-correct",
-              "label": "🕐 🕐 🕐"
-            },
-            {
-              "id": "group-16-other",
-              "label": "🕐 🕐"
-            }
-          ],
-          "correctAnswerId": "group-16-correct",
-          "success": {
-            "de": "Genau! 3 ist mehr als 2.",
-            "en": "Exactly! 3 is more than 2."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu78",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Schlüssel-Bilder?",
-            "en": "Which card shows fewer Key pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-17-other",
-              "label": "🔑 🔑 🔑 🔑"
-            },
-            {
-              "id": "group-17-correct",
-              "label": "🔑 🔑 🔑"
-            }
-          ],
-          "correctAnswerId": "group-17-correct",
-          "success": {
-            "de": "Genau! 3 ist weniger als 4.",
-            "en": "Exactly! 3 is fewer than 4."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu79",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Schuh-Bilder?",
-            "en": "Which card shows more Shoe pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-18-correct",
-              "label": "👟 👟"
-            },
-            {
-              "id": "group-18-other",
-              "label": "👟"
-            }
-          ],
-          "correctAnswerId": "group-18-correct",
-          "success": {
-            "de": "Genau! 2 ist mehr als 1.",
-            "en": "Exactly! 2 is more than 1."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu80",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Hut-Bilder?",
-            "en": "Which card shows fewer Hat pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-19-other",
-              "label": "🧢 🧢 🧢"
-            },
-            {
-              "id": "group-19-correct",
-              "label": "🧢 🧢"
-            }
-          ],
-          "correctAnswerId": "group-19-correct",
-          "success": {
-            "de": "Genau! 2 ist weniger als 3.",
-            "en": "Exactly! 2 is fewer than 3."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu81",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Hand-Bilder?",
-            "en": "Which card shows more Hand pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-20-correct",
-              "label": "✋ ✋ ✋ ✋"
-            },
-            {
-              "id": "group-20-other",
-              "label": "✋ ✋ ✋"
-            }
-          ],
-          "correctAnswerId": "group-20-correct",
-          "success": {
-            "de": "Genau! 4 ist mehr als 3.",
-            "en": "Exactly! 4 is more than 3."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu82",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Herz-Bilder?",
-            "en": "Which card shows fewer Heart pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-21-other",
-              "label": "❤️ ❤️"
-            },
-            {
-              "id": "group-21-correct",
-              "label": "❤️"
-            }
-          ],
-          "correctAnswerId": "group-21-correct",
-          "success": {
-            "de": "Genau! 1 ist weniger als 2.",
-            "en": "Exactly! 1 is fewer than 2."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu83",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Socke-Bilder?",
-            "en": "Which card shows more Sock pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-22-correct",
-              "label": "🧦 🧦 🧦"
-            },
-            {
-              "id": "group-22-other",
-              "label": "🧦 🧦"
-            }
-          ],
-          "correctAnswerId": "group-22-correct",
-          "success": {
-            "de": "Genau! 3 ist mehr als 2.",
-            "en": "Exactly! 3 is more than 2."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu84",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Jacke-Bilder?",
-            "en": "Which card shows fewer Jacket pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-23-other",
-              "label": "🧥 🧥 🧥 🧥"
-            },
-            {
-              "id": "group-23-correct",
-              "label": "🧥 🧥 🧥"
-            }
-          ],
-          "correctAnswerId": "group-23-correct",
-          "success": {
-            "de": "Genau! 3 ist weniger als 4.",
-            "en": "Exactly! 3 is fewer than 4."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu85",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Hose-Bilder?",
-            "en": "Which card shows more Pants pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-24-correct",
-              "label": "👖 👖"
-            },
-            {
-              "id": "group-24-other",
-              "label": "👖"
-            }
-          ],
-          "correctAnswerId": "group-24-correct",
-          "success": {
-            "de": "Genau! 2 ist mehr als 1.",
-            "en": "Exactly! 2 is more than 1."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu86",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Kleid-Bilder?",
-            "en": "Which card shows fewer Dress pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-25-other",
-              "label": "👗 👗 👗"
-            },
-            {
-              "id": "group-25-correct",
-              "label": "👗 👗"
-            }
-          ],
-          "correctAnswerId": "group-25-correct",
-          "success": {
-            "de": "Genau! 2 ist weniger als 3.",
-            "en": "Exactly! 2 is fewer than 3."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu87",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Löffel-Bilder?",
-            "en": "Which card shows more Spoon pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-26-correct",
-              "label": "🥄 🥄 🥄 🥄"
-            },
-            {
-              "id": "group-26-other",
-              "label": "🥄 🥄 🥄"
-            }
-          ],
-          "correctAnswerId": "group-26-correct",
-          "success": {
-            "de": "Genau! 4 ist mehr als 3.",
-            "en": "Exactly! 4 is more than 3."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu88",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Gabel-Bilder?",
-            "en": "Which card shows fewer Fork pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-27-other",
-              "label": "🍴 🍴"
-            },
-            {
-              "id": "group-27-correct",
-              "label": "🍴"
-            }
-          ],
-          "correctAnswerId": "group-27-correct",
-          "success": {
-            "de": "Genau! 1 ist weniger als 2.",
-            "en": "Exactly! 1 is fewer than 2."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu89",
-          "prompt": {
-            "de": "Welche Karte zeigt mehr Teller-Bilder?",
-            "en": "Which card shows more Plate pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-28-correct",
-              "label": "🍽️ 🍽️ 🍽️"
-            },
-            {
-              "id": "group-28-other",
-              "label": "🍽️ 🍽️"
-            }
-          ],
-          "correctAnswerId": "group-28-correct",
-          "success": {
-            "de": "Genau! 3 ist mehr als 2.",
-            "en": "Exactly! 3 is more than 2."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
-          }
-        },
-        {
-          "id": "dnu90",
-          "prompt": {
-            "de": "Welche Karte zeigt weniger Tasse-Bilder?",
-            "en": "Which card shows fewer Cup pictures?"
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "group-29-other",
-              "label": "☕ ☕ ☕ ☕"
-            },
-            {
-              "id": "group-29-correct",
-              "label": "☕ ☕ ☕"
-            }
-          ],
-          "correctAnswerId": "group-29-correct",
-          "success": {
-            "de": "Genau! 3 ist weniger als 4.",
-            "en": "Exactly! 3 is fewer than 4."
-          },
-          "hint": {
-            "de": "Zähle beide Bildgruppen langsam.",
-            "en": "Count both picture groups slowly."
+            "de": "Zähle bis 5 und stoppe dann.",
+            "en": "Count to 5 and then stop."
           }
         }
       ],
@@ -5257,12 +5317,13 @@ export const categories: LearningCategory[] = [
     "questionsByAge": {
       "discoverer": [
         {
-          "id": "dcu1",
+          "id": "d2cu1",
           "prompt": {
             "de": "Welche Farbe siehst du bei diesem Bild: Apfel?",
             "en": "Which color can you see in this picture: apple?"
           },
           "visual": "🍎",
+          "conceptKey": "red",
           "answers": [
             {
               "id": "red",
@@ -5292,2042 +5353,17 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dcu2",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Erdbeere?",
-            "en": "Which color can you see in this picture: strawberry?"
-          },
-          "visual": "🍓",
-          "answers": [
-            {
-              "id": "yellow",
-              "label": {
-                "de": "Gelb",
-                "en": "Yellow"
-              },
-              "color": "#FBC02D"
-            },
-            {
-              "id": "red",
-              "label": {
-                "de": "Rot",
-                "en": "Red"
-              },
-              "color": "#EF5350"
-            }
-          ],
-          "correctAnswerId": "red",
-          "success": {
-            "de": "Richtig! Die Farbe ist Rot.",
-            "en": "Correct! The color is Red."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu3",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Kirschen?",
-            "en": "Which color can you see in this picture: cherries?"
-          },
-          "visual": "🍒",
-          "answers": [
-            {
-              "id": "red",
-              "label": {
-                "de": "Rot",
-                "en": "Red"
-              },
-              "color": "#EF5350"
-            },
-            {
-              "id": "yellow",
-              "label": {
-                "de": "Gelb",
-                "en": "Yellow"
-              },
-              "color": "#FBC02D"
-            }
-          ],
-          "correctAnswerId": "red",
-          "success": {
-            "de": "Richtig! Die Farbe ist Rot.",
-            "en": "Correct! The color is Red."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu4",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Tomate?",
-            "en": "Which color can you see in this picture: tomato?"
-          },
-          "visual": "🍅",
-          "answers": [
-            {
-              "id": "yellow",
-              "label": {
-                "de": "Gelb",
-                "en": "Yellow"
-              },
-              "color": "#FBC02D"
-            },
-            {
-              "id": "red",
-              "label": {
-                "de": "Rot",
-                "en": "Red"
-              },
-              "color": "#EF5350"
-            }
-          ],
-          "correctAnswerId": "red",
-          "success": {
-            "de": "Richtig! Die Farbe ist Rot.",
-            "en": "Correct! The color is Red."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu5",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: rotes Herz?",
-            "en": "Which color can you see in this picture: red heart?"
-          },
-          "visual": "❤️",
-          "answers": [
-            {
-              "id": "red",
-              "label": {
-                "de": "Rot",
-                "en": "Red"
-              },
-              "color": "#EF5350"
-            },
-            {
-              "id": "yellow",
-              "label": {
-                "de": "Gelb",
-                "en": "Yellow"
-              },
-              "color": "#FBC02D"
-            }
-          ],
-          "correctAnswerId": "red",
-          "success": {
-            "de": "Richtig! Die Farbe ist Rot.",
-            "en": "Correct! The color is Red."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu6",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Feuerwehrauto?",
-            "en": "Which color can you see in this picture: fire truck?"
-          },
-          "visual": "🚒",
-          "answers": [
-            {
-              "id": "yellow",
-              "label": {
-                "de": "Gelb",
-                "en": "Yellow"
-              },
-              "color": "#FBC02D"
-            },
-            {
-              "id": "red",
-              "label": {
-                "de": "Rot",
-                "en": "Red"
-              },
-              "color": "#EF5350"
-            }
-          ],
-          "correctAnswerId": "red",
-          "success": {
-            "de": "Richtig! Die Farbe ist Rot.",
-            "en": "Correct! The color is Red."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu7",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: blauer Kreis?",
-            "en": "Which color can you see in this picture: blue circle?"
-          },
-          "visual": "🔵",
-          "answers": [
-            {
-              "id": "blue",
-              "label": {
-                "de": "Blau",
-                "en": "Blue"
-              },
-              "color": "#42A5F5"
-            },
-            {
-              "id": "purple",
-              "label": {
-                "de": "Lila",
-                "en": "Purple"
-              },
-              "color": "#AB47BC"
-            }
-          ],
-          "correctAnswerId": "blue",
-          "success": {
-            "de": "Richtig! Die Farbe ist Blau.",
-            "en": "Correct! The color is Blue."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu8",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: blaues Herz?",
-            "en": "Which color can you see in this picture: blue heart?"
-          },
-          "visual": "💙",
-          "answers": [
-            {
-              "id": "purple",
-              "label": {
-                "de": "Lila",
-                "en": "Purple"
-              },
-              "color": "#AB47BC"
-            },
-            {
-              "id": "blue",
-              "label": {
-                "de": "Blau",
-                "en": "Blue"
-              },
-              "color": "#42A5F5"
-            }
-          ],
-          "correctAnswerId": "blue",
-          "success": {
-            "de": "Richtig! Die Farbe ist Blau.",
-            "en": "Correct! The color is Blue."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu9",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Heidelbeeren?",
-            "en": "Which color can you see in this picture: blueberries?"
-          },
-          "visual": "🫐",
-          "answers": [
-            {
-              "id": "blue",
-              "label": {
-                "de": "Blau",
-                "en": "Blue"
-              },
-              "color": "#42A5F5"
-            },
-            {
-              "id": "purple",
-              "label": {
-                "de": "Lila",
-                "en": "Purple"
-              },
-              "color": "#AB47BC"
-            }
-          ],
-          "correctAnswerId": "blue",
-          "success": {
-            "de": "Richtig! Die Farbe ist Blau.",
-            "en": "Correct! The color is Blue."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu10",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Wassertropfen?",
-            "en": "Which color can you see in this picture: water drop?"
-          },
-          "visual": "💧",
-          "answers": [
-            {
-              "id": "purple",
-              "label": {
-                "de": "Lila",
-                "en": "Purple"
-              },
-              "color": "#AB47BC"
-            },
-            {
-              "id": "blue",
-              "label": {
-                "de": "Blau",
-                "en": "Blue"
-              },
-              "color": "#42A5F5"
-            }
-          ],
-          "correctAnswerId": "blue",
-          "success": {
-            "de": "Richtig! Die Farbe ist Blau.",
-            "en": "Correct! The color is Blue."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu11",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: blaues Quadrat?",
-            "en": "Which color can you see in this picture: blue square?"
-          },
-          "visual": "🟦",
-          "answers": [
-            {
-              "id": "blue",
-              "label": {
-                "de": "Blau",
-                "en": "Blue"
-              },
-              "color": "#42A5F5"
-            },
-            {
-              "id": "purple",
-              "label": {
-                "de": "Lila",
-                "en": "Purple"
-              },
-              "color": "#AB47BC"
-            }
-          ],
-          "correctAnswerId": "blue",
-          "success": {
-            "de": "Richtig! Die Farbe ist Blau.",
-            "en": "Correct! The color is Blue."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu12",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: blauer Diamant?",
-            "en": "Which color can you see in this picture: blue diamond?"
-          },
-          "visual": "🔷",
-          "answers": [
-            {
-              "id": "purple",
-              "label": {
-                "de": "Lila",
-                "en": "Purple"
-              },
-              "color": "#AB47BC"
-            },
-            {
-              "id": "blue",
-              "label": {
-                "de": "Blau",
-                "en": "Blue"
-              },
-              "color": "#42A5F5"
-            }
-          ],
-          "correctAnswerId": "blue",
-          "success": {
-            "de": "Richtig! Die Farbe ist Blau.",
-            "en": "Correct! The color is Blue."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu13",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: grüner Kreis?",
-            "en": "Which color can you see in this picture: green circle?"
-          },
-          "visual": "🟢",
-          "answers": [
-            {
-              "id": "green",
-              "label": {
-                "de": "Grün",
-                "en": "Green"
-              },
-              "color": "#66BB6A"
-            },
-            {
-              "id": "orange",
-              "label": {
-                "de": "Orange",
-                "en": "Orange"
-              },
-              "color": "#FB8C00"
-            }
-          ],
-          "correctAnswerId": "green",
-          "success": {
-            "de": "Richtig! Die Farbe ist Grün.",
-            "en": "Correct! The color is Green."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu14",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: grünes Herz?",
-            "en": "Which color can you see in this picture: green heart?"
-          },
-          "visual": "💚",
-          "answers": [
-            {
-              "id": "orange",
-              "label": {
-                "de": "Orange",
-                "en": "Orange"
-              },
-              "color": "#FB8C00"
-            },
-            {
-              "id": "green",
-              "label": {
-                "de": "Grün",
-                "en": "Green"
-              },
-              "color": "#66BB6A"
-            }
-          ],
-          "correctAnswerId": "green",
-          "success": {
-            "de": "Richtig! Die Farbe ist Grün.",
-            "en": "Correct! The color is Green."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu15",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: grünes Quadrat?",
-            "en": "Which color can you see in this picture: green square?"
-          },
-          "visual": "🟩",
-          "answers": [
-            {
-              "id": "green",
-              "label": {
-                "de": "Grün",
-                "en": "Green"
-              },
-              "color": "#66BB6A"
-            },
-            {
-              "id": "orange",
-              "label": {
-                "de": "Orange",
-                "en": "Orange"
-              },
-              "color": "#FB8C00"
-            }
-          ],
-          "correctAnswerId": "green",
-          "success": {
-            "de": "Richtig! Die Farbe ist Grün.",
-            "en": "Correct! The color is Green."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu16",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: grüner Apfel?",
-            "en": "Which color can you see in this picture: green apple?"
-          },
-          "visual": "🍏",
-          "answers": [
-            {
-              "id": "orange",
-              "label": {
-                "de": "Orange",
-                "en": "Orange"
-              },
-              "color": "#FB8C00"
-            },
-            {
-              "id": "green",
-              "label": {
-                "de": "Grün",
-                "en": "Green"
-              },
-              "color": "#66BB6A"
-            }
-          ],
-          "correctAnswerId": "green",
-          "success": {
-            "de": "Richtig! Die Farbe ist Grün.",
-            "en": "Correct! The color is Green."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu17",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Brokkoli?",
-            "en": "Which color can you see in this picture: broccoli?"
-          },
-          "visual": "🥦",
-          "answers": [
-            {
-              "id": "green",
-              "label": {
-                "de": "Grün",
-                "en": "Green"
-              },
-              "color": "#66BB6A"
-            },
-            {
-              "id": "orange",
-              "label": {
-                "de": "Orange",
-                "en": "Orange"
-              },
-              "color": "#FB8C00"
-            }
-          ],
-          "correctAnswerId": "green",
-          "success": {
-            "de": "Richtig! Die Farbe ist Grün.",
-            "en": "Correct! The color is Green."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu18",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Gurke?",
-            "en": "Which color can you see in this picture: cucumber?"
-          },
-          "visual": "🥒",
-          "answers": [
-            {
-              "id": "orange",
-              "label": {
-                "de": "Orange",
-                "en": "Orange"
-              },
-              "color": "#FB8C00"
-            },
-            {
-              "id": "green",
-              "label": {
-                "de": "Grün",
-                "en": "Green"
-              },
-              "color": "#66BB6A"
-            }
-          ],
-          "correctAnswerId": "green",
-          "success": {
-            "de": "Richtig! Die Farbe ist Grün.",
-            "en": "Correct! The color is Green."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu19",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: gelber Kreis?",
-            "en": "Which color can you see in this picture: yellow circle?"
-          },
-          "visual": "🟡",
-          "answers": [
-            {
-              "id": "yellow",
-              "label": {
-                "de": "Gelb",
-                "en": "Yellow"
-              },
-              "color": "#FBC02D"
-            },
-            {
-              "id": "pink",
-              "label": {
-                "de": "Rosa",
-                "en": "Pink"
-              },
-              "color": "#EC6FA7"
-            }
-          ],
-          "correctAnswerId": "yellow",
-          "success": {
-            "de": "Richtig! Die Farbe ist Gelb.",
-            "en": "Correct! The color is Yellow."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu20",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: gelbes Herz?",
-            "en": "Which color can you see in this picture: yellow heart?"
-          },
-          "visual": "💛",
-          "answers": [
-            {
-              "id": "pink",
-              "label": {
-                "de": "Rosa",
-                "en": "Pink"
-              },
-              "color": "#EC6FA7"
-            },
-            {
-              "id": "yellow",
-              "label": {
-                "de": "Gelb",
-                "en": "Yellow"
-              },
-              "color": "#FBC02D"
-            }
-          ],
-          "correctAnswerId": "yellow",
-          "success": {
-            "de": "Richtig! Die Farbe ist Gelb.",
-            "en": "Correct! The color is Yellow."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu21",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: gelbes Quadrat?",
-            "en": "Which color can you see in this picture: yellow square?"
-          },
-          "visual": "🟨",
-          "answers": [
-            {
-              "id": "yellow",
-              "label": {
-                "de": "Gelb",
-                "en": "Yellow"
-              },
-              "color": "#FBC02D"
-            },
-            {
-              "id": "pink",
-              "label": {
-                "de": "Rosa",
-                "en": "Pink"
-              },
-              "color": "#EC6FA7"
-            }
-          ],
-          "correctAnswerId": "yellow",
-          "success": {
-            "de": "Richtig! Die Farbe ist Gelb.",
-            "en": "Correct! The color is Yellow."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu22",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Zitrone?",
-            "en": "Which color can you see in this picture: lemon?"
-          },
-          "visual": "🍋",
-          "answers": [
-            {
-              "id": "pink",
-              "label": {
-                "de": "Rosa",
-                "en": "Pink"
-              },
-              "color": "#EC6FA7"
-            },
-            {
-              "id": "yellow",
-              "label": {
-                "de": "Gelb",
-                "en": "Yellow"
-              },
-              "color": "#FBC02D"
-            }
-          ],
-          "correctAnswerId": "yellow",
-          "success": {
-            "de": "Richtig! Die Farbe ist Gelb.",
-            "en": "Correct! The color is Yellow."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu23",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Banane?",
-            "en": "Which color can you see in this picture: banana?"
-          },
-          "visual": "🍌",
-          "answers": [
-            {
-              "id": "yellow",
-              "label": {
-                "de": "Gelb",
-                "en": "Yellow"
-              },
-              "color": "#FBC02D"
-            },
-            {
-              "id": "pink",
-              "label": {
-                "de": "Rosa",
-                "en": "Pink"
-              },
-              "color": "#EC6FA7"
-            }
-          ],
-          "correctAnswerId": "yellow",
-          "success": {
-            "de": "Richtig! Die Farbe ist Gelb.",
-            "en": "Correct! The color is Yellow."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu24",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Stern?",
-            "en": "Which color can you see in this picture: star?"
-          },
-          "visual": "🌟",
-          "answers": [
-            {
-              "id": "pink",
-              "label": {
-                "de": "Rosa",
-                "en": "Pink"
-              },
-              "color": "#EC6FA7"
-            },
-            {
-              "id": "yellow",
-              "label": {
-                "de": "Gelb",
-                "en": "Yellow"
-              },
-              "color": "#FBC02D"
-            }
-          ],
-          "correctAnswerId": "yellow",
-          "success": {
-            "de": "Richtig! Die Farbe ist Gelb.",
-            "en": "Correct! The color is Yellow."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu25",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: orangefarbener Kreis?",
-            "en": "Which color can you see in this picture: orange circle?"
-          },
-          "visual": "🟠",
-          "answers": [
-            {
-              "id": "orange",
-              "label": {
-                "de": "Orange",
-                "en": "Orange"
-              },
-              "color": "#FB8C00"
-            },
-            {
-              "id": "red",
-              "label": {
-                "de": "Rot",
-                "en": "Red"
-              },
-              "color": "#EF5350"
-            }
-          ],
-          "correctAnswerId": "orange",
-          "success": {
-            "de": "Richtig! Die Farbe ist Orange.",
-            "en": "Correct! The color is Orange."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu26",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: orangefarbenes Herz?",
-            "en": "Which color can you see in this picture: orange heart?"
-          },
-          "visual": "🧡",
-          "answers": [
-            {
-              "id": "red",
-              "label": {
-                "de": "Rot",
-                "en": "Red"
-              },
-              "color": "#EF5350"
-            },
-            {
-              "id": "orange",
-              "label": {
-                "de": "Orange",
-                "en": "Orange"
-              },
-              "color": "#FB8C00"
-            }
-          ],
-          "correctAnswerId": "orange",
-          "success": {
-            "de": "Richtig! Die Farbe ist Orange.",
-            "en": "Correct! The color is Orange."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu27",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: orangefarbenes Quadrat?",
-            "en": "Which color can you see in this picture: orange square?"
-          },
-          "visual": "🟧",
-          "answers": [
-            {
-              "id": "orange",
-              "label": {
-                "de": "Orange",
-                "en": "Orange"
-              },
-              "color": "#FB8C00"
-            },
-            {
-              "id": "red",
-              "label": {
-                "de": "Rot",
-                "en": "Red"
-              },
-              "color": "#EF5350"
-            }
-          ],
-          "correctAnswerId": "orange",
-          "success": {
-            "de": "Richtig! Die Farbe ist Orange.",
-            "en": "Correct! The color is Orange."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu28",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Orange?",
-            "en": "Which color can you see in this picture: orange fruit?"
-          },
-          "visual": "🍊",
-          "answers": [
-            {
-              "id": "red",
-              "label": {
-                "de": "Rot",
-                "en": "Red"
-              },
-              "color": "#EF5350"
-            },
-            {
-              "id": "orange",
-              "label": {
-                "de": "Orange",
-                "en": "Orange"
-              },
-              "color": "#FB8C00"
-            }
-          ],
-          "correctAnswerId": "orange",
-          "success": {
-            "de": "Richtig! Die Farbe ist Orange.",
-            "en": "Correct! The color is Orange."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu29",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Karotte?",
-            "en": "Which color can you see in this picture: carrot?"
-          },
-          "visual": "🥕",
-          "answers": [
-            {
-              "id": "orange",
-              "label": {
-                "de": "Orange",
-                "en": "Orange"
-              },
-              "color": "#FB8C00"
-            },
-            {
-              "id": "red",
-              "label": {
-                "de": "Rot",
-                "en": "Red"
-              },
-              "color": "#EF5350"
-            }
-          ],
-          "correctAnswerId": "orange",
-          "success": {
-            "de": "Richtig! Die Farbe ist Orange.",
-            "en": "Correct! The color is Orange."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu30",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Kürbis?",
-            "en": "Which color can you see in this picture: pumpkin?"
-          },
-          "visual": "🎃",
-          "answers": [
-            {
-              "id": "red",
-              "label": {
-                "de": "Rot",
-                "en": "Red"
-              },
-              "color": "#EF5350"
-            },
-            {
-              "id": "orange",
-              "label": {
-                "de": "Orange",
-                "en": "Orange"
-              },
-              "color": "#FB8C00"
-            }
-          ],
-          "correctAnswerId": "orange",
-          "success": {
-            "de": "Richtig! Die Farbe ist Orange.",
-            "en": "Correct! The color is Orange."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu31",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: lilafarbener Kreis?",
-            "en": "Which color can you see in this picture: purple circle?"
-          },
-          "visual": "🟣",
-          "answers": [
-            {
-              "id": "purple",
-              "label": {
-                "de": "Lila",
-                "en": "Purple"
-              },
-              "color": "#AB47BC"
-            },
-            {
-              "id": "brown",
-              "label": {
-                "de": "Braun",
-                "en": "Brown"
-              },
-              "color": "#8D6E63"
-            }
-          ],
-          "correctAnswerId": "purple",
-          "success": {
-            "de": "Richtig! Die Farbe ist Lila.",
-            "en": "Correct! The color is Purple."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu32",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: lilafarbenes Herz?",
-            "en": "Which color can you see in this picture: purple heart?"
-          },
-          "visual": "💜",
-          "answers": [
-            {
-              "id": "brown",
-              "label": {
-                "de": "Braun",
-                "en": "Brown"
-              },
-              "color": "#8D6E63"
-            },
-            {
-              "id": "purple",
-              "label": {
-                "de": "Lila",
-                "en": "Purple"
-              },
-              "color": "#AB47BC"
-            }
-          ],
-          "correctAnswerId": "purple",
-          "success": {
-            "de": "Richtig! Die Farbe ist Lila.",
-            "en": "Correct! The color is Purple."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu33",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: lilafarbenes Quadrat?",
-            "en": "Which color can you see in this picture: purple square?"
-          },
-          "visual": "🟪",
-          "answers": [
-            {
-              "id": "purple",
-              "label": {
-                "de": "Lila",
-                "en": "Purple"
-              },
-              "color": "#AB47BC"
-            },
-            {
-              "id": "brown",
-              "label": {
-                "de": "Braun",
-                "en": "Brown"
-              },
-              "color": "#8D6E63"
-            }
-          ],
-          "correctAnswerId": "purple",
-          "success": {
-            "de": "Richtig! Die Farbe ist Lila.",
-            "en": "Correct! The color is Purple."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu34",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Weintrauben?",
-            "en": "Which color can you see in this picture: grapes?"
-          },
-          "visual": "🍇",
-          "answers": [
-            {
-              "id": "brown",
-              "label": {
-                "de": "Braun",
-                "en": "Brown"
-              },
-              "color": "#8D6E63"
-            },
-            {
-              "id": "purple",
-              "label": {
-                "de": "Lila",
-                "en": "Purple"
-              },
-              "color": "#AB47BC"
-            }
-          ],
-          "correctAnswerId": "purple",
-          "success": {
-            "de": "Richtig! Die Farbe ist Lila.",
-            "en": "Correct! The color is Purple."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu35",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Aubergine?",
-            "en": "Which color can you see in this picture: eggplant?"
-          },
-          "visual": "🍆",
-          "answers": [
-            {
-              "id": "purple",
-              "label": {
-                "de": "Lila",
-                "en": "Purple"
-              },
-              "color": "#AB47BC"
-            },
-            {
-              "id": "brown",
-              "label": {
-                "de": "Braun",
-                "en": "Brown"
-              },
-              "color": "#8D6E63"
-            }
-          ],
-          "correctAnswerId": "purple",
-          "success": {
-            "de": "Richtig! Die Farbe ist Lila.",
-            "en": "Correct! The color is Purple."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu36",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: rosa Herz?",
-            "en": "Which color can you see in this picture: pink heart?"
-          },
-          "visual": "🩷",
-          "answers": [
-            {
-              "id": "blue",
-              "label": {
-                "de": "Blau",
-                "en": "Blue"
-              },
-              "color": "#42A5F5"
-            },
-            {
-              "id": "pink",
-              "label": {
-                "de": "Rosa",
-                "en": "Pink"
-              },
-              "color": "#EC6FA7"
-            }
-          ],
-          "correctAnswerId": "pink",
-          "success": {
-            "de": "Richtig! Die Farbe ist Rosa.",
-            "en": "Correct! The color is Pink."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu37",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: rosa Blume?",
-            "en": "Which color can you see in this picture: pink flower?"
-          },
-          "visual": "🌸",
-          "answers": [
-            {
-              "id": "pink",
-              "label": {
-                "de": "Rosa",
-                "en": "Pink"
-              },
-              "color": "#EC6FA7"
-            },
-            {
-              "id": "blue",
-              "label": {
-                "de": "Blau",
-                "en": "Blue"
-              },
-              "color": "#42A5F5"
-            }
-          ],
-          "correctAnswerId": "pink",
-          "success": {
-            "de": "Richtig! Die Farbe ist Rosa.",
-            "en": "Correct! The color is Pink."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu38",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Flamingo?",
-            "en": "Which color can you see in this picture: flamingo?"
-          },
-          "visual": "🦩",
-          "answers": [
-            {
-              "id": "blue",
-              "label": {
-                "de": "Blau",
-                "en": "Blue"
-              },
-              "color": "#42A5F5"
-            },
-            {
-              "id": "pink",
-              "label": {
-                "de": "Rosa",
-                "en": "Pink"
-              },
-              "color": "#EC6FA7"
-            }
-          ],
-          "correctAnswerId": "pink",
-          "success": {
-            "de": "Richtig! Die Farbe ist Rosa.",
-            "en": "Correct! The color is Pink."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu39",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Ferkel?",
-            "en": "Which color can you see in this picture: piglet?"
-          },
-          "visual": "🐷",
-          "answers": [
-            {
-              "id": "pink",
-              "label": {
-                "de": "Rosa",
-                "en": "Pink"
-              },
-              "color": "#EC6FA7"
-            },
-            {
-              "id": "blue",
-              "label": {
-                "de": "Blau",
-                "en": "Blue"
-              },
-              "color": "#42A5F5"
-            }
-          ],
-          "correctAnswerId": "pink",
-          "success": {
-            "de": "Richtig! Die Farbe ist Rosa.",
-            "en": "Correct! The color is Pink."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu40",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: rosa Schleife?",
-            "en": "Which color can you see in this picture: pink bow?"
-          },
-          "visual": "🎀",
-          "answers": [
-            {
-              "id": "blue",
-              "label": {
-                "de": "Blau",
-                "en": "Blue"
-              },
-              "color": "#42A5F5"
-            },
-            {
-              "id": "pink",
-              "label": {
-                "de": "Rosa",
-                "en": "Pink"
-              },
-              "color": "#EC6FA7"
-            }
-          ],
-          "correctAnswerId": "pink",
-          "success": {
-            "de": "Richtig! Die Farbe ist Rosa.",
-            "en": "Correct! The color is Pink."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu41",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: brauner Kreis?",
-            "en": "Which color can you see in this picture: brown circle?"
-          },
-          "visual": "🟤",
-          "answers": [
-            {
-              "id": "brown",
-              "label": {
-                "de": "Braun",
-                "en": "Brown"
-              },
-              "color": "#8D6E63"
-            },
-            {
-              "id": "green",
-              "label": {
-                "de": "Grün",
-                "en": "Green"
-              },
-              "color": "#66BB6A"
-            }
-          ],
-          "correctAnswerId": "brown",
-          "success": {
-            "de": "Richtig! Die Farbe ist Braun.",
-            "en": "Correct! The color is Brown."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu42",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: braunes Herz?",
-            "en": "Which color can you see in this picture: brown heart?"
-          },
-          "visual": "🤎",
-          "answers": [
-            {
-              "id": "green",
-              "label": {
-                "de": "Grün",
-                "en": "Green"
-              },
-              "color": "#66BB6A"
-            },
-            {
-              "id": "brown",
-              "label": {
-                "de": "Braun",
-                "en": "Brown"
-              },
-              "color": "#8D6E63"
-            }
-          ],
-          "correctAnswerId": "brown",
-          "success": {
-            "de": "Richtig! Die Farbe ist Braun.",
-            "en": "Correct! The color is Brown."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu43",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Braunbär?",
-            "en": "Which color can you see in this picture: brown bear?"
-          },
-          "visual": "🐻",
-          "answers": [
-            {
-              "id": "brown",
-              "label": {
-                "de": "Braun",
-                "en": "Brown"
-              },
-              "color": "#8D6E63"
-            },
-            {
-              "id": "green",
-              "label": {
-                "de": "Grün",
-                "en": "Green"
-              },
-              "color": "#66BB6A"
-            }
-          ],
-          "correctAnswerId": "brown",
-          "success": {
-            "de": "Richtig! Die Farbe ist Braun.",
-            "en": "Correct! The color is Brown."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu44",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Schokolade?",
-            "en": "Which color can you see in this picture: chocolate?"
-          },
-          "visual": "🍫",
-          "answers": [
-            {
-              "id": "green",
-              "label": {
-                "de": "Grün",
-                "en": "Green"
-              },
-              "color": "#66BB6A"
-            },
-            {
-              "id": "brown",
-              "label": {
-                "de": "Braun",
-                "en": "Brown"
-              },
-              "color": "#8D6E63"
-            }
-          ],
-          "correctAnswerId": "brown",
-          "success": {
-            "de": "Richtig! Die Farbe ist Braun.",
-            "en": "Correct! The color is Brown."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu45",
-          "prompt": {
-            "de": "Welche Farbe siehst du bei diesem Bild: Haselnuss?",
-            "en": "Which color can you see in this picture: hazelnut?"
-          },
-          "visual": "🌰",
-          "answers": [
-            {
-              "id": "brown",
-              "label": {
-                "de": "Braun",
-                "en": "Brown"
-              },
-              "color": "#8D6E63"
-            },
-            {
-              "id": "green",
-              "label": {
-                "de": "Grün",
-                "en": "Green"
-              },
-              "color": "#66BB6A"
-            }
-          ],
-          "correctAnswerId": "brown",
-          "success": {
-            "de": "Richtig! Die Farbe ist Braun.",
-            "en": "Correct! The color is Brown."
-          },
-          "hint": {
-            "de": "Schau dir die Farbe des Bildes genau an.",
-            "en": "Look carefully at the color in the picture."
-          }
-        },
-        {
-          "id": "dcu46",
-          "prompt": {
-            "de": "Finde dieses Bild: Apfel. Seine Farbe ist Rot.",
-            "en": "Find this picture: apple. Its color is Red."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "blue-circle",
-              "label": "🔵"
-            },
-            {
-              "id": "red-apple",
-              "label": "🍎"
-            }
-          ],
-          "correctAnswerId": "red-apple",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Rot.",
-            "en": "Look for the picture in Red."
-          }
-        },
-        {
-          "id": "dcu47",
-          "prompt": {
-            "de": "Finde dieses Bild: Erdbeere. Seine Farbe ist Rot.",
-            "en": "Find this picture: strawberry. Its color is Red."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "strawberry",
-              "label": "🍓"
-            },
-            {
-              "id": "green-heart",
-              "label": "💚"
-            }
-          ],
-          "correctAnswerId": "strawberry",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Rot.",
-            "en": "Look for the picture in Red."
-          }
-        },
-        {
-          "id": "dcu48",
-          "prompt": {
-            "de": "Finde dieses Bild: Kirschen. Seine Farbe ist Rot.",
-            "en": "Find this picture: cherries. Its color is Red."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "yellow-square",
-              "label": "🟨"
-            },
-            {
-              "id": "cherries",
-              "label": "🍒"
-            }
-          ],
-          "correctAnswerId": "cherries",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Rot.",
-            "en": "Look for the picture in Red."
-          }
-        },
-        {
-          "id": "dcu49",
-          "prompt": {
-            "de": "Finde dieses Bild: Tomate. Seine Farbe ist Rot.",
-            "en": "Find this picture: tomato. Its color is Red."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "tomato",
-              "label": "🍅"
-            },
-            {
-              "id": "orange-fruit",
-              "label": "🍊"
-            }
-          ],
-          "correctAnswerId": "tomato",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Rot.",
-            "en": "Look for the picture in Red."
-          }
-        },
-        {
-          "id": "dcu50",
-          "prompt": {
-            "de": "Finde dieses Bild: rotes Herz. Seine Farbe ist Rot.",
-            "en": "Find this picture: red heart. Its color is Red."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "eggplant",
-              "label": "🍆"
-            },
-            {
-              "id": "red-heart",
-              "label": "❤️"
-            }
-          ],
-          "correctAnswerId": "red-heart",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Rot.",
-            "en": "Look for the picture in Red."
-          }
-        },
-        {
-          "id": "dcu51",
-          "prompt": {
-            "de": "Finde dieses Bild: Feuerwehrauto. Seine Farbe ist Rot.",
-            "en": "Find this picture: fire truck. Its color is Red."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "fire-truck",
-              "label": "🚒"
-            },
-            {
-              "id": "brown-heart",
-              "label": "🤎"
-            }
-          ],
-          "correctAnswerId": "fire-truck",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Rot.",
-            "en": "Look for the picture in Red."
-          }
-        },
-        {
-          "id": "dcu52",
-          "prompt": {
-            "de": "Finde dieses Bild: blauer Kreis. Seine Farbe ist Blau.",
-            "en": "Find this picture: blue circle. Its color is Blue."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "tomato",
-              "label": "🍅"
-            },
-            {
-              "id": "blue-circle",
-              "label": "🔵"
-            }
-          ],
-          "correctAnswerId": "blue-circle",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Blau.",
-            "en": "Look for the picture in Blue."
-          }
-        },
-        {
-          "id": "dcu53",
-          "prompt": {
-            "de": "Finde dieses Bild: blaues Herz. Seine Farbe ist Blau.",
-            "en": "Find this picture: blue heart. Its color is Blue."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "blue-heart",
-              "label": "💙"
-            },
-            {
-              "id": "broccoli",
-              "label": "🥦"
-            }
-          ],
-          "correctAnswerId": "blue-heart",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Blau.",
-            "en": "Look for the picture in Blue."
-          }
-        },
-        {
-          "id": "dcu54",
-          "prompt": {
-            "de": "Finde dieses Bild: Heidelbeeren. Seine Farbe ist Blau.",
-            "en": "Find this picture: blueberries. Its color is Blue."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "star",
-              "label": "🌟"
-            },
-            {
-              "id": "blueberries",
-              "label": "🫐"
-            }
-          ],
-          "correctAnswerId": "blueberries",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Blau.",
-            "en": "Look for the picture in Blue."
-          }
-        },
-        {
-          "id": "dcu55",
-          "prompt": {
-            "de": "Finde dieses Bild: Wassertropfen. Seine Farbe ist Blau.",
-            "en": "Find this picture: water drop. Its color is Blue."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "water-drop",
-              "label": "💧"
-            },
-            {
-              "id": "purple-circle",
-              "label": "🟣"
-            }
-          ],
-          "correctAnswerId": "water-drop",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Blau.",
-            "en": "Look for the picture in Blue."
-          }
-        },
-        {
-          "id": "dcu56",
-          "prompt": {
-            "de": "Finde dieses Bild: blaues Quadrat. Seine Farbe ist Blau.",
-            "en": "Find this picture: blue square. Its color is Blue."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "flamingo",
-              "label": "🦩"
-            },
-            {
-              "id": "blue-square",
-              "label": "🟦"
-            }
-          ],
-          "correctAnswerId": "blue-square",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Blau.",
-            "en": "Look for the picture in Blue."
-          }
-        },
-        {
-          "id": "dcu57",
-          "prompt": {
-            "de": "Finde dieses Bild: blauer Diamant. Seine Farbe ist Blau.",
-            "en": "Find this picture: blue diamond. Its color is Blue."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "blue-diamond",
-              "label": "🔷"
-            },
-            {
-              "id": "hazelnut",
-              "label": "🌰"
-            }
-          ],
-          "correctAnswerId": "blue-diamond",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Blau.",
-            "en": "Look for the picture in Blue."
-          }
-        },
-        {
-          "id": "dcu58",
-          "prompt": {
-            "de": "Finde dieses Bild: grüner Kreis. Seine Farbe ist Grün.",
-            "en": "Find this picture: green circle. Its color is Green."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "blue-circle",
-              "label": "🔵"
-            },
-            {
-              "id": "green-circle",
-              "label": "🟢"
-            }
-          ],
-          "correctAnswerId": "green-circle",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Grün.",
-            "en": "Look for the picture in Green."
-          }
-        },
-        {
-          "id": "dcu59",
-          "prompt": {
-            "de": "Finde dieses Bild: grünes Herz. Seine Farbe ist Grün.",
-            "en": "Find this picture: green heart. Its color is Green."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "green-heart",
-              "label": "💚"
-            },
-            {
-              "id": "yellow-heart",
-              "label": "💛"
-            }
-          ],
-          "correctAnswerId": "green-heart",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Grün.",
-            "en": "Look for the picture in Green."
-          }
-        },
-        {
-          "id": "dcu60",
-          "prompt": {
-            "de": "Finde dieses Bild: grünes Quadrat. Seine Farbe ist Grün.",
-            "en": "Find this picture: green square. Its color is Green."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "orange-square",
-              "label": "🟧"
-            },
-            {
-              "id": "green-square",
-              "label": "🟩"
-            }
-          ],
-          "correctAnswerId": "green-square",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Grün.",
-            "en": "Look for the picture in Green."
-          }
-        },
-        {
-          "id": "dcu61",
-          "prompt": {
-            "de": "Finde dieses Bild: grüner Apfel. Seine Farbe ist Grün.",
-            "en": "Find this picture: green apple. Its color is Green."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "green-apple",
-              "label": "🍏"
-            },
-            {
-              "id": "grapes",
-              "label": "🍇"
-            }
-          ],
-          "correctAnswerId": "green-apple",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Grün.",
-            "en": "Look for the picture in Green."
-          }
-        },
-        {
-          "id": "dcu62",
-          "prompt": {
-            "de": "Finde dieses Bild: Brokkoli. Seine Farbe ist Grün.",
-            "en": "Find this picture: broccoli. Its color is Green."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "brown-circle",
-              "label": "🟤"
-            },
-            {
-              "id": "broccoli",
-              "label": "🥦"
-            }
-          ],
-          "correctAnswerId": "broccoli",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Grün.",
-            "en": "Look for the picture in Green."
-          }
-        },
-        {
-          "id": "dcu63",
-          "prompt": {
-            "de": "Finde dieses Bild: Gurke. Seine Farbe ist Grün.",
-            "en": "Find this picture: cucumber. Its color is Green."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "cucumber",
-              "label": "🥒"
-            },
-            {
-              "id": "cherries",
-              "label": "🍒"
-            }
-          ],
-          "correctAnswerId": "cucumber",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Grün.",
-            "en": "Look for the picture in Green."
-          }
-        },
-        {
-          "id": "dcu64",
+          "id": "d2cu2",
           "prompt": {
             "de": "Finde dieses Bild: gelber Kreis. Seine Farbe ist Gelb.",
             "en": "Find this picture: yellow circle. Its color is Yellow."
           },
           "visual": "",
+          "conceptKey": "yellow",
           "answers": [
             {
-              "id": "water-drop",
-              "label": "💧"
+              "id": "red-apple",
+              "label": "🍎"
             },
             {
               "id": "yellow-circle",
@@ -7345,151 +5381,189 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dcu65",
+          "id": "d2cu3",
           "prompt": {
-            "de": "Finde dieses Bild: gelbes Herz. Seine Farbe ist Gelb.",
-            "en": "Find this picture: yellow heart. Its color is Yellow."
+            "de": "Navis Perlenreihe ist Blau, Rosa, Blau. Welche Farbe kommt jetzt?",
+            "en": "Navi's bead row is Blue, Pink, Blue. Which color comes next?"
           },
-          "visual": "",
+          "visual": "📿  🔵 🩷 🔵  ?",
+          "conceptKey": "pink",
           "answers": [
             {
-              "id": "yellow-heart",
-              "label": "💛"
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
             },
             {
-              "id": "broccoli",
-              "label": "🥦"
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
             }
           ],
-          "correctAnswerId": "yellow-heart",
+          "correctAnswerId": "pink",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Rosa.",
+            "en": "Pattern solved! Pink comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Blau, Rosa.",
+            "en": "The two colors take turns: Blue, Pink."
+          }
+        },
+        {
+          "id": "d2cu4",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: blauer Kreis?",
+            "en": "Which color can you see in this picture: blue circle?"
+          },
+          "visual": "🔵",
+          "conceptKey": "blue",
+          "answers": [
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            },
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            }
+          ],
+          "correctAnswerId": "blue",
+          "success": {
+            "de": "Richtig! Die Farbe ist Blau.",
+            "en": "Correct! The color is Blue."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu5",
+          "prompt": {
+            "de": "Finde dieses Bild: lilafarbener Kreis. Seine Farbe ist Lila.",
+            "en": "Find this picture: purple circle. Its color is Purple."
+          },
+          "visual": "",
+          "conceptKey": "purple",
+          "answers": [
+            {
+              "id": "purple-circle",
+              "label": "🟣"
+            },
+            {
+              "id": "pink-heart",
+              "label": "🩷"
+            }
+          ],
+          "correctAnswerId": "purple-circle",
           "success": {
             "de": "Prima! Du hast das richtige Bild gefunden.",
             "en": "Great! You found the right picture."
           },
           "hint": {
-            "de": "Suche das Bild in Gelb.",
-            "en": "Look for the picture in Yellow."
+            "de": "Suche das Bild in Lila.",
+            "en": "Look for the picture in Purple."
           }
         },
         {
-          "id": "dcu66",
+          "id": "d2cu6",
           "prompt": {
-            "de": "Finde dieses Bild: gelbes Quadrat. Seine Farbe ist Gelb.",
-            "en": "Find this picture: yellow square. Its color is Yellow."
+            "de": "Navis Fähnchenreihe ist Grün, Braun, Grün. Welche Farbe kommt jetzt?",
+            "en": "Navi's flag row is Green, Brown, Green. Which color comes next?"
           },
-          "visual": "",
+          "visual": "🚩  🟢 🟤 🟢  ?",
+          "conceptKey": "brown",
           "answers": [
             {
-              "id": "pumpkin",
-              "label": "🎃"
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
             },
             {
-              "id": "yellow-square",
-              "label": "🟨"
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
             }
           ],
-          "correctAnswerId": "yellow-square",
+          "correctAnswerId": "brown",
           "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
+            "de": "Muster gelöst! Jetzt kommt Braun.",
+            "en": "Pattern solved! Brown comes next."
           },
           "hint": {
-            "de": "Suche das Bild in Gelb.",
-            "en": "Look for the picture in Yellow."
+            "de": "Die beiden Farben wechseln sich ab: Grün, Braun.",
+            "en": "The two colors take turns: Green, Brown."
           }
         },
         {
-          "id": "dcu67",
+          "id": "d2cu7",
           "prompt": {
-            "de": "Finde dieses Bild: Zitrone. Seine Farbe ist Gelb.",
-            "en": "Find this picture: lemon. Its color is Yellow."
+            "de": "Welche Farbe siehst du bei diesem Bild: grüner Kreis?",
+            "en": "Which color can you see in this picture: green circle?"
           },
-          "visual": "",
+          "visual": "🟢",
+          "conceptKey": "green",
           "answers": [
             {
-              "id": "lemon",
-              "label": "🍋"
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
             },
             {
-              "id": "pink-flower",
-              "label": "🌸"
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
             }
           ],
-          "correctAnswerId": "lemon",
+          "correctAnswerId": "green",
           "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
+            "de": "Richtig! Die Farbe ist Grün.",
+            "en": "Correct! The color is Green."
           },
           "hint": {
-            "de": "Suche das Bild in Gelb.",
-            "en": "Look for the picture in Yellow."
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
           }
         },
         {
-          "id": "dcu68",
-          "prompt": {
-            "de": "Finde dieses Bild: Banane. Seine Farbe ist Gelb.",
-            "en": "Find this picture: banana. Its color is Yellow."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "chocolate",
-              "label": "🍫"
-            },
-            {
-              "id": "banana",
-              "label": "🍌"
-            }
-          ],
-          "correctAnswerId": "banana",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Gelb.",
-            "en": "Look for the picture in Yellow."
-          }
-        },
-        {
-          "id": "dcu69",
-          "prompt": {
-            "de": "Finde dieses Bild: Stern. Seine Farbe ist Gelb.",
-            "en": "Find this picture: star. Its color is Yellow."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "star",
-              "label": "🌟"
-            },
-            {
-              "id": "fire-truck",
-              "label": "🚒"
-            }
-          ],
-          "correctAnswerId": "star",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Gelb.",
-            "en": "Look for the picture in Yellow."
-          }
-        },
-        {
-          "id": "dcu70",
+          "id": "d2cu8",
           "prompt": {
             "de": "Finde dieses Bild: orangefarbener Kreis. Seine Farbe ist Orange.",
             "en": "Find this picture: orange circle. Its color is Orange."
           },
           "visual": "",
+          "conceptKey": "orange",
           "answers": [
             {
-              "id": "green-circle",
-              "label": "🟢"
+              "id": "yellow-heart",
+              "label": "💛"
             },
             {
               "id": "orange-circle",
@@ -7507,290 +5581,93 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dcu71",
+          "id": "d2cu9",
           "prompt": {
-            "de": "Finde dieses Bild: orangefarbenes Herz. Seine Farbe ist Orange.",
-            "en": "Find this picture: orange heart. Its color is Orange."
+            "de": "Navis Steinreihe ist Gelb, Rot, Gelb. Welche Farbe kommt jetzt?",
+            "en": "Navi's stone row is Yellow, Red, Yellow. Which color comes next?"
           },
-          "visual": "",
+          "visual": "🪨  🟡 🔴 🟡  ?",
+          "conceptKey": "red",
           "answers": [
             {
-              "id": "orange-heart",
-              "label": "🧡"
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
             },
             {
-              "id": "yellow-heart",
-              "label": "💛"
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
             }
           ],
-          "correctAnswerId": "orange-heart",
+          "correctAnswerId": "red",
           "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
+            "de": "Muster gelöst! Jetzt kommt Rot.",
+            "en": "Pattern solved! Red comes next."
           },
           "hint": {
-            "de": "Suche das Bild in Orange.",
-            "en": "Look for the picture in Orange."
+            "de": "Die beiden Farben wechseln sich ab: Gelb, Rot.",
+            "en": "The two colors take turns: Yellow, Red."
           }
         },
         {
-          "id": "dcu72",
+          "id": "d2cu10",
           "prompt": {
-            "de": "Finde dieses Bild: orangefarbenes Quadrat. Seine Farbe ist Orange.",
-            "en": "Find this picture: orange square. Its color is Orange."
+            "de": "Welche Farbe siehst du bei diesem Bild: gelber Kreis?",
+            "en": "Which color can you see in this picture: yellow circle?"
           },
-          "visual": "",
+          "visual": "🟡",
+          "conceptKey": "yellow",
           "answers": [
             {
-              "id": "purple-square",
-              "label": "🟪"
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
             },
             {
-              "id": "orange-square",
-              "label": "🟧"
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
             }
           ],
-          "correctAnswerId": "orange-square",
+          "correctAnswerId": "yellow",
           "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
+            "de": "Richtig! Die Farbe ist Gelb.",
+            "en": "Correct! The color is Yellow."
           },
           "hint": {
-            "de": "Suche das Bild in Orange.",
-            "en": "Look for the picture in Orange."
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
           }
         },
         {
-          "id": "dcu73",
-          "prompt": {
-            "de": "Finde dieses Bild: Orange. Seine Farbe ist Orange.",
-            "en": "Find this picture: orange fruit. Its color is Orange."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "orange-fruit",
-              "label": "🍊"
-            },
-            {
-              "id": "pink-bow",
-              "label": "🎀"
-            }
-          ],
-          "correctAnswerId": "orange-fruit",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Orange.",
-            "en": "Look for the picture in Orange."
-          }
-        },
-        {
-          "id": "dcu74",
-          "prompt": {
-            "de": "Finde dieses Bild: Karotte. Seine Farbe ist Orange.",
-            "en": "Find this picture: carrot. Its color is Orange."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "strawberry",
-              "label": "🍓"
-            },
-            {
-              "id": "carrot",
-              "label": "🥕"
-            }
-          ],
-          "correctAnswerId": "carrot",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Orange.",
-            "en": "Look for the picture in Orange."
-          }
-        },
-        {
-          "id": "dcu75",
-          "prompt": {
-            "de": "Finde dieses Bild: Kürbis. Seine Farbe ist Orange.",
-            "en": "Find this picture: pumpkin. Its color is Orange."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "pumpkin",
-              "label": "🎃"
-            },
-            {
-              "id": "blueberries",
-              "label": "🫐"
-            }
-          ],
-          "correctAnswerId": "pumpkin",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Orange.",
-            "en": "Look for the picture in Orange."
-          }
-        },
-        {
-          "id": "dcu76",
-          "prompt": {
-            "de": "Finde dieses Bild: lilafarbener Kreis. Seine Farbe ist Lila.",
-            "en": "Find this picture: purple circle. Its color is Purple."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "blue-square",
-              "label": "🟦"
-            },
-            {
-              "id": "purple-circle",
-              "label": "🟣"
-            }
-          ],
-          "correctAnswerId": "purple-circle",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Lila.",
-            "en": "Look for the picture in Purple."
-          }
-        },
-        {
-          "id": "dcu77",
-          "prompt": {
-            "de": "Finde dieses Bild: lilafarbenes Herz. Seine Farbe ist Lila.",
-            "en": "Find this picture: purple heart. Its color is Purple."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "purple-heart",
-              "label": "💜"
-            },
-            {
-              "id": "cucumber",
-              "label": "🥒"
-            }
-          ],
-          "correctAnswerId": "purple-heart",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Lila.",
-            "en": "Look for the picture in Purple."
-          }
-        },
-        {
-          "id": "dcu78",
-          "prompt": {
-            "de": "Finde dieses Bild: lilafarbenes Quadrat. Seine Farbe ist Lila.",
-            "en": "Find this picture: purple square. Its color is Purple."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "orange-circle",
-              "label": "🟠"
-            },
-            {
-              "id": "purple-square",
-              "label": "🟪"
-            }
-          ],
-          "correctAnswerId": "purple-square",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Lila.",
-            "en": "Look for the picture in Purple."
-          }
-        },
-        {
-          "id": "dcu79",
-          "prompt": {
-            "de": "Finde dieses Bild: Weintrauben. Seine Farbe ist Lila.",
-            "en": "Find this picture: grapes. Its color is Purple."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "grapes",
-              "label": "🍇"
-            },
-            {
-              "id": "pink-flower",
-              "label": "🌸"
-            }
-          ],
-          "correctAnswerId": "grapes",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Lila.",
-            "en": "Look for the picture in Purple."
-          }
-        },
-        {
-          "id": "dcu80",
-          "prompt": {
-            "de": "Finde dieses Bild: Aubergine. Seine Farbe ist Lila.",
-            "en": "Find this picture: eggplant. Its color is Purple."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "chocolate",
-              "label": "🍫"
-            },
-            {
-              "id": "eggplant",
-              "label": "🍆"
-            }
-          ],
-          "correctAnswerId": "eggplant",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Lila.",
-            "en": "Look for the picture in Purple."
-          }
-        },
-        {
-          "id": "dcu81",
+          "id": "d2cu11",
           "prompt": {
             "de": "Finde dieses Bild: rosa Herz. Seine Farbe ist Rosa.",
             "en": "Find this picture: pink heart. Its color is Pink."
           },
           "visual": "",
+          "conceptKey": "pink",
           "answers": [
             {
               "id": "pink-heart",
               "label": "🩷"
             },
             {
-              "id": "fire-truck",
-              "label": "🚒"
+              "id": "blueberries",
+              "label": "🫐"
             }
           ],
           "correctAnswerId": "pink-heart",
@@ -7804,124 +5681,89 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dcu82",
+          "id": "d2cu12",
           "prompt": {
-            "de": "Finde dieses Bild: rosa Blume. Seine Farbe ist Rosa.",
-            "en": "Find this picture: pink flower. Its color is Pink."
+            "de": "Navis Muschelreihe ist Lila, Blau, Lila. Welche Farbe kommt jetzt?",
+            "en": "Navi's shell row is Purple, Blue, Purple. Which color comes next?"
           },
-          "visual": "",
+          "visual": "🐚  🟣 🔵 🟣  ?",
+          "conceptKey": "blue",
           "answers": [
             {
-              "id": "green-circle",
-              "label": "🟢"
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
             },
             {
-              "id": "pink-flower",
-              "label": "🌸"
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
             }
           ],
-          "correctAnswerId": "pink-flower",
+          "correctAnswerId": "blue",
           "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
+            "de": "Muster gelöst! Jetzt kommt Blau.",
+            "en": "Pattern solved! Blue comes next."
           },
           "hint": {
-            "de": "Suche das Bild in Rosa.",
-            "en": "Look for the picture in Pink."
+            "de": "Die beiden Farben wechseln sich ab: Lila, Blau.",
+            "en": "The two colors take turns: Purple, Blue."
           }
         },
         {
-          "id": "dcu83",
+          "id": "d2cu13",
           "prompt": {
-            "de": "Finde dieses Bild: Flamingo. Seine Farbe ist Rosa.",
-            "en": "Find this picture: flamingo. Its color is Pink."
+            "de": "Welche Farbe siehst du bei diesem Bild: lilafarbener Kreis?",
+            "en": "Which color can you see in this picture: purple circle?"
           },
-          "visual": "",
+          "visual": "🟣",
+          "conceptKey": "purple",
           "answers": [
             {
-              "id": "flamingo",
-              "label": "🦩"
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
             },
             {
-              "id": "yellow-heart",
-              "label": "💛"
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
             }
           ],
-          "correctAnswerId": "flamingo",
+          "correctAnswerId": "purple",
           "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
+            "de": "Richtig! Die Farbe ist Lila.",
+            "en": "Correct! The color is Purple."
           },
           "hint": {
-            "de": "Suche das Bild in Rosa.",
-            "en": "Look for the picture in Pink."
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
           }
         },
         {
-          "id": "dcu84",
-          "prompt": {
-            "de": "Finde dieses Bild: Ferkel. Seine Farbe ist Rosa.",
-            "en": "Find this picture: piglet. Its color is Pink."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "orange-square",
-              "label": "🟧"
-            },
-            {
-              "id": "piglet",
-              "label": "🐷"
-            }
-          ],
-          "correctAnswerId": "piglet",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Rosa.",
-            "en": "Look for the picture in Pink."
-          }
-        },
-        {
-          "id": "dcu85",
-          "prompt": {
-            "de": "Finde dieses Bild: rosa Schleife. Seine Farbe ist Rosa.",
-            "en": "Find this picture: pink bow. Its color is Pink."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "pink-bow",
-              "label": "🎀"
-            },
-            {
-              "id": "grapes",
-              "label": "🍇"
-            }
-          ],
-          "correctAnswerId": "pink-bow",
-          "success": {
-            "de": "Prima! Du hast das richtige Bild gefunden.",
-            "en": "Great! You found the right picture."
-          },
-          "hint": {
-            "de": "Suche das Bild in Rosa.",
-            "en": "Look for the picture in Pink."
-          }
-        },
-        {
-          "id": "dcu86",
+          "id": "d2cu14",
           "prompt": {
             "de": "Finde dieses Bild: brauner Kreis. Seine Farbe ist Braun.",
             "en": "Find this picture: brown circle. Its color is Brown."
           },
           "visual": "",
+          "conceptKey": "brown",
           "answers": [
             {
-              "id": "red-apple",
-              "label": "🍎"
+              "id": "flamingo",
+              "label": "🦩"
             },
             {
               "id": "brown-circle",
@@ -7939,20 +5781,793 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dcu87",
+          "id": "d2cu15",
+          "prompt": {
+            "de": "Navis Ballonreihe ist Orange, Grün, Orange. Welche Farbe kommt jetzt?",
+            "en": "Navi's balloon row is Orange, Green, Orange. Which color comes next?"
+          },
+          "visual": "🎈  🟠 🟢 🟠  ?",
+          "conceptKey": "green",
+          "answers": [
+            {
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
+            },
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            }
+          ],
+          "correctAnswerId": "green",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Grün.",
+            "en": "Pattern solved! Green comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Orange, Grün.",
+            "en": "The two colors take turns: Orange, Green."
+          }
+        },
+        {
+          "id": "d2cu16",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: orangefarbener Kreis?",
+            "en": "Which color can you see in this picture: orange circle?"
+          },
+          "visual": "🟠",
+          "conceptKey": "orange",
+          "answers": [
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            },
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            }
+          ],
+          "correctAnswerId": "orange",
+          "success": {
+            "de": "Richtig! Die Farbe ist Orange.",
+            "en": "Correct! The color is Orange."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu17",
+          "prompt": {
+            "de": "Finde dieses Bild: Erdbeere. Seine Farbe ist Rot.",
+            "en": "Find this picture: strawberry. Its color is Red."
+          },
+          "visual": "",
+          "conceptKey": "red",
+          "answers": [
+            {
+              "id": "strawberry",
+              "label": "🍓"
+            },
+            {
+              "id": "orange-fruit",
+              "label": "🍊"
+            }
+          ],
+          "correctAnswerId": "strawberry",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Rot.",
+            "en": "Look for the picture in Red."
+          }
+        },
+        {
+          "id": "d2cu18",
+          "prompt": {
+            "de": "Navis Sternreihe ist Rosa, Gelb, Rosa. Welche Farbe kommt jetzt?",
+            "en": "Navi's star row is Pink, Yellow, Pink. Which color comes next?"
+          },
+          "visual": "⭐  🩷 🟡 🩷  ?",
+          "conceptKey": "yellow",
+          "answers": [
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            },
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            }
+          ],
+          "correctAnswerId": "yellow",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Gelb.",
+            "en": "Pattern solved! Yellow comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Rosa, Gelb.",
+            "en": "The two colors take turns: Pink, Yellow."
+          }
+        },
+        {
+          "id": "d2cu19",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: rosa Herz?",
+            "en": "Which color can you see in this picture: pink heart?"
+          },
+          "visual": "🩷",
+          "conceptKey": "pink",
+          "answers": [
+            {
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
+            },
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            }
+          ],
+          "correctAnswerId": "pink",
+          "success": {
+            "de": "Richtig! Die Farbe ist Rosa.",
+            "en": "Correct! The color is Pink."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu20",
+          "prompt": {
+            "de": "Finde dieses Bild: blaues Herz. Seine Farbe ist Blau.",
+            "en": "Find this picture: blue heart. Its color is Blue."
+          },
+          "visual": "",
+          "conceptKey": "blue",
+          "answers": [
+            {
+              "id": "banana",
+              "label": "🍌"
+            },
+            {
+              "id": "blue-heart",
+              "label": "💙"
+            }
+          ],
+          "correctAnswerId": "blue-heart",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Blau.",
+            "en": "Look for the picture in Blue."
+          }
+        },
+        {
+          "id": "d2cu21",
+          "prompt": {
+            "de": "Navis Bausteinreihe ist Braun, Lila, Braun. Welche Farbe kommt jetzt?",
+            "en": "Navi's block row is Brown, Purple, Brown. Which color comes next?"
+          },
+          "visual": "🧱  🟤 🟣 🟤  ?",
+          "conceptKey": "purple",
+          "answers": [
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            },
+            {
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
+            }
+          ],
+          "correctAnswerId": "purple",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Lila.",
+            "en": "Pattern solved! Purple comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Braun, Lila.",
+            "en": "The two colors take turns: Brown, Purple."
+          }
+        },
+        {
+          "id": "d2cu22",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: brauner Kreis?",
+            "en": "Which color can you see in this picture: brown circle?"
+          },
+          "visual": "🟤",
+          "conceptKey": "brown",
+          "answers": [
+            {
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
+            },
+            {
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
+            }
+          ],
+          "correctAnswerId": "brown",
+          "success": {
+            "de": "Richtig! Die Farbe ist Braun.",
+            "en": "Correct! The color is Brown."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu23",
+          "prompt": {
+            "de": "Finde dieses Bild: grünes Herz. Seine Farbe ist Grün.",
+            "en": "Find this picture: green heart. Its color is Green."
+          },
+          "visual": "",
+          "conceptKey": "green",
+          "answers": [
+            {
+              "id": "green-heart",
+              "label": "💚"
+            },
+            {
+              "id": "fire-truck",
+              "label": "🚒"
+            }
+          ],
+          "correctAnswerId": "green-heart",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Grün.",
+            "en": "Look for the picture in Green."
+          }
+        },
+        {
+          "id": "d2cu24",
+          "prompt": {
+            "de": "Navis Punktreihe ist Rot, Orange, Rot. Welche Farbe kommt jetzt?",
+            "en": "Navi's dot row is Red, Orange, Red. Which color comes next?"
+          },
+          "visual": "⚪  🔴 🟠 🔴  ?",
+          "conceptKey": "orange",
+          "answers": [
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            },
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            }
+          ],
+          "correctAnswerId": "orange",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Orange.",
+            "en": "Pattern solved! Orange comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Rot, Orange.",
+            "en": "The two colors take turns: Red, Orange."
+          }
+        },
+        {
+          "id": "d2cu25",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: Erdbeere?",
+            "en": "Which color can you see in this picture: strawberry?"
+          },
+          "visual": "🍓",
+          "conceptKey": "red",
+          "answers": [
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            },
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            }
+          ],
+          "correctAnswerId": "red",
+          "success": {
+            "de": "Richtig! Die Farbe ist Rot.",
+            "en": "Correct! The color is Red."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu26",
+          "prompt": {
+            "de": "Finde dieses Bild: gelbes Herz. Seine Farbe ist Gelb.",
+            "en": "Find this picture: yellow heart. Its color is Yellow."
+          },
+          "visual": "",
+          "conceptKey": "yellow",
+          "answers": [
+            {
+              "id": "blue-circle",
+              "label": "🔵"
+            },
+            {
+              "id": "yellow-heart",
+              "label": "💛"
+            }
+          ],
+          "correctAnswerId": "yellow-heart",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Gelb.",
+            "en": "Look for the picture in Yellow."
+          }
+        },
+        {
+          "id": "d2cu27",
+          "prompt": {
+            "de": "Navis Knopfreihe ist Blau, Rosa, Blau. Welche Farbe kommt jetzt?",
+            "en": "Navi's button row is Blue, Pink, Blue. Which color comes next?"
+          },
+          "visual": "🔘  🔵 🩷 🔵  ?",
+          "conceptKey": "pink",
+          "answers": [
+            {
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
+            },
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            }
+          ],
+          "correctAnswerId": "pink",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Rosa.",
+            "en": "Pattern solved! Pink comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Blau, Rosa.",
+            "en": "The two colors take turns: Blue, Pink."
+          }
+        },
+        {
+          "id": "d2cu28",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: blaues Herz?",
+            "en": "Which color can you see in this picture: blue heart?"
+          },
+          "visual": "💙",
+          "conceptKey": "blue",
+          "answers": [
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            },
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            }
+          ],
+          "correctAnswerId": "blue",
+          "success": {
+            "de": "Richtig! Die Farbe ist Blau.",
+            "en": "Correct! The color is Blue."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu29",
+          "prompt": {
+            "de": "Finde dieses Bild: lilafarbenes Herz. Seine Farbe ist Lila.",
+            "en": "Find this picture: purple heart. Its color is Purple."
+          },
+          "visual": "",
+          "conceptKey": "purple",
+          "answers": [
+            {
+              "id": "purple-heart",
+              "label": "💜"
+            },
+            {
+              "id": "pink-heart",
+              "label": "🩷"
+            }
+          ],
+          "correctAnswerId": "purple-heart",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Lila.",
+            "en": "Look for the picture in Purple."
+          }
+        },
+        {
+          "id": "d2cu30",
+          "prompt": {
+            "de": "Navis Kartenreihe ist Grün, Braun, Grün. Welche Farbe kommt jetzt?",
+            "en": "Navi's card row is Green, Brown, Green. Which color comes next?"
+          },
+          "visual": "🃏  🟢 🟤 🟢  ?",
+          "conceptKey": "brown",
+          "answers": [
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            },
+            {
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
+            }
+          ],
+          "correctAnswerId": "brown",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Braun.",
+            "en": "Pattern solved! Brown comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Grün, Braun.",
+            "en": "The two colors take turns: Green, Brown."
+          }
+        },
+        {
+          "id": "d2cu31",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: grünes Herz?",
+            "en": "Which color can you see in this picture: green heart?"
+          },
+          "visual": "💚",
+          "conceptKey": "green",
+          "answers": [
+            {
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
+            },
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            }
+          ],
+          "correctAnswerId": "green",
+          "success": {
+            "de": "Richtig! Die Farbe ist Grün.",
+            "en": "Correct! The color is Green."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu32",
+          "prompt": {
+            "de": "Finde dieses Bild: orangefarbenes Herz. Seine Farbe ist Orange.",
+            "en": "Find this picture: orange heart. Its color is Orange."
+          },
+          "visual": "",
+          "conceptKey": "orange",
+          "answers": [
+            {
+              "id": "purple-heart",
+              "label": "💜"
+            },
+            {
+              "id": "orange-heart",
+              "label": "🧡"
+            }
+          ],
+          "correctAnswerId": "orange-heart",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Orange.",
+            "en": "Look for the picture in Orange."
+          }
+        },
+        {
+          "id": "d2cu33",
+          "prompt": {
+            "de": "Navis Blumenreihe ist Gelb, Rot, Gelb. Welche Farbe kommt jetzt?",
+            "en": "Navi's flower row is Yellow, Red, Yellow. Which color comes next?"
+          },
+          "visual": "🌼  🟡 🔴 🟡  ?",
+          "conceptKey": "red",
+          "answers": [
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            },
+            {
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
+            }
+          ],
+          "correctAnswerId": "red",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Rot.",
+            "en": "Pattern solved! Red comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Gelb, Rot.",
+            "en": "The two colors take turns: Yellow, Red."
+          }
+        },
+        {
+          "id": "d2cu34",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: gelbes Herz?",
+            "en": "Which color can you see in this picture: yellow heart?"
+          },
+          "visual": "💛",
+          "conceptKey": "yellow",
+          "answers": [
+            {
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
+            },
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            }
+          ],
+          "correctAnswerId": "yellow",
+          "success": {
+            "de": "Richtig! Die Farbe ist Gelb.",
+            "en": "Correct! The color is Yellow."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu35",
+          "prompt": {
+            "de": "Finde dieses Bild: rosa Blume. Seine Farbe ist Rosa.",
+            "en": "Find this picture: pink flower. Its color is Pink."
+          },
+          "visual": "",
+          "conceptKey": "pink",
+          "answers": [
+            {
+              "id": "pink-flower",
+              "label": "🌸"
+            },
+            {
+              "id": "blueberries",
+              "label": "🫐"
+            }
+          ],
+          "correctAnswerId": "pink-flower",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Rosa.",
+            "en": "Look for the picture in Pink."
+          }
+        },
+        {
+          "id": "d2cu36",
+          "prompt": {
+            "de": "Navis Herzreihe ist Lila, Blau, Lila. Welche Farbe kommt jetzt?",
+            "en": "Navi's heart row is Purple, Blue, Purple. Which color comes next?"
+          },
+          "visual": "🤍  🟣 🔵 🟣  ?",
+          "conceptKey": "blue",
+          "answers": [
+            {
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
+            },
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            }
+          ],
+          "correctAnswerId": "blue",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Blau.",
+            "en": "Pattern solved! Blue comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Lila, Blau.",
+            "en": "The two colors take turns: Purple, Blue."
+          }
+        },
+        {
+          "id": "d2cu37",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: lilafarbenes Herz?",
+            "en": "Which color can you see in this picture: purple heart?"
+          },
+          "visual": "💜",
+          "conceptKey": "purple",
+          "answers": [
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            },
+            {
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
+            }
+          ],
+          "correctAnswerId": "purple",
+          "success": {
+            "de": "Richtig! Die Farbe ist Lila.",
+            "en": "Correct! The color is Purple."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu38",
           "prompt": {
             "de": "Finde dieses Bild: braunes Herz. Seine Farbe ist Braun.",
             "en": "Find this picture: brown heart. Its color is Brown."
           },
           "visual": "",
+          "conceptKey": "brown",
           "answers": [
+            {
+              "id": "flamingo",
+              "label": "🦩"
+            },
             {
               "id": "brown-heart",
               "label": "🤎"
-            },
-            {
-              "id": "blue-heart",
-              "label": "💙"
             }
           ],
           "correctAnswerId": "brown-heart",
@@ -7966,16 +6581,789 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dcu88",
+          "id": "d2cu39",
+          "prompt": {
+            "de": "Navis Kreisreihe ist Orange, Grün, Orange. Welche Farbe kommt jetzt?",
+            "en": "Navi's circle row is Orange, Green, Orange. Which color comes next?"
+          },
+          "visual": "⭕  🟠 🟢 🟠  ?",
+          "conceptKey": "green",
+          "answers": [
+            {
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
+            },
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            }
+          ],
+          "correctAnswerId": "green",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Grün.",
+            "en": "Pattern solved! Green comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Orange, Grün.",
+            "en": "The two colors take turns: Orange, Green."
+          }
+        },
+        {
+          "id": "d2cu40",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: orangefarbenes Herz?",
+            "en": "Which color can you see in this picture: orange heart?"
+          },
+          "visual": "🧡",
+          "conceptKey": "orange",
+          "answers": [
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            },
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            }
+          ],
+          "correctAnswerId": "orange",
+          "success": {
+            "de": "Richtig! Die Farbe ist Orange.",
+            "en": "Correct! The color is Orange."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu41",
+          "prompt": {
+            "de": "Finde dieses Bild: Kirschen. Seine Farbe ist Rot.",
+            "en": "Find this picture: cherries. Its color is Red."
+          },
+          "visual": "",
+          "conceptKey": "red",
+          "answers": [
+            {
+              "id": "cherries",
+              "label": "🍒"
+            },
+            {
+              "id": "piglet",
+              "label": "🐷"
+            }
+          ],
+          "correctAnswerId": "cherries",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Rot.",
+            "en": "Look for the picture in Red."
+          }
+        },
+        {
+          "id": "d2cu42",
+          "prompt": {
+            "de": "Navis Drachenreihe ist Rosa, Gelb, Rosa. Welche Farbe kommt jetzt?",
+            "en": "Navi's kite row is Pink, Yellow, Pink. Which color comes next?"
+          },
+          "visual": "🪁  🩷 🟡 🩷  ?",
+          "conceptKey": "yellow",
+          "answers": [
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            },
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            }
+          ],
+          "correctAnswerId": "yellow",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Gelb.",
+            "en": "Pattern solved! Yellow comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Rosa, Gelb.",
+            "en": "The two colors take turns: Pink, Yellow."
+          }
+        },
+        {
+          "id": "d2cu43",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: rosa Blume?",
+            "en": "Which color can you see in this picture: pink flower?"
+          },
+          "visual": "🌸",
+          "conceptKey": "pink",
+          "answers": [
+            {
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
+            },
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            }
+          ],
+          "correctAnswerId": "pink",
+          "success": {
+            "de": "Richtig! Die Farbe ist Rosa.",
+            "en": "Correct! The color is Pink."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu44",
+          "prompt": {
+            "de": "Finde dieses Bild: Heidelbeeren. Seine Farbe ist Blau.",
+            "en": "Find this picture: blueberries. Its color is Blue."
+          },
+          "visual": "",
+          "conceptKey": "blue",
+          "answers": [
+            {
+              "id": "eggplant",
+              "label": "🍆"
+            },
+            {
+              "id": "blueberries",
+              "label": "🫐"
+            }
+          ],
+          "correctAnswerId": "blueberries",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Blau.",
+            "en": "Look for the picture in Blue."
+          }
+        },
+        {
+          "id": "d2cu45",
+          "prompt": {
+            "de": "Navis Becherreihe ist Braun, Lila, Braun. Welche Farbe kommt jetzt?",
+            "en": "Navi's cup row is Brown, Purple, Brown. Which color comes next?"
+          },
+          "visual": "🥤  🟤 🟣 🟤  ?",
+          "conceptKey": "purple",
+          "answers": [
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            },
+            {
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
+            }
+          ],
+          "correctAnswerId": "purple",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Lila.",
+            "en": "Pattern solved! Purple comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Braun, Lila.",
+            "en": "The two colors take turns: Brown, Purple."
+          }
+        },
+        {
+          "id": "d2cu46",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: braunes Herz?",
+            "en": "Which color can you see in this picture: brown heart?"
+          },
+          "visual": "🤎",
+          "conceptKey": "brown",
+          "answers": [
+            {
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
+            },
+            {
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
+            }
+          ],
+          "correctAnswerId": "brown",
+          "success": {
+            "de": "Richtig! Die Farbe ist Braun.",
+            "en": "Correct! The color is Brown."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu47",
+          "prompt": {
+            "de": "Finde dieses Bild: grünes Quadrat. Seine Farbe ist Grün.",
+            "en": "Find this picture: green square. Its color is Green."
+          },
+          "visual": "",
+          "conceptKey": "green",
+          "answers": [
+            {
+              "id": "green-square",
+              "label": "🟩"
+            },
+            {
+              "id": "blue-diamond",
+              "label": "🔷"
+            }
+          ],
+          "correctAnswerId": "green-square",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Grün.",
+            "en": "Look for the picture in Green."
+          }
+        },
+        {
+          "id": "d2cu48",
+          "prompt": {
+            "de": "Navis Hutreihe ist Rot, Orange, Rot. Welche Farbe kommt jetzt?",
+            "en": "Navi's hat row is Red, Orange, Red. Which color comes next?"
+          },
+          "visual": "🧢  🔴 🟠 🔴  ?",
+          "conceptKey": "orange",
+          "answers": [
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            },
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            }
+          ],
+          "correctAnswerId": "orange",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Orange.",
+            "en": "Pattern solved! Orange comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Rot, Orange.",
+            "en": "The two colors take turns: Red, Orange."
+          }
+        },
+        {
+          "id": "d2cu49",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: Kirschen?",
+            "en": "Which color can you see in this picture: cherries?"
+          },
+          "visual": "🍒",
+          "conceptKey": "red",
+          "answers": [
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            },
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            }
+          ],
+          "correctAnswerId": "red",
+          "success": {
+            "de": "Richtig! Die Farbe ist Rot.",
+            "en": "Correct! The color is Red."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu50",
+          "prompt": {
+            "de": "Finde dieses Bild: gelbes Quadrat. Seine Farbe ist Gelb.",
+            "en": "Find this picture: yellow square. Its color is Yellow."
+          },
+          "visual": "",
+          "conceptKey": "yellow",
+          "answers": [
+            {
+              "id": "green-circle",
+              "label": "🟢"
+            },
+            {
+              "id": "yellow-square",
+              "label": "🟨"
+            }
+          ],
+          "correctAnswerId": "yellow-square",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Gelb.",
+            "en": "Look for the picture in Yellow."
+          }
+        },
+        {
+          "id": "d2cu51",
+          "prompt": {
+            "de": "Navis Schuhreihe ist Blau, Rosa, Blau. Welche Farbe kommt jetzt?",
+            "en": "Navi's shoe row is Blue, Pink, Blue. Which color comes next?"
+          },
+          "visual": "👟  🔵 🩷 🔵  ?",
+          "conceptKey": "pink",
+          "answers": [
+            {
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
+            },
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            }
+          ],
+          "correctAnswerId": "pink",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Rosa.",
+            "en": "Pattern solved! Pink comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Blau, Rosa.",
+            "en": "The two colors take turns: Blue, Pink."
+          }
+        },
+        {
+          "id": "d2cu52",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: Heidelbeeren?",
+            "en": "Which color can you see in this picture: blueberries?"
+          },
+          "visual": "🫐",
+          "conceptKey": "blue",
+          "answers": [
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            },
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            }
+          ],
+          "correctAnswerId": "blue",
+          "success": {
+            "de": "Richtig! Die Farbe ist Blau.",
+            "en": "Correct! The color is Blue."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu53",
+          "prompt": {
+            "de": "Finde dieses Bild: lilafarbenes Quadrat. Seine Farbe ist Lila.",
+            "en": "Find this picture: purple square. Its color is Purple."
+          },
+          "visual": "",
+          "conceptKey": "purple",
+          "answers": [
+            {
+              "id": "purple-square",
+              "label": "🟪"
+            },
+            {
+              "id": "pink-heart",
+              "label": "🩷"
+            }
+          ],
+          "correctAnswerId": "purple-square",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Lila.",
+            "en": "Look for the picture in Purple."
+          }
+        },
+        {
+          "id": "d2cu54",
+          "prompt": {
+            "de": "Navis Blätterreihe ist Grün, Braun, Grün. Welche Farbe kommt jetzt?",
+            "en": "Navi's leaf row is Green, Brown, Green. Which color comes next?"
+          },
+          "visual": "🍃  🟢 🟤 🟢  ?",
+          "conceptKey": "brown",
+          "answers": [
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            },
+            {
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
+            }
+          ],
+          "correctAnswerId": "brown",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Braun.",
+            "en": "Pattern solved! Brown comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Grün, Braun.",
+            "en": "The two colors take turns: Green, Brown."
+          }
+        },
+        {
+          "id": "d2cu55",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: grünes Quadrat?",
+            "en": "Which color can you see in this picture: green square?"
+          },
+          "visual": "🟩",
+          "conceptKey": "green",
+          "answers": [
+            {
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
+            },
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            }
+          ],
+          "correctAnswerId": "green",
+          "success": {
+            "de": "Richtig! Die Farbe ist Grün.",
+            "en": "Correct! The color is Green."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu56",
+          "prompt": {
+            "de": "Finde dieses Bild: orangefarbenes Quadrat. Seine Farbe ist Orange.",
+            "en": "Find this picture: orange square. Its color is Orange."
+          },
+          "visual": "",
+          "conceptKey": "orange",
+          "answers": [
+            {
+              "id": "pink-flower",
+              "label": "🌸"
+            },
+            {
+              "id": "orange-square",
+              "label": "🟧"
+            }
+          ],
+          "correctAnswerId": "orange-square",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Orange.",
+            "en": "Look for the picture in Orange."
+          }
+        },
+        {
+          "id": "d2cu57",
+          "prompt": {
+            "de": "Navis Tropfenreihe ist Gelb, Rot, Gelb. Welche Farbe kommt jetzt?",
+            "en": "Navi's drop row is Yellow, Red, Yellow. Which color comes next?"
+          },
+          "visual": "💧  🟡 🔴 🟡  ?",
+          "conceptKey": "red",
+          "answers": [
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            },
+            {
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
+            }
+          ],
+          "correctAnswerId": "red",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Rot.",
+            "en": "Pattern solved! Red comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Gelb, Rot.",
+            "en": "The two colors take turns: Yellow, Red."
+          }
+        },
+        {
+          "id": "d2cu58",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: gelbes Quadrat?",
+            "en": "Which color can you see in this picture: yellow square?"
+          },
+          "visual": "🟨",
+          "conceptKey": "yellow",
+          "answers": [
+            {
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
+            },
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            }
+          ],
+          "correctAnswerId": "yellow",
+          "success": {
+            "de": "Richtig! Die Farbe ist Gelb.",
+            "en": "Correct! The color is Yellow."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu59",
+          "prompt": {
+            "de": "Finde dieses Bild: Flamingo. Seine Farbe ist Rosa.",
+            "en": "Find this picture: flamingo. Its color is Pink."
+          },
+          "visual": "",
+          "conceptKey": "pink",
+          "answers": [
+            {
+              "id": "flamingo",
+              "label": "🦩"
+            },
+            {
+              "id": "blueberries",
+              "label": "🫐"
+            }
+          ],
+          "correctAnswerId": "flamingo",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Rosa.",
+            "en": "Look for the picture in Pink."
+          }
+        },
+        {
+          "id": "d2cu60",
+          "prompt": {
+            "de": "Navis Lichterreihe ist Lila, Blau, Lila. Welche Farbe kommt jetzt?",
+            "en": "Navi's light row is Purple, Blue, Purple. Which color comes next?"
+          },
+          "visual": "💡  🟣 🔵 🟣  ?",
+          "conceptKey": "blue",
+          "answers": [
+            {
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
+            },
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            }
+          ],
+          "correctAnswerId": "blue",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Blau.",
+            "en": "Pattern solved! Blue comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Lila, Blau.",
+            "en": "The two colors take turns: Purple, Blue."
+          }
+        },
+        {
+          "id": "d2cu61",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: lilafarbenes Quadrat?",
+            "en": "Which color can you see in this picture: purple square?"
+          },
+          "visual": "🟪",
+          "conceptKey": "purple",
+          "answers": [
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            },
+            {
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
+            }
+          ],
+          "correctAnswerId": "purple",
+          "success": {
+            "de": "Richtig! Die Farbe ist Lila.",
+            "en": "Correct! The color is Purple."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu62",
           "prompt": {
             "de": "Finde dieses Bild: Braunbär. Seine Farbe ist Braun.",
             "en": "Find this picture: brown bear. Its color is Brown."
           },
           "visual": "",
+          "conceptKey": "brown",
           "answers": [
             {
-              "id": "green-square",
-              "label": "🟩"
+              "id": "flamingo",
+              "label": "🦩"
             },
             {
               "id": "brown-bear",
@@ -7993,20 +7381,793 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dcu89",
+          "id": "d2cu63",
+          "prompt": {
+            "de": "Navis Bonbonreihe ist Orange, Grün, Orange. Welche Farbe kommt jetzt?",
+            "en": "Navi's candy row is Orange, Green, Orange. Which color comes next?"
+          },
+          "visual": "🍬  🟠 🟢 🟠  ?",
+          "conceptKey": "green",
+          "answers": [
+            {
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
+            },
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            }
+          ],
+          "correctAnswerId": "green",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Grün.",
+            "en": "Pattern solved! Green comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Orange, Grün.",
+            "en": "The two colors take turns: Orange, Green."
+          }
+        },
+        {
+          "id": "d2cu64",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: orangefarbenes Quadrat?",
+            "en": "Which color can you see in this picture: orange square?"
+          },
+          "visual": "🟧",
+          "conceptKey": "orange",
+          "answers": [
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            },
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            }
+          ],
+          "correctAnswerId": "orange",
+          "success": {
+            "de": "Richtig! Die Farbe ist Orange.",
+            "en": "Correct! The color is Orange."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu65",
+          "prompt": {
+            "de": "Finde dieses Bild: Tomate. Seine Farbe ist Rot.",
+            "en": "Find this picture: tomato. Its color is Red."
+          },
+          "visual": "",
+          "conceptKey": "red",
+          "answers": [
+            {
+              "id": "tomato",
+              "label": "🍅"
+            },
+            {
+              "id": "chocolate",
+              "label": "🍫"
+            }
+          ],
+          "correctAnswerId": "tomato",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Rot.",
+            "en": "Look for the picture in Red."
+          }
+        },
+        {
+          "id": "d2cu66",
+          "prompt": {
+            "de": "Navis Keksreihe ist Rosa, Gelb, Rosa. Welche Farbe kommt jetzt?",
+            "en": "Navi's cookie row is Pink, Yellow, Pink. Which color comes next?"
+          },
+          "visual": "🍪  🩷 🟡 🩷  ?",
+          "conceptKey": "yellow",
+          "answers": [
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            },
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            }
+          ],
+          "correctAnswerId": "yellow",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Gelb.",
+            "en": "Pattern solved! Yellow comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Rosa, Gelb.",
+            "en": "The two colors take turns: Pink, Yellow."
+          }
+        },
+        {
+          "id": "d2cu67",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: Flamingo?",
+            "en": "Which color can you see in this picture: flamingo?"
+          },
+          "visual": "🦩",
+          "conceptKey": "pink",
+          "answers": [
+            {
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
+            },
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            }
+          ],
+          "correctAnswerId": "pink",
+          "success": {
+            "de": "Richtig! Die Farbe ist Rosa.",
+            "en": "Correct! The color is Pink."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu68",
+          "prompt": {
+            "de": "Finde dieses Bild: Wassertropfen. Seine Farbe ist Blau.",
+            "en": "Find this picture: water drop. Its color is Blue."
+          },
+          "visual": "",
+          "conceptKey": "blue",
+          "answers": [
+            {
+              "id": "carrot",
+              "label": "🥕"
+            },
+            {
+              "id": "water-drop",
+              "label": "💧"
+            }
+          ],
+          "correctAnswerId": "water-drop",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Blau.",
+            "en": "Look for the picture in Blue."
+          }
+        },
+        {
+          "id": "d2cu69",
+          "prompt": {
+            "de": "Navis Apfelreihe ist Braun, Lila, Braun. Welche Farbe kommt jetzt?",
+            "en": "Navi's apple row is Brown, Purple, Brown. Which color comes next?"
+          },
+          "visual": "🍎  🟤 🟣 🟤  ?",
+          "conceptKey": "purple",
+          "answers": [
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            },
+            {
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
+            }
+          ],
+          "correctAnswerId": "purple",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Lila.",
+            "en": "Pattern solved! Purple comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Braun, Lila.",
+            "en": "The two colors take turns: Brown, Purple."
+          }
+        },
+        {
+          "id": "d2cu70",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: Braunbär?",
+            "en": "Which color can you see in this picture: brown bear?"
+          },
+          "visual": "🐻",
+          "conceptKey": "brown",
+          "answers": [
+            {
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
+            },
+            {
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
+            }
+          ],
+          "correctAnswerId": "brown",
+          "success": {
+            "de": "Richtig! Die Farbe ist Braun.",
+            "en": "Correct! The color is Brown."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu71",
+          "prompt": {
+            "de": "Finde dieses Bild: grüner Apfel. Seine Farbe ist Grün.",
+            "en": "Find this picture: green apple. Its color is Green."
+          },
+          "visual": "",
+          "conceptKey": "green",
+          "answers": [
+            {
+              "id": "green-apple",
+              "label": "🍏"
+            },
+            {
+              "id": "star",
+              "label": "🌟"
+            }
+          ],
+          "correctAnswerId": "green-apple",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Grün.",
+            "en": "Look for the picture in Green."
+          }
+        },
+        {
+          "id": "d2cu72",
+          "prompt": {
+            "de": "Navis Schirmreihe ist Rot, Orange, Rot. Welche Farbe kommt jetzt?",
+            "en": "Navi's umbrella row is Red, Orange, Red. Which color comes next?"
+          },
+          "visual": "☂️  🔴 🟠 🔴  ?",
+          "conceptKey": "orange",
+          "answers": [
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            },
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            }
+          ],
+          "correctAnswerId": "orange",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Orange.",
+            "en": "Pattern solved! Orange comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Rot, Orange.",
+            "en": "The two colors take turns: Red, Orange."
+          }
+        },
+        {
+          "id": "d2cu73",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: Tomate?",
+            "en": "Which color can you see in this picture: tomato?"
+          },
+          "visual": "🍅",
+          "conceptKey": "red",
+          "answers": [
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            },
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            }
+          ],
+          "correctAnswerId": "red",
+          "success": {
+            "de": "Richtig! Die Farbe ist Rot.",
+            "en": "Correct! The color is Red."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu74",
+          "prompt": {
+            "de": "Finde dieses Bild: Zitrone. Seine Farbe ist Gelb.",
+            "en": "Find this picture: lemon. Its color is Yellow."
+          },
+          "visual": "",
+          "conceptKey": "yellow",
+          "answers": [
+            {
+              "id": "purple-circle",
+              "label": "🟣"
+            },
+            {
+              "id": "lemon",
+              "label": "🍋"
+            }
+          ],
+          "correctAnswerId": "lemon",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Gelb.",
+            "en": "Look for the picture in Yellow."
+          }
+        },
+        {
+          "id": "d2cu75",
+          "prompt": {
+            "de": "Navis Bootsreihe ist Blau, Rosa, Blau. Welche Farbe kommt jetzt?",
+            "en": "Navi's boat row is Blue, Pink, Blue. Which color comes next?"
+          },
+          "visual": "⛵  🔵 🩷 🔵  ?",
+          "conceptKey": "pink",
+          "answers": [
+            {
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
+            },
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            }
+          ],
+          "correctAnswerId": "pink",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Rosa.",
+            "en": "Pattern solved! Pink comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Blau, Rosa.",
+            "en": "The two colors take turns: Blue, Pink."
+          }
+        },
+        {
+          "id": "d2cu76",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: Wassertropfen?",
+            "en": "Which color can you see in this picture: water drop?"
+          },
+          "visual": "💧",
+          "conceptKey": "blue",
+          "answers": [
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            },
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            }
+          ],
+          "correctAnswerId": "blue",
+          "success": {
+            "de": "Richtig! Die Farbe ist Blau.",
+            "en": "Correct! The color is Blue."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu77",
+          "prompt": {
+            "de": "Finde dieses Bild: Weintrauben. Seine Farbe ist Lila.",
+            "en": "Find this picture: grapes. Its color is Purple."
+          },
+          "visual": "",
+          "conceptKey": "purple",
+          "answers": [
+            {
+              "id": "grapes",
+              "label": "🍇"
+            },
+            {
+              "id": "pink-heart",
+              "label": "🩷"
+            }
+          ],
+          "correctAnswerId": "grapes",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Lila.",
+            "en": "Look for the picture in Purple."
+          }
+        },
+        {
+          "id": "d2cu78",
+          "prompt": {
+            "de": "Navis Zugreihe ist Grün, Braun, Grün. Welche Farbe kommt jetzt?",
+            "en": "Navi's train row is Green, Brown, Green. Which color comes next?"
+          },
+          "visual": "🚆  🟢 🟤 🟢  ?",
+          "conceptKey": "brown",
+          "answers": [
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            },
+            {
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
+            }
+          ],
+          "correctAnswerId": "brown",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Braun.",
+            "en": "Pattern solved! Brown comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Grün, Braun.",
+            "en": "The two colors take turns: Green, Brown."
+          }
+        },
+        {
+          "id": "d2cu79",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: grüner Apfel?",
+            "en": "Which color can you see in this picture: green apple?"
+          },
+          "visual": "🍏",
+          "conceptKey": "green",
+          "answers": [
+            {
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
+            },
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            }
+          ],
+          "correctAnswerId": "green",
+          "success": {
+            "de": "Richtig! Die Farbe ist Grün.",
+            "en": "Correct! The color is Green."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu80",
+          "prompt": {
+            "de": "Finde dieses Bild: Orange. Seine Farbe ist Orange.",
+            "en": "Find this picture: orange fruit. Its color is Orange."
+          },
+          "visual": "",
+          "conceptKey": "orange",
+          "answers": [
+            {
+              "id": "brown-heart",
+              "label": "🤎"
+            },
+            {
+              "id": "orange-fruit",
+              "label": "🍊"
+            }
+          ],
+          "correctAnswerId": "orange-fruit",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Orange.",
+            "en": "Look for the picture in Orange."
+          }
+        },
+        {
+          "id": "d2cu81",
+          "prompt": {
+            "de": "Navis Autoreihe ist Gelb, Rot, Gelb. Welche Farbe kommt jetzt?",
+            "en": "Navi's car row is Yellow, Red, Yellow. Which color comes next?"
+          },
+          "visual": "🚗  🟡 🔴 🟡  ?",
+          "conceptKey": "red",
+          "answers": [
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            },
+            {
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
+            }
+          ],
+          "correctAnswerId": "red",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Rot.",
+            "en": "Pattern solved! Red comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Gelb, Rot.",
+            "en": "The two colors take turns: Yellow, Red."
+          }
+        },
+        {
+          "id": "d2cu82",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: Zitrone?",
+            "en": "Which color can you see in this picture: lemon?"
+          },
+          "visual": "🍋",
+          "conceptKey": "yellow",
+          "answers": [
+            {
+              "id": "pink",
+              "label": {
+                "de": "Rosa",
+                "en": "Pink"
+              },
+              "color": "#EC6FA7"
+            },
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            }
+          ],
+          "correctAnswerId": "yellow",
+          "success": {
+            "de": "Richtig! Die Farbe ist Gelb.",
+            "en": "Correct! The color is Yellow."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu83",
+          "prompt": {
+            "de": "Finde dieses Bild: Ferkel. Seine Farbe ist Rosa.",
+            "en": "Find this picture: piglet. Its color is Pink."
+          },
+          "visual": "",
+          "conceptKey": "pink",
+          "answers": [
+            {
+              "id": "piglet",
+              "label": "🐷"
+            },
+            {
+              "id": "blueberries",
+              "label": "🫐"
+            }
+          ],
+          "correctAnswerId": "piglet",
+          "success": {
+            "de": "Prima! Du hast das richtige Bild gefunden.",
+            "en": "Great! You found the right picture."
+          },
+          "hint": {
+            "de": "Suche das Bild in Rosa.",
+            "en": "Look for the picture in Pink."
+          }
+        },
+        {
+          "id": "d2cu84",
+          "prompt": {
+            "de": "Navis Buchreihe ist Lila, Blau, Lila. Welche Farbe kommt jetzt?",
+            "en": "Navi's book row is Purple, Blue, Purple. Which color comes next?"
+          },
+          "visual": "📘  🟣 🔵 🟣  ?",
+          "conceptKey": "blue",
+          "answers": [
+            {
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
+            },
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            }
+          ],
+          "correctAnswerId": "blue",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Blau.",
+            "en": "Pattern solved! Blue comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Lila, Blau.",
+            "en": "The two colors take turns: Purple, Blue."
+          }
+        },
+        {
+          "id": "d2cu85",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: Weintrauben?",
+            "en": "Which color can you see in this picture: grapes?"
+          },
+          "visual": "🍇",
+          "conceptKey": "purple",
+          "answers": [
+            {
+              "id": "purple",
+              "label": {
+                "de": "Lila",
+                "en": "Purple"
+              },
+              "color": "#AB47BC"
+            },
+            {
+              "id": "brown",
+              "label": {
+                "de": "Braun",
+                "en": "Brown"
+              },
+              "color": "#8D6E63"
+            }
+          ],
+          "correctAnswerId": "purple",
+          "success": {
+            "de": "Richtig! Die Farbe ist Lila.",
+            "en": "Correct! The color is Purple."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu86",
           "prompt": {
             "de": "Finde dieses Bild: Schokolade. Seine Farbe ist Braun.",
             "en": "Find this picture: chocolate. Its color is Brown."
           },
           "visual": "",
+          "conceptKey": "brown",
           "answers": [
+            {
+              "id": "flamingo",
+              "label": "🦩"
+            },
             {
               "id": "chocolate",
               "label": "🍫"
-            },
-            {
-              "id": "lemon",
-              "label": "🍋"
             }
           ],
           "correctAnswerId": "chocolate",
@@ -8020,30 +8181,139 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dcu90",
+          "id": "d2cu87",
           "prompt": {
-            "de": "Finde dieses Bild: Haselnuss. Seine Farbe ist Braun.",
-            "en": "Find this picture: hazelnut. Its color is Brown."
+            "de": "Navis Stiftreihe ist Orange, Grün, Orange. Welche Farbe kommt jetzt?",
+            "en": "Navi's pencil row is Orange, Green, Orange. Which color comes next?"
           },
-          "visual": "",
+          "visual": "✏️  🟠 🟢 🟠  ?",
+          "conceptKey": "green",
           "answers": [
             {
-              "id": "carrot",
-              "label": "🥕"
+              "id": "green",
+              "label": {
+                "de": "Grün",
+                "en": "Green"
+              },
+              "color": "#66BB6A"
             },
             {
-              "id": "hazelnut",
-              "label": "🌰"
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
             }
           ],
-          "correctAnswerId": "hazelnut",
+          "correctAnswerId": "green",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Grün.",
+            "en": "Pattern solved! Green comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Orange, Grün.",
+            "en": "The two colors take turns: Orange, Green."
+          }
+        },
+        {
+          "id": "d2cu88",
+          "prompt": {
+            "de": "Welche Farbe siehst du bei diesem Bild: Orange?",
+            "en": "Which color can you see in this picture: orange fruit?"
+          },
+          "visual": "🍊",
+          "conceptKey": "orange",
+          "answers": [
+            {
+              "id": "red",
+              "label": {
+                "de": "Rot",
+                "en": "Red"
+              },
+              "color": "#EF5350"
+            },
+            {
+              "id": "orange",
+              "label": {
+                "de": "Orange",
+                "en": "Orange"
+              },
+              "color": "#FB8C00"
+            }
+          ],
+          "correctAnswerId": "orange",
+          "success": {
+            "de": "Richtig! Die Farbe ist Orange.",
+            "en": "Correct! The color is Orange."
+          },
+          "hint": {
+            "de": "Schau dir die Farbe des Bildes genau an.",
+            "en": "Look carefully at the color in the picture."
+          }
+        },
+        {
+          "id": "d2cu89",
+          "prompt": {
+            "de": "Finde dieses Bild: rotes Herz. Seine Farbe ist Rot.",
+            "en": "Find this picture: red heart. Its color is Red."
+          },
+          "visual": "",
+          "conceptKey": "red",
+          "answers": [
+            {
+              "id": "red-heart",
+              "label": "❤️"
+            },
+            {
+              "id": "blue-square",
+              "label": "🟦"
+            }
+          ],
+          "correctAnswerId": "red-heart",
           "success": {
             "de": "Prima! Du hast das richtige Bild gefunden.",
             "en": "Great! You found the right picture."
           },
           "hint": {
-            "de": "Suche das Bild in Braun.",
-            "en": "Look for the picture in Brown."
+            "de": "Suche das Bild in Rot.",
+            "en": "Look for the picture in Red."
+          }
+        },
+        {
+          "id": "d2cu90",
+          "prompt": {
+            "de": "Navis Würfelreihe ist Rosa, Gelb, Rosa. Welche Farbe kommt jetzt?",
+            "en": "Navi's dice row is Pink, Yellow, Pink. Which color comes next?"
+          },
+          "visual": "🎲  🩷 🟡 🩷  ?",
+          "conceptKey": "yellow",
+          "answers": [
+            {
+              "id": "blue",
+              "label": {
+                "de": "Blau",
+                "en": "Blue"
+              },
+              "color": "#42A5F5"
+            },
+            {
+              "id": "yellow",
+              "label": {
+                "de": "Gelb",
+                "en": "Yellow"
+              },
+              "color": "#FBC02D"
+            }
+          ],
+          "correctAnswerId": "yellow",
+          "success": {
+            "de": "Muster gelöst! Jetzt kommt Gelb.",
+            "en": "Pattern solved! Yellow comes next."
+          },
+          "hint": {
+            "de": "Die beiden Farben wechseln sich ab: Rosa, Gelb.",
+            "en": "The two colors take turns: Pink, Yellow."
           }
         }
       ],
@@ -17177,12 +17447,13 @@ export const categories: LearningCategory[] = [
     "questionsByAge": {
       "discoverer": [
         {
-          "id": "dlu1",
+          "id": "d2lu1",
           "prompt": {
-            "de": "Navi zeigt A. Finde noch einmal das große A.",
-            "en": "Navi shows A. Find the same capital A."
+            "de": "Navi zeigt dir A wie bei Apfel. Finde denselben großen Buchstaben.",
+            "en": "Navi shows A as in apple. Find the same capital letter."
           },
-          "visual": "A",
+          "visual": "A  🍎",
+          "showNavi": true,
           "answers": [
             {
               "id": "A",
@@ -17195,839 +17466,30 @@ export const categories: LearningCategory[] = [
           ],
           "correctAnswerId": "A",
           "success": {
-            "de": "Ja! Das ist A.",
-            "en": "Yes! That is A."
+            "de": "Ja! Das ist das große A.",
+            "en": "Yes! That is capital A."
           },
           "hint": {
-            "de": "Vergleiche die Form mit dem großen A.",
-            "en": "Match the shape of capital A."
+            "de": "Vergleiche die Form mit A auf Navis Karte.",
+            "en": "Match the shape of A on Navi's card."
           }
         },
         {
-          "id": "dlu2",
+          "id": "d2lu2",
           "prompt": {
-            "de": "Navi zeigt B. Finde noch einmal das große B.",
-            "en": "Navi shows B. Find the same capital B."
+            "de": "Navi zeigt F und f wie bei Fisch. Finde das kleine f.",
+            "en": "Navi shows F and f as in fish. Find lowercase f."
           },
-          "visual": "B",
-          "answers": [
-            {
-              "id": "I",
-              "label": "I"
-            },
-            {
-              "id": "B",
-              "label": "B"
-            }
-          ],
-          "correctAnswerId": "B",
-          "success": {
-            "de": "Ja! Das ist B.",
-            "en": "Yes! That is B."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen B.",
-            "en": "Match the shape of capital B."
-          }
-        },
-        {
-          "id": "dlu3",
-          "prompt": {
-            "de": "Navi zeigt C. Finde noch einmal das große C.",
-            "en": "Navi shows C. Find the same capital C."
-          },
-          "visual": "C",
-          "answers": [
-            {
-              "id": "C",
-              "label": "C"
-            },
-            {
-              "id": "J",
-              "label": "J"
-            }
-          ],
-          "correctAnswerId": "C",
-          "success": {
-            "de": "Ja! Das ist C.",
-            "en": "Yes! That is C."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen C.",
-            "en": "Match the shape of capital C."
-          }
-        },
-        {
-          "id": "dlu4",
-          "prompt": {
-            "de": "Navi zeigt D. Finde noch einmal das große D.",
-            "en": "Navi shows D. Find the same capital D."
-          },
-          "visual": "D",
-          "answers": [
-            {
-              "id": "K",
-              "label": "K"
-            },
-            {
-              "id": "D",
-              "label": "D"
-            }
-          ],
-          "correctAnswerId": "D",
-          "success": {
-            "de": "Ja! Das ist D.",
-            "en": "Yes! That is D."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen D.",
-            "en": "Match the shape of capital D."
-          }
-        },
-        {
-          "id": "dlu5",
-          "prompt": {
-            "de": "Navi zeigt E. Finde noch einmal das große E.",
-            "en": "Navi shows E. Find the same capital E."
-          },
-          "visual": "E",
-          "answers": [
-            {
-              "id": "E",
-              "label": "E"
-            },
-            {
-              "id": "L",
-              "label": "L"
-            }
-          ],
-          "correctAnswerId": "E",
-          "success": {
-            "de": "Ja! Das ist E.",
-            "en": "Yes! That is E."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen E.",
-            "en": "Match the shape of capital E."
-          }
-        },
-        {
-          "id": "dlu6",
-          "prompt": {
-            "de": "Navi zeigt F. Finde noch einmal das große F.",
-            "en": "Navi shows F. Find the same capital F."
-          },
-          "visual": "F",
-          "answers": [
-            {
-              "id": "M",
-              "label": "M"
-            },
-            {
-              "id": "F",
-              "label": "F"
-            }
-          ],
-          "correctAnswerId": "F",
-          "success": {
-            "de": "Ja! Das ist F.",
-            "en": "Yes! That is F."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen F.",
-            "en": "Match the shape of capital F."
-          }
-        },
-        {
-          "id": "dlu7",
-          "prompt": {
-            "de": "Navi zeigt G. Finde noch einmal das große G.",
-            "en": "Navi shows G. Find the same capital G."
-          },
-          "visual": "G",
-          "answers": [
-            {
-              "id": "G",
-              "label": "G"
-            },
-            {
-              "id": "N",
-              "label": "N"
-            }
-          ],
-          "correctAnswerId": "G",
-          "success": {
-            "de": "Ja! Das ist G.",
-            "en": "Yes! That is G."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen G.",
-            "en": "Match the shape of capital G."
-          }
-        },
-        {
-          "id": "dlu8",
-          "prompt": {
-            "de": "Navi zeigt H. Finde noch einmal das große H.",
-            "en": "Navi shows H. Find the same capital H."
-          },
-          "visual": "H",
-          "answers": [
-            {
-              "id": "O",
-              "label": "O"
-            },
-            {
-              "id": "H",
-              "label": "H"
-            }
-          ],
-          "correctAnswerId": "H",
-          "success": {
-            "de": "Ja! Das ist H.",
-            "en": "Yes! That is H."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen H.",
-            "en": "Match the shape of capital H."
-          }
-        },
-        {
-          "id": "dlu9",
-          "prompt": {
-            "de": "Navi zeigt I. Finde noch einmal das große I.",
-            "en": "Navi shows I. Find the same capital I."
-          },
-          "visual": "I",
-          "answers": [
-            {
-              "id": "I",
-              "label": "I"
-            },
-            {
-              "id": "P",
-              "label": "P"
-            }
-          ],
-          "correctAnswerId": "I",
-          "success": {
-            "de": "Ja! Das ist I.",
-            "en": "Yes! That is I."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen I.",
-            "en": "Match the shape of capital I."
-          }
-        },
-        {
-          "id": "dlu10",
-          "prompt": {
-            "de": "Navi zeigt J. Finde noch einmal das große J.",
-            "en": "Navi shows J. Find the same capital J."
-          },
-          "visual": "J",
-          "answers": [
-            {
-              "id": "Q",
-              "label": "Q"
-            },
-            {
-              "id": "J",
-              "label": "J"
-            }
-          ],
-          "correctAnswerId": "J",
-          "success": {
-            "de": "Ja! Das ist J.",
-            "en": "Yes! That is J."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen J.",
-            "en": "Match the shape of capital J."
-          }
-        },
-        {
-          "id": "dlu11",
-          "prompt": {
-            "de": "Navi zeigt K. Finde noch einmal das große K.",
-            "en": "Navi shows K. Find the same capital K."
-          },
-          "visual": "K",
-          "answers": [
-            {
-              "id": "K",
-              "label": "K"
-            },
-            {
-              "id": "R",
-              "label": "R"
-            }
-          ],
-          "correctAnswerId": "K",
-          "success": {
-            "de": "Ja! Das ist K.",
-            "en": "Yes! That is K."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen K.",
-            "en": "Match the shape of capital K."
-          }
-        },
-        {
-          "id": "dlu12",
-          "prompt": {
-            "de": "Navi zeigt L. Finde noch einmal das große L.",
-            "en": "Navi shows L. Find the same capital L."
-          },
-          "visual": "L",
-          "answers": [
-            {
-              "id": "S",
-              "label": "S"
-            },
-            {
-              "id": "L",
-              "label": "L"
-            }
-          ],
-          "correctAnswerId": "L",
-          "success": {
-            "de": "Ja! Das ist L.",
-            "en": "Yes! That is L."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen L.",
-            "en": "Match the shape of capital L."
-          }
-        },
-        {
-          "id": "dlu13",
-          "prompt": {
-            "de": "Navi zeigt M. Finde noch einmal das große M.",
-            "en": "Navi shows M. Find the same capital M."
-          },
-          "visual": "M",
-          "answers": [
-            {
-              "id": "M",
-              "label": "M"
-            },
-            {
-              "id": "T",
-              "label": "T"
-            }
-          ],
-          "correctAnswerId": "M",
-          "success": {
-            "de": "Ja! Das ist M.",
-            "en": "Yes! That is M."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen M.",
-            "en": "Match the shape of capital M."
-          }
-        },
-        {
-          "id": "dlu14",
-          "prompt": {
-            "de": "Navi zeigt N. Finde noch einmal das große N.",
-            "en": "Navi shows N. Find the same capital N."
-          },
-          "visual": "N",
-          "answers": [
-            {
-              "id": "U",
-              "label": "U"
-            },
-            {
-              "id": "N",
-              "label": "N"
-            }
-          ],
-          "correctAnswerId": "N",
-          "success": {
-            "de": "Ja! Das ist N.",
-            "en": "Yes! That is N."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen N.",
-            "en": "Match the shape of capital N."
-          }
-        },
-        {
-          "id": "dlu15",
-          "prompt": {
-            "de": "Navi zeigt O. Finde noch einmal das große O.",
-            "en": "Navi shows O. Find the same capital O."
-          },
-          "visual": "O",
-          "answers": [
-            {
-              "id": "O",
-              "label": "O"
-            },
-            {
-              "id": "V",
-              "label": "V"
-            }
-          ],
-          "correctAnswerId": "O",
-          "success": {
-            "de": "Ja! Das ist O.",
-            "en": "Yes! That is O."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen O.",
-            "en": "Match the shape of capital O."
-          }
-        },
-        {
-          "id": "dlu16",
-          "prompt": {
-            "de": "Navi zeigt P. Finde noch einmal das große P.",
-            "en": "Navi shows P. Find the same capital P."
-          },
-          "visual": "P",
-          "answers": [
-            {
-              "id": "W",
-              "label": "W"
-            },
-            {
-              "id": "P",
-              "label": "P"
-            }
-          ],
-          "correctAnswerId": "P",
-          "success": {
-            "de": "Ja! Das ist P.",
-            "en": "Yes! That is P."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen P.",
-            "en": "Match the shape of capital P."
-          }
-        },
-        {
-          "id": "dlu17",
-          "prompt": {
-            "de": "Navi zeigt Q. Finde noch einmal das große Q.",
-            "en": "Navi shows Q. Find the same capital Q."
-          },
-          "visual": "Q",
-          "answers": [
-            {
-              "id": "Q",
-              "label": "Q"
-            },
-            {
-              "id": "X",
-              "label": "X"
-            }
-          ],
-          "correctAnswerId": "Q",
-          "success": {
-            "de": "Ja! Das ist Q.",
-            "en": "Yes! That is Q."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen Q.",
-            "en": "Match the shape of capital Q."
-          }
-        },
-        {
-          "id": "dlu18",
-          "prompt": {
-            "de": "Navi zeigt R. Finde noch einmal das große R.",
-            "en": "Navi shows R. Find the same capital R."
-          },
-          "visual": "R",
-          "answers": [
-            {
-              "id": "Y",
-              "label": "Y"
-            },
-            {
-              "id": "R",
-              "label": "R"
-            }
-          ],
-          "correctAnswerId": "R",
-          "success": {
-            "de": "Ja! Das ist R.",
-            "en": "Yes! That is R."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen R.",
-            "en": "Match the shape of capital R."
-          }
-        },
-        {
-          "id": "dlu19",
-          "prompt": {
-            "de": "Navi zeigt S. Finde noch einmal das große S.",
-            "en": "Navi shows S. Find the same capital S."
-          },
-          "visual": "S",
-          "answers": [
-            {
-              "id": "S",
-              "label": "S"
-            },
-            {
-              "id": "Z",
-              "label": "Z"
-            }
-          ],
-          "correctAnswerId": "S",
-          "success": {
-            "de": "Ja! Das ist S.",
-            "en": "Yes! That is S."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen S.",
-            "en": "Match the shape of capital S."
-          }
-        },
-        {
-          "id": "dlu20",
-          "prompt": {
-            "de": "Navi zeigt T. Finde noch einmal das große T.",
-            "en": "Navi shows T. Find the same capital T."
-          },
-          "visual": "T",
-          "answers": [
-            {
-              "id": "A",
-              "label": "A"
-            },
-            {
-              "id": "T",
-              "label": "T"
-            }
-          ],
-          "correctAnswerId": "T",
-          "success": {
-            "de": "Ja! Das ist T.",
-            "en": "Yes! That is T."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen T.",
-            "en": "Match the shape of capital T."
-          }
-        },
-        {
-          "id": "dlu21",
-          "prompt": {
-            "de": "Navi zeigt U. Finde noch einmal das große U.",
-            "en": "Navi shows U. Find the same capital U."
-          },
-          "visual": "U",
-          "answers": [
-            {
-              "id": "U",
-              "label": "U"
-            },
-            {
-              "id": "B",
-              "label": "B"
-            }
-          ],
-          "correctAnswerId": "U",
-          "success": {
-            "de": "Ja! Das ist U.",
-            "en": "Yes! That is U."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen U.",
-            "en": "Match the shape of capital U."
-          }
-        },
-        {
-          "id": "dlu22",
-          "prompt": {
-            "de": "Navi zeigt V. Finde noch einmal das große V.",
-            "en": "Navi shows V. Find the same capital V."
-          },
-          "visual": "V",
-          "answers": [
-            {
-              "id": "C",
-              "label": "C"
-            },
-            {
-              "id": "V",
-              "label": "V"
-            }
-          ],
-          "correctAnswerId": "V",
-          "success": {
-            "de": "Ja! Das ist V.",
-            "en": "Yes! That is V."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen V.",
-            "en": "Match the shape of capital V."
-          }
-        },
-        {
-          "id": "dlu23",
-          "prompt": {
-            "de": "Navi zeigt W. Finde noch einmal das große W.",
-            "en": "Navi shows W. Find the same capital W."
-          },
-          "visual": "W",
-          "answers": [
-            {
-              "id": "W",
-              "label": "W"
-            },
-            {
-              "id": "D",
-              "label": "D"
-            }
-          ],
-          "correctAnswerId": "W",
-          "success": {
-            "de": "Ja! Das ist W.",
-            "en": "Yes! That is W."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen W.",
-            "en": "Match the shape of capital W."
-          }
-        },
-        {
-          "id": "dlu24",
-          "prompt": {
-            "de": "Navi zeigt X. Finde noch einmal das große X.",
-            "en": "Navi shows X. Find the same capital X."
-          },
-          "visual": "X",
-          "answers": [
-            {
-              "id": "E",
-              "label": "E"
-            },
-            {
-              "id": "X",
-              "label": "X"
-            }
-          ],
-          "correctAnswerId": "X",
-          "success": {
-            "de": "Ja! Das ist X.",
-            "en": "Yes! That is X."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen X.",
-            "en": "Match the shape of capital X."
-          }
-        },
-        {
-          "id": "dlu25",
-          "prompt": {
-            "de": "Navi zeigt Y. Finde noch einmal das große Y.",
-            "en": "Navi shows Y. Find the same capital Y."
-          },
-          "visual": "Y",
-          "answers": [
-            {
-              "id": "Y",
-              "label": "Y"
-            },
-            {
-              "id": "F",
-              "label": "F"
-            }
-          ],
-          "correctAnswerId": "Y",
-          "success": {
-            "de": "Ja! Das ist Y.",
-            "en": "Yes! That is Y."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen Y.",
-            "en": "Match the shape of capital Y."
-          }
-        },
-        {
-          "id": "dlu26",
-          "prompt": {
-            "de": "Navi zeigt Z. Finde noch einmal das große Z.",
-            "en": "Navi shows Z. Find the same capital Z."
-          },
-          "visual": "Z",
-          "answers": [
-            {
-              "id": "G",
-              "label": "G"
-            },
-            {
-              "id": "Z",
-              "label": "Z"
-            }
-          ],
-          "correctAnswerId": "Z",
-          "success": {
-            "de": "Ja! Das ist Z.",
-            "en": "Yes! That is Z."
-          },
-          "hint": {
-            "de": "Vergleiche die Form mit dem großen Z.",
-            "en": "Match the shape of capital Z."
-          }
-        },
-        {
-          "id": "dlu27",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen A?",
-            "en": "Which lowercase shape belongs with capital A?"
-          },
-          "visual": "A",
-          "answers": [
-            {
-              "id": "j",
-              "label": "j"
-            },
-            {
-              "id": "a",
-              "label": "a"
-            }
-          ],
-          "correctAnswerId": "a",
-          "success": {
-            "de": "Richtig! A und a gehören zusammen.",
-            "en": "Correct! A and a belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine a.",
-            "en": "Look for lowercase a."
-          }
-        },
-        {
-          "id": "dlu28",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen B?",
-            "en": "Which lowercase shape belongs with capital B?"
-          },
-          "visual": "B",
-          "answers": [
-            {
-              "id": "b",
-              "label": "b"
-            },
-            {
-              "id": "k",
-              "label": "k"
-            }
-          ],
-          "correctAnswerId": "b",
-          "success": {
-            "de": "Richtig! B und b gehören zusammen.",
-            "en": "Correct! B and b belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine b.",
-            "en": "Look for lowercase b."
-          }
-        },
-        {
-          "id": "dlu29",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen C?",
-            "en": "Which lowercase shape belongs with capital C?"
-          },
-          "visual": "C",
-          "answers": [
-            {
-              "id": "l",
-              "label": "l"
-            },
-            {
-              "id": "c",
-              "label": "c"
-            }
-          ],
-          "correctAnswerId": "c",
-          "success": {
-            "de": "Richtig! C und c gehören zusammen.",
-            "en": "Correct! C and c belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine c.",
-            "en": "Look for lowercase c."
-          }
-        },
-        {
-          "id": "dlu30",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen D?",
-            "en": "Which lowercase shape belongs with capital D?"
-          },
-          "visual": "D",
-          "answers": [
-            {
-              "id": "d",
-              "label": "d"
-            },
-            {
-              "id": "m",
-              "label": "m"
-            }
-          ],
-          "correctAnswerId": "d",
-          "success": {
-            "de": "Richtig! D und d gehören zusammen.",
-            "en": "Correct! D and d belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine d.",
-            "en": "Look for lowercase d."
-          }
-        },
-        {
-          "id": "dlu31",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen E?",
-            "en": "Which lowercase shape belongs with capital E?"
-          },
-          "visual": "E",
+          "visual": "F · f  🐟",
+          "showNavi": true,
           "answers": [
             {
               "id": "n",
               "label": "n"
             },
             {
-              "id": "e",
-              "label": "e"
-            }
-          ],
-          "correctAnswerId": "e",
-          "success": {
-            "de": "Richtig! E und e gehören zusammen.",
-            "en": "Correct! E and e belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine e.",
-            "en": "Look for lowercase e."
-          }
-        },
-        {
-          "id": "dlu32",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen F?",
-            "en": "Which lowercase shape belongs with capital F?"
-          },
-          "visual": "F",
-          "answers": [
-            {
               "id": "f",
               "label": "f"
-            },
-            {
-              "id": "o",
-              "label": "o"
             }
           ],
           "correctAnswerId": "f",
@@ -18036,1092 +17498,12 @@ export const categories: LearningCategory[] = [
             "en": "Correct! F and f belong together."
           },
           "hint": {
-            "de": "Suche das kleine f.",
-            "en": "Look for lowercase f."
+            "de": "Tippe auf die kleine Form f.",
+            "en": "Tap the lowercase shape f."
           }
         },
         {
-          "id": "dlu33",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen G?",
-            "en": "Which lowercase shape belongs with capital G?"
-          },
-          "visual": "G",
-          "answers": [
-            {
-              "id": "p",
-              "label": "p"
-            },
-            {
-              "id": "g",
-              "label": "g"
-            }
-          ],
-          "correctAnswerId": "g",
-          "success": {
-            "de": "Richtig! G und g gehören zusammen.",
-            "en": "Correct! G and g belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine g.",
-            "en": "Look for lowercase g."
-          }
-        },
-        {
-          "id": "dlu34",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen H?",
-            "en": "Which lowercase shape belongs with capital H?"
-          },
-          "visual": "H",
-          "answers": [
-            {
-              "id": "h",
-              "label": "h"
-            },
-            {
-              "id": "q",
-              "label": "q"
-            }
-          ],
-          "correctAnswerId": "h",
-          "success": {
-            "de": "Richtig! H und h gehören zusammen.",
-            "en": "Correct! H and h belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine h.",
-            "en": "Look for lowercase h."
-          }
-        },
-        {
-          "id": "dlu35",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen I?",
-            "en": "Which lowercase shape belongs with capital I?"
-          },
-          "visual": "I",
-          "answers": [
-            {
-              "id": "r",
-              "label": "r"
-            },
-            {
-              "id": "i",
-              "label": "i"
-            }
-          ],
-          "correctAnswerId": "i",
-          "success": {
-            "de": "Richtig! I und i gehören zusammen.",
-            "en": "Correct! I and i belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine i.",
-            "en": "Look for lowercase i."
-          }
-        },
-        {
-          "id": "dlu36",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen J?",
-            "en": "Which lowercase shape belongs with capital J?"
-          },
-          "visual": "J",
-          "answers": [
-            {
-              "id": "j",
-              "label": "j"
-            },
-            {
-              "id": "s",
-              "label": "s"
-            }
-          ],
-          "correctAnswerId": "j",
-          "success": {
-            "de": "Richtig! J und j gehören zusammen.",
-            "en": "Correct! J and j belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine j.",
-            "en": "Look for lowercase j."
-          }
-        },
-        {
-          "id": "dlu37",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen K?",
-            "en": "Which lowercase shape belongs with capital K?"
-          },
-          "visual": "K",
-          "answers": [
-            {
-              "id": "t",
-              "label": "t"
-            },
-            {
-              "id": "k",
-              "label": "k"
-            }
-          ],
-          "correctAnswerId": "k",
-          "success": {
-            "de": "Richtig! K und k gehören zusammen.",
-            "en": "Correct! K and k belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine k.",
-            "en": "Look for lowercase k."
-          }
-        },
-        {
-          "id": "dlu38",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen L?",
-            "en": "Which lowercase shape belongs with capital L?"
-          },
-          "visual": "L",
-          "answers": [
-            {
-              "id": "l",
-              "label": "l"
-            },
-            {
-              "id": "u",
-              "label": "u"
-            }
-          ],
-          "correctAnswerId": "l",
-          "success": {
-            "de": "Richtig! L und l gehören zusammen.",
-            "en": "Correct! L and l belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine l.",
-            "en": "Look for lowercase l."
-          }
-        },
-        {
-          "id": "dlu39",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen M?",
-            "en": "Which lowercase shape belongs with capital M?"
-          },
-          "visual": "M",
-          "answers": [
-            {
-              "id": "v",
-              "label": "v"
-            },
-            {
-              "id": "m",
-              "label": "m"
-            }
-          ],
-          "correctAnswerId": "m",
-          "success": {
-            "de": "Richtig! M und m gehören zusammen.",
-            "en": "Correct! M and m belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine m.",
-            "en": "Look for lowercase m."
-          }
-        },
-        {
-          "id": "dlu40",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen N?",
-            "en": "Which lowercase shape belongs with capital N?"
-          },
-          "visual": "N",
-          "answers": [
-            {
-              "id": "n",
-              "label": "n"
-            },
-            {
-              "id": "w",
-              "label": "w"
-            }
-          ],
-          "correctAnswerId": "n",
-          "success": {
-            "de": "Richtig! N und n gehören zusammen.",
-            "en": "Correct! N and n belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine n.",
-            "en": "Look for lowercase n."
-          }
-        },
-        {
-          "id": "dlu41",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen O?",
-            "en": "Which lowercase shape belongs with capital O?"
-          },
-          "visual": "O",
-          "answers": [
-            {
-              "id": "x",
-              "label": "x"
-            },
-            {
-              "id": "o",
-              "label": "o"
-            }
-          ],
-          "correctAnswerId": "o",
-          "success": {
-            "de": "Richtig! O und o gehören zusammen.",
-            "en": "Correct! O and o belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine o.",
-            "en": "Look for lowercase o."
-          }
-        },
-        {
-          "id": "dlu42",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen P?",
-            "en": "Which lowercase shape belongs with capital P?"
-          },
-          "visual": "P",
-          "answers": [
-            {
-              "id": "p",
-              "label": "p"
-            },
-            {
-              "id": "y",
-              "label": "y"
-            }
-          ],
-          "correctAnswerId": "p",
-          "success": {
-            "de": "Richtig! P und p gehören zusammen.",
-            "en": "Correct! P and p belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine p.",
-            "en": "Look for lowercase p."
-          }
-        },
-        {
-          "id": "dlu43",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen Q?",
-            "en": "Which lowercase shape belongs with capital Q?"
-          },
-          "visual": "Q",
-          "answers": [
-            {
-              "id": "z",
-              "label": "z"
-            },
-            {
-              "id": "q",
-              "label": "q"
-            }
-          ],
-          "correctAnswerId": "q",
-          "success": {
-            "de": "Richtig! Q und q gehören zusammen.",
-            "en": "Correct! Q and q belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine q.",
-            "en": "Look for lowercase q."
-          }
-        },
-        {
-          "id": "dlu44",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen R?",
-            "en": "Which lowercase shape belongs with capital R?"
-          },
-          "visual": "R",
-          "answers": [
-            {
-              "id": "r",
-              "label": "r"
-            },
-            {
-              "id": "a",
-              "label": "a"
-            }
-          ],
-          "correctAnswerId": "r",
-          "success": {
-            "de": "Richtig! R und r gehören zusammen.",
-            "en": "Correct! R and r belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine r.",
-            "en": "Look for lowercase r."
-          }
-        },
-        {
-          "id": "dlu45",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen S?",
-            "en": "Which lowercase shape belongs with capital S?"
-          },
-          "visual": "S",
-          "answers": [
-            {
-              "id": "b",
-              "label": "b"
-            },
-            {
-              "id": "s",
-              "label": "s"
-            }
-          ],
-          "correctAnswerId": "s",
-          "success": {
-            "de": "Richtig! S und s gehören zusammen.",
-            "en": "Correct! S and s belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine s.",
-            "en": "Look for lowercase s."
-          }
-        },
-        {
-          "id": "dlu46",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen T?",
-            "en": "Which lowercase shape belongs with capital T?"
-          },
-          "visual": "T",
-          "answers": [
-            {
-              "id": "t",
-              "label": "t"
-            },
-            {
-              "id": "c",
-              "label": "c"
-            }
-          ],
-          "correctAnswerId": "t",
-          "success": {
-            "de": "Richtig! T und t gehören zusammen.",
-            "en": "Correct! T and t belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine t.",
-            "en": "Look for lowercase t."
-          }
-        },
-        {
-          "id": "dlu47",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen U?",
-            "en": "Which lowercase shape belongs with capital U?"
-          },
-          "visual": "U",
-          "answers": [
-            {
-              "id": "d",
-              "label": "d"
-            },
-            {
-              "id": "u",
-              "label": "u"
-            }
-          ],
-          "correctAnswerId": "u",
-          "success": {
-            "de": "Richtig! U und u gehören zusammen.",
-            "en": "Correct! U and u belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine u.",
-            "en": "Look for lowercase u."
-          }
-        },
-        {
-          "id": "dlu48",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen V?",
-            "en": "Which lowercase shape belongs with capital V?"
-          },
-          "visual": "V",
-          "answers": [
-            {
-              "id": "v",
-              "label": "v"
-            },
-            {
-              "id": "e",
-              "label": "e"
-            }
-          ],
-          "correctAnswerId": "v",
-          "success": {
-            "de": "Richtig! V und v gehören zusammen.",
-            "en": "Correct! V and v belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine v.",
-            "en": "Look for lowercase v."
-          }
-        },
-        {
-          "id": "dlu49",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen W?",
-            "en": "Which lowercase shape belongs with capital W?"
-          },
-          "visual": "W",
-          "answers": [
-            {
-              "id": "f",
-              "label": "f"
-            },
-            {
-              "id": "w",
-              "label": "w"
-            }
-          ],
-          "correctAnswerId": "w",
-          "success": {
-            "de": "Richtig! W und w gehören zusammen.",
-            "en": "Correct! W and w belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine w.",
-            "en": "Look for lowercase w."
-          }
-        },
-        {
-          "id": "dlu50",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen X?",
-            "en": "Which lowercase shape belongs with capital X?"
-          },
-          "visual": "X",
-          "answers": [
-            {
-              "id": "x",
-              "label": "x"
-            },
-            {
-              "id": "g",
-              "label": "g"
-            }
-          ],
-          "correctAnswerId": "x",
-          "success": {
-            "de": "Richtig! X und x gehören zusammen.",
-            "en": "Correct! X and x belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine x.",
-            "en": "Look for lowercase x."
-          }
-        },
-        {
-          "id": "dlu51",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen Y?",
-            "en": "Which lowercase shape belongs with capital Y?"
-          },
-          "visual": "Y",
-          "answers": [
-            {
-              "id": "h",
-              "label": "h"
-            },
-            {
-              "id": "y",
-              "label": "y"
-            }
-          ],
-          "correctAnswerId": "y",
-          "success": {
-            "de": "Richtig! Y und y gehören zusammen.",
-            "en": "Correct! Y and y belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine y.",
-            "en": "Look for lowercase y."
-          }
-        },
-        {
-          "id": "dlu52",
-          "prompt": {
-            "de": "Welche kleine Form gehört zum großen Z?",
-            "en": "Which lowercase shape belongs with capital Z?"
-          },
-          "visual": "Z",
-          "answers": [
-            {
-              "id": "z",
-              "label": "z"
-            },
-            {
-              "id": "i",
-              "label": "i"
-            }
-          ],
-          "correctAnswerId": "z",
-          "success": {
-            "de": "Richtig! Z und z gehören zusammen.",
-            "en": "Correct! Z and z belong together."
-          },
-          "hint": {
-            "de": "Suche das kleine z.",
-            "en": "Look for lowercase z."
-          }
-        },
-        {
-          "id": "dlu53",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Apfel?",
-            "en": "Which first sound do you hear in apple?"
-          },
-          "visual": "🍎",
-          "answers": [
-            {
-              "id": "A",
-              "label": "A"
-            },
-            {
-              "id": "H",
-              "label": "H"
-            }
-          ],
-          "correctAnswerId": "A",
-          "success": {
-            "de": "Apfel beginnt mit A.",
-            "en": "apple begins with A."
-          },
-          "hint": {
-            "de": "Höre langsam: A, Apfel.",
-            "en": "Listen slowly: A, apple."
-          }
-        },
-        {
-          "id": "dlu54",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Ameise?",
-            "en": "Which first sound do you hear in ant?"
-          },
-          "visual": "🐜",
-          "answers": [
-            {
-              "id": "H",
-              "label": "H"
-            },
-            {
-              "id": "A",
-              "label": "A"
-            }
-          ],
-          "correctAnswerId": "A",
-          "success": {
-            "de": "Ameise beginnt mit A.",
-            "en": "ant begins with A."
-          },
-          "hint": {
-            "de": "Höre langsam: A, Ameise.",
-            "en": "Listen slowly: A, ant."
-          }
-        },
-        {
-          "id": "dlu55",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Banane?",
-            "en": "Which first sound do you hear in banana?"
-          },
-          "visual": "🍌",
-          "answers": [
-            {
-              "id": "B",
-              "label": "B"
-            },
-            {
-              "id": "I",
-              "label": "I"
-            }
-          ],
-          "correctAnswerId": "B",
-          "success": {
-            "de": "Banane beginnt mit B.",
-            "en": "banana begins with B."
-          },
-          "hint": {
-            "de": "Höre langsam: B, Banane.",
-            "en": "Listen slowly: B, banana."
-          }
-        },
-        {
-          "id": "dlu56",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Ball?",
-            "en": "Which first sound do you hear in ball?"
-          },
-          "visual": "⚽",
-          "answers": [
-            {
-              "id": "I",
-              "label": "I"
-            },
-            {
-              "id": "B",
-              "label": "B"
-            }
-          ],
-          "correctAnswerId": "B",
-          "success": {
-            "de": "Ball beginnt mit B.",
-            "en": "ball begins with B."
-          },
-          "hint": {
-            "de": "Höre langsam: B, Ball.",
-            "en": "Listen slowly: B, ball."
-          }
-        },
-        {
-          "id": "dlu57",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Bus?",
-            "en": "Which first sound do you hear in bus?"
-          },
-          "visual": "🚌",
-          "answers": [
-            {
-              "id": "B",
-              "label": "B"
-            },
-            {
-              "id": "I",
-              "label": "I"
-            }
-          ],
-          "correctAnswerId": "B",
-          "success": {
-            "de": "Bus beginnt mit B.",
-            "en": "bus begins with B."
-          },
-          "hint": {
-            "de": "Höre langsam: B, Bus.",
-            "en": "Listen slowly: B, bus."
-          }
-        },
-        {
-          "id": "dlu58",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Baby?",
-            "en": "Which first sound do you hear in baby?"
-          },
-          "visual": "👶",
-          "answers": [
-            {
-              "id": "I",
-              "label": "I"
-            },
-            {
-              "id": "B",
-              "label": "B"
-            }
-          ],
-          "correctAnswerId": "B",
-          "success": {
-            "de": "Baby beginnt mit B.",
-            "en": "baby begins with B."
-          },
-          "hint": {
-            "de": "Höre langsam: B, Baby.",
-            "en": "Listen slowly: B, baby."
-          }
-        },
-        {
-          "id": "dlu59",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Clown?",
-            "en": "Which first sound do you hear in clown?"
-          },
-          "visual": "🤡",
-          "answers": [
-            {
-              "id": "C",
-              "label": "C"
-            },
-            {
-              "id": "J",
-              "label": "J"
-            }
-          ],
-          "correctAnswerId": "C",
-          "success": {
-            "de": "Clown beginnt mit C.",
-            "en": "clown begins with C."
-          },
-          "hint": {
-            "de": "Höre langsam: C, Clown.",
-            "en": "Listen slowly: C, clown."
-          }
-        },
-        {
-          "id": "dlu60",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Delfin?",
-            "en": "Which first sound do you hear in dolphin?"
-          },
-          "visual": "🐬",
-          "answers": [
-            {
-              "id": "K",
-              "label": "K"
-            },
-            {
-              "id": "D",
-              "label": "D"
-            }
-          ],
-          "correctAnswerId": "D",
-          "success": {
-            "de": "Delfin beginnt mit D.",
-            "en": "dolphin begins with D."
-          },
-          "hint": {
-            "de": "Höre langsam: D, Delfin.",
-            "en": "Listen slowly: D, dolphin."
-          }
-        },
-        {
-          "id": "dlu61",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Doktor?",
-            "en": "Which first sound do you hear in doctor?"
-          },
-          "visual": "🧑‍⚕️",
-          "answers": [
-            {
-              "id": "D",
-              "label": "D"
-            },
-            {
-              "id": "K",
-              "label": "K"
-            }
-          ],
-          "correctAnswerId": "D",
-          "success": {
-            "de": "Doktor beginnt mit D.",
-            "en": "doctor begins with D."
-          },
-          "hint": {
-            "de": "Höre langsam: D, Doktor.",
-            "en": "Listen slowly: D, doctor."
-          }
-        },
-        {
-          "id": "dlu62",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Elefant?",
-            "en": "Which first sound do you hear in elephant?"
-          },
-          "visual": "🐘",
-          "answers": [
-            {
-              "id": "L",
-              "label": "L"
-            },
-            {
-              "id": "E",
-              "label": "E"
-            }
-          ],
-          "correctAnswerId": "E",
-          "success": {
-            "de": "Elefant beginnt mit E.",
-            "en": "elephant begins with E."
-          },
-          "hint": {
-            "de": "Höre langsam: E, Elefant.",
-            "en": "Listen slowly: E, elephant."
-          }
-        },
-        {
-          "id": "dlu63",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Fisch?",
-            "en": "Which first sound do you hear in fish?"
-          },
-          "visual": "🐟",
-          "answers": [
-            {
-              "id": "F",
-              "label": "F"
-            },
-            {
-              "id": "M",
-              "label": "M"
-            }
-          ],
-          "correctAnswerId": "F",
-          "success": {
-            "de": "Fisch beginnt mit F.",
-            "en": "fish begins with F."
-          },
-          "hint": {
-            "de": "Höre langsam: F, Fisch.",
-            "en": "Listen slowly: F, fish."
-          }
-        },
-        {
-          "id": "dlu64",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Giraffe?",
-            "en": "Which first sound do you hear in giraffe?"
-          },
-          "visual": "🦒",
-          "answers": [
-            {
-              "id": "N",
-              "label": "N"
-            },
-            {
-              "id": "G",
-              "label": "G"
-            }
-          ],
-          "correctAnswerId": "G",
-          "success": {
-            "de": "Giraffe beginnt mit G.",
-            "en": "giraffe begins with G."
-          },
-          "hint": {
-            "de": "Höre langsam: G, Giraffe.",
-            "en": "Listen slowly: G, giraffe."
-          }
-        },
-        {
-          "id": "dlu65",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Gorilla?",
-            "en": "Which first sound do you hear in gorilla?"
-          },
-          "visual": "🦍",
-          "answers": [
-            {
-              "id": "G",
-              "label": "G"
-            },
-            {
-              "id": "N",
-              "label": "N"
-            }
-          ],
-          "correctAnswerId": "G",
-          "success": {
-            "de": "Gorilla beginnt mit G.",
-            "en": "gorilla begins with G."
-          },
-          "hint": {
-            "de": "Höre langsam: G, Gorilla.",
-            "en": "Listen slowly: G, gorilla."
-          }
-        },
-        {
-          "id": "dlu66",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Haus?",
-            "en": "Which first sound do you hear in house?"
-          },
-          "visual": "🏠",
-          "answers": [
-            {
-              "id": "O",
-              "label": "O"
-            },
-            {
-              "id": "H",
-              "label": "H"
-            }
-          ],
-          "correctAnswerId": "H",
-          "success": {
-            "de": "Haus beginnt mit H.",
-            "en": "house begins with H."
-          },
-          "hint": {
-            "de": "Höre langsam: H, Haus.",
-            "en": "Listen slowly: H, house."
-          }
-        },
-        {
-          "id": "dlu67",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Hotel?",
-            "en": "Which first sound do you hear in hotel?"
-          },
-          "visual": "🏨",
-          "answers": [
-            {
-              "id": "H",
-              "label": "H"
-            },
-            {
-              "id": "O",
-              "label": "O"
-            }
-          ],
-          "correctAnswerId": "H",
-          "success": {
-            "de": "Hotel beginnt mit H.",
-            "en": "hotel begins with H."
-          },
-          "hint": {
-            "de": "Höre langsam: H, Hotel.",
-            "en": "Listen slowly: H, hotel."
-          }
-        },
-        {
-          "id": "dlu68",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Insel?",
-            "en": "Which first sound do you hear in island?"
-          },
-          "visual": "🏝️",
-          "answers": [
-            {
-              "id": "P",
-              "label": "P"
-            },
-            {
-              "id": "I",
-              "label": "I"
-            }
-          ],
-          "correctAnswerId": "I",
-          "success": {
-            "de": "Insel beginnt mit I.",
-            "en": "island begins with I."
-          },
-          "hint": {
-            "de": "Höre langsam: I, Insel.",
-            "en": "Listen slowly: I, island."
-          }
-        },
-        {
-          "id": "dlu69",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Jaguar?",
-            "en": "Which first sound do you hear in jaguar?"
-          },
-          "visual": "🐆",
-          "answers": [
-            {
-              "id": "J",
-              "label": "J"
-            },
-            {
-              "id": "Q",
-              "label": "Q"
-            }
-          ],
-          "correctAnswerId": "J",
-          "success": {
-            "de": "Jaguar beginnt mit J.",
-            "en": "jaguar begins with J."
-          },
-          "hint": {
-            "de": "Höre langsam: J, Jaguar.",
-            "en": "Listen slowly: J, jaguar."
-          }
-        },
-        {
-          "id": "dlu70",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Koala?",
-            "en": "Which first sound do you hear in koala?"
-          },
-          "visual": "🐨",
-          "answers": [
-            {
-              "id": "R",
-              "label": "R"
-            },
-            {
-              "id": "K",
-              "label": "K"
-            }
-          ],
-          "correctAnswerId": "K",
-          "success": {
-            "de": "Koala beginnt mit K.",
-            "en": "koala begins with K."
-          },
-          "hint": {
-            "de": "Höre langsam: K, Koala.",
-            "en": "Listen slowly: K, koala."
-          }
-        },
-        {
-          "id": "dlu71",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Löwe?",
-            "en": "Which first sound do you hear in lion?"
-          },
-          "visual": "🦁",
-          "answers": [
-            {
-              "id": "L",
-              "label": "L"
-            },
-            {
-              "id": "S",
-              "label": "S"
-            }
-          ],
-          "correctAnswerId": "L",
-          "success": {
-            "de": "Löwe beginnt mit L.",
-            "en": "lion begins with L."
-          },
-          "hint": {
-            "de": "Höre langsam: L, Löwe.",
-            "en": "Listen slowly: L, lion."
-          }
-        },
-        {
-          "id": "dlu72",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Lampe?",
-            "en": "Which first sound do you hear in lamp?"
-          },
-          "visual": "💡",
-          "answers": [
-            {
-              "id": "S",
-              "label": "S"
-            },
-            {
-              "id": "L",
-              "label": "L"
-            }
-          ],
-          "correctAnswerId": "L",
-          "success": {
-            "de": "Lampe beginnt mit L.",
-            "en": "lamp begins with L."
-          },
-          "hint": {
-            "de": "Höre langsam: L, Lampe.",
-            "en": "Listen slowly: L, lamp."
-          }
-        },
-        {
-          "id": "dlu73",
+          "id": "d2lu3",
           "prompt": {
             "de": "Welchen Anfangslaut hörst du bei Maus?",
             "en": "Which first sound do you hear in mouse?"
@@ -19133,8 +17515,8 @@ export const categories: LearningCategory[] = [
               "label": "M"
             },
             {
-              "id": "T",
-              "label": "T"
+              "id": "S",
+              "label": "S"
             }
           ],
           "correctAnswerId": "M",
@@ -19148,7 +17530,63 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dlu74",
+          "id": "d2lu4",
+          "prompt": {
+            "de": "Navi zeigt dir A wie bei Ameise. Finde denselben großen Buchstaben.",
+            "en": "Navi shows A as in ant. Find the same capital letter."
+          },
+          "visual": "A  🐜",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "H",
+              "label": "H"
+            },
+            {
+              "id": "A",
+              "label": "A"
+            }
+          ],
+          "correctAnswerId": "A",
+          "success": {
+            "de": "Ja! Das ist das große A.",
+            "en": "Yes! That is capital A."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit A auf Navis Karte.",
+            "en": "Match the shape of A on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu5",
+          "prompt": {
+            "de": "Navi zeigt G und g wie bei Giraffe. Finde das kleine g.",
+            "en": "Navi shows G and g as in giraffe. Find lowercase g."
+          },
+          "visual": "G · g  🦒",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "g",
+              "label": "g"
+            },
+            {
+              "id": "o",
+              "label": "o"
+            }
+          ],
+          "correctAnswerId": "g",
+          "success": {
+            "de": "Richtig! G und g gehören zusammen.",
+            "en": "Correct! G and g belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form g.",
+            "en": "Tap the lowercase shape g."
+          }
+        },
+        {
+          "id": "d2lu6",
           "prompt": {
             "de": "Welchen Anfangslaut hörst du bei Mond?",
             "en": "Which first sound do you hear in moon?"
@@ -19156,8 +17594,8 @@ export const categories: LearningCategory[] = [
           "visual": "🌙",
           "answers": [
             {
-              "id": "T",
-              "label": "T"
+              "id": "S",
+              "label": "S"
             },
             {
               "id": "M",
@@ -19175,7 +17613,63 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dlu75",
+          "id": "d2lu7",
+          "prompt": {
+            "de": "Navi zeigt dir B wie bei Banane. Finde denselben großen Buchstaben.",
+            "en": "Navi shows B as in banana. Find the same capital letter."
+          },
+          "visual": "B  🍌",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "B",
+              "label": "B"
+            },
+            {
+              "id": "I",
+              "label": "I"
+            }
+          ],
+          "correctAnswerId": "B",
+          "success": {
+            "de": "Ja! Das ist das große B.",
+            "en": "Yes! That is capital B."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit B auf Navis Karte.",
+            "en": "Match the shape of B on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu8",
+          "prompt": {
+            "de": "Navi zeigt G und g wie bei Gorilla. Finde das kleine g.",
+            "en": "Navi shows G and g as in gorilla. Find lowercase g."
+          },
+          "visual": "G · g  🦍",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "o",
+              "label": "o"
+            },
+            {
+              "id": "g",
+              "label": "g"
+            }
+          ],
+          "correctAnswerId": "g",
+          "success": {
+            "de": "Richtig! G und g gehören zusammen.",
+            "en": "Correct! G and g belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form g.",
+            "en": "Tap the lowercase shape g."
+          }
+        },
+        {
+          "id": "d2lu9",
           "prompt": {
             "de": "Welchen Anfangslaut hörst du bei Musik?",
             "en": "Which first sound do you hear in music?"
@@ -19187,8 +17681,8 @@ export const categories: LearningCategory[] = [
               "label": "M"
             },
             {
-              "id": "T",
-              "label": "T"
+              "id": "S",
+              "label": "S"
             }
           ],
           "correctAnswerId": "M",
@@ -19202,7 +17696,63 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dlu76",
+          "id": "d2lu10",
+          "prompt": {
+            "de": "Navi zeigt dir B wie bei Ball. Finde denselben großen Buchstaben.",
+            "en": "Navi shows B as in ball. Find the same capital letter."
+          },
+          "visual": "B  ⚽",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "I",
+              "label": "I"
+            },
+            {
+              "id": "B",
+              "label": "B"
+            }
+          ],
+          "correctAnswerId": "B",
+          "success": {
+            "de": "Ja! Das ist das große B.",
+            "en": "Yes! That is capital B."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit B auf Navis Karte.",
+            "en": "Match the shape of B on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu11",
+          "prompt": {
+            "de": "Navi zeigt H und h wie bei Haus. Finde das kleine h.",
+            "en": "Navi shows H and h as in house. Find lowercase h."
+          },
+          "visual": "H · h  🏠",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "h",
+              "label": "h"
+            },
+            {
+              "id": "p",
+              "label": "p"
+            }
+          ],
+          "correctAnswerId": "h",
+          "success": {
+            "de": "Richtig! H und h gehören zusammen.",
+            "en": "Correct! H and h belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form h.",
+            "en": "Tap the lowercase shape h."
+          }
+        },
+        {
+          "id": "d2lu12",
           "prompt": {
             "de": "Welchen Anfangslaut hörst du bei Nase?",
             "en": "Which first sound do you hear in nose?"
@@ -19210,8 +17760,8 @@ export const categories: LearningCategory[] = [
           "visual": "👃",
           "answers": [
             {
-              "id": "U",
-              "label": "U"
+              "id": "T",
+              "label": "T"
             },
             {
               "id": "N",
@@ -19229,7 +17779,63 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dlu77",
+          "id": "d2lu13",
+          "prompt": {
+            "de": "Navi zeigt dir B wie bei Bus. Finde denselben großen Buchstaben.",
+            "en": "Navi shows B as in bus. Find the same capital letter."
+          },
+          "visual": "B  🚌",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "B",
+              "label": "B"
+            },
+            {
+              "id": "I",
+              "label": "I"
+            }
+          ],
+          "correctAnswerId": "B",
+          "success": {
+            "de": "Ja! Das ist das große B.",
+            "en": "Yes! That is capital B."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit B auf Navis Karte.",
+            "en": "Match the shape of B on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu14",
+          "prompt": {
+            "de": "Navi zeigt H und h wie bei Hotel. Finde das kleine h.",
+            "en": "Navi shows H and h as in hotel. Find lowercase h."
+          },
+          "visual": "H · h  🏨",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "p",
+              "label": "p"
+            },
+            {
+              "id": "h",
+              "label": "h"
+            }
+          ],
+          "correctAnswerId": "h",
+          "success": {
+            "de": "Richtig! H und h gehören zusammen.",
+            "en": "Correct! H and h belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form h.",
+            "en": "Tap the lowercase shape h."
+          }
+        },
+        {
+          "id": "d2lu15",
           "prompt": {
             "de": "Welchen Anfangslaut hörst du bei Orange?",
             "en": "Which first sound do you hear in orange?"
@@ -19241,8 +17847,8 @@ export const categories: LearningCategory[] = [
               "label": "O"
             },
             {
-              "id": "V",
-              "label": "V"
+              "id": "U",
+              "label": "U"
             }
           ],
           "correctAnswerId": "O",
@@ -19256,7 +17862,63 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dlu78",
+          "id": "d2lu16",
+          "prompt": {
+            "de": "Navi zeigt dir B wie bei Baby. Finde denselben großen Buchstaben.",
+            "en": "Navi shows B as in baby. Find the same capital letter."
+          },
+          "visual": "B  👶",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "I",
+              "label": "I"
+            },
+            {
+              "id": "B",
+              "label": "B"
+            }
+          ],
+          "correctAnswerId": "B",
+          "success": {
+            "de": "Ja! Das ist das große B.",
+            "en": "Yes! That is capital B."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit B auf Navis Karte.",
+            "en": "Match the shape of B on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu17",
+          "prompt": {
+            "de": "Navi zeigt I und i wie bei Insel. Finde das kleine i.",
+            "en": "Navi shows I and i as in island. Find lowercase i."
+          },
+          "visual": "I · i  🏝️",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "i",
+              "label": "i"
+            },
+            {
+              "id": "q",
+              "label": "q"
+            }
+          ],
+          "correctAnswerId": "i",
+          "success": {
+            "de": "Richtig! I und i gehören zusammen.",
+            "en": "Correct! I and i belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form i.",
+            "en": "Tap the lowercase shape i."
+          }
+        },
+        {
+          "id": "d2lu18",
           "prompt": {
             "de": "Welchen Anfangslaut hörst du bei Panda?",
             "en": "Which first sound do you hear in panda?"
@@ -19264,8 +17926,8 @@ export const categories: LearningCategory[] = [
           "visual": "🐼",
           "answers": [
             {
-              "id": "W",
-              "label": "W"
+              "id": "V",
+              "label": "V"
             },
             {
               "id": "P",
@@ -19283,7 +17945,63 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dlu79",
+          "id": "d2lu19",
+          "prompt": {
+            "de": "Navi zeigt dir C wie bei Clown. Finde denselben großen Buchstaben.",
+            "en": "Navi shows C as in clown. Find the same capital letter."
+          },
+          "visual": "C  🤡",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "C",
+              "label": "C"
+            },
+            {
+              "id": "J",
+              "label": "J"
+            }
+          ],
+          "correctAnswerId": "C",
+          "success": {
+            "de": "Ja! Das ist das große C.",
+            "en": "Yes! That is capital C."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit C auf Navis Karte.",
+            "en": "Match the shape of C on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu20",
+          "prompt": {
+            "de": "Navi zeigt J und j wie bei Jaguar. Finde das kleine j.",
+            "en": "Navi shows J and j as in jaguar. Find lowercase j."
+          },
+          "visual": "J · j  🐆",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "r",
+              "label": "r"
+            },
+            {
+              "id": "j",
+              "label": "j"
+            }
+          ],
+          "correctAnswerId": "j",
+          "success": {
+            "de": "Richtig! J und j gehören zusammen.",
+            "en": "Correct! J and j belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form j.",
+            "en": "Tap the lowercase shape j."
+          }
+        },
+        {
+          "id": "d2lu21",
           "prompt": {
             "de": "Welchen Anfangslaut hörst du bei Pizza?",
             "en": "Which first sound do you hear in pizza?"
@@ -19295,8 +18013,8 @@ export const categories: LearningCategory[] = [
               "label": "P"
             },
             {
-              "id": "W",
-              "label": "W"
+              "id": "V",
+              "label": "V"
             }
           ],
           "correctAnswerId": "P",
@@ -19310,7 +18028,63 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dlu80",
+          "id": "d2lu22",
+          "prompt": {
+            "de": "Navi zeigt dir D wie bei Delfin. Finde denselben großen Buchstaben.",
+            "en": "Navi shows D as in dolphin. Find the same capital letter."
+          },
+          "visual": "D  🐬",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "K",
+              "label": "K"
+            },
+            {
+              "id": "D",
+              "label": "D"
+            }
+          ],
+          "correctAnswerId": "D",
+          "success": {
+            "de": "Ja! Das ist das große D.",
+            "en": "Yes! That is capital D."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit D auf Navis Karte.",
+            "en": "Match the shape of D on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu23",
+          "prompt": {
+            "de": "Navi zeigt K und k wie bei Koala. Finde das kleine k.",
+            "en": "Navi shows K and k as in koala. Find lowercase k."
+          },
+          "visual": "K · k  🐨",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "k",
+              "label": "k"
+            },
+            {
+              "id": "s",
+              "label": "s"
+            }
+          ],
+          "correctAnswerId": "k",
+          "success": {
+            "de": "Richtig! K und k gehören zusammen.",
+            "en": "Correct! K and k belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form k.",
+            "en": "Tap the lowercase shape k."
+          }
+        },
+        {
+          "id": "d2lu24",
           "prompt": {
             "de": "Welchen Anfangslaut hörst du bei Pinguin?",
             "en": "Which first sound do you hear in penguin?"
@@ -19318,8 +18092,8 @@ export const categories: LearningCategory[] = [
           "visual": "🐧",
           "answers": [
             {
-              "id": "W",
-              "label": "W"
+              "id": "V",
+              "label": "V"
             },
             {
               "id": "P",
@@ -19337,7 +18111,63 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dlu81",
+          "id": "d2lu25",
+          "prompt": {
+            "de": "Navi zeigt dir D wie bei Doktor. Finde denselben großen Buchstaben.",
+            "en": "Navi shows D as in doctor. Find the same capital letter."
+          },
+          "visual": "D  🧑‍⚕️",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "D",
+              "label": "D"
+            },
+            {
+              "id": "K",
+              "label": "K"
+            }
+          ],
+          "correctAnswerId": "D",
+          "success": {
+            "de": "Ja! Das ist das große D.",
+            "en": "Yes! That is capital D."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit D auf Navis Karte.",
+            "en": "Match the shape of D on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu26",
+          "prompt": {
+            "de": "Navi zeigt L und l wie bei Löwe. Finde das kleine l.",
+            "en": "Navi shows L and l as in lion. Find lowercase l."
+          },
+          "visual": "L · l  🦁",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "t",
+              "label": "t"
+            },
+            {
+              "id": "l",
+              "label": "l"
+            }
+          ],
+          "correctAnswerId": "l",
+          "success": {
+            "de": "Richtig! L und l gehören zusammen.",
+            "en": "Correct! L and l belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form l.",
+            "en": "Tap the lowercase shape l."
+          }
+        },
+        {
+          "id": "d2lu27",
           "prompt": {
             "de": "Welchen Anfangslaut hörst du bei Radio?",
             "en": "Which first sound do you hear in radio?"
@@ -19349,8 +18179,8 @@ export const categories: LearningCategory[] = [
               "label": "R"
             },
             {
-              "id": "Y",
-              "label": "Y"
+              "id": "X",
+              "label": "X"
             }
           ],
           "correctAnswerId": "R",
@@ -19364,7 +18194,63 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dlu82",
+          "id": "d2lu28",
+          "prompt": {
+            "de": "Navi zeigt dir E wie bei Elefant. Finde denselben großen Buchstaben.",
+            "en": "Navi shows E as in elephant. Find the same capital letter."
+          },
+          "visual": "E  🐘",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "L",
+              "label": "L"
+            },
+            {
+              "id": "E",
+              "label": "E"
+            }
+          ],
+          "correctAnswerId": "E",
+          "success": {
+            "de": "Ja! Das ist das große E.",
+            "en": "Yes! That is capital E."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit E auf Navis Karte.",
+            "en": "Match the shape of E on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu29",
+          "prompt": {
+            "de": "Navi zeigt L und l wie bei Lampe. Finde das kleine l.",
+            "en": "Navi shows L and l as in lamp. Find lowercase l."
+          },
+          "visual": "L · l  💡",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "l",
+              "label": "l"
+            },
+            {
+              "id": "t",
+              "label": "t"
+            }
+          ],
+          "correctAnswerId": "l",
+          "success": {
+            "de": "Richtig! L und l gehören zusammen.",
+            "en": "Correct! L and l belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form l.",
+            "en": "Tap the lowercase shape l."
+          }
+        },
+        {
+          "id": "d2lu30",
           "prompt": {
             "de": "Welchen Anfangslaut hörst du bei Rose?",
             "en": "Which first sound do you hear in rose?"
@@ -19372,8 +18258,8 @@ export const categories: LearningCategory[] = [
           "visual": "🌹",
           "answers": [
             {
-              "id": "Y",
-              "label": "Y"
+              "id": "X",
+              "label": "X"
             },
             {
               "id": "R",
@@ -19391,219 +18277,1663 @@ export const categories: LearningCategory[] = [
           }
         },
         {
-          "id": "dlu83",
+          "id": "d2lu31",
           "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Sonne?",
-            "en": "Which first sound do you hear in sun?"
+            "de": "Navi zeigt dir F wie bei Fisch. Finde denselben großen Buchstaben.",
+            "en": "Navi shows F as in fish. Find the same capital letter."
           },
-          "visual": "☀️",
+          "visual": "F  🐟",
+          "showNavi": true,
           "answers": [
             {
-              "id": "S",
-              "label": "S"
+              "id": "F",
+              "label": "F"
             },
             {
-              "id": "Z",
-              "label": "Z"
+              "id": "M",
+              "label": "M"
             }
           ],
-          "correctAnswerId": "S",
+          "correctAnswerId": "F",
           "success": {
-            "de": "Sonne beginnt mit S.",
-            "en": "sun begins with S."
+            "de": "Ja! Das ist das große F.",
+            "en": "Yes! That is capital F."
           },
           "hint": {
-            "de": "Höre langsam: S, Sonne.",
-            "en": "Listen slowly: S, sun."
+            "de": "Vergleiche die Form mit F auf Navis Karte.",
+            "en": "Match the shape of F on Navi's card."
           }
         },
         {
-          "id": "dlu84",
+          "id": "d2lu32",
           "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Stern?",
-            "en": "Which first sound do you hear in star?"
+            "de": "Navi zeigt M und m wie bei Maus. Finde das kleine m.",
+            "en": "Navi shows M and m as in mouse. Find lowercase m."
           },
-          "visual": "⭐",
+          "visual": "M · m  🐭",
+          "showNavi": true,
           "answers": [
             {
-              "id": "Z",
-              "label": "Z"
+              "id": "u",
+              "label": "u"
             },
             {
-              "id": "S",
-              "label": "S"
+              "id": "m",
+              "label": "m"
             }
           ],
-          "correctAnswerId": "S",
+          "correctAnswerId": "m",
           "success": {
-            "de": "Stern beginnt mit S.",
-            "en": "star begins with S."
+            "de": "Richtig! M und m gehören zusammen.",
+            "en": "Correct! M and m belong together."
           },
           "hint": {
-            "de": "Höre langsam: S, Stern.",
-            "en": "Listen slowly: S, star."
+            "de": "Tippe auf die kleine Form m.",
+            "en": "Tap the lowercase shape m."
           }
         },
         {
-          "id": "dlu85",
+          "id": "d2lu33",
           "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Socke?",
-            "en": "Which first sound do you hear in sock?"
+            "de": "Welchen Anfangslaut hörst du bei Apfel?",
+            "en": "Which first sound do you hear in apple?"
           },
-          "visual": "🧦",
-          "answers": [
-            {
-              "id": "S",
-              "label": "S"
-            },
-            {
-              "id": "Z",
-              "label": "Z"
-            }
-          ],
-          "correctAnswerId": "S",
-          "success": {
-            "de": "Socke beginnt mit S.",
-            "en": "sock begins with S."
-          },
-          "hint": {
-            "de": "Höre langsam: S, Socke.",
-            "en": "Listen slowly: S, sock."
-          }
-        },
-        {
-          "id": "dlu86",
-          "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Tiger?",
-            "en": "Which first sound do you hear in tiger?"
-          },
-          "visual": "🐯",
+          "visual": "🍎",
           "answers": [
             {
               "id": "A",
               "label": "A"
             },
             {
-              "id": "T",
-              "label": "T"
+              "id": "G",
+              "label": "G"
             }
           ],
-          "correctAnswerId": "T",
+          "correctAnswerId": "A",
           "success": {
-            "de": "Tiger beginnt mit T.",
-            "en": "tiger begins with T."
+            "de": "Apfel beginnt mit A.",
+            "en": "apple begins with A."
           },
           "hint": {
-            "de": "Höre langsam: T, Tiger.",
-            "en": "Listen slowly: T, tiger."
+            "de": "Höre langsam: A, Apfel.",
+            "en": "Listen slowly: A, apple."
           }
         },
         {
-          "id": "dlu87",
+          "id": "d2lu34",
           "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Taxi?",
-            "en": "Which first sound do you hear in taxi?"
+            "de": "Navi zeigt dir G wie bei Giraffe. Finde denselben großen Buchstaben.",
+            "en": "Navi shows G as in giraffe. Find the same capital letter."
           },
-          "visual": "🚕",
+          "visual": "G  🦒",
+          "showNavi": true,
           "answers": [
             {
-              "id": "T",
-              "label": "T"
+              "id": "N",
+              "label": "N"
+            },
+            {
+              "id": "G",
+              "label": "G"
+            }
+          ],
+          "correctAnswerId": "G",
+          "success": {
+            "de": "Ja! Das ist das große G.",
+            "en": "Yes! That is capital G."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit G auf Navis Karte.",
+            "en": "Match the shape of G on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu35",
+          "prompt": {
+            "de": "Navi zeigt M und m wie bei Mond. Finde das kleine m.",
+            "en": "Navi shows M and m as in moon. Find lowercase m."
+          },
+          "visual": "M · m  🌙",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "m",
+              "label": "m"
+            },
+            {
+              "id": "u",
+              "label": "u"
+            }
+          ],
+          "correctAnswerId": "m",
+          "success": {
+            "de": "Richtig! M und m gehören zusammen.",
+            "en": "Correct! M and m belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form m.",
+            "en": "Tap the lowercase shape m."
+          }
+        },
+        {
+          "id": "d2lu36",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Ameise?",
+            "en": "Which first sound do you hear in ant?"
+          },
+          "visual": "🐜",
+          "answers": [
+            {
+              "id": "G",
+              "label": "G"
             },
             {
               "id": "A",
               "label": "A"
             }
           ],
-          "correctAnswerId": "T",
+          "correctAnswerId": "A",
           "success": {
-            "de": "Taxi beginnt mit T.",
-            "en": "taxi begins with T."
+            "de": "Ameise beginnt mit A.",
+            "en": "ant begins with A."
           },
           "hint": {
-            "de": "Höre langsam: T, Taxi.",
-            "en": "Listen slowly: T, taxi."
+            "de": "Höre langsam: A, Ameise.",
+            "en": "Listen slowly: A, ant."
           }
         },
         {
-          "id": "dlu88",
+          "id": "d2lu37",
           "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Tomate?",
-            "en": "Which first sound do you hear in tomato?"
+            "de": "Navi zeigt dir G wie bei Gorilla. Finde denselben großen Buchstaben.",
+            "en": "Navi shows G as in gorilla. Find the same capital letter."
           },
-          "visual": "🍅",
+          "visual": "G  🦍",
+          "showNavi": true,
           "answers": [
             {
-              "id": "A",
-              "label": "A"
+              "id": "G",
+              "label": "G"
             },
             {
-              "id": "T",
-              "label": "T"
+              "id": "N",
+              "label": "N"
             }
           ],
-          "correctAnswerId": "T",
+          "correctAnswerId": "G",
           "success": {
-            "de": "Tomate beginnt mit T.",
-            "en": "tomato begins with T."
+            "de": "Ja! Das ist das große G.",
+            "en": "Yes! That is capital G."
           },
           "hint": {
-            "de": "Höre langsam: T, Tomate.",
-            "en": "Listen slowly: T, tomato."
+            "de": "Vergleiche die Form mit G auf Navis Karte.",
+            "en": "Match the shape of G on Navi's card."
           }
         },
         {
-          "id": "dlu89",
+          "id": "d2lu38",
           "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Wasser?",
-            "en": "Which first sound do you hear in water?"
+            "de": "Navi zeigt M und m wie bei Musik. Finde das kleine m.",
+            "en": "Navi shows M and m as in music. Find lowercase m."
           },
-          "visual": "💧",
+          "visual": "M · m  🎵",
+          "showNavi": true,
           "answers": [
             {
-              "id": "W",
-              "label": "W"
+              "id": "u",
+              "label": "u"
+            },
+            {
+              "id": "m",
+              "label": "m"
+            }
+          ],
+          "correctAnswerId": "m",
+          "success": {
+            "de": "Richtig! M und m gehören zusammen.",
+            "en": "Correct! M and m belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form m.",
+            "en": "Tap the lowercase shape m."
+          }
+        },
+        {
+          "id": "d2lu39",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Banane?",
+            "en": "Which first sound do you hear in banana?"
+          },
+          "visual": "🍌",
+          "answers": [
+            {
+              "id": "B",
+              "label": "B"
+            },
+            {
+              "id": "H",
+              "label": "H"
+            }
+          ],
+          "correctAnswerId": "B",
+          "success": {
+            "de": "Banane beginnt mit B.",
+            "en": "banana begins with B."
+          },
+          "hint": {
+            "de": "Höre langsam: B, Banane.",
+            "en": "Listen slowly: B, banana."
+          }
+        },
+        {
+          "id": "d2lu40",
+          "prompt": {
+            "de": "Navi zeigt dir H wie bei Haus. Finde denselben großen Buchstaben.",
+            "en": "Navi shows H as in house. Find the same capital letter."
+          },
+          "visual": "H  🏠",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "O",
+              "label": "O"
+            },
+            {
+              "id": "H",
+              "label": "H"
+            }
+          ],
+          "correctAnswerId": "H",
+          "success": {
+            "de": "Ja! Das ist das große H.",
+            "en": "Yes! That is capital H."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit H auf Navis Karte.",
+            "en": "Match the shape of H on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu41",
+          "prompt": {
+            "de": "Navi zeigt N und n wie bei Nase. Finde das kleine n.",
+            "en": "Navi shows N and n as in nose. Find lowercase n."
+          },
+          "visual": "N · n  👃",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "n",
+              "label": "n"
+            },
+            {
+              "id": "v",
+              "label": "v"
+            }
+          ],
+          "correctAnswerId": "n",
+          "success": {
+            "de": "Richtig! N und n gehören zusammen.",
+            "en": "Correct! N and n belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form n.",
+            "en": "Tap the lowercase shape n."
+          }
+        },
+        {
+          "id": "d2lu42",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Ball?",
+            "en": "Which first sound do you hear in ball?"
+          },
+          "visual": "⚽",
+          "answers": [
+            {
+              "id": "H",
+              "label": "H"
+            },
+            {
+              "id": "B",
+              "label": "B"
+            }
+          ],
+          "correctAnswerId": "B",
+          "success": {
+            "de": "Ball beginnt mit B.",
+            "en": "ball begins with B."
+          },
+          "hint": {
+            "de": "Höre langsam: B, Ball.",
+            "en": "Listen slowly: B, ball."
+          }
+        },
+        {
+          "id": "d2lu43",
+          "prompt": {
+            "de": "Navi zeigt dir H wie bei Hotel. Finde denselben großen Buchstaben.",
+            "en": "Navi shows H as in hotel. Find the same capital letter."
+          },
+          "visual": "H  🏨",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "H",
+              "label": "H"
+            },
+            {
+              "id": "O",
+              "label": "O"
+            }
+          ],
+          "correctAnswerId": "H",
+          "success": {
+            "de": "Ja! Das ist das große H.",
+            "en": "Yes! That is capital H."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit H auf Navis Karte.",
+            "en": "Match the shape of H on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu44",
+          "prompt": {
+            "de": "Navi zeigt O und o wie bei Orange. Finde das kleine o.",
+            "en": "Navi shows O and o as in orange. Find lowercase o."
+          },
+          "visual": "O · o  🍊",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "w",
+              "label": "w"
+            },
+            {
+              "id": "o",
+              "label": "o"
+            }
+          ],
+          "correctAnswerId": "o",
+          "success": {
+            "de": "Richtig! O und o gehören zusammen.",
+            "en": "Correct! O and o belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form o.",
+            "en": "Tap the lowercase shape o."
+          }
+        },
+        {
+          "id": "d2lu45",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Bus?",
+            "en": "Which first sound do you hear in bus?"
+          },
+          "visual": "🚌",
+          "answers": [
+            {
+              "id": "B",
+              "label": "B"
+            },
+            {
+              "id": "H",
+              "label": "H"
+            }
+          ],
+          "correctAnswerId": "B",
+          "success": {
+            "de": "Bus beginnt mit B.",
+            "en": "bus begins with B."
+          },
+          "hint": {
+            "de": "Höre langsam: B, Bus.",
+            "en": "Listen slowly: B, bus."
+          }
+        },
+        {
+          "id": "d2lu46",
+          "prompt": {
+            "de": "Navi zeigt dir I wie bei Insel. Finde denselben großen Buchstaben.",
+            "en": "Navi shows I as in island. Find the same capital letter."
+          },
+          "visual": "I  🏝️",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "P",
+              "label": "P"
+            },
+            {
+              "id": "I",
+              "label": "I"
+            }
+          ],
+          "correctAnswerId": "I",
+          "success": {
+            "de": "Ja! Das ist das große I.",
+            "en": "Yes! That is capital I."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit I auf Navis Karte.",
+            "en": "Match the shape of I on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu47",
+          "prompt": {
+            "de": "Navi zeigt P und p wie bei Panda. Finde das kleine p.",
+            "en": "Navi shows P and p as in panda. Find lowercase p."
+          },
+          "visual": "P · p  🐼",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "p",
+              "label": "p"
+            },
+            {
+              "id": "x",
+              "label": "x"
+            }
+          ],
+          "correctAnswerId": "p",
+          "success": {
+            "de": "Richtig! P und p gehören zusammen.",
+            "en": "Correct! P and p belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form p.",
+            "en": "Tap the lowercase shape p."
+          }
+        },
+        {
+          "id": "d2lu48",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Baby?",
+            "en": "Which first sound do you hear in baby?"
+          },
+          "visual": "👶",
+          "answers": [
+            {
+              "id": "H",
+              "label": "H"
+            },
+            {
+              "id": "B",
+              "label": "B"
+            }
+          ],
+          "correctAnswerId": "B",
+          "success": {
+            "de": "Baby beginnt mit B.",
+            "en": "baby begins with B."
+          },
+          "hint": {
+            "de": "Höre langsam: B, Baby.",
+            "en": "Listen slowly: B, baby."
+          }
+        },
+        {
+          "id": "d2lu49",
+          "prompt": {
+            "de": "Navi zeigt dir J wie bei Jaguar. Finde denselben großen Buchstaben.",
+            "en": "Navi shows J as in jaguar. Find the same capital letter."
+          },
+          "visual": "J  🐆",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "J",
+              "label": "J"
+            },
+            {
+              "id": "Q",
+              "label": "Q"
+            }
+          ],
+          "correctAnswerId": "J",
+          "success": {
+            "de": "Ja! Das ist das große J.",
+            "en": "Yes! That is capital J."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit J auf Navis Karte.",
+            "en": "Match the shape of J on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu50",
+          "prompt": {
+            "de": "Navi zeigt P und p wie bei Pizza. Finde das kleine p.",
+            "en": "Navi shows P and p as in pizza. Find lowercase p."
+          },
+          "visual": "P · p  🍕",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "x",
+              "label": "x"
+            },
+            {
+              "id": "p",
+              "label": "p"
+            }
+          ],
+          "correctAnswerId": "p",
+          "success": {
+            "de": "Richtig! P und p gehören zusammen.",
+            "en": "Correct! P and p belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form p.",
+            "en": "Tap the lowercase shape p."
+          }
+        },
+        {
+          "id": "d2lu51",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Clown?",
+            "en": "Which first sound do you hear in clown?"
+          },
+          "visual": "🤡",
+          "answers": [
+            {
+              "id": "C",
+              "label": "C"
+            },
+            {
+              "id": "I",
+              "label": "I"
+            }
+          ],
+          "correctAnswerId": "C",
+          "success": {
+            "de": "Clown beginnt mit C.",
+            "en": "clown begins with C."
+          },
+          "hint": {
+            "de": "Höre langsam: C, Clown.",
+            "en": "Listen slowly: C, clown."
+          }
+        },
+        {
+          "id": "d2lu52",
+          "prompt": {
+            "de": "Navi zeigt dir K wie bei Koala. Finde denselben großen Buchstaben.",
+            "en": "Navi shows K as in koala. Find the same capital letter."
+          },
+          "visual": "K  🐨",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "R",
+              "label": "R"
+            },
+            {
+              "id": "K",
+              "label": "K"
+            }
+          ],
+          "correctAnswerId": "K",
+          "success": {
+            "de": "Ja! Das ist das große K.",
+            "en": "Yes! That is capital K."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit K auf Navis Karte.",
+            "en": "Match the shape of K on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu53",
+          "prompt": {
+            "de": "Navi zeigt P und p wie bei Pinguin. Finde das kleine p.",
+            "en": "Navi shows P and p as in penguin. Find lowercase p."
+          },
+          "visual": "P · p  🐧",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "p",
+              "label": "p"
+            },
+            {
+              "id": "x",
+              "label": "x"
+            }
+          ],
+          "correctAnswerId": "p",
+          "success": {
+            "de": "Richtig! P und p gehören zusammen.",
+            "en": "Correct! P and p belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form p.",
+            "en": "Tap the lowercase shape p."
+          }
+        },
+        {
+          "id": "d2lu54",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Delfin?",
+            "en": "Which first sound do you hear in dolphin?"
+          },
+          "visual": "🐬",
+          "answers": [
+            {
+              "id": "J",
+              "label": "J"
             },
             {
               "id": "D",
               "label": "D"
             }
           ],
-          "correctAnswerId": "W",
+          "correctAnswerId": "D",
           "success": {
-            "de": "Wasser beginnt mit W.",
-            "en": "water begins with W."
+            "de": "Delfin beginnt mit D.",
+            "en": "dolphin begins with D."
           },
           "hint": {
-            "de": "Höre langsam: W, Wasser.",
-            "en": "Listen slowly: W, water."
+            "de": "Höre langsam: D, Delfin.",
+            "en": "Listen slowly: D, dolphin."
           }
         },
         {
-          "id": "dlu90",
+          "id": "d2lu55",
           "prompt": {
-            "de": "Welchen Anfangslaut hörst du bei Wal?",
-            "en": "Which first sound do you hear in whale?"
+            "de": "Navi zeigt dir L wie bei Löwe. Finde denselben großen Buchstaben.",
+            "en": "Navi shows L as in lion. Find the same capital letter."
           },
-          "visual": "🐋",
+          "visual": "L  🦁",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "L",
+              "label": "L"
+            },
+            {
+              "id": "S",
+              "label": "S"
+            }
+          ],
+          "correctAnswerId": "L",
+          "success": {
+            "de": "Ja! Das ist das große L.",
+            "en": "Yes! That is capital L."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit L auf Navis Karte.",
+            "en": "Match the shape of L on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu56",
+          "prompt": {
+            "de": "Navi zeigt R und r wie bei Radio. Finde das kleine r.",
+            "en": "Navi shows R and r as in radio. Find lowercase r."
+          },
+          "visual": "R · r  📻",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "z",
+              "label": "z"
+            },
+            {
+              "id": "r",
+              "label": "r"
+            }
+          ],
+          "correctAnswerId": "r",
+          "success": {
+            "de": "Richtig! R und r gehören zusammen.",
+            "en": "Correct! R and r belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form r.",
+            "en": "Tap the lowercase shape r."
+          }
+        },
+        {
+          "id": "d2lu57",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Doktor?",
+            "en": "Which first sound do you hear in doctor?"
+          },
+          "visual": "🧑‍⚕️",
           "answers": [
             {
               "id": "D",
               "label": "D"
             },
             {
+              "id": "J",
+              "label": "J"
+            }
+          ],
+          "correctAnswerId": "D",
+          "success": {
+            "de": "Doktor beginnt mit D.",
+            "en": "doctor begins with D."
+          },
+          "hint": {
+            "de": "Höre langsam: D, Doktor.",
+            "en": "Listen slowly: D, doctor."
+          }
+        },
+        {
+          "id": "d2lu58",
+          "prompt": {
+            "de": "Navi zeigt dir L wie bei Lampe. Finde denselben großen Buchstaben.",
+            "en": "Navi shows L as in lamp. Find the same capital letter."
+          },
+          "visual": "L  💡",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "S",
+              "label": "S"
+            },
+            {
+              "id": "L",
+              "label": "L"
+            }
+          ],
+          "correctAnswerId": "L",
+          "success": {
+            "de": "Ja! Das ist das große L.",
+            "en": "Yes! That is capital L."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit L auf Navis Karte.",
+            "en": "Match the shape of L on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu59",
+          "prompt": {
+            "de": "Navi zeigt R und r wie bei Rose. Finde das kleine r.",
+            "en": "Navi shows R and r as in rose. Find lowercase r."
+          },
+          "visual": "R · r  🌹",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "r",
+              "label": "r"
+            },
+            {
+              "id": "z",
+              "label": "z"
+            }
+          ],
+          "correctAnswerId": "r",
+          "success": {
+            "de": "Richtig! R und r gehören zusammen.",
+            "en": "Correct! R and r belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form r.",
+            "en": "Tap the lowercase shape r."
+          }
+        },
+        {
+          "id": "d2lu60",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Elefant?",
+            "en": "Which first sound do you hear in elephant?"
+          },
+          "visual": "🐘",
+          "answers": [
+            {
+              "id": "K",
+              "label": "K"
+            },
+            {
+              "id": "E",
+              "label": "E"
+            }
+          ],
+          "correctAnswerId": "E",
+          "success": {
+            "de": "Elefant beginnt mit E.",
+            "en": "elephant begins with E."
+          },
+          "hint": {
+            "de": "Höre langsam: E, Elefant.",
+            "en": "Listen slowly: E, elephant."
+          }
+        },
+        {
+          "id": "d2lu61",
+          "prompt": {
+            "de": "Navi zeigt dir M wie bei Maus. Finde denselben großen Buchstaben.",
+            "en": "Navi shows M as in mouse. Find the same capital letter."
+          },
+          "visual": "M  🐭",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "M",
+              "label": "M"
+            },
+            {
+              "id": "T",
+              "label": "T"
+            }
+          ],
+          "correctAnswerId": "M",
+          "success": {
+            "de": "Ja! Das ist das große M.",
+            "en": "Yes! That is capital M."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit M auf Navis Karte.",
+            "en": "Match the shape of M on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu62",
+          "prompt": {
+            "de": "Navi zeigt A und a wie bei Apfel. Finde das kleine a.",
+            "en": "Navi shows A and a as in apple. Find lowercase a."
+          },
+          "visual": "A · a  🍎",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "i",
+              "label": "i"
+            },
+            {
+              "id": "a",
+              "label": "a"
+            }
+          ],
+          "correctAnswerId": "a",
+          "success": {
+            "de": "Richtig! A und a gehören zusammen.",
+            "en": "Correct! A and a belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form a.",
+            "en": "Tap the lowercase shape a."
+          }
+        },
+        {
+          "id": "d2lu63",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Fisch?",
+            "en": "Which first sound do you hear in fish?"
+          },
+          "visual": "🐟",
+          "answers": [
+            {
+              "id": "F",
+              "label": "F"
+            },
+            {
+              "id": "L",
+              "label": "L"
+            }
+          ],
+          "correctAnswerId": "F",
+          "success": {
+            "de": "Fisch beginnt mit F.",
+            "en": "fish begins with F."
+          },
+          "hint": {
+            "de": "Höre langsam: F, Fisch.",
+            "en": "Listen slowly: F, fish."
+          }
+        },
+        {
+          "id": "d2lu64",
+          "prompt": {
+            "de": "Navi zeigt dir M wie bei Mond. Finde denselben großen Buchstaben.",
+            "en": "Navi shows M as in moon. Find the same capital letter."
+          },
+          "visual": "M  🌙",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "T",
+              "label": "T"
+            },
+            {
+              "id": "M",
+              "label": "M"
+            }
+          ],
+          "correctAnswerId": "M",
+          "success": {
+            "de": "Ja! Das ist das große M.",
+            "en": "Yes! That is capital M."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit M auf Navis Karte.",
+            "en": "Match the shape of M on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu65",
+          "prompt": {
+            "de": "Navi zeigt A und a wie bei Ameise. Finde das kleine a.",
+            "en": "Navi shows A and a as in ant. Find lowercase a."
+          },
+          "visual": "A · a  🐜",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "a",
+              "label": "a"
+            },
+            {
+              "id": "i",
+              "label": "i"
+            }
+          ],
+          "correctAnswerId": "a",
+          "success": {
+            "de": "Richtig! A und a gehören zusammen.",
+            "en": "Correct! A and a belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form a.",
+            "en": "Tap the lowercase shape a."
+          }
+        },
+        {
+          "id": "d2lu66",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Giraffe?",
+            "en": "Which first sound do you hear in giraffe?"
+          },
+          "visual": "🦒",
+          "answers": [
+            {
+              "id": "M",
+              "label": "M"
+            },
+            {
+              "id": "G",
+              "label": "G"
+            }
+          ],
+          "correctAnswerId": "G",
+          "success": {
+            "de": "Giraffe beginnt mit G.",
+            "en": "giraffe begins with G."
+          },
+          "hint": {
+            "de": "Höre langsam: G, Giraffe.",
+            "en": "Listen slowly: G, giraffe."
+          }
+        },
+        {
+          "id": "d2lu67",
+          "prompt": {
+            "de": "Navi zeigt dir M wie bei Musik. Finde denselben großen Buchstaben.",
+            "en": "Navi shows M as in music. Find the same capital letter."
+          },
+          "visual": "M  🎵",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "M",
+              "label": "M"
+            },
+            {
+              "id": "T",
+              "label": "T"
+            }
+          ],
+          "correctAnswerId": "M",
+          "success": {
+            "de": "Ja! Das ist das große M.",
+            "en": "Yes! That is capital M."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit M auf Navis Karte.",
+            "en": "Match the shape of M on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu68",
+          "prompt": {
+            "de": "Navi zeigt B und b wie bei Banane. Finde das kleine b.",
+            "en": "Navi shows B and b as in banana. Find lowercase b."
+          },
+          "visual": "B · b  🍌",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "j",
+              "label": "j"
+            },
+            {
+              "id": "b",
+              "label": "b"
+            }
+          ],
+          "correctAnswerId": "b",
+          "success": {
+            "de": "Richtig! B und b gehören zusammen.",
+            "en": "Correct! B and b belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form b.",
+            "en": "Tap the lowercase shape b."
+          }
+        },
+        {
+          "id": "d2lu69",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Gorilla?",
+            "en": "Which first sound do you hear in gorilla?"
+          },
+          "visual": "🦍",
+          "answers": [
+            {
+              "id": "G",
+              "label": "G"
+            },
+            {
+              "id": "M",
+              "label": "M"
+            }
+          ],
+          "correctAnswerId": "G",
+          "success": {
+            "de": "Gorilla beginnt mit G.",
+            "en": "gorilla begins with G."
+          },
+          "hint": {
+            "de": "Höre langsam: G, Gorilla.",
+            "en": "Listen slowly: G, gorilla."
+          }
+        },
+        {
+          "id": "d2lu70",
+          "prompt": {
+            "de": "Navi zeigt dir N wie bei Nase. Finde denselben großen Buchstaben.",
+            "en": "Navi shows N as in nose. Find the same capital letter."
+          },
+          "visual": "N  👃",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "U",
+              "label": "U"
+            },
+            {
+              "id": "N",
+              "label": "N"
+            }
+          ],
+          "correctAnswerId": "N",
+          "success": {
+            "de": "Ja! Das ist das große N.",
+            "en": "Yes! That is capital N."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit N auf Navis Karte.",
+            "en": "Match the shape of N on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu71",
+          "prompt": {
+            "de": "Navi zeigt B und b wie bei Ball. Finde das kleine b.",
+            "en": "Navi shows B and b as in ball. Find lowercase b."
+          },
+          "visual": "B · b  ⚽",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "b",
+              "label": "b"
+            },
+            {
+              "id": "j",
+              "label": "j"
+            }
+          ],
+          "correctAnswerId": "b",
+          "success": {
+            "de": "Richtig! B und b gehören zusammen.",
+            "en": "Correct! B and b belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form b.",
+            "en": "Tap the lowercase shape b."
+          }
+        },
+        {
+          "id": "d2lu72",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Haus?",
+            "en": "Which first sound do you hear in house?"
+          },
+          "visual": "🏠",
+          "answers": [
+            {
+              "id": "N",
+              "label": "N"
+            },
+            {
+              "id": "H",
+              "label": "H"
+            }
+          ],
+          "correctAnswerId": "H",
+          "success": {
+            "de": "Haus beginnt mit H.",
+            "en": "house begins with H."
+          },
+          "hint": {
+            "de": "Höre langsam: H, Haus.",
+            "en": "Listen slowly: H, house."
+          }
+        },
+        {
+          "id": "d2lu73",
+          "prompt": {
+            "de": "Navi zeigt dir O wie bei Orange. Finde denselben großen Buchstaben.",
+            "en": "Navi shows O as in orange. Find the same capital letter."
+          },
+          "visual": "O  🍊",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "O",
+              "label": "O"
+            },
+            {
+              "id": "V",
+              "label": "V"
+            }
+          ],
+          "correctAnswerId": "O",
+          "success": {
+            "de": "Ja! Das ist das große O.",
+            "en": "Yes! That is capital O."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit O auf Navis Karte.",
+            "en": "Match the shape of O on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu74",
+          "prompt": {
+            "de": "Navi zeigt B und b wie bei Bus. Finde das kleine b.",
+            "en": "Navi shows B and b as in bus. Find lowercase b."
+          },
+          "visual": "B · b  🚌",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "j",
+              "label": "j"
+            },
+            {
+              "id": "b",
+              "label": "b"
+            }
+          ],
+          "correctAnswerId": "b",
+          "success": {
+            "de": "Richtig! B und b gehören zusammen.",
+            "en": "Correct! B and b belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form b.",
+            "en": "Tap the lowercase shape b."
+          }
+        },
+        {
+          "id": "d2lu75",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Hotel?",
+            "en": "Which first sound do you hear in hotel?"
+          },
+          "visual": "🏨",
+          "answers": [
+            {
+              "id": "H",
+              "label": "H"
+            },
+            {
+              "id": "N",
+              "label": "N"
+            }
+          ],
+          "correctAnswerId": "H",
+          "success": {
+            "de": "Hotel beginnt mit H.",
+            "en": "hotel begins with H."
+          },
+          "hint": {
+            "de": "Höre langsam: H, Hotel.",
+            "en": "Listen slowly: H, hotel."
+          }
+        },
+        {
+          "id": "d2lu76",
+          "prompt": {
+            "de": "Navi zeigt dir P wie bei Panda. Finde denselben großen Buchstaben.",
+            "en": "Navi shows P as in panda. Find the same capital letter."
+          },
+          "visual": "P  🐼",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "W",
+              "label": "W"
+            },
+            {
+              "id": "P",
+              "label": "P"
+            }
+          ],
+          "correctAnswerId": "P",
+          "success": {
+            "de": "Ja! Das ist das große P.",
+            "en": "Yes! That is capital P."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit P auf Navis Karte.",
+            "en": "Match the shape of P on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu77",
+          "prompt": {
+            "de": "Navi zeigt B und b wie bei Baby. Finde das kleine b.",
+            "en": "Navi shows B and b as in baby. Find lowercase b."
+          },
+          "visual": "B · b  👶",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "b",
+              "label": "b"
+            },
+            {
+              "id": "j",
+              "label": "j"
+            }
+          ],
+          "correctAnswerId": "b",
+          "success": {
+            "de": "Richtig! B und b gehören zusammen.",
+            "en": "Correct! B and b belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form b.",
+            "en": "Tap the lowercase shape b."
+          }
+        },
+        {
+          "id": "d2lu78",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Insel?",
+            "en": "Which first sound do you hear in island?"
+          },
+          "visual": "🏝️",
+          "answers": [
+            {
+              "id": "O",
+              "label": "O"
+            },
+            {
+              "id": "I",
+              "label": "I"
+            }
+          ],
+          "correctAnswerId": "I",
+          "success": {
+            "de": "Insel beginnt mit I.",
+            "en": "island begins with I."
+          },
+          "hint": {
+            "de": "Höre langsam: I, Insel.",
+            "en": "Listen slowly: I, island."
+          }
+        },
+        {
+          "id": "d2lu79",
+          "prompt": {
+            "de": "Navi zeigt dir P wie bei Pizza. Finde denselben großen Buchstaben.",
+            "en": "Navi shows P as in pizza. Find the same capital letter."
+          },
+          "visual": "P  🍕",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "P",
+              "label": "P"
+            },
+            {
               "id": "W",
               "label": "W"
             }
           ],
-          "correctAnswerId": "W",
+          "correctAnswerId": "P",
           "success": {
-            "de": "Wal beginnt mit W.",
-            "en": "whale begins with W."
+            "de": "Ja! Das ist das große P.",
+            "en": "Yes! That is capital P."
           },
           "hint": {
-            "de": "Höre langsam: W, Wal.",
-            "en": "Listen slowly: W, whale."
+            "de": "Vergleiche die Form mit P auf Navis Karte.",
+            "en": "Match the shape of P on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu80",
+          "prompt": {
+            "de": "Navi zeigt C und c wie bei Clown. Finde das kleine c.",
+            "en": "Navi shows C and c as in clown. Find lowercase c."
+          },
+          "visual": "C · c  🤡",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "k",
+              "label": "k"
+            },
+            {
+              "id": "c",
+              "label": "c"
+            }
+          ],
+          "correctAnswerId": "c",
+          "success": {
+            "de": "Richtig! C und c gehören zusammen.",
+            "en": "Correct! C and c belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form c.",
+            "en": "Tap the lowercase shape c."
+          }
+        },
+        {
+          "id": "d2lu81",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Jaguar?",
+            "en": "Which first sound do you hear in jaguar?"
+          },
+          "visual": "🐆",
+          "answers": [
+            {
+              "id": "J",
+              "label": "J"
+            },
+            {
+              "id": "P",
+              "label": "P"
+            }
+          ],
+          "correctAnswerId": "J",
+          "success": {
+            "de": "Jaguar beginnt mit J.",
+            "en": "jaguar begins with J."
+          },
+          "hint": {
+            "de": "Höre langsam: J, Jaguar.",
+            "en": "Listen slowly: J, jaguar."
+          }
+        },
+        {
+          "id": "d2lu82",
+          "prompt": {
+            "de": "Navi zeigt dir P wie bei Pinguin. Finde denselben großen Buchstaben.",
+            "en": "Navi shows P as in penguin. Find the same capital letter."
+          },
+          "visual": "P  🐧",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "W",
+              "label": "W"
+            },
+            {
+              "id": "P",
+              "label": "P"
+            }
+          ],
+          "correctAnswerId": "P",
+          "success": {
+            "de": "Ja! Das ist das große P.",
+            "en": "Yes! That is capital P."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit P auf Navis Karte.",
+            "en": "Match the shape of P on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu83",
+          "prompt": {
+            "de": "Navi zeigt D und d wie bei Delfin. Finde das kleine d.",
+            "en": "Navi shows D and d as in dolphin. Find lowercase d."
+          },
+          "visual": "D · d  🐬",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "d",
+              "label": "d"
+            },
+            {
+              "id": "l",
+              "label": "l"
+            }
+          ],
+          "correctAnswerId": "d",
+          "success": {
+            "de": "Richtig! D und d gehören zusammen.",
+            "en": "Correct! D and d belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form d.",
+            "en": "Tap the lowercase shape d."
+          }
+        },
+        {
+          "id": "d2lu84",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Koala?",
+            "en": "Which first sound do you hear in koala?"
+          },
+          "visual": "🐨",
+          "answers": [
+            {
+              "id": "Q",
+              "label": "Q"
+            },
+            {
+              "id": "K",
+              "label": "K"
+            }
+          ],
+          "correctAnswerId": "K",
+          "success": {
+            "de": "Koala beginnt mit K.",
+            "en": "koala begins with K."
+          },
+          "hint": {
+            "de": "Höre langsam: K, Koala.",
+            "en": "Listen slowly: K, koala."
+          }
+        },
+        {
+          "id": "d2lu85",
+          "prompt": {
+            "de": "Navi zeigt dir R wie bei Radio. Finde denselben großen Buchstaben.",
+            "en": "Navi shows R as in radio. Find the same capital letter."
+          },
+          "visual": "R  📻",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "R",
+              "label": "R"
+            },
+            {
+              "id": "Y",
+              "label": "Y"
+            }
+          ],
+          "correctAnswerId": "R",
+          "success": {
+            "de": "Ja! Das ist das große R.",
+            "en": "Yes! That is capital R."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit R auf Navis Karte.",
+            "en": "Match the shape of R on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu86",
+          "prompt": {
+            "de": "Navi zeigt D und d wie bei Doktor. Finde das kleine d.",
+            "en": "Navi shows D and d as in doctor. Find lowercase d."
+          },
+          "visual": "D · d  🧑‍⚕️",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "l",
+              "label": "l"
+            },
+            {
+              "id": "d",
+              "label": "d"
+            }
+          ],
+          "correctAnswerId": "d",
+          "success": {
+            "de": "Richtig! D und d gehören zusammen.",
+            "en": "Correct! D and d belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form d.",
+            "en": "Tap the lowercase shape d."
+          }
+        },
+        {
+          "id": "d2lu87",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Löwe?",
+            "en": "Which first sound do you hear in lion?"
+          },
+          "visual": "🦁",
+          "answers": [
+            {
+              "id": "L",
+              "label": "L"
+            },
+            {
+              "id": "R",
+              "label": "R"
+            }
+          ],
+          "correctAnswerId": "L",
+          "success": {
+            "de": "Löwe beginnt mit L.",
+            "en": "lion begins with L."
+          },
+          "hint": {
+            "de": "Höre langsam: L, Löwe.",
+            "en": "Listen slowly: L, lion."
+          }
+        },
+        {
+          "id": "d2lu88",
+          "prompt": {
+            "de": "Navi zeigt dir R wie bei Rose. Finde denselben großen Buchstaben.",
+            "en": "Navi shows R as in rose. Find the same capital letter."
+          },
+          "visual": "R  🌹",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "Y",
+              "label": "Y"
+            },
+            {
+              "id": "R",
+              "label": "R"
+            }
+          ],
+          "correctAnswerId": "R",
+          "success": {
+            "de": "Ja! Das ist das große R.",
+            "en": "Yes! That is capital R."
+          },
+          "hint": {
+            "de": "Vergleiche die Form mit R auf Navis Karte.",
+            "en": "Match the shape of R on Navi's card."
+          }
+        },
+        {
+          "id": "d2lu89",
+          "prompt": {
+            "de": "Navi zeigt E und e wie bei Elefant. Finde das kleine e.",
+            "en": "Navi shows E and e as in elephant. Find lowercase e."
+          },
+          "visual": "E · e  🐘",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "e",
+              "label": "e"
+            },
+            {
+              "id": "m",
+              "label": "m"
+            }
+          ],
+          "correctAnswerId": "e",
+          "success": {
+            "de": "Richtig! E und e gehören zusammen.",
+            "en": "Correct! E and e belong together."
+          },
+          "hint": {
+            "de": "Tippe auf die kleine Form e.",
+            "en": "Tap the lowercase shape e."
+          }
+        },
+        {
+          "id": "d2lu90",
+          "prompt": {
+            "de": "Welchen Anfangslaut hörst du bei Lampe?",
+            "en": "Which first sound do you hear in lamp?"
+          },
+          "visual": "💡",
+          "answers": [
+            {
+              "id": "R",
+              "label": "R"
+            },
+            {
+              "id": "L",
+              "label": "L"
+            }
+          ],
+          "correctAnswerId": "L",
+          "success": {
+            "de": "Lampe beginnt mit L.",
+            "en": "lamp begins with L."
+          },
+          "hint": {
+            "de": "Höre langsam: L, Lampe.",
+            "en": "Listen slowly: L, lamp."
           }
         }
       ],
@@ -22417,6035 +22747,6065 @@ export const categories: LearningCategory[] = [
     "questionsByAge": {
       "discoverer": [
         {
-          "id": "dwu1",
+          "id": "d2wu1",
           "prompt": {
-            "de": "Tippe auf das Bild für Hund.",
-            "en": "Tap the picture for Dog."
+            "de": "Welches Wort beendet Navis Satz? Ich putze meine Zähne mit der ...",
+            "en": "Which word completes Navi's sentence? I brush my teeth with a ..."
           },
-          "visual": "",
+          "visual": "🦷",
+          "showNavi": true,
           "answers": [
             {
-              "id": "dword-1",
-              "label": "🐶"
-            },
-            {
-              "id": "dword-30",
-              "label": "🐸"
-            }
-          ],
-          "correctAnswerId": "dword-1",
-          "success": {
-            "de": "Richtig! Das ist Hund.",
-            "en": "Correct! That is Dog."
-          },
-          "hint": {
-            "de": "Suche das Bild von Hund.",
-            "en": "Look for the picture of Dog."
-          }
-        },
-        {
-          "id": "dwu2",
-          "prompt": {
-            "de": "Tippe auf das Bild für Katze.",
-            "en": "Tap the picture for Cat."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-31",
-              "label": "🐢"
-            },
-            {
-              "id": "dword-2",
-              "label": "🐱"
-            }
-          ],
-          "correctAnswerId": "dword-2",
-          "success": {
-            "de": "Richtig! Das ist Katze.",
-            "en": "Correct! That is Cat."
-          },
-          "hint": {
-            "de": "Suche das Bild von Katze.",
-            "en": "Look for the picture of Cat."
-          }
-        },
-        {
-          "id": "dwu3",
-          "prompt": {
-            "de": "Tippe auf das Bild für Maus.",
-            "en": "Tap the picture for Mouse."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-3",
-              "label": "🐭"
-            },
-            {
-              "id": "dword-32",
-              "label": "🍎"
-            }
-          ],
-          "correctAnswerId": "dword-3",
-          "success": {
-            "de": "Richtig! Das ist Maus.",
-            "en": "Correct! That is Mouse."
-          },
-          "hint": {
-            "de": "Suche das Bild von Maus.",
-            "en": "Look for the picture of Mouse."
-          }
-        },
-        {
-          "id": "dwu4",
-          "prompt": {
-            "de": "Tippe auf das Bild für Hase.",
-            "en": "Tap the picture for Rabbit."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-33",
-              "label": "🍐"
-            },
-            {
-              "id": "dword-4",
-              "label": "🐰"
-            }
-          ],
-          "correctAnswerId": "dword-4",
-          "success": {
-            "de": "Richtig! Das ist Hase.",
-            "en": "Correct! That is Rabbit."
-          },
-          "hint": {
-            "de": "Suche das Bild von Hase.",
-            "en": "Look for the picture of Rabbit."
-          }
-        },
-        {
-          "id": "dwu5",
-          "prompt": {
-            "de": "Tippe auf das Bild für Fuchs.",
-            "en": "Tap the picture for Fox."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-5",
-              "label": "🦊"
-            },
-            {
-              "id": "dword-34",
-              "label": "🍌"
-            }
-          ],
-          "correctAnswerId": "dword-5",
-          "success": {
-            "de": "Richtig! Das ist Fuchs.",
-            "en": "Correct! That is Fox."
-          },
-          "hint": {
-            "de": "Suche das Bild von Fuchs.",
-            "en": "Look for the picture of Fox."
-          }
-        },
-        {
-          "id": "dwu6",
-          "prompt": {
-            "de": "Tippe auf das Bild für Bär.",
-            "en": "Tap the picture for Bear."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-35",
-              "label": "🍓"
-            },
-            {
-              "id": "dword-6",
-              "label": "🐻"
-            }
-          ],
-          "correctAnswerId": "dword-6",
-          "success": {
-            "de": "Richtig! Das ist Bär.",
-            "en": "Correct! That is Bear."
-          },
-          "hint": {
-            "de": "Suche das Bild von Bär.",
-            "en": "Look for the picture of Bear."
-          }
-        },
-        {
-          "id": "dwu7",
-          "prompt": {
-            "de": "Tippe auf das Bild für Löwe.",
-            "en": "Tap the picture for Lion."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-7",
-              "label": "🦁"
-            },
-            {
-              "id": "dword-36",
-              "label": "🍒"
-            }
-          ],
-          "correctAnswerId": "dword-7",
-          "success": {
-            "de": "Richtig! Das ist Löwe.",
-            "en": "Correct! That is Lion."
-          },
-          "hint": {
-            "de": "Suche das Bild von Löwe.",
-            "en": "Look for the picture of Lion."
-          }
-        },
-        {
-          "id": "dwu8",
-          "prompt": {
-            "de": "Tippe auf das Bild für Tiger.",
-            "en": "Tap the picture for Tiger."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-37",
-              "label": "🍇"
-            },
-            {
-              "id": "dword-8",
-              "label": "🐯"
-            }
-          ],
-          "correctAnswerId": "dword-8",
-          "success": {
-            "de": "Richtig! Das ist Tiger.",
-            "en": "Correct! That is Tiger."
-          },
-          "hint": {
-            "de": "Suche das Bild von Tiger.",
-            "en": "Look for the picture of Tiger."
-          }
-        },
-        {
-          "id": "dwu9",
-          "prompt": {
-            "de": "Tippe auf das Bild für Elefant.",
-            "en": "Tap the picture for Elephant."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-9",
-              "label": "🐘"
-            },
-            {
-              "id": "dword-38",
-              "label": "🍋"
-            }
-          ],
-          "correctAnswerId": "dword-9",
-          "success": {
-            "de": "Richtig! Das ist Elefant.",
-            "en": "Correct! That is Elephant."
-          },
-          "hint": {
-            "de": "Suche das Bild von Elefant.",
-            "en": "Look for the picture of Elephant."
-          }
-        },
-        {
-          "id": "dwu10",
-          "prompt": {
-            "de": "Tippe auf das Bild für Giraffe.",
-            "en": "Tap the picture for Giraffe."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-39",
-              "label": "🥕"
-            },
-            {
-              "id": "dword-10",
-              "label": "🦒"
-            }
-          ],
-          "correctAnswerId": "dword-10",
-          "success": {
-            "de": "Richtig! Das ist Giraffe.",
-            "en": "Correct! That is Giraffe."
-          },
-          "hint": {
-            "de": "Suche das Bild von Giraffe.",
-            "en": "Look for the picture of Giraffe."
-          }
-        },
-        {
-          "id": "dwu11",
-          "prompt": {
-            "de": "Tippe auf das Bild für Zebra.",
-            "en": "Tap the picture for Zebra."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-11",
-              "label": "🦓"
-            },
-            {
-              "id": "dword-40",
-              "label": "🍅"
-            }
-          ],
-          "correctAnswerId": "dword-11",
-          "success": {
-            "de": "Richtig! Das ist Zebra.",
-            "en": "Correct! That is Zebra."
-          },
-          "hint": {
-            "de": "Suche das Bild von Zebra.",
-            "en": "Look for the picture of Zebra."
-          }
-        },
-        {
-          "id": "dwu12",
-          "prompt": {
-            "de": "Tippe auf das Bild für Affe.",
-            "en": "Tap the picture for Monkey."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-41",
-              "label": "🍞"
-            },
-            {
-              "id": "dword-12",
-              "label": "🐒"
-            }
-          ],
-          "correctAnswerId": "dword-12",
-          "success": {
-            "de": "Richtig! Das ist Affe.",
-            "en": "Correct! That is Monkey."
-          },
-          "hint": {
-            "de": "Suche das Bild von Affe.",
-            "en": "Look for the picture of Monkey."
-          }
-        },
-        {
-          "id": "dwu13",
-          "prompt": {
-            "de": "Tippe auf das Bild für Kuh.",
-            "en": "Tap the picture for Cow."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-13",
-              "label": "🐮"
-            },
-            {
-              "id": "dword-42",
-              "label": "🧀"
-            }
-          ],
-          "correctAnswerId": "dword-13",
-          "success": {
-            "de": "Richtig! Das ist Kuh.",
-            "en": "Correct! That is Cow."
-          },
-          "hint": {
-            "de": "Suche das Bild von Kuh.",
-            "en": "Look for the picture of Cow."
-          }
-        },
-        {
-          "id": "dwu14",
-          "prompt": {
-            "de": "Tippe auf das Bild für Schwein.",
-            "en": "Tap the picture for Pig."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-43",
-              "label": "🥛"
-            },
-            {
-              "id": "dword-14",
-              "label": "🐷"
-            }
-          ],
-          "correctAnswerId": "dword-14",
-          "success": {
-            "de": "Richtig! Das ist Schwein.",
-            "en": "Correct! That is Pig."
-          },
-          "hint": {
-            "de": "Suche das Bild von Schwein.",
-            "en": "Look for the picture of Pig."
-          }
-        },
-        {
-          "id": "dwu15",
-          "prompt": {
-            "de": "Tippe auf das Bild für Pferd.",
-            "en": "Tap the picture for Horse."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-15",
-              "label": "🐴"
-            },
-            {
-              "id": "dword-44",
-              "label": "💧"
-            }
-          ],
-          "correctAnswerId": "dword-15",
-          "success": {
-            "de": "Richtig! Das ist Pferd.",
-            "en": "Correct! That is Horse."
-          },
-          "hint": {
-            "de": "Suche das Bild von Pferd.",
-            "en": "Look for the picture of Horse."
-          }
-        },
-        {
-          "id": "dwu16",
-          "prompt": {
-            "de": "Tippe auf das Bild für Schaf.",
-            "en": "Tap the picture for Sheep."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-45",
-              "label": "🏠"
-            },
-            {
-              "id": "dword-16",
-              "label": "🐑"
-            }
-          ],
-          "correctAnswerId": "dword-16",
-          "success": {
-            "de": "Richtig! Das ist Schaf.",
-            "en": "Correct! That is Sheep."
-          },
-          "hint": {
-            "de": "Suche das Bild von Schaf.",
-            "en": "Look for the picture of Sheep."
-          }
-        },
-        {
-          "id": "dwu17",
-          "prompt": {
-            "de": "Tippe auf das Bild für Ziege.",
-            "en": "Tap the picture for Goat."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-17",
-              "label": "🐐"
-            },
-            {
-              "id": "dword-46",
-              "label": "🏫"
-            }
-          ],
-          "correctAnswerId": "dword-17",
-          "success": {
-            "de": "Richtig! Das ist Ziege.",
-            "en": "Correct! That is Goat."
-          },
-          "hint": {
-            "de": "Suche das Bild von Ziege.",
-            "en": "Look for the picture of Goat."
-          }
-        },
-        {
-          "id": "dwu18",
-          "prompt": {
-            "de": "Tippe auf das Bild für Huhn.",
-            "en": "Tap the picture for Chicken."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-47",
-              "label": "🚗"
-            },
-            {
-              "id": "dword-18",
-              "label": "🐔"
-            }
-          ],
-          "correctAnswerId": "dword-18",
-          "success": {
-            "de": "Richtig! Das ist Huhn.",
-            "en": "Correct! That is Chicken."
-          },
-          "hint": {
-            "de": "Suche das Bild von Huhn.",
-            "en": "Look for the picture of Chicken."
-          }
-        },
-        {
-          "id": "dwu19",
-          "prompt": {
-            "de": "Tippe auf das Bild für Ente.",
-            "en": "Tap the picture for Duck."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-19",
-              "label": "🦆"
-            },
-            {
-              "id": "dword-48",
-              "label": "🚌"
-            }
-          ],
-          "correctAnswerId": "dword-19",
-          "success": {
-            "de": "Richtig! Das ist Ente.",
-            "en": "Correct! That is Duck."
-          },
-          "hint": {
-            "de": "Suche das Bild von Ente.",
-            "en": "Look for the picture of Duck."
-          }
-        },
-        {
-          "id": "dwu20",
-          "prompt": {
-            "de": "Tippe auf das Bild für Eule.",
-            "en": "Tap the picture for Owl."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-49",
-              "label": "🚆"
-            },
-            {
-              "id": "dword-20",
-              "label": "🦉"
-            }
-          ],
-          "correctAnswerId": "dword-20",
-          "success": {
-            "de": "Richtig! Das ist Eule.",
-            "en": "Correct! That is Owl."
-          },
-          "hint": {
-            "de": "Suche das Bild von Eule.",
-            "en": "Look for the picture of Owl."
-          }
-        },
-        {
-          "id": "dwu21",
-          "prompt": {
-            "de": "Tippe auf das Bild für Fisch.",
-            "en": "Tap the picture for Fish."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-21",
-              "label": "🐟"
-            },
-            {
-              "id": "dword-50",
-              "label": "🚲"
-            }
-          ],
-          "correctAnswerId": "dword-21",
-          "success": {
-            "de": "Richtig! Das ist Fisch.",
-            "en": "Correct! That is Fish."
-          },
-          "hint": {
-            "de": "Suche das Bild von Fisch.",
-            "en": "Look for the picture of Fish."
-          }
-        },
-        {
-          "id": "dwu22",
-          "prompt": {
-            "de": "Tippe auf das Bild für Wal.",
-            "en": "Tap the picture for Whale."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-51",
-              "label": "⛵"
-            },
-            {
-              "id": "dword-22",
-              "label": "🐋"
-            }
-          ],
-          "correctAnswerId": "dword-22",
-          "success": {
-            "de": "Richtig! Das ist Wal.",
-            "en": "Correct! That is Whale."
-          },
-          "hint": {
-            "de": "Suche das Bild von Wal.",
-            "en": "Look for the picture of Whale."
-          }
-        },
-        {
-          "id": "dwu23",
-          "prompt": {
-            "de": "Tippe auf das Bild für Delfin.",
-            "en": "Tap the picture for Dolphin."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-23",
-              "label": "🐬"
-            },
-            {
-              "id": "dword-52",
-              "label": "✈️"
-            }
-          ],
-          "correctAnswerId": "dword-23",
-          "success": {
-            "de": "Richtig! Das ist Delfin.",
-            "en": "Correct! That is Dolphin."
-          },
-          "hint": {
-            "de": "Suche das Bild von Delfin.",
-            "en": "Look for the picture of Dolphin."
-          }
-        },
-        {
-          "id": "dwu24",
-          "prompt": {
-            "de": "Tippe auf das Bild für Hai.",
-            "en": "Tap the picture for Shark."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-53",
-              "label": "☀️"
-            },
-            {
-              "id": "dword-24",
-              "label": "🦈"
-            }
-          ],
-          "correctAnswerId": "dword-24",
-          "success": {
-            "de": "Richtig! Das ist Hai.",
-            "en": "Correct! That is Shark."
-          },
-          "hint": {
-            "de": "Suche das Bild von Hai.",
-            "en": "Look for the picture of Shark."
-          }
-        },
-        {
-          "id": "dwu25",
-          "prompt": {
-            "de": "Tippe auf das Bild für Oktopus.",
-            "en": "Tap the picture for Octopus."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-25",
-              "label": "🐙"
-            },
-            {
-              "id": "dword-54",
-              "label": "🌙"
-            }
-          ],
-          "correctAnswerId": "dword-25",
-          "success": {
-            "de": "Richtig! Das ist Oktopus.",
-            "en": "Correct! That is Octopus."
-          },
-          "hint": {
-            "de": "Suche das Bild von Oktopus.",
-            "en": "Look for the picture of Octopus."
-          }
-        },
-        {
-          "id": "dwu26",
-          "prompt": {
-            "de": "Tippe auf das Bild für Krabbe.",
-            "en": "Tap the picture for Crab."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-55",
-              "label": "⭐"
-            },
-            {
-              "id": "dword-26",
-              "label": "🦀"
-            }
-          ],
-          "correctAnswerId": "dword-26",
-          "success": {
-            "de": "Richtig! Das ist Krabbe.",
-            "en": "Correct! That is Crab."
-          },
-          "hint": {
-            "de": "Suche das Bild von Krabbe.",
-            "en": "Look for the picture of Crab."
-          }
-        },
-        {
-          "id": "dwu27",
-          "prompt": {
-            "de": "Tippe auf das Bild für Biene.",
-            "en": "Tap the picture for Bee."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-27",
-              "label": "🐝"
-            },
-            {
-              "id": "dword-56",
-              "label": "☁️"
-            }
-          ],
-          "correctAnswerId": "dword-27",
-          "success": {
-            "de": "Richtig! Das ist Biene.",
-            "en": "Correct! That is Bee."
-          },
-          "hint": {
-            "de": "Suche das Bild von Biene.",
-            "en": "Look for the picture of Bee."
-          }
-        },
-        {
-          "id": "dwu28",
-          "prompt": {
-            "de": "Tippe auf das Bild für Schmetterling.",
-            "en": "Tap the picture for Butterfly."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-57",
-              "label": "🌳"
-            },
-            {
-              "id": "dword-28",
-              "label": "🦋"
-            }
-          ],
-          "correctAnswerId": "dword-28",
-          "success": {
-            "de": "Richtig! Das ist Schmetterling.",
-            "en": "Correct! That is Butterfly."
-          },
-          "hint": {
-            "de": "Suche das Bild von Schmetterling.",
-            "en": "Look for the picture of Butterfly."
-          }
-        },
-        {
-          "id": "dwu29",
-          "prompt": {
-            "de": "Tippe auf das Bild für Schnecke.",
-            "en": "Tap the picture for Snail."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-29",
-              "label": "🐌"
-            },
-            {
-              "id": "dword-58",
-              "label": "🌸"
-            }
-          ],
-          "correctAnswerId": "dword-29",
-          "success": {
-            "de": "Richtig! Das ist Schnecke.",
-            "en": "Correct! That is Snail."
-          },
-          "hint": {
-            "de": "Suche das Bild von Schnecke.",
-            "en": "Look for the picture of Snail."
-          }
-        },
-        {
-          "id": "dwu30",
-          "prompt": {
-            "de": "Tippe auf das Bild für Frosch.",
-            "en": "Tap the picture for Frog."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-59",
-              "label": "🌱"
-            },
-            {
-              "id": "dword-30",
-              "label": "🐸"
-            }
-          ],
-          "correctAnswerId": "dword-30",
-          "success": {
-            "de": "Richtig! Das ist Frosch.",
-            "en": "Correct! That is Frog."
-          },
-          "hint": {
-            "de": "Suche das Bild von Frosch.",
-            "en": "Look for the picture of Frog."
-          }
-        },
-        {
-          "id": "dwu31",
-          "prompt": {
-            "de": "Tippe auf das Bild für Schildkröte.",
-            "en": "Tap the picture for Turtle."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-31",
-              "label": "🐢"
-            },
-            {
-              "id": "dword-60",
-              "label": "⛰️"
-            }
-          ],
-          "correctAnswerId": "dword-31",
-          "success": {
-            "de": "Richtig! Das ist Schildkröte.",
-            "en": "Correct! That is Turtle."
-          },
-          "hint": {
-            "de": "Suche das Bild von Schildkröte.",
-            "en": "Look for the picture of Turtle."
-          }
-        },
-        {
-          "id": "dwu32",
-          "prompt": {
-            "de": "Tippe auf das Bild für Apfel.",
-            "en": "Tap the picture for Apple."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-61",
-              "label": "🏞️"
-            },
-            {
-              "id": "dword-32",
-              "label": "🍎"
-            }
-          ],
-          "correctAnswerId": "dword-32",
-          "success": {
-            "de": "Richtig! Das ist Apfel.",
-            "en": "Correct! That is Apple."
-          },
-          "hint": {
-            "de": "Suche das Bild von Apfel.",
-            "en": "Look for the picture of Apple."
-          }
-        },
-        {
-          "id": "dwu33",
-          "prompt": {
-            "de": "Tippe auf das Bild für Birne.",
-            "en": "Tap the picture for Pear."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-33",
-              "label": "🍐"
-            },
-            {
-              "id": "dword-62",
-              "label": "📘"
-            }
-          ],
-          "correctAnswerId": "dword-33",
-          "success": {
-            "de": "Richtig! Das ist Birne.",
-            "en": "Correct! That is Pear."
-          },
-          "hint": {
-            "de": "Suche das Bild von Birne.",
-            "en": "Look for the picture of Pear."
-          }
-        },
-        {
-          "id": "dwu34",
-          "prompt": {
-            "de": "Tippe auf das Bild für Banane.",
-            "en": "Tap the picture for Banana."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-63",
-              "label": "✏️"
-            },
-            {
-              "id": "dword-34",
-              "label": "🍌"
-            }
-          ],
-          "correctAnswerId": "dword-34",
-          "success": {
-            "de": "Richtig! Das ist Banane.",
-            "en": "Correct! That is Banana."
-          },
-          "hint": {
-            "de": "Suche das Bild von Banane.",
-            "en": "Look for the picture of Banana."
-          }
-        },
-        {
-          "id": "dwu35",
-          "prompt": {
-            "de": "Tippe auf das Bild für Erdbeere.",
-            "en": "Tap the picture for Strawberry."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-35",
-              "label": "🍓"
-            },
-            {
-              "id": "dword-64",
-              "label": "⚽"
-            }
-          ],
-          "correctAnswerId": "dword-35",
-          "success": {
-            "de": "Richtig! Das ist Erdbeere.",
-            "en": "Correct! That is Strawberry."
-          },
-          "hint": {
-            "de": "Suche das Bild von Erdbeere.",
-            "en": "Look for the picture of Strawberry."
-          }
-        },
-        {
-          "id": "dwu36",
-          "prompt": {
-            "de": "Tippe auf das Bild für Kirsche.",
-            "en": "Tap the picture for Cherry."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-65",
-              "label": "🪆"
-            },
-            {
-              "id": "dword-36",
-              "label": "🍒"
-            }
-          ],
-          "correctAnswerId": "dword-36",
-          "success": {
-            "de": "Richtig! Das ist Kirsche.",
-            "en": "Correct! That is Cherry."
-          },
-          "hint": {
-            "de": "Suche das Bild von Kirsche.",
-            "en": "Look for the picture of Cherry."
-          }
-        },
-        {
-          "id": "dwu37",
-          "prompt": {
-            "de": "Tippe auf das Bild für Traube.",
-            "en": "Tap the picture for Grape."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-37",
-              "label": "🍇"
-            },
-            {
-              "id": "dword-66",
-              "label": "🥁"
-            }
-          ],
-          "correctAnswerId": "dword-37",
-          "success": {
-            "de": "Richtig! Das ist Traube.",
-            "en": "Correct! That is Grape."
-          },
-          "hint": {
-            "de": "Suche das Bild von Traube.",
-            "en": "Look for the picture of Grape."
-          }
-        },
-        {
-          "id": "dwu38",
-          "prompt": {
-            "de": "Tippe auf das Bild für Zitrone.",
-            "en": "Tap the picture for Lemon."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-67",
-              "label": "🕐"
-            },
-            {
-              "id": "dword-38",
-              "label": "🍋"
-            }
-          ],
-          "correctAnswerId": "dword-38",
-          "success": {
-            "de": "Richtig! Das ist Zitrone.",
-            "en": "Correct! That is Lemon."
-          },
-          "hint": {
-            "de": "Suche das Bild von Zitrone.",
-            "en": "Look for the picture of Lemon."
-          }
-        },
-        {
-          "id": "dwu39",
-          "prompt": {
-            "de": "Tippe auf das Bild für Karotte.",
-            "en": "Tap the picture for Carrot."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-39",
-              "label": "🥕"
-            },
-            {
-              "id": "dword-68",
-              "label": "🔑"
-            }
-          ],
-          "correctAnswerId": "dword-39",
-          "success": {
-            "de": "Richtig! Das ist Karotte.",
-            "en": "Correct! That is Carrot."
-          },
-          "hint": {
-            "de": "Suche das Bild von Karotte.",
-            "en": "Look for the picture of Carrot."
-          }
-        },
-        {
-          "id": "dwu40",
-          "prompt": {
-            "de": "Tippe auf das Bild für Tomate.",
-            "en": "Tap the picture for Tomato."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-69",
-              "label": "👟"
-            },
-            {
-              "id": "dword-40",
-              "label": "🍅"
-            }
-          ],
-          "correctAnswerId": "dword-40",
-          "success": {
-            "de": "Richtig! Das ist Tomate.",
-            "en": "Correct! That is Tomato."
-          },
-          "hint": {
-            "de": "Suche das Bild von Tomate.",
-            "en": "Look for the picture of Tomato."
-          }
-        },
-        {
-          "id": "dwu41",
-          "prompt": {
-            "de": "Tippe auf das Bild für Brot.",
-            "en": "Tap the picture for Bread."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-41",
-              "label": "🍞"
-            },
-            {
-              "id": "dword-70",
-              "label": "🧢"
-            }
-          ],
-          "correctAnswerId": "dword-41",
-          "success": {
-            "de": "Richtig! Das ist Brot.",
-            "en": "Correct! That is Bread."
-          },
-          "hint": {
-            "de": "Suche das Bild von Brot.",
-            "en": "Look for the picture of Bread."
-          }
-        },
-        {
-          "id": "dwu42",
-          "prompt": {
-            "de": "Tippe auf das Bild für Käse.",
-            "en": "Tap the picture for Cheese."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-71",
-              "label": "✋"
-            },
-            {
-              "id": "dword-42",
-              "label": "🧀"
-            }
-          ],
-          "correctAnswerId": "dword-42",
-          "success": {
-            "de": "Richtig! Das ist Käse.",
-            "en": "Correct! That is Cheese."
-          },
-          "hint": {
-            "de": "Suche das Bild von Käse.",
-            "en": "Look for the picture of Cheese."
-          }
-        },
-        {
-          "id": "dwu43",
-          "prompt": {
-            "de": "Tippe auf das Bild für Milch.",
-            "en": "Tap the picture for Milk."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-43",
-              "label": "🥛"
-            },
-            {
-              "id": "dword-72",
-              "label": "❤️"
-            }
-          ],
-          "correctAnswerId": "dword-43",
-          "success": {
-            "de": "Richtig! Das ist Milch.",
-            "en": "Correct! That is Milk."
-          },
-          "hint": {
-            "de": "Suche das Bild von Milch.",
-            "en": "Look for the picture of Milk."
-          }
-        },
-        {
-          "id": "dwu44",
-          "prompt": {
-            "de": "Tippe auf das Bild für Wasser.",
-            "en": "Tap the picture for Water."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-73",
-              "label": "🧦"
-            },
-            {
-              "id": "dword-44",
-              "label": "💧"
-            }
-          ],
-          "correctAnswerId": "dword-44",
-          "success": {
-            "de": "Richtig! Das ist Wasser.",
-            "en": "Correct! That is Water."
-          },
-          "hint": {
-            "de": "Suche das Bild von Wasser.",
-            "en": "Look for the picture of Water."
-          }
-        },
-        {
-          "id": "dwu45",
-          "prompt": {
-            "de": "Tippe auf das Bild für Haus.",
-            "en": "Tap the picture for House."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-45",
-              "label": "🏠"
-            },
-            {
-              "id": "dword-74",
-              "label": "🧥"
-            }
-          ],
-          "correctAnswerId": "dword-45",
-          "success": {
-            "de": "Richtig! Das ist Haus.",
-            "en": "Correct! That is House."
-          },
-          "hint": {
-            "de": "Suche das Bild von Haus.",
-            "en": "Look for the picture of House."
-          }
-        },
-        {
-          "id": "dwu46",
-          "prompt": {
-            "de": "Tippe auf das Bild für Schule.",
-            "en": "Tap the picture for School."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-75",
-              "label": "👖"
-            },
-            {
-              "id": "dword-46",
-              "label": "🏫"
-            }
-          ],
-          "correctAnswerId": "dword-46",
-          "success": {
-            "de": "Richtig! Das ist Schule.",
-            "en": "Correct! That is School."
-          },
-          "hint": {
-            "de": "Suche das Bild von Schule.",
-            "en": "Look for the picture of School."
-          }
-        },
-        {
-          "id": "dwu47",
-          "prompt": {
-            "de": "Tippe auf das Bild für Auto.",
-            "en": "Tap the picture for Car."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-47",
-              "label": "🚗"
-            },
-            {
-              "id": "dword-76",
-              "label": "👗"
-            }
-          ],
-          "correctAnswerId": "dword-47",
-          "success": {
-            "de": "Richtig! Das ist Auto.",
-            "en": "Correct! That is Car."
-          },
-          "hint": {
-            "de": "Suche das Bild von Auto.",
-            "en": "Look for the picture of Car."
-          }
-        },
-        {
-          "id": "dwu48",
-          "prompt": {
-            "de": "Tippe auf das Bild für Bus.",
-            "en": "Tap the picture for Bus."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-77",
-              "label": "🥄"
-            },
-            {
-              "id": "dword-48",
-              "label": "🚌"
-            }
-          ],
-          "correctAnswerId": "dword-48",
-          "success": {
-            "de": "Richtig! Das ist Bus.",
-            "en": "Correct! That is Bus."
-          },
-          "hint": {
-            "de": "Suche das Bild von Bus.",
-            "en": "Look for the picture of Bus."
-          }
-        },
-        {
-          "id": "dwu49",
-          "prompt": {
-            "de": "Tippe auf das Bild für Zug.",
-            "en": "Tap the picture for Train."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-49",
-              "label": "🚆"
-            },
-            {
-              "id": "dword-78",
-              "label": "🍴"
-            }
-          ],
-          "correctAnswerId": "dword-49",
-          "success": {
-            "de": "Richtig! Das ist Zug.",
-            "en": "Correct! That is Train."
-          },
-          "hint": {
-            "de": "Suche das Bild von Zug.",
-            "en": "Look for the picture of Train."
-          }
-        },
-        {
-          "id": "dwu50",
-          "prompt": {
-            "de": "Tippe auf das Bild für Fahrrad.",
-            "en": "Tap the picture for Bicycle."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-79",
-              "label": "🍽️"
-            },
-            {
-              "id": "dword-50",
-              "label": "🚲"
-            }
-          ],
-          "correctAnswerId": "dword-50",
-          "success": {
-            "de": "Richtig! Das ist Fahrrad.",
-            "en": "Correct! That is Bicycle."
-          },
-          "hint": {
-            "de": "Suche das Bild von Fahrrad.",
-            "en": "Look for the picture of Bicycle."
-          }
-        },
-        {
-          "id": "dwu51",
-          "prompt": {
-            "de": "Tippe auf das Bild für Boot.",
-            "en": "Tap the picture for Boat."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-51",
-              "label": "⛵"
-            },
-            {
-              "id": "dword-80",
-              "label": "☕"
-            }
-          ],
-          "correctAnswerId": "dword-51",
-          "success": {
-            "de": "Richtig! Das ist Boot.",
-            "en": "Correct! That is Boat."
-          },
-          "hint": {
-            "de": "Suche das Bild von Boot.",
-            "en": "Look for the picture of Boat."
-          }
-        },
-        {
-          "id": "dwu52",
-          "prompt": {
-            "de": "Tippe auf das Bild für Flugzeug.",
-            "en": "Tap the picture for Airplane."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-81",
-              "label": "🛏️"
-            },
-            {
-              "id": "dword-52",
-              "label": "✈️"
-            }
-          ],
-          "correctAnswerId": "dword-52",
-          "success": {
-            "de": "Richtig! Das ist Flugzeug.",
-            "en": "Correct! That is Airplane."
-          },
-          "hint": {
-            "de": "Suche das Bild von Flugzeug.",
-            "en": "Look for the picture of Airplane."
-          }
-        },
-        {
-          "id": "dwu53",
-          "prompt": {
-            "de": "Tippe auf das Bild für Sonne.",
-            "en": "Tap the picture for Sun."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-53",
-              "label": "☀️"
-            },
-            {
-              "id": "dword-82",
-              "label": "🪑"
-            }
-          ],
-          "correctAnswerId": "dword-53",
-          "success": {
-            "de": "Richtig! Das ist Sonne.",
-            "en": "Correct! That is Sun."
-          },
-          "hint": {
-            "de": "Suche das Bild von Sonne.",
-            "en": "Look for the picture of Sun."
-          }
-        },
-        {
-          "id": "dwu54",
-          "prompt": {
-            "de": "Tippe auf das Bild für Mond.",
-            "en": "Tap the picture for Moon."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-83",
-              "label": "🪑 ━━━ 🪑"
-            },
-            {
-              "id": "dword-54",
-              "label": "🌙"
-            }
-          ],
-          "correctAnswerId": "dword-54",
-          "success": {
-            "de": "Richtig! Das ist Mond.",
-            "en": "Correct! That is Moon."
-          },
-          "hint": {
-            "de": "Suche das Bild von Mond.",
-            "en": "Look for the picture of Moon."
-          }
-        },
-        {
-          "id": "dwu55",
-          "prompt": {
-            "de": "Tippe auf das Bild für Stern.",
-            "en": "Tap the picture for Star."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-55",
-              "label": "⭐"
-            },
-            {
-              "id": "dword-84",
-              "label": "🚪"
-            }
-          ],
-          "correctAnswerId": "dword-55",
-          "success": {
-            "de": "Richtig! Das ist Stern.",
-            "en": "Correct! That is Star."
-          },
-          "hint": {
-            "de": "Suche das Bild von Stern.",
-            "en": "Look for the picture of Star."
-          }
-        },
-        {
-          "id": "dwu56",
-          "prompt": {
-            "de": "Tippe auf das Bild für Wolke.",
-            "en": "Tap the picture for Cloud."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-85",
-              "label": "🪟"
-            },
-            {
-              "id": "dword-56",
-              "label": "☁️"
-            }
-          ],
-          "correctAnswerId": "dword-56",
-          "success": {
-            "de": "Richtig! Das ist Wolke.",
-            "en": "Correct! That is Cloud."
-          },
-          "hint": {
-            "de": "Suche das Bild von Wolke.",
-            "en": "Look for the picture of Cloud."
-          }
-        },
-        {
-          "id": "dwu57",
-          "prompt": {
-            "de": "Tippe auf das Bild für Baum.",
-            "en": "Tap the picture for Tree."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-57",
-              "label": "🌳"
-            },
-            {
-              "id": "dword-86",
-              "label": "🧼"
-            }
-          ],
-          "correctAnswerId": "dword-57",
-          "success": {
-            "de": "Richtig! Das ist Baum.",
-            "en": "Correct! That is Tree."
-          },
-          "hint": {
-            "de": "Suche das Bild von Baum.",
-            "en": "Look for the picture of Tree."
-          }
-        },
-        {
-          "id": "dwu58",
-          "prompt": {
-            "de": "Tippe auf das Bild für Blume.",
-            "en": "Tap the picture for Flower."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-87",
+              "id": "toothbrush",
               "label": "🪥"
             },
             {
-              "id": "dword-58",
-              "label": "🌸"
+              "id": "sock",
+              "label": "🧦"
             }
           ],
-          "correctAnswerId": "dword-58",
+          "correctAnswerId": "toothbrush",
           "success": {
-            "de": "Richtig! Das ist Blume.",
-            "en": "Correct! That is Flower."
+            "de": "Richtig! Das passende Wort ist Zahnbürste.",
+            "en": "Correct! The matching word is toothbrush."
           },
           "hint": {
-            "de": "Suche das Bild von Blume.",
-            "en": "Look for the picture of Flower."
+            "de": "Höre auf das Wort Zahnbürste.",
+            "en": "Listen for the word toothbrush."
           }
         },
         {
-          "id": "dwu59",
+          "id": "d2wu2",
           "prompt": {
-            "de": "Tippe auf das Bild für Gras.",
-            "en": "Tap the picture for Grass."
+            "de": "Was gehört zu einem Bett?",
+            "en": "What belongs with a bed?"
+          },
+          "visual": "🛏️",
+          "answers": [
+            {
+              "id": "key",
+              "label": "🔑"
+            },
+            {
+              "id": "pillow",
+              "label": "🛌"
+            }
+          ],
+          "correctAnswerId": "pillow",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Kissen.",
+            "en": "Correct! The matching word is pillow."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Kissen.",
+            "en": "Listen for the word pillow."
+          }
+        },
+        {
+          "id": "d2wu3",
+          "prompt": {
+            "de": "Wer kocht?",
+            "en": "Who is cooking?"
           },
           "visual": "",
           "answers": [
             {
-              "id": "dword-59",
-              "label": "🌱"
+              "id": "cook",
+              "label": "🍳"
             },
             {
-              "id": "dword-88",
-              "label": "🪮"
+              "id": "clean",
+              "label": "🧹"
             }
           ],
-          "correctAnswerId": "dword-59",
+          "correctAnswerId": "cook",
           "success": {
-            "de": "Richtig! Das ist Gras.",
-            "en": "Correct! That is Grass."
+            "de": "Richtig! Das passende Wort ist kochen.",
+            "en": "Correct! The matching word is cook."
           },
           "hint": {
-            "de": "Suche das Bild von Gras.",
-            "en": "Look for the picture of Grass."
+            "de": "Höre auf das Wort kochen.",
+            "en": "Listen for the word cook."
           }
         },
         {
-          "id": "dwu60",
+          "id": "d2wu4",
           "prompt": {
-            "de": "Tippe auf das Bild für Berg.",
-            "en": "Tap the picture for Mountain."
+            "de": "Welches Wort beendet Navis Satz? Zum Schlafen lege ich mich ins ...",
+            "en": "Which word completes Navi's sentence? To sleep, I lie down in a ..."
           },
-          "visual": "",
+          "visual": "😴",
+          "showNavi": true,
           "answers": [
             {
-              "id": "dword-89",
-              "label": "🎒"
+              "id": "chair",
+              "label": "🪑"
             },
             {
-              "id": "dword-60",
-              "label": "⛰️"
+              "id": "bed",
+              "label": "🛏️"
             }
           ],
-          "correctAnswerId": "dword-60",
+          "correctAnswerId": "bed",
           "success": {
-            "de": "Richtig! Das ist Berg.",
-            "en": "Correct! That is Mountain."
+            "de": "Richtig! Das passende Wort ist Bett.",
+            "en": "Correct! The matching word is bed."
           },
           "hint": {
-            "de": "Suche das Bild von Berg.",
-            "en": "Look for the picture of Mountain."
+            "de": "Höre auf das Wort Bett.",
+            "en": "Listen for the word bed."
           }
         },
         {
-          "id": "dwu61",
+          "id": "d2wu5",
           "prompt": {
-            "de": "Tippe auf das Bild für Fluss.",
-            "en": "Tap the picture for River."
+            "de": "Was gehört zu einem Tisch?",
+            "en": "What belongs with a table?"
           },
-          "visual": "",
+          "visual": "🪑 ━━━ 🪑",
           "answers": [
             {
-              "id": "dword-61",
-              "label": "🏞️"
+              "id": "chair",
+              "label": "🪑"
             },
             {
-              "id": "dword-90",
+              "id": "umbrella",
               "label": "☂️"
             }
           ],
-          "correctAnswerId": "dword-61",
+          "correctAnswerId": "chair",
           "success": {
-            "de": "Richtig! Das ist Fluss.",
-            "en": "Correct! That is River."
+            "de": "Richtig! Das passende Wort ist Stuhl.",
+            "en": "Correct! The matching word is chair."
           },
           "hint": {
-            "de": "Suche das Bild von Fluss.",
-            "en": "Look for the picture of River."
+            "de": "Höre auf das Wort Stuhl.",
+            "en": "Listen for the word chair."
           }
         },
         {
-          "id": "dwu62",
+          "id": "d2wu6",
           "prompt": {
-            "de": "Tippe auf das Bild für Buch.",
-            "en": "Tap the picture for Book."
+            "de": "Wer räumt auf?",
+            "en": "Who is cleaning up?"
           },
           "visual": "",
           "answers": [
             {
-              "id": "dword-1",
-              "label": "🐶"
+              "id": "cook",
+              "label": "🍳"
             },
             {
-              "id": "dword-62",
-              "label": "📘"
+              "id": "clean",
+              "label": "🧹"
             }
           ],
-          "correctAnswerId": "dword-62",
+          "correctAnswerId": "clean",
           "success": {
-            "de": "Richtig! Das ist Buch.",
-            "en": "Correct! That is Book."
+            "de": "Richtig! Das passende Wort ist aufräumen.",
+            "en": "Correct! The matching word is clean up."
           },
           "hint": {
-            "de": "Suche das Bild von Buch.",
-            "en": "Look for the picture of Book."
+            "de": "Höre auf das Wort aufräumen.",
+            "en": "Listen for the word clean up."
           }
         },
         {
-          "id": "dwu63",
+          "id": "d2wu7",
           "prompt": {
-            "de": "Tippe auf das Bild für Stift.",
-            "en": "Tap the picture for Pencil."
+            "de": "Welches Wort beendet Navis Satz? Suppe esse ich mit einem ...",
+            "en": "Which word completes Navi's sentence? I eat soup with a ..."
           },
-          "visual": "",
+          "visual": "🍲",
+          "showNavi": true,
           "answers": [
             {
-              "id": "dword-63",
-              "label": "✏️"
-            },
-            {
-              "id": "dword-2",
-              "label": "🐱"
-            }
-          ],
-          "correctAnswerId": "dword-63",
-          "success": {
-            "de": "Richtig! Das ist Stift.",
-            "en": "Correct! That is Pencil."
-          },
-          "hint": {
-            "de": "Suche das Bild von Stift.",
-            "en": "Look for the picture of Pencil."
-          }
-        },
-        {
-          "id": "dwu64",
-          "prompt": {
-            "de": "Tippe auf das Bild für Ball.",
-            "en": "Tap the picture for Ball."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-3",
-              "label": "🐭"
-            },
-            {
-              "id": "dword-64",
-              "label": "⚽"
-            }
-          ],
-          "correctAnswerId": "dword-64",
-          "success": {
-            "de": "Richtig! Das ist Ball.",
-            "en": "Correct! That is Ball."
-          },
-          "hint": {
-            "de": "Suche das Bild von Ball.",
-            "en": "Look for the picture of Ball."
-          }
-        },
-        {
-          "id": "dwu65",
-          "prompt": {
-            "de": "Tippe auf das Bild für Puppe.",
-            "en": "Tap the picture for Doll."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-65",
-              "label": "🪆"
-            },
-            {
-              "id": "dword-4",
-              "label": "🐰"
-            }
-          ],
-          "correctAnswerId": "dword-65",
-          "success": {
-            "de": "Richtig! Das ist Puppe.",
-            "en": "Correct! That is Doll."
-          },
-          "hint": {
-            "de": "Suche das Bild von Puppe.",
-            "en": "Look for the picture of Doll."
-          }
-        },
-        {
-          "id": "dwu66",
-          "prompt": {
-            "de": "Tippe auf das Bild für Trommel.",
-            "en": "Tap the picture for Drum."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-5",
-              "label": "🦊"
-            },
-            {
-              "id": "dword-66",
-              "label": "🥁"
-            }
-          ],
-          "correctAnswerId": "dword-66",
-          "success": {
-            "de": "Richtig! Das ist Trommel.",
-            "en": "Correct! That is Drum."
-          },
-          "hint": {
-            "de": "Suche das Bild von Trommel.",
-            "en": "Look for the picture of Drum."
-          }
-        },
-        {
-          "id": "dwu67",
-          "prompt": {
-            "de": "Tippe auf das Bild für Uhr.",
-            "en": "Tap the picture for Clock."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-67",
-              "label": "🕐"
-            },
-            {
-              "id": "dword-6",
-              "label": "🐻"
-            }
-          ],
-          "correctAnswerId": "dword-67",
-          "success": {
-            "de": "Richtig! Das ist Uhr.",
-            "en": "Correct! That is Clock."
-          },
-          "hint": {
-            "de": "Suche das Bild von Uhr.",
-            "en": "Look for the picture of Clock."
-          }
-        },
-        {
-          "id": "dwu68",
-          "prompt": {
-            "de": "Tippe auf das Bild für Schlüssel.",
-            "en": "Tap the picture for Key."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-7",
-              "label": "🦁"
-            },
-            {
-              "id": "dword-68",
-              "label": "🔑"
-            }
-          ],
-          "correctAnswerId": "dword-68",
-          "success": {
-            "de": "Richtig! Das ist Schlüssel.",
-            "en": "Correct! That is Key."
-          },
-          "hint": {
-            "de": "Suche das Bild von Schlüssel.",
-            "en": "Look for the picture of Key."
-          }
-        },
-        {
-          "id": "dwu69",
-          "prompt": {
-            "de": "Tippe auf das Bild für Schuh.",
-            "en": "Tap the picture for Shoe."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-69",
-              "label": "👟"
-            },
-            {
-              "id": "dword-8",
-              "label": "🐯"
-            }
-          ],
-          "correctAnswerId": "dword-69",
-          "success": {
-            "de": "Richtig! Das ist Schuh.",
-            "en": "Correct! That is Shoe."
-          },
-          "hint": {
-            "de": "Suche das Bild von Schuh.",
-            "en": "Look for the picture of Shoe."
-          }
-        },
-        {
-          "id": "dwu70",
-          "prompt": {
-            "de": "Tippe auf das Bild für Hut.",
-            "en": "Tap the picture for Hat."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-9",
-              "label": "🐘"
-            },
-            {
-              "id": "dword-70",
-              "label": "🧢"
-            }
-          ],
-          "correctAnswerId": "dword-70",
-          "success": {
-            "de": "Richtig! Das ist Hut.",
-            "en": "Correct! That is Hat."
-          },
-          "hint": {
-            "de": "Suche das Bild von Hut.",
-            "en": "Look for the picture of Hat."
-          }
-        },
-        {
-          "id": "dwu71",
-          "prompt": {
-            "de": "Tippe auf das Bild für Hand.",
-            "en": "Tap the picture for Hand."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-71",
-              "label": "✋"
-            },
-            {
-              "id": "dword-10",
-              "label": "🦒"
-            }
-          ],
-          "correctAnswerId": "dword-71",
-          "success": {
-            "de": "Richtig! Das ist Hand.",
-            "en": "Correct! That is Hand."
-          },
-          "hint": {
-            "de": "Suche das Bild von Hand.",
-            "en": "Look for the picture of Hand."
-          }
-        },
-        {
-          "id": "dwu72",
-          "prompt": {
-            "de": "Tippe auf das Bild für Herz.",
-            "en": "Tap the picture for Heart."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-11",
-              "label": "🦓"
-            },
-            {
-              "id": "dword-72",
-              "label": "❤️"
-            }
-          ],
-          "correctAnswerId": "dword-72",
-          "success": {
-            "de": "Richtig! Das ist Herz.",
-            "en": "Correct! That is Heart."
-          },
-          "hint": {
-            "de": "Suche das Bild von Herz.",
-            "en": "Look for the picture of Heart."
-          }
-        },
-        {
-          "id": "dwu73",
-          "prompt": {
-            "de": "Tippe auf das Bild für Socke.",
-            "en": "Tap the picture for Sock."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-73",
-              "label": "🧦"
-            },
-            {
-              "id": "dword-12",
-              "label": "🐒"
-            }
-          ],
-          "correctAnswerId": "dword-73",
-          "success": {
-            "de": "Richtig! Das ist Socke.",
-            "en": "Correct! That is Sock."
-          },
-          "hint": {
-            "de": "Suche das Bild von Socke.",
-            "en": "Look for the picture of Sock."
-          }
-        },
-        {
-          "id": "dwu74",
-          "prompt": {
-            "de": "Tippe auf das Bild für Jacke.",
-            "en": "Tap the picture for Jacket."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-13",
-              "label": "🐮"
-            },
-            {
-              "id": "dword-74",
-              "label": "🧥"
-            }
-          ],
-          "correctAnswerId": "dword-74",
-          "success": {
-            "de": "Richtig! Das ist Jacke.",
-            "en": "Correct! That is Jacket."
-          },
-          "hint": {
-            "de": "Suche das Bild von Jacke.",
-            "en": "Look for the picture of Jacket."
-          }
-        },
-        {
-          "id": "dwu75",
-          "prompt": {
-            "de": "Tippe auf das Bild für Hose.",
-            "en": "Tap the picture for Pants."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-75",
-              "label": "👖"
-            },
-            {
-              "id": "dword-14",
-              "label": "🐷"
-            }
-          ],
-          "correctAnswerId": "dword-75",
-          "success": {
-            "de": "Richtig! Das ist Hose.",
-            "en": "Correct! That is Pants."
-          },
-          "hint": {
-            "de": "Suche das Bild von Hose.",
-            "en": "Look for the picture of Pants."
-          }
-        },
-        {
-          "id": "dwu76",
-          "prompt": {
-            "de": "Tippe auf das Bild für Kleid.",
-            "en": "Tap the picture for Dress."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-15",
-              "label": "🐴"
-            },
-            {
-              "id": "dword-76",
-              "label": "👗"
-            }
-          ],
-          "correctAnswerId": "dword-76",
-          "success": {
-            "de": "Richtig! Das ist Kleid.",
-            "en": "Correct! That is Dress."
-          },
-          "hint": {
-            "de": "Suche das Bild von Kleid.",
-            "en": "Look for the picture of Dress."
-          }
-        },
-        {
-          "id": "dwu77",
-          "prompt": {
-            "de": "Tippe auf das Bild für Löffel.",
-            "en": "Tap the picture for Spoon."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-77",
+              "id": "spoon",
               "label": "🥄"
             },
             {
-              "id": "dword-16",
-              "label": "🐑"
+              "id": "key",
+              "label": "🔑"
             }
           ],
-          "correctAnswerId": "dword-77",
+          "correctAnswerId": "spoon",
           "success": {
-            "de": "Richtig! Das ist Löffel.",
-            "en": "Correct! That is Spoon."
+            "de": "Richtig! Das passende Wort ist Löffel.",
+            "en": "Correct! The matching word is spoon."
           },
           "hint": {
-            "de": "Suche das Bild von Löffel.",
-            "en": "Look for the picture of Spoon."
+            "de": "Höre auf das Wort Löffel.",
+            "en": "Listen for the word spoon."
           }
         },
         {
-          "id": "dwu78",
+          "id": "d2wu8",
           "prompt": {
-            "de": "Tippe auf das Bild für Gabel.",
-            "en": "Tap the picture for Fork."
+            "de": "Was gehört zu einem Stift?",
+            "en": "What belongs with a pencil?"
+          },
+          "visual": "✏️",
+          "answers": [
+            {
+              "id": "shoe",
+              "label": "👟"
+            },
+            {
+              "id": "paper",
+              "label": "📄"
+            }
+          ],
+          "correctAnswerId": "paper",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Papier.",
+            "en": "Correct! The matching word is paper."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Papier.",
+            "en": "Listen for the word paper."
+          }
+        },
+        {
+          "id": "d2wu9",
+          "prompt": {
+            "de": "Wer schneidet?",
+            "en": "Who is cutting?"
           },
           "visual": "",
           "answers": [
             {
-              "id": "dword-17",
-              "label": "🐐"
+              "id": "cut",
+              "label": "✂️"
             },
             {
-              "id": "dword-78",
-              "label": "🍴"
+              "id": "draw",
+              "label": "🖍️"
             }
           ],
-          "correctAnswerId": "dword-78",
+          "correctAnswerId": "cut",
           "success": {
-            "de": "Richtig! Das ist Gabel.",
-            "en": "Correct! That is Fork."
+            "de": "Richtig! Das passende Wort ist schneiden.",
+            "en": "Correct! The matching word is cut."
           },
           "hint": {
-            "de": "Suche das Bild von Gabel.",
-            "en": "Look for the picture of Fork."
+            "de": "Höre auf das Wort schneiden.",
+            "en": "Listen for the word cut."
           }
         },
         {
-          "id": "dwu79",
+          "id": "d2wu10",
           "prompt": {
-            "de": "Tippe auf das Bild für Teller.",
-            "en": "Tap the picture for Plate."
+            "de": "Welches Wort beendet Navis Satz? Bei Regen nehme ich einen ...",
+            "en": "Which word completes Navi's sentence? When it rains, I take an ..."
           },
-          "visual": "",
+          "visual": "🌧️",
+          "showNavi": true,
           "answers": [
             {
-              "id": "dword-79",
-              "label": "🍽️"
+              "id": "hat",
+              "label": "🧢"
             },
             {
-              "id": "dword-18",
-              "label": "🐔"
-            }
-          ],
-          "correctAnswerId": "dword-79",
-          "success": {
-            "de": "Richtig! Das ist Teller.",
-            "en": "Correct! That is Plate."
-          },
-          "hint": {
-            "de": "Suche das Bild von Teller.",
-            "en": "Look for the picture of Plate."
-          }
-        },
-        {
-          "id": "dwu80",
-          "prompt": {
-            "de": "Tippe auf das Bild für Tasse.",
-            "en": "Tap the picture for Cup."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-19",
-              "label": "🦆"
-            },
-            {
-              "id": "dword-80",
-              "label": "☕"
-            }
-          ],
-          "correctAnswerId": "dword-80",
-          "success": {
-            "de": "Richtig! Das ist Tasse.",
-            "en": "Correct! That is Cup."
-          },
-          "hint": {
-            "de": "Suche das Bild von Tasse.",
-            "en": "Look for the picture of Cup."
-          }
-        },
-        {
-          "id": "dwu81",
-          "prompt": {
-            "de": "Tippe auf das Bild für Bett.",
-            "en": "Tap the picture for Bed."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-81",
-              "label": "🛏️"
-            },
-            {
-              "id": "dword-20",
-              "label": "🦉"
-            }
-          ],
-          "correctAnswerId": "dword-81",
-          "success": {
-            "de": "Richtig! Das ist Bett.",
-            "en": "Correct! That is Bed."
-          },
-          "hint": {
-            "de": "Suche das Bild von Bett.",
-            "en": "Look for the picture of Bed."
-          }
-        },
-        {
-          "id": "dwu82",
-          "prompt": {
-            "de": "Tippe auf das Bild für Stuhl.",
-            "en": "Tap the picture for Chair."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-21",
-              "label": "🐟"
-            },
-            {
-              "id": "dword-82",
-              "label": "🪑"
-            }
-          ],
-          "correctAnswerId": "dword-82",
-          "success": {
-            "de": "Richtig! Das ist Stuhl.",
-            "en": "Correct! That is Chair."
-          },
-          "hint": {
-            "de": "Suche das Bild von Stuhl.",
-            "en": "Look for the picture of Chair."
-          }
-        },
-        {
-          "id": "dwu83",
-          "prompt": {
-            "de": "Tippe auf das Bild für Tisch.",
-            "en": "Tap the picture for Table."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-83",
-              "label": "🪑 ━━━ 🪑"
-            },
-            {
-              "id": "dword-22",
-              "label": "🐋"
-            }
-          ],
-          "correctAnswerId": "dword-83",
-          "success": {
-            "de": "Richtig! Das ist Tisch.",
-            "en": "Correct! That is Table."
-          },
-          "hint": {
-            "de": "Suche das Bild von Tisch.",
-            "en": "Look for the picture of Table."
-          }
-        },
-        {
-          "id": "dwu84",
-          "prompt": {
-            "de": "Tippe auf das Bild für Tür.",
-            "en": "Tap the picture for Door."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-23",
-              "label": "🐬"
-            },
-            {
-              "id": "dword-84",
-              "label": "🚪"
-            }
-          ],
-          "correctAnswerId": "dword-84",
-          "success": {
-            "de": "Richtig! Das ist Tür.",
-            "en": "Correct! That is Door."
-          },
-          "hint": {
-            "de": "Suche das Bild von Tür.",
-            "en": "Look for the picture of Door."
-          }
-        },
-        {
-          "id": "dwu85",
-          "prompt": {
-            "de": "Tippe auf das Bild für Fenster.",
-            "en": "Tap the picture for Window."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-85",
-              "label": "🪟"
-            },
-            {
-              "id": "dword-24",
-              "label": "🦈"
-            }
-          ],
-          "correctAnswerId": "dword-85",
-          "success": {
-            "de": "Richtig! Das ist Fenster.",
-            "en": "Correct! That is Window."
-          },
-          "hint": {
-            "de": "Suche das Bild von Fenster.",
-            "en": "Look for the picture of Window."
-          }
-        },
-        {
-          "id": "dwu86",
-          "prompt": {
-            "de": "Tippe auf das Bild für Seife.",
-            "en": "Tap the picture for Soap."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-25",
-              "label": "🐙"
-            },
-            {
-              "id": "dword-86",
-              "label": "🧼"
-            }
-          ],
-          "correctAnswerId": "dword-86",
-          "success": {
-            "de": "Richtig! Das ist Seife.",
-            "en": "Correct! That is Soap."
-          },
-          "hint": {
-            "de": "Suche das Bild von Seife.",
-            "en": "Look for the picture of Soap."
-          }
-        },
-        {
-          "id": "dwu87",
-          "prompt": {
-            "de": "Tippe auf das Bild für Zahnbürste.",
-            "en": "Tap the picture for Toothbrush."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-87",
-              "label": "🪥"
-            },
-            {
-              "id": "dword-26",
-              "label": "🦀"
-            }
-          ],
-          "correctAnswerId": "dword-87",
-          "success": {
-            "de": "Richtig! Das ist Zahnbürste.",
-            "en": "Correct! That is Toothbrush."
-          },
-          "hint": {
-            "de": "Suche das Bild von Zahnbürste.",
-            "en": "Look for the picture of Toothbrush."
-          }
-        },
-        {
-          "id": "dwu88",
-          "prompt": {
-            "de": "Tippe auf das Bild für Kamm.",
-            "en": "Tap the picture for Comb."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-27",
-              "label": "🐝"
-            },
-            {
-              "id": "dword-88",
-              "label": "🪮"
-            }
-          ],
-          "correctAnswerId": "dword-88",
-          "success": {
-            "de": "Richtig! Das ist Kamm.",
-            "en": "Correct! That is Comb."
-          },
-          "hint": {
-            "de": "Suche das Bild von Kamm.",
-            "en": "Look for the picture of Comb."
-          }
-        },
-        {
-          "id": "dwu89",
-          "prompt": {
-            "de": "Tippe auf das Bild für Rucksack.",
-            "en": "Tap the picture for Backpack."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-89",
-              "label": "🎒"
-            },
-            {
-              "id": "dword-28",
-              "label": "🦋"
-            }
-          ],
-          "correctAnswerId": "dword-89",
-          "success": {
-            "de": "Richtig! Das ist Rucksack.",
-            "en": "Correct! That is Backpack."
-          },
-          "hint": {
-            "de": "Suche das Bild von Rucksack.",
-            "en": "Look for the picture of Backpack."
-          }
-        },
-        {
-          "id": "dwu90",
-          "prompt": {
-            "de": "Tippe auf das Bild für Regenschirm.",
-            "en": "Tap the picture for Umbrella."
-          },
-          "visual": "",
-          "answers": [
-            {
-              "id": "dword-29",
-              "label": "🐌"
-            },
-            {
-              "id": "dword-90",
+              "id": "umbrella",
               "label": "☂️"
             }
           ],
-          "correctAnswerId": "dword-90",
+          "correctAnswerId": "umbrella",
           "success": {
-            "de": "Richtig! Das ist Regenschirm.",
-            "en": "Correct! That is Umbrella."
+            "de": "Richtig! Das passende Wort ist Regenschirm.",
+            "en": "Correct! The matching word is umbrella."
           },
           "hint": {
-            "de": "Suche das Bild von Regenschirm.",
-            "en": "Look for the picture of Umbrella."
+            "de": "Höre auf das Wort Regenschirm.",
+            "en": "Listen for the word umbrella."
+          }
+        },
+        {
+          "id": "d2wu11",
+          "prompt": {
+            "de": "Was gehört zur Schule?",
+            "en": "What belongs with school?"
+          },
+          "visual": "🏫",
+          "answers": [
+            {
+              "id": "backpack",
+              "label": "🎒"
+            },
+            {
+              "id": "bed",
+              "label": "🛏️"
+            }
+          ],
+          "correctAnswerId": "backpack",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Rucksack.",
+            "en": "Correct! The matching word is backpack."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Rucksack.",
+            "en": "Listen for the word backpack."
+          }
+        },
+        {
+          "id": "d2wu12",
+          "prompt": {
+            "de": "Wer malt?",
+            "en": "Who is drawing?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "read",
+              "label": "📖"
+            },
+            {
+              "id": "draw",
+              "label": "🖍️"
+            }
+          ],
+          "correctAnswerId": "draw",
+          "success": {
+            "de": "Richtig! Das passende Wort ist malen.",
+            "en": "Correct! The matching word is draw."
+          },
+          "hint": {
+            "de": "Höre auf das Wort malen.",
+            "en": "Listen for the word draw."
+          }
+        },
+        {
+          "id": "d2wu13",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Meine Hände wasche ich mit ...",
+            "en": "Which word completes Navi's sentence? I wash my hands with ..."
+          },
+          "visual": "👐",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "soap",
+              "label": "🧼"
+            },
+            {
+              "id": "pencil",
+              "label": "✏️"
+            }
+          ],
+          "correctAnswerId": "soap",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Seife.",
+            "en": "Correct! The matching word is soap."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Seife.",
+            "en": "Listen for the word soap."
+          }
+        },
+        {
+          "id": "d2wu14",
+          "prompt": {
+            "de": "Was gehört zum Fahrradfahren?",
+            "en": "What belongs with riding a bicycle?"
+          },
+          "visual": "🚲",
+          "answers": [
+            {
+              "id": "cup",
+              "label": "🥤"
+            },
+            {
+              "id": "helmet",
+              "label": "⛑️"
+            }
+          ],
+          "correctAnswerId": "helmet",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Helm.",
+            "en": "Correct! The matching word is helmet."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Helm.",
+            "en": "Listen for the word helmet."
+          }
+        },
+        {
+          "id": "d2wu15",
+          "prompt": {
+            "de": "Wer baut?",
+            "en": "Who is building?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "build",
+              "label": "🧱"
+            },
+            {
+              "id": "paint",
+              "label": "🎨"
+            }
+          ],
+          "correctAnswerId": "build",
+          "success": {
+            "de": "Richtig! Das passende Wort ist bauen.",
+            "en": "Correct! The matching word is build."
+          },
+          "hint": {
+            "de": "Höre auf das Wort bauen.",
+            "en": "Listen for the word build."
+          }
+        },
+        {
+          "id": "d2wu16",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Zum Schreiben brauche ich einen ...",
+            "en": "Which word completes Navi's sentence? To write, I need a ..."
+          },
+          "visual": "📘",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "spoon",
+              "label": "🥄"
+            },
+            {
+              "id": "pencil",
+              "label": "✏️"
+            }
+          ],
+          "correctAnswerId": "pencil",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Stift.",
+            "en": "Correct! The matching word is pencil."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Stift.",
+            "en": "Listen for the word pencil."
+          }
+        },
+        {
+          "id": "d2wu17",
+          "prompt": {
+            "de": "Was gehört zu einem Auto?",
+            "en": "What belongs with a car?"
+          },
+          "visual": "🚗",
+          "answers": [
+            {
+              "id": "road",
+              "label": "🛣️"
+            },
+            {
+              "id": "pillow",
+              "label": "🛌"
+            }
+          ],
+          "correctAnswerId": "road",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Straße.",
+            "en": "Correct! The matching word is road."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Straße.",
+            "en": "Listen for the word road."
+          }
+        },
+        {
+          "id": "d2wu18",
+          "prompt": {
+            "de": "Wer hört genau hin?",
+            "en": "Who is listening carefully?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "look",
+              "label": "👀"
+            },
+            {
+              "id": "listen",
+              "label": "👂"
+            }
+          ],
+          "correctAnswerId": "listen",
+          "success": {
+            "de": "Richtig! Das passende Wort ist zuhören.",
+            "en": "Correct! The matching word is listen."
+          },
+          "hint": {
+            "de": "Höre auf das Wort zuhören.",
+            "en": "Listen for the word listen."
+          }
+        },
+        {
+          "id": "d2wu19",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Wasser trinke ich aus einer ...",
+            "en": "Which word completes Navi's sentence? I drink water from a ..."
+          },
+          "visual": "💧",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "cup",
+              "label": "🥤"
+            },
+            {
+              "id": "shoe",
+              "label": "👟"
+            }
+          ],
+          "correctAnswerId": "cup",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Tasse.",
+            "en": "Correct! The matching word is cup."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Tasse.",
+            "en": "Listen for the word cup."
+          }
+        },
+        {
+          "id": "d2wu20",
+          "prompt": {
+            "de": "Was gehört zu einem Zug?",
+            "en": "What belongs with a train?"
+          },
+          "visual": "🚆",
+          "answers": [
+            {
+              "id": "hat",
+              "label": "🧢"
+            },
+            {
+              "id": "tracks",
+              "label": "🛤️"
+            }
+          ],
+          "correctAnswerId": "tracks",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Schienen.",
+            "en": "Correct! The matching word is tracks."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Schienen.",
+            "en": "Listen for the word tracks."
+          }
+        },
+        {
+          "id": "d2wu21",
+          "prompt": {
+            "de": "Wer schaut genau hin?",
+            "en": "Who is looking carefully?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "look",
+              "label": "👀"
+            },
+            {
+              "id": "listen",
+              "label": "👂"
+            }
+          ],
+          "correctAnswerId": "look",
+          "success": {
+            "de": "Richtig! Das passende Wort ist schauen.",
+            "en": "Correct! The matching word is look."
+          },
+          "hint": {
+            "de": "Höre auf das Wort schauen.",
+            "en": "Listen for the word look."
+          }
+        },
+        {
+          "id": "d2wu22",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Eine Tür öffne ich mit einem ...",
+            "en": "Which word completes Navi's sentence? I open a door with a ..."
+          },
+          "visual": "🚪",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "comb",
+              "label": "🪮"
+            },
+            {
+              "id": "key",
+              "label": "🔑"
+            }
+          ],
+          "correctAnswerId": "key",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Schlüssel.",
+            "en": "Correct! The matching word is key."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Schlüssel.",
+            "en": "Listen for the word key."
+          }
+        },
+        {
+          "id": "d2wu23",
+          "prompt": {
+            "de": "Was gehört zu einem Boot?",
+            "en": "What belongs with a boat?"
+          },
+          "visual": "⛵",
+          "answers": [
+            {
+              "id": "water",
+              "label": "🌊"
+            },
+            {
+              "id": "chair",
+              "label": "🪑"
+            }
+          ],
+          "correctAnswerId": "water",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Wasser.",
+            "en": "Correct! The matching word is water."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Wasser.",
+            "en": "Listen for the word water."
+          }
+        },
+        {
+          "id": "d2wu24",
+          "prompt": {
+            "de": "Wer riecht mit der Nase?",
+            "en": "Who is smelling?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "taste",
+              "label": "👅"
+            },
+            {
+              "id": "smell",
+              "label": "👃"
+            }
+          ],
+          "correctAnswerId": "smell",
+          "success": {
+            "de": "Richtig! Das passende Wort ist riechen.",
+            "en": "Correct! The matching word is smell."
+          },
+          "hint": {
+            "de": "Höre auf das Wort riechen.",
+            "en": "Listen for the word smell."
+          }
+        },
+        {
+          "id": "d2wu25",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Auf den Kopf setze ich einen ...",
+            "en": "Which word completes Navi's sentence? On my head, I wear a ..."
+          },
+          "visual": "🙂",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "hat",
+              "label": "🧢"
+            },
+            {
+              "id": "shoe",
+              "label": "👟"
+            }
+          ],
+          "correctAnswerId": "hat",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Hut.",
+            "en": "Correct! The matching word is hat."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Hut.",
+            "en": "Listen for the word hat."
+          }
+        },
+        {
+          "id": "d2wu26",
+          "prompt": {
+            "de": "Was gehört zu einem Flugzeug?",
+            "en": "What belongs with an airplane?"
+          },
+          "visual": "✈️",
+          "answers": [
+            {
+              "id": "plate",
+              "label": "🍽️"
+            },
+            {
+              "id": "sky",
+              "label": "☁️"
+            }
+          ],
+          "correctAnswerId": "sky",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Himmel.",
+            "en": "Correct! The matching word is sky."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Himmel.",
+            "en": "Listen for the word sky."
+          }
+        },
+        {
+          "id": "d2wu27",
+          "prompt": {
+            "de": "Wer schmeckt mit der Zunge?",
+            "en": "Who is tasting?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "taste",
+              "label": "👅"
+            },
+            {
+              "id": "smell",
+              "label": "👃"
+            }
+          ],
+          "correctAnswerId": "taste",
+          "success": {
+            "de": "Richtig! Das passende Wort ist schmecken.",
+            "en": "Correct! The matching word is taste."
+          },
+          "hint": {
+            "de": "Höre auf das Wort schmecken.",
+            "en": "Listen for the word taste."
+          }
+        },
+        {
+          "id": "d2wu28",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? An den Fuß ziehe ich einen ...",
+            "en": "Which word completes Navi's sentence? On my foot, I wear a ..."
+          },
+          "visual": "🦶",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "hat",
+              "label": "🧢"
+            },
+            {
+              "id": "shoe",
+              "label": "👟"
+            }
+          ],
+          "correctAnswerId": "shoe",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Schuh.",
+            "en": "Correct! The matching word is shoe."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Schuh.",
+            "en": "Listen for the word shoe."
+          }
+        },
+        {
+          "id": "d2wu29",
+          "prompt": {
+            "de": "Was gehört zu einer Blume?",
+            "en": "What belongs with a flower?"
+          },
+          "visual": "🌸",
+          "answers": [
+            {
+              "id": "water",
+              "label": "💧"
+            },
+            {
+              "id": "key",
+              "label": "🔑"
+            }
+          ],
+          "correctAnswerId": "water",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Wasser.",
+            "en": "Correct! The matching word is water."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Wasser.",
+            "en": "Listen for the word water."
+          }
+        },
+        {
+          "id": "d2wu30",
+          "prompt": {
+            "de": "Wer feiert?",
+            "en": "Who is celebrating?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "rest",
+              "label": "😴"
+            },
+            {
+              "id": "celebrate",
+              "label": "🥳"
+            }
+          ],
+          "correctAnswerId": "celebrate",
+          "success": {
+            "de": "Richtig! Das passende Wort ist feiern.",
+            "en": "Correct! The matching word is celebrate."
+          },
+          "hint": {
+            "de": "Höre auf das Wort feiern.",
+            "en": "Listen for the word celebrate."
+          }
+        },
+        {
+          "id": "d2wu31",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Meine Haare ordne ich mit einem ...",
+            "en": "Which word completes Navi's sentence? I tidy my hair with a ..."
+          },
+          "visual": "💇",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "comb",
+              "label": "🪮"
+            },
+            {
+              "id": "fork",
+              "label": "🍴"
+            }
+          ],
+          "correctAnswerId": "comb",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Kamm.",
+            "en": "Correct! The matching word is comb."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Kamm.",
+            "en": "Listen for the word comb."
+          }
+        },
+        {
+          "id": "d2wu32",
+          "prompt": {
+            "de": "Was gehört zu Brot?",
+            "en": "What belongs with bread?"
+          },
+          "visual": "🍞",
+          "answers": [
+            {
+              "id": "comb",
+              "label": "🪮"
+            },
+            {
+              "id": "cheese",
+              "label": "🧀"
+            }
+          ],
+          "correctAnswerId": "cheese",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Käse.",
+            "en": "Correct! The matching word is cheese."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Käse.",
+            "en": "Listen for the word cheese."
+          }
+        },
+        {
+          "id": "d2wu33",
+          "prompt": {
+            "de": "Wer rennt?",
+            "en": "Who is running?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "run",
+              "label": "🏃"
+            },
+            {
+              "id": "sit",
+              "label": "🪑"
+            }
+          ],
+          "correctAnswerId": "run",
+          "success": {
+            "de": "Richtig! Das passende Wort ist rennen.",
+            "en": "Correct! The matching word is run."
+          },
+          "hint": {
+            "de": "Höre auf das Wort rennen.",
+            "en": "Listen for the word run."
+          }
+        },
+        {
+          "id": "d2wu34",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Mein Pausenbrot trage ich im ...",
+            "en": "Which word completes Navi's sentence? I carry my lunch in a ..."
+          },
+          "visual": "🍞",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "umbrella",
+              "label": "☂️"
+            },
+            {
+              "id": "backpack",
+              "label": "🎒"
+            }
+          ],
+          "correctAnswerId": "backpack",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Rucksack.",
+            "en": "Correct! The matching word is backpack."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Rucksack.",
+            "en": "Listen for the word backpack."
+          }
+        },
+        {
+          "id": "d2wu35",
+          "prompt": {
+            "de": "Was gehört zu einer Tasse?",
+            "en": "What belongs in a cup?"
+          },
+          "visual": "🥤",
+          "answers": [
+            {
+              "id": "drink",
+              "label": "💧"
+            },
+            {
+              "id": "shoe",
+              "label": "👟"
+            }
+          ],
+          "correctAnswerId": "drink",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Getränk.",
+            "en": "Correct! The matching word is drink."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Getränk.",
+            "en": "Listen for the word drink."
+          }
+        },
+        {
+          "id": "d2wu36",
+          "prompt": {
+            "de": "Wer schläft?",
+            "en": "Who is sleeping?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "awake",
+              "label": "👀"
+            },
+            {
+              "id": "sleep",
+              "label": "😴"
+            }
+          ],
+          "correctAnswerId": "sleep",
+          "success": {
+            "de": "Richtig! Das passende Wort ist schlafen.",
+            "en": "Correct! The matching word is sleep."
+          },
+          "hint": {
+            "de": "Höre auf das Wort schlafen.",
+            "en": "Listen for the word sleep."
+          }
+        },
+        {
+          "id": "d2wu37",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Zum Sitzen brauche ich einen ...",
+            "en": "Which word completes Navi's sentence? To sit down, I need a ..."
+          },
+          "visual": "🧍",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "chair",
+              "label": "🪑"
+            },
+            {
+              "id": "bed",
+              "label": "🛏️"
+            }
+          ],
+          "correctAnswerId": "chair",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Stuhl.",
+            "en": "Correct! The matching word is chair."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Stuhl.",
+            "en": "Listen for the word chair."
+          }
+        },
+        {
+          "id": "d2wu38",
+          "prompt": {
+            "de": "Was gehört zum Händewaschen?",
+            "en": "What belongs with washing hands?"
+          },
+          "visual": "👐",
+          "answers": [
+            {
+              "id": "pencil",
+              "label": "✏️"
+            },
+            {
+              "id": "soap",
+              "label": "🧼"
+            }
+          ],
+          "correctAnswerId": "soap",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Seife.",
+            "en": "Correct! The matching word is soap."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Seife.",
+            "en": "Listen for the word soap."
+          }
+        },
+        {
+          "id": "d2wu39",
+          "prompt": {
+            "de": "Wer isst?",
+            "en": "Who is eating?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "eat",
+              "label": "😋"
+            },
+            {
+              "id": "drink",
+              "label": "🥤"
+            }
+          ],
+          "correctAnswerId": "eat",
+          "success": {
+            "de": "Richtig! Das passende Wort ist essen.",
+            "en": "Correct! The matching word is eat."
+          },
+          "hint": {
+            "de": "Höre auf das Wort essen.",
+            "en": "Listen for the word eat."
+          }
+        },
+        {
+          "id": "d2wu40",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Das Essen liegt auf dem ...",
+            "en": "Which word completes Navi's sentence? The food is on the ..."
+          },
+          "visual": "🍝",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "window",
+              "label": "🪟"
+            },
+            {
+              "id": "plate",
+              "label": "🍽️"
+            }
+          ],
+          "correctAnswerId": "plate",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Teller.",
+            "en": "Correct! The matching word is plate."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Teller.",
+            "en": "Listen for the word plate."
+          }
+        },
+        {
+          "id": "d2wu41",
+          "prompt": {
+            "de": "Was gehört zu Haaren?",
+            "en": "What belongs with hair?"
+          },
+          "visual": "💇",
+          "answers": [
+            {
+              "id": "comb",
+              "label": "🪮"
+            },
+            {
+              "id": "fork",
+              "label": "🍴"
+            }
+          ],
+          "correctAnswerId": "comb",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Kamm.",
+            "en": "Correct! The matching word is comb."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Kamm.",
+            "en": "Listen for the word comb."
+          }
+        },
+        {
+          "id": "d2wu42",
+          "prompt": {
+            "de": "Wer trinkt?",
+            "en": "Who is drinking?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "eat",
+              "label": "🍽️"
+            },
+            {
+              "id": "drink",
+              "label": "🥤"
+            }
+          ],
+          "correctAnswerId": "drink",
+          "success": {
+            "de": "Richtig! Das passende Wort ist trinken.",
+            "en": "Correct! The matching word is drink."
+          },
+          "hint": {
+            "de": "Höre auf das Wort trinken.",
+            "en": "Listen for the word drink."
+          }
+        },
+        {
+          "id": "d2wu43",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Durch das ... kommt Licht ins Zimmer.",
+            "en": "Which word completes Navi's sentence? Light comes into the room through the ..."
+          },
+          "visual": "☀️",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "window",
+              "label": "🪟"
+            },
+            {
+              "id": "door",
+              "label": "🚪"
+            }
+          ],
+          "correctAnswerId": "window",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Fenster.",
+            "en": "Correct! The matching word is window."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Fenster.",
+            "en": "Listen for the word window."
+          }
+        },
+        {
+          "id": "d2wu44",
+          "prompt": {
+            "de": "Was gehört zu einer Uhr?",
+            "en": "What belongs with a clock?"
+          },
+          "visual": "🕐",
+          "answers": [
+            {
+              "id": "umbrella",
+              "label": "☂️"
+            },
+            {
+              "id": "time",
+              "label": "⏰"
+            }
+          ],
+          "correctAnswerId": "time",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Zeit.",
+            "en": "Correct! The matching word is time."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Zeit.",
+            "en": "Listen for the word time."
+          }
+        },
+        {
+          "id": "d2wu45",
+          "prompt": {
+            "de": "Wer liest?",
+            "en": "Who is reading?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "read",
+              "label": "📖"
+            },
+            {
+              "id": "write",
+              "label": "✍️"
+            }
+          ],
+          "correctAnswerId": "read",
+          "success": {
+            "de": "Richtig! Das passende Wort ist lesen.",
+            "en": "Correct! The matching word is read."
+          },
+          "hint": {
+            "de": "Höre auf das Wort lesen.",
+            "en": "Listen for the word read."
+          }
+        },
+        {
+          "id": "d2wu46",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Auf der Straße fährt ein ...",
+            "en": "Which word completes Navi's sentence? A ... drives on the road."
+          },
+          "visual": "🛣️",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "boat",
+              "label": "⛵"
+            },
+            {
+              "id": "car",
+              "label": "🚗"
+            }
+          ],
+          "correctAnswerId": "car",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Auto.",
+            "en": "Correct! The matching word is car."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Auto.",
+            "en": "Listen for the word car."
+          }
+        },
+        {
+          "id": "d2wu47",
+          "prompt": {
+            "de": "Was gehört zu einem Haus?",
+            "en": "What belongs with a house?"
+          },
+          "visual": "🏠",
+          "answers": [
+            {
+              "id": "door",
+              "label": "🚪"
+            },
+            {
+              "id": "spoon",
+              "label": "🥄"
+            }
+          ],
+          "correctAnswerId": "door",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Tür.",
+            "en": "Correct! The matching word is door."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Tür.",
+            "en": "Listen for the word door."
+          }
+        },
+        {
+          "id": "d2wu48",
+          "prompt": {
+            "de": "Wer schreibt?",
+            "en": "Who is writing?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "read",
+              "label": "📖"
+            },
+            {
+              "id": "write",
+              "label": "✍️"
+            }
+          ],
+          "correctAnswerId": "write",
+          "success": {
+            "de": "Richtig! Das passende Wort ist schreiben.",
+            "en": "Correct! The matching word is write."
+          },
+          "hint": {
+            "de": "Höre auf das Wort schreiben.",
+            "en": "Listen for the word write."
+          }
+        },
+        {
+          "id": "d2wu49",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Auf Schienen fährt der ...",
+            "en": "Which word completes Navi's sentence? The ... travels on rails."
+          },
+          "visual": "🛤️",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "train",
+              "label": "🚆"
+            },
+            {
+              "id": "airplane",
+              "label": "✈️"
+            }
+          ],
+          "correctAnswerId": "train",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Zug.",
+            "en": "Correct! The matching word is train."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Zug.",
+            "en": "Listen for the word train."
+          }
+        },
+        {
+          "id": "d2wu50",
+          "prompt": {
+            "de": "Was gehört zu einem Fenster?",
+            "en": "What belongs with a window?"
+          },
+          "visual": "🪟",
+          "answers": [
+            {
+              "id": "sock",
+              "label": "🧦"
+            },
+            {
+              "id": "light",
+              "label": "☀️"
+            }
+          ],
+          "correctAnswerId": "light",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Licht.",
+            "en": "Correct! The matching word is light."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Licht.",
+            "en": "Listen for the word light."
+          }
+        },
+        {
+          "id": "d2wu51",
+          "prompt": {
+            "de": "Wer singt?",
+            "en": "Who is singing?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sing",
+              "label": "🎤"
+            },
+            {
+              "id": "listen",
+              "label": "🎧"
+            }
+          ],
+          "correctAnswerId": "sing",
+          "success": {
+            "de": "Richtig! Das passende Wort ist singen.",
+            "en": "Correct! The matching word is sing."
+          },
+          "hint": {
+            "de": "Höre auf das Wort singen.",
+            "en": "Listen for the word sing."
+          }
+        },
+        {
+          "id": "d2wu52",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Über das Wasser fährt ein ...",
+            "en": "Which word completes Navi's sentence? A ... travels across the water."
+          },
+          "visual": "🌊",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "bus",
+              "label": "🚌"
+            },
+            {
+              "id": "boat",
+              "label": "⛵"
+            }
+          ],
+          "correctAnswerId": "boat",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Boot.",
+            "en": "Correct! The matching word is boat."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Boot.",
+            "en": "Listen for the word boat."
+          }
+        },
+        {
+          "id": "d2wu53",
+          "prompt": {
+            "de": "Was gehört zu einer Socke?",
+            "en": "What belongs with a sock?"
+          },
+          "visual": "🧦",
+          "answers": [
+            {
+              "id": "shoe",
+              "label": "👟"
+            },
+            {
+              "id": "hat",
+              "label": "🧢"
+            }
+          ],
+          "correctAnswerId": "shoe",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Schuh.",
+            "en": "Correct! The matching word is shoe."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Schuh.",
+            "en": "Listen for the word shoe."
+          }
+        },
+        {
+          "id": "d2wu54",
+          "prompt": {
+            "de": "Wer tanzt?",
+            "en": "Who is dancing?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "stand",
+              "label": "🧍"
+            },
+            {
+              "id": "dance",
+              "label": "💃"
+            }
+          ],
+          "correctAnswerId": "dance",
+          "success": {
+            "de": "Richtig! Das passende Wort ist tanzen.",
+            "en": "Correct! The matching word is dance."
+          },
+          "hint": {
+            "de": "Höre auf das Wort tanzen.",
+            "en": "Listen for the word dance."
+          }
+        },
+        {
+          "id": "d2wu55",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Durch den Himmel fliegt ein ...",
+            "en": "Which word completes Navi's sentence? An ... flies through the sky."
+          },
+          "visual": "☁️",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "airplane",
+              "label": "✈️"
+            },
+            {
+              "id": "bicycle",
+              "label": "🚲"
+            }
+          ],
+          "correctAnswerId": "airplane",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Flugzeug.",
+            "en": "Correct! The matching word is airplane."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Flugzeug.",
+            "en": "Listen for the word airplane."
+          }
+        },
+        {
+          "id": "d2wu56",
+          "prompt": {
+            "de": "Was gehört zu einer warmen Jacke?",
+            "en": "What belongs with a warm jacket?"
+          },
+          "visual": "🧥",
+          "answers": [
+            {
+              "id": "sun",
+              "label": "☀️"
+            },
+            {
+              "id": "cold",
+              "label": "❄️"
+            }
+          ],
+          "correctAnswerId": "cold",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Kälte.",
+            "en": "Correct! The matching word is cold."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Kälte.",
+            "en": "Listen for the word cold."
+          }
+        },
+        {
+          "id": "d2wu57",
+          "prompt": {
+            "de": "Wer schwimmt?",
+            "en": "Who is swimming?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "swim",
+              "label": "🏊"
+            },
+            {
+              "id": "walk",
+              "label": "🚶"
+            }
+          ],
+          "correctAnswerId": "swim",
+          "success": {
+            "de": "Richtig! Das passende Wort ist schwimmen.",
+            "en": "Correct! The matching word is swim."
+          },
+          "hint": {
+            "de": "Höre auf das Wort schwimmen.",
+            "en": "Listen for the word swim."
+          }
+        },
+        {
+          "id": "d2wu58",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Mit Pedalen fahre ich auf dem ...",
+            "en": "Which word completes Navi's sentence? I use pedals to ride a ..."
+          },
+          "visual": "🦵",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "bed",
+              "label": "🛏️"
+            },
+            {
+              "id": "bicycle",
+              "label": "🚲"
+            }
+          ],
+          "correctAnswerId": "bicycle",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Fahrrad.",
+            "en": "Correct! The matching word is bicycle."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Fahrrad.",
+            "en": "Listen for the word bicycle."
+          }
+        },
+        {
+          "id": "d2wu59",
+          "prompt": {
+            "de": "Was gehört zu einem Teller?",
+            "en": "What belongs on a plate?"
+          },
+          "visual": "🍽️",
+          "answers": [
+            {
+              "id": "food",
+              "label": "🍝"
+            },
+            {
+              "id": "key",
+              "label": "🔑"
+            }
+          ],
+          "correctAnswerId": "food",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Essen.",
+            "en": "Correct! The matching word is food."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Essen.",
+            "en": "Listen for the word food."
+          }
+        },
+        {
+          "id": "d2wu60",
+          "prompt": {
+            "de": "Wer geht zu Fuß?",
+            "en": "Who is walking?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "cycle",
+              "label": "🚴"
+            },
+            {
+              "id": "walk",
+              "label": "🚶"
+            }
+          ],
+          "correctAnswerId": "walk",
+          "success": {
+            "de": "Richtig! Das passende Wort ist gehen.",
+            "en": "Correct! The matching word is walk."
+          },
+          "hint": {
+            "de": "Höre auf das Wort gehen.",
+            "en": "Listen for the word walk."
+          }
+        },
+        {
+          "id": "d2wu61",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Wenn es kalt ist, trage ich eine ...",
+            "en": "Which word completes Navi's sentence? When it is cold, I wear a ..."
+          },
+          "visual": "❄️",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "jacket",
+              "label": "🧥"
+            },
+            {
+              "id": "dress",
+              "label": "👗"
+            }
+          ],
+          "correctAnswerId": "jacket",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Jacke.",
+            "en": "Correct! The matching word is jacket."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Jacke.",
+            "en": "Listen for the word jacket."
+          }
+        },
+        {
+          "id": "d2wu62",
+          "prompt": {
+            "de": "Was gehört zu den Zähnen?",
+            "en": "What belongs with teeth?"
+          },
+          "visual": "🦷",
+          "answers": [
+            {
+              "id": "sock",
+              "label": "🧦"
+            },
+            {
+              "id": "toothbrush",
+              "label": "🪥"
+            }
+          ],
+          "correctAnswerId": "toothbrush",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Zahnbürste.",
+            "en": "Correct! The matching word is toothbrush."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Zahnbürste.",
+            "en": "Listen for the word toothbrush."
+          }
+        },
+        {
+          "id": "d2wu63",
+          "prompt": {
+            "de": "Wer fährt Fahrrad?",
+            "en": "Who is cycling?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "cycle",
+              "label": "🚴"
+            },
+            {
+              "id": "drive",
+              "label": "🚗"
+            }
+          ],
+          "correctAnswerId": "cycle",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Rad fahren.",
+            "en": "Correct! The matching word is cycle."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Rad fahren.",
+            "en": "Listen for the word cycle."
+          }
+        },
+        {
+          "id": "d2wu64",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Bevor ich Schuhe anziehe, brauche ich ...",
+            "en": "Which word completes Navi's sentence? Before I put on shoes, I need ..."
+          },
+          "visual": "👟",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "gloves",
+              "label": "🧤"
+            },
+            {
+              "id": "socks",
+              "label": "🧦"
+            }
+          ],
+          "correctAnswerId": "socks",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Socken.",
+            "en": "Correct! The matching word is socks."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Socken.",
+            "en": "Listen for the word socks."
+          }
+        },
+        {
+          "id": "d2wu65",
+          "prompt": {
+            "de": "Was gehört zum Fuß?",
+            "en": "What belongs on a foot?"
+          },
+          "visual": "🦶",
+          "answers": [
+            {
+              "id": "shoe",
+              "label": "👟"
+            },
+            {
+              "id": "hat",
+              "label": "🧢"
+            }
+          ],
+          "correctAnswerId": "shoe",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Schuh.",
+            "en": "Correct! The matching word is shoe."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Schuh.",
+            "en": "Listen for the word shoe."
+          }
+        },
+        {
+          "id": "d2wu66",
+          "prompt": {
+            "de": "Wer klatscht?",
+            "en": "Who is clapping?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "wave",
+              "label": "👋"
+            },
+            {
+              "id": "clap",
+              "label": "👏"
+            }
+          ],
+          "correctAnswerId": "clap",
+          "success": {
+            "de": "Richtig! Das passende Wort ist klatschen.",
+            "en": "Correct! The matching word is clap."
+          },
+          "hint": {
+            "de": "Höre auf das Wort klatschen.",
+            "en": "Listen for the word clap."
+          }
+        },
+        {
+          "id": "d2wu67",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Das weiße Getränk im Glas ist ...",
+            "en": "Which word completes Navi's sentence? The white drink in the glass is ..."
+          },
+          "visual": "🥛",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "milk",
+              "label": "🥛"
+            },
+            {
+              "id": "bread",
+              "label": "🍞"
+            }
+          ],
+          "correctAnswerId": "milk",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Milch.",
+            "en": "Correct! The matching word is milk."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Milch.",
+            "en": "Listen for the word milk."
+          }
+        },
+        {
+          "id": "d2wu68",
+          "prompt": {
+            "de": "Was gehört zur Hand?",
+            "en": "What belongs on a hand?"
+          },
+          "visual": "✋",
+          "answers": [
+            {
+              "id": "shoe",
+              "label": "👟"
+            },
+            {
+              "id": "glove",
+              "label": "🧤"
+            }
+          ],
+          "correctAnswerId": "glove",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Handschuh.",
+            "en": "Correct! The matching word is glove."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Handschuh.",
+            "en": "Listen for the word glove."
+          }
+        },
+        {
+          "id": "d2wu69",
+          "prompt": {
+            "de": "Wer winkt?",
+            "en": "Who is waving?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "wave",
+              "label": "👋"
+            },
+            {
+              "id": "point",
+              "label": "👆"
+            }
+          ],
+          "correctAnswerId": "wave",
+          "success": {
+            "de": "Richtig! Das passende Wort ist winken.",
+            "en": "Correct! The matching word is wave."
+          },
+          "hint": {
+            "de": "Höre auf das Wort winken.",
+            "en": "Listen for the word wave."
+          }
+        },
+        {
+          "id": "d2wu70",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? In der Bäckerei kaufe ich ...",
+            "en": "Which word completes Navi's sentence? At the bakery, I buy ..."
+          },
+          "visual": "🥐",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "car",
+              "label": "🚗"
+            },
+            {
+              "id": "bread",
+              "label": "🍞"
+            }
+          ],
+          "correctAnswerId": "bread",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Brot.",
+            "en": "Correct! The matching word is bread."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Brot.",
+            "en": "Listen for the word bread."
+          }
+        },
+        {
+          "id": "d2wu71",
+          "prompt": {
+            "de": "Was gehört zum Kopf?",
+            "en": "What belongs on a head?"
+          },
+          "visual": "🙂",
+          "answers": [
+            {
+              "id": "hat",
+              "label": "🧢"
+            },
+            {
+              "id": "sock",
+              "label": "🧦"
+            }
+          ],
+          "correctAnswerId": "hat",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Hut.",
+            "en": "Correct! The matching word is hat."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Hut.",
+            "en": "Listen for the word hat."
+          }
+        },
+        {
+          "id": "d2wu72",
+          "prompt": {
+            "de": "Wer zeigt mit dem Finger?",
+            "en": "Who is pointing?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "clap",
+              "label": "👏"
+            },
+            {
+              "id": "point",
+              "label": "👆"
+            }
+          ],
+          "correctAnswerId": "point",
+          "success": {
+            "de": "Richtig! Das passende Wort ist zeigen.",
+            "en": "Correct! The matching word is point."
+          },
+          "hint": {
+            "de": "Höre auf das Wort zeigen.",
+            "en": "Listen for the word point."
+          }
+        },
+        {
+          "id": "d2wu73",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Zum bunten Malen nehme ich ...",
+            "en": "Which word completes Navi's sentence? For colorful drawing, I use ..."
+          },
+          "visual": "🎨",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "crayons",
+              "label": "🖍️"
+            },
+            {
+              "id": "toothbrush",
+              "label": "🪥"
+            }
+          ],
+          "correctAnswerId": "crayons",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Buntstifte.",
+            "en": "Correct! The matching word is crayons."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Buntstifte.",
+            "en": "Listen for the word crayons."
+          }
+        },
+        {
+          "id": "d2wu74",
+          "prompt": {
+            "de": "Was gehört zu Regen?",
+            "en": "What belongs with rain?"
+          },
+          "visual": "🌧️",
+          "answers": [
+            {
+              "id": "book",
+              "label": "📘"
+            },
+            {
+              "id": "umbrella",
+              "label": "☂️"
+            }
+          ],
+          "correctAnswerId": "umbrella",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Regenschirm.",
+            "en": "Correct! The matching word is umbrella."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Regenschirm.",
+            "en": "Listen for the word umbrella."
+          }
+        },
+        {
+          "id": "d2wu75",
+          "prompt": {
+            "de": "Wer lacht?",
+            "en": "Who is laughing?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "laugh",
+              "label": "😂"
+            },
+            {
+              "id": "cry",
+              "label": "😭"
+            }
+          ],
+          "correctAnswerId": "laugh",
+          "success": {
+            "de": "Richtig! Das passende Wort ist lachen.",
+            "en": "Correct! The matching word is laugh."
+          },
+          "hint": {
+            "de": "Höre auf das Wort lachen.",
+            "en": "Listen for the word laugh."
+          }
+        },
+        {
+          "id": "d2wu76",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Mit diesem Instrument mache ich Bum-bum: die ...",
+            "en": "Which word completes Navi's sentence? I make a boom-boom sound with the ..."
+          },
+          "visual": "🎵",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "clock",
+              "label": "🕐"
+            },
+            {
+              "id": "drum",
+              "label": "🥁"
+            }
+          ],
+          "correctAnswerId": "drum",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Trommel.",
+            "en": "Correct! The matching word is drum."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Trommel.",
+            "en": "Listen for the word drum."
+          }
+        },
+        {
+          "id": "d2wu77",
+          "prompt": {
+            "de": "Was gehört zu hellem Sonnenschein?",
+            "en": "What belongs with bright sunshine?"
+          },
+          "visual": "☀️",
+          "answers": [
+            {
+              "id": "sunglasses",
+              "label": "🕶️"
+            },
+            {
+              "id": "fork",
+              "label": "🍴"
+            }
+          ],
+          "correctAnswerId": "sunglasses",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Sonnenbrille.",
+            "en": "Correct! The matching word is sunglasses."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Sonnenbrille.",
+            "en": "Listen for the word sunglasses."
+          }
+        },
+        {
+          "id": "d2wu78",
+          "prompt": {
+            "de": "Wer weint?",
+            "en": "Who is crying?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "smile",
+              "label": "🙂"
+            },
+            {
+              "id": "cry",
+              "label": "😭"
+            }
+          ],
+          "correctAnswerId": "cry",
+          "success": {
+            "de": "Richtig! Das passende Wort ist weinen.",
+            "en": "Correct! The matching word is cry."
+          },
+          "hint": {
+            "de": "Höre auf das Wort weinen.",
+            "en": "Listen for the word cry."
+          }
+        },
+        {
+          "id": "d2wu79",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Die ... zeigt mir die Zeit.",
+            "en": "Which word completes Navi's sentence? The ... tells me the time."
+          },
+          "visual": "⏰",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "clock",
+              "label": "🕐"
+            },
+            {
+              "id": "key",
+              "label": "🔑"
+            }
+          ],
+          "correctAnswerId": "clock",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Uhr.",
+            "en": "Correct! The matching word is clock."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Uhr.",
+            "en": "Listen for the word clock."
+          }
+        },
+        {
+          "id": "d2wu80",
+          "prompt": {
+            "de": "Was gehört zu einem Schloss?",
+            "en": "What belongs with a lock?"
+          },
+          "visual": "🔒",
+          "answers": [
+            {
+              "id": "comb",
+              "label": "🪮"
+            },
+            {
+              "id": "key",
+              "label": "🔑"
+            }
+          ],
+          "correctAnswerId": "key",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Schlüssel.",
+            "en": "Correct! The matching word is key."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Schlüssel.",
+            "en": "Listen for the word key."
+          }
+        },
+        {
+          "id": "d2wu81",
+          "prompt": {
+            "de": "Wer springt?",
+            "en": "Who is jumping?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "jump",
+              "label": "🤾"
+            },
+            {
+              "id": "sit",
+              "label": "🪑"
+            }
+          ],
+          "correctAnswerId": "jump",
+          "success": {
+            "de": "Richtig! Das passende Wort ist springen.",
+            "en": "Correct! The matching word is jump."
+          },
+          "hint": {
+            "de": "Höre auf das Wort springen.",
+            "en": "Listen for the word jump."
+          }
+        },
+        {
+          "id": "d2wu82",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Nudeln esse ich mit einer ...",
+            "en": "Which word completes Navi's sentence? I eat noodles with a ..."
+          },
+          "visual": "🍝",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "comb",
+              "label": "🪮"
+            },
+            {
+              "id": "fork",
+              "label": "🍴"
+            }
+          ],
+          "correctAnswerId": "fork",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Gabel.",
+            "en": "Correct! The matching word is fork."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Gabel.",
+            "en": "Listen for the word fork."
+          }
+        },
+        {
+          "id": "d2wu83",
+          "prompt": {
+            "de": "Was gehört zu einem Brief?",
+            "en": "What belongs with a letter?"
+          },
+          "visual": "✉️",
+          "answers": [
+            {
+              "id": "mailbox",
+              "label": "📮"
+            },
+            {
+              "id": "shoe",
+              "label": "👟"
+            }
+          ],
+          "correctAnswerId": "mailbox",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Briefkasten.",
+            "en": "Correct! The matching word is mailbox."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Briefkasten.",
+            "en": "Listen for the word mailbox."
+          }
+        },
+        {
+          "id": "d2wu84",
+          "prompt": {
+            "de": "Wer wäscht die Hände?",
+            "en": "Who is washing their hands?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "brush",
+              "label": "🪥"
+            },
+            {
+              "id": "wash",
+              "label": "🧼"
+            }
+          ],
+          "correctAnswerId": "wash",
+          "success": {
+            "de": "Richtig! Das passende Wort ist waschen.",
+            "en": "Correct! The matching word is wash."
+          },
+          "hint": {
+            "de": "Höre auf das Wort waschen.",
+            "en": "Listen for the word wash."
+          }
+        },
+        {
+          "id": "d2wu85",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Beim Essen steht der Teller auf dem ...",
+            "en": "Which word completes Navi's sentence? At mealtime, the plate sits on the ..."
+          },
+          "visual": "🍽️",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "table",
+              "label": "🪑 ━━━ 🪑"
+            },
+            {
+              "id": "bed",
+              "label": "🛏️"
+            }
+          ],
+          "correctAnswerId": "table",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Tisch.",
+            "en": "Correct! The matching word is table."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Tisch.",
+            "en": "Listen for the word table."
+          }
+        },
+        {
+          "id": "d2wu86",
+          "prompt": {
+            "de": "Was gehört zu einer Suppe?",
+            "en": "What belongs with soup?"
+          },
+          "visual": "🍲",
+          "answers": [
+            {
+              "id": "pencil",
+              "label": "✏️"
+            },
+            {
+              "id": "spoon",
+              "label": "🥄"
+            }
+          ],
+          "correctAnswerId": "spoon",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Löffel.",
+            "en": "Correct! The matching word is spoon."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Löffel.",
+            "en": "Listen for the word spoon."
+          }
+        },
+        {
+          "id": "d2wu87",
+          "prompt": {
+            "de": "Wer putzt die Zähne?",
+            "en": "Who is brushing their teeth?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "brush",
+              "label": "🪥"
+            },
+            {
+              "id": "comb",
+              "label": "🪮"
+            }
+          ],
+          "correctAnswerId": "brush",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Zähne putzen.",
+            "en": "Correct! The matching word is brush teeth."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Zähne putzen.",
+            "en": "Listen for the word brush teeth."
+          }
+        },
+        {
+          "id": "d2wu88",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Durch die ... gehe ich in das Zimmer.",
+            "en": "Which word completes Navi's sentence? I walk into the room through the ..."
+          },
+          "visual": "🏠",
+          "showNavi": true,
+          "answers": [
+            {
+              "id": "window",
+              "label": "🪟"
+            },
+            {
+              "id": "door",
+              "label": "🚪"
+            }
+          ],
+          "correctAnswerId": "door",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Tür.",
+            "en": "Correct! The matching word is door."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Tür.",
+            "en": "Listen for the word door."
+          }
+        },
+        {
+          "id": "d2wu89",
+          "prompt": {
+            "de": "Was gehört zu Spaghetti?",
+            "en": "What belongs with spaghetti?"
+          },
+          "visual": "🍝",
+          "answers": [
+            {
+              "id": "fork",
+              "label": "🍴"
+            },
+            {
+              "id": "comb",
+              "label": "🪮"
+            }
+          ],
+          "correctAnswerId": "fork",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Gabel.",
+            "en": "Correct! The matching word is fork."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Gabel.",
+            "en": "Listen for the word fork."
+          }
+        },
+        {
+          "id": "d2wu90",
+          "prompt": {
+            "de": "Wer kämmt die Haare?",
+            "en": "Who is combing their hair?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "brush",
+              "label": "🪥"
+            },
+            {
+              "id": "comb",
+              "label": "🪮"
+            }
+          ],
+          "correctAnswerId": "comb",
+          "success": {
+            "de": "Richtig! Das passende Wort ist Haare kämmen.",
+            "en": "Correct! The matching word is comb hair."
+          },
+          "hint": {
+            "de": "Höre auf das Wort Haare kämmen.",
+            "en": "Listen for the word comb hair."
           }
         }
       ],
       "adventurer": [
         {
-          "id": "wu1",
+          "id": "a2wu1",
           "prompt": {
-            "de": "Welches Wort passt zu dem Tier, das bellt?",
-            "en": "Which word matches the animal that barks?"
+            "de": "Welches Wort beendet Navis Satz? Vom Baum pflücke ich einen roten ...",
+            "en": "Which word completes Navi's sentence? From the tree I pick a red ..."
           },
-          "visual": "🐶",
+          "visual": "",
           "answers": [
             {
-              "id": "dog",
-              "label": {
-                "de": "Hund",
-                "en": "Dog"
-              }
-            },
-            {
-              "id": "chicken",
-              "label": {
-                "de": "Huhn",
-                "en": "Chicken"
-              }
-            },
-            {
-              "id": "cheese",
-              "label": {
-                "de": "Käse",
-                "en": "Cheese"
-              }
-            }
-          ],
-          "correctAnswerId": "dog",
-          "success": {
-            "de": "Richtig! Das Wort heißt Hund.",
-            "en": "Correct! The word is Dog."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit H.",
-            "en": "The English word begins with D."
-          }
-        },
-        {
-          "id": "wu2",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Tier, das schnurrt?",
-            "en": "Which word matches the animal that purrs?"
-          },
-          "visual": "🐱",
-          "answers": [
-            {
-              "id": "duck",
-              "label": {
-                "de": "Ente",
-                "en": "Duck"
-              }
-            },
-            {
-              "id": "milk",
-              "label": {
-                "de": "Milch",
-                "en": "Milk"
-              }
-            },
-            {
-              "id": "cat",
-              "label": {
-                "de": "Katze",
-                "en": "Cat"
-              }
-            }
-          ],
-          "correctAnswerId": "cat",
-          "success": {
-            "de": "Richtig! Das Wort heißt Katze.",
-            "en": "Correct! The word is Cat."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit K.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu3",
-          "prompt": {
-            "de": "Welches Wort passt zu dem kleinen Tier mit langem Schwanz?",
-            "en": "Which word matches the small animal with a long tail?"
-          },
-          "visual": "🐭",
-          "answers": [
-            {
-              "id": "water",
-              "label": {
-                "de": "Wasser",
-                "en": "Water"
-              }
-            },
-            {
-              "id": "mouse",
-              "label": {
-                "de": "Maus",
-                "en": "Mouse"
-              }
-            },
-            {
-              "id": "owl",
-              "label": {
-                "de": "Eule",
-                "en": "Owl"
-              }
-            }
-          ],
-          "correctAnswerId": "mouse",
-          "success": {
-            "de": "Richtig! Das Wort heißt Maus.",
-            "en": "Correct! The word is Mouse."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit M.",
-            "en": "The English word begins with M."
-          }
-        },
-        {
-          "id": "wu4",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Tier mit langen Ohren?",
-            "en": "Which word matches the animal with long ears?"
-          },
-          "visual": "🐰",
-          "answers": [
-            {
-              "id": "rabbit",
-              "label": {
-                "de": "Hase",
-                "en": "Rabbit"
-              }
-            },
-            {
-              "id": "fish",
-              "label": {
-                "de": "Fisch",
-                "en": "Fish"
-              }
-            },
-            {
-              "id": "house",
-              "label": {
-                "de": "Haus",
-                "en": "House"
-              }
-            }
-          ],
-          "correctAnswerId": "rabbit",
-          "success": {
-            "de": "Richtig! Das Wort heißt Hase.",
-            "en": "Correct! The word is Rabbit."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit H.",
-            "en": "The English word begins with R."
-          }
-        },
-        {
-          "id": "wu5",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Tier mit buschigem roten Schwanz?",
-            "en": "Which word matches the animal with a bushy red tail?"
-          },
-          "visual": "🦊",
-          "answers": [
-            {
-              "id": "whale",
-              "label": {
-                "de": "Wal",
-                "en": "Whale"
-              }
-            },
-            {
-              "id": "school",
-              "label": {
-                "de": "Schule",
-                "en": "School"
-              }
-            },
-            {
-              "id": "fox",
-              "label": {
-                "de": "Fuchs",
-                "en": "Fox"
-              }
-            }
-          ],
-          "correctAnswerId": "fox",
-          "success": {
-            "de": "Richtig! Das Wort heißt Fuchs.",
-            "en": "Correct! The word is Fox."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit F.",
-            "en": "The English word begins with F."
-          }
-        },
-        {
-          "id": "wu6",
-          "prompt": {
-            "de": "Welches Wort passt zu dem großen Tier, das Honig mag?",
-            "en": "Which word matches the large animal that likes honey?"
-          },
-          "visual": "🐻",
-          "answers": [
-            {
-              "id": "car",
-              "label": {
-                "de": "Auto",
-                "en": "Car"
-              }
-            },
-            {
-              "id": "bear",
-              "label": {
-                "de": "Bär",
-                "en": "Bear"
-              }
-            },
-            {
-              "id": "dolphin",
-              "label": {
-                "de": "Delfin",
-                "en": "Dolphin"
-              }
-            }
-          ],
-          "correctAnswerId": "bear",
-          "success": {
-            "de": "Richtig! Das Wort heißt Bär.",
-            "en": "Correct! The word is Bear."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with B."
-          }
-        },
-        {
-          "id": "wu7",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Tier mit einer Mähne?",
-            "en": "Which word matches the animal with a mane?"
-          },
-          "visual": "🦁",
-          "answers": [
-            {
-              "id": "lion",
-              "label": {
-                "de": "Löwe",
-                "en": "Lion"
-              }
-            },
-            {
-              "id": "shark",
-              "label": {
-                "de": "Hai",
-                "en": "Shark"
-              }
-            },
-            {
-              "id": "bus",
-              "label": {
-                "de": "Bus",
-                "en": "Bus"
-              }
-            }
-          ],
-          "correctAnswerId": "lion",
-          "success": {
-            "de": "Richtig! Das Wort heißt Löwe.",
-            "en": "Correct! The word is Lion."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit L.",
-            "en": "The English word begins with L."
-          }
-        },
-        {
-          "id": "wu8",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Tier mit schwarzen Streifen?",
-            "en": "Which word matches the animal with black stripes?"
-          },
-          "visual": "🐯",
-          "answers": [
-            {
-              "id": "octopus",
-              "label": {
-                "de": "Oktopus",
-                "en": "Octopus"
-              }
-            },
-            {
-              "id": "train",
-              "label": {
-                "de": "Zug",
-                "en": "Train"
-              }
-            },
-            {
-              "id": "tiger",
-              "label": {
-                "de": "Tiger",
-                "en": "Tiger"
-              }
-            }
-          ],
-          "correctAnswerId": "tiger",
-          "success": {
-            "de": "Richtig! Das Wort heißt Tiger.",
-            "en": "Correct! The word is Tiger."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit T.",
-            "en": "The English word begins with T."
-          }
-        },
-        {
-          "id": "wu9",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Tier mit einem Rüssel?",
-            "en": "Which word matches the animal with a trunk?"
-          },
-          "visual": "🐘",
-          "answers": [
-            {
-              "id": "bicycle",
-              "label": {
-                "de": "Fahrrad",
-                "en": "Bicycle"
-              }
-            },
-            {
-              "id": "elephant",
-              "label": {
-                "de": "Elefant",
-                "en": "Elephant"
-              }
-            },
-            {
-              "id": "crab",
-              "label": {
-                "de": "Krabbe",
-                "en": "Crab"
-              }
-            }
-          ],
-          "correctAnswerId": "elephant",
-          "success": {
-            "de": "Richtig! Das Wort heißt Elefant.",
-            "en": "Correct! The word is Elephant."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit E.",
-            "en": "The English word begins with E."
-          }
-        },
-        {
-          "id": "wu10",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Tier mit sehr langem Hals?",
-            "en": "Which word matches the animal with a very long neck?"
-          },
-          "visual": "🦒",
-          "answers": [
-            {
-              "id": "giraffe",
-              "label": {
-                "de": "Giraffe",
-                "en": "Giraffe"
-              }
-            },
-            {
-              "id": "bee",
-              "label": {
-                "de": "Biene",
-                "en": "Bee"
-              }
-            },
-            {
-              "id": "boat",
-              "label": {
-                "de": "Boot",
-                "en": "Boat"
-              }
-            }
-          ],
-          "correctAnswerId": "giraffe",
-          "success": {
-            "de": "Richtig! Das Wort heißt Giraffe.",
-            "en": "Correct! The word is Giraffe."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit G.",
-            "en": "The English word begins with G."
-          }
-        },
-        {
-          "id": "wu11",
-          "prompt": {
-            "de": "Welches Wort passt zu dem schwarz-weiß gestreiften Tier?",
-            "en": "Which word matches the black and white striped animal?"
-          },
-          "visual": "🦓",
-          "answers": [
-            {
-              "id": "butterfly",
-              "label": {
-                "de": "Schmetterling",
-                "en": "Butterfly"
-              }
-            },
-            {
-              "id": "airplane",
-              "label": {
-                "de": "Flugzeug",
-                "en": "Airplane"
-              }
-            },
-            {
-              "id": "zebra",
-              "label": {
-                "de": "Zebra",
-                "en": "Zebra"
-              }
-            }
-          ],
-          "correctAnswerId": "zebra",
-          "success": {
-            "de": "Richtig! Das Wort heißt Zebra.",
-            "en": "Correct! The word is Zebra."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit Z.",
-            "en": "The English word begins with Z."
-          }
-        },
-        {
-          "id": "wu12",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Tier, das geschickt klettert?",
-            "en": "Which word matches the animal that climbs skillfully?"
-          },
-          "visual": "🐒",
-          "answers": [
-            {
-              "id": "sun",
-              "label": {
-                "de": "Sonne",
-                "en": "Sun"
-              }
-            },
-            {
-              "id": "monkey",
-              "label": {
-                "de": "Affe",
-                "en": "Monkey"
-              }
-            },
-            {
-              "id": "snail",
-              "label": {
-                "de": "Schnecke",
-                "en": "Snail"
-              }
-            }
-          ],
-          "correctAnswerId": "monkey",
-          "success": {
-            "de": "Richtig! Das Wort heißt Affe.",
-            "en": "Correct! The word is Monkey."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit A.",
-            "en": "The English word begins with M."
-          }
-        },
-        {
-          "id": "wu13",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Bauernhoftier, das Milch gibt?",
-            "en": "Which word matches the farm animal that gives milk?"
-          },
-          "visual": "🐮",
-          "answers": [
-            {
-              "id": "cow",
-              "label": {
-                "de": "Kuh",
-                "en": "Cow"
-              }
-            },
-            {
-              "id": "frog",
-              "label": {
-                "de": "Frosch",
-                "en": "Frog"
-              }
-            },
-            {
-              "id": "moon",
-              "label": {
-                "de": "Mond",
-                "en": "Moon"
-              }
-            }
-          ],
-          "correctAnswerId": "cow",
-          "success": {
-            "de": "Richtig! Das Wort heißt Kuh.",
-            "en": "Correct! The word is Cow."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit K.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu14",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Bauernhoftier mit runder Schnauze?",
-            "en": "Which word matches the farm animal with a round snout?"
-          },
-          "visual": "🐷",
-          "answers": [
-            {
-              "id": "turtle",
-              "label": {
-                "de": "Schildkröte",
-                "en": "Turtle"
-              }
-            },
-            {
-              "id": "star",
-              "label": {
-                "de": "Stern",
-                "en": "Star"
-              }
-            },
-            {
-              "id": "pig",
-              "label": {
-                "de": "Schwein",
-                "en": "Pig"
-              }
-            }
-          ],
-          "correctAnswerId": "pig",
-          "success": {
-            "de": "Richtig! Das Wort heißt Schwein.",
-            "en": "Correct! The word is Pig."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with P."
-          }
-        },
-        {
-          "id": "wu15",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Tier, auf dem Menschen reiten?",
-            "en": "Which word matches the animal people can ride?"
-          },
-          "visual": "🐴",
-          "answers": [
-            {
-              "id": "cloud",
-              "label": {
-                "de": "Wolke",
-                "en": "Cloud"
-              }
-            },
-            {
-              "id": "horse",
-              "label": {
-                "de": "Pferd",
-                "en": "Horse"
-              }
-            },
-            {
-              "id": "apple",
+              "id": "sentence-0-0",
               "label": {
                 "de": "Apfel",
                 "en": "Apple"
               }
-            }
-          ],
-          "correctAnswerId": "horse",
-          "success": {
-            "de": "Richtig! Das Wort heißt Pferd.",
-            "en": "Correct! The word is Horse."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit P.",
-            "en": "The English word begins with H."
-          }
-        },
-        {
-          "id": "wu16",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Tier mit weicher Wolle?",
-            "en": "Which word matches the animal with soft wool?"
-          },
-          "visual": "🐑",
-          "answers": [
-            {
-              "id": "sheep",
-              "label": {
-                "de": "Schaf",
-                "en": "Sheep"
-              }
-            },
-            {
-              "id": "pear",
-              "label": {
-                "de": "Birne",
-                "en": "Pear"
-              }
-            },
-            {
-              "id": "tree",
-              "label": {
-                "de": "Baum",
-                "en": "Tree"
-              }
-            }
-          ],
-          "correctAnswerId": "sheep",
-          "success": {
-            "de": "Richtig! Das Wort heißt Schaf.",
-            "en": "Correct! The word is Sheep."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with S."
-          }
-        },
-        {
-          "id": "wu17",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Tier mit Hörnern, das gut klettert?",
-            "en": "Which word matches the horned animal that climbs well?"
-          },
-          "visual": "🐐",
-          "answers": [
-            {
-              "id": "banana",
-              "label": {
-                "de": "Banane",
-                "en": "Banana"
-              }
-            },
-            {
-              "id": "flower",
-              "label": {
-                "de": "Blume",
-                "en": "Flower"
-              }
-            },
-            {
-              "id": "goat",
-              "label": {
-                "de": "Ziege",
-                "en": "Goat"
-              }
-            }
-          ],
-          "correctAnswerId": "goat",
-          "success": {
-            "de": "Richtig! Das Wort heißt Ziege.",
-            "en": "Correct! The word is Goat."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit Z.",
-            "en": "The English word begins with G."
-          }
-        },
-        {
-          "id": "wu18",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Vogel, der Eier legt und gackert?",
-            "en": "Which word matches the bird that lays eggs and clucks?"
-          },
-          "visual": "🐔",
-          "answers": [
-            {
-              "id": "grass",
-              "label": {
-                "de": "Gras",
-                "en": "Grass"
-              }
-            },
-            {
-              "id": "chicken",
-              "label": {
-                "de": "Huhn",
-                "en": "Chicken"
-              }
-            },
-            {
-              "id": "strawberry",
-              "label": {
-                "de": "Erdbeere",
-                "en": "Strawberry"
-              }
-            }
-          ],
-          "correctAnswerId": "chicken",
-          "success": {
-            "de": "Richtig! Das Wort heißt Huhn.",
-            "en": "Correct! The word is Chicken."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit H.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu19",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Vogel, der quakt und schwimmt?",
-            "en": "Which word matches the bird that quacks and swims?"
-          },
-          "visual": "🦆",
-          "answers": [
-            {
-              "id": "duck",
-              "label": {
-                "de": "Ente",
-                "en": "Duck"
-              }
-            },
-            {
-              "id": "cherry",
-              "label": {
-                "de": "Kirsche",
-                "en": "Cherry"
-              }
-            },
-            {
-              "id": "mountain",
-              "label": {
-                "de": "Berg",
-                "en": "Mountain"
-              }
-            }
-          ],
-          "correctAnswerId": "duck",
-          "success": {
-            "de": "Richtig! Das Wort heißt Ente.",
-            "en": "Correct! The word is Duck."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit E.",
-            "en": "The English word begins with D."
-          }
-        },
-        {
-          "id": "wu20",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Vogel, der nachts wach ist?",
-            "en": "Which word matches the bird that is awake at night?"
-          },
-          "visual": "🦉",
-          "answers": [
-            {
-              "id": "grape",
-              "label": {
-                "de": "Traube",
-                "en": "Grape"
-              }
-            },
-            {
-              "id": "river",
-              "label": {
-                "de": "Fluss",
-                "en": "River"
-              }
-            },
-            {
-              "id": "owl",
-              "label": {
-                "de": "Eule",
-                "en": "Owl"
-              }
-            }
-          ],
-          "correctAnswerId": "owl",
-          "success": {
-            "de": "Richtig! Das Wort heißt Eule.",
-            "en": "Correct! The word is Owl."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit E.",
-            "en": "The English word begins with O."
-          }
-        },
-        {
-          "id": "wu21",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Tier mit Flossen und Kiemen?",
-            "en": "Which word matches the animal with fins and gills?"
-          },
-          "visual": "🐟",
-          "answers": [
-            {
-              "id": "book",
-              "label": {
-                "de": "Buch",
-                "en": "Book"
-              }
-            },
-            {
-              "id": "fish",
-              "label": {
-                "de": "Fisch",
-                "en": "Fish"
-              }
-            },
-            {
-              "id": "lemon",
-              "label": {
-                "de": "Zitrone",
-                "en": "Lemon"
-              }
-            }
-          ],
-          "correctAnswerId": "fish",
-          "success": {
-            "de": "Richtig! Das Wort heißt Fisch.",
-            "en": "Correct! The word is Fish."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit F.",
-            "en": "The English word begins with F."
-          }
-        },
-        {
-          "id": "wu22",
-          "prompt": {
-            "de": "Welches Wort passt zu dem riesigen Tier im Meer?",
-            "en": "Which word matches the enormous animal in the sea?"
-          },
-          "visual": "🐋",
-          "answers": [
-            {
-              "id": "whale",
-              "label": {
-                "de": "Wal",
-                "en": "Whale"
-              }
-            },
-            {
-              "id": "carrot",
-              "label": {
-                "de": "Karotte",
-                "en": "Carrot"
-              }
-            },
-            {
-              "id": "pencil",
-              "label": {
-                "de": "Stift",
-                "en": "Pencil"
-              }
-            }
-          ],
-          "correctAnswerId": "whale",
-          "success": {
-            "de": "Richtig! Das Wort heißt Wal.",
-            "en": "Correct! The word is Whale."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit W.",
-            "en": "The English word begins with W."
-          }
-        },
-        {
-          "id": "wu23",
-          "prompt": {
-            "de": "Welches Wort passt zu dem klugen Meerestier, das springt?",
-            "en": "Which word matches the clever sea animal that leaps?"
-          },
-          "visual": "🐬",
-          "answers": [
-            {
-              "id": "tomato",
-              "label": {
-                "de": "Tomate",
-                "en": "Tomato"
-              }
-            },
-            {
-              "id": "ball",
-              "label": {
-                "de": "Ball",
-                "en": "Ball"
-              }
-            },
-            {
-              "id": "dolphin",
-              "label": {
-                "de": "Delfin",
-                "en": "Dolphin"
-              }
-            }
-          ],
-          "correctAnswerId": "dolphin",
-          "success": {
-            "de": "Richtig! Das Wort heißt Delfin.",
-            "en": "Correct! The word is Dolphin."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit D.",
-            "en": "The English word begins with D."
-          }
-        },
-        {
-          "id": "wu24",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Fisch mit vielen scharfen Zähnen?",
-            "en": "Which word matches the fish with many sharp teeth?"
-          },
-          "visual": "🦈",
-          "answers": [
-            {
-              "id": "doll",
-              "label": {
-                "de": "Puppe",
-                "en": "Doll"
-              }
-            },
-            {
-              "id": "shark",
-              "label": {
-                "de": "Hai",
-                "en": "Shark"
-              }
-            },
-            {
-              "id": "bread",
-              "label": {
-                "de": "Brot",
-                "en": "Bread"
-              }
-            }
-          ],
-          "correctAnswerId": "shark",
-          "success": {
-            "de": "Richtig! Das Wort heißt Hai.",
-            "en": "Correct! The word is Shark."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit H.",
-            "en": "The English word begins with S."
-          }
-        },
-        {
-          "id": "wu25",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Meerestier mit acht Armen?",
-            "en": "Which word matches the sea animal with eight arms?"
-          },
-          "visual": "🐙",
-          "answers": [
-            {
-              "id": "octopus",
-              "label": {
-                "de": "Oktopus",
-                "en": "Octopus"
-              }
-            },
-            {
-              "id": "cheese",
-              "label": {
-                "de": "Käse",
-                "en": "Cheese"
-              }
-            },
-            {
-              "id": "drum",
-              "label": {
-                "de": "Trommel",
-                "en": "Drum"
-              }
-            }
-          ],
-          "correctAnswerId": "octopus",
-          "success": {
-            "de": "Richtig! Das Wort heißt Oktopus.",
-            "en": "Correct! The word is Octopus."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit O.",
-            "en": "The English word begins with O."
-          }
-        },
-        {
-          "id": "wu26",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Meerestier, das seitwärts läuft?",
-            "en": "Which word matches the sea animal that walks sideways?"
-          },
-          "visual": "🦀",
-          "answers": [
-            {
-              "id": "milk",
-              "label": {
-                "de": "Milch",
-                "en": "Milk"
-              }
-            },
-            {
-              "id": "clock",
-              "label": {
-                "de": "Uhr",
-                "en": "Clock"
-              }
-            },
-            {
-              "id": "crab",
-              "label": {
-                "de": "Krabbe",
-                "en": "Crab"
-              }
-            }
-          ],
-          "correctAnswerId": "crab",
-          "success": {
-            "de": "Richtig! Das Wort heißt Krabbe.",
-            "en": "Correct! The word is Crab."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit K.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu27",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Insekt, das Honig macht?",
-            "en": "Which word matches the insect that makes honey?"
-          },
-          "visual": "🐝",
-          "answers": [
-            {
-              "id": "key",
-              "label": {
-                "de": "Schlüssel",
-                "en": "Key"
-              }
-            },
-            {
-              "id": "bee",
-              "label": {
-                "de": "Biene",
-                "en": "Bee"
-              }
-            },
-            {
-              "id": "water",
-              "label": {
-                "de": "Wasser",
-                "en": "Water"
-              }
-            }
-          ],
-          "correctAnswerId": "bee",
-          "success": {
-            "de": "Richtig! Das Wort heißt Biene.",
-            "en": "Correct! The word is Bee."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with B."
-          }
-        },
-        {
-          "id": "wu28",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Insekt mit bunten Flügeln?",
-            "en": "Which word matches the insect with colorful wings?"
-          },
-          "visual": "🦋",
-          "answers": [
-            {
-              "id": "butterfly",
-              "label": {
-                "de": "Schmetterling",
-                "en": "Butterfly"
-              }
-            },
-            {
-              "id": "house",
-              "label": {
-                "de": "Haus",
-                "en": "House"
-              }
-            },
-            {
-              "id": "shoe",
-              "label": {
-                "de": "Schuh",
-                "en": "Shoe"
-              }
-            }
-          ],
-          "correctAnswerId": "butterfly",
-          "success": {
-            "de": "Richtig! Das Wort heißt Schmetterling.",
-            "en": "Correct! The word is Butterfly."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with B."
-          }
-        },
-        {
-          "id": "wu29",
-          "prompt": {
-            "de": "Welches Wort passt zu dem langsamen Tier mit Haus?",
-            "en": "Which word matches the slow animal with a shell?"
-          },
-          "visual": "🐌",
-          "answers": [
-            {
-              "id": "school",
-              "label": {
-                "de": "Schule",
-                "en": "School"
-              }
-            },
-            {
-              "id": "hat",
-              "label": {
-                "de": "Hut",
-                "en": "Hat"
-              }
-            },
-            {
-              "id": "snail",
-              "label": {
-                "de": "Schnecke",
-                "en": "Snail"
-              }
-            }
-          ],
-          "correctAnswerId": "snail",
-          "success": {
-            "de": "Richtig! Das Wort heißt Schnecke.",
-            "en": "Correct! The word is Snail."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with S."
-          }
-        },
-        {
-          "id": "wu30",
-          "prompt": {
-            "de": "Welches Wort passt zu dem grünen Tier, das quakt und hüpft?",
-            "en": "Which word matches the green animal that croaks and hops?"
-          },
-          "visual": "🐸",
-          "answers": [
-            {
-              "id": "hand",
-              "label": {
-                "de": "Hand",
-                "en": "Hand"
-              }
-            },
-            {
-              "id": "frog",
-              "label": {
-                "de": "Frosch",
-                "en": "Frog"
-              }
-            },
-            {
-              "id": "car",
-              "label": {
-                "de": "Auto",
-                "en": "Car"
-              }
-            }
-          ],
-          "correctAnswerId": "frog",
-          "success": {
-            "de": "Richtig! Das Wort heißt Frosch.",
-            "en": "Correct! The word is Frog."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit F.",
-            "en": "The English word begins with F."
-          }
-        },
-        {
-          "id": "wu31",
-          "prompt": {
-            "de": "Welches Wort passt zu dem langsamen Tier mit hartem Panzer?",
-            "en": "Which word matches the slow animal with a hard shell?"
-          },
-          "visual": "🐢",
-          "answers": [
-            {
-              "id": "turtle",
-              "label": {
-                "de": "Schildkröte",
-                "en": "Turtle"
-              }
-            },
-            {
-              "id": "bus",
-              "label": {
-                "de": "Bus",
-                "en": "Bus"
-              }
-            },
-            {
-              "id": "heart",
-              "label": {
-                "de": "Herz",
-                "en": "Heart"
-              }
-            }
-          ],
-          "correctAnswerId": "turtle",
-          "success": {
-            "de": "Richtig! Das Wort heißt Schildkröte.",
-            "en": "Correct! The word is Turtle."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with T."
-          }
-        },
-        {
-          "id": "wu32",
-          "prompt": {
-            "de": "Welches Wort passt zu der runden roten Frucht?",
-            "en": "Which word matches the round red fruit?"
-          },
-          "visual": "🍎",
-          "answers": [
-            {
-              "id": "train",
-              "label": {
-                "de": "Zug",
-                "en": "Train"
-              }
-            },
-            {
-              "id": "sock",
-              "label": {
-                "de": "Socke",
-                "en": "Sock"
-              }
-            },
-            {
-              "id": "apple",
-              "label": {
-                "de": "Apfel",
-                "en": "Apple"
-              }
-            }
-          ],
-          "correctAnswerId": "apple",
-          "success": {
-            "de": "Richtig! Das Wort heißt Apfel.",
-            "en": "Correct! The word is Apple."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit A.",
-            "en": "The English word begins with A."
-          }
-        },
-        {
-          "id": "wu33",
-          "prompt": {
-            "de": "Welches Wort passt zu der unten breiten grünen Frucht?",
-            "en": "Which word matches the green fruit that is wide at the bottom?"
-          },
-          "visual": "🍐",
-          "answers": [
-            {
-              "id": "jacket",
-              "label": {
-                "de": "Jacke",
-                "en": "Jacket"
-              }
-            },
-            {
-              "id": "pear",
-              "label": {
-                "de": "Birne",
-                "en": "Pear"
-              }
-            },
-            {
-              "id": "bicycle",
-              "label": {
-                "de": "Fahrrad",
-                "en": "Bicycle"
-              }
-            }
-          ],
-          "correctAnswerId": "pear",
-          "success": {
-            "de": "Richtig! Das Wort heißt Birne.",
-            "en": "Correct! The word is Pear."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with P."
-          }
-        },
-        {
-          "id": "wu34",
-          "prompt": {
-            "de": "Welches Wort passt zu der langen gelben Frucht?",
-            "en": "Which word matches the long yellow fruit?"
-          },
-          "visual": "🍌",
-          "answers": [
-            {
-              "id": "banana",
-              "label": {
-                "de": "Banane",
-                "en": "Banana"
-              }
-            },
-            {
-              "id": "boat",
-              "label": {
-                "de": "Boot",
-                "en": "Boat"
-              }
-            },
-            {
-              "id": "pants",
-              "label": {
-                "de": "Hose",
-                "en": "Pants"
-              }
-            }
-          ],
-          "correctAnswerId": "banana",
-          "success": {
-            "de": "Richtig! Das Wort heißt Banane.",
-            "en": "Correct! The word is Banana."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with B."
-          }
-        },
-        {
-          "id": "wu35",
-          "prompt": {
-            "de": "Welches Wort passt zu der kleinen roten Frucht mit grünen Blättern?",
-            "en": "Which word matches the small red fruit with green leaves?"
-          },
-          "visual": "🍓",
-          "answers": [
-            {
-              "id": "airplane",
-              "label": {
-                "de": "Flugzeug",
-                "en": "Airplane"
-              }
-            },
-            {
-              "id": "dress",
-              "label": {
-                "de": "Kleid",
-                "en": "Dress"
-              }
-            },
-            {
-              "id": "strawberry",
-              "label": {
-                "de": "Erdbeere",
-                "en": "Strawberry"
-              }
-            }
-          ],
-          "correctAnswerId": "strawberry",
-          "success": {
-            "de": "Richtig! Das Wort heißt Erdbeere.",
-            "en": "Correct! The word is Strawberry."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit E.",
-            "en": "The English word begins with S."
-          }
-        },
-        {
-          "id": "wu36",
-          "prompt": {
-            "de": "Welches Wort passt zu der kleinen roten Frucht am Stiel?",
-            "en": "Which word matches the small red fruit on a stem?"
-          },
-          "visual": "🍒",
-          "answers": [
-            {
-              "id": "spoon",
-              "label": {
-                "de": "Löffel",
-                "en": "Spoon"
-              }
-            },
-            {
-              "id": "cherry",
-              "label": {
-                "de": "Kirsche",
-                "en": "Cherry"
-              }
-            },
-            {
-              "id": "sun",
-              "label": {
-                "de": "Sonne",
-                "en": "Sun"
-              }
-            }
-          ],
-          "correctAnswerId": "cherry",
-          "success": {
-            "de": "Richtig! Das Wort heißt Kirsche.",
-            "en": "Correct! The word is Cherry."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit K.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu37",
-          "prompt": {
-            "de": "Welches Wort passt zu der Frucht, die in einer Rispe wächst?",
-            "en": "Which word matches the fruit that grows in a bunch?"
-          },
-          "visual": "🍇",
-          "answers": [
-            {
-              "id": "grape",
-              "label": {
-                "de": "Traube",
-                "en": "Grape"
-              }
-            },
-            {
-              "id": "moon",
-              "label": {
-                "de": "Mond",
-                "en": "Moon"
-              }
-            },
-            {
-              "id": "fork",
-              "label": {
-                "de": "Gabel",
-                "en": "Fork"
-              }
-            }
-          ],
-          "correctAnswerId": "grape",
-          "success": {
-            "de": "Richtig! Das Wort heißt Traube.",
-            "en": "Correct! The word is Grape."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit T.",
-            "en": "The English word begins with G."
-          }
-        },
-        {
-          "id": "wu38",
-          "prompt": {
-            "de": "Welches Wort passt zu der sauren gelben Frucht?",
-            "en": "Which word matches the sour yellow fruit?"
-          },
-          "visual": "🍋",
-          "answers": [
-            {
-              "id": "star",
-              "label": {
-                "de": "Stern",
-                "en": "Star"
-              }
-            },
-            {
-              "id": "plate",
-              "label": {
-                "de": "Teller",
-                "en": "Plate"
-              }
-            },
-            {
-              "id": "lemon",
-              "label": {
-                "de": "Zitrone",
-                "en": "Lemon"
-              }
-            }
-          ],
-          "correctAnswerId": "lemon",
-          "success": {
-            "de": "Richtig! Das Wort heißt Zitrone.",
-            "en": "Correct! The word is Lemon."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit Z.",
-            "en": "The English word begins with L."
-          }
-        },
-        {
-          "id": "wu39",
-          "prompt": {
-            "de": "Welches Wort passt zu dem langen orangefarbenen Gemüse?",
-            "en": "Which word matches the long orange vegetable?"
-          },
-          "visual": "🥕",
-          "answers": [
-            {
-              "id": "cup",
-              "label": {
-                "de": "Tasse",
-                "en": "Cup"
-              }
-            },
-            {
-              "id": "carrot",
-              "label": {
-                "de": "Karotte",
-                "en": "Carrot"
-              }
-            },
-            {
-              "id": "cloud",
-              "label": {
-                "de": "Wolke",
-                "en": "Cloud"
-              }
-            }
-          ],
-          "correctAnswerId": "carrot",
-          "success": {
-            "de": "Richtig! Das Wort heißt Karotte.",
-            "en": "Correct! The word is Carrot."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit K.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu40",
-          "prompt": {
-            "de": "Welches Wort passt zu der roten Frucht im Salat?",
-            "en": "Which word matches the red fruit used in salad?"
-          },
-          "visual": "🍅",
-          "answers": [
-            {
-              "id": "tomato",
-              "label": {
-                "de": "Tomate",
-                "en": "Tomato"
-              }
-            },
-            {
-              "id": "tree",
-              "label": {
-                "de": "Baum",
-                "en": "Tree"
-              }
-            },
-            {
-              "id": "bed",
-              "label": {
-                "de": "Bett",
-                "en": "Bed"
-              }
-            }
-          ],
-          "correctAnswerId": "tomato",
-          "success": {
-            "de": "Richtig! Das Wort heißt Tomate.",
-            "en": "Correct! The word is Tomato."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit T.",
-            "en": "The English word begins with T."
-          }
-        },
-        {
-          "id": "wu41",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Lebensmittel aus der Bäckerei?",
-            "en": "Which word matches the food from a bakery?"
-          },
-          "visual": "🍞",
-          "answers": [
-            {
-              "id": "flower",
-              "label": {
-                "de": "Blume",
-                "en": "Flower"
-              }
-            },
-            {
-              "id": "chair",
-              "label": {
-                "de": "Stuhl",
-                "en": "Chair"
-              }
-            },
-            {
-              "id": "bread",
-              "label": {
-                "de": "Brot",
-                "en": "Bread"
-              }
-            }
-          ],
-          "correctAnswerId": "bread",
-          "success": {
-            "de": "Richtig! Das Wort heißt Brot.",
-            "en": "Correct! The word is Bread."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with B."
-          }
-        },
-        {
-          "id": "wu42",
-          "prompt": {
-            "de": "Welches Wort passt zu dem gelben Lebensmittel mit Löchern?",
-            "en": "Which word matches the yellow food with holes?"
-          },
-          "visual": "🧀",
-          "answers": [
-            {
-              "id": "table",
-              "label": {
-                "de": "Tisch",
-                "en": "Table"
-              }
-            },
-            {
-              "id": "cheese",
-              "label": {
-                "de": "Käse",
-                "en": "Cheese"
-              }
-            },
-            {
-              "id": "grass",
-              "label": {
-                "de": "Gras",
-                "en": "Grass"
-              }
-            }
-          ],
-          "correctAnswerId": "cheese",
-          "success": {
-            "de": "Richtig! Das Wort heißt Käse.",
-            "en": "Correct! The word is Cheese."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit K.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu43",
-          "prompt": {
-            "de": "Welches Wort passt zu dem weißen Getränk?",
-            "en": "Which word matches the white drink?"
-          },
-          "visual": "🥛",
-          "answers": [
-            {
-              "id": "milk",
-              "label": {
-                "de": "Milch",
-                "en": "Milk"
-              }
-            },
-            {
-              "id": "mountain",
-              "label": {
-                "de": "Berg",
-                "en": "Mountain"
-              }
-            },
-            {
-              "id": "door",
-              "label": {
-                "de": "Tür",
-                "en": "Door"
-              }
-            }
-          ],
-          "correctAnswerId": "milk",
-          "success": {
-            "de": "Richtig! Das Wort heißt Milch.",
-            "en": "Correct! The word is Milk."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit M.",
-            "en": "The English word begins with M."
-          }
-        },
-        {
-          "id": "wu44",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Getränk gegen Durst?",
-            "en": "Which word matches the drink that quenches thirst?"
-          },
-          "visual": "💧",
-          "answers": [
-            {
-              "id": "river",
-              "label": {
-                "de": "Fluss",
-                "en": "River"
-              }
-            },
-            {
-              "id": "window",
-              "label": {
-                "de": "Fenster",
-                "en": "Window"
-              }
-            },
-            {
-              "id": "water",
-              "label": {
-                "de": "Wasser",
-                "en": "Water"
-              }
-            }
-          ],
-          "correctAnswerId": "water",
-          "success": {
-            "de": "Richtig! Das Wort heißt Wasser.",
-            "en": "Correct! The word is Water."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit W.",
-            "en": "The English word begins with W."
-          }
-        },
-        {
-          "id": "wu45",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Gebäude, in dem Menschen wohnen?",
-            "en": "Which word matches the building where people live?"
-          },
-          "visual": "🏠",
-          "answers": [
-            {
-              "id": "soap",
-              "label": {
-                "de": "Seife",
-                "en": "Soap"
-              }
-            },
-            {
-              "id": "house",
-              "label": {
-                "de": "Haus",
-                "en": "House"
-              }
-            },
-            {
-              "id": "book",
-              "label": {
-                "de": "Buch",
-                "en": "Book"
-              }
-            }
-          ],
-          "correctAnswerId": "house",
-          "success": {
-            "de": "Richtig! Das Wort heißt Haus.",
-            "en": "Correct! The word is House."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit H.",
-            "en": "The English word begins with H."
-          }
-        },
-        {
-          "id": "wu46",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Ort, an dem Kinder lernen?",
-            "en": "Which word matches the place where children learn?"
-          },
-          "visual": "🏫",
-          "answers": [
-            {
-              "id": "school",
-              "label": {
-                "de": "Schule",
-                "en": "School"
-              }
-            },
-            {
-              "id": "pencil",
-              "label": {
-                "de": "Stift",
-                "en": "Pencil"
-              }
-            },
-            {
-              "id": "toothbrush",
-              "label": {
-                "de": "Zahnbürste",
-                "en": "Toothbrush"
-              }
-            }
-          ],
-          "correctAnswerId": "school",
-          "success": {
-            "de": "Richtig! Das Wort heißt Schule.",
-            "en": "Correct! The word is School."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with S."
-          }
-        },
-        {
-          "id": "wu47",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Fahrzeug für die Straße?",
-            "en": "Which word matches the vehicle used on roads?"
-          },
-          "visual": "🚗",
-          "answers": [
-            {
-              "id": "ball",
-              "label": {
-                "de": "Ball",
-                "en": "Ball"
-              }
-            },
-            {
-              "id": "comb",
-              "label": {
-                "de": "Kamm",
-                "en": "Comb"
-              }
-            },
-            {
-              "id": "car",
-              "label": {
-                "de": "Auto",
-                "en": "Car"
-              }
-            }
-          ],
-          "correctAnswerId": "car",
-          "success": {
-            "de": "Richtig! Das Wort heißt Auto.",
-            "en": "Correct! The word is Car."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit A.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu48",
-          "prompt": {
-            "de": "Welches Wort passt zu dem großen Fahrzeug für viele Menschen?",
-            "en": "Which word matches the large vehicle for many people?"
-          },
-          "visual": "🚌",
-          "answers": [
-            {
-              "id": "backpack",
-              "label": {
-                "de": "Rucksack",
-                "en": "Backpack"
-              }
-            },
-            {
-              "id": "bus",
-              "label": {
-                "de": "Bus",
-                "en": "Bus"
-              }
-            },
-            {
-              "id": "doll",
-              "label": {
-                "de": "Puppe",
-                "en": "Doll"
-              }
-            }
-          ],
-          "correctAnswerId": "bus",
-          "success": {
-            "de": "Richtig! Das Wort heißt Bus.",
-            "en": "Correct! The word is Bus."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with B."
-          }
-        },
-        {
-          "id": "wu49",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Fahrzeug auf Schienen?",
-            "en": "Which word matches the vehicle that runs on rails?"
-          },
-          "visual": "🚆",
-          "answers": [
-            {
-              "id": "train",
-              "label": {
-                "de": "Zug",
-                "en": "Train"
-              }
-            },
-            {
-              "id": "drum",
-              "label": {
-                "de": "Trommel",
-                "en": "Drum"
-              }
-            },
-            {
-              "id": "umbrella",
-              "label": {
-                "de": "Regenschirm",
-                "en": "Umbrella"
-              }
-            }
-          ],
-          "correctAnswerId": "train",
-          "success": {
-            "de": "Richtig! Das Wort heißt Zug.",
-            "en": "Correct! The word is Train."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit Z.",
-            "en": "The English word begins with T."
-          }
-        },
-        {
-          "id": "wu50",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Fahrzeug mit zwei Rädern und Pedalen?",
-            "en": "Which word matches the vehicle with two wheels and pedals?"
-          },
-          "visual": "🚲",
-          "answers": [
-            {
-              "id": "clock",
-              "label": {
-                "de": "Uhr",
-                "en": "Clock"
-              }
-            },
-            {
-              "id": "dog",
-              "label": {
-                "de": "Hund",
-                "en": "Dog"
-              }
-            },
-            {
-              "id": "bicycle",
-              "label": {
-                "de": "Fahrrad",
-                "en": "Bicycle"
-              }
-            }
-          ],
-          "correctAnswerId": "bicycle",
-          "success": {
-            "de": "Richtig! Das Wort heißt Fahrrad.",
-            "en": "Correct! The word is Bicycle."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit F.",
-            "en": "The English word begins with B."
-          }
-        },
-        {
-          "id": "wu51",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Fahrzeug auf dem Wasser?",
-            "en": "Which word matches the vehicle used on water?"
-          },
-          "visual": "⛵",
-          "answers": [
-            {
-              "id": "cat",
-              "label": {
-                "de": "Katze",
-                "en": "Cat"
-              }
-            },
-            {
-              "id": "boat",
-              "label": {
-                "de": "Boot",
-                "en": "Boat"
-              }
-            },
-            {
-              "id": "key",
-              "label": {
-                "de": "Schlüssel",
-                "en": "Key"
-              }
-            }
-          ],
-          "correctAnswerId": "boat",
-          "success": {
-            "de": "Richtig! Das Wort heißt Boot.",
-            "en": "Correct! The word is Boat."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with B."
-          }
-        },
-        {
-          "id": "wu52",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Fahrzeug, das durch den Himmel fliegt?",
-            "en": "Which word matches the vehicle that flies through the sky?"
-          },
-          "visual": "✈️",
-          "answers": [
-            {
-              "id": "airplane",
-              "label": {
-                "de": "Flugzeug",
-                "en": "Airplane"
-              }
-            },
-            {
-              "id": "shoe",
-              "label": {
-                "de": "Schuh",
-                "en": "Shoe"
-              }
-            },
-            {
-              "id": "mouse",
-              "label": {
-                "de": "Maus",
-                "en": "Mouse"
-              }
-            }
-          ],
-          "correctAnswerId": "airplane",
-          "success": {
-            "de": "Richtig! Das Wort heißt Flugzeug.",
-            "en": "Correct! The word is Airplane."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit F.",
-            "en": "The English word begins with A."
-          }
-        },
-        {
-          "id": "wu53",
-          "prompt": {
-            "de": "Welches Wort passt zu dem hellen Himmelskörper am Tag?",
-            "en": "Which word matches the bright object in the daytime sky?"
-          },
-          "visual": "☀️",
-          "answers": [
-            {
-              "id": "hat",
-              "label": {
-                "de": "Hut",
-                "en": "Hat"
-              }
-            },
-            {
-              "id": "rabbit",
-              "label": {
-                "de": "Hase",
-                "en": "Rabbit"
-              }
-            },
-            {
-              "id": "sun",
-              "label": {
-                "de": "Sonne",
-                "en": "Sun"
-              }
-            }
-          ],
-          "correctAnswerId": "sun",
-          "success": {
-            "de": "Richtig! Das Wort heißt Sonne.",
-            "en": "Correct! The word is Sun."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with S."
-          }
-        },
-        {
-          "id": "wu54",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Himmelskörper, den wir nachts sehen?",
-            "en": "Which word matches the object we see in the night sky?"
-          },
-          "visual": "🌙",
-          "answers": [
-            {
-              "id": "fox",
-              "label": {
-                "de": "Fuchs",
-                "en": "Fox"
-              }
-            },
-            {
-              "id": "moon",
-              "label": {
-                "de": "Mond",
-                "en": "Moon"
-              }
-            },
-            {
-              "id": "hand",
-              "label": {
-                "de": "Hand",
-                "en": "Hand"
-              }
-            }
-          ],
-          "correctAnswerId": "moon",
-          "success": {
-            "de": "Richtig! Das Wort heißt Mond.",
-            "en": "Correct! The word is Moon."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit M.",
-            "en": "The English word begins with M."
-          }
-        },
-        {
-          "id": "wu55",
-          "prompt": {
-            "de": "Welches Wort passt zu dem kleinen Lichtpunkt am Nachthimmel?",
-            "en": "Which word matches the small point of light in the night sky?"
-          },
-          "visual": "⭐",
-          "answers": [
-            {
-              "id": "star",
-              "label": {
-                "de": "Stern",
-                "en": "Star"
-              }
-            },
-            {
-              "id": "heart",
-              "label": {
-                "de": "Herz",
-                "en": "Heart"
-              }
-            },
-            {
-              "id": "bear",
-              "label": {
-                "de": "Bär",
-                "en": "Bear"
-              }
-            }
-          ],
-          "correctAnswerId": "star",
-          "success": {
-            "de": "Richtig! Das Wort heißt Stern.",
-            "en": "Correct! The word is Star."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with S."
-          }
-        },
-        {
-          "id": "wu56",
-          "prompt": {
-            "de": "Welches Wort passt zu dem weißen Gebilde, aus dem Regen fallen kann?",
-            "en": "Which word matches the white shape that can bring rain?"
-          },
-          "visual": "☁️",
-          "answers": [
-            {
-              "id": "sock",
-              "label": {
-                "de": "Socke",
-                "en": "Sock"
-              }
-            },
-            {
-              "id": "lion",
-              "label": {
-                "de": "Löwe",
-                "en": "Lion"
-              }
-            },
-            {
-              "id": "cloud",
-              "label": {
-                "de": "Wolke",
-                "en": "Cloud"
-              }
-            }
-          ],
-          "correctAnswerId": "cloud",
-          "success": {
-            "de": "Richtig! Das Wort heißt Wolke.",
-            "en": "Correct! The word is Cloud."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit W.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu57",
-          "prompt": {
-            "de": "Welches Wort passt zu der großen Pflanze mit Stamm?",
-            "en": "Which word matches the large plant with a trunk?"
-          },
-          "visual": "🌳",
-          "answers": [
-            {
-              "id": "tiger",
-              "label": {
-                "de": "Tiger",
-                "en": "Tiger"
-              }
-            },
-            {
-              "id": "tree",
-              "label": {
-                "de": "Baum",
-                "en": "Tree"
-              }
-            },
-            {
-              "id": "jacket",
-              "label": {
-                "de": "Jacke",
-                "en": "Jacket"
-              }
-            }
-          ],
-          "correctAnswerId": "tree",
-          "success": {
-            "de": "Richtig! Das Wort heißt Baum.",
-            "en": "Correct! The word is Tree."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with T."
-          }
-        },
-        {
-          "id": "wu58",
-          "prompt": {
-            "de": "Welches Wort passt zu der Pflanze, die bunt blüht?",
-            "en": "Which word matches the plant with a colorful bloom?"
-          },
-          "visual": "🌸",
-          "answers": [
-            {
-              "id": "flower",
-              "label": {
-                "de": "Blume",
-                "en": "Flower"
-              }
-            },
-            {
-              "id": "pants",
-              "label": {
-                "de": "Hose",
-                "en": "Pants"
-              }
-            },
-            {
-              "id": "elephant",
-              "label": {
-                "de": "Elefant",
-                "en": "Elephant"
-              }
-            }
-          ],
-          "correctAnswerId": "flower",
-          "success": {
-            "de": "Richtig! Das Wort heißt Blume.",
-            "en": "Correct! The word is Flower."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with F."
-          }
-        },
-        {
-          "id": "wu59",
-          "prompt": {
-            "de": "Welches Wort passt zu den grünen Halmen auf dem Boden?",
-            "en": "Which word matches the green blades covering the ground?"
-          },
-          "visual": "🌱",
-          "answers": [
-            {
-              "id": "dress",
-              "label": {
-                "de": "Kleid",
-                "en": "Dress"
-              }
-            },
-            {
-              "id": "giraffe",
-              "label": {
-                "de": "Giraffe",
-                "en": "Giraffe"
-              }
-            },
-            {
-              "id": "grass",
-              "label": {
-                "de": "Gras",
-                "en": "Grass"
-              }
-            }
-          ],
-          "correctAnswerId": "grass",
-          "success": {
-            "de": "Richtig! Das Wort heißt Gras.",
-            "en": "Correct! The word is Grass."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit G.",
-            "en": "The English word begins with G."
-          }
-        },
-        {
-          "id": "wu60",
-          "prompt": {
-            "de": "Welches Wort passt zu der sehr hohen Landschaftsform?",
-            "en": "Which word matches the very high landform?"
-          },
-          "visual": "⛰️",
-          "answers": [
-            {
-              "id": "zebra",
-              "label": {
-                "de": "Zebra",
-                "en": "Zebra"
-              }
-            },
-            {
-              "id": "mountain",
-              "label": {
-                "de": "Berg",
-                "en": "Mountain"
-              }
-            },
-            {
-              "id": "spoon",
-              "label": {
-                "de": "Löffel",
-                "en": "Spoon"
-              }
-            }
-          ],
-          "correctAnswerId": "mountain",
-          "success": {
-            "de": "Richtig! Das Wort heißt Berg.",
-            "en": "Correct! The word is Mountain."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with M."
-          }
-        },
-        {
-          "id": "wu61",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Wasser, das durch die Landschaft fließt?",
-            "en": "Which word matches the water that flows across the land?"
-          },
-          "visual": "🏞️",
-          "answers": [
-            {
-              "id": "river",
-              "label": {
-                "de": "Fluss",
-                "en": "River"
-              }
-            },
-            {
-              "id": "fork",
-              "label": {
-                "de": "Gabel",
-                "en": "Fork"
-              }
-            },
-            {
-              "id": "monkey",
-              "label": {
-                "de": "Affe",
-                "en": "Monkey"
-              }
-            }
-          ],
-          "correctAnswerId": "river",
-          "success": {
-            "de": "Richtig! Das Wort heißt Fluss.",
-            "en": "Correct! The word is River."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit F.",
-            "en": "The English word begins with R."
-          }
-        },
-        {
-          "id": "wu62",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Gegenstand mit Seiten zum Lesen?",
-            "en": "Which word matches the object with pages to read?"
-          },
-          "visual": "📘",
-          "answers": [
-            {
-              "id": "plate",
-              "label": {
-                "de": "Teller",
-                "en": "Plate"
-              }
-            },
-            {
-              "id": "cow",
-              "label": {
-                "de": "Kuh",
-                "en": "Cow"
-              }
-            },
-            {
-              "id": "book",
-              "label": {
-                "de": "Buch",
-                "en": "Book"
-              }
-            }
-          ],
-          "correctAnswerId": "book",
-          "success": {
-            "de": "Richtig! Das Wort heißt Buch.",
-            "en": "Correct! The word is Book."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with B."
-          }
-        },
-        {
-          "id": "wu63",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Gegenstand zum Schreiben und Malen?",
-            "en": "Which word matches the object used for writing and drawing?"
-          },
-          "visual": "✏️",
-          "answers": [
-            {
-              "id": "pig",
-              "label": {
-                "de": "Schwein",
-                "en": "Pig"
-              }
-            },
-            {
-              "id": "pencil",
-              "label": {
-                "de": "Stift",
-                "en": "Pencil"
-              }
-            },
-            {
-              "id": "cup",
-              "label": {
-                "de": "Tasse",
-                "en": "Cup"
-              }
-            }
-          ],
-          "correctAnswerId": "pencil",
-          "success": {
-            "de": "Richtig! Das Wort heißt Stift.",
-            "en": "Correct! The word is Pencil."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with P."
-          }
-        },
-        {
-          "id": "wu64",
-          "prompt": {
-            "de": "Welches Wort passt zu dem runden Spielzeug, das rollt?",
-            "en": "Which word matches the round toy that rolls?"
-          },
-          "visual": "⚽",
-          "answers": [
-            {
-              "id": "ball",
-              "label": {
-                "de": "Ball",
-                "en": "Ball"
-              }
-            },
-            {
-              "id": "bed",
-              "label": {
-                "de": "Bett",
-                "en": "Bed"
-              }
-            },
-            {
-              "id": "horse",
-              "label": {
-                "de": "Pferd",
-                "en": "Horse"
-              }
-            }
-          ],
-          "correctAnswerId": "ball",
-          "success": {
-            "de": "Richtig! Das Wort heißt Ball.",
-            "en": "Correct! The word is Ball."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with B."
-          }
-        },
-        {
-          "id": "wu65",
-          "prompt": {
-            "de": "Welches Wort passt zu der Spielfigur mit Gesicht und Kleidung?",
-            "en": "Which word matches the toy figure with a face and clothes?"
-          },
-          "visual": "🪆",
-          "answers": [
-            {
-              "id": "chair",
-              "label": {
-                "de": "Stuhl",
-                "en": "Chair"
-              }
-            },
-            {
-              "id": "sheep",
-              "label": {
-                "de": "Schaf",
-                "en": "Sheep"
-              }
-            },
-            {
-              "id": "doll",
-              "label": {
-                "de": "Puppe",
-                "en": "Doll"
-              }
-            }
-          ],
-          "correctAnswerId": "doll",
-          "success": {
-            "de": "Richtig! Das Wort heißt Puppe.",
-            "en": "Correct! The word is Doll."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit P.",
-            "en": "The English word begins with D."
-          }
-        },
-        {
-          "id": "wu66",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Instrument, auf das man schlägt?",
-            "en": "Which word matches the instrument you hit to make a beat?"
-          },
-          "visual": "🥁",
-          "answers": [
-            {
-              "id": "goat",
-              "label": {
-                "de": "Ziege",
-                "en": "Goat"
-              }
-            },
-            {
-              "id": "drum",
-              "label": {
-                "de": "Trommel",
-                "en": "Drum"
-              }
-            },
-            {
-              "id": "table",
-              "label": {
-                "de": "Tisch",
-                "en": "Table"
-              }
-            }
-          ],
-          "correctAnswerId": "drum",
-          "success": {
-            "de": "Richtig! Das Wort heißt Trommel.",
-            "en": "Correct! The word is Drum."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit T.",
-            "en": "The English word begins with D."
-          }
-        },
-        {
-          "id": "wu67",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Gegenstand, der die Zeit zeigt?",
-            "en": "Which word matches the object that tells the time?"
-          },
-          "visual": "🕐",
-          "answers": [
-            {
-              "id": "clock",
-              "label": {
-                "de": "Uhr",
-                "en": "Clock"
-              }
-            },
-            {
-              "id": "door",
-              "label": {
-                "de": "Tür",
-                "en": "Door"
-              }
-            },
-            {
-              "id": "chicken",
-              "label": {
-                "de": "Huhn",
-                "en": "Chicken"
-              }
-            }
-          ],
-          "correctAnswerId": "clock",
-          "success": {
-            "de": "Richtig! Das Wort heißt Uhr.",
-            "en": "Correct! The word is Clock."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit U.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu68",
-          "prompt": {
-            "de": "Welches Wort passt zu dem kleinen Gegenstand zum Öffnen einer Tür?",
-            "en": "Which word matches the small object that opens a door?"
-          },
-          "visual": "🔑",
-          "answers": [
-            {
-              "id": "window",
-              "label": {
-                "de": "Fenster",
-                "en": "Window"
-              }
-            },
-            {
-              "id": "duck",
-              "label": {
-                "de": "Ente",
-                "en": "Duck"
-              }
-            },
-            {
-              "id": "key",
-              "label": {
-                "de": "Schlüssel",
-                "en": "Key"
-              }
-            }
-          ],
-          "correctAnswerId": "key",
-          "success": {
-            "de": "Richtig! Das Wort heißt Schlüssel.",
-            "en": "Correct! The word is Key."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with K."
-          }
-        },
-        {
-          "id": "wu69",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Kleidungsstück für den Fuß?",
-            "en": "Which word matches the clothing worn on a foot?"
-          },
-          "visual": "👟",
-          "answers": [
-            {
-              "id": "owl",
-              "label": {
-                "de": "Eule",
-                "en": "Owl"
-              }
-            },
-            {
-              "id": "shoe",
-              "label": {
-                "de": "Schuh",
-                "en": "Shoe"
-              }
-            },
-            {
-              "id": "soap",
-              "label": {
-                "de": "Seife",
-                "en": "Soap"
-              }
-            }
-          ],
-          "correctAnswerId": "shoe",
-          "success": {
-            "de": "Richtig! Das Wort heißt Schuh.",
-            "en": "Correct! The word is Shoe."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with S."
-          }
-        },
-        {
-          "id": "wu70",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Kleidungsstück für den Kopf?",
-            "en": "Which word matches the clothing worn on the head?"
-          },
-          "visual": "🧢",
-          "answers": [
-            {
-              "id": "hat",
-              "label": {
-                "de": "Hut",
-                "en": "Hat"
-              }
-            },
-            {
-              "id": "toothbrush",
-              "label": {
-                "de": "Zahnbürste",
-                "en": "Toothbrush"
-              }
-            },
-            {
-              "id": "fish",
-              "label": {
-                "de": "Fisch",
-                "en": "Fish"
-              }
-            }
-          ],
-          "correctAnswerId": "hat",
-          "success": {
-            "de": "Richtig! Das Wort heißt Hut.",
-            "en": "Correct! The word is Hat."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit H.",
-            "en": "The English word begins with H."
-          }
-        },
-        {
-          "id": "wu71",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Körperteil mit fünf Fingern?",
-            "en": "Which word matches the body part with five fingers?"
-          },
-          "visual": "✋",
-          "answers": [
-            {
-              "id": "comb",
-              "label": {
-                "de": "Kamm",
-                "en": "Comb"
-              }
             },
-            {
-              "id": "whale",
-              "label": {
-                "de": "Wal",
-                "en": "Whale"
-              }
-            },
-            {
-              "id": "hand",
-              "label": {
-                "de": "Hand",
-                "en": "Hand"
-              }
-            }
-          ],
-          "correctAnswerId": "hand",
-          "success": {
-            "de": "Richtig! Das Wort heißt Hand.",
-            "en": "Correct! The word is Hand."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit H.",
-            "en": "The English word begins with H."
-          }
-        },
-        {
-          "id": "wu72",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Organ, das im Brustkorb schlägt?",
-            "en": "Which word matches the organ that beats inside the chest?"
-          },
-          "visual": "❤️",
-          "answers": [
-            {
-              "id": "dolphin",
-              "label": {
-                "de": "Delfin",
-                "en": "Dolphin"
-              }
-            },
-            {
-              "id": "heart",
-              "label": {
-                "de": "Herz",
-                "en": "Heart"
-              }
-            },
-            {
-              "id": "backpack",
-              "label": {
-                "de": "Rucksack",
-                "en": "Backpack"
-              }
-            }
-          ],
-          "correctAnswerId": "heart",
-          "success": {
-            "de": "Richtig! Das Wort heißt Herz.",
-            "en": "Correct! The word is Heart."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit H.",
-            "en": "The English word begins with H."
-          }
-        },
-        {
-          "id": "wu73",
-          "prompt": {
-            "de": "Welches Wort passt zu dem weichen Kleidungsstück im Schuh?",
-            "en": "Which word matches the soft clothing worn inside a shoe?"
-          },
-          "visual": "🧦",
-          "answers": [
-            {
-              "id": "sock",
-              "label": {
-                "de": "Socke",
-                "en": "Sock"
-              }
-            },
-            {
-              "id": "umbrella",
-              "label": {
-                "de": "Regenschirm",
-                "en": "Umbrella"
-              }
-            },
-            {
-              "id": "shark",
-              "label": {
-                "de": "Hai",
-                "en": "Shark"
-              }
-            }
-          ],
-          "correctAnswerId": "sock",
-          "success": {
-            "de": "Richtig! Das Wort heißt Socke.",
-            "en": "Correct! The word is Sock."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with S."
-          }
-        },
-        {
-          "id": "wu74",
-          "prompt": {
-            "de": "Welches Wort passt zu dem warmen Kleidungsstück für draußen?",
-            "en": "Which word matches the warm clothing worn outside?"
-          },
-          "visual": "🧥",
-          "answers": [
-            {
-              "id": "dog",
-              "label": {
-                "de": "Hund",
-                "en": "Dog"
-              }
-            },
-            {
-              "id": "octopus",
-              "label": {
-                "de": "Oktopus",
-                "en": "Octopus"
-              }
-            },
-            {
-              "id": "jacket",
-              "label": {
-                "de": "Jacke",
-                "en": "Jacket"
-              }
-            }
-          ],
-          "correctAnswerId": "jacket",
-          "success": {
-            "de": "Richtig! Das Wort heißt Jacke.",
-            "en": "Correct! The word is Jacket."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit J.",
-            "en": "The English word begins with J."
-          }
-        },
-        {
-          "id": "wu75",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Kleidungsstück mit zwei Beinen?",
-            "en": "Which word matches the clothing with two legs?"
-          },
-          "visual": "👖",
-          "answers": [
-            {
-              "id": "crab",
-              "label": {
-                "de": "Krabbe",
-                "en": "Crab"
-              }
-            },
-            {
-              "id": "pants",
-              "label": {
-                "de": "Hose",
-                "en": "Pants"
-              }
-            },
-            {
-              "id": "cat",
-              "label": {
-                "de": "Katze",
-                "en": "Cat"
-              }
-            }
-          ],
-          "correctAnswerId": "pants",
-          "success": {
-            "de": "Richtig! Das Wort heißt Hose.",
-            "en": "Correct! The word is Pants."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit H.",
-            "en": "The English word begins with P."
-          }
-        },
-        {
-          "id": "wu76",
-          "prompt": {
-            "de": "Welches Wort passt zu dem einteiligen Kleidungsstück?",
-            "en": "Which word matches the one-piece item of clothing?"
-          },
-          "visual": "👗",
-          "answers": [
-            {
-              "id": "dress",
-              "label": {
-                "de": "Kleid",
-                "en": "Dress"
-              }
-            },
-            {
-              "id": "mouse",
-              "label": {
-                "de": "Maus",
-                "en": "Mouse"
-              }
-            },
-            {
-              "id": "bee",
-              "label": {
-                "de": "Biene",
-                "en": "Bee"
-              }
-            }
-          ],
-          "correctAnswerId": "dress",
-          "success": {
-            "de": "Richtig! Das Wort heißt Kleid.",
-            "en": "Correct! The word is Dress."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit K.",
-            "en": "The English word begins with D."
-          }
-        },
-        {
-          "id": "wu77",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Besteck für Suppe?",
-            "en": "Which word matches the utensil used for soup?"
-          },
-          "visual": "🥄",
-          "answers": [
-            {
-              "id": "rabbit",
-              "label": {
-                "de": "Hase",
-                "en": "Rabbit"
-              }
-            },
-            {
-              "id": "butterfly",
-              "label": {
-                "de": "Schmetterling",
-                "en": "Butterfly"
-              }
-            },
-            {
-              "id": "spoon",
-              "label": {
-                "de": "Löffel",
-                "en": "Spoon"
-              }
-            }
-          ],
-          "correctAnswerId": "spoon",
-          "success": {
-            "de": "Richtig! Das Wort heißt Löffel.",
-            "en": "Correct! The word is Spoon."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit L.",
-            "en": "The English word begins with S."
-          }
-        },
-        {
-          "id": "wu78",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Besteck mit Zinken?",
-            "en": "Which word matches the utensil with prongs?"
-          },
-          "visual": "🍴",
-          "answers": [
-            {
-              "id": "snail",
-              "label": {
-                "de": "Schnecke",
-                "en": "Snail"
-              }
-            },
-            {
-              "id": "fork",
-              "label": {
-                "de": "Gabel",
-                "en": "Fork"
-              }
-            },
-            {
-              "id": "fox",
-              "label": {
-                "de": "Fuchs",
-                "en": "Fox"
-              }
-            }
-          ],
-          "correctAnswerId": "fork",
-          "success": {
-            "de": "Richtig! Das Wort heißt Gabel.",
-            "en": "Correct! The word is Fork."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit G.",
-            "en": "The English word begins with F."
-          }
-        },
-        {
-          "id": "wu79",
-          "prompt": {
-            "de": "Welches Wort passt zu dem flachen Geschirr für Essen?",
-            "en": "Which word matches the flat dish used for food?"
-          },
-          "visual": "🍽️",
-          "answers": [
-            {
-              "id": "plate",
-              "label": {
-                "de": "Teller",
-                "en": "Plate"
-              }
-            },
-            {
-              "id": "bear",
-              "label": {
-                "de": "Bär",
-                "en": "Bear"
-              }
-            },
-            {
-              "id": "frog",
-              "label": {
-                "de": "Frosch",
-                "en": "Frog"
-              }
-            }
-          ],
-          "correctAnswerId": "plate",
-          "success": {
-            "de": "Richtig! Das Wort heißt Teller.",
-            "en": "Correct! The word is Plate."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit T.",
-            "en": "The English word begins with P."
-          }
-        },
-        {
-          "id": "wu80",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Gefäß mit Henkel zum Trinken?",
-            "en": "Which word matches the drinking container with a handle?"
-          },
-          "visual": "☕",
-          "answers": [
-            {
-              "id": "lion",
-              "label": {
-                "de": "Löwe",
-                "en": "Lion"
-              }
-            },
-            {
-              "id": "turtle",
-              "label": {
-                "de": "Schildkröte",
-                "en": "Turtle"
-              }
-            },
-            {
-              "id": "cup",
-              "label": {
-                "de": "Tasse",
-                "en": "Cup"
-              }
-            }
-          ],
-          "correctAnswerId": "cup",
-          "success": {
-            "de": "Richtig! Das Wort heißt Tasse.",
-            "en": "Correct! The word is Cup."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit T.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu81",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Möbelstück zum Schlafen?",
-            "en": "Which word matches the furniture used for sleeping?"
-          },
-          "visual": "🛏️",
-          "answers": [
-            {
-              "id": "apple",
-              "label": {
-                "de": "Apfel",
-                "en": "Apple"
-              }
-            },
-            {
-              "id": "bed",
-              "label": {
-                "de": "Bett",
-                "en": "Bed"
-              }
-            },
-            {
-              "id": "tiger",
-              "label": {
-                "de": "Tiger",
-                "en": "Tiger"
-              }
-            }
-          ],
-          "correctAnswerId": "bed",
-          "success": {
-            "de": "Richtig! Das Wort heißt Bett.",
-            "en": "Correct! The word is Bed."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit B.",
-            "en": "The English word begins with B."
-          }
-        },
-        {
-          "id": "wu82",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Möbelstück zum Sitzen?",
-            "en": "Which word matches the furniture used for sitting?"
-          },
-          "visual": "🪑",
-          "answers": [
-            {
-              "id": "chair",
-              "label": {
-                "de": "Stuhl",
-                "en": "Chair"
-              }
-            },
-            {
-              "id": "elephant",
-              "label": {
-                "de": "Elefant",
-                "en": "Elephant"
-              }
-            },
-            {
-              "id": "pear",
-              "label": {
-                "de": "Birne",
-                "en": "Pear"
-              }
-            }
-          ],
-          "correctAnswerId": "chair",
-          "success": {
-            "de": "Richtig! Das Wort heißt Stuhl.",
-            "en": "Correct! The word is Chair."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu83",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Möbelstück, auf dem gegessen wird?",
-            "en": "Which word matches the furniture people eat on?"
-          },
-          "visual": "🪑 ━━━ 🪑",
-          "answers": [
-            {
-              "id": "giraffe",
-              "label": {
-                "de": "Giraffe",
-                "en": "Giraffe"
-              }
-            },
-            {
-              "id": "banana",
-              "label": {
-                "de": "Banane",
-                "en": "Banana"
-              }
-            },
-            {
-              "id": "table",
-              "label": {
-                "de": "Tisch",
-                "en": "Table"
-              }
-            }
-          ],
-          "correctAnswerId": "table",
-          "success": {
-            "de": "Richtig! Das Wort heißt Tisch.",
-            "en": "Correct! The word is Table."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit T.",
-            "en": "The English word begins with T."
-          }
-        },
-        {
-          "id": "wu84",
-          "prompt": {
-            "de": "Welches Wort passt zu dem beweglichen Eingang zu einem Zimmer?",
-            "en": "Which word matches the movable entrance to a room?"
-          },
-          "visual": "🚪",
-          "answers": [
-            {
-              "id": "strawberry",
-              "label": {
-                "de": "Erdbeere",
-                "en": "Strawberry"
-              }
-            },
-            {
-              "id": "door",
-              "label": {
-                "de": "Tür",
-                "en": "Door"
-              }
-            },
-            {
-              "id": "zebra",
-              "label": {
-                "de": "Zebra",
-                "en": "Zebra"
-              }
-            }
-          ],
-          "correctAnswerId": "door",
-          "success": {
-            "de": "Richtig! Das Wort heißt Tür.",
-            "en": "Correct! The word is Door."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit T.",
-            "en": "The English word begins with D."
-          }
-        },
-        {
-          "id": "wu85",
-          "prompt": {
-            "de": "Welches Wort passt zu der Öffnung, durch die Licht ins Zimmer kommt?",
-            "en": "Which word matches the opening that lets light into a room?"
-          },
-          "visual": "🪟",
-          "answers": [
-            {
-              "id": "window",
-              "label": {
-                "de": "Fenster",
-                "en": "Window"
-              }
-            },
-            {
-              "id": "monkey",
-              "label": {
-                "de": "Affe",
-                "en": "Monkey"
-              }
-            },
-            {
-              "id": "cherry",
-              "label": {
-                "de": "Kirsche",
-                "en": "Cherry"
-              }
-            }
-          ],
-          "correctAnswerId": "window",
-          "success": {
-            "de": "Richtig! Das Wort heißt Fenster.",
-            "en": "Correct! The word is Window."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit F.",
-            "en": "The English word begins with W."
-          }
-        },
-        {
-          "id": "wu86",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Gegenstand zum Händewaschen?",
-            "en": "Which word matches the item used to wash hands?"
-          },
-          "visual": "🧼",
-          "answers": [
-            {
-              "id": "cow",
-              "label": {
-                "de": "Kuh",
-                "en": "Cow"
-              }
-            },
-            {
-              "id": "grape",
-              "label": {
-                "de": "Traube",
-                "en": "Grape"
-              }
-            },
-            {
-              "id": "soap",
-              "label": {
-                "de": "Seife",
-                "en": "Soap"
-              }
-            }
-          ],
-          "correctAnswerId": "soap",
-          "success": {
-            "de": "Richtig! Das Wort heißt Seife.",
-            "en": "Correct! The word is Soap."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit S.",
-            "en": "The English word begins with S."
-          }
-        },
-        {
-          "id": "wu87",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Gegenstand zum Zähneputzen?",
-            "en": "Which word matches the item used to brush teeth?"
-          },
-          "visual": "🪥",
-          "answers": [
-            {
-              "id": "lemon",
-              "label": {
-                "de": "Zitrone",
-                "en": "Lemon"
-              }
-            },
-            {
-              "id": "toothbrush",
-              "label": {
-                "de": "Zahnbürste",
-                "en": "Toothbrush"
-              }
-            },
-            {
-              "id": "pig",
-              "label": {
-                "de": "Schwein",
-                "en": "Pig"
-              }
-            }
-          ],
-          "correctAnswerId": "toothbrush",
-          "success": {
-            "de": "Richtig! Das Wort heißt Zahnbürste.",
-            "en": "Correct! The word is Toothbrush."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit Z.",
-            "en": "The English word begins with T."
-          }
-        },
-        {
-          "id": "wu88",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Gegenstand zum Ordnen der Haare?",
-            "en": "Which word matches the item used to tidy hair?"
-          },
-          "visual": "🪮",
-          "answers": [
-            {
-              "id": "comb",
-              "label": {
-                "de": "Kamm",
-                "en": "Comb"
-              }
-            },
-            {
-              "id": "horse",
-              "label": {
-                "de": "Pferd",
-                "en": "Horse"
-              }
-            },
-            {
-              "id": "carrot",
-              "label": {
-                "de": "Karotte",
-                "en": "Carrot"
-              }
-            }
-          ],
-          "correctAnswerId": "comb",
-          "success": {
-            "de": "Richtig! Das Wort heißt Kamm.",
-            "en": "Correct! The word is Comb."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit K.",
-            "en": "The English word begins with C."
-          }
-        },
-        {
-          "id": "wu89",
-          "prompt": {
-            "de": "Welches Wort passt zu der Tasche, die man auf dem Rücken trägt?",
-            "en": "Which word matches the bag carried on the back?"
-          },
-          "visual": "🎒",
-          "answers": [
-            {
-              "id": "sheep",
-              "label": {
-                "de": "Schaf",
-                "en": "Sheep"
-              }
-            },
-            {
-              "id": "tomato",
-              "label": {
-                "de": "Tomate",
-                "en": "Tomato"
-              }
-            },
-            {
-              "id": "backpack",
-              "label": {
-                "de": "Rucksack",
-                "en": "Backpack"
-              }
-            }
-          ],
-          "correctAnswerId": "backpack",
-          "success": {
-            "de": "Richtig! Das Wort heißt Rucksack.",
-            "en": "Correct! The word is Backpack."
-          },
-          "hint": {
-            "de": "Das deutsche Wort beginnt mit R.",
-            "en": "The English word begins with B."
-          }
-        },
-        {
-          "id": "wu90",
-          "prompt": {
-            "de": "Welches Wort passt zu dem Gegenstand, der vor Regen schützt?",
-            "en": "Which word matches the item that protects you from rain?"
-          },
-          "visual": "☂️",
-          "answers": [
             {
-              "id": "bread",
+              "id": "sentence-0-1",
               "label": {
                 "de": "Brot",
                 "en": "Bread"
               }
             },
             {
-              "id": "umbrella",
+              "id": "sentence-0-2",
               "label": {
-                "de": "Regenschirm",
-                "en": "Umbrella"
-              }
-            },
-            {
-              "id": "goat",
-              "label": {
-                "de": "Ziege",
-                "en": "Goat"
+                "de": "Boot",
+                "en": "Boat"
               }
             }
           ],
-          "correctAnswerId": "umbrella",
+          "correctAnswerId": "sentence-0-0",
           "success": {
-            "de": "Richtig! Das Wort heißt Regenschirm.",
-            "en": "Correct! The word is Umbrella."
+            "de": "Richtig! Das fehlende Wort ist Apfel.",
+            "en": "Correct! The missing word is Apple."
           },
           "hint": {
-            "de": "Das deutsche Wort beginnt mit R.",
-            "en": "The English word begins with U."
+            "de": "Setze Apfel probeweise in den Satz ein.",
+            "en": "Try putting Apple into the sentence."
+          }
+        },
+        {
+          "id": "a2wu2",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Käse?",
+            "en": "Which word group does Cheese belong to?"
+          },
+          "visual": "Käse",
+          "answers": [
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            },
+            {
+              "id": "nature",
+              "label": {
+                "de": "Natur",
+                "en": "nature"
+              }
+            },
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            }
+          ],
+          "correctAnswerId": "food",
+          "success": {
+            "de": "Käse gehört zur Wortgruppe Lebensmittel.",
+            "en": "Cheese belongs to the word group food."
+          },
+          "hint": {
+            "de": "Überlege, was Käse bezeichnet.",
+            "en": "Think about what Cheese describes."
+          }
+        },
+        {
+          "id": "a2wu3",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Schlafen und Zeit?",
+            "en": "Which joined word matches bed and time?"
+          },
+          "visual": "😴 + 🕐",
+          "answers": [
+            {
+              "id": "compound-20-0",
+              "label": {
+                "de": "Wasserfall",
+                "en": "Waterfall"
+              }
+            },
+            {
+              "id": "compound-20-1",
+              "label": {
+                "de": "Schlafenszeit",
+                "en": "Bedtime"
+              }
+            },
+            {
+              "id": "compound-20-2",
+              "label": {
+                "de": "Gartenstuhl",
+                "en": "Garden chair"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-20-1",
+          "success": {
+            "de": "Genau! Das Wort lautet Schlafenszeit.",
+            "en": "Exactly! The word is Bedtime."
+          },
+          "hint": {
+            "de": "Sprich Schlafen und Zeit direkt hintereinander.",
+            "en": "Say bed and time together."
+          }
+        },
+        {
+          "id": "a2wu4",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Die grüne ... ist unten breit.",
+            "en": "Which word completes Navi's sentence? The green ... is wide at the bottom."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-1-0",
+              "label": {
+                "de": "Käse",
+                "en": "Cheese"
+              }
+            },
+            {
+              "id": "sentence-1-1",
+              "label": {
+                "de": "Flugzeug",
+                "en": "Airplane"
+              }
+            },
+            {
+              "id": "sentence-1-2",
+              "label": {
+                "de": "Birne",
+                "en": "Pear"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-1-2",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Birne.",
+            "en": "Correct! The missing word is Pear."
+          },
+          "hint": {
+            "de": "Setze Birne probeweise in den Satz ein.",
+            "en": "Try putting Pear into the sentence."
+          }
+        },
+        {
+          "id": "a2wu5",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Milch?",
+            "en": "Which word group does Milk belong to?"
+          },
+          "visual": "Milch",
+          "answers": [
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            },
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            },
+            {
+              "id": "sky",
+              "label": {
+                "de": "Himmel und Wetter",
+                "en": "sky and weather"
+              }
+            }
+          ],
+          "correctAnswerId": "drinks",
+          "success": {
+            "de": "Milch gehört zur Wortgruppe Getränke.",
+            "en": "Milk belongs to the word group drinks."
+          },
+          "hint": {
+            "de": "Überlege, was Milch bezeichnet.",
+            "en": "Think about what Milk describes."
+          }
+        },
+        {
+          "id": "a2wu6",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Mond und Licht?",
+            "en": "Which joined word matches moon and light?"
+          },
+          "visual": "🌙 + 💡",
+          "answers": [
+            {
+              "id": "compound-21-0",
+              "label": {
+                "de": "Mondlicht",
+                "en": "Moonlight"
+              }
+            },
+            {
+              "id": "compound-21-1",
+              "label": {
+                "de": "Kaffeetasse",
+                "en": "Coffee cup"
+              }
+            },
+            {
+              "id": "compound-21-2",
+              "label": {
+                "de": "Feuerwehrauto",
+                "en": "Fire truck"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-21-0",
+          "success": {
+            "de": "Genau! Das Wort lautet Mondlicht.",
+            "en": "Exactly! The word is Moonlight."
+          },
+          "hint": {
+            "de": "Sprich Mond und Licht direkt hintereinander.",
+            "en": "Say moon and light together."
+          }
+        },
+        {
+          "id": "a2wu7",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Die lange gelbe ... ist krumm.",
+            "en": "Which word completes Navi's sentence? The long yellow ... is curved."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-2-0",
+              "label": {
+                "de": "Sonne",
+                "en": "Sun"
+              }
+            },
+            {
+              "id": "sentence-2-1",
+              "label": {
+                "de": "Banane",
+                "en": "Banana"
+              }
+            },
+            {
+              "id": "sentence-2-2",
+              "label": {
+                "de": "Milch",
+                "en": "Milk"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-2-1",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Banane.",
+            "en": "Correct! The missing word is Banana."
+          },
+          "hint": {
+            "de": "Setze Banane probeweise in den Satz ein.",
+            "en": "Try putting Banana into the sentence."
+          }
+        },
+        {
+          "id": "a2wu8",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Wasser?",
+            "en": "Which word group does Water belong to?"
+          },
+          "visual": "Wasser",
+          "answers": [
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            },
+            {
+              "id": "sky",
+              "label": {
+                "de": "Himmel und Wetter",
+                "en": "sky and weather"
+              }
+            },
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            }
+          ],
+          "correctAnswerId": "drinks",
+          "success": {
+            "de": "Wasser gehört zur Wortgruppe Getränke.",
+            "en": "Water belongs to the word group drinks."
+          },
+          "hint": {
+            "de": "Überlege, was Wasser bezeichnet.",
+            "en": "Think about what Water describes."
+          }
+        },
+        {
+          "id": "a2wu9",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Bücher und Regal?",
+            "en": "Which joined word matches book and shelf?"
+          },
+          "visual": "📚 + 🗄️",
+          "answers": [
+            {
+              "id": "compound-22-0",
+              "label": {
+                "de": "Regenbogen",
+                "en": "Rainbow"
+              }
+            },
+            {
+              "id": "compound-22-1",
+              "label": {
+                "de": "Baumhaus",
+                "en": "Treehouse"
+              }
+            },
+            {
+              "id": "compound-22-2",
+              "label": {
+                "de": "Bücherregal",
+                "en": "Bookshelf"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-22-2",
+          "success": {
+            "de": "Genau! Das Wort lautet Bücherregal.",
+            "en": "Exactly! The word is Bookshelf."
+          },
+          "hint": {
+            "de": "Sprich Bücher und Regal direkt hintereinander.",
+            "en": "Say book and shelf together."
+          }
+        },
+        {
+          "id": "a2wu10",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Die kleine rote ... trägt grüne Blätter.",
+            "en": "Which word completes Navi's sentence? The small red ... has green leaves."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-3-0",
+              "label": {
+                "de": "Erdbeere",
+                "en": "Strawberry"
+              }
+            },
+            {
+              "id": "sentence-3-1",
+              "label": {
+                "de": "Wasser",
+                "en": "Water"
+              }
+            },
+            {
+              "id": "sentence-3-2",
+              "label": {
+                "de": "Mond",
+                "en": "Moon"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-3-0",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Erdbeere.",
+            "en": "Correct! The missing word is Strawberry."
+          },
+          "hint": {
+            "de": "Setze Erdbeere probeweise in den Satz ein.",
+            "en": "Try putting Strawberry into the sentence."
+          }
+        },
+        {
+          "id": "a2wu11",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Haus?",
+            "en": "Which word group does House belong to?"
+          },
+          "visual": "Haus",
+          "answers": [
+            {
+              "id": "nature",
+              "label": {
+                "de": "Natur",
+                "en": "nature"
+              }
+            },
+            {
+              "id": "vegetables",
+              "label": {
+                "de": "Gemüse",
+                "en": "vegetables"
+              }
+            },
+            {
+              "id": "places",
+              "label": {
+                "de": "Orte und Gebäude",
+                "en": "places and buildings"
+              }
+            }
+          ],
+          "correctAnswerId": "places",
+          "success": {
+            "de": "Haus gehört zur Wortgruppe Orte und Gebäude.",
+            "en": "House belongs to the word group places and buildings."
+          },
+          "hint": {
+            "de": "Überlege, was Haus bezeichnet.",
+            "en": "Think about what House describes."
+          }
+        },
+        {
+          "id": "a2wu12",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Leuchten und Turm?",
+            "en": "Which joined word matches light and house?"
+          },
+          "visual": "💡 + 🗼",
+          "answers": [
+            {
+              "id": "compound-23-0",
+              "label": {
+                "de": "Schlafzimmer",
+                "en": "Bedroom"
+              }
+            },
+            {
+              "id": "compound-23-1",
+              "label": {
+                "de": "Leuchtturm",
+                "en": "Lighthouse"
+              }
+            },
+            {
+              "id": "compound-23-2",
+              "label": {
+                "de": "Sonnenblume",
+                "en": "Sunflower"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-23-1",
+          "success": {
+            "de": "Genau! Das Wort lautet Leuchtturm.",
+            "en": "Exactly! The word is Lighthouse."
+          },
+          "hint": {
+            "de": "Sprich Leuchten und Turm direkt hintereinander.",
+            "en": "Say light and house together."
+          }
+        },
+        {
+          "id": "a2wu13",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Die rote ... hängt an einem Stiel.",
+            "en": "Which word completes Navi's sentence? The red ... hangs from a stem."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-4-0",
+              "label": {
+                "de": "Haus",
+                "en": "House"
+              }
+            },
+            {
+              "id": "sentence-4-1",
+              "label": {
+                "de": "Stern",
+                "en": "Star"
+              }
+            },
+            {
+              "id": "sentence-4-2",
+              "label": {
+                "de": "Kirsche",
+                "en": "Cherry"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-4-2",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Kirsche.",
+            "en": "Correct! The missing word is Cherry."
+          },
+          "hint": {
+            "de": "Setze Kirsche probeweise in den Satz ein.",
+            "en": "Try putting Cherry into the sentence."
+          }
+        },
+        {
+          "id": "a2wu14",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Schule?",
+            "en": "Which word group does School belong to?"
+          },
+          "visual": "Schule",
+          "answers": [
+            {
+              "id": "vegetables",
+              "label": {
+                "de": "Gemüse",
+                "en": "vegetables"
+              }
+            },
+            {
+              "id": "places",
+              "label": {
+                "de": "Orte und Gebäude",
+                "en": "places and buildings"
+              }
+            },
+            {
+              "id": "nature",
+              "label": {
+                "de": "Natur",
+                "en": "nature"
+              }
+            }
+          ],
+          "correctAnswerId": "places",
+          "success": {
+            "de": "Schule gehört zur Wortgruppe Orte und Gebäude.",
+            "en": "School belongs to the word group places and buildings."
+          },
+          "hint": {
+            "de": "Überlege, was Schule bezeichnet.",
+            "en": "Think about what School describes."
+          }
+        },
+        {
+          "id": "a2wu15",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Kopf und Hörer?",
+            "en": "Which joined word matches head and phones?"
+          },
+          "visual": "🙂 + 🎧",
+          "answers": [
+            {
+              "id": "compound-24-0",
+              "label": {
+                "de": "Kopfhörer",
+                "en": "Headphones"
+              }
+            },
+            {
+              "id": "compound-24-1",
+              "label": {
+                "de": "Zahnbürste",
+                "en": "Toothbrush"
+              }
+            },
+            {
+              "id": "compound-24-2",
+              "label": {
+                "de": "Spielplatz",
+                "en": "Playground"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-24-0",
+          "success": {
+            "de": "Genau! Das Wort lautet Kopfhörer.",
+            "en": "Exactly! The word is Headphones."
+          },
+          "hint": {
+            "de": "Sprich Kopf und Hörer direkt hintereinander.",
+            "en": "Say head and phones together."
+          }
+        },
+        {
+          "id": "a2wu16",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Viele einzelne Früchte bilden eine ...",
+            "en": "Which word completes Navi's sentence? Many small fruits make one bunch of ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-5-0",
+              "label": {
+                "de": "Wolke",
+                "en": "Cloud"
+              }
+            },
+            {
+              "id": "sentence-5-1",
+              "label": {
+                "de": "Traube",
+                "en": "Grape"
+              }
+            },
+            {
+              "id": "sentence-5-2",
+              "label": {
+                "de": "Schule",
+                "en": "School"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-5-1",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Traube.",
+            "en": "Correct! The missing word is Grape."
+          },
+          "hint": {
+            "de": "Setze Traube probeweise in den Satz ein.",
+            "en": "Try putting Grape into the sentence."
+          }
+        },
+        {
+          "id": "a2wu17",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Auto?",
+            "en": "Which word group does Car belong to?"
+          },
+          "visual": "Auto",
+          "answers": [
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            },
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            },
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            }
+          ],
+          "correctAnswerId": "vehicles",
+          "success": {
+            "de": "Auto gehört zur Wortgruppe Fahrzeuge.",
+            "en": "Car belongs to the word group vehicles."
+          },
+          "hint": {
+            "de": "Überlege, was Auto bezeichnet.",
+            "en": "Think about what Car describes."
+          }
+        },
+        {
+          "id": "a2wu18",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Hand und Tasche?",
+            "en": "Which joined word matches hand and bag?"
+          },
+          "visual": "✋ + 👜",
+          "answers": [
+            {
+              "id": "compound-25-0",
+              "label": {
+                "de": "Fußball",
+                "en": "Football"
+              }
+            },
+            {
+              "id": "compound-25-1",
+              "label": {
+                "de": "Geburtstag",
+                "en": "Birthday"
+              }
+            },
+            {
+              "id": "compound-25-2",
+              "label": {
+                "de": "Handtasche",
+                "en": "Handbag"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-25-2",
+          "success": {
+            "de": "Genau! Das Wort lautet Handtasche.",
+            "en": "Exactly! The word is Handbag."
+          },
+          "hint": {
+            "de": "Sprich Hand und Tasche direkt hintereinander.",
+            "en": "Say hand and bag together."
+          }
+        },
+        {
+          "id": "a2wu19",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Die gelbe ... schmeckt sauer.",
+            "en": "Which word completes Navi's sentence? The yellow ... tastes sour."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-6-0",
+              "label": {
+                "de": "Zitrone",
+                "en": "Lemon"
+              }
+            },
+            {
+              "id": "sentence-6-1",
+              "label": {
+                "de": "Auto",
+                "en": "Car"
+              }
+            },
+            {
+              "id": "sentence-6-2",
+              "label": {
+                "de": "Baum",
+                "en": "Tree"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-6-0",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Zitrone.",
+            "en": "Correct! The missing word is Lemon."
+          },
+          "hint": {
+            "de": "Setze Zitrone probeweise in den Satz ein.",
+            "en": "Try putting Lemon into the sentence."
+          }
+        },
+        {
+          "id": "a2wu20",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Bus?",
+            "en": "Which word group does Bus belong to?"
+          },
+          "visual": "Bus",
+          "answers": [
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            },
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            },
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            }
+          ],
+          "correctAnswerId": "vehicles",
+          "success": {
+            "de": "Bus gehört zur Wortgruppe Fahrzeuge.",
+            "en": "Bus belongs to the word group vehicles."
+          },
+          "hint": {
+            "de": "Überlege, was Bus bezeichnet.",
+            "en": "Think about what Bus describes."
+          }
+        },
+        {
+          "id": "a2wu21",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Wasser und Flasche?",
+            "en": "Which joined word matches water and bottle?"
+          },
+          "visual": "💧 + 🍼",
+          "answers": [
+            {
+              "id": "compound-26-0",
+              "label": {
+                "de": "Nachtlicht",
+                "en": "Nightlight"
+              }
+            },
+            {
+              "id": "compound-26-1",
+              "label": {
+                "de": "Wasserflasche",
+                "en": "Water bottle"
+              }
+            },
+            {
+              "id": "compound-26-2",
+              "label": {
+                "de": "Schulbus",
+                "en": "School bus"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-26-1",
+          "success": {
+            "de": "Genau! Das Wort lautet Wasserflasche.",
+            "en": "Exactly! The word is Water bottle."
+          },
+          "hint": {
+            "de": "Sprich Wasser und Flasche direkt hintereinander.",
+            "en": "Say water and bottle together."
+          }
+        },
+        {
+          "id": "a2wu22",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Das orange Gemüse in diesem Satz ist die ...",
+            "en": "Which word completes Navi's sentence? The orange vegetable in this sentence is the ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-7-0",
+              "label": {
+                "de": "Bus",
+                "en": "Bus"
+              }
+            },
+            {
+              "id": "sentence-7-1",
+              "label": {
+                "de": "Blume",
+                "en": "Flower"
+              }
+            },
+            {
+              "id": "sentence-7-2",
+              "label": {
+                "de": "Karotte",
+                "en": "Carrot"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-7-2",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Karotte.",
+            "en": "Correct! The missing word is Carrot."
+          },
+          "hint": {
+            "de": "Setze Karotte probeweise in den Satz ein.",
+            "en": "Try putting Carrot into the sentence."
+          }
+        },
+        {
+          "id": "a2wu23",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Zug?",
+            "en": "Which word group does Train belong to?"
+          },
+          "visual": "Zug",
+          "answers": [
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            },
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            },
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            }
+          ],
+          "correctAnswerId": "vehicles",
+          "success": {
+            "de": "Zug gehört zur Wortgruppe Fahrzeuge.",
+            "en": "Train belongs to the word group vehicles."
+          },
+          "hint": {
+            "de": "Überlege, was Zug bezeichnet.",
+            "en": "Think about what Train describes."
+          }
+        },
+        {
+          "id": "a2wu24",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Fahrrad und Helm?",
+            "en": "Which joined word matches bicycle and helmet?"
+          },
+          "visual": "🚲 + ⛑️",
+          "answers": [
+            {
+              "id": "compound-27-0",
+              "label": {
+                "de": "Fahrradhelm",
+                "en": "Bicycle helmet"
+              }
+            },
+            {
+              "id": "compound-27-1",
+              "label": {
+                "de": "Apfelbaum",
+                "en": "Apple tree"
+              }
+            },
+            {
+              "id": "compound-27-2",
+              "label": {
+                "de": "Sonnenbrille",
+                "en": "Sunglasses"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-27-0",
+          "success": {
+            "de": "Genau! Das Wort lautet Fahrradhelm.",
+            "en": "Exactly! The word is Bicycle helmet."
+          },
+          "hint": {
+            "de": "Sprich Fahrrad und Helm direkt hintereinander.",
+            "en": "Say bicycle and helmet together."
+          }
+        },
+        {
+          "id": "a2wu25",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Im Salat liegt eine rote ...",
+            "en": "Which word completes Navi's sentence? There is a red ... in the salad."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-8-0",
+              "label": {
+                "de": "Gras",
+                "en": "Grass"
+              }
+            },
+            {
+              "id": "sentence-8-1",
+              "label": {
+                "de": "Tomate",
+                "en": "Tomato"
+              }
+            },
+            {
+              "id": "sentence-8-2",
+              "label": {
+                "de": "Zug",
+                "en": "Train"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-8-1",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Tomate.",
+            "en": "Correct! The missing word is Tomato."
+          },
+          "hint": {
+            "de": "Setze Tomate probeweise in den Satz ein.",
+            "en": "Try putting Tomato into the sentence."
+          }
+        },
+        {
+          "id": "a2wu26",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Fahrrad?",
+            "en": "Which word group does Bicycle belong to?"
+          },
+          "visual": "Fahrrad",
+          "answers": [
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            },
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            },
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            }
+          ],
+          "correctAnswerId": "vehicles",
+          "success": {
+            "de": "Fahrrad gehört zur Wortgruppe Fahrzeuge.",
+            "en": "Bicycle belongs to the word group vehicles."
+          },
+          "hint": {
+            "de": "Überlege, was Fahrrad bezeichnet.",
+            "en": "Think about what Bicycle describes."
+          }
+        },
+        {
+          "id": "a2wu27",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Garten und Stuhl?",
+            "en": "Which joined word matches garden and chair?"
+          },
+          "visual": "🌻 + 🪑",
+          "answers": [
+            {
+              "id": "compound-28-0",
+              "label": {
+                "de": "Schneemann",
+                "en": "Snowman"
+              }
+            },
+            {
+              "id": "compound-28-1",
+              "label": {
+                "de": "Türklingel",
+                "en": "Doorbell"
+              }
+            },
+            {
+              "id": "compound-28-2",
+              "label": {
+                "de": "Gartenstuhl",
+                "en": "Garden chair"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-28-2",
+          "success": {
+            "de": "Genau! Das Wort lautet Gartenstuhl.",
+            "en": "Exactly! The word is Garden chair."
+          },
+          "hint": {
+            "de": "Sprich Garten und Stuhl direkt hintereinander.",
+            "en": "Say garden and chair together."
+          }
+        },
+        {
+          "id": "a2wu28",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? In der Bäckerei kauft Navi ein ...",
+            "en": "Which word completes Navi's sentence? At the bakery, Navi buys a loaf of ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-9-0",
+              "label": {
+                "de": "Brot",
+                "en": "Bread"
+              }
+            },
+            {
+              "id": "sentence-9-1",
+              "label": {
+                "de": "Fahrrad",
+                "en": "Bicycle"
+              }
+            },
+            {
+              "id": "sentence-9-2",
+              "label": {
+                "de": "Berg",
+                "en": "Mountain"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-9-0",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Brot.",
+            "en": "Correct! The missing word is Bread."
+          },
+          "hint": {
+            "de": "Setze Brot probeweise in den Satz ein.",
+            "en": "Try putting Bread into the sentence."
+          }
+        },
+        {
+          "id": "a2wu29",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Boot?",
+            "en": "Which word group does Boat belong to?"
+          },
+          "visual": "Boot",
+          "answers": [
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            },
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            },
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            }
+          ],
+          "correctAnswerId": "vehicles",
+          "success": {
+            "de": "Boot gehört zur Wortgruppe Fahrzeuge.",
+            "en": "Boat belongs to the word group vehicles."
+          },
+          "hint": {
+            "de": "Überlege, was Boot bezeichnet.",
+            "en": "Think about what Boat describes."
+          }
+        },
+        {
+          "id": "a2wu30",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Kaffee und Tasse?",
+            "en": "Which joined word matches coffee and cup?"
+          },
+          "visual": "🫘 + 🥤",
+          "answers": [
+            {
+              "id": "compound-29-0",
+              "label": {
+                "de": "Briefkasten",
+                "en": "Mailbox"
+              }
+            },
+            {
+              "id": "compound-29-1",
+              "label": {
+                "de": "Kaffeetasse",
+                "en": "Coffee cup"
+              }
+            },
+            {
+              "id": "compound-29-2",
+              "label": {
+                "de": "Wasserfall",
+                "en": "Waterfall"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-29-1",
+          "success": {
+            "de": "Genau! Das Wort lautet Kaffeetasse.",
+            "en": "Exactly! The word is Coffee cup."
+          },
+          "hint": {
+            "de": "Sprich Kaffee und Tasse direkt hintereinander.",
+            "en": "Say coffee and cup together."
+          }
+        },
+        {
+          "id": "a2wu31",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Das gelbe Lebensmittel mit Löchern heißt ...",
+            "en": "Which word completes Navi's sentence? The yellow food with holes is called ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-10-0",
+              "label": {
+                "de": "Boot",
+                "en": "Boat"
+              }
+            },
+            {
+              "id": "sentence-10-1",
+              "label": {
+                "de": "Fluss",
+                "en": "River"
+              }
+            },
+            {
+              "id": "sentence-10-2",
+              "label": {
+                "de": "Käse",
+                "en": "Cheese"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-10-2",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Käse.",
+            "en": "Correct! The missing word is Cheese."
+          },
+          "hint": {
+            "de": "Setze Käse probeweise in den Satz ein.",
+            "en": "Try putting Cheese into the sentence."
+          }
+        },
+        {
+          "id": "a2wu32",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Flugzeug?",
+            "en": "Which word group does Airplane belong to?"
+          },
+          "visual": "Flugzeug",
+          "answers": [
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            },
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            },
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            }
+          ],
+          "correctAnswerId": "vehicles",
+          "success": {
+            "de": "Flugzeug gehört zur Wortgruppe Fahrzeuge.",
+            "en": "Airplane belongs to the word group vehicles."
+          },
+          "hint": {
+            "de": "Überlege, was Flugzeug bezeichnet.",
+            "en": "Think about what Airplane describes."
+          }
+        },
+        {
+          "id": "a2wu33",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Regen und Bogen?",
+            "en": "Which joined word matches rain and bow?"
+          },
+          "visual": "🌧️ + 🎀",
+          "answers": [
+            {
+              "id": "compound-0-0",
+              "label": {
+                "de": "Regenbogen",
+                "en": "Rainbow"
+              }
+            },
+            {
+              "id": "compound-0-1",
+              "label": {
+                "de": "Feuerwehrauto",
+                "en": "Fire truck"
+              }
+            },
+            {
+              "id": "compound-0-2",
+              "label": {
+                "de": "Haustür",
+                "en": "Front door"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-0-0",
+          "success": {
+            "de": "Genau! Das Wort lautet Regenbogen.",
+            "en": "Exactly! The word is Rainbow."
+          },
+          "hint": {
+            "de": "Sprich Regen und Bogen direkt hintereinander.",
+            "en": "Say rain and bow together."
+          }
+        },
+        {
+          "id": "a2wu34",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Das weiße Getränk von der Kuh heißt ...",
+            "en": "Which word completes Navi's sentence? The white drink from a cow is called ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-11-0",
+              "label": {
+                "de": "Apfel",
+                "en": "Apple"
+              }
+            },
+            {
+              "id": "sentence-11-1",
+              "label": {
+                "de": "Milch",
+                "en": "Milk"
+              }
+            },
+            {
+              "id": "sentence-11-2",
+              "label": {
+                "de": "Flugzeug",
+                "en": "Airplane"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-11-1",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Milch.",
+            "en": "Correct! The missing word is Milk."
+          },
+          "hint": {
+            "de": "Setze Milch probeweise in den Satz ein.",
+            "en": "Try putting Milk into the sentence."
+          }
+        },
+        {
+          "id": "a2wu35",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Sonne?",
+            "en": "Which word group does Sun belong to?"
+          },
+          "visual": "Sonne",
+          "answers": [
+            {
+              "id": "sky",
+              "label": {
+                "de": "Himmel und Wetter",
+                "en": "sky and weather"
+              }
+            },
+            {
+              "id": "vegetables",
+              "label": {
+                "de": "Gemüse",
+                "en": "vegetables"
+              }
+            },
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            }
+          ],
+          "correctAnswerId": "sky",
+          "success": {
+            "de": "Sonne gehört zur Wortgruppe Himmel und Wetter.",
+            "en": "Sun belongs to the word group sky and weather."
+          },
+          "hint": {
+            "de": "Überlege, was Sonne bezeichnet.",
+            "en": "Think about what Sun describes."
+          }
+        },
+        {
+          "id": "a2wu36",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Sonne und Blume?",
+            "en": "Which joined word matches sun and flower?"
+          },
+          "visual": "☀️ + 🌸",
+          "answers": [
+            {
+              "id": "compound-1-0",
+              "label": {
+                "de": "Baumhaus",
+                "en": "Treehouse"
+              }
+            },
+            {
+              "id": "compound-1-1",
+              "label": {
+                "de": "Pfannkuchen",
+                "en": "Pancake"
+              }
+            },
+            {
+              "id": "compound-1-2",
+              "label": {
+                "de": "Sonnenblume",
+                "en": "Sunflower"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-1-2",
+          "success": {
+            "de": "Genau! Das Wort lautet Sonnenblume.",
+            "en": "Exactly! The word is Sunflower."
+          },
+          "hint": {
+            "de": "Sprich Sonne und Blume direkt hintereinander.",
+            "en": "Say sun and flower together."
+          }
+        },
+        {
+          "id": "a2wu37",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Wenn Navi Durst hat, trinkt er ...",
+            "en": "Which word completes Navi's sentence? When Navi is thirsty, he drinks ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-12-0",
+              "label": {
+                "de": "Wasser",
+                "en": "Water"
+              }
+            },
+            {
+              "id": "sentence-12-1",
+              "label": {
+                "de": "Sonne",
+                "en": "Sun"
+              }
+            },
+            {
+              "id": "sentence-12-2",
+              "label": {
+                "de": "Birne",
+                "en": "Pear"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-12-0",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Wasser.",
+            "en": "Correct! The missing word is Water."
+          },
+          "hint": {
+            "de": "Setze Wasser probeweise in den Satz ein.",
+            "en": "Try putting Water into the sentence."
+          }
+        },
+        {
+          "id": "a2wu38",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Mond?",
+            "en": "Which word group does Moon belong to?"
+          },
+          "visual": "Mond",
+          "answers": [
+            {
+              "id": "vegetables",
+              "label": {
+                "de": "Gemüse",
+                "en": "vegetables"
+              }
+            },
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            },
+            {
+              "id": "sky",
+              "label": {
+                "de": "Himmel und Wetter",
+                "en": "sky and weather"
+              }
+            }
+          ],
+          "correctAnswerId": "sky",
+          "success": {
+            "de": "Mond gehört zur Wortgruppe Himmel und Wetter.",
+            "en": "Moon belongs to the word group sky and weather."
+          },
+          "hint": {
+            "de": "Überlege, was Mond bezeichnet.",
+            "en": "Think about what Moon describes."
+          }
+        },
+        {
+          "id": "a2wu39",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Zahn und Bürste?",
+            "en": "Which joined word matches tooth and brush?"
+          },
+          "visual": "🦷 + 🪥",
+          "answers": [
+            {
+              "id": "compound-2-0",
+              "label": {
+                "de": "Regenmantel",
+                "en": "Raincoat"
+              }
+            },
+            {
+              "id": "compound-2-1",
+              "label": {
+                "de": "Zahnbürste",
+                "en": "Toothbrush"
+              }
+            },
+            {
+              "id": "compound-2-2",
+              "label": {
+                "de": "Schlafzimmer",
+                "en": "Bedroom"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-2-1",
+          "success": {
+            "de": "Genau! Das Wort lautet Zahnbürste.",
+            "en": "Exactly! The word is Toothbrush."
+          },
+          "hint": {
+            "de": "Sprich Zahn und Bürste direkt hintereinander.",
+            "en": "Say tooth and brush together."
+          }
+        },
+        {
+          "id": "a2wu40",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Menschen wohnen in einem ...",
+            "en": "Which word completes Navi's sentence? People live in a ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-13-0",
+              "label": {
+                "de": "Mond",
+                "en": "Moon"
+              }
+            },
+            {
+              "id": "sentence-13-1",
+              "label": {
+                "de": "Banane",
+                "en": "Banana"
+              }
+            },
+            {
+              "id": "sentence-13-2",
+              "label": {
+                "de": "Haus",
+                "en": "House"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-13-2",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Haus.",
+            "en": "Correct! The missing word is House."
+          },
+          "hint": {
+            "de": "Setze Haus probeweise in den Satz ein.",
+            "en": "Try putting House into the sentence."
+          }
+        },
+        {
+          "id": "a2wu41",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Stern?",
+            "en": "Which word group does Star belong to?"
+          },
+          "visual": "Stern",
+          "answers": [
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            },
+            {
+              "id": "sky",
+              "label": {
+                "de": "Himmel und Wetter",
+                "en": "sky and weather"
+              }
+            },
+            {
+              "id": "vegetables",
+              "label": {
+                "de": "Gemüse",
+                "en": "vegetables"
+              }
+            }
+          ],
+          "correctAnswerId": "sky",
+          "success": {
+            "de": "Stern gehört zur Wortgruppe Himmel und Wetter.",
+            "en": "Star belongs to the word group sky and weather."
+          },
+          "hint": {
+            "de": "Überlege, was Stern bezeichnet.",
+            "en": "Think about what Star describes."
+          }
+        },
+        {
+          "id": "a2wu42",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Fuß und Ball?",
+            "en": "Which joined word matches foot and ball?"
+          },
+          "visual": "🦶 + ⚽",
+          "answers": [
+            {
+              "id": "compound-3-0",
+              "label": {
+                "de": "Fußball",
+                "en": "Football"
+              }
+            },
+            {
+              "id": "compound-3-1",
+              "label": {
+                "de": "Spielplatz",
+                "en": "Playground"
+              }
+            },
+            {
+              "id": "compound-3-2",
+              "label": {
+                "de": "Schlafenszeit",
+                "en": "Bedtime"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-3-0",
+          "success": {
+            "de": "Genau! Das Wort lautet Fußball.",
+            "en": "Exactly! The word is Football."
+          },
+          "hint": {
+            "de": "Sprich Fuß und Ball direkt hintereinander.",
+            "en": "Say foot and ball together."
+          }
+        },
+        {
+          "id": "a2wu43",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Kinder lernen gemeinsam in der ...",
+            "en": "Which word completes Navi's sentence? Children learn together at ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-14-0",
+              "label": {
+                "de": "Erdbeere",
+                "en": "Strawberry"
+              }
+            },
+            {
+              "id": "sentence-14-1",
+              "label": {
+                "de": "Schule",
+                "en": "School"
+              }
+            },
+            {
+              "id": "sentence-14-2",
+              "label": {
+                "de": "Stern",
+                "en": "Star"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-14-1",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Schule.",
+            "en": "Correct! The missing word is School."
+          },
+          "hint": {
+            "de": "Setze Schule probeweise in den Satz ein.",
+            "en": "Try putting School into the sentence."
+          }
+        },
+        {
+          "id": "a2wu44",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Wolke?",
+            "en": "Which word group does Cloud belong to?"
+          },
+          "visual": "Wolke",
+          "answers": [
+            {
+              "id": "sky",
+              "label": {
+                "de": "Himmel und Wetter",
+                "en": "sky and weather"
+              }
+            },
+            {
+              "id": "vegetables",
+              "label": {
+                "de": "Gemüse",
+                "en": "vegetables"
+              }
+            },
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            }
+          ],
+          "correctAnswerId": "sky",
+          "success": {
+            "de": "Wolke gehört zur Wortgruppe Himmel und Wetter.",
+            "en": "Cloud belongs to the word group sky and weather."
+          },
+          "hint": {
+            "de": "Überlege, was Wolke bezeichnet.",
+            "en": "Think about what Cloud describes."
+          }
+        },
+        {
+          "id": "a2wu45",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Schule und Bus?",
+            "en": "Which joined word matches school and bus?"
+          },
+          "visual": "🏫 + 🚌",
+          "answers": [
+            {
+              "id": "compound-4-0",
+              "label": {
+                "de": "Geburtstag",
+                "en": "Birthday"
+              }
+            },
+            {
+              "id": "compound-4-1",
+              "label": {
+                "de": "Mondlicht",
+                "en": "Moonlight"
+              }
+            },
+            {
+              "id": "compound-4-2",
+              "label": {
+                "de": "Schulbus",
+                "en": "School bus"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-4-2",
+          "success": {
+            "de": "Genau! Das Wort lautet Schulbus.",
+            "en": "Exactly! The word is School bus."
+          },
+          "hint": {
+            "de": "Sprich Schule und Bus direkt hintereinander.",
+            "en": "Say school and bus together."
+          }
+        },
+        {
+          "id": "a2wu46",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Auf der Straße fährt ein ...",
+            "en": "Which word completes Navi's sentence? A ... drives on the road."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-15-0",
+              "label": {
+                "de": "Auto",
+                "en": "Car"
+              }
+            },
+            {
+              "id": "sentence-15-1",
+              "label": {
+                "de": "Wolke",
+                "en": "Cloud"
+              }
+            },
+            {
+              "id": "sentence-15-2",
+              "label": {
+                "de": "Kirsche",
+                "en": "Cherry"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-15-0",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Auto.",
+            "en": "Correct! The missing word is Car."
+          },
+          "hint": {
+            "de": "Setze Auto probeweise in den Satz ein.",
+            "en": "Try putting Car into the sentence."
+          }
+        },
+        {
+          "id": "a2wu47",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Baum?",
+            "en": "Which word group does Tree belong to?"
+          },
+          "visual": "Baum",
+          "answers": [
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            },
+            {
+              "id": "places",
+              "label": {
+                "de": "Orte und Gebäude",
+                "en": "places and buildings"
+              }
+            },
+            {
+              "id": "nature",
+              "label": {
+                "de": "Natur",
+                "en": "nature"
+              }
+            }
+          ],
+          "correctAnswerId": "nature",
+          "success": {
+            "de": "Baum gehört zur Wortgruppe Natur.",
+            "en": "Tree belongs to the word group nature."
+          },
+          "hint": {
+            "de": "Überlege, was Baum bezeichnet.",
+            "en": "Think about what Tree describes."
+          }
+        },
+        {
+          "id": "a2wu48",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Apfel und Baum?",
+            "en": "Which joined word matches apple and tree?"
+          },
+          "visual": "🍎 + 🌳",
+          "answers": [
+            {
+              "id": "compound-5-0",
+              "label": {
+                "de": "Bücherregal",
+                "en": "Bookshelf"
+              }
+            },
+            {
+              "id": "compound-5-1",
+              "label": {
+                "de": "Apfelbaum",
+                "en": "Apple tree"
+              }
+            },
+            {
+              "id": "compound-5-2",
+              "label": {
+                "de": "Nachtlicht",
+                "en": "Nightlight"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-5-1",
+          "success": {
+            "de": "Genau! Das Wort lautet Apfelbaum.",
+            "en": "Exactly! The word is Apple tree."
+          },
+          "hint": {
+            "de": "Sprich Apfel und Baum direkt hintereinander.",
+            "en": "Say apple and tree together."
+          }
+        },
+        {
+          "id": "a2wu49",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Viele Menschen fahren gemeinsam im ...",
+            "en": "Which word completes Navi's sentence? Many people ride together on a ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-16-0",
+              "label": {
+                "de": "Baum",
+                "en": "Tree"
+              }
+            },
+            {
+              "id": "sentence-16-1",
+              "label": {
+                "de": "Traube",
+                "en": "Grape"
+              }
+            },
+            {
+              "id": "sentence-16-2",
+              "label": {
+                "de": "Bus",
+                "en": "Bus"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-16-2",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Bus.",
+            "en": "Correct! The missing word is Bus."
+          },
+          "hint": {
+            "de": "Setze Bus probeweise in den Satz ein.",
+            "en": "Try putting Bus into the sentence."
+          }
+        },
+        {
+          "id": "a2wu50",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Blume?",
+            "en": "Which word group does Flower belong to?"
+          },
+          "visual": "Blume",
+          "answers": [
+            {
+              "id": "places",
+              "label": {
+                "de": "Orte und Gebäude",
+                "en": "places and buildings"
+              }
+            },
+            {
+              "id": "nature",
+              "label": {
+                "de": "Natur",
+                "en": "nature"
+              }
+            },
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            }
+          ],
+          "correctAnswerId": "nature",
+          "success": {
+            "de": "Blume gehört zur Wortgruppe Natur.",
+            "en": "Flower belongs to the word group nature."
+          },
+          "hint": {
+            "de": "Überlege, was Blume bezeichnet.",
+            "en": "Think about what Flower describes."
+          }
+        },
+        {
+          "id": "a2wu51",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Schnee und Mann?",
+            "en": "Which joined word matches snow and man?"
+          },
+          "visual": "❄️ + 🧍",
+          "answers": [
+            {
+              "id": "compound-6-0",
+              "label": {
+                "de": "Schneemann",
+                "en": "Snowman"
+              }
+            },
+            {
+              "id": "compound-6-1",
+              "label": {
+                "de": "Sonnenbrille",
+                "en": "Sunglasses"
+              }
+            },
+            {
+              "id": "compound-6-2",
+              "label": {
+                "de": "Leuchtturm",
+                "en": "Lighthouse"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-6-0",
+          "success": {
+            "de": "Genau! Das Wort lautet Schneemann.",
+            "en": "Exactly! The word is Snowman."
+          },
+          "hint": {
+            "de": "Sprich Schnee und Mann direkt hintereinander.",
+            "en": "Say snow and man together."
+          }
+        },
+        {
+          "id": "a2wu52",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Auf Schienen fährt der ...",
+            "en": "Which word completes Navi's sentence? The ... travels on rails."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-17-0",
+              "label": {
+                "de": "Zitrone",
+                "en": "Lemon"
+              }
+            },
+            {
+              "id": "sentence-17-1",
+              "label": {
+                "de": "Zug",
+                "en": "Train"
+              }
+            },
+            {
+              "id": "sentence-17-2",
+              "label": {
+                "de": "Blume",
+                "en": "Flower"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-17-1",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Zug.",
+            "en": "Correct! The missing word is Train."
+          },
+          "hint": {
+            "de": "Setze Zug probeweise in den Satz ein.",
+            "en": "Try putting Train into the sentence."
+          }
+        },
+        {
+          "id": "a2wu53",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Gras?",
+            "en": "Which word group does Grass belong to?"
+          },
+          "visual": "Gras",
+          "answers": [
+            {
+              "id": "nature",
+              "label": {
+                "de": "Natur",
+                "en": "nature"
+              }
+            },
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            },
+            {
+              "id": "places",
+              "label": {
+                "de": "Orte und Gebäude",
+                "en": "places and buildings"
+              }
+            }
+          ],
+          "correctAnswerId": "nature",
+          "success": {
+            "de": "Gras gehört zur Wortgruppe Natur.",
+            "en": "Grass belongs to the word group nature."
+          },
+          "hint": {
+            "de": "Überlege, was Gras bezeichnet.",
+            "en": "Think about what Grass describes."
+          }
+        },
+        {
+          "id": "a2wu54",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Wasser und Fall?",
+            "en": "Which joined word matches water and fall?"
+          },
+          "visual": "💧 + ⬇️",
+          "answers": [
+            {
+              "id": "compound-7-0",
+              "label": {
+                "de": "Türklingel",
+                "en": "Doorbell"
+              }
+            },
+            {
+              "id": "compound-7-1",
+              "label": {
+                "de": "Kopfhörer",
+                "en": "Headphones"
+              }
+            },
+            {
+              "id": "compound-7-2",
+              "label": {
+                "de": "Wasserfall",
+                "en": "Waterfall"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-7-2",
+          "success": {
+            "de": "Genau! Das Wort lautet Wasserfall.",
+            "en": "Exactly! The word is Waterfall."
+          },
+          "hint": {
+            "de": "Sprich Wasser und Fall direkt hintereinander.",
+            "en": "Say water and fall together."
+          }
+        },
+        {
+          "id": "a2wu55",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Zwei Räder und Pedale hat das ...",
+            "en": "Which word completes Navi's sentence? The ... has two wheels and pedals."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-18-0",
+              "label": {
+                "de": "Fahrrad",
+                "en": "Bicycle"
+              }
+            },
+            {
+              "id": "sentence-18-1",
+              "label": {
+                "de": "Gras",
+                "en": "Grass"
+              }
+            },
+            {
+              "id": "sentence-18-2",
+              "label": {
+                "de": "Karotte",
+                "en": "Carrot"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-18-0",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Fahrrad.",
+            "en": "Correct! The missing word is Bicycle."
+          },
+          "hint": {
+            "de": "Setze Fahrrad probeweise in den Satz ein.",
+            "en": "Try putting Bicycle into the sentence."
+          }
+        },
+        {
+          "id": "a2wu56",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Berg?",
+            "en": "Which word group does Mountain belong to?"
+          },
+          "visual": "Berg",
+          "answers": [
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            },
+            {
+              "id": "places",
+              "label": {
+                "de": "Orte und Gebäude",
+                "en": "places and buildings"
+              }
+            },
+            {
+              "id": "nature",
+              "label": {
+                "de": "Natur",
+                "en": "nature"
+              }
+            }
+          ],
+          "correctAnswerId": "nature",
+          "success": {
+            "de": "Berg gehört zur Wortgruppe Natur.",
+            "en": "Mountain belongs to the word group nature."
+          },
+          "hint": {
+            "de": "Überlege, was Berg bezeichnet.",
+            "en": "Think about what Mountain describes."
+          }
+        },
+        {
+          "id": "a2wu57",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Feuerwehr und Auto?",
+            "en": "Which joined word matches fire and truck?"
+          },
+          "visual": "🔥 + 🚗",
+          "answers": [
+            {
+              "id": "compound-8-0",
+              "label": {
+                "de": "Handtasche",
+                "en": "Handbag"
+              }
+            },
+            {
+              "id": "compound-8-1",
+              "label": {
+                "de": "Feuerwehrauto",
+                "en": "Fire truck"
+              }
+            },
+            {
+              "id": "compound-8-2",
+              "label": {
+                "de": "Briefkasten",
+                "en": "Mailbox"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-8-1",
+          "success": {
+            "de": "Genau! Das Wort lautet Feuerwehrauto.",
+            "en": "Exactly! The word is Fire truck."
+          },
+          "hint": {
+            "de": "Sprich Feuerwehr und Auto direkt hintereinander.",
+            "en": "Say fire and truck together."
+          }
+        },
+        {
+          "id": "a2wu58",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Über das Wasser fährt ein ...",
+            "en": "Which word completes Navi's sentence? A ... travels across the water."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-19-0",
+              "label": {
+                "de": "Berg",
+                "en": "Mountain"
+              }
+            },
+            {
+              "id": "sentence-19-1",
+              "label": {
+                "de": "Tomate",
+                "en": "Tomato"
+              }
+            },
+            {
+              "id": "sentence-19-2",
+              "label": {
+                "de": "Boot",
+                "en": "Boat"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-19-2",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Boot.",
+            "en": "Correct! The missing word is Boat."
+          },
+          "hint": {
+            "de": "Setze Boot probeweise in den Satz ein.",
+            "en": "Try putting Boat into the sentence."
+          }
+        },
+        {
+          "id": "a2wu59",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Fluss?",
+            "en": "Which word group does River belong to?"
+          },
+          "visual": "Fluss",
+          "answers": [
+            {
+              "id": "places",
+              "label": {
+                "de": "Orte und Gebäude",
+                "en": "places and buildings"
+              }
+            },
+            {
+              "id": "nature",
+              "label": {
+                "de": "Natur",
+                "en": "nature"
+              }
+            },
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            }
+          ],
+          "correctAnswerId": "nature",
+          "success": {
+            "de": "Fluss gehört zur Wortgruppe Natur.",
+            "en": "River belongs to the word group nature."
+          },
+          "hint": {
+            "de": "Überlege, was Fluss bezeichnet.",
+            "en": "Think about what River describes."
+          }
+        },
+        {
+          "id": "a2wu60",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Baum und Haus?",
+            "en": "Which joined word matches tree and house?"
+          },
+          "visual": "🌳 + 🏠",
+          "answers": [
+            {
+              "id": "compound-9-0",
+              "label": {
+                "de": "Baumhaus",
+                "en": "Treehouse"
+              }
+            },
+            {
+              "id": "compound-9-1",
+              "label": {
+                "de": "Haustür",
+                "en": "Front door"
+              }
+            },
+            {
+              "id": "compound-9-2",
+              "label": {
+                "de": "Wasserflasche",
+                "en": "Water bottle"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-9-0",
+          "success": {
+            "de": "Genau! Das Wort lautet Baumhaus.",
+            "en": "Exactly! The word is Treehouse."
+          },
+          "hint": {
+            "de": "Sprich Baum und Haus direkt hintereinander.",
+            "en": "Say tree and house together."
+          }
+        },
+        {
+          "id": "a2wu61",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Durch den Himmel fliegt ein ...",
+            "en": "Which word completes Navi's sentence? An ... flies through the sky."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-20-0",
+              "label": {
+                "de": "Brot",
+                "en": "Bread"
+              }
+            },
+            {
+              "id": "sentence-20-1",
+              "label": {
+                "de": "Flugzeug",
+                "en": "Airplane"
+              }
+            },
+            {
+              "id": "sentence-20-2",
+              "label": {
+                "de": "Fluss",
+                "en": "River"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-20-1",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Flugzeug.",
+            "en": "Correct! The missing word is Airplane."
+          },
+          "hint": {
+            "de": "Setze Flugzeug probeweise in den Satz ein.",
+            "en": "Try putting Airplane into the sentence."
+          }
+        },
+        {
+          "id": "a2wu62",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Apfel?",
+            "en": "Which word group does Apple belong to?"
+          },
+          "visual": "Apfel",
+          "answers": [
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            },
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            },
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            }
+          ],
+          "correctAnswerId": "fruit",
+          "success": {
+            "de": "Apfel gehört zur Wortgruppe Obst.",
+            "en": "Apple belongs to the word group fruit."
+          },
+          "hint": {
+            "de": "Überlege, was Apfel bezeichnet.",
+            "en": "Think about what Apple describes."
+          }
+        },
+        {
+          "id": "a2wu63",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Schlafen und Zimmer?",
+            "en": "Which joined word matches bed and room?"
+          },
+          "visual": "😴 + 🚪",
+          "answers": [
+            {
+              "id": "compound-10-0",
+              "label": {
+                "de": "Pfannkuchen",
+                "en": "Pancake"
+              }
+            },
+            {
+              "id": "compound-10-1",
+              "label": {
+                "de": "Fahrradhelm",
+                "en": "Bicycle helmet"
+              }
+            },
+            {
+              "id": "compound-10-2",
+              "label": {
+                "de": "Schlafzimmer",
+                "en": "Bedroom"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-10-2",
+          "success": {
+            "de": "Genau! Das Wort lautet Schlafzimmer.",
+            "en": "Exactly! The word is Bedroom."
+          },
+          "hint": {
+            "de": "Sprich Schlafen und Zimmer direkt hintereinander.",
+            "en": "Say bed and room together."
+          }
+        },
+        {
+          "id": "a2wu64",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Am Tag leuchtet die ...",
+            "en": "Which word completes Navi's sentence? The ... shines during the day."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-21-0",
+              "label": {
+                "de": "Sonne",
+                "en": "Sun"
+              }
+            },
+            {
+              "id": "sentence-21-1",
+              "label": {
+                "de": "Apfel",
+                "en": "Apple"
+              }
+            },
+            {
+              "id": "sentence-21-2",
+              "label": {
+                "de": "Käse",
+                "en": "Cheese"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-21-0",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Sonne.",
+            "en": "Correct! The missing word is Sun."
+          },
+          "hint": {
+            "de": "Setze Sonne probeweise in den Satz ein.",
+            "en": "Try putting Sun into the sentence."
+          }
+        },
+        {
+          "id": "a2wu65",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Birne?",
+            "en": "Which word group does Pear belong to?"
+          },
+          "visual": "Birne",
+          "answers": [
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            },
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            },
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            }
+          ],
+          "correctAnswerId": "fruit",
+          "success": {
+            "de": "Birne gehört zur Wortgruppe Obst.",
+            "en": "Pear belongs to the word group fruit."
+          },
+          "hint": {
+            "de": "Überlege, was Birne bezeichnet.",
+            "en": "Think about what Pear describes."
+          }
+        },
+        {
+          "id": "a2wu66",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Spiel und Platz?",
+            "en": "Which joined word matches play and ground?"
+          },
+          "visual": "🎲 + 🏞️",
+          "answers": [
+            {
+              "id": "compound-11-0",
+              "label": {
+                "de": "Gartenstuhl",
+                "en": "Garden chair"
+              }
+            },
+            {
+              "id": "compound-11-1",
+              "label": {
+                "de": "Spielplatz",
+                "en": "Playground"
+              }
+            },
+            {
+              "id": "compound-11-2",
+              "label": {
+                "de": "Regenmantel",
+                "en": "Raincoat"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-11-1",
+          "success": {
+            "de": "Genau! Das Wort lautet Spielplatz.",
+            "en": "Exactly! The word is Playground."
+          },
+          "hint": {
+            "de": "Sprich Spiel und Platz direkt hintereinander.",
+            "en": "Say play and ground together."
+          }
+        },
+        {
+          "id": "a2wu67",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? In der Nacht sehen wir den ...",
+            "en": "Which word completes Navi's sentence? At night we can see the ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-22-0",
+              "label": {
+                "de": "Birne",
+                "en": "Pear"
+              }
+            },
+            {
+              "id": "sentence-22-1",
+              "label": {
+                "de": "Milch",
+                "en": "Milk"
+              }
+            },
+            {
+              "id": "sentence-22-2",
+              "label": {
+                "de": "Mond",
+                "en": "Moon"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-22-2",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Mond.",
+            "en": "Correct! The missing word is Moon."
+          },
+          "hint": {
+            "de": "Setze Mond probeweise in den Satz ein.",
+            "en": "Try putting Moon into the sentence."
+          }
+        },
+        {
+          "id": "a2wu68",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Banane?",
+            "en": "Which word group does Banana belong to?"
+          },
+          "visual": "Banane",
+          "answers": [
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            },
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            },
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            }
+          ],
+          "correctAnswerId": "fruit",
+          "success": {
+            "de": "Banane gehört zur Wortgruppe Obst.",
+            "en": "Banana belongs to the word group fruit."
+          },
+          "hint": {
+            "de": "Überlege, was Banane bezeichnet.",
+            "en": "Think about what Banana describes."
+          }
+        },
+        {
+          "id": "a2wu69",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Geburt und Tag?",
+            "en": "Which joined word matches birth and day?"
+          },
+          "visual": "👶 + 📅",
+          "answers": [
+            {
+              "id": "compound-12-0",
+              "label": {
+                "de": "Geburtstag",
+                "en": "Birthday"
+              }
+            },
+            {
+              "id": "compound-12-1",
+              "label": {
+                "de": "Schlafenszeit",
+                "en": "Bedtime"
+              }
+            },
+            {
+              "id": "compound-12-2",
+              "label": {
+                "de": "Kaffeetasse",
+                "en": "Coffee cup"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-12-0",
+          "success": {
+            "de": "Genau! Das Wort lautet Geburtstag.",
+            "en": "Exactly! The word is Birthday."
+          },
+          "hint": {
+            "de": "Sprich Geburt und Tag direkt hintereinander.",
+            "en": "Say birth and day together."
+          }
+        },
+        {
+          "id": "a2wu70",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Am Nachthimmel funkelt ein ...",
+            "en": "Which word completes Navi's sentence? A ... twinkles in the night sky."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-23-0",
+              "label": {
+                "de": "Wasser",
+                "en": "Water"
+              }
+            },
+            {
+              "id": "sentence-23-1",
+              "label": {
+                "de": "Stern",
+                "en": "Star"
+              }
+            },
+            {
+              "id": "sentence-23-2",
+              "label": {
+                "de": "Banane",
+                "en": "Banana"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-23-1",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Stern.",
+            "en": "Correct! The missing word is Star."
+          },
+          "hint": {
+            "de": "Setze Stern probeweise in den Satz ein.",
+            "en": "Try putting Star into the sentence."
+          }
+        },
+        {
+          "id": "a2wu71",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Erdbeere?",
+            "en": "Which word group does Strawberry belong to?"
+          },
+          "visual": "Erdbeere",
+          "answers": [
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            },
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            },
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            }
+          ],
+          "correctAnswerId": "fruit",
+          "success": {
+            "de": "Erdbeere gehört zur Wortgruppe Obst.",
+            "en": "Strawberry belongs to the word group fruit."
+          },
+          "hint": {
+            "de": "Überlege, was Erdbeere bezeichnet.",
+            "en": "Think about what Strawberry describes."
+          }
+        },
+        {
+          "id": "a2wu72",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Nacht und Licht?",
+            "en": "Which joined word matches night and light?"
+          },
+          "visual": "🌙 + 💡",
+          "answers": [
+            {
+              "id": "compound-13-0",
+              "label": {
+                "de": "Mondlicht",
+                "en": "Moonlight"
+              }
+            },
+            {
+              "id": "compound-13-1",
+              "label": {
+                "de": "Regenbogen",
+                "en": "Rainbow"
+              }
+            },
+            {
+              "id": "compound-13-2",
+              "label": {
+                "de": "Nachtlicht",
+                "en": "Nightlight"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-13-2",
+          "success": {
+            "de": "Genau! Das Wort lautet Nachtlicht.",
+            "en": "Exactly! The word is Nightlight."
+          },
+          "hint": {
+            "de": "Sprich Nacht und Licht direkt hintereinander.",
+            "en": "Say night and light together."
+          }
+        },
+        {
+          "id": "a2wu73",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Aus einer dunklen ... kann Regen fallen.",
+            "en": "Which word completes Navi's sentence? Rain can fall from a dark ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-24-0",
+              "label": {
+                "de": "Wolke",
+                "en": "Cloud"
+              }
+            },
+            {
+              "id": "sentence-24-1",
+              "label": {
+                "de": "Erdbeere",
+                "en": "Strawberry"
+              }
+            },
+            {
+              "id": "sentence-24-2",
+              "label": {
+                "de": "Haus",
+                "en": "House"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-24-0",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Wolke.",
+            "en": "Correct! The missing word is Cloud."
+          },
+          "hint": {
+            "de": "Setze Wolke probeweise in den Satz ein.",
+            "en": "Try putting Cloud into the sentence."
+          }
+        },
+        {
+          "id": "a2wu74",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Kirsche?",
+            "en": "Which word group does Cherry belong to?"
+          },
+          "visual": "Kirsche",
+          "answers": [
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            },
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            },
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            }
+          ],
+          "correctAnswerId": "fruit",
+          "success": {
+            "de": "Kirsche gehört zur Wortgruppe Obst.",
+            "en": "Cherry belongs to the word group fruit."
+          },
+          "hint": {
+            "de": "Überlege, was Kirsche bezeichnet.",
+            "en": "Think about what Cherry describes."
+          }
+        },
+        {
+          "id": "a2wu75",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Sonne und Brille?",
+            "en": "Which joined word matches sun and glasses?"
+          },
+          "visual": "☀️ + 👓",
+          "answers": [
+            {
+              "id": "compound-14-0",
+              "label": {
+                "de": "Sonnenblume",
+                "en": "Sunflower"
+              }
+            },
+            {
+              "id": "compound-14-1",
+              "label": {
+                "de": "Sonnenbrille",
+                "en": "Sunglasses"
+              }
+            },
+            {
+              "id": "compound-14-2",
+              "label": {
+                "de": "Bücherregal",
+                "en": "Bookshelf"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-14-1",
+          "success": {
+            "de": "Genau! Das Wort lautet Sonnenbrille.",
+            "en": "Exactly! The word is Sunglasses."
+          },
+          "hint": {
+            "de": "Sprich Sonne und Brille direkt hintereinander.",
+            "en": "Say sun and glasses together."
+          }
+        },
+        {
+          "id": "a2wu76",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Eine große Pflanze mit Stamm ist ein ...",
+            "en": "Which word completes Navi's sentence? A large plant with a trunk is a ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-25-0",
+              "label": {
+                "de": "Kirsche",
+                "en": "Cherry"
+              }
+            },
+            {
+              "id": "sentence-25-1",
+              "label": {
+                "de": "Schule",
+                "en": "School"
+              }
+            },
+            {
+              "id": "sentence-25-2",
+              "label": {
+                "de": "Baum",
+                "en": "Tree"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-25-2",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Baum.",
+            "en": "Correct! The missing word is Tree."
+          },
+          "hint": {
+            "de": "Setze Baum probeweise in den Satz ein.",
+            "en": "Try putting Tree into the sentence."
+          }
+        },
+        {
+          "id": "a2wu77",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Traube?",
+            "en": "Which word group does Grape belong to?"
+          },
+          "visual": "Traube",
+          "answers": [
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            },
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            },
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            }
+          ],
+          "correctAnswerId": "fruit",
+          "success": {
+            "de": "Traube gehört zur Wortgruppe Obst.",
+            "en": "Grape belongs to the word group fruit."
+          },
+          "hint": {
+            "de": "Überlege, was Traube bezeichnet.",
+            "en": "Think about what Grape describes."
+          }
+        },
+        {
+          "id": "a2wu78",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Tür und Klingel?",
+            "en": "Which joined word matches door and bell?"
+          },
+          "visual": "🚪 + 🔔",
+          "answers": [
+            {
+              "id": "compound-15-0",
+              "label": {
+                "de": "Türklingel",
+                "en": "Doorbell"
+              }
+            },
+            {
+              "id": "compound-15-1",
+              "label": {
+                "de": "Leuchtturm",
+                "en": "Lighthouse"
+              }
+            },
+            {
+              "id": "compound-15-2",
+              "label": {
+                "de": "Zahnbürste",
+                "en": "Toothbrush"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-15-0",
+          "success": {
+            "de": "Genau! Das Wort lautet Türklingel.",
+            "en": "Exactly! The word is Doorbell."
+          },
+          "hint": {
+            "de": "Sprich Tür und Klingel direkt hintereinander.",
+            "en": "Say door and bell together."
+          }
+        },
+        {
+          "id": "a2wu79",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Eine bunt blühende Pflanze ist eine ...",
+            "en": "Which word completes Navi's sentence? A colorful blooming plant is a ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-26-0",
+              "label": {
+                "de": "Auto",
+                "en": "Car"
+              }
+            },
+            {
+              "id": "sentence-26-1",
+              "label": {
+                "de": "Blume",
+                "en": "Flower"
+              }
+            },
+            {
+              "id": "sentence-26-2",
+              "label": {
+                "de": "Traube",
+                "en": "Grape"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-26-1",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Blume.",
+            "en": "Correct! The missing word is Flower."
+          },
+          "hint": {
+            "de": "Setze Blume probeweise in den Satz ein.",
+            "en": "Try putting Flower into the sentence."
+          }
+        },
+        {
+          "id": "a2wu80",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Zitrone?",
+            "en": "Which word group does Lemon belong to?"
+          },
+          "visual": "Zitrone",
+          "answers": [
+            {
+              "id": "fruit",
+              "label": {
+                "de": "Obst",
+                "en": "fruit"
+              }
+            },
+            {
+              "id": "drinks",
+              "label": {
+                "de": "Getränke",
+                "en": "drinks"
+              }
+            },
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            }
+          ],
+          "correctAnswerId": "fruit",
+          "success": {
+            "de": "Zitrone gehört zur Wortgruppe Obst.",
+            "en": "Lemon belongs to the word group fruit."
+          },
+          "hint": {
+            "de": "Überlege, was Zitrone bezeichnet.",
+            "en": "Think about what Lemon describes."
+          }
+        },
+        {
+          "id": "a2wu81",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Brief und Kasten?",
+            "en": "Which joined word matches mail and box?"
+          },
+          "visual": "✉️ + 📦",
+          "answers": [
+            {
+              "id": "compound-16-0",
+              "label": {
+                "de": "Kopfhörer",
+                "en": "Headphones"
+              }
+            },
+            {
+              "id": "compound-16-1",
+              "label": {
+                "de": "Fußball",
+                "en": "Football"
+              }
+            },
+            {
+              "id": "compound-16-2",
+              "label": {
+                "de": "Briefkasten",
+                "en": "Mailbox"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-16-2",
+          "success": {
+            "de": "Genau! Das Wort lautet Briefkasten.",
+            "en": "Exactly! The word is Mailbox."
+          },
+          "hint": {
+            "de": "Sprich Brief und Kasten direkt hintereinander.",
+            "en": "Say mail and box together."
+          }
+        },
+        {
+          "id": "a2wu82",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Auf der Wiese wächst grünes ...",
+            "en": "Which word completes Navi's sentence? Green ... grows in a meadow."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-27-0",
+              "label": {
+                "de": "Gras",
+                "en": "Grass"
+              }
+            },
+            {
+              "id": "sentence-27-1",
+              "label": {
+                "de": "Zitrone",
+                "en": "Lemon"
+              }
+            },
+            {
+              "id": "sentence-27-2",
+              "label": {
+                "de": "Bus",
+                "en": "Bus"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-27-0",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Gras.",
+            "en": "Correct! The missing word is Grass."
+          },
+          "hint": {
+            "de": "Setze Gras probeweise in den Satz ein.",
+            "en": "Try putting Grass into the sentence."
+          }
+        },
+        {
+          "id": "a2wu83",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Karotte?",
+            "en": "Which word group does Carrot belong to?"
+          },
+          "visual": "Karotte",
+          "answers": [
+            {
+              "id": "places",
+              "label": {
+                "de": "Orte und Gebäude",
+                "en": "places and buildings"
+              }
+            },
+            {
+              "id": "sky",
+              "label": {
+                "de": "Himmel und Wetter",
+                "en": "sky and weather"
+              }
+            },
+            {
+              "id": "vegetables",
+              "label": {
+                "de": "Gemüse",
+                "en": "vegetables"
+              }
+            }
+          ],
+          "correctAnswerId": "vegetables",
+          "success": {
+            "de": "Karotte gehört zur Wortgruppe Gemüse.",
+            "en": "Carrot belongs to the word group vegetables."
+          },
+          "hint": {
+            "de": "Überlege, was Karotte bezeichnet.",
+            "en": "Think about what Carrot describes."
+          }
+        },
+        {
+          "id": "a2wu84",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Haus und Tür?",
+            "en": "Which joined word matches front and door?"
+          },
+          "visual": "🏠 + 🚪",
+          "answers": [
+            {
+              "id": "compound-17-0",
+              "label": {
+                "de": "Schulbus",
+                "en": "School bus"
+              }
+            },
+            {
+              "id": "compound-17-1",
+              "label": {
+                "de": "Haustür",
+                "en": "Front door"
+              }
+            },
+            {
+              "id": "compound-17-2",
+              "label": {
+                "de": "Handtasche",
+                "en": "Handbag"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-17-1",
+          "success": {
+            "de": "Genau! Das Wort lautet Haustür.",
+            "en": "Exactly! The word is Front door."
+          },
+          "hint": {
+            "de": "Sprich Haus und Tür direkt hintereinander.",
+            "en": "Say front and door together."
+          }
+        },
+        {
+          "id": "a2wu85",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Eine sehr hohe Landschaftsform ist ein ...",
+            "en": "Which word completes Navi's sentence? A very high landform is a ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-28-0",
+              "label": {
+                "de": "Karotte",
+                "en": "Carrot"
+              }
+            },
+            {
+              "id": "sentence-28-1",
+              "label": {
+                "de": "Zug",
+                "en": "Train"
+              }
+            },
+            {
+              "id": "sentence-28-2",
+              "label": {
+                "de": "Berg",
+                "en": "Mountain"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-28-2",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Berg.",
+            "en": "Correct! The missing word is Mountain."
+          },
+          "hint": {
+            "de": "Setze Berg probeweise in den Satz ein.",
+            "en": "Try putting Mountain into the sentence."
+          }
+        },
+        {
+          "id": "a2wu86",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Tomate?",
+            "en": "Which word group does Tomato belong to?"
+          },
+          "visual": "Tomate",
+          "answers": [
+            {
+              "id": "sky",
+              "label": {
+                "de": "Himmel und Wetter",
+                "en": "sky and weather"
+              }
+            },
+            {
+              "id": "vegetables",
+              "label": {
+                "de": "Gemüse",
+                "en": "vegetables"
+              }
+            },
+            {
+              "id": "places",
+              "label": {
+                "de": "Orte und Gebäude",
+                "en": "places and buildings"
+              }
+            }
+          ],
+          "correctAnswerId": "vegetables",
+          "success": {
+            "de": "Tomate gehört zur Wortgruppe Gemüse.",
+            "en": "Tomato belongs to the word group vegetables."
+          },
+          "hint": {
+            "de": "Überlege, was Tomate bezeichnet.",
+            "en": "Think about what Tomato describes."
+          }
+        },
+        {
+          "id": "a2wu87",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Pfanne und Kuchen?",
+            "en": "Which joined word matches pan and cake?"
+          },
+          "visual": "🍳 + 🍰",
+          "answers": [
+            {
+              "id": "compound-18-0",
+              "label": {
+                "de": "Pfannkuchen",
+                "en": "Pancake"
+              }
+            },
+            {
+              "id": "compound-18-1",
+              "label": {
+                "de": "Wasserflasche",
+                "en": "Water bottle"
+              }
+            },
+            {
+              "id": "compound-18-2",
+              "label": {
+                "de": "Apfelbaum",
+                "en": "Apple tree"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-18-0",
+          "success": {
+            "de": "Genau! Das Wort lautet Pfannkuchen.",
+            "en": "Exactly! The word is Pancake."
+          },
+          "hint": {
+            "de": "Sprich Pfanne und Kuchen direkt hintereinander.",
+            "en": "Say pan and cake together."
+          }
+        },
+        {
+          "id": "a2wu88",
+          "prompt": {
+            "de": "Welches Wort beendet Navis Satz? Wasser fließt durch die Landschaft im ...",
+            "en": "Which word completes Navi's sentence? Water flows through the land in a ..."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sentence-29-0",
+              "label": {
+                "de": "Fahrrad",
+                "en": "Bicycle"
+              }
+            },
+            {
+              "id": "sentence-29-1",
+              "label": {
+                "de": "Fluss",
+                "en": "River"
+              }
+            },
+            {
+              "id": "sentence-29-2",
+              "label": {
+                "de": "Tomate",
+                "en": "Tomato"
+              }
+            }
+          ],
+          "correctAnswerId": "sentence-29-1",
+          "success": {
+            "de": "Richtig! Das fehlende Wort ist Fluss.",
+            "en": "Correct! The missing word is River."
+          },
+          "hint": {
+            "de": "Setze Fluss probeweise in den Satz ein.",
+            "en": "Try putting River into the sentence."
+          }
+        },
+        {
+          "id": "a2wu89",
+          "prompt": {
+            "de": "Zu welcher Wortgruppe gehört Brot?",
+            "en": "Which word group does Bread belong to?"
+          },
+          "visual": "Brot",
+          "answers": [
+            {
+              "id": "food",
+              "label": {
+                "de": "Lebensmittel",
+                "en": "food"
+              }
+            },
+            {
+              "id": "vehicles",
+              "label": {
+                "de": "Fahrzeuge",
+                "en": "vehicles"
+              }
+            },
+            {
+              "id": "nature",
+              "label": {
+                "de": "Natur",
+                "en": "nature"
+              }
+            }
+          ],
+          "correctAnswerId": "food",
+          "success": {
+            "de": "Brot gehört zur Wortgruppe Lebensmittel.",
+            "en": "Bread belongs to the word group food."
+          },
+          "hint": {
+            "de": "Überlege, was Brot bezeichnet.",
+            "en": "Think about what Bread describes."
+          }
+        },
+        {
+          "id": "a2wu90",
+          "prompt": {
+            "de": "Welches zusammengesetzte Wort entsteht aus Regen und Mantel?",
+            "en": "Which joined word matches rain and coat?"
+          },
+          "visual": "🌧️ + 🧥",
+          "answers": [
+            {
+              "id": "compound-19-0",
+              "label": {
+                "de": "Fahrradhelm",
+                "en": "Bicycle helmet"
+              }
+            },
+            {
+              "id": "compound-19-1",
+              "label": {
+                "de": "Schneemann",
+                "en": "Snowman"
+              }
+            },
+            {
+              "id": "compound-19-2",
+              "label": {
+                "de": "Regenmantel",
+                "en": "Raincoat"
+              }
+            }
+          ],
+          "correctAnswerId": "compound-19-2",
+          "success": {
+            "de": "Genau! Das Wort lautet Regenmantel.",
+            "en": "Exactly! The word is Raincoat."
+          },
+          "hint": {
+            "de": "Sprich Regen und Mantel direkt hintereinander.",
+            "en": "Say rain and coat together."
           }
         }
       ]

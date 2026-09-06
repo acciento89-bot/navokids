@@ -10,7 +10,7 @@ on:
         options: [marin, cedar, coral]
         default: marin
   push:
-    branches: [feat/navi-voice-pack]
+    branches: [fix/unique-stage-questions]
     paths:
       - ".github/navi-voice-choice.txt"
 
@@ -20,7 +20,7 @@ permissions:
 jobs:
   generate-pack:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,6 +35,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           NAVI_VOICE: ${{ inputs.voice }}
+          NAVI_TTS_CONCURRENCY: "4"
       - run: npm run typecheck
       - name: Commit generated audio to the selected branch
         run: |

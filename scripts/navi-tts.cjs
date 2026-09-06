@@ -14,7 +14,7 @@ async function synthesize({ apiKey, text, language, voice, outputPath }) {
   if (!apiKey) throw new Error('OPENAI_API_KEY is missing.');
   await fs.mkdir(path.dirname(outputPath), { recursive: true });
 
-  for (let attempt = 1; attempt <= 4; attempt += 1) {
+  for (let attempt = 1; attempt <= 6; attempt += 1) {
     const response = await fetch(endpoint, {
       method: 'POST',
       headers: {
@@ -36,10 +36,14 @@ async function synthesize({ apiKey, text, language, voice, outputPath }) {
     }
 
     const details = await response.text();
-    if (attempt === 4 || (response.status < 500 && response.status !== 429)) {
+    if (attempt === 6 || (response.status < 500 && response.status !== 429)) {
       throw new Error(`OpenAI speech request failed (${response.status}): ${details}`);
     }
-    await sleep(1000 * 2 ** (attempt - 1));
+    const retryAfterSeconds = Number(response.headers.get('retry-after'));
+    const retryDelay = Number.isFinite(retryAfterSeconds) && retryAfterSeconds > 0
+      ? retryAfterSeconds * 1000
+      : Math.min(30000, 1000 * 2 ** (attempt - 1));
+    await sleep(retryDelay);
   }
 }
 

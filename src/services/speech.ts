@@ -1,5 +1,5 @@
 import * as Speech from 'expo-speech';
-import { AudioPlayer, createAudioPlayer, setAudioModeAsync } from 'expo-audio';
+import { AudioPlayer, createAudioPlayer, setAudioModeAsync, setIsAudioActiveAsync } from 'expo-audio';
 import { naviVoiceAssets } from '../generated/naviVoiceManifest';
 import { Language } from '../types';
 
@@ -21,13 +21,16 @@ let playbackRequest = 0;
 let audioSessionPromise: Promise<void> | undefined;
 
 function ensureAudioSession() {
-  audioSessionPromise ??= setAudioModeAsync({
-    allowsRecording: false,
-    interruptionMode: 'doNotMix',
-    playsInSilentMode: true,
-    shouldPlayInBackground: false,
-    shouldRouteThroughEarpiece: false,
-  }).catch((error) => {
+  audioSessionPromise ??= (async () => {
+    await setAudioModeAsync({
+      allowsRecording: false,
+      interruptionMode: 'doNotMix',
+      playsInSilentMode: true,
+      shouldPlayInBackground: false,
+      shouldRouteThroughEarpiece: false,
+    });
+    await setIsAudioActiveAsync(true);
+  })().catch((error) => {
     audioSessionPromise = undefined;
     throw error;
   });
@@ -48,12 +51,13 @@ async function playVoicePack(asset: number, request: number) {
   await ensureAudioSession();
   if (request !== playbackRequest) return false;
 
-  const player = createAudioPlayer(asset, { downloadFirst: true, updateInterval: 100 });
+  const player = createAudioPlayer(asset, { downloadFirst: true, updateInterval: 50 });
   activePlayer = player;
   player.volume = 1;
 
   return new Promise<boolean>((resolve) => {
-    let started = false;
+    let playRequested = false;
+    let confirmedPlaying = false;
     let resolved = false;
 
     const resolveOnce = (value: boolean) => {
@@ -63,12 +67,21 @@ async function playVoicePack(asset: number, request: number) {
     };
 
     const startWhenReady = () => {
-      if (started || activePlayer !== player || request !== playbackRequest) return;
-      started = true;
+      if (playRequested || activePlayer !== player || request !== playbackRequest) return;
+      playRequested = true;
       if (activeLoadTimeout) clearTimeout(activeLoadTimeout);
-      activeLoadTimeout = undefined;
-      player.play();
-      resolveOnce(true);
+      try {
+        player.play();
+      } catch {
+        stopVoicePack();
+        resolveOnce(false);
+        return;
+      }
+      activeLoadTimeout = setTimeout(() => {
+        if (confirmedPlaying || activePlayer !== player || request !== playbackRequest) return;
+        stopVoicePack();
+        resolveOnce(false);
+      }, 1800);
     };
 
     activeSubscription = player.addListener('playbackStatusUpdate', (status) => {
@@ -79,11 +92,20 @@ async function playVoicePack(asset: number, request: number) {
         return;
       }
       if (status.isLoaded) startWhenReady();
-      if (status.didJustFinish) stopVoicePack();
+      if (status.playing) {
+        confirmedPlaying = true;
+        if (activeLoadTimeout) clearTimeout(activeLoadTimeout);
+        activeLoadTimeout = undefined;
+        resolveOnce(true);
+      }
+      if (status.didJustFinish) {
+        resolveOnce(confirmedPlaying);
+        stopVoicePack();
+      }
     });
 
     activeLoadTimeout = setTimeout(() => {
-      if (started || activePlayer !== player) return;
+      if (playRequested || activePlayer !== player) return;
       stopVoicePack();
       resolveOnce(false);
     }, 5000);
@@ -124,10 +146,14 @@ export async function speak(text: string, language: Language, slower = false, cl
 
   const asset = clipKey ? naviVoiceAssets[language][clipKey] : undefined;
   if (asset) {
-    try {
-      if (await playVoicePack(asset, request)) return;
-    } catch {
-      stopVoicePack();
+    for (let attempt = 0; attempt < 2; attempt += 1) {
+      try {
+        if (await playVoicePack(asset, request)) return;
+      } catch {
+        stopVoicePack();
+      }
+      if (request !== playbackRequest) return;
+      await new Promise((resolve) => setTimeout(resolve, 120));
     }
   }
 

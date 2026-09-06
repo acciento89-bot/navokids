@@ -8,29 +8,14 @@ import { commonVoiceKey, questionVoiceKey } from '../services/naviVoiceKeys';
 import { colors, shadows } from '../theme';
 import { AgeGroup, Answer, Language, LearningCategory } from '../types';
 
-const englishAnswerLabels: Record<string, string> = {
-  red: 'Red', blue: 'Blue', green: 'Green', yellow: 'Yellow', purple: 'Purple', orange: 'Orange', pink: 'Pink', brown: 'Brown',
-  dog: 'Dog', cat: 'Cat', fish: 'Fish', moon: 'Moon', sun: 'Sun', star: 'Star', tree: 'Tree', house: 'House', car: 'Car',
-  flower: 'Flower', grass: 'Grass', ice: 'Ice', elephant: 'Elephant', butterfly: 'Butterfly',
-  rainbow: 'Rain + bow', raincoat: 'Rain + coat', sunflower: 'Sun + flower',
-};
-
 const localizedAnswerLabel = (answer: Answer, language: Language) =>
-  typeof answer.label === 'string' ? (language === 'en' ? englishAnswerLabels[answer.id] ?? answer.label : answer.label) : t(answer.label, language);
-
-const answersForAge = (answers: Answer[], correctAnswerId: string, ageGroup: AgeGroup, questionId: string) => {
-  if (ageGroup === 'adventurer') return answers;
-  const correct = answers.find((answer) => answer.id === correctAnswerId);
-  const distractor = answers.find((answer) => answer.id !== correctAnswerId);
-  if (!correct || !distractor) return answers;
-  return questionId.charCodeAt(questionId.length - 1) % 2 === 0 ? [distractor, correct] : [correct, distractor];
-};
+  typeof answer.label === 'string' ? answer.label : t(answer.label, language);
 
 export function GameScreen({ category, stage, language, ageGroup, onBack, onCompleted }: { category: LearningCategory; stage: number; language: Language; ageGroup: AgeGroup; onBack: () => void; onCompleted: (answered: number) => void }) {
   const questions = useMemo(() => {
     const start = (stage - 1) * QUESTIONS_PER_STAGE;
-    return category.questions.slice(start, start + QUESTIONS_PER_STAGE);
-  }, [category, stage]);
+    return category.questionsByAge[ageGroup].slice(start, start + QUESTIONS_PER_STAGE);
+  }, [ageGroup, category, stage]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState(false);
@@ -48,8 +33,6 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
   }, [question, language, ageGroup]);
 
   if (!question) return null;
-  const visibleAnswers = answersForAge(question.answers, question.correctAnswerId, ageGroup, question.id);
-
   const choose = (answerId: string) => {
     setSelected(answerId);
     if (answerId === question.correctAnswerId) {
@@ -87,7 +70,7 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
       {question.visual ? <View style={styles.visualCard}><Text style={styles.visual}>{question.visual}</Text></View> : null}
       {ageGroup === 'discoverer' && <Text style={styles.discovererHint}>💡 {t(question.hint, language)}</Text>}
       <View style={styles.answers}>
-        {visibleAnswers.map((answer) => {
+        {question.answers.map((answer) => {
           const chosen = selected === answer.id;
           const correct = isCorrect && answer.id === question.correctAnswerId;
           const wrong = chosen && !isCorrect;

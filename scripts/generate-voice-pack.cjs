@@ -27,13 +27,15 @@ async function main() {
   for (const language of languages) {
     entries.push({ language, key: 'common.wrong', text: language === 'de' ? 'Fast! Versuch es noch einmal.' : 'Almost! Try again.' });
     for (const category of categories) {
-      for (const question of category.questions) {
-        for (const part of ['prompt', 'success', 'hint']) {
-          entries.push({
-            language,
-            key: `question.${question.id}.${part}`,
-            text: question[part][language],
-          });
+      for (const questions of Object.values(category.questionsByAge)) {
+        for (const question of questions) {
+          for (const part of ['prompt', 'success', 'hint']) {
+            entries.push({
+              language,
+              key: `question.${question.id}.${part}`,
+              text: question[part][language],
+            });
+          }
         }
       }
     }

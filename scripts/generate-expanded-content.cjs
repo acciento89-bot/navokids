@@ -370,19 +370,276 @@ function buildWords() {
   });
 }
 
+const twoChoices = (correct, distractor, seed) => rotate([correct, distractor], seed % 2);
+
+const easyNumberAnswers = (correct, seed) => {
+  const distractor = correct === 5 ? 4 : correct + 1;
+  return twoChoices(correct, distractor, seed).map((value) => ({ id: String(value), label: String(value) }));
+};
+
+function buildDiscovererNumbers() {
+  const questions = [];
+  let number = 1;
+  const add = ({ promptDe, promptEn, visual = '', correctAnswerId, answers, successDe, successEn, hintDe, hintEn }) => {
+    questions.push({
+      id: `dnu${number++}`,
+      prompt: localized(promptDe, promptEn),
+      visual,
+      answers,
+      correctAnswerId,
+      success: localized(successDe, successEn),
+      hint: localized(hintDe, hintEn),
+    });
+  };
+
+  const numberPlaces = [
+    ['an der Schatzkiste', 'by the treasure chest'], ['am Segel', 'by the sail'], ['am Wegweiser', 'by the signpost'], ['auf der Landkarte', 'on the map'], ['in der Höhle', 'in the cave'],
+    ['am Boot', 'by the boat'], ['bei der Fahne', 'by the flag'], ['an der Brücke', 'by the bridge'], ['am Rucksack', 'by the backpack'], ['am Leuchtturm', 'by the lighthouse'],
+  ];
+  numberPlaces.forEach(([placeDe, placeEn], index) => {
+    const correct = (index % 5) + 1;
+    add({
+      promptDe: `Tippe auf die Zahl ${correct} ${placeDe}.`,
+      promptEn: `Tap number ${correct} ${placeEn}.`,
+      correctAnswerId: String(correct),
+      answers: easyNumberAnswers(correct, index),
+      successDe: `Ja! Das ist die ${correct}.`,
+      successEn: `Yes! That is ${correct}.`,
+      hintDe: `Navi sagt die Zahl noch einmal: ${correct}.`,
+      hintEn: `Navi says the number again: ${correct}.`,
+    });
+  });
+
+  words.slice(0, 50).forEach(([de, en, emoji], index) => {
+    const correct = (index % 5) + 1;
+    add({
+      promptDe: `Wie viele ${de}-Bilder siehst du?`,
+      promptEn: `How many ${en} pictures can you see?`,
+      visual: Array(correct).fill(emoji).join(' '),
+      correctAnswerId: String(correct),
+      answers: easyNumberAnswers(correct, index + 1),
+      successDe: `Richtig gezählt! Es sind ${correct}.`,
+      successEn: `Great counting! There are ${correct}.`,
+      hintDe: 'Zeige beim Zählen auf jedes Bild.',
+      hintEn: 'Point to every picture while you count.',
+    });
+  });
+
+  words.slice(50, 80).forEach(([de, en, emoji], index) => {
+    const small = (index % 3) + 1;
+    const large = small + 1;
+    const findMore = index % 2 === 0;
+    const correct = findMore ? large : small;
+    const distractor = findMore ? small : large;
+    const correctId = `group-${index}-correct`;
+    const distractorId = `group-${index}-other`;
+    add({
+      promptDe: `Welche Karte zeigt ${findMore ? 'mehr' : 'weniger'} ${de}-Bilder?`,
+      promptEn: `Which card shows ${findMore ? 'more' : 'fewer'} ${en} pictures?`,
+      correctAnswerId: correctId,
+      answers: twoChoices(
+        { id: correctId, label: Array(correct).fill(emoji).join(' ') },
+        { id: distractorId, label: Array(distractor).fill(emoji).join(' ') },
+        index,
+      ),
+      successDe: `Genau! ${correct} ist ${findMore ? 'mehr' : 'weniger'} als ${distractor}.`,
+      successEn: `Exactly! ${correct} is ${findMore ? 'more' : 'fewer'} than ${distractor}.`,
+      hintDe: 'Zähle beide Bildgruppen langsam.',
+      hintEn: 'Count both picture groups slowly.',
+    });
+  });
+
+  return questions;
+}
+
+const easyColorObjects = [
+  ['red-apple', 'Apfel', 'apple', '🍎', 'red'], ['strawberry', 'Erdbeere', 'strawberry', '🍓', 'red'], ['cherries', 'Kirschen', 'cherries', '🍒', 'red'], ['tomato', 'Tomate', 'tomato', '🍅', 'red'], ['red-heart', 'rotes Herz', 'red heart', '❤️', 'red'], ['fire-truck', 'Feuerwehrauto', 'fire truck', '🚒', 'red'],
+  ['blue-circle', 'blauer Kreis', 'blue circle', '🔵', 'blue'], ['blue-heart', 'blaues Herz', 'blue heart', '💙', 'blue'], ['blueberries', 'Heidelbeeren', 'blueberries', '🫐', 'blue'], ['water-drop', 'Wassertropfen', 'water drop', '💧', 'blue'], ['blue-square', 'blaues Quadrat', 'blue square', '🟦', 'blue'], ['blue-diamond', 'blauer Diamant', 'blue diamond', '🔷', 'blue'],
+  ['green-circle', 'grüner Kreis', 'green circle', '🟢', 'green'], ['green-heart', 'grünes Herz', 'green heart', '💚', 'green'], ['green-square', 'grünes Quadrat', 'green square', '🟩', 'green'], ['green-apple', 'grüner Apfel', 'green apple', '🍏', 'green'], ['broccoli', 'Brokkoli', 'broccoli', '🥦', 'green'], ['cucumber', 'Gurke', 'cucumber', '🥒', 'green'],
+  ['yellow-circle', 'gelber Kreis', 'yellow circle', '🟡', 'yellow'], ['yellow-heart', 'gelbes Herz', 'yellow heart', '💛', 'yellow'], ['yellow-square', 'gelbes Quadrat', 'yellow square', '🟨', 'yellow'], ['lemon', 'Zitrone', 'lemon', '🍋', 'yellow'], ['banana', 'Banane', 'banana', '🍌', 'yellow'], ['star', 'Stern', 'star', '🌟', 'yellow'],
+  ['orange-circle', 'orangefarbener Kreis', 'orange circle', '🟠', 'orange'], ['orange-heart', 'orangefarbenes Herz', 'orange heart', '🧡', 'orange'], ['orange-square', 'orangefarbenes Quadrat', 'orange square', '🟧', 'orange'], ['orange-fruit', 'Orange', 'orange fruit', '🍊', 'orange'], ['carrot', 'Karotte', 'carrot', '🥕', 'orange'], ['pumpkin', 'Kürbis', 'pumpkin', '🎃', 'orange'],
+  ['purple-circle', 'lilafarbener Kreis', 'purple circle', '🟣', 'purple'], ['purple-heart', 'lilafarbenes Herz', 'purple heart', '💜', 'purple'], ['purple-square', 'lilafarbenes Quadrat', 'purple square', '🟪', 'purple'], ['grapes', 'Weintrauben', 'grapes', '🍇', 'purple'], ['eggplant', 'Aubergine', 'eggplant', '🍆', 'purple'],
+  ['pink-heart', 'rosa Herz', 'pink heart', '🩷', 'pink'], ['pink-flower', 'rosa Blume', 'pink flower', '🌸', 'pink'], ['flamingo', 'Flamingo', 'flamingo', '🦩', 'pink'], ['piglet', 'Ferkel', 'piglet', '🐷', 'pink'], ['pink-bow', 'rosa Schleife', 'pink bow', '🎀', 'pink'],
+  ['brown-circle', 'brauner Kreis', 'brown circle', '🟤', 'brown'], ['brown-heart', 'braunes Herz', 'brown heart', '🤎', 'brown'], ['brown-bear', 'Braunbär', 'brown bear', '🐻', 'brown'], ['chocolate', 'Schokolade', 'chocolate', '🍫', 'brown'], ['hazelnut', 'Haselnuss', 'hazelnut', '🌰', 'brown'],
+];
+
+function buildDiscovererColors() {
+  const questions = [];
+  let number = 1;
+  const baseColors = colors.filter((color) => ['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink', 'brown'].includes(color.id));
+  const add = ({ promptDe, promptEn, visual = '', answers, correctAnswerId, successDe, successEn, hintDe, hintEn }) => {
+    questions.push({ id: `dcu${number++}`, prompt: localized(promptDe, promptEn), visual, answers, correctAnswerId, success: localized(successDe, successEn), hint: localized(hintDe, hintEn) });
+  };
+
+  easyColorObjects.forEach(([objectId, de, en, emoji, colorId], index) => {
+    const correct = colorById[colorId];
+    const distractor = baseColors[(baseColors.findIndex((color) => color.id === colorId) + 3) % baseColors.length];
+    add({
+      promptDe: `Welche Farbe siehst du bei diesem Bild: ${de}?`,
+      promptEn: `Which color can you see in this picture: ${en}?`,
+      visual: emoji,
+      correctAnswerId: colorId,
+      answers: twoChoices(localizedAnswer(correct.id, correct.de, correct.en, correct.hex), localizedAnswer(distractor.id, distractor.de, distractor.en, distractor.hex), index),
+      successDe: `Richtig! Die Farbe ist ${correct.de}.`,
+      successEn: `Correct! The color is ${correct.en}.`,
+      hintDe: 'Schau dir die Farbe des Bildes genau an.',
+      hintEn: 'Look carefully at the color in the picture.',
+    });
+  });
+
+  easyColorObjects.forEach(([objectId, de, en, emoji, colorId], index) => {
+    const correct = colorById[colorId];
+    const otherObjects = easyColorObjects.filter((item) => item[4] !== colorId);
+    const other = otherObjects[(index * 7) % otherObjects.length];
+    add({
+      promptDe: `Finde dieses Bild: ${de}. Seine Farbe ist ${correct.de}.`,
+      promptEn: `Find this picture: ${en}. Its color is ${correct.en}.`,
+      correctAnswerId: objectId,
+      answers: twoChoices({ id: objectId, label: emoji }, { id: other[0], label: other[3] }, index + 1),
+      successDe: 'Prima! Du hast das richtige Bild gefunden.',
+      successEn: 'Great! You found the right picture.',
+      hintDe: `Suche das Bild in ${correct.de}.`,
+      hintEn: `Look for the picture in ${correct.en}.`,
+    });
+  });
+
+  return questions;
+}
+
+const easyAnimals = [
+  ['cat', 'Katze', 'cat', '🐱', 'Miau sagt', 'says meow', 'Schnurrhaare hat', 'has whiskers'],
+  ['dog', 'Hund', 'dog', '🐶', 'Wau sagt', 'says woof', 'mit dem Schwanz wedelt', 'wags its tail'],
+  ['cow', 'Kuh', 'cow', '🐮', 'Muh sagt', 'says moo', 'Milch gibt', 'gives milk'],
+  ['horse', 'Pferd', 'horse', '🐴', 'wiehert', 'neighs', 'schnell galoppieren kann', 'can gallop fast'],
+  ['pig', 'Schwein', 'pig', '🐷', 'grunzt', 'oinks', 'eine runde Schnauze hat', 'has a round snout'],
+  ['sheep', 'Schaf', 'sheep', '🐑', 'Mäh sagt', 'says baa', 'weiche Wolle hat', 'has soft wool'],
+  ['goat', 'Ziege', 'goat', '🐐', 'meckert', 'bleats', 'Hörner hat', 'has horns'],
+  ['chicken', 'Huhn', 'chicken', '🐔', 'gackert', 'clucks', 'Eier legt', 'lays eggs'],
+  ['duck', 'Ente', 'duck', '🦆', 'quakt', 'quacks', 'auf dem Teich schwimmt', 'swims on a pond'],
+  ['bee', 'Biene', 'bee', '🐝', 'summt', 'buzzes', 'Honig macht', 'makes honey'],
+  ['butterfly', 'Schmetterling', 'butterfly', '🦋', 'von Blume zu Blume fliegt', 'flies from flower to flower', 'bunte Flügel hat', 'has colorful wings'],
+  ['snail', 'Schnecke', 'snail', '🐌', 'ganz langsam kriecht', 'crawls very slowly', 'ihr Haus auf dem Rücken trägt', 'carries its shell on its back'],
+  ['frog', 'Frosch', 'frog', '🐸', 'quakt und hüpft', 'croaks and hops', 'weit hüpfen kann', 'can hop far'],
+  ['turtle', 'Schildkröte', 'turtle', '🐢', 'langsam läuft', 'walks slowly', 'einen harten Panzer hat', 'has a hard shell'],
+  ['fish', 'Fisch', 'fish', '🐟', 'im Wasser schwimmt', 'swims in water', 'Flossen hat', 'has fins'],
+  ['dolphin', 'Delfin', 'dolphin', '🐬', 'aus dem Meer springt', 'jumps out of the sea', 'gern zusammen schwimmt', 'likes to swim with others'],
+  ['whale', 'Wal', 'whale', '🐋', 'tief im Meer singt', 'sings deep in the sea', 'sehr groß ist', 'is very large'],
+  ['penguin', 'Pinguin', 'penguin', '🐧', 'watschelt', 'waddles', 'schwarz-weiße Federn hat', 'has black and white feathers'],
+  ['lion', 'Löwe', 'lion', '🦁', 'laut brüllt', 'roars loudly', 'eine große Mähne hat', 'has a large mane'],
+  ['tiger', 'Tiger', 'tiger', '🐯', 'knurrt', 'growls', 'schwarze Streifen hat', 'has black stripes'],
+  ['elephant', 'Elefant', 'elephant', '🐘', 'trompetet', 'trumpets', 'einen langen Rüssel hat', 'has a long trunk'],
+  ['giraffe', 'Giraffe', 'giraffe', '🦒', 'Blätter vom Baum knabbert', 'nibbles leaves from trees', 'einen langen Hals hat', 'has a long neck'],
+  ['zebra', 'Zebra', 'zebra', '🦓', 'mit seiner Herde läuft', 'runs with its herd', 'schwarz-weiße Streifen hat', 'has black and white stripes'],
+  ['monkey', 'Affe', 'monkey', '🐒', 'auf Bäume klettert', 'climbs trees', 'mit den Händen greift', 'grabs things with its hands'],
+  ['kangaroo', 'Känguru', 'kangaroo', '🦘', 'weit hüpft', 'hops far', 'sein Baby im Beutel trägt', 'carries its baby in a pouch'],
+  ['koala', 'Koala', 'koala', '🐨', 'Blätter knabbert', 'nibbles leaves', 'runde, flauschige Ohren hat', 'has round fluffy ears'],
+  ['owl', 'Eule', 'owl', '🦉', 'Hu-hu ruft', 'says hoot hoot', 'nachts wach ist', 'is awake at night'],
+  ['fox', 'Fuchs', 'fox', '🦊', 'leise durch den Wald schleicht', 'sneaks quietly through the woods', 'einen buschigen Schwanz hat', 'has a bushy tail'],
+  ['hedgehog', 'Igel', 'hedgehog', '🦔', 'sich zu einer Kugel rollt', 'rolls into a ball', 'viele Stacheln hat', 'has lots of spines'],
+  ['rabbit', 'Hase', 'rabbit', '🐰', 'hoppelt', 'hops', 'lange Ohren hat', 'has long ears'],
+];
+
+function buildDiscovererAnimals() {
+  const questions = [];
+  let number = 1;
+  const add = (animal, promptDe, promptEn, successDe, successEn, hintDe, hintEn, seed) => {
+    const index = easyAnimals.indexOf(animal);
+    const other = easyAnimals[(index + 11) % easyAnimals.length];
+    questions.push({
+      id: `dau${number++}`,
+      prompt: localized(promptDe, promptEn),
+      visual: '',
+      answers: twoChoices({ id: animal[0], label: animal[3] }, { id: other[0], label: other[3] }, seed),
+      correctAnswerId: animal[0],
+      success: localized(successDe, successEn),
+      hint: localized(hintDe, hintEn),
+    });
+  };
+
+  easyAnimals.forEach((animal, index) => add(animal, `Tippe auf dieses Tier: ${animal[1]}.`, `Tap this animal: ${animal[2]}.`, `Ja, richtig: ${animal[1]}.`, `Yes, that is the ${animal[2]}.`, `Suche dieses Tier: ${animal[1]}.`, `Look for the picture of the ${animal[2]}.`, index));
+  easyAnimals.forEach((animal, index) => add(animal, `Navi sucht ein Tier, das ${animal[4]}. Welches Bild passt?`, `Navi is looking for an animal that ${animal[5]}. Which picture matches?`, `Richtig! Gesucht war: ${animal[1]}.`, `Correct! The answer was the ${animal[2]}.`, `Denk an ein Tier, das ${animal[4]}.`, `Think of an animal that ${animal[5]}.`, index + 1));
+  easyAnimals.forEach((animal, index) => add(animal, `Navi gibt einen Tipp: Es ist ein Tier, das ${animal[6]}. Welches Bild passt?`, `Navi gives a clue: It is an animal that ${animal[7]}. Which picture matches?`, `Super! Gesucht war: ${animal[1]}.`, `Great! The answer was the ${animal[2]}.`, `Denk an ein Tier, das ${animal[6]}.`, `Think of an animal that ${animal[7]}.`, index + 2));
+
+  return questions;
+}
+
+const easyInitials = [
+  ['A', 'Apfel', 'apple', '🍎'], ['A', 'Ameise', 'ant', '🐜'], ['B', 'Banane', 'banana', '🍌'], ['B', 'Ball', 'ball', '⚽'], ['B', 'Bus', 'bus', '🚌'], ['B', 'Baby', 'baby', '👶'],
+  ['C', 'Clown', 'clown', '🤡'], ['D', 'Delfin', 'dolphin', '🐬'], ['D', 'Doktor', 'doctor', '🧑‍⚕️'], ['E', 'Elefant', 'elephant', '🐘'], ['F', 'Fisch', 'fish', '🐟'],
+  ['G', 'Giraffe', 'giraffe', '🦒'], ['G', 'Gorilla', 'gorilla', '🦍'], ['H', 'Haus', 'house', '🏠'], ['H', 'Hotel', 'hotel', '🏨'], ['I', 'Insel', 'island', '🏝️'],
+  ['J', 'Jaguar', 'jaguar', '🐆'], ['K', 'Koala', 'koala', '🐨'], ['L', 'Löwe', 'lion', '🦁'], ['L', 'Lampe', 'lamp', '💡'], ['M', 'Maus', 'mouse', '🐭'],
+  ['M', 'Mond', 'moon', '🌙'], ['M', 'Musik', 'music', '🎵'], ['N', 'Nase', 'nose', '👃'], ['O', 'Orange', 'orange', '🍊'], ['P', 'Panda', 'panda', '🐼'],
+  ['P', 'Pizza', 'pizza', '🍕'], ['P', 'Pinguin', 'penguin', '🐧'], ['R', 'Radio', 'radio', '📻'], ['R', 'Rose', 'rose', '🌹'], ['S', 'Sonne', 'sun', '☀️'],
+  ['S', 'Stern', 'star', '⭐'], ['S', 'Socke', 'sock', '🧦'], ['T', 'Tiger', 'tiger', '🐯'], ['T', 'Taxi', 'taxi', '🚕'], ['T', 'Tomate', 'tomato', '🍅'],
+  ['W', 'Wasser', 'water', '💧'], ['W', 'Wal', 'whale', '🐋'],
+];
+
+function buildDiscovererLetters() {
+  const questions = [];
+  let number = 1;
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  const add = ({ promptDe, promptEn, visual, correct, options, successDe, successEn, hintDe, hintEn }) => {
+    questions.push({ id: `dlu${number++}`, prompt: localized(promptDe, promptEn), visual, answers: options.map((letter) => ({ id: letter, label: letter })), correctAnswerId: correct, success: localized(successDe, successEn), hint: localized(hintDe, hintEn) });
+  };
+
+  alphabet.forEach((letter, index) => add({
+    promptDe: `Navi zeigt ${letter}. Finde noch einmal das große ${letter}.`, promptEn: `Navi shows ${letter}. Find the same capital ${letter}.`, visual: letter, correct: letter,
+    options: twoChoices(letter, alphabet[(index + 7) % 26], index), successDe: `Ja! Das ist ${letter}.`, successEn: `Yes! That is ${letter}.`,
+    hintDe: `Vergleiche die Form mit dem großen ${letter}.`, hintEn: `Match the shape of capital ${letter}.`,
+  }));
+
+  alphabet.forEach((capital, index) => {
+    const lower = capital.toLowerCase();
+    add({
+      promptDe: `Welche kleine Form gehört zum großen ${capital}?`, promptEn: `Which lowercase shape belongs with capital ${capital}?`, visual: capital, correct: lower,
+      options: twoChoices(lower, alphabet[(index + 9) % 26].toLowerCase(), index + 1), successDe: `Richtig! ${capital} und ${lower} gehören zusammen.`, successEn: `Correct! ${capital} and ${lower} belong together.`,
+      hintDe: `Suche das kleine ${lower}.`, hintEn: `Look for lowercase ${lower}.`,
+    });
+  });
+
+  easyInitials.forEach(([letter, de, en, emoji], index) => {
+    const alphabetIndex = alphabet.indexOf(letter);
+    add({
+      promptDe: `Welchen Anfangslaut hörst du bei ${de}?`, promptEn: `Which first sound do you hear in ${en}?`, visual: emoji, correct: letter,
+      options: twoChoices(letter, alphabet[(alphabetIndex + 7) % 26], index), successDe: `${de} beginnt mit ${letter}.`, successEn: `${en} begins with ${letter}.`,
+      hintDe: `Höre langsam: ${letter}, ${de}.`, hintEn: `Listen slowly: ${letter}, ${en}.`,
+    });
+  });
+
+  return questions;
+}
+
+function buildDiscovererWords() {
+  return words.map(([de, en, emoji], index) => {
+    const other = words[(index + 29) % words.length];
+    const correctId = `dword-${index + 1}`;
+    return {
+      id: `dwu${index + 1}`,
+      prompt: localized(`Tippe auf das Bild für ${de}.`, `Tap the picture for ${en}.`),
+      visual: '',
+      answers: twoChoices({ id: correctId, label: emoji }, { id: `dword-${((index + 29) % words.length) + 1}`, label: other[2] }, index),
+      correctAnswerId: correctId,
+      success: localized(`Richtig! Das ist ${de}.`, `Correct! That is ${en}.`),
+      hint: localized(`Suche das Bild von ${de}.`, `Look for the picture of ${en}.`),
+    };
+  });
+}
+
 const categories = [
-  { id: 'numbers', title: localized('Zahlen', 'Numbers'), subtitle: localized('Zählen und Mengen entdecken', 'Discover counting and quantities'), icon: '123', color: '#F29A38', lightColor: '#FFF0D7', questions: buildNumbers() },
-  { id: 'colors', title: localized('Farben', 'Colors'), subtitle: localized('Farben finden und mischen', 'Find and mix colors'), icon: '●', color: '#F05E62', lightColor: '#FFE1E2', questions: buildColors() },
-  { id: 'animals', title: localized('Tiere', 'Animals'), subtitle: localized('Tiere und ihre Welt kennenlernen', 'Meet animals and their world'), icon: '🐾', color: '#58AE75', lightColor: '#E1F5E7', questions: buildAnimals() },
-  { id: 'letters', title: localized('Buchstaben', 'Letters'), subtitle: localized('Laute hören und Buchstaben finden', 'Hear sounds and find letters'), icon: 'ABC', color: '#7A72D1', lightColor: '#EAE7FF', questions: buildLetters() },
-  { id: 'words', title: localized('Wörter', 'Words'), subtitle: localized('Bilder, Laute und Wörter verbinden', 'Connect pictures, sounds, and words'), icon: 'Aa', color: '#3E9FD6', lightColor: '#E0F3FF', questions: buildWords() },
+  { id: 'numbers', title: localized('Zahlen', 'Numbers'), subtitle: localized('Zählen und Mengen entdecken', 'Discover counting and quantities'), icon: '123', color: '#F29A38', lightColor: '#FFF0D7', questionsByAge: { discoverer: buildDiscovererNumbers(), adventurer: buildNumbers() } },
+  { id: 'colors', title: localized('Farben', 'Colors'), subtitle: localized('Farben finden und mischen', 'Find and mix colors'), icon: '●', color: '#F05E62', lightColor: '#FFE1E2', questionsByAge: { discoverer: buildDiscovererColors(), adventurer: buildColors() } },
+  { id: 'animals', title: localized('Tiere', 'Animals'), subtitle: localized('Tiere und ihre Welt kennenlernen', 'Meet animals and their world'), icon: '🐾', color: '#58AE75', lightColor: '#E1F5E7', questionsByAge: { discoverer: buildDiscovererAnimals(), adventurer: buildAnimals() } },
+  { id: 'letters', title: localized('Buchstaben', 'Letters'), subtitle: localized('Laute hören und Buchstaben finden', 'Hear sounds and find letters'), icon: 'ABC', color: '#7A72D1', lightColor: '#EAE7FF', questionsByAge: { discoverer: buildDiscovererLetters(), adventurer: buildLetters() } },
+  { id: 'words', title: localized('Wörter', 'Words'), subtitle: localized('Bilder, Laute und Wörter verbinden', 'Connect pictures, sounds, and words'), icon: 'Aa', color: '#3E9FD6', lightColor: '#E0F3FF', questionsByAge: { discoverer: buildDiscovererWords(), adventurer: buildWords() } },
 ];
 
 for (const category of categories) {
-  if (category.questions.length !== 90) throw new Error(`${category.id}: generated ${category.questions.length} questions instead of 90`);
+  for (const [ageGroup, questions] of Object.entries(category.questionsByAge)) {
+    if (questions.length !== 90) throw new Error(`${category.id}/${ageGroup}: generated ${questions.length} questions instead of 90`);
+  }
 }
 
 const output = `import { LearningCategory } from '../types';\n\nexport const categories: LearningCategory[] = ${JSON.stringify(categories, null, 2)};\n\nexport const categoryById = (id: LearningCategory['id']) => {\n  const category = categories.find((item) => item.id === id);\n  if (!category) throw new Error(\`Unknown learning category: \${id}\`);\n  return category;\n};\n`;
 
 fs.writeFileSync('src/data/learningContent.ts', output);
-console.log(`Generated ${categories.reduce((sum, category) => sum + category.questions.length, 0)} unique bilingual questions.`);
+console.log(`Generated ${categories.reduce((sum, category) => sum + Object.values(category.questionsByAge).reduce((trackSum, questions) => trackSum + questions.length, 0), 0)} age-specific bilingual questions.`);

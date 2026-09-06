@@ -39,7 +39,7 @@ export interface LearningCategory {
   icon: string;
   color: string;
   lightColor: string;
-  questions: Question[];
+  questionsByAge: Record<AgeGroup, Question[]>;
 }
 
 export interface CategoryProgress {

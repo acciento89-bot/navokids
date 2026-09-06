@@ -1,10 +1,6 @@
 name: EAS Store Builds
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - .eas-ios-release
   workflow_dispatch:
     inputs:
       platform:
@@ -34,6 +30,4 @@ jobs:
       - run: npm run progress:check
       - run: npm run store:check
       - name: Start store build
-        env:
-          BUILD_PLATFORM: ${{ github.event_name == 'workflow_dispatch' && inputs.platform || 'ios' }}
-        run: eas build --platform "$BUILD_PLATFORM" --profile production --auto-submit --non-interactive --no-wait
+        run: eas build --platform "${{ inputs.platform }}" --profile production --non-interactive --no-wait

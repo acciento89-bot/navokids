@@ -1,0 +1,29 @@
+name: EAS iOS TestFlight Build
+
+on:
+  push:
+    branches: [build/testflight-curriculum-v2]
+    paths:
+      - ".github/testflight-build-trigger.txt"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run content:check
+      - run: npm run progress:check
+      - run: npm run store:check
+      - name: Start iOS production build and TestFlight submission
+        run: eas build --platform ios --profile production --non-interactive --no-wait --auto-submit

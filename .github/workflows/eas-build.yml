@@ -1,14 +1,8 @@
-name: EAS Store Builds
+name: EAS TestFlight Release
 
 on:
-  workflow_dispatch:
-    inputs:
-      platform:
-        description: Platform to build
-        required: true
-        type: choice
-        options: [android, ios, all]
-        default: android
+  push:
+    branches: [release/testflight-age-learning-20260906]
 
 jobs:
   build:
@@ -29,5 +23,5 @@ jobs:
       - run: npm run content:check
       - run: npm run progress:check
       - run: npm run store:check
-      - name: Start store build
-        run: eas build --platform "${{ inputs.platform }}" --profile production --non-interactive --no-wait
+      - name: Start iOS production build and submit to TestFlight
+        run: eas build --platform ios --profile production --non-interactive --auto-submit --no-wait

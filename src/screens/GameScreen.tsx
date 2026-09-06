@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import { SpeakerButton } from '../components/SpeakerButton';
 import { QUESTIONS_PER_STAGE } from '../config/learning';
 import { copy, t } from '../i18n';
@@ -67,7 +67,14 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
         <Text style={styles.prompt}>{t(question.prompt, language)}</Text>
         <SpeakerButton label={t(copy.listenAgain, language)} onPress={() => speak(t(question.prompt, language), language, ageGroup === 'discoverer', questionVoiceKey(question.id, 'prompt'))} />
       </View>
-      {question.visual ? <View style={styles.visualCard}><Text style={styles.visual}>{question.visual}</Text></View> : null}
+      {question.visual ? (
+        <View style={[styles.visualCard, question.showNavi && styles.naviVisualCard]}>
+          {question.showNavi ? <Image source={require('../../assets/navi-mascot-optimized.png')} resizeMode="contain" style={styles.naviVisualMascot} /> : null}
+          <View style={question.showNavi ? styles.naviCueCard : undefined}>
+            <Text style={[styles.visual, question.showNavi && styles.naviCueText]}>{question.visual}</Text>
+          </View>
+        </View>
+      ) : null}
       {ageGroup === 'discoverer' && <Text style={styles.discovererHint}>💡 {t(question.hint, language)}</Text>}
       <View style={styles.answers}>
         {question.answers.map((answer) => {
@@ -103,6 +110,10 @@ const styles = StyleSheet.create({
   promptRow: { minHeight: 110, flexDirection: 'row', alignItems: 'center', gap: 14, marginTop: 20 },
   prompt: { flex: 1, color: colors.ink, fontSize: 27, lineHeight: 34, fontWeight: '900' },
   visualCard: { flex: 1, minHeight: 180, maxHeight: 300, borderRadius: 34, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', padding: 20, ...shadows.card },
+  naviVisualCard: { flexDirection: 'row', gap: 8, overflow: 'hidden', paddingHorizontal: 12 },
+  naviVisualMascot: { width: '45%', height: '100%', minHeight: 165 },
+  naviCueCard: { minWidth: 118, minHeight: 118, borderRadius: 30, backgroundColor: '#FFF8E8', borderWidth: 5, borderColor: '#F3C862', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 16, transform: [{ rotate: '2deg' }], ...shadows.card },
+  naviCueText: { fontSize: 58, lineHeight: 70 },
   visual: { color: colors.ink, fontSize: 44, fontWeight: '900', textAlign: 'center', letterSpacing: 2 },
   discovererHint: { color: colors.muted, fontSize: 14, lineHeight: 20, fontWeight: '800', textAlign: 'center', marginTop: 12 },
   answers: { flexDirection: 'row', gap: 11, marginTop: 20 },

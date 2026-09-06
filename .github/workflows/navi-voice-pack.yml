@@ -10,7 +10,7 @@ on:
         options: [marin, cedar, coral]
         default: marin
   push:
-    branches: [feat/navi-voice-pack]
+    branches: [fix/discoverer-curriculum-v2]
     paths:
       - ".github/navi-voice-choice.txt"
 

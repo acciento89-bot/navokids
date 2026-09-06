@@ -354,20 +354,95 @@ const words = [
   ['Kamm', 'Comb', '🪮', 'dem Gegenstand zum Ordnen der Haare', 'the item used to tidy hair'], ['Rucksack', 'Backpack', '🎒', 'der Tasche, die man auf dem Rücken trägt', 'the bag carried on the back'], ['Regenschirm', 'Umbrella', '☂️', 'dem Gegenstand, der vor Regen schützt', 'the item that protects you from rain'],
 ];
 
+const advancedWordConcepts = words.slice(31, 61);
+const advancedWordSentences = [
+  ['Vom Baum pflücke ich einen roten ...', 'From the tree I pick a red ...'], ['Die grüne ... ist unten breit.', 'The green ... is wide at the bottom.'],
+  ['Die lange gelbe ... ist krumm.', 'The long yellow ... is curved.'], ['Die kleine rote ... trägt grüne Blätter.', 'The small red ... has green leaves.'],
+  ['Die rote ... hängt an einem Stiel.', 'The red ... hangs from a stem.'], ['Viele einzelne Früchte bilden eine ...', 'Many small fruits make one bunch of ...'],
+  ['Die gelbe ... schmeckt sauer.', 'The yellow ... tastes sour.'], ['Das orange Gemüse in diesem Satz ist die ...', 'The orange vegetable in this sentence is the ...'],
+  ['Im Salat liegt eine rote ...', 'There is a red ... in the salad.'], ['In der Bäckerei kauft Navi ein ...', 'At the bakery, Navi buys a loaf of ...'],
+  ['Das gelbe Lebensmittel mit Löchern heißt ...', 'The yellow food with holes is called ...'], ['Das weiße Getränk von der Kuh heißt ...', 'The white drink from a cow is called ...'],
+  ['Wenn Navi Durst hat, trinkt er ...', 'When Navi is thirsty, he drinks ...'], ['Menschen wohnen in einem ...', 'People live in a ...'],
+  ['Kinder lernen gemeinsam in der ...', 'Children learn together at ...'], ['Auf der Straße fährt ein ...', 'A ... drives on the road.'],
+  ['Viele Menschen fahren gemeinsam im ...', 'Many people ride together on a ...'], ['Auf Schienen fährt der ...', 'The ... travels on rails.'],
+  ['Zwei Räder und Pedale hat das ...', 'The ... has two wheels and pedals.'], ['Über das Wasser fährt ein ...', 'A ... travels across the water.'],
+  ['Durch den Himmel fliegt ein ...', 'An ... flies through the sky.'], ['Am Tag leuchtet die ...', 'The ... shines during the day.'],
+  ['In der Nacht sehen wir den ...', 'At night we can see the ...'], ['Am Nachthimmel funkelt ein ...', 'A ... twinkles in the night sky.'],
+  ['Aus einer dunklen ... kann Regen fallen.', 'Rain can fall from a dark ...'], ['Eine große Pflanze mit Stamm ist ein ...', 'A large plant with a trunk is a ...'],
+  ['Eine bunt blühende Pflanze ist eine ...', 'A colorful blooming plant is a ...'], ['Auf der Wiese wächst grünes ...', 'Green ... grows in a meadow.'],
+  ['Eine sehr hohe Landschaftsform ist ein ...', 'A very high landform is a ...'], ['Wasser fließt durch die Landschaft im ...', 'Water flows through the land in a ...'],
+];
+const advancedWordGroups = [
+  { id: 'fruit', de: 'Obst', en: 'fruit' }, { id: 'vegetables', de: 'Gemüse', en: 'vegetables' },
+  { id: 'food', de: 'Lebensmittel', en: 'food' }, { id: 'drinks', de: 'Getränke', en: 'drinks' },
+  { id: 'places', de: 'Orte und Gebäude', en: 'places and buildings' }, { id: 'vehicles', de: 'Fahrzeuge', en: 'vehicles' },
+  { id: 'sky', de: 'Himmel und Wetter', en: 'sky and weather' }, { id: 'nature', de: 'Natur', en: 'nature' },
+];
+const advancedWordGroupIndexes = [0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 7];
+const compoundWords = [
+  ['Regenbogen', 'Rainbow', '🌧️ + 🎀', 'Regen', 'Bogen', 'rain', 'bow'], ['Sonnenblume', 'Sunflower', '☀️ + 🌸', 'Sonne', 'Blume', 'sun', 'flower'],
+  ['Zahnbürste', 'Toothbrush', '🦷 + 🪥', 'Zahn', 'Bürste', 'tooth', 'brush'], ['Fußball', 'Football', '🦶 + ⚽', 'Fuß', 'Ball', 'foot', 'ball'],
+  ['Schulbus', 'School bus', '🏫 + 🚌', 'Schule', 'Bus', 'school', 'bus'], ['Apfelbaum', 'Apple tree', '🍎 + 🌳', 'Apfel', 'Baum', 'apple', 'tree'],
+  ['Schneemann', 'Snowman', '❄️ + 🧍', 'Schnee', 'Mann', 'snow', 'man'], ['Wasserfall', 'Waterfall', '💧 + ⬇️', 'Wasser', 'Fall', 'water', 'fall'],
+  ['Feuerwehrauto', 'Fire truck', '🔥 + 🚗', 'Feuerwehr', 'Auto', 'fire', 'truck'], ['Baumhaus', 'Treehouse', '🌳 + 🏠', 'Baum', 'Haus', 'tree', 'house'],
+  ['Schlafzimmer', 'Bedroom', '😴 + 🚪', 'Schlafen', 'Zimmer', 'bed', 'room'], ['Spielplatz', 'Playground', '🎲 + 🏞️', 'Spiel', 'Platz', 'play', 'ground'],
+  ['Geburtstag', 'Birthday', '👶 + 📅', 'Geburt', 'Tag', 'birth', 'day'], ['Nachtlicht', 'Nightlight', '🌙 + 💡', 'Nacht', 'Licht', 'night', 'light'],
+  ['Sonnenbrille', 'Sunglasses', '☀️ + 👓', 'Sonne', 'Brille', 'sun', 'glasses'], ['Türklingel', 'Doorbell', '🚪 + 🔔', 'Tür', 'Klingel', 'door', 'bell'],
+  ['Briefkasten', 'Mailbox', '✉️ + 📦', 'Brief', 'Kasten', 'mail', 'box'], ['Haustür', 'Front door', '🏠 + 🚪', 'Haus', 'Tür', 'front', 'door'],
+  ['Pfannkuchen', 'Pancake', '🍳 + 🍰', 'Pfanne', 'Kuchen', 'pan', 'cake'], ['Regenmantel', 'Raincoat', '🌧️ + 🧥', 'Regen', 'Mantel', 'rain', 'coat'],
+  ['Schlafenszeit', 'Bedtime', '😴 + 🕐', 'Schlafen', 'Zeit', 'bed', 'time'], ['Mondlicht', 'Moonlight', '🌙 + 💡', 'Mond', 'Licht', 'moon', 'light'],
+  ['Bücherregal', 'Bookshelf', '📚 + 🗄️', 'Bücher', 'Regal', 'book', 'shelf'], ['Leuchtturm', 'Lighthouse', '💡 + 🗼', 'Leuchten', 'Turm', 'light', 'house'],
+  ['Kopfhörer', 'Headphones', '🙂 + 🎧', 'Kopf', 'Hörer', 'head', 'phones'], ['Handtasche', 'Handbag', '✋ + 👜', 'Hand', 'Tasche', 'hand', 'bag'],
+  ['Wasserflasche', 'Water bottle', '💧 + 🍼', 'Wasser', 'Flasche', 'water', 'bottle'], ['Fahrradhelm', 'Bicycle helmet', '🚲 + ⛑️', 'Fahrrad', 'Helm', 'bicycle', 'helmet'],
+  ['Gartenstuhl', 'Garden chair', '🌻 + 🪑', 'Garten', 'Stuhl', 'garden', 'chair'], ['Kaffeetasse', 'Coffee cup', '🫘 + 🥤', 'Kaffee', 'Tasse', 'coffee', 'cup'],
+];
+
 function buildWords() {
-  return words.map((word, index) => {
-    const [de, en, emoji, clueDe, clueEn] = word;
-    const choices = rotate([word, words[(index + 17) % words.length], words[(index + 41) % words.length]], index % 3);
+  const questions = [];
+  const sentenceQuestion = (word, index) => {
+    const [de, en] = word;
+    const choices = rotate([word, advancedWordConcepts[(index + 9) % 30], advancedWordConcepts[(index + 19) % 30]], index % 3);
     return {
-      id: `wu${index + 1}`,
-      prompt: localized(`Welches Wort passt zu ${clueDe}?`, `Which word matches ${clueEn}?`),
-      visual: emoji,
-      answers: choices.map(([answerDe, answerEn]) => localizedAnswer(answerEn.toLowerCase().replace(/[^a-z]/g, '-'), answerDe, answerEn)),
-      correctAnswerId: en.toLowerCase().replace(/[^a-z]/g, '-'),
-      success: localized(`Richtig! Das Wort heißt ${de}.`, `Correct! The word is ${en}.`),
-      hint: localized(`Das deutsche Wort beginnt mit ${de[0]}.`, `The English word begins with ${en[0]}.`),
+      prompt: localized(`Welches Wort beendet Navis Satz? ${advancedWordSentences[index][0]}`, `Which word completes Navi's sentence? ${advancedWordSentences[index][1]}`),
+      visual: '',
+      answers: choices.map(([answerDe, answerEn], choiceIndex) => localizedAnswer(`sentence-${index}-${choiceIndex}`, answerDe, answerEn)),
+      correctAnswerId: `sentence-${index}-${choices.indexOf(word)}`,
+      success: localized(`Richtig! Das fehlende Wort ist ${de}.`, `Correct! The missing word is ${en}.`),
+      hint: localized(`Setze ${de} probeweise in den Satz ein.`, `Try putting ${en} into the sentence.`),
     };
-  });
+  };
+  const wordGroupQuestion = ([de, en], index) => {
+    const groupIndex = advancedWordGroupIndexes[index];
+    const correct = advancedWordGroups[groupIndex];
+    const choices = rotate([correct, advancedWordGroups[(groupIndex + 3) % advancedWordGroups.length], advancedWordGroups[(groupIndex + 5) % advancedWordGroups.length]], index % 3);
+    return {
+      prompt: localized(`Zu welcher Wortgruppe gehört ${de}?`, `Which word group does ${en} belong to?`),
+      visual: de,
+      answers: choices.map((group) => localizedAnswer(group.id, group.de, group.en)),
+      correctAnswerId: correct.id,
+      success: localized(`${de} gehört zur Wortgruppe ${correct.de}.`, `${en} belongs to the word group ${correct.en}.`),
+      hint: localized(`Überlege, was ${de} bezeichnet.`, `Think about what ${en} describes.`),
+    };
+  };
+  const compoundQuestion = ([de, en, visual, leftDe, rightDe, leftEn, rightEn], index) => {
+    const choices = rotate([compoundWords[index], compoundWords[(index + 8) % 30], compoundWords[(index + 17) % 30]], index % 3);
+    return {
+      prompt: localized(`Welches zusammengesetzte Wort entsteht aus ${leftDe} und ${rightDe}?`, `Which joined word matches ${leftEn} and ${rightEn}?`),
+      visual,
+      answers: choices.map((item, choiceIndex) => localizedAnswer(`compound-${index}-${choiceIndex}`, item[0], item[1])),
+      correctAnswerId: `compound-${index}-${choices.indexOf(compoundWords[index])}`,
+      success: localized(`Genau! Das Wort lautet ${de}.`, `Exactly! The word is ${en}.`),
+      hint: localized(`Sprich ${leftDe} und ${rightDe} direkt hintereinander.`, `Say ${leftEn} and ${rightEn} together.`),
+    };
+  };
+  for (let stage = 0; stage < 30; stage += 1) {
+    const groupIndex = (stage + 10) % 30;
+    const compoundIndex = (stage + 20) % 30;
+    [sentenceQuestion(advancedWordConcepts[stage], stage), wordGroupQuestion(advancedWordConcepts[groupIndex], groupIndex), compoundQuestion(compoundWords[compoundIndex], compoundIndex)].forEach((question) => {
+      questions.push({ id: `a2wu${questions.length + 1}`, ...question });
+    });
+  }
+  return questions;
 }
 
 const twoChoices = (correct, distractor, seed) => rotate([correct, distractor], seed % 2);
@@ -380,11 +455,12 @@ const easyNumberAnswers = (correct, seed) => {
 function buildDiscovererNumbers() {
   const questions = [];
   let number = 1;
-  const add = ({ promptDe, promptEn, visual = '', correctAnswerId, answers, successDe, successEn, hintDe, hintEn }) => {
+  const add = ({ promptDe, promptEn, visual = '', showNavi = false, correctAnswerId, answers, successDe, successEn, hintDe, hintEn }) => {
     questions.push({
-      id: `dnu${number++}`,
+      id: `d2nu${number++}`,
       prompt: localized(promptDe, promptEn),
       visual,
+      ...(showNavi ? { showNavi: true } : {}),
       answers,
       correctAnswerId,
       success: localized(successDe, successEn),
@@ -392,62 +468,56 @@ function buildDiscovererNumbers() {
     });
   };
 
-  const numberPlaces = [
-    ['an der Schatzkiste', 'by the treasure chest'], ['am Segel', 'by the sail'], ['am Wegweiser', 'by the signpost'], ['auf der Landkarte', 'on the map'], ['in der Höhle', 'in the cave'],
-    ['am Boot', 'by the boat'], ['bei der Fahne', 'by the flag'], ['an der Brücke', 'by the bridge'], ['am Rucksack', 'by the backpack'], ['am Leuchtturm', 'by the lighthouse'],
-  ];
-  numberPlaces.forEach(([placeDe, placeEn], index) => {
-    const correct = (index % 5) + 1;
+  for (let stage = 0; stage < 30; stage += 1) {
+    const target = (stage % 5) + 1;
+    const matchItem = easyColorObjects[stage];
     add({
-      promptDe: `Tippe auf die Zahl ${correct} ${placeDe}.`,
-      promptEn: `Tap number ${correct} ${placeEn}.`,
-      correctAnswerId: String(correct),
-      answers: easyNumberAnswers(correct, index),
-      successDe: `Ja! Das ist die ${correct}.`,
-      successEn: `Yes! That is ${correct}.`,
-      hintDe: `Navi sagt die Zahl noch einmal: ${correct}.`,
-      hintEn: `Navi says the number again: ${correct}.`,
+      promptDe: `Navi zeigt dir dieses Bild: ${matchItem[1]} und die Zahl ${target}. Finde dieselbe Zahl.`,
+      promptEn: `Navi shows you a ${matchItem[2]} and number ${target}. Find the same number.`,
+      visual: `${matchItem[3]}   ${target}`,
+      showNavi: true,
+      correctAnswerId: String(target),
+      answers: easyNumberAnswers(target, stage),
+      successDe: `Ja! Du hast die Zahl ${target} gefunden.`,
+      successEn: `Yes! You found number ${target}.`,
+      hintDe: `Vergleiche die Zahl auf Navis Karte mit den beiden Antworten.`,
+      hintEn: `Match the number on Navi's card with the two answers.`,
     });
-  });
 
-  words.slice(0, 50).forEach(([de, en, emoji], index) => {
-    const correct = (index % 5) + 1;
+    const countItem = easyColorObjects[(stage + 10) % easyColorObjects.length];
     add({
-      promptDe: `Wie viele ${de}-Bilder siehst du?`,
-      promptEn: `How many ${en} pictures can you see?`,
-      visual: Array(correct).fill(emoji).join(' '),
-      correctAnswerId: String(correct),
-      answers: easyNumberAnswers(correct, index + 1),
-      successDe: `Richtig gezählt! Es sind ${correct}.`,
-      successEn: `Great counting! There are ${correct}.`,
+      promptDe: `Zähle auf der weißen Karte: ${countItem[1]}. Wie viele Bilder sind es?`,
+      promptEn: `Count the ${countItem[2]} pictures on the white card. How many are there?`,
+      visual: Array(target).fill(countItem[3]).join(' '),
+      correctAnswerId: String(target),
+      answers: easyNumberAnswers(target, stage + 1),
+      successDe: `Richtig gezählt! Es sind ${target}.`,
+      successEn: `Great counting! There are ${target}.`,
       hintDe: 'Zeige beim Zählen auf jedes Bild.',
       hintEn: 'Point to every picture while you count.',
     });
-  });
 
-  words.slice(50, 80).forEach(([de, en, emoji], index) => {
-    const small = (index % 3) + 1;
-    const large = small + 1;
-    const findMore = index % 2 === 0;
-    const correct = findMore ? large : small;
-    const distractor = findMore ? small : large;
-    const correctId = `group-${index}-correct`;
-    const distractorId = `group-${index}-other`;
+    const quantityItem = easyColorObjects[(stage + 20) % easyColorObjects.length];
+    const otherCount = target === 5 ? 4 : target + 1;
+    const correctId = `quantity-${stage}-correct`;
+    const otherId = `quantity-${stage}-other`;
     add({
-      promptDe: `Welche Karte zeigt ${findMore ? 'mehr' : 'weniger'} ${de}-Bilder?`,
-      promptEn: `Which card shows ${findMore ? 'more' : 'fewer'} ${en} pictures?`,
+      promptDe: `Navi zeigt die Zahl ${target}. Auf welcher Antwortkarte siehst du diese Menge? Suche: ${quantityItem[1]}.`,
+      promptEn: `Navi shows number ${target}. Which answer card shows that many ${quantityItem[2]} pictures?`,
+      visual: String(target),
+      showNavi: true,
       correctAnswerId: correctId,
       answers: twoChoices(
-        { id: correctId, label: Array(correct).fill(emoji).join(' ') },
-        { id: distractorId, label: Array(distractor).fill(emoji).join(' ') },
-        index,
+        { id: correctId, label: Array(target).fill(quantityItem[3]).join(' ') },
+        { id: otherId, label: Array(otherCount).fill(quantityItem[3]).join(' ') },
+        stage + 2,
       ),
-      successDe: `Genau! ${correct} ist ${findMore ? 'mehr' : 'weniger'} als ${distractor}.`,
-      successEn: `Exactly! ${correct} is ${findMore ? 'more' : 'fewer'} than ${distractor}.`,
-      hintDe: 'Zähle beide Bildgruppen langsam.',
-      hintEn: 'Count both picture groups slowly.',
+      successDe: `Genau! Diese Antwort zeigt ${target} Bilder.`,
+      successEn: `Exactly! That answer shows ${target} pictures.`,
+      hintDe: `Zähle bis ${target} und stoppe dann.`,
+      hintEn: `Count to ${target} and then stop.`,
     });
-  });
+  }
 
   return questions;
 }
@@ -467,41 +537,73 @@ function buildDiscovererColors() {
   const questions = [];
   let number = 1;
   const baseColors = colors.filter((color) => ['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink', 'brown'].includes(color.id));
-  const add = ({ promptDe, promptEn, visual = '', answers, correctAnswerId, successDe, successEn, hintDe, hintEn }) => {
-    questions.push({ id: `dcu${number++}`, prompt: localized(promptDe, promptEn), visual, answers, correctAnswerId, success: localized(successDe, successEn), hint: localized(hintDe, hintEn) });
+  const objectsByColor = baseColors.map((color) => easyColorObjects.filter((item) => item[4] === color.id));
+  const rotatingObjects = [];
+  for (let row = 0; rotatingObjects.length < easyColorObjects.length; row += 1) {
+    for (const group of objectsByColor) if (group[row]) rotatingObjects.push(group[row]);
+  }
+  const patternThemes = [
+    ['Perlenreihe', 'bead row', '📿'], ['Fähnchenreihe', 'flag row', '🚩'], ['Steinreihe', 'stone row', '🪨'], ['Muschelreihe', 'shell row', '🐚'], ['Ballonreihe', 'balloon row', '🎈'],
+    ['Sternreihe', 'star row', '⭐'], ['Bausteinreihe', 'block row', '🧱'], ['Punktreihe', 'dot row', '⚪'], ['Knopfreihe', 'button row', '🔘'], ['Kartenreihe', 'card row', '🃏'],
+    ['Blumenreihe', 'flower row', '🌼'], ['Herzreihe', 'heart row', '🤍'], ['Kreisreihe', 'circle row', '⭕'], ['Drachenreihe', 'kite row', '🪁'], ['Becherreihe', 'cup row', '🥤'],
+    ['Hutreihe', 'hat row', '🧢'], ['Schuhreihe', 'shoe row', '👟'], ['Blätterreihe', 'leaf row', '🍃'], ['Tropfenreihe', 'drop row', '💧'], ['Lichterreihe', 'light row', '💡'],
+    ['Bonbonreihe', 'candy row', '🍬'], ['Keksreihe', 'cookie row', '🍪'], ['Apfelreihe', 'apple row', '🍎'], ['Schirmreihe', 'umbrella row', '☂️'], ['Bootsreihe', 'boat row', '⛵'],
+    ['Zugreihe', 'train row', '🚆'], ['Autoreihe', 'car row', '🚗'], ['Buchreihe', 'book row', '📘'], ['Stiftreihe', 'pencil row', '✏️'], ['Würfelreihe', 'dice row', '🎲'],
+  ];
+  const add = ({ promptDe, promptEn, visual = '', conceptKey, answers, correctAnswerId, successDe, successEn, hintDe, hintEn }) => {
+    questions.push({ id: `d2cu${number++}`, prompt: localized(promptDe, promptEn), visual, conceptKey, answers, correctAnswerId, success: localized(successDe, successEn), hint: localized(hintDe, hintEn) });
   };
 
-  easyColorObjects.forEach(([objectId, de, en, emoji, colorId], index) => {
+  for (let stage = 0; stage < 30; stage += 1) {
+    const [objectId, de, en, emoji, colorId] = rotatingObjects[stage];
     const correct = colorById[colorId];
     const distractor = baseColors[(baseColors.findIndex((color) => color.id === colorId) + 3) % baseColors.length];
     add({
       promptDe: `Welche Farbe siehst du bei diesem Bild: ${de}?`,
       promptEn: `Which color can you see in this picture: ${en}?`,
       visual: emoji,
+      conceptKey: colorId,
       correctAnswerId: colorId,
-      answers: twoChoices(localizedAnswer(correct.id, correct.de, correct.en, correct.hex), localizedAnswer(distractor.id, distractor.de, distractor.en, distractor.hex), index),
+      answers: twoChoices(localizedAnswer(correct.id, correct.de, correct.en, correct.hex), localizedAnswer(distractor.id, distractor.de, distractor.en, distractor.hex), stage),
       successDe: `Richtig! Die Farbe ist ${correct.de}.`,
       successEn: `Correct! The color is ${correct.en}.`,
       hintDe: 'Schau dir die Farbe des Bildes genau an.',
       hintEn: 'Look carefully at the color in the picture.',
     });
-  });
 
-  easyColorObjects.forEach(([objectId, de, en, emoji, colorId], index) => {
-    const correct = colorById[colorId];
-    const otherObjects = easyColorObjects.filter((item) => item[4] !== colorId);
-    const other = otherObjects[(index * 7) % otherObjects.length];
+    const findObject = rotatingObjects[(stage + 3) % rotatingObjects.length];
+    const findColor = colorById[findObject[4]];
+    const otherObjects = rotatingObjects.filter((item) => item[4] !== findObject[4]);
+    const other = otherObjects[(stage * 5) % otherObjects.length];
     add({
-      promptDe: `Finde dieses Bild: ${de}. Seine Farbe ist ${correct.de}.`,
-      promptEn: `Find this picture: ${en}. Its color is ${correct.en}.`,
-      correctAnswerId: objectId,
-      answers: twoChoices({ id: objectId, label: emoji }, { id: other[0], label: other[3] }, index + 1),
+      promptDe: `Finde dieses Bild: ${findObject[1]}. Seine Farbe ist ${findColor.de}.`,
+      promptEn: `Find this picture: ${findObject[2]}. Its color is ${findColor.en}.`,
+      conceptKey: findColor.id,
+      correctAnswerId: findObject[0],
+      answers: twoChoices({ id: findObject[0], label: findObject[3] }, { id: other[0], label: other[3] }, stage + 1),
       successDe: 'Prima! Du hast das richtige Bild gefunden.',
       successEn: 'Great! You found the right picture.',
-      hintDe: `Suche das Bild in ${correct.de}.`,
-      hintEn: `Look for the picture in ${correct.en}.`,
+      hintDe: `Suche das Bild in ${findColor.de}.`,
+      hintEn: `Look for the picture in ${findColor.en}.`,
     });
-  });
+
+    const firstPatternColor = baseColors[(stage + 1) % baseColors.length];
+    const nextPatternColor = baseColors[(stage + 6) % baseColors.length];
+    const patternOther = baseColors[(stage + 4) % baseColors.length];
+    const theme = patternThemes[stage];
+    add({
+      promptDe: `Navis ${theme[0]} ist ${firstPatternColor.de}, ${nextPatternColor.de}, ${firstPatternColor.de}. Welche Farbe kommt jetzt?`,
+      promptEn: `Navi's ${theme[1]} is ${firstPatternColor.en}, ${nextPatternColor.en}, ${firstPatternColor.en}. Which color comes next?`,
+      visual: `${theme[2]}  ${firstPatternColor.symbol} ${nextPatternColor.symbol} ${firstPatternColor.symbol}  ?`,
+      conceptKey: nextPatternColor.id,
+      correctAnswerId: nextPatternColor.id,
+      answers: twoChoices(localizedAnswer(nextPatternColor.id, nextPatternColor.de, nextPatternColor.en, nextPatternColor.hex), localizedAnswer(patternOther.id, patternOther.de, patternOther.en, patternOther.hex), stage + 2),
+      successDe: `Muster gelöst! Jetzt kommt ${nextPatternColor.de}.`,
+      successEn: `Pattern solved! ${nextPatternColor.en} comes next.`,
+      hintDe: `Die beiden Farben wechseln sich ab: ${firstPatternColor.de}, ${nextPatternColor.de}.`,
+      hintEn: `The two colors take turns: ${firstPatternColor.en}, ${nextPatternColor.en}.`,
+    });
+  }
 
   return questions;
 }
@@ -578,51 +680,172 @@ function buildDiscovererLetters() {
   const questions = [];
   let number = 1;
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-  const add = ({ promptDe, promptEn, visual, correct, options, successDe, successEn, hintDe, hintEn }) => {
-    questions.push({ id: `dlu${number++}`, prompt: localized(promptDe, promptEn), visual, answers: options.map((letter) => ({ id: letter, label: letter })), correctAnswerId: correct, success: localized(successDe, successEn), hint: localized(hintDe, hintEn) });
+  const examples = easyInitials.slice(0, 30);
+  const add = ({ promptDe, promptEn, visual, showNavi = false, correct, options, successDe, successEn, hintDe, hintEn }) => {
+    questions.push({ id: `d2lu${number++}`, prompt: localized(promptDe, promptEn), visual, ...(showNavi ? { showNavi: true } : {}), answers: options.map((letter) => ({ id: letter, label: letter })), correctAnswerId: correct, success: localized(successDe, successEn), hint: localized(hintDe, hintEn) });
   };
 
-  alphabet.forEach((letter, index) => add({
-    promptDe: `Navi zeigt ${letter}. Finde noch einmal das große ${letter}.`, promptEn: `Navi shows ${letter}. Find the same capital ${letter}.`, visual: letter, correct: letter,
-    options: twoChoices(letter, alphabet[(index + 7) % 26], index), successDe: `Ja! Das ist ${letter}.`, successEn: `Yes! That is ${letter}.`,
-    hintDe: `Vergleiche die Form mit dem großen ${letter}.`, hintEn: `Match the shape of capital ${letter}.`,
-  }));
-
-  alphabet.forEach((capital, index) => {
-    const lower = capital.toLowerCase();
+  for (let stage = 0; stage < 30; stage += 1) {
+    const [shownLetter, shownDe, shownEn, shownEmoji] = examples[stage];
+    const shownIndex = alphabet.indexOf(shownLetter);
     add({
-      promptDe: `Welche kleine Form gehört zum großen ${capital}?`, promptEn: `Which lowercase shape belongs with capital ${capital}?`, visual: capital, correct: lower,
-      options: twoChoices(lower, alphabet[(index + 9) % 26].toLowerCase(), index + 1), successDe: `Richtig! ${capital} und ${lower} gehören zusammen.`, successEn: `Correct! ${capital} and ${lower} belong together.`,
-      hintDe: `Suche das kleine ${lower}.`, hintEn: `Look for lowercase ${lower}.`,
+      promptDe: `Navi zeigt dir ${shownLetter} wie bei ${shownDe}. Finde denselben großen Buchstaben.`,
+      promptEn: `Navi shows ${shownLetter} as in ${shownEn}. Find the same capital letter.`,
+      visual: `${shownLetter}  ${shownEmoji}`,
+      showNavi: true,
+      correct: shownLetter,
+      options: twoChoices(shownLetter, alphabet[(shownIndex + 7) % 26], stage),
+      successDe: `Ja! Das ist das große ${shownLetter}.`,
+      successEn: `Yes! That is capital ${shownLetter}.`,
+      hintDe: `Vergleiche die Form mit ${shownLetter} auf Navis Karte.`,
+      hintEn: `Match the shape of ${shownLetter} on Navi's card.`,
     });
-  });
 
-  easyInitials.forEach(([letter, de, en, emoji], index) => {
-    const alphabetIndex = alphabet.indexOf(letter);
+    const [pairLetter, pairDe, pairEn, pairEmoji] = examples[(stage + 10) % examples.length];
+    const pairIndex = alphabet.indexOf(pairLetter);
+    const lower = pairLetter.toLowerCase();
     add({
-      promptDe: `Welchen Anfangslaut hörst du bei ${de}?`, promptEn: `Which first sound do you hear in ${en}?`, visual: emoji, correct: letter,
-      options: twoChoices(letter, alphabet[(alphabetIndex + 7) % 26], index), successDe: `${de} beginnt mit ${letter}.`, successEn: `${en} begins with ${letter}.`,
-      hintDe: `Höre langsam: ${letter}, ${de}.`, hintEn: `Listen slowly: ${letter}, ${en}.`,
+      promptDe: `Navi zeigt ${pairLetter} und ${lower} wie bei ${pairDe}. Finde das kleine ${lower}.`,
+      promptEn: `Navi shows ${pairLetter} and ${lower} as in ${pairEn}. Find lowercase ${lower}.`,
+      visual: `${pairLetter} · ${lower}  ${pairEmoji}`,
+      showNavi: true,
+      correct: lower,
+      options: twoChoices(lower, alphabet[(pairIndex + 8) % 26].toLowerCase(), stage + 1),
+      successDe: `Richtig! ${pairLetter} und ${lower} gehören zusammen.`,
+      successEn: `Correct! ${pairLetter} and ${lower} belong together.`,
+      hintDe: `Tippe auf die kleine Form ${lower}.`,
+      hintEn: `Tap the lowercase shape ${lower}.`,
     });
-  });
+
+    const [soundLetter, soundDe, soundEn, soundEmoji] = examples[(stage + 20) % examples.length];
+    const soundIndex = alphabet.indexOf(soundLetter);
+    add({
+      promptDe: `Welchen Anfangslaut hörst du bei ${soundDe}?`,
+      promptEn: `Which first sound do you hear in ${soundEn}?`,
+      visual: soundEmoji,
+      correct: soundLetter,
+      options: twoChoices(soundLetter, alphabet[(soundIndex + 6) % 26], stage + 2),
+      successDe: `${soundDe} beginnt mit ${soundLetter}.`,
+      successEn: `${soundEn} begins with ${soundLetter}.`,
+      hintDe: `Höre langsam: ${soundLetter}, ${soundDe}.`,
+      hintEn: `Listen slowly: ${soundLetter}, ${soundEn}.`,
+    });
+  }
 
   return questions;
 }
 
+const discovererWordSentences = [
+  ['Ich putze meine Zähne mit der ...', 'I brush my teeth with a ...', '🦷', 'toothbrush', 'Zahnbürste', 'toothbrush', '🪥', 'sock', '🧦'],
+  ['Zum Schlafen lege ich mich ins ...', 'To sleep, I lie down in a ...', '😴', 'bed', 'Bett', 'bed', '🛏️', 'chair', '🪑'],
+  ['Suppe esse ich mit einem ...', 'I eat soup with a ...', '🍲', 'spoon', 'Löffel', 'spoon', '🥄', 'key', '🔑'],
+  ['Bei Regen nehme ich einen ...', 'When it rains, I take an ...', '🌧️', 'umbrella', 'Regenschirm', 'umbrella', '☂️', 'hat', '🧢'],
+  ['Meine Hände wasche ich mit ...', 'I wash my hands with ...', '👐', 'soap', 'Seife', 'soap', '🧼', 'pencil', '✏️'],
+  ['Zum Schreiben brauche ich einen ...', 'To write, I need a ...', '📘', 'pencil', 'Stift', 'pencil', '✏️', 'spoon', '🥄'],
+  ['Wasser trinke ich aus einer ...', 'I drink water from a ...', '💧', 'cup', 'Tasse', 'cup', '🥤', 'shoe', '👟'],
+  ['Eine Tür öffne ich mit einem ...', 'I open a door with a ...', '🚪', 'key', 'Schlüssel', 'key', '🔑', 'comb', '🪮'],
+  ['Auf den Kopf setze ich einen ...', 'On my head, I wear a ...', '🙂', 'hat', 'Hut', 'hat', '🧢', 'shoe', '👟'],
+  ['An den Fuß ziehe ich einen ...', 'On my foot, I wear a ...', '🦶', 'shoe', 'Schuh', 'shoe', '👟', 'hat', '🧢'],
+  ['Meine Haare ordne ich mit einem ...', 'I tidy my hair with a ...', '💇', 'comb', 'Kamm', 'comb', '🪮', 'fork', '🍴'],
+  ['Mein Pausenbrot trage ich im ...', 'I carry my lunch in a ...', '🍞', 'backpack', 'Rucksack', 'backpack', '🎒', 'umbrella', '☂️'],
+  ['Zum Sitzen brauche ich einen ...', 'To sit down, I need a ...', '🧍', 'chair', 'Stuhl', 'chair', '🪑', 'bed', '🛏️'],
+  ['Das Essen liegt auf dem ...', 'The food is on the ...', '🍝', 'plate', 'Teller', 'plate', '🍽️', 'window', '🪟'],
+  ['Durch das ... kommt Licht ins Zimmer.', 'Light comes into the room through the ...', '☀️', 'window', 'Fenster', 'window', '🪟', 'door', '🚪'],
+  ['Auf der Straße fährt ein ...', 'A ... drives on the road.', '🛣️', 'car', 'Auto', 'car', '🚗', 'boat', '⛵'],
+  ['Auf Schienen fährt der ...', 'The ... travels on rails.', '🛤️', 'train', 'Zug', 'train', '🚆', 'airplane', '✈️'],
+  ['Über das Wasser fährt ein ...', 'A ... travels across the water.', '🌊', 'boat', 'Boot', 'boat', '⛵', 'bus', '🚌'],
+  ['Durch den Himmel fliegt ein ...', 'An ... flies through the sky.', '☁️', 'airplane', 'Flugzeug', 'airplane', '✈️', 'bicycle', '🚲'],
+  ['Mit Pedalen fahre ich auf dem ...', 'I use pedals to ride a ...', '🦵', 'bicycle', 'Fahrrad', 'bicycle', '🚲', 'bed', '🛏️'],
+  ['Wenn es kalt ist, trage ich eine ...', 'When it is cold, I wear a ...', '❄️', 'jacket', 'Jacke', 'jacket', '🧥', 'dress', '👗'],
+  ['Bevor ich Schuhe anziehe, brauche ich ...', 'Before I put on shoes, I need ...', '👟', 'socks', 'Socken', 'socks', '🧦', 'gloves', '🧤'],
+  ['Das weiße Getränk im Glas ist ...', 'The white drink in the glass is ...', '🥛', 'milk', 'Milch', 'milk', '🥛', 'bread', '🍞'],
+  ['In der Bäckerei kaufe ich ...', 'At the bakery, I buy ...', '🥐', 'bread', 'Brot', 'bread', '🍞', 'car', '🚗'],
+  ['Zum bunten Malen nehme ich ...', 'For colorful drawing, I use ...', '🎨', 'crayons', 'Buntstifte', 'crayons', '🖍️', 'toothbrush', '🪥'],
+  ['Mit diesem Instrument mache ich Bum-bum: die ...', 'I make a boom-boom sound with the ...', '🎵', 'drum', 'Trommel', 'drum', '🥁', 'clock', '🕐'],
+  ['Die ... zeigt mir die Zeit.', 'The ... tells me the time.', '⏰', 'clock', 'Uhr', 'clock', '🕐', 'key', '🔑'],
+  ['Nudeln esse ich mit einer ...', 'I eat noodles with a ...', '🍝', 'fork', 'Gabel', 'fork', '🍴', 'comb', '🪮'],
+  ['Beim Essen steht der Teller auf dem ...', 'At mealtime, the plate sits on the ...', '🍽️', 'table', 'Tisch', 'table', '🪑 ━━━ 🪑', 'bed', '🛏️'],
+  ['Durch die ... gehe ich in das Zimmer.', 'I walk into the room through the ...', '🏠', 'door', 'Tür', 'door', '🚪', 'window', '🪟'],
+];
+
+const discovererWordPairs = [
+  ['Was gehört zu den Zähnen?', 'What belongs with teeth?', '🦷', 'toothbrush', 'Zahnbürste', 'toothbrush', '🪥', 'sock', '🧦'],
+  ['Was gehört zum Fuß?', 'What belongs on a foot?', '🦶', 'shoe', 'Schuh', 'shoe', '👟', 'hat', '🧢'],
+  ['Was gehört zur Hand?', 'What belongs on a hand?', '✋', 'glove', 'Handschuh', 'glove', '🧤', 'shoe', '👟'],
+  ['Was gehört zum Kopf?', 'What belongs on a head?', '🙂', 'hat', 'Hut', 'hat', '🧢', 'sock', '🧦'],
+  ['Was gehört zu Regen?', 'What belongs with rain?', '🌧️', 'umbrella', 'Regenschirm', 'umbrella', '☂️', 'book', '📘'],
+  ['Was gehört zu hellem Sonnenschein?', 'What belongs with bright sunshine?', '☀️', 'sunglasses', 'Sonnenbrille', 'sunglasses', '🕶️', 'fork', '🍴'],
+  ['Was gehört zu einem Schloss?', 'What belongs with a lock?', '🔒', 'key', 'Schlüssel', 'key', '🔑', 'comb', '🪮'],
+  ['Was gehört zu einem Brief?', 'What belongs with a letter?', '✉️', 'mailbox', 'Briefkasten', 'mailbox', '📮', 'shoe', '👟'],
+  ['Was gehört zu einer Suppe?', 'What belongs with soup?', '🍲', 'spoon', 'Löffel', 'spoon', '🥄', 'pencil', '✏️'],
+  ['Was gehört zu Spaghetti?', 'What belongs with spaghetti?', '🍝', 'fork', 'Gabel', 'fork', '🍴', 'comb', '🪮'],
+  ['Was gehört zu einem Bett?', 'What belongs with a bed?', '🛏️', 'pillow', 'Kissen', 'pillow', '🛌', 'key', '🔑'],
+  ['Was gehört zu einem Tisch?', 'What belongs with a table?', '🪑 ━━━ 🪑', 'chair', 'Stuhl', 'chair', '🪑', 'umbrella', '☂️'],
+  ['Was gehört zu einem Stift?', 'What belongs with a pencil?', '✏️', 'paper', 'Papier', 'paper', '📄', 'shoe', '👟'],
+  ['Was gehört zur Schule?', 'What belongs with school?', '🏫', 'backpack', 'Rucksack', 'backpack', '🎒', 'bed', '🛏️'],
+  ['Was gehört zum Fahrradfahren?', 'What belongs with riding a bicycle?', '🚲', 'helmet', 'Helm', 'helmet', '⛑️', 'cup', '🥤'],
+  ['Was gehört zu einem Auto?', 'What belongs with a car?', '🚗', 'road', 'Straße', 'road', '🛣️', 'pillow', '🛌'],
+  ['Was gehört zu einem Zug?', 'What belongs with a train?', '🚆', 'tracks', 'Schienen', 'tracks', '🛤️', 'hat', '🧢'],
+  ['Was gehört zu einem Boot?', 'What belongs with a boat?', '⛵', 'water', 'Wasser', 'water', '🌊', 'chair', '🪑'],
+  ['Was gehört zu einem Flugzeug?', 'What belongs with an airplane?', '✈️', 'sky', 'Himmel', 'sky', '☁️', 'plate', '🍽️'],
+  ['Was gehört zu einer Blume?', 'What belongs with a flower?', '🌸', 'water', 'Wasser', 'water', '💧', 'key', '🔑'],
+  ['Was gehört zu Brot?', 'What belongs with bread?', '🍞', 'cheese', 'Käse', 'cheese', '🧀', 'comb', '🪮'],
+  ['Was gehört zu einer Tasse?', 'What belongs in a cup?', '🥤', 'drink', 'Getränk', 'drink', '💧', 'shoe', '👟'],
+  ['Was gehört zum Händewaschen?', 'What belongs with washing hands?', '👐', 'soap', 'Seife', 'soap', '🧼', 'pencil', '✏️'],
+  ['Was gehört zu Haaren?', 'What belongs with hair?', '💇', 'comb', 'Kamm', 'comb', '🪮', 'fork', '🍴'],
+  ['Was gehört zu einer Uhr?', 'What belongs with a clock?', '🕐', 'time', 'Zeit', 'time', '⏰', 'umbrella', '☂️'],
+  ['Was gehört zu einem Haus?', 'What belongs with a house?', '🏠', 'door', 'Tür', 'door', '🚪', 'spoon', '🥄'],
+  ['Was gehört zu einem Fenster?', 'What belongs with a window?', '🪟', 'light', 'Licht', 'light', '☀️', 'sock', '🧦'],
+  ['Was gehört zu einer Socke?', 'What belongs with a sock?', '🧦', 'shoe', 'Schuh', 'shoe', '👟', 'hat', '🧢'],
+  ['Was gehört zu einer warmen Jacke?', 'What belongs with a warm jacket?', '🧥', 'cold', 'Kälte', 'cold', '❄️', 'sun', '☀️'],
+  ['Was gehört zu einem Teller?', 'What belongs on a plate?', '🍽️', 'food', 'Essen', 'food', '🍝', 'key', '🔑'],
+];
+
+const discovererActionWords = [
+  ['Wer rennt?', 'Who is running?', 'run', 'rennen', 'run', '🏃', 'sit', '🪑'], ['Wer schläft?', 'Who is sleeping?', 'sleep', 'schlafen', 'sleep', '😴', 'awake', '👀'],
+  ['Wer isst?', 'Who is eating?', 'eat', 'essen', 'eat', '😋', 'drink', '🥤'], ['Wer trinkt?', 'Who is drinking?', 'drink', 'trinken', 'drink', '🥤', 'eat', '🍽️'],
+  ['Wer liest?', 'Who is reading?', 'read', 'lesen', 'read', '📖', 'write', '✍️'], ['Wer schreibt?', 'Who is writing?', 'write', 'schreiben', 'write', '✍️', 'read', '📖'],
+  ['Wer singt?', 'Who is singing?', 'sing', 'singen', 'sing', '🎤', 'listen', '🎧'], ['Wer tanzt?', 'Who is dancing?', 'dance', 'tanzen', 'dance', '💃', 'stand', '🧍'],
+  ['Wer schwimmt?', 'Who is swimming?', 'swim', 'schwimmen', 'swim', '🏊', 'walk', '🚶'], ['Wer geht zu Fuß?', 'Who is walking?', 'walk', 'gehen', 'walk', '🚶', 'cycle', '🚴'],
+  ['Wer fährt Fahrrad?', 'Who is cycling?', 'cycle', 'Rad fahren', 'cycle', '🚴', 'drive', '🚗'], ['Wer klatscht?', 'Who is clapping?', 'clap', 'klatschen', 'clap', '👏', 'wave', '👋'],
+  ['Wer winkt?', 'Who is waving?', 'wave', 'winken', 'wave', '👋', 'point', '👆'], ['Wer zeigt mit dem Finger?', 'Who is pointing?', 'point', 'zeigen', 'point', '👆', 'clap', '👏'],
+  ['Wer lacht?', 'Who is laughing?', 'laugh', 'lachen', 'laugh', '😂', 'cry', '😭'], ['Wer weint?', 'Who is crying?', 'cry', 'weinen', 'cry', '😭', 'smile', '🙂'],
+  ['Wer springt?', 'Who is jumping?', 'jump', 'springen', 'jump', '🤾', 'sit', '🪑'], ['Wer wäscht die Hände?', 'Who is washing their hands?', 'wash', 'waschen', 'wash', '🧼', 'brush', '🪥'],
+  ['Wer putzt die Zähne?', 'Who is brushing their teeth?', 'brush', 'Zähne putzen', 'brush teeth', '🪥', 'comb', '🪮'], ['Wer kämmt die Haare?', 'Who is combing their hair?', 'comb', 'Haare kämmen', 'comb hair', '🪮', 'brush', '🪥'],
+  ['Wer kocht?', 'Who is cooking?', 'cook', 'kochen', 'cook', '🍳', 'clean', '🧹'], ['Wer räumt auf?', 'Who is cleaning up?', 'clean', 'aufräumen', 'clean up', '🧹', 'cook', '🍳'],
+  ['Wer schneidet?', 'Who is cutting?', 'cut', 'schneiden', 'cut', '✂️', 'draw', '🖍️'], ['Wer malt?', 'Who is drawing?', 'draw', 'malen', 'draw', '🖍️', 'read', '📖'],
+  ['Wer baut?', 'Who is building?', 'build', 'bauen', 'build', '🧱', 'paint', '🎨'], ['Wer hört genau hin?', 'Who is listening carefully?', 'listen', 'zuhören', 'listen', '👂', 'look', '👀'],
+  ['Wer schaut genau hin?', 'Who is looking carefully?', 'look', 'schauen', 'look', '👀', 'listen', '👂'], ['Wer riecht mit der Nase?', 'Who is smelling?', 'smell', 'riechen', 'smell', '👃', 'taste', '👅'],
+  ['Wer schmeckt mit der Zunge?', 'Who is tasting?', 'taste', 'schmecken', 'taste', '👅', 'smell', '👃'], ['Wer feiert?', 'Who is celebrating?', 'celebrate', 'feiern', 'celebrate', '🥳', 'rest', '😴'],
+];
+
 function buildDiscovererWords() {
-  return words.map(([de, en, emoji], index) => {
-    const other = words[(index + 29) % words.length];
-    const correctId = `dword-${index + 1}`;
-    return {
-      id: `dwu${index + 1}`,
-      prompt: localized(`Tippe auf das Bild für ${de}.`, `Tap the picture for ${en}.`),
-      visual: '',
-      answers: twoChoices({ id: correctId, label: emoji }, { id: `dword-${((index + 29) % words.length) + 1}`, label: other[2] }, index),
+  const questions = [];
+  const addPictureTask = ({ promptDe, promptEn, visual = '', showNavi = false, correctId, correctDe, correctEn, correctEmoji, otherId, otherEmoji, seed }) => {
+    questions.push({
+      id: `d2wu${questions.length + 1}`,
+      prompt: localized(promptDe, promptEn),
+      visual,
+      ...(showNavi ? { showNavi: true } : {}),
+      answers: twoChoices({ id: correctId, label: correctEmoji }, { id: otherId, label: otherEmoji }, seed),
       correctAnswerId: correctId,
-      success: localized(`Richtig! Das ist ${de}.`, `Correct! That is ${en}.`),
-      hint: localized(`Suche das Bild von ${de}.`, `Look for the picture of ${en}.`),
-    };
-  });
+      success: localized(`Richtig! Das passende Wort ist ${correctDe}.`, `Correct! The matching word is ${correctEn}.`),
+      hint: localized(`Höre auf das Wort ${correctDe}.`, `Listen for the word ${correctEn}.`),
+    });
+  };
+  for (let stage = 0; stage < 30; stage += 1) {
+    const [sentenceDe, sentenceEn, sentenceVisual, sentenceId, sentenceAnswerDe, sentenceAnswerEn, sentenceEmoji, sentenceOtherId, sentenceOtherEmoji] = discovererWordSentences[stage];
+    addPictureTask({ promptDe: `Welches Wort beendet Navis Satz? ${sentenceDe}`, promptEn: `Which word completes Navi's sentence? ${sentenceEn}`, visual: sentenceVisual, showNavi: true, correctId: sentenceId, correctDe: sentenceAnswerDe, correctEn: sentenceAnswerEn, correctEmoji: sentenceEmoji, otherId: sentenceOtherId, otherEmoji: sentenceOtherEmoji, seed: stage });
+
+    const pairIndex = (stage + 10) % 30;
+    const [pairDe, pairEn, pairVisual, pairId, pairAnswerDe, pairAnswerEn, pairEmoji, pairOtherId, pairOtherEmoji] = discovererWordPairs[pairIndex];
+    addPictureTask({ promptDe: pairDe, promptEn: pairEn, visual: pairVisual, correctId: pairId, correctDe: pairAnswerDe, correctEn: pairAnswerEn, correctEmoji: pairEmoji, otherId: pairOtherId, otherEmoji: pairOtherEmoji, seed: pairIndex + 1 });
+
+    const actionIndex = (stage + 20) % 30;
+    const [actionDe, actionEn, actionId, actionAnswerDe, actionAnswerEn, actionEmoji, actionOtherId, actionOtherEmoji] = discovererActionWords[actionIndex];
+    addPictureTask({ promptDe: actionDe, promptEn: actionEn, correctId: actionId, correctDe: actionAnswerDe, correctEn: actionAnswerEn, correctEmoji: actionEmoji, otherId: actionOtherId, otherEmoji: actionOtherEmoji, seed: actionIndex + 2 });
+  }
+  return questions;
 }
 
 const categories = [

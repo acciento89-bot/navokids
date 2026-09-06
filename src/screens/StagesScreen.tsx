@@ -1,10 +1,11 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { t } from '../i18n';
-import { FREE_STAGES_PER_CATEGORY, QUESTIONS_PER_STAGE, STAGES_PER_CATEGORY } from '../config/learning';
+import { FREE_STAGES_PER_CATEGORY, STAGES_PER_CATEGORY } from '../config/learning';
+import { isStageCompleted, isStageNextInSequence } from '../data/progress';
 import { colors, shadows } from '../theme';
-import { Language, LearningCategory } from '../types';
+import { CategoryProgress, Language, LearningCategory } from '../types';
 
-export function StagesScreen({ category, language, completedQuestions, premiumUnlocked, onBack, onStage }: { category: LearningCategory; language: Language; completedQuestions: number; premiumUnlocked: boolean; onBack: () => void; onStage: (stage: number) => void }) {
+export function StagesScreen({ category, language, progress, premiumUnlocked, onBack, onStage }: { category: LearningCategory; language: Language; progress: CategoryProgress; premiumUnlocked: boolean; onBack: () => void; onStage: (stage: number) => void }) {
   return (
     <ScrollView contentContainerStyle={[styles.content, { backgroundColor: category.lightColor }]}>
       <View style={styles.header}>
@@ -16,14 +17,24 @@ export function StagesScreen({ category, language, completedQuestions, premiumUn
       <View style={styles.path}>
         {Array.from({ length: STAGES_PER_CATEGORY }, (_, index) => index + 1).map((stage) => {
           const free = stage <= FREE_STAGES_PER_CATEGORY;
-          const available = free || premiumUnlocked;
-          const complete = completedQuestions >= stage * QUESTIONS_PER_STAGE;
+          const entitled = free || premiumUnlocked;
+          const sequentiallyAvailable = isStageNextInSequence(progress, stage);
+          const available = entitled && sequentiallyAvailable;
+          const complete = isStageCompleted(progress, stage);
           return (
-            <Pressable key={stage} onPress={() => onStage(stage)} style={({ pressed }) => [styles.stage, !available && styles.lockedStage, pressed && styles.pressed]}>
+            <Pressable key={stage} disabled={!available && entitled} onPress={() => onStage(stage)} style={({ pressed }) => [styles.stage, !available && styles.lockedStage, pressed && styles.pressed]}>
               <View style={[styles.stageNumber, { backgroundColor: available ? category.color : '#AAB6B7' }]}><Text style={styles.stageNumberText}>{available ? stage : '🔒'}</Text></View>
               <View style={styles.stageCopy}>
                 <Text style={styles.stageTitle}>{language === 'de' ? `Stufe ${stage}` : `Stage ${stage}`}</Text>
-                <Text style={styles.stageSubtitle}>{complete ? (language === 'de' ? 'Geschafft!' : 'Completed!') : free ? (language === 'de' ? 'Kostenlos spielen' : 'Play for free') : premiumUnlocked ? (language === 'de' ? 'Neue Mission' : 'New mission') : 'NavoKids Premium'}</Text>
+                <Text style={styles.stageSubtitle}>{complete
+                  ? (language === 'de' ? 'Geschafft!' : 'Completed!')
+                  : !entitled
+                    ? 'NavoKids Premium'
+                    : !sequentiallyAvailable
+                      ? (language === 'de' ? 'Vorherige Stufe zuerst' : 'Complete the previous stage first')
+                      : free
+                        ? (language === 'de' ? 'Kostenlos spielen' : 'Play for free')
+                        : (language === 'de' ? 'Neue Mission' : 'New mission')}</Text>
               </View>
               <Text style={styles.stars}>{complete ? '⭐⭐⭐' : available ? '☆ ☆ ☆' : ''}</Text>
             </Pressable>

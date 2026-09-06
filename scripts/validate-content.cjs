@@ -32,6 +32,24 @@ for (const category of categories) {
     if (question.answers.length !== 3) throw new Error(`${question.id}: expected exactly 3 answers`);
     if (new Set(question.answers.map((answer) => answer.id)).size !== question.answers.length) throw new Error(`${question.id}: duplicate answer choices`);
     if (!question.answers.some((answer) => answer.id === question.correctAnswerId)) throw new Error(`${question.id}: correct answer is missing`);
+    if (['🔎 🐾', '🧭 🌍', '🔠', '🔡'].includes(question.visual)) throw new Error(`${question.id}: unrelated placeholder visual`);
+  }
+
+  if (category.id === 'animals') {
+    for (const question of category.questions) {
+      if (question.visual !== '') throw new Error(`${question.id}: animal clue must use the answer pictures, not a separate unrelated visual`);
+      if (question.answers.some((answer) => typeof answer.label !== 'string' || !answer.label.trim())) throw new Error(`${question.id}: missing animal answer picture`);
+    }
+  }
+  if (category.id === 'letters') {
+    category.questions.slice(0, 26).forEach((question, index) => {
+      const expected = String.fromCharCode(65 + index);
+      if (question.visual !== expected) throw new Error(`${question.id}: visual does not match capital ${expected}`);
+    });
+    category.questions.slice(26, 52).forEach((question, index) => {
+      const capital = String.fromCharCode(65 + index);
+      if (question.visual !== `${capital} · ${capital.toLowerCase()}`) throw new Error(`${question.id}: visual does not match lowercase ${capital.toLowerCase()}`);
+    });
   }
   for (let stage = 0; stage < expectedStages; stage += 1) {
     const stageQuestions = category.questions.slice(stage * questionsPerStage, (stage + 1) * questionsPerStage);

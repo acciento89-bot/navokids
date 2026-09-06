@@ -159,7 +159,7 @@ function buildColors() {
     questions.push({ id, prompt: localized(promptDe, promptEn), visual, answers: rotate(colorAnswers(correctId, number), number % 3), correctAnswerId: correctId, success: localized(successDe, successEn), hint: localized(hintDe, hintEn) });
   };
   const objects = [
-    ['Erdbeere', 'ripe strawberry', '🍓', 'red'], ['Himmel', 'clear sky', '☀️', 'blue'], ['Gras', 'fresh grass', '🌱', 'green'], ['Banane', 'ripe banana', '🍌', 'yellow'],
+    ['Erdbeere', 'ripe strawberry', '🍓', 'red'], ['Himmel', 'clear sky', '🌤️', 'blue'], ['Gras', 'fresh grass', '🌱', 'green'], ['Banane', 'ripe banana', '🍌', 'yellow'],
     ['Weintraube', 'purple grape', '🍇', 'purple'], ['Orange', 'orange fruit', '🍊', 'orange'], ['Flamingo', 'flamingo', '🦩', 'pink'], ['Schokolade', 'chocolate', '🍫', 'brown'],
     ['Schnee', 'snow', '❄️', 'white'], ['Kohle', 'coal', '🪨', 'black'], ['Tomate', 'ripe tomato', '🍅', 'red'], ['Ozean', 'ocean', '🌊', 'blue'],
     ['Blatt', 'fresh leaf', '🍃', 'green'], ['Zitrone', 'lemon', '🍋', 'yellow'], ['Lavendelblüte', 'lavender flower', '🪻', 'purple'], ['Karotte', 'carrot', '🥕', 'orange'],
@@ -200,7 +200,7 @@ function buildColors() {
   const extraObjects = [
     ['Ampellicht zum Anhalten', 'traffic light that means stop', '🚦', 'red'], ['Regentropfen im Bilderbuch', 'raindrop in the picture book', '💧', 'blue'], ['Kleeblatt', 'clover leaf', '☘️', 'green'],
     ['Goldmünze', 'gold coin', '🪙', 'yellow'], ['Zaubererhut', 'wizard hat', '🧙', 'purple'], ['Mandarine', 'tangerine', '🍊', 'orange'],
-    ['Rosenblüte', 'pink rose', '🌹', 'pink'], ['Haselnuss', 'hazelnut', '🌰', 'brown'], ['Eisbärfell', 'polar bear fur', '🐻‍❄️', 'white'],
+    ['Rosenblüte', 'pink rose', '🌸', 'pink'], ['Haselnuss', 'hazelnut', '🌰', 'brown'], ['Eisbärfell', 'polar bear fur', '🐻‍❄️', 'white'],
     ['Piratenschatten', 'pirate shadow', '🏴‍☠️', 'black'], ['Elefantenhaut', 'elephant skin', '🐘', 'gray'], ['heller Sommerhimmel', 'pale summer sky', '🌤️', 'light-blue'],
     ['junger Salat', 'young lettuce', '🥬', 'light-green'], ['Vanilleeis', 'vanilla ice cream', '🍨', 'light-yellow'], ['Pfirsichfrucht', 'peach fruit', '🍑', 'peach'],
     ['Fliederblüte', 'lilac flower', '🪻', 'lilac'], ['Sandstrand', 'sandy beach', '🏖️', 'beige'], ['tiefer Nachthimmel', 'deep night sky', '🌌', 'dark-blue'],
@@ -270,7 +270,9 @@ function buildAnimals() {
     questions.push({
       id,
       prompt: localized(`Welches Tier ${clueDe}?`, `Which animal ${clueEn}?`),
-      visual: variant === 0 ? '🔎 🐾' : '🧭 🌍',
+      // The spoken clue is the task; the three animal answer pictures are its visuals.
+      // An unrelated decorative picture here previously looked like part of the clue.
+      visual: '',
       answers: choices.map(([animalId, , , emoji]) => ({ id: animalId, label: emoji })),
       correctAnswerId: animal[0],
       success: localized(`Super! Gesucht war: ${animal[1]}.`, `Great! The answer is ${animal[2]}.`),
@@ -291,12 +293,12 @@ function buildLetters() {
   };
   alphabet.forEach((letter, index) => {
     const options = rotate([letter, alphabet[(index + 5) % 26], alphabet[(index + 11) % 26]], index % 3);
-    add(`Tippe auf den großen Buchstaben ${letter}.`, `Tap the capital letter ${letter}.`, '🔠', letter, options, `Richtig! Das ist das große ${letter}.`, `Correct! That is capital ${letter}.`, `Suche genau nach der Form von ${letter}.`, `Look carefully for the shape of ${letter}.`);
+    add(`Tippe auf den großen Buchstaben ${letter}.`, `Tap the capital letter ${letter}.`, letter, letter, options, `Richtig! Das ist das große ${letter}.`, `Correct! That is capital ${letter}.`, `Suche genau nach der Form von ${letter}.`, `Look carefully for the shape of ${letter}.`);
   });
   alphabet.forEach((capital, index) => {
     const letter = capital.toLowerCase();
     const options = rotate([letter, alphabet[(index + 7) % 26].toLowerCase(), alphabet[(index + 13) % 26].toLowerCase()], (index + 1) % 3);
-    add(`Finde den kleinen Buchstaben ${letter}.`, `Find the lowercase letter ${letter}.`, '🔡', letter, options, `Prima! Das ist das kleine ${letter}.`, `Great! That is lowercase ${letter}.`, `Das kleine ${letter} gehört zum großen ${capital}.`, `Lowercase ${letter} belongs with capital ${capital}.`);
+    add(`Finde den kleinen Buchstaben ${letter}.`, `Find the lowercase letter ${letter}.`, `${capital} · ${letter}`, letter, options, `Prima! Das ist das kleine ${letter}.`, `Great! That is lowercase ${letter}.`, `Das kleine ${letter} gehört zum großen ${capital}.`, `Lowercase ${letter} belongs with capital ${capital}.`);
   });
   for (let start = 0; start < 20; start += 1) {
     const sequence = alphabet.slice(start, start + 4);
@@ -347,7 +349,7 @@ const words = [
   ['Socke', 'Sock', '🧦', 'dem weichen Kleidungsstück im Schuh', 'the soft clothing worn inside a shoe'], ['Jacke', 'Jacket', '🧥', 'dem warmen Kleidungsstück für draußen', 'the warm clothing worn outside'], ['Hose', 'Pants', '👖', 'dem Kleidungsstück mit zwei Beinen', 'the clothing with two legs'],
   ['Kleid', 'Dress', '👗', 'dem einteiligen Kleidungsstück', 'the one-piece item of clothing'], ['Löffel', 'Spoon', '🥄', 'dem Besteck für Suppe', 'the utensil used for soup'], ['Gabel', 'Fork', '🍴', 'dem Besteck mit Zinken', 'the utensil with prongs'],
   ['Teller', 'Plate', '🍽️', 'dem flachen Geschirr für Essen', 'the flat dish used for food'], ['Tasse', 'Cup', '☕', 'dem Gefäß mit Henkel zum Trinken', 'the drinking container with a handle'], ['Bett', 'Bed', '🛏️', 'dem Möbelstück zum Schlafen', 'the furniture used for sleeping'],
-  ['Stuhl', 'Chair', '🪑', 'dem Möbelstück zum Sitzen', 'the furniture used for sitting'], ['Tisch', 'Table', '🍽️', 'dem Möbelstück, auf dem gegessen wird', 'the furniture people eat on'], ['Tür', 'Door', '🚪', 'dem beweglichen Eingang zu einem Zimmer', 'the movable entrance to a room'],
+  ['Stuhl', 'Chair', '🪑', 'dem Möbelstück zum Sitzen', 'the furniture used for sitting'], ['Tisch', 'Table', '🪑 ━━━ 🪑', 'dem Möbelstück, auf dem gegessen wird', 'the furniture people eat on'], ['Tür', 'Door', '🚪', 'dem beweglichen Eingang zu einem Zimmer', 'the movable entrance to a room'],
   ['Fenster', 'Window', '🪟', 'der Öffnung, durch die Licht ins Zimmer kommt', 'the opening that lets light into a room'], ['Seife', 'Soap', '🧼', 'dem Gegenstand zum Händewaschen', 'the item used to wash hands'], ['Zahnbürste', 'Toothbrush', '🪥', 'dem Gegenstand zum Zähneputzen', 'the item used to brush teeth'],
   ['Kamm', 'Comb', '🪮', 'dem Gegenstand zum Ordnen der Haare', 'the item used to tidy hair'], ['Rucksack', 'Backpack', '🎒', 'der Tasche, die man auf dem Rücken trägt', 'the bag carried on the back'], ['Regenschirm', 'Umbrella', '☂️', 'dem Gegenstand, der vor Regen schützt', 'the item that protects you from rain'],
 ];

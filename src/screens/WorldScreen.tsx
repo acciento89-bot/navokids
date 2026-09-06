@@ -1,7 +1,7 @@
 import { Image, ImageBackground, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { categories } from '../data/learningContent';
 import { FREE_STAGES_PER_CATEGORY, TOTAL_QUESTIONS_PER_CATEGORY } from '../config/learning';
-import { countStars } from '../data/progress';
+import { countStars, normalizeCategoryProgress } from '../data/progress';
 import { copy, t } from '../i18n';
 import { colors, shadows } from '../theme';
 import { CategoryId, ChildProfile, Language } from '../types';
@@ -9,6 +9,7 @@ import { CategoryId, ChildProfile, Language } from '../types';
 interface Props {
   language: Language;
   profile: ChildProfile;
+  premiumUnlocked: boolean;
   onLanguageChange: (language: Language) => void;
   onCategoryPress: (id: CategoryId) => void;
   onParentsPress: () => void;
@@ -23,7 +24,7 @@ const islandPlacements: Record<CategoryId, { top: `${number}%`; side: 'left' | '
   words: { top: '83%', side: 'center' },
 };
 
-export function WorldScreen({ language, profile, onLanguageChange, onCategoryPress, onParentsPress, onProfilePress }: Props) {
+export function WorldScreen({ language, profile, premiumUnlocked, onLanguageChange, onCategoryPress, onParentsPress, onProfilePress }: Props) {
   const totalStars = countStars(profile.progress);
   const nextCategory = categories.find((category) => profile.progress[category.id].completedQuestions < TOTAL_QUESTIONS_PER_CATEGORY);
   const nextPlacement = nextCategory ? islandPlacements[nextCategory.id] : islandPlacements.words;
@@ -57,7 +58,7 @@ export function WorldScreen({ language, profile, onLanguageChange, onCategoryPre
           </View>
 
           {categories.map((category) => {
-            const completed = profile.progress[category.id].completedQuestions;
+            const completed = normalizeCategoryProgress(profile.progress[category.id]).completedQuestions;
             const percentage = Math.min(100, Math.round((completed / TOTAL_QUESTIONS_PER_CATEGORY) * 100));
             const placement = islandPlacements[category.id];
             return (
@@ -72,7 +73,7 @@ export function WorldScreen({ language, profile, onLanguageChange, onCategoryPre
                   <View style={styles.islandSignTop}>
                     <View style={[styles.islandIconBadge, { backgroundColor: category.lightColor }]}><Text style={styles.islandIcon}>{category.icon}</Text></View>
                     <Text numberOfLines={1} style={styles.islandTitle}>{t(category.title, language)}</Text>
-                    <View style={styles.stageBadge}><Text style={styles.stageBadgeText}>{FREE_STAGES_PER_CATEGORY} {language === 'de' ? 'frei' : 'free'}</Text></View>
+                    {!premiumUnlocked && <View style={styles.stageBadge}><Text style={styles.stageBadgeText}>{FREE_STAGES_PER_CATEGORY} {language === 'de' ? 'frei' : 'free'}</Text></View>}
                   </View>
                   <View style={styles.progressRow}>
                     <View style={styles.progressTrack}><View style={[styles.progressFill, { width: `${percentage}%`, backgroundColor: category.color }]} /></View>
@@ -83,10 +84,11 @@ export function WorldScreen({ language, profile, onLanguageChange, onCategoryPre
             );
           })}
 
-          <View pointerEvents="none" style={[styles.naviMarker, { top: nextPlacement.top }, nextPlacement.side === 'left' ? styles.naviMarkerRight : styles.naviMarkerLeft]}>
-            <View style={styles.naviBubble}><Text style={styles.naviBubbleText}>{language === 'de' ? 'Hier!' : 'Here!'}</Text></View>
-            <Image source={require('../../assets/navi-mascot-optimized.png')} resizeMode="contain" style={styles.mapMascot} />
-          </View>
+          {nextCategory && (
+            <View pointerEvents="none" style={[styles.naviMarker, { top: nextPlacement.top }, nextPlacement.side === 'left' ? styles.naviMarkerRight : styles.naviMarkerLeft]}>
+              <Image source={require('../../assets/navi-mascot-optimized.png')} resizeMode="contain" style={styles.mapMascot} />
+            </View>
+          )}
 
         </ImageBackground>
       </View>
@@ -137,8 +139,6 @@ const styles = StyleSheet.create({
   naviMarker: { position: 'absolute', width: 72, height: 85, marginTop: -7, alignItems: 'center', zIndex: 4 },
   naviMarkerRight: { right: 3 },
   naviMarkerLeft: { left: 3 },
-  naviBubble: { position: 'absolute', top: -10, zIndex: 2, borderRadius: 11, backgroundColor: colors.paper, paddingHorizontal: 7, paddingVertical: 3, ...shadows.card },
-  naviBubbleText: { color: colors.tealDark, fontSize: 9, fontWeight: '900' },
   mapMascot: { position: 'absolute', bottom: -7, width: 65, height: 72 },
   safetyNote: { color: colors.muted, textAlign: 'center', fontWeight: '700', marginTop: 28 }, pressed: { transform: [{ scale: 0.985 }], opacity: 0.93 },
 });

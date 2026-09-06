@@ -9,6 +9,7 @@
     "ios": "expo run:ios",
     "typecheck": "tsc --noEmit",
     "content:check": "node scripts/validate-content.cjs",
+    "progress:check": "node scripts/validate-progression.cjs",
     "store:check": "node scripts/validate-store-config.cjs",
     "voice:samples": "node scripts/generate-voice-samples.cjs",
     "voice:generate": "node scripts/generate-voice-pack.cjs",

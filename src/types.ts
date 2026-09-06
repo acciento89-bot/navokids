@@ -42,7 +42,13 @@ export interface LearningCategory {
   questions: Question[];
 }
 
-export type Progress = Record<CategoryId, { completedQuestions: number; stars: number }>;
+export interface CategoryProgress {
+  completedQuestions: number;
+  stars: number;
+  completedStages: number[];
+}
+
+export type Progress = Record<CategoryId, CategoryProgress>;
 
 export type AgeGroup = 'discoverer' | 'adventurer';
 
@@ -60,5 +66,6 @@ export interface AppState {
   activeProfileId: string | null;
   premiumUnlocked: boolean;
   premiumLastVerifiedAt?: string;
+  progressSchemaVersion?: 2;
   language: Language;
 }

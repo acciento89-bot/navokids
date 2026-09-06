@@ -5,6 +5,7 @@ const { synthesize } = require('./navi-tts.cjs');
 
 const languages = ['de', 'en'];
 const voice = process.env.NAVI_VOICE || 'marin';
+const concurrency = Math.max(1, Math.min(8, Number(process.env.NAVI_TTS_CONCURRENCY || 4)));
 
 async function loadLearningContent() {
   const sourcePath = path.join(process.cwd(), 'src/data/learningContent.ts');
@@ -38,24 +39,39 @@ async function main() {
     }
   }
 
-  for (let index = 0; index < entries.length; index += 1) {
-    const entry = entries[index];
-    const relativePath = path.posix.join('assets/audio', entry.language, `${safeName(entry.key)}.aac`);
-    const outputPath = path.join(process.cwd(), relativePath);
-    try {
-      await fs.access(outputPath);
-      process.stdout.write(`[${index + 1}/${entries.length}] exists ${entry.key}\n`);
-    } catch {
-      process.stdout.write(`[${index + 1}/${entries.length}] generating ${entry.language} ${entry.key}\n`);
-      await synthesize({
-        apiKey: process.env.OPENAI_API_KEY,
-        text: entry.text,
-        language: entry.language,
-        voice,
-        outputPath,
-      });
+  let cursor = 0;
+  const generateNext = async () => {
+    while (cursor < entries.length) {
+      const index = cursor++;
+      const entry = entries[index];
+      const relativePath = path.posix.join('assets/audio', entry.language, `${safeName(entry.key)}.aac`);
+      const outputPath = path.join(process.cwd(), relativePath);
+      try {
+        await fs.access(outputPath);
+        process.stdout.write(`[${index + 1}/${entries.length}] exists ${entry.key}\n`);
+      } catch {
+        process.stdout.write(`[${index + 1}/${entries.length}] generating ${entry.language} ${entry.key}\n`);
+        await synthesize({
+          apiKey: process.env.OPENAI_API_KEY,
+          text: entry.text,
+          language: entry.language,
+          voice,
+          outputPath,
+        });
+      }
+      entry.relativePath = relativePath;
     }
-    entry.relativePath = relativePath;
+  };
+
+  await Promise.all(Array.from({ length: concurrency }, () => generateNext()));
+
+  const expectedAudioPaths = new Set(entries.map((entry) => path.resolve(process.cwd(), entry.relativePath)));
+  for (const language of languages) {
+    const languageDirectory = path.join(process.cwd(), 'assets/audio', language);
+    for (const filename of await fs.readdir(languageDirectory)) {
+      const audioPath = path.join(languageDirectory, filename);
+      if (filename.endsWith('.aac') && !expectedAudioPaths.has(path.resolve(audioPath))) await fs.unlink(audioPath);
+    }
   }
 
   const lines = [
@@ -75,7 +91,7 @@ async function main() {
   lines.push('};', '');
   await fs.mkdir(path.join(process.cwd(), 'src/generated'), { recursive: true });
   await fs.writeFile(path.join(process.cwd(), 'src/generated/naviVoiceManifest.ts'), lines.join('\n'));
-  process.stdout.write(`Generated ${entries.length} Navi clips with voice ${voice}.\n`);
+  process.stdout.write(`Generated ${entries.length} Navi clips with voice ${voice} using concurrency ${concurrency}.\n`);
 }
 
 main().catch((error) => {

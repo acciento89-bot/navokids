@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { SpeakerButton } from '../components/SpeakerButton';
-import { QUESTIONS_PER_STAGE, STAGES_PER_CATEGORY } from '../config/learning';
+import { QUESTIONS_PER_STAGE } from '../config/learning';
 import { copy, t } from '../i18n';
 import { speak, stopSpeaking } from '../services/speech';
 import { commonVoiceKey, questionVoiceKey } from '../services/naviVoiceKeys';
@@ -28,11 +28,8 @@ const answersForAge = (answers: Answer[], correctAnswerId: string, ageGroup: Age
 
 export function GameScreen({ category, stage, language, ageGroup, onBack, onCompleted }: { category: LearningCategory; stage: number; language: Language; ageGroup: AgeGroup; onBack: () => void; onCompleted: (answered: number) => void }) {
   const questions = useMemo(() => {
-    const difficultyBand = Math.min(2, Math.floor(((stage - 1) * 3) / STAGES_PER_CATEGORY));
-    const bandSize = Math.floor(category.questions.length / 3);
-    const pool = category.questions.slice(difficultyBand * bandSize, (difficultyBand + 1) * bandSize);
-    const offset = ((stage - 1) * 5 + difficultyBand) % pool.length;
-    return Array.from({ length: QUESTIONS_PER_STAGE }, (_, index) => pool[(offset + index * 2) % pool.length]).filter((item): item is NonNullable<typeof item> => Boolean(item));
+    const start = (stage - 1) * QUESTIONS_PER_STAGE;
+    return category.questions.slice(start, start + QUESTIONS_PER_STAGE);
   }, [category, stage]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -41,8 +38,13 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
   const question = questions[index];
 
   useEffect(() => {
-    if (question) speak(t(question.prompt, language), language, ageGroup === 'discoverer', questionVoiceKey(question.id, 'prompt'));
-    return () => { stopSpeaking(); };
+    const timer = setTimeout(() => {
+      if (question) speak(t(question.prompt, language), language, ageGroup === 'discoverer', questionVoiceKey(question.id, 'prompt'));
+    }, 180);
+    return () => {
+      clearTimeout(timer);
+      stopSpeaking();
+    };
   }, [question, language, ageGroup]);
 
   if (!question) return null;

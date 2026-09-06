@@ -84,7 +84,7 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
         <Text style={styles.prompt}>{t(question.prompt, language)}</Text>
         <SpeakerButton label={t(copy.listenAgain, language)} onPress={() => speak(t(question.prompt, language), language, ageGroup === 'discoverer', questionVoiceKey(question.id, 'prompt'))} />
       </View>
-      <View style={styles.visualCard}><Text style={styles.visual}>{question.visual}</Text></View>
+      {question.visual ? <View style={styles.visualCard}><Text style={styles.visual}>{question.visual}</Text></View> : null}
       {ageGroup === 'discoverer' && <Text style={styles.discovererHint}>💡 {t(question.hint, language)}</Text>}
       <View style={styles.answers}>
         {visibleAnswers.map((answer) => {

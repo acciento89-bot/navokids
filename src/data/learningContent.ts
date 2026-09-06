@@ -2870,7 +2870,7 @@ export const categories: LearningCategory[] = [
           "de": "Welche Farbe hat Himmel normalerweise?",
           "en": "What color is a clear sky usually?"
         },
-        "visual": "☀️",
+        "visual": "🌤️",
         "answers": [
           {
             "id": "blue",
@@ -6181,7 +6181,7 @@ export const categories: LearningCategory[] = [
           "de": "Welche Farbe passt am besten zu Rosenblüte?",
           "en": "Which color best matches the pink rose?"
         },
-        "visual": "🌹",
+        "visual": "🌸",
         "answers": [
           {
             "id": "green",
@@ -6713,7 +6713,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier schnurrt und Miau sagt?",
           "en": "Which animal purrs and says meow?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "cat",
@@ -6744,7 +6744,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier bellt und mit dem Schwanz wedelt?",
           "en": "Which animal barks and wags its tail?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "snail",
@@ -6775,7 +6775,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier Milch gibt und Muh sagt?",
           "en": "Which animal gives milk and says moo?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "elephant",
@@ -6806,7 +6806,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier galoppiert und Reiter tragen kann?",
           "en": "Which animal gallops and can carry riders?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "horse",
@@ -6837,7 +6837,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier eine runde Schnauze hat?",
           "en": "Which animal has a round snout?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "fish",
@@ -6868,7 +6868,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier weiche Wolle trägt?",
           "en": "Which animal wears soft wool?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "monkey",
@@ -6899,7 +6899,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier Hörner hat und gut klettert?",
           "en": "Which animal has horns and climbs well?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "goat",
@@ -6930,7 +6930,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier Eier legt und gackert?",
           "en": "Which animal lays eggs and clucks?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "shark",
@@ -6961,7 +6961,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier quakt und Watschelfüße hat?",
           "en": "Which animal quacks and has webbed feet?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "camel",
@@ -6992,7 +6992,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier summt und Honig macht?",
           "en": "Which animal buzzes and makes honey?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "bee",
@@ -7023,7 +7023,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier bunte Flügel hat?",
           "en": "Which animal has colorful wings?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "penguin",
@@ -7054,7 +7054,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier viel mehr als ihr Gewicht tragen kann?",
           "en": "Which animal can carry much more than its weight?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "fox",
@@ -7085,7 +7085,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier ein Haus auf dem Rücken trägt?",
           "en": "Which animal carries a house on its back?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "snail",
@@ -7116,7 +7116,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier weit springt und quakt?",
           "en": "Which animal jumps far and croaks?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "tiger",
@@ -7147,7 +7147,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier einen harten Panzer hat?",
           "en": "Which animal has a hard shell?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "peacock",
@@ -7178,7 +7178,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier mit Kiemen unter Wasser atmet?",
           "en": "Which animal breathes underwater with gills?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "fish",
@@ -7209,7 +7209,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier sehr klug ist und aus dem Meer springt?",
           "en": "Which animal is very clever and leaps from the sea?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "zebra",
@@ -7240,7 +7240,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier das größte Tier der Erde ist?",
           "en": "Which animal is the largest animal on Earth?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "snake",
@@ -7271,7 +7271,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier mehrere Reihen scharfer Zähne hat?",
           "en": "Which animal has several rows of sharp teeth?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "shark",
@@ -7302,7 +7302,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier acht Arme besitzt?",
           "en": "Which animal has eight arms?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "koala",
@@ -7333,7 +7333,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier seitwärts läuft und Scheren hat?",
           "en": "Which animal walks sideways and has claws?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "deer",
@@ -7364,7 +7364,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier watschelt und nicht fliegen kann?",
           "en": "Which animal waddles and cannot fly?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "penguin",
@@ -7395,7 +7395,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier weißes Fell und große Tatzen hat?",
           "en": "Which animal has white fur and large paws?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "bat",
@@ -7426,7 +7426,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier eine große Mähne hat und brüllt?",
           "en": "Which animal has a large mane and roars?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "dog",
@@ -7457,7 +7457,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier schwarze Streifen im Fell hat?",
           "en": "Which animal has black stripes on its fur?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "tiger",
@@ -7488,7 +7488,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier einen langen Rüssel benutzt?",
           "en": "Which animal uses a long trunk?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "parrot",
@@ -7519,7 +7519,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier den längsten Hals hat?",
           "en": "Which animal has the longest neck?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "pig",
@@ -7550,7 +7550,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier schwarz-weiße Streifen trägt?",
           "en": "Which animal wears black and white stripes?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "zebra",
@@ -7581,7 +7581,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier geschickt auf Bäume klettert?",
           "en": "Which animal climbs trees skillfully?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "crocodile",
@@ -7612,7 +7612,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier sein Junges im Beutel trägt?",
           "en": "Which animal carries its baby in a pouch?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "chicken",
@@ -7643,7 +7643,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier fast nur Eukalyptusblätter frisst?",
           "en": "Which animal eats mostly eucalyptus leaves?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "koala",
@@ -7674,7 +7674,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier Höcker auf dem Rücken hat?",
           "en": "Which animal has humps on its back?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "squirrel",
@@ -7705,7 +7705,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier nachts mit großen Augen jagt?",
           "en": "Which animal hunts at night with large eyes?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "butterfly",
@@ -7736,7 +7736,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier kopfüber schläft?",
           "en": "Which animal sleeps upside down?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "bat",
@@ -7767,7 +7767,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier einen buschigen roten Schwanz hat?",
           "en": "Which animal has a bushy red tail?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "cat",
@@ -7798,7 +7798,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier viele spitze Stacheln trägt?",
           "en": "Which animal has many sharp spines?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "frog",
@@ -7829,7 +7829,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier bunte Federn hat und Wörter nachahmen kann?",
           "en": "Which animal has colorful feathers and can copy words?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "parrot",
@@ -7860,7 +7860,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier ein großes Rad aus Federn zeigt?",
           "en": "Which animal fans out a huge display of feathers?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "horse",
@@ -7891,7 +7891,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier rosa Federn und lange Beine hat?",
           "en": "Which animal has pink feathers and long legs?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "dolphin",
@@ -7922,7 +7922,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier ein großes Maul und einen starken Schwanz hat?",
           "en": "Which animal has a huge mouth and a strong tail?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "crocodile",
@@ -7953,7 +7953,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier ohne Beine über den Boden gleitet?",
           "en": "Which animal slides along the ground without legs?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "goat",
@@ -7984,7 +7984,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier acht Beine hat und Netze baut?",
           "en": "Which animal has eight legs and builds webs?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "octopus",
@@ -8015,7 +8015,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier einen buschigen Schwanz hat und Nüsse sammelt?",
           "en": "Which animal has a bushy tail and gathers nuts?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "squirrel",
@@ -8046,7 +8046,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier ein großes Geweih tragen kann?",
           "en": "Which animal can grow large antlers?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "bee",
@@ -8077,7 +8077,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier heult und einem Hund ähnlich sieht?",
           "en": "Which animal howls and looks similar to a dog?"
         },
-        "visual": "🔎 🐾",
+        "visual": "",
         "answers": [
           {
             "id": "polar-bear",
@@ -8108,7 +8108,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier gern Mäuse jagt?",
           "en": "Which animal likes to hunt mice?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "ant",
@@ -8139,7 +8139,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier Haus und Garten bewachen kann?",
           "en": "Which animal can guard a home and garden?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "tiger",
@@ -8170,7 +8170,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier auf einer grünen Weide grast?",
           "en": "Which animal grazes in a green meadow?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "cow",
@@ -8201,7 +8201,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier in einem Stall schläft?",
           "en": "Which animal sleeps in a stable?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "turtle",
@@ -8232,7 +8232,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier sich gern im Schlamm wälzt?",
           "en": "Which animal likes to roll in mud?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "zebra",
@@ -8263,7 +8263,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier mit anderen in einer Herde lebt?",
           "en": "Which animal lives with others in a flock?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "sheep",
@@ -8294,7 +8294,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier Kräuter an steilen Hängen frisst?",
           "en": "Which animal eats plants on steep hills?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "whale",
@@ -8325,7 +8325,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier im Hof nach Körnern scharrt?",
           "en": "Which animal scratches for grain in a yard?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "koala",
@@ -8356,7 +8356,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier auf einem Teich schwimmt?",
           "en": "Which animal swims on a pond?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "duck",
@@ -8387,7 +8387,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier Blüten besucht und Pollen sammelt?",
           "en": "Which animal visits flowers and collects pollen?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "crab",
@@ -8418,7 +8418,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier sein Leben als Raupe beginnt?",
           "en": "Which animal begins life as a caterpillar?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "bat",
@@ -8449,7 +8449,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier in einer großen Kolonie lebt?",
           "en": "Which animal lives in a large colony?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "ant",
@@ -8480,7 +8480,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier eine glänzende Spur hinterlässt?",
           "en": "Which animal leaves a shiny trail?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "lion",
@@ -8511,7 +8511,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier am Rand eines Teichs lebt?",
           "en": "Which animal lives beside a pond?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "parrot",
@@ -8542,7 +8542,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier langsam läuft und sehr alt werden kann?",
           "en": "Which animal moves slowly and can live a long time?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "turtle",
@@ -8573,7 +8573,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier mit Flossen durch das Wasser schwimmt?",
           "en": "Which animal swims through water with fins?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "giraffe",
@@ -8604,7 +8604,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier als Säugetier Luft atmen muss?",
           "en": "Which animal must breathe air because it is a mammal?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "crocodile",
@@ -8635,7 +8635,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier durch ein Blasloch atmet?",
           "en": "Which animal breathes through a blowhole?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "whale",
@@ -8666,7 +8666,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier als Raubfisch im Meer lebt?",
           "en": "Which animal lives in the sea as a predatory fish?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "kangaroo",
@@ -8697,7 +8697,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier bei Gefahr eine Tintenwolke macht?",
           "en": "Which animal makes an ink cloud when in danger?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "squirrel",
@@ -8728,7 +8728,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier zwischen Felsen am Meer wohnt?",
           "en": "Which animal lives among rocks by the sea?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "crab",
@@ -8759,7 +8759,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier im kalten Wasser besonders gut schwimmt?",
           "en": "Which animal swims especially well in cold water?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "owl",
@@ -8790,7 +8790,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier in der kalten Arktis lebt?",
           "en": "Which animal lives in the cold Arctic?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "cat",
@@ -8821,7 +8821,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier in einem Rudel in Afrika lebt?",
           "en": "Which animal lives in a pride in Africa?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "lion",
@@ -8852,7 +8852,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier allein durch Wälder schleicht?",
           "en": "Which animal stalks alone through forests?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "hedgehog",
@@ -8883,7 +8883,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier das größte Tier an Land ist?",
           "en": "Which animal is the largest animal on land?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "horse",
@@ -8914,7 +8914,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier Blätter hoch oben in Bäumen frisst?",
           "en": "Which animal eats leaves high in trees?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "giraffe",
@@ -8945,7 +8945,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier in Herden durch die Savanne zieht?",
           "en": "Which animal travels across the savanna in herds?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "flamingo",
@@ -8976,7 +8976,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier Früchte mit seinen Händen greifen kann?",
           "en": "Which animal can grab fruit with its hands?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "goat",
@@ -9007,7 +9007,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier mit großen Sprüngen durch Australien hüpft?",
           "en": "Which animal hops across Australia in great leaps?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "kangaroo",
@@ -9038,7 +9038,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier hoch oben in australischen Bäumen schläft?",
           "en": "Which animal sleeps high in Australian trees?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "spider",
@@ -9069,7 +9069,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier lange ohne Wasser durch die Wüste wandert?",
           "en": "Which animal crosses the desert for a long time without water?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "bee",
@@ -9100,7 +9100,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier fast lautlos durch die Dunkelheit fliegt?",
           "en": "Which animal flies almost silently through the darkness?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "owl",
@@ -9131,7 +9131,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier sich mit Echo in der Nacht orientiert?",
           "en": "Which animal uses echoes to find its way at night?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "wolf",
@@ -9162,7 +9162,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier seine Jungen in einem Bau großzieht?",
           "en": "Which animal raises its young in a den?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "snail",
@@ -9193,7 +9193,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier sich bei Gefahr zu einer Kugel rollt?",
           "en": "Which animal rolls into a ball when in danger?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "hedgehog",
@@ -9224,7 +9224,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier in warmen Regenwäldern lebt?",
           "en": "Which animal lives in warm rainforests?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "cow",
@@ -9255,7 +9255,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier mit einem lauten Ruf auf sich aufmerksam macht?",
           "en": "Which animal uses a loud call to get attention?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "fish",
@@ -9286,7 +9286,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier oft auf einem Bein im flachen Wasser steht?",
           "en": "Which animal often stands on one leg in shallow water?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "flamingo",
@@ -9317,7 +9317,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier an warmen Flüssen und Seen lebt?",
           "en": "Which animal lives around warm rivers and lakes?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "sheep",
@@ -9348,7 +9348,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier ihre Haut regelmäßig abstreift?",
           "en": "Which animal sheds its skin regularly?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "shark",
@@ -9379,7 +9379,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier kleine Insekten in ihrem Netz fängt?",
           "en": "Which animal catches small insects in its web?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "spider",
@@ -9410,7 +9410,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier flink von Ast zu Ast springt?",
           "en": "Which animal leaps quickly from branch to branch?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "duck",
@@ -9441,7 +9441,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier leise durch Wald und Wiesen zieht?",
           "en": "Which animal moves quietly through woods and meadows?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "penguin",
@@ -9472,7 +9472,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Tier gemeinsam mit seinem Rudel jagt?",
           "en": "Which animal hunts together with its pack?"
         },
-        "visual": "🧭 🌍",
+        "visual": "",
         "answers": [
           {
             "id": "wolf",
@@ -9519,7 +9519,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben A.",
           "en": "Tap the capital letter A."
         },
-        "visual": "🔠",
+        "visual": "A",
         "answers": [
           {
             "id": "A",
@@ -9550,7 +9550,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben B.",
           "en": "Tap the capital letter B."
         },
-        "visual": "🔠",
+        "visual": "B",
         "answers": [
           {
             "id": "G",
@@ -9581,7 +9581,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben C.",
           "en": "Tap the capital letter C."
         },
-        "visual": "🔠",
+        "visual": "C",
         "answers": [
           {
             "id": "N",
@@ -9612,7 +9612,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben D.",
           "en": "Tap the capital letter D."
         },
-        "visual": "🔠",
+        "visual": "D",
         "answers": [
           {
             "id": "D",
@@ -9643,7 +9643,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben E.",
           "en": "Tap the capital letter E."
         },
-        "visual": "🔠",
+        "visual": "E",
         "answers": [
           {
             "id": "J",
@@ -9674,7 +9674,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben F.",
           "en": "Tap the capital letter F."
         },
-        "visual": "🔠",
+        "visual": "F",
         "answers": [
           {
             "id": "Q",
@@ -9705,7 +9705,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben G.",
           "en": "Tap the capital letter G."
         },
-        "visual": "🔠",
+        "visual": "G",
         "answers": [
           {
             "id": "G",
@@ -9736,7 +9736,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben H.",
           "en": "Tap the capital letter H."
         },
-        "visual": "🔠",
+        "visual": "H",
         "answers": [
           {
             "id": "M",
@@ -9767,7 +9767,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben I.",
           "en": "Tap the capital letter I."
         },
-        "visual": "🔠",
+        "visual": "I",
         "answers": [
           {
             "id": "T",
@@ -9798,7 +9798,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben J.",
           "en": "Tap the capital letter J."
         },
-        "visual": "🔠",
+        "visual": "J",
         "answers": [
           {
             "id": "J",
@@ -9829,7 +9829,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben K.",
           "en": "Tap the capital letter K."
         },
-        "visual": "🔠",
+        "visual": "K",
         "answers": [
           {
             "id": "P",
@@ -9860,7 +9860,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben L.",
           "en": "Tap the capital letter L."
         },
-        "visual": "🔠",
+        "visual": "L",
         "answers": [
           {
             "id": "W",
@@ -9891,7 +9891,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben M.",
           "en": "Tap the capital letter M."
         },
-        "visual": "🔠",
+        "visual": "M",
         "answers": [
           {
             "id": "M",
@@ -9922,7 +9922,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben N.",
           "en": "Tap the capital letter N."
         },
-        "visual": "🔠",
+        "visual": "N",
         "answers": [
           {
             "id": "S",
@@ -9953,7 +9953,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben O.",
           "en": "Tap the capital letter O."
         },
-        "visual": "🔠",
+        "visual": "O",
         "answers": [
           {
             "id": "Z",
@@ -9984,7 +9984,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben P.",
           "en": "Tap the capital letter P."
         },
-        "visual": "🔠",
+        "visual": "P",
         "answers": [
           {
             "id": "P",
@@ -10015,7 +10015,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben Q.",
           "en": "Tap the capital letter Q."
         },
-        "visual": "🔠",
+        "visual": "Q",
         "answers": [
           {
             "id": "V",
@@ -10046,7 +10046,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben R.",
           "en": "Tap the capital letter R."
         },
-        "visual": "🔠",
+        "visual": "R",
         "answers": [
           {
             "id": "C",
@@ -10077,7 +10077,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben S.",
           "en": "Tap the capital letter S."
         },
-        "visual": "🔠",
+        "visual": "S",
         "answers": [
           {
             "id": "S",
@@ -10108,7 +10108,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben T.",
           "en": "Tap the capital letter T."
         },
-        "visual": "🔠",
+        "visual": "T",
         "answers": [
           {
             "id": "Y",
@@ -10139,7 +10139,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben U.",
           "en": "Tap the capital letter U."
         },
-        "visual": "🔠",
+        "visual": "U",
         "answers": [
           {
             "id": "F",
@@ -10170,7 +10170,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben V.",
           "en": "Tap the capital letter V."
         },
-        "visual": "🔠",
+        "visual": "V",
         "answers": [
           {
             "id": "V",
@@ -10201,7 +10201,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben W.",
           "en": "Tap the capital letter W."
         },
-        "visual": "🔠",
+        "visual": "W",
         "answers": [
           {
             "id": "B",
@@ -10232,7 +10232,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben X.",
           "en": "Tap the capital letter X."
         },
-        "visual": "🔠",
+        "visual": "X",
         "answers": [
           {
             "id": "I",
@@ -10263,7 +10263,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben Y.",
           "en": "Tap the capital letter Y."
         },
-        "visual": "🔠",
+        "visual": "Y",
         "answers": [
           {
             "id": "Y",
@@ -10294,7 +10294,7 @@ export const categories: LearningCategory[] = [
           "de": "Tippe auf den großen Buchstaben Z.",
           "en": "Tap the capital letter Z."
         },
-        "visual": "🔠",
+        "visual": "Z",
         "answers": [
           {
             "id": "E",
@@ -10325,7 +10325,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben a.",
           "en": "Find the lowercase letter a."
         },
-        "visual": "🔡",
+        "visual": "A · a",
         "answers": [
           {
             "id": "h",
@@ -10356,7 +10356,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben b.",
           "en": "Find the lowercase letter b."
         },
-        "visual": "🔡",
+        "visual": "B · b",
         "answers": [
           {
             "id": "o",
@@ -10387,7 +10387,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben c.",
           "en": "Find the lowercase letter c."
         },
-        "visual": "🔡",
+        "visual": "C · c",
         "answers": [
           {
             "id": "c",
@@ -10418,7 +10418,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben d.",
           "en": "Find the lowercase letter d."
         },
-        "visual": "🔡",
+        "visual": "D · d",
         "answers": [
           {
             "id": "k",
@@ -10449,7 +10449,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben e.",
           "en": "Find the lowercase letter e."
         },
-        "visual": "🔡",
+        "visual": "E · e",
         "answers": [
           {
             "id": "r",
@@ -10480,7 +10480,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben f.",
           "en": "Find the lowercase letter f."
         },
-        "visual": "🔡",
+        "visual": "F · f",
         "answers": [
           {
             "id": "f",
@@ -10511,7 +10511,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben g.",
           "en": "Find the lowercase letter g."
         },
-        "visual": "🔡",
+        "visual": "G · g",
         "answers": [
           {
             "id": "n",
@@ -10542,7 +10542,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben h.",
           "en": "Find the lowercase letter h."
         },
-        "visual": "🔡",
+        "visual": "H · h",
         "answers": [
           {
             "id": "u",
@@ -10573,7 +10573,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben i.",
           "en": "Find the lowercase letter i."
         },
-        "visual": "🔡",
+        "visual": "I · i",
         "answers": [
           {
             "id": "i",
@@ -10604,7 +10604,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben j.",
           "en": "Find the lowercase letter j."
         },
-        "visual": "🔡",
+        "visual": "J · j",
         "answers": [
           {
             "id": "q",
@@ -10635,7 +10635,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben k.",
           "en": "Find the lowercase letter k."
         },
-        "visual": "🔡",
+        "visual": "K · k",
         "answers": [
           {
             "id": "x",
@@ -10666,7 +10666,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben l.",
           "en": "Find the lowercase letter l."
         },
-        "visual": "🔡",
+        "visual": "L · l",
         "answers": [
           {
             "id": "l",
@@ -10697,7 +10697,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben m.",
           "en": "Find the lowercase letter m."
         },
-        "visual": "🔡",
+        "visual": "M · m",
         "answers": [
           {
             "id": "t",
@@ -10728,7 +10728,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben n.",
           "en": "Find the lowercase letter n."
         },
-        "visual": "🔡",
+        "visual": "N · n",
         "answers": [
           {
             "id": "a",
@@ -10759,7 +10759,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben o.",
           "en": "Find the lowercase letter o."
         },
-        "visual": "🔡",
+        "visual": "O · o",
         "answers": [
           {
             "id": "o",
@@ -10790,7 +10790,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben p.",
           "en": "Find the lowercase letter p."
         },
-        "visual": "🔡",
+        "visual": "P · p",
         "answers": [
           {
             "id": "w",
@@ -10821,7 +10821,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben q.",
           "en": "Find the lowercase letter q."
         },
-        "visual": "🔡",
+        "visual": "Q · q",
         "answers": [
           {
             "id": "d",
@@ -10852,7 +10852,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben r.",
           "en": "Find the lowercase letter r."
         },
-        "visual": "🔡",
+        "visual": "R · r",
         "answers": [
           {
             "id": "r",
@@ -10883,7 +10883,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben s.",
           "en": "Find the lowercase letter s."
         },
-        "visual": "🔡",
+        "visual": "S · s",
         "answers": [
           {
             "id": "z",
@@ -10914,7 +10914,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben t.",
           "en": "Find the lowercase letter t."
         },
-        "visual": "🔡",
+        "visual": "T · t",
         "answers": [
           {
             "id": "g",
@@ -10945,7 +10945,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben u.",
           "en": "Find the lowercase letter u."
         },
-        "visual": "🔡",
+        "visual": "U · u",
         "answers": [
           {
             "id": "u",
@@ -10976,7 +10976,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben v.",
           "en": "Find the lowercase letter v."
         },
-        "visual": "🔡",
+        "visual": "V · v",
         "answers": [
           {
             "id": "c",
@@ -11007,7 +11007,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben w.",
           "en": "Find the lowercase letter w."
         },
-        "visual": "🔡",
+        "visual": "W · w",
         "answers": [
           {
             "id": "j",
@@ -11038,7 +11038,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben x.",
           "en": "Find the lowercase letter x."
         },
-        "visual": "🔡",
+        "visual": "X · x",
         "answers": [
           {
             "id": "x",
@@ -11069,7 +11069,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben y.",
           "en": "Find the lowercase letter y."
         },
-        "visual": "🔡",
+        "visual": "Y · y",
         "answers": [
           {
             "id": "f",
@@ -11100,7 +11100,7 @@ export const categories: LearningCategory[] = [
           "de": "Finde den kleinen Buchstaben z.",
           "en": "Find the lowercase letter z."
         },
-        "visual": "🔡",
+        "visual": "Z · z",
         "answers": [
           {
             "id": "m",
@@ -15605,7 +15605,7 @@ export const categories: LearningCategory[] = [
           "de": "Welches Wort passt zu dem Möbelstück, auf dem gegessen wird?",
           "en": "Which word matches the furniture people eat on?"
         },
-        "visual": "🍽️",
+        "visual": "🪑 ━━━ 🪑",
         "answers": [
           {
             "id": "giraffe",

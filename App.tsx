@@ -4,8 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { SafeAreaView, StyleSheet, View } from 'react-native';
 import { ParentGate } from './src/components/ParentGate';
 import { categoryById } from './src/data/learningContent';
-import { QUESTIONS_PER_STAGE } from './src/config/learning';
-import { createEmptyProgress } from './src/data/progress';
+import { createEmptyProgress, completeStageProgress, isStageNextInSequence, normalizeProgress } from './src/data/progress';
 import { GameScreen } from './src/screens/GameScreen';
 import { ParentsScreen } from './src/screens/ParentsScreen';
 import { PremiumScreen } from './src/screens/PremiumScreen';
@@ -15,11 +14,11 @@ import { StagesScreen } from './src/screens/StagesScreen';
 import { WorldScreen } from './src/screens/WorldScreen';
 import { colors } from './src/theme';
 import { usePremiumStore } from './src/services/usePremiumStore';
-import { AppState, CategoryId, ChildProfile, Language, Progress, Screen } from './src/types';
+import { AppState, CategoryId, ChildProfile, Language, Screen } from './src/types';
 
 const STORAGE_KEY = 'navokids-state-v2';
 const LEGACY_STORAGE_KEY = 'navokids-progress-v1';
-const initialState: AppState = { profiles: [], activeProfileId: null, premiumUnlocked: false, language: 'de' };
+const initialState: AppState = { profiles: [], activeProfileId: null, premiumUnlocked: false, progressSchemaVersion: 2, language: 'de' };
 
 export default function App() {
   const [screen, setScreen] = useState<Screen>({ name: 'setup', mode: 'first' });
@@ -40,7 +39,18 @@ export default function App() {
         const stored = await AsyncStorage.getItem(STORAGE_KEY);
         if (stored) {
           const parsed = JSON.parse(stored) as AppState;
-          setAppState(parsed);
+          // Aggregate progress from older TestFlight builds cannot tell a real sequence
+          // from the former "jump to stage 30" bug. Reset it once instead of preserving
+          // false completions. Profiles, language, and Premium entitlement stay intact.
+          const normalized: AppState = {
+            ...parsed,
+            progressSchemaVersion: 2,
+            profiles: parsed.profiles.map((profile) => ({
+              ...profile,
+              progress: parsed.progressSchemaVersion === 2 ? normalizeProgress(profile.progress) : createEmptyProgress(),
+            })),
+          };
+          setAppState(normalized);
           setScreen(parsed.profiles.length ? { name: 'profiles' } : { name: 'setup', mode: 'first' });
           return;
         }
@@ -51,7 +61,7 @@ export default function App() {
             nickname: 'Entdecker',
             avatar: '🦊',
             ageGroup: 'discoverer',
-            progress: JSON.parse(legacy) as Progress,
+            progress: createEmptyProgress(),
             createdAt: new Date().toISOString(),
           };
           const migrated = { ...initialState, profiles: [profile], activeProfileId: profile.id };
@@ -94,8 +104,13 @@ export default function App() {
   };
 
   const requestStage = (categoryId: CategoryId, stage: number) => {
-    if (stage <= 2 || appState.premiumUnlocked) setScreen({ name: 'game', categoryId, stage });
-    else requestGate('premium');
+    if (stage > 2 && !appState.premiumUnlocked) {
+      requestGate('premium');
+      return;
+    }
+    if (activeProfile && isStageNextInSequence(activeProfile.progress[categoryId], stage)) {
+      setScreen({ name: 'game', categoryId, stage });
+    }
   };
 
   const completeStage = (categoryId: CategoryId, stage: number, answered: number) => {
@@ -109,10 +124,7 @@ export default function App() {
           ...profile,
           progress: {
             ...profile.progress,
-            [categoryId]: {
-              completedQuestions: Math.max(previous.completedQuestions, stage * QUESTIONS_PER_STAGE),
-              stars: Math.max(previous.stars, stage * 3),
-            },
+            [categoryId]: completeStageProgress(previous, stage),
           },
         };
       }),
@@ -128,8 +140,8 @@ export default function App() {
       <View style={styles.appFrame}>
         {screen.name === 'setup' && <ProfileSetupScreen language={appState.language} mode={screen.mode} onCancel={screen.mode === 'add' ? () => setScreen({ name: 'parents' }) : undefined} onSave={createProfile} />}
         {screen.name === 'profiles' && <ProfilePickerScreen language={appState.language} profiles={appState.profiles} onSelect={selectProfile} onAdd={() => requestGate('addProfile')} />}
-        {screen.name === 'world' && activeProfile && <WorldScreen language={appState.language} profile={activeProfile} onLanguageChange={setLanguage} onCategoryPress={(categoryId) => setScreen({ name: 'stages', categoryId })} onParentsPress={() => requestGate('parents')} onProfilePress={() => setScreen({ name: 'profiles' })} />}
-        {screen.name === 'stages' && activeProfile && <StagesScreen category={categoryById(screen.categoryId)} language={appState.language} completedQuestions={activeProfile.progress[screen.categoryId].completedQuestions} premiumUnlocked={appState.premiumUnlocked} onBack={() => setScreen({ name: 'world' })} onStage={(stage) => requestStage(screen.categoryId, stage)} />}
+        {screen.name === 'world' && activeProfile && <WorldScreen language={appState.language} profile={activeProfile} premiumUnlocked={appState.premiumUnlocked} onLanguageChange={setLanguage} onCategoryPress={(categoryId) => setScreen({ name: 'stages', categoryId })} onParentsPress={() => requestGate('parents')} onProfilePress={() => setScreen({ name: 'profiles' })} />}
+        {screen.name === 'stages' && activeProfile && <StagesScreen category={categoryById(screen.categoryId)} language={appState.language} progress={activeProfile.progress[screen.categoryId]} premiumUnlocked={appState.premiumUnlocked} onBack={() => setScreen({ name: 'world' })} onStage={(stage) => requestStage(screen.categoryId, stage)} />}
         {screen.name === 'game' && activeProfile && <GameScreen category={categoryById(screen.categoryId)} stage={screen.stage} language={appState.language} ageGroup={activeProfile.ageGroup} onBack={() => setScreen({ name: 'stages', categoryId: screen.categoryId })} onCompleted={(answered) => completeStage(screen.categoryId, screen.stage, answered)} />}
         {screen.name === 'parents' && activeProfile && <ParentsScreen language={appState.language} progress={activeProfile.progress} profiles={appState.profiles} activeProfileId={activeProfile.id} premiumUnlocked={appState.premiumUnlocked} onBack={() => setScreen({ name: 'world' })} onAddProfile={() => setScreen({ name: 'setup', mode: 'add' })} onSwitchProfile={() => setScreen({ name: 'profiles' })} onPremium={() => !appState.premiumUnlocked && setScreen({ name: 'premium' })} />}
         {screen.name === 'premium' && <PremiumScreen language={appState.language} store={premiumStore} onBack={() => setScreen({ name: 'parents' })} onUnlocked={() => setScreen({ name: 'parents' })} />}

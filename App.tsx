@@ -18,7 +18,7 @@ import { AppState, CategoryId, ChildProfile, Language, Screen } from './src/type
 
 const STORAGE_KEY = 'navokids-state-v2';
 const LEGACY_STORAGE_KEY = 'navokids-progress-v1';
-const initialState: AppState = { profiles: [], activeProfileId: null, premiumUnlocked: false, reviewAccessGranted: false, progressSchemaVersion: 2, language: 'de' };
+const initialState: AppState = { profiles: [], activeProfileId: null, premiumUnlocked: false, progressSchemaVersion: 2, language: 'de' };
 
 export default function App() {
   const [screen, setScreen] = useState<Screen>({ name: 'setup', mode: 'first' });
@@ -29,11 +29,7 @@ export default function App() {
 
   const reconcilePremium = useCallback((premiumUnlocked: boolean, premiumLastVerifiedAt: string) => {
     if (!hydrated) return;
-    setAppState((current) => ({
-      ...current,
-      premiumUnlocked: current.reviewAccessGranted === true || premiumUnlocked,
-      premiumLastVerifiedAt,
-    }));
+    setAppState((current) => ({ ...current, premiumUnlocked, premiumLastVerifiedAt }));
   }, [hydrated]);
   const premiumStore = usePremiumStore(reconcilePremium);
 
@@ -102,16 +98,6 @@ export default function App() {
 
   const setLanguage = (language: Language) => setAppState((current) => ({ ...current, language }));
 
-  const grantReviewAccess = () => {
-    setAppState((current) => ({
-      ...current,
-      premiumUnlocked: true,
-      reviewAccessGranted: true,
-      premiumLastVerifiedAt: new Date().toISOString(),
-    }));
-    setScreen({ name: 'parents' });
-  };
-
   const requestGate = (target: typeof gateTarget) => {
     setGateTarget(target);
     setGateVisible(true);
@@ -158,7 +144,7 @@ export default function App() {
         {screen.name === 'stages' && activeProfile && <StagesScreen category={categoryById(screen.categoryId)} language={appState.language} progress={activeProfile.progress[screen.categoryId]} premiumUnlocked={appState.premiumUnlocked} onBack={() => setScreen({ name: 'world' })} onStage={(stage) => requestStage(screen.categoryId, stage)} />}
         {screen.name === 'game' && activeProfile && <GameScreen category={categoryById(screen.categoryId)} stage={screen.stage} language={appState.language} ageGroup={activeProfile.ageGroup} onBack={() => setScreen({ name: 'stages', categoryId: screen.categoryId })} onCompleted={(answered) => completeStage(screen.categoryId, screen.stage, answered)} />}
         {screen.name === 'parents' && activeProfile && <ParentsScreen language={appState.language} progress={activeProfile.progress} profiles={appState.profiles} activeProfileId={activeProfile.id} premiumUnlocked={appState.premiumUnlocked} onBack={() => setScreen({ name: 'world' })} onAddProfile={() => setScreen({ name: 'setup', mode: 'add' })} onSwitchProfile={() => setScreen({ name: 'profiles' })} onPremium={() => !appState.premiumUnlocked && setScreen({ name: 'premium' })} />}
-        {screen.name === 'premium' && <PremiumScreen language={appState.language} store={premiumStore} onBack={() => setScreen({ name: 'parents' })} onUnlocked={() => setScreen({ name: 'parents' })} onReviewUnlocked={grantReviewAccess} />}
+        {screen.name === 'premium' && <PremiumScreen language={appState.language} store={premiumStore} onBack={() => setScreen({ name: 'parents' })} onUnlocked={() => setScreen({ name: 'parents' })} />}
       </View>
       <ParentGate visible={gateVisible} language={appState.language} onCancel={() => setGateVisible(false)} onSuccess={() => {
         setGateVisible(false);

@@ -67,6 +67,7 @@ export interface AppState {
   profiles: ChildProfile[];
   activeProfileId: string | null;
   premiumUnlocked: boolean;
+  reviewAccessGranted?: boolean;
   premiumLastVerifiedAt?: string;
   progressSchemaVersion?: 2;
   language: Language;

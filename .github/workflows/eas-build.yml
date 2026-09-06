@@ -1,19 +1,15 @@
-name: EAS Store Builds
+name: Build and submit unique tasks to TestFlight
 
 on:
-  workflow_dispatch:
-    inputs:
-      platform:
-        description: Platform to build
-        required: true
-        type: choice
-        options: [android, ios, all]
-        default: android
+  push:
+    branches: [release-ios-unique-questions]
+    paths:
+      - ".github/workflows/eas-build.yml"
 
 jobs:
-  build:
+  build_ios:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -28,5 +24,5 @@ jobs:
       - run: npm run typecheck
       - run: npm run content:check
       - run: npm run store:check
-      - name: Start store build
-        run: eas build --platform "${{ inputs.platform }}" --profile production --non-interactive --no-wait
+      - name: Start iOS production build and TestFlight submission
+        run: eas build --platform ios --profile production --non-interactive --auto-submit --no-wait

@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { StatusBar } from 'expo-status-bar';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { SafeAreaView, StyleSheet, View } from 'react-native';
+import { Platform, SafeAreaView, StatusBar as NativeStatusBar, StyleSheet, View } from 'react-native';
 import { ParentGate } from './src/components/ParentGate';
 import { categoryById } from './src/data/learningContent';
 import { createEmptyProgress, completeStageProgress, isStageNextInSequence, normalizeProgress } from './src/data/progress';
@@ -157,7 +157,11 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  safeArea: { flex: 1, backgroundColor: colors.cream },
+  safeArea: {
+    flex: 1,
+    backgroundColor: colors.cream,
+    paddingTop: Platform.OS === 'android' ? NativeStatusBar.currentHeight ?? 0 : 0,
+  },
   appFrame: { flex: 1, width: '100%', maxWidth: 900, alignSelf: 'center' },
   loading: { flex: 1, backgroundColor: colors.cream },
 });

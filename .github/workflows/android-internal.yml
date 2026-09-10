@@ -32,6 +32,7 @@ jobs:
       - run: npm run typecheck
       - run: npm run content:check
       - run: npm run progress:check
+      - run: node scripts/validate-voice-pack.cjs
       - run: npm run store:check
       - name: Generate native Android project
         run: npm run prebuild:android

@@ -20,6 +20,7 @@ jobs:
       - run: npm run content:check
       - run: npm run progress:check
       - run: npm run navigation:check
+      - run: node scripts/validate-voice-pack.cjs
       - run: npm run store:check
       - run: npx expo export --platform all
         env:

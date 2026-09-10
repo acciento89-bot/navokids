@@ -41,6 +41,7 @@ async function main() {
     }
   }
 
+  const generatedTexts = new Map();
   let cursor = 0;
   const generateNext = async () => {
     while (cursor < entries.length) {
@@ -53,13 +54,22 @@ async function main() {
         process.stdout.write(`[${index + 1}/${entries.length}] exists ${entry.key}\n`);
       } catch {
         process.stdout.write(`[${index + 1}/${entries.length}] generating ${entry.language} ${entry.key}\n`);
-        await synthesize({
-          apiKey: process.env.OPENAI_API_KEY,
-          text: entry.text,
-          language: entry.language,
-          voice,
-          outputPath,
-        });
+        const signature = JSON.stringify([entry.language, voice, entry.text]);
+        const existing = generatedTexts.get(signature);
+        if (existing) {
+          const originalPath = await existing;
+          await fs.copyFile(originalPath, outputPath);
+        } else {
+          const generation = synthesize({
+            apiKey: process.env.OPENAI_API_KEY,
+            text: entry.text,
+            language: entry.language,
+            voice,
+            outputPath,
+          }).then(() => outputPath);
+          generatedTexts.set(signature, generation);
+          await generation;
+        }
       }
       entry.relativePath = relativePath;
     }

@@ -26,6 +26,7 @@ export const normalizeCategoryProgress = (progress: StoredCategoryProgress): Cat
 };
 
 export const normalizeProgress = (progress: Progress): Progress => ({
+  shapes: normalizeCategoryProgress(progress.shapes ?? { completedQuestions: 0, stars: 0, completedStages: [] }),
   numbers: normalizeCategoryProgress(progress.numbers),
   colors: normalizeCategoryProgress(progress.colors),
   animals: normalizeCategoryProgress(progress.animals),
@@ -49,6 +50,7 @@ export const completeStageProgress = (progress: CategoryProgress, stage: number)
 };
 
 export const createEmptyProgress = (): Progress => ({
+  shapes: { completedQuestions: 0, stars: 0, completedStages: [] },
   numbers: { completedQuestions: 0, stars: 0, completedStages: [] },
   colors: { completedQuestions: 0, stars: 0, completedStages: [] },
   animals: { completedQuestions: 0, stars: 0, completedStages: [] },

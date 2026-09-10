@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { t } from '../i18n';
 import { FREE_STAGES_PER_CATEGORY, STAGES_PER_CATEGORY } from '../config/learning';
@@ -5,16 +6,26 @@ import { isStageCompleted, isStageNextInSequence } from '../data/progress';
 import { colors, shadows } from '../theme';
 import { CategoryProgress, Language, LearningCategory } from '../types';
 
-export function StagesScreen({ category, language, progress, premiumUnlocked, onBack, onStage }: { category: LearningCategory; language: Language; progress: CategoryProgress; premiumUnlocked: boolean; onBack: () => void; onStage: (stage: number) => void }) {
+export function StagesScreen({ category, language, progress, premiumUnlocked, onBack, onStage, focusStage }: { focusStage?: number; category: LearningCategory; language: Language; progress: CategoryProgress; premiumUnlocked: boolean; onBack: () => void; onStage: (stage: number) => void }) {
+  const scroll = useRef<ScrollView>(null);
+  const pathY = useRef<number | null>(null);
+  const rowY = useRef<number | null>(null);
+  const restored = useRef(false);
+  const contentReady = useRef(false);
+  const restorePosition = () => {
+    if (!contentReady.current || restored.current || pathY.current === null || rowY.current === null) return;
+    scroll.current?.scrollTo({ y: Math.max(0, pathY.current + rowY.current - 20), animated: false });
+    restored.current = true;
+  };
   return (
-    <ScrollView contentContainerStyle={[styles.content, { backgroundColor: category.lightColor }]}>
+    <ScrollView ref={scroll} onContentSizeChange={(_, height) => { contentReady.current = height > 0; restorePosition(); }} contentContainerStyle={[styles.content, { backgroundColor: category.lightColor }]}>
       <View style={styles.header}>
         <Pressable onPress={onBack} style={styles.back}><Text style={styles.backText}>‹</Text></Pressable>
         <View style={[styles.heroIcon, { backgroundColor: category.color }]}><Text style={styles.icon}>{category.icon}</Text></View>
         <Text style={styles.title}>{t(category.title, language)}</Text>
         <Text style={styles.subtitle}>{t(category.subtitle, language)}</Text>
       </View>
-      <View style={styles.path}>
+      <View style={styles.path} onLayout={(event) => { pathY.current = event.nativeEvent.layout.y; restorePosition(); }}>
         {Array.from({ length: STAGES_PER_CATEGORY }, (_, index) => index + 1).map((stage) => {
           const free = stage <= FREE_STAGES_PER_CATEGORY;
           const entitled = free || premiumUnlocked;
@@ -22,7 +33,7 @@ export function StagesScreen({ category, language, progress, premiumUnlocked, on
           const available = entitled && sequentiallyAvailable;
           const complete = isStageCompleted(progress, stage);
           return (
-            <Pressable key={stage} disabled={!available && entitled} onPress={() => onStage(stage)} style={({ pressed }) => [styles.stage, !available && styles.lockedStage, pressed && styles.pressed]}>
+            <Pressable key={stage} onLayout={stage === focusStage ? (event) => { rowY.current = event.nativeEvent.layout.y; restorePosition(); } : undefined} disabled={!available && entitled} onPress={() => onStage(stage)} style={({ pressed }) => [styles.stage, !available && styles.lockedStage, pressed && styles.pressed]}>
               <View style={[styles.stageNumber, { backgroundColor: available ? category.color : '#AAB6B7' }]}><Text style={styles.stageNumberText}>{available ? stage : '🔒'}</Text></View>
               <View style={styles.stageCopy}>
                 <Text style={styles.stageTitle}>{language === 'de' ? `Stufe ${stage}` : `Stage ${stage}`}</Text>

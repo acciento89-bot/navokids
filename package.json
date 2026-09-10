@@ -13,7 +13,8 @@
     "store:check": "node scripts/validate-store-config.cjs",
     "voice:samples": "node scripts/generate-voice-samples.cjs",
     "voice:generate": "node scripts/generate-voice-pack.cjs",
-    "prebuild:android": "expo prebuild --platform android --clean"
+    "prebuild:android": "expo prebuild --platform android --clean",
+    "navigation:check": "node scripts/validate-stage-navigation.cjs"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
+    "react-test-renderer": "^19.2.3",
     "typescript": "~5.9.2"
   }
 }

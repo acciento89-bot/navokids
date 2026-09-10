@@ -28,6 +28,7 @@ jobs:
       - run: npm run typecheck
       - run: npm run content:check
       - run: npm run progress:check
+      - run: node scripts/validate-voice-pack.cjs
       - run: npm run store:check
       - name: Start store build
         run: eas build --platform "${{ inputs.platform }}" --profile production --non-interactive --no-wait

@@ -1,12 +1,12 @@
 export type Language = 'de' | 'en';
 
-export type CategoryId = 'numbers' | 'colors' | 'animals' | 'letters' | 'words';
+export type CategoryId = 'numbers' | 'colors' | 'animals' | 'letters' | 'words' | 'shapes';
 
 export type Screen =
   | { name: 'setup'; mode: 'first' | 'add' }
   | { name: 'profiles' }
   | { name: 'world' }
-  | { name: 'stages'; categoryId: CategoryId }
+  | { name: 'stages'; categoryId: CategoryId; focusStage?: number }
   | { name: 'game'; categoryId: CategoryId; stage: number }
   | { name: 'parents' }
   | { name: 'premium' };
@@ -26,6 +26,7 @@ export interface Question {
   id: string;
   prompt: LocalizedText;
   visual: string;
+  localizedVisual?: LocalizedText;
   showNavi?: boolean;
   conceptKey?: string;
   answers: Answer[];

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SpeakerButton } from '../components/SpeakerButton';
-import { QUESTIONS_PER_STAGE } from '../config/learning';
+import { QUESTIONS_PER_STAGE, STAGES_PER_CATEGORY } from '../config/learning';
 import { copy, t } from '../i18n';
 import { speak, stopSpeaking } from '../services/speech';
 import { commonVoiceKey, questionVoiceKey } from '../services/naviVoiceKeys';
@@ -11,11 +11,12 @@ import { AgeGroup, Answer, Language, LearningCategory } from '../types';
 const localizedAnswerLabel = (answer: Answer, language: Language) =>
   typeof answer.label === 'string' ? answer.label : t(answer.label, language);
 
-export function GameScreen({ category, stage, language, ageGroup, onBack, onCompleted }: { category: LearningCategory; stage: number; language: Language; ageGroup: AgeGroup; onBack: () => void; onCompleted: (answered: number) => void }) {
+export function GameScreen({ category, stage, language, ageGroup, onBack, onCompleted, onNextStage }: { category: LearningCategory; stage: number; language: Language; ageGroup: AgeGroup; onBack: () => void; onNextStage: () => void; onCompleted: (answered: number) => void }) {
   const questions = useMemo(() => {
     const start = (stage - 1) * QUESTIONS_PER_STAGE;
     return category.questionsByAge[ageGroup].slice(start, start + QUESTIONS_PER_STAGE);
   }, [ageGroup, category, stage]);
+  const [completed, setCompleted] = useState(false);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState(false);
@@ -31,6 +32,18 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
       stopSpeaking();
     };
   }, [question, language, ageGroup]);
+
+  if (completed) return (
+    <ScrollView contentContainerStyle={[styles.completion, { backgroundColor: category.lightColor }]}>
+      <Text style={styles.completionStars}>⭐⭐⭐</Text>
+      <Text accessibilityRole="header" style={styles.completionTitle}>{language === 'de' ? `Stufe ${stage} geschafft!` : `Stage ${stage} complete!`}</Text>
+      <Text style={styles.completionCopy}>{stage === STAGES_PER_CATEGORY
+        ? (language === 'de' ? 'Du hast alle Stufen dieser Insel geschafft!' : 'You completed every stage on this island!')
+        : (language === 'de' ? 'Bereit für dein nächstes Abenteuer?' : 'Ready for your next adventure?')}</Text>
+      {stage < STAGES_PER_CATEGORY && <Pressable accessibilityRole="button" onPress={onNextStage} style={[styles.nextButton, styles.completionButton, { backgroundColor: category.color }]}><Text style={styles.nextText}>{language === 'de' ? 'Nächste Stufe' : 'Next stage'}</Text></Pressable>}
+      <Pressable accessibilityRole="button" onPress={onBack} style={[styles.completionButton, styles.selectionButton]}><Text style={styles.selectionText}>{language === 'de' ? 'Zur Stufenauswahl' : 'Back to stages'}</Text></Pressable>
+    </ScrollView>
+  );
 
   if (!question) return null;
   const choose = (answerId: string) => {
@@ -52,7 +65,7 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
   };
 
   const next = () => {
-    if (index === questions.length - 1) onCompleted(questions.length);
+    if (index === questions.length - 1) { stopSpeaking(); onCompleted(questions.length); setCompleted(true); }
     else { setIndex(index + 1); setSelected(null); setIsCorrect(false); setWrongAttempts(0); }
   };
 
@@ -71,7 +84,7 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
         <View style={[styles.visualCard, question.showNavi && styles.naviVisualCard]}>
           {question.showNavi ? <Image source={require('../../assets/navi-mascot-optimized.png')} resizeMode="contain" style={styles.naviVisualMascot} /> : null}
           <View style={question.showNavi ? styles.naviCueCard : undefined}>
-            <Text style={[styles.visual, question.showNavi && styles.naviCueText]}>{question.visual}</Text>
+            <Text style={[styles.visual, category.id === 'shapes' && styles.shapeVisual, question.showNavi && styles.naviCueText]}>{question.localizedVisual ? t(question.localizedVisual, language) : question.visual}</Text>
           </View>
         </View>
       ) : null}
@@ -100,6 +113,13 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
 }
 
 const styles = StyleSheet.create({
+  completion: { flexGrow: 1, justifyContent: 'center', alignItems: 'center', padding: 28, gap: 20 },
+  completionStars: { fontSize: 44 },
+  completionTitle: { color: colors.ink, fontSize: 30, fontWeight: '900', textAlign: 'center' },
+  completionCopy: { color: colors.muted, fontSize: 18, textAlign: 'center' },
+  completionButton: { width: '100%', maxWidth: 420, minHeight: 56, padding: 18, borderRadius: 18, alignItems: 'center' },
+  selectionButton: { backgroundColor: colors.paper },
+  selectionText: { color: colors.ink, fontSize: 17, fontWeight: '800', textAlign: 'center' },
   screen: { flex: 1, paddingHorizontal: 20, paddingTop: 14, paddingBottom: 24 },
   topbar: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   close: { width: 46, height: 46, borderRadius: 17, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', ...shadows.card },
@@ -114,6 +134,7 @@ const styles = StyleSheet.create({
   naviVisualMascot: { width: '45%', height: '100%', minHeight: 165 },
   naviCueCard: { minWidth: 118, minHeight: 118, borderRadius: 30, backgroundColor: '#FFF8E8', borderWidth: 5, borderColor: '#F3C862', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 16, transform: [{ rotate: '2deg' }], ...shadows.card },
   naviCueText: { fontSize: 58, lineHeight: 70 },
+  shapeVisual: { fontSize: 30, letterSpacing: 0 },
   visual: { color: colors.ink, fontSize: 44, fontWeight: '900', textAlign: 'center', letterSpacing: 2 },
   discovererHint: { color: colors.muted, fontSize: 14, lineHeight: 20, fontWeight: '800', textAlign: 'center', marginTop: 12 },
   answers: { flexDirection: 'row', gap: 11, marginTop: 20 },

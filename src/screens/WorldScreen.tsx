@@ -17,11 +17,12 @@ interface Props {
 }
 
 const islandPlacements: Record<CategoryId, { top: `${number}%`; side: 'left' | 'right' | 'center' }> = {
+  shapes: { top: '87%', side: 'right' },
   numbers: { top: '17.5%', side: 'left' },
   colors: { top: '36.5%', side: 'right' },
   animals: { top: '55%', side: 'left' },
   letters: { top: '72.5%', side: 'right' },
-  words: { top: '83%', side: 'center' },
+  words: { top: '81%', side: 'left' },
 };
 
 export function WorldScreen({ language, profile, premiumUnlocked, onLanguageChange, onCategoryPress, onParentsPress, onProfilePress }: Props) {
@@ -54,7 +55,7 @@ export function WorldScreen({ language, profile, premiumUnlocked, onLanguageChan
       <View style={styles.mapShell}>
         <ImageBackground source={require('../../assets/adventure-map-v1.jpg')} resizeMode="cover" style={styles.map} imageStyle={styles.mapImage}>
           <View style={styles.mapLegend}>
-            <Text style={styles.mapLegendText}>🧭 {language === 'de' ? '5 Inseln · 150 Stufen' : '5 islands · 150 stages'}</Text>
+            <Text style={styles.mapLegendText}>🧭 {language === 'de' ? '6 Inseln · 180 Stufen' : '6 islands · 180 stages'}</Text>
           </View>
 
           {categories.map((category) => {

@@ -10,17 +10,18 @@ Play, learn, and discover
 
 ## Promotional text
 
-Join Navi on 150 missions across five colorful learning islands with spoken activities and a protected progress dashboard for parents.
+Join Navi on 180 missions across six colorful learning islands with spoken activities and a protected progress dashboard for parents.
 
 ## Description
 
-NavoKids turns early learning into an adventure. Friendly red panda Navi guides children ages 3–7 through five colorful learning islands:
+NavoKids turns early learning into an adventure. Friendly red panda Navi guides children ages 3–7 through six colorful learning islands:
 
 - Numbers, counting, and first calculations
 - Recognizing, comparing, and mixing colors
 - Animals, habitats, and characteristics
 - Letters, sounds, and the alphabet
 - Words, rhymes, syllables, and first sentences
+- Recognizing shapes and continuing patterns
 
 Every activity is spoken aloud, so children do not need to be confident readers. Discoverer mode for ages 3–4 provides visible hints and two answer choices. Adventurer mode for ages 5–7 provides three choices and more challenging activities.
 
@@ -39,3 +40,5 @@ kids,learning,preschool,numbers,colors,animals,letters,words,German,English
 ## Google Play short description
 
 Spoken learning games for kids: numbers, colors, animals, letters, and words.
+
+New in this update: shapes and patterns as the sixth learning island, direct next-stage navigation, and translated English word cards.

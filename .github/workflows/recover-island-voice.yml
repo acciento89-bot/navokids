@@ -26,6 +26,8 @@ jobs:
       - run: node scripts/recover-island-voice.cjs
         env:
           EXPECTED_CONTENT_SHA: cdec999b6a72f51c5b76a1b15594cf7406e20a093006d092bfdb1f5666447a9d
+      - name: Remove temporary source copy before TypeScript validation
+        run: rm -rf voice-checkpoint
       - run: npm run voice:generate
       - run: node scripts/validate-voice-pack.cjs
       - run: npm run typecheck && npm run content:check && npm run islands:check && npm run navigation:check

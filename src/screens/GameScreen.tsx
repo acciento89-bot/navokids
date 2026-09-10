@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SpeakerButton } from '../components/SpeakerButton';
+import { ClockFace } from '../components/ClockFace';
 import { QUESTIONS_PER_STAGE, STAGES_PER_CATEGORY } from '../config/learning';
 import { copy, t } from '../i18n';
 import { speak, stopSpeaking } from '../services/speech';
@@ -70,7 +71,7 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
   };
 
   return (
-    <View style={[styles.screen, { backgroundColor: category.lightColor }]}>
+    <ScrollView contentContainerStyle={[styles.screen, { backgroundColor: category.lightColor }]}>
       <View style={styles.topbar}>
         <Pressable onPress={onBack} style={styles.close}><Text style={styles.closeText}>×</Text></Pressable>
         <View style={styles.progress}><View style={[styles.progressFill, { width: `${((index + (isCorrect ? 1 : 0)) / questions.length) * 100}%`, backgroundColor: category.color }]} /></View>
@@ -80,24 +81,26 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
         <Text style={styles.prompt}>{t(question.prompt, language)}</Text>
         <SpeakerButton label={t(copy.listenAgain, language)} onPress={() => speak(t(question.prompt, language), language, ageGroup === 'discoverer', questionVoiceKey(question.id, 'prompt'))} />
       </View>
-      {question.visual ? (
+      {question.visual || question.clock ? (
         <View style={[styles.visualCard, question.showNavi && styles.naviVisualCard]}>
+          {question.clock ? <ClockFace time={question.clock} language={language} /> : <>
           {question.showNavi ? <Image source={require('../../assets/navi-mascot-optimized.png')} resizeMode="contain" style={styles.naviVisualMascot} /> : null}
           <View style={question.showNavi ? styles.naviCueCard : undefined}>
             <Text style={[styles.visual, category.id === 'shapes' && styles.shapeVisual, question.showNavi && styles.naviCueText]}>{question.localizedVisual ? t(question.localizedVisual, language) : question.visual}</Text>
           </View>
+          </>}
         </View>
       ) : null}
       {ageGroup === 'discoverer' && <Text style={styles.discovererHint}>💡 {t(question.hint, language)}</Text>}
-      <View style={styles.answers}>
+      <View style={[styles.answers, question.answers.some(answer => answer.clock) && styles.clockAnswers]}>
         {question.answers.map((answer) => {
           const chosen = selected === answer.id;
           const correct = isCorrect && answer.id === question.correctAnswerId;
           const wrong = chosen && !isCorrect;
           const answerLabel = localizedAnswerLabel(answer, language);
           return (
-            <Pressable key={answer.id} disabled={isCorrect} onPress={() => choose(answer.id)} style={({ pressed }) => [styles.answer, answer.color ? { backgroundColor: answer.color, borderColor: answer.color } : null, correct && styles.correct, wrong && styles.wrong, pressed && styles.pressed]}>
-              <Text style={[styles.answerText, answer.color && styles.colorAnswerText]}>{answerLabel}</Text>
+            <Pressable key={answer.id} accessibilityRole="button" disabled={isCorrect} onPress={() => choose(answer.id)} style={({ pressed }) => [styles.answer, answer.clock && styles.clockAnswer, answer.color ? { backgroundColor: answer.color, borderColor: answer.color } : null, correct && styles.correct, wrong && styles.wrong, pressed && styles.pressed]}>
+              {answer.clock ? <ClockFace time={answer.clock} language={language} size={112} /> : <Text style={[styles.answerText, answerLabel.length > 10 && styles.longAnswerText, answer.color && styles.colorAnswerText]}>{answerLabel}</Text>}
             </Pressable>
           );
         })}
@@ -108,7 +111,7 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
           <Pressable onPress={next} style={[styles.nextButton, { backgroundColor: category.color }]}><Text style={styles.nextText}>{index === questions.length - 1 ? t(copy.finish, language) : t(copy.next, language)}</Text></Pressable>
         </View>
       )}
-    </View>
+    </ScrollView>
   );
 }
 
@@ -120,7 +123,7 @@ const styles = StyleSheet.create({
   completionButton: { width: '100%', maxWidth: 420, minHeight: 56, padding: 18, borderRadius: 18, alignItems: 'center' },
   selectionButton: { backgroundColor: colors.paper },
   selectionText: { color: colors.ink, fontSize: 17, fontWeight: '800', textAlign: 'center' },
-  screen: { flex: 1, paddingHorizontal: 20, paddingTop: 14, paddingBottom: 24 },
+  screen: { flexGrow: 1, paddingHorizontal: 20, paddingTop: 14, paddingBottom: 24 },
   topbar: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   close: { width: 46, height: 46, borderRadius: 17, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', ...shadows.card },
   closeText: { color: colors.ink, fontSize: 31, lineHeight: 33 },
@@ -129,7 +132,7 @@ const styles = StyleSheet.create({
   counter: { color: colors.muted, fontWeight: '900' },
   promptRow: { minHeight: 110, flexDirection: 'row', alignItems: 'center', gap: 14, marginTop: 20 },
   prompt: { flex: 1, color: colors.ink, fontSize: 27, lineHeight: 34, fontWeight: '900' },
-  visualCard: { flex: 1, minHeight: 180, maxHeight: 300, borderRadius: 34, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', padding: 20, ...shadows.card },
+  visualCard: { minHeight: 268, borderRadius: 34, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', padding: 20, ...shadows.card },
   naviVisualCard: { flexDirection: 'row', gap: 8, overflow: 'hidden', paddingHorizontal: 12 },
   naviVisualMascot: { width: '45%', height: '100%', minHeight: 165 },
   naviCueCard: { minWidth: 118, minHeight: 118, borderRadius: 30, backgroundColor: '#FFF8E8', borderWidth: 5, borderColor: '#F3C862', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 16, transform: [{ rotate: '2deg' }], ...shadows.card },
@@ -139,6 +142,9 @@ const styles = StyleSheet.create({
   discovererHint: { color: colors.muted, fontSize: 14, lineHeight: 20, fontWeight: '800', textAlign: 'center', marginTop: 12 },
   answers: { flexDirection: 'row', gap: 11, marginTop: 20 },
   answer: { flex: 1, minHeight: 84, borderRadius: 24, backgroundColor: colors.paper, borderWidth: 4, borderColor: 'transparent', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 8, ...shadows.card },
+  clockAnswers: { flexWrap: 'wrap', justifyContent: 'center' },
+  clockAnswer: { flex: 0, flexBasis: '47%', minWidth: 128, minHeight: 146, paddingVertical: 12 },
+  longAnswerText: { fontSize: 18, lineHeight: 24 },
   answerText: { color: colors.ink, fontSize: 25, fontWeight: '900', textAlign: 'center' },
   colorAnswerText: { color: '#FFF', fontSize: 17, textShadowColor: 'rgba(0,0,0,0.24)', textShadowOffset: { width: 0, height: 1 }, textShadowRadius: 2 },
   correct: { borderColor: colors.green, backgroundColor: '#E1F7E8' },

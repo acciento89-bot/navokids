@@ -2,9 +2,11 @@ const fs = require('node:fs/promises');
 const path = require('node:path');
 const ts = require('typescript');
 const { synthesize } = require('./navi-tts.cjs');
+const { model, sha256, signature } = require('./voice-index.cjs');
 
 const languages = ['de', 'en'];
-const voice = process.env.NAVI_VOICE || 'marin';
+const voice = 'marin';
+if (process.env.NAVI_VOICE && process.env.NAVI_VOICE !== voice) throw new Error('Only approved Marin voice is allowed');
 const concurrency = Math.max(1, Math.min(8, Number(process.env.NAVI_TTS_CONCURRENCY || 4)));
 
 async function loadLearningContent() {
@@ -41,7 +43,17 @@ async function main() {
     }
   }
 
+  const indexPath = path.join(process.cwd(), 'src/generated/naviVoiceIndex.json');
+  const previous = JSON.parse(await fs.readFile(indexPath, 'utf8'));
+  const current = { voice, model, entries: {} };
   const generatedTexts = new Map();
+  const expectedSignatures = new Map(entries.map(e => [`${e.language}/${e.key}`, signature(e.language, e.text, voice)]));
+  // Seed deduplication from verified existing recordings, even if a key changed.
+  for (const [key, item] of Object.entries(previous.entries)) {
+    if (expectedSignatures.get(key) !== item.signature) continue;
+    const audioPath = path.join(process.cwd(), 'assets/audio', `${key}.aac`);
+    try { if (sha256(await fs.readFile(audioPath)) === item.sha256) generatedTexts.set(item.signature, Promise.resolve(audioPath)); } catch {}
+  }
   let cursor = 0;
   const generateNext = async () => {
     while (cursor < entries.length) {
@@ -49,28 +61,26 @@ async function main() {
       const entry = entries[index];
       const relativePath = path.posix.join('assets/audio', entry.language, `${safeName(entry.key)}.aac`);
       const outputPath = path.join(process.cwd(), relativePath);
+      const contentSignature = signature(entry.language, entry.text, voice);
+      const indexKey = `${entry.language}/${entry.key}`;
+      let valid = false;
       try {
-        await fs.access(outputPath);
-        process.stdout.write(`[${index + 1}/${entries.length}] exists ${entry.key}\n`);
-      } catch {
-        process.stdout.write(`[${index + 1}/${entries.length}] generating ${entry.language} ${entry.key}\n`);
-        const signature = JSON.stringify([entry.language, voice, entry.text]);
-        const existing = generatedTexts.get(signature);
+        const previousEntry = previous.entries[indexKey];
+        valid = previousEntry?.signature === contentSignature && previousEntry.sha256 === sha256(await fs.readFile(outputPath));
+      } catch {}
+      if (!valid) {
+        const existing = generatedTexts.get(contentSignature);
         if (existing) {
           const originalPath = await existing;
-          await fs.copyFile(originalPath, outputPath);
+          if (originalPath !== outputPath) await fs.copyFile(originalPath, outputPath);
         } else {
-          const generation = synthesize({
-            apiKey: process.env.OPENAI_API_KEY,
-            text: entry.text,
-            language: entry.language,
-            voice,
-            outputPath,
-          }).then(() => outputPath);
-          generatedTexts.set(signature, generation);
+          process.stdout.write(`[${index + 1}/${entries.length}] generating ${entry.language} ${entry.key}\n`);
+          const generation = synthesize({ apiKey: process.env.OPENAI_API_KEY, text: entry.text, language: entry.language, voice, outputPath }).then(() => outputPath);
+          generatedTexts.set(contentSignature, generation);
           await generation;
         }
       }
+      current.entries[indexKey] = { signature: contentSignature, sha256: sha256(await fs.readFile(outputPath)) };
       entry.relativePath = relativePath;
     }
   };
@@ -81,7 +91,8 @@ async function main() {
   for (const language of languages) {
     const languageDirectory = path.join(process.cwd(), 'assets/audio', language);
     for (const filename of await fs.readdir(languageDirectory)) {
-      const audioPath = path.join(languageDirectory, filename);
+      if (expectedSignatures.get(key) !== item.signature) continue;
+    const audioPath = path.join(languageDirectory, filename);
       if (filename.endsWith('.aac') && !expectedAudioPaths.has(path.resolve(audioPath))) await fs.unlink(audioPath);
     }
   }
@@ -103,6 +114,7 @@ async function main() {
   lines.push('};', '');
   await fs.mkdir(path.join(process.cwd(), 'src/generated'), { recursive: true });
   await fs.writeFile(path.join(process.cwd(), 'src/generated/naviVoiceManifest.ts'), lines.join('\n'));
+  await fs.writeFile(indexPath, JSON.stringify(current, null, 2) + '\n');
   process.stdout.write(`Generated ${entries.length} Navi clips with voice ${voice} using concurrency ${concurrency}.\n`);
 }
 

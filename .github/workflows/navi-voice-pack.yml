@@ -7,10 +7,10 @@ on:
         description: Approved OpenAI voice
         required: true
         type: choice
-        options: [marin, cedar, coral]
+        options: [marin]
         default: marin
   push:
-    branches: [feat/navi-voice-pack, fix/stage-flow-shapes]
+    branches: [feat/navi-voice-pack, fix/stage-flow-shapes, feat/eight-learning-islands]
     paths:
       - ".github/navi-voice-choice.txt"
       - ".github/workflows/navi-voice-pack.yml"
@@ -39,11 +39,11 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: navi-shapes-marin-checkpoint
+          name: navi-eight-islands-marin-checkpoint
           path: |
-            assets/audio/de/question.shapes-*.aac
-            assets/audio/en/question.shapes-*.aac
+            assets/audio/
             src/generated/naviVoiceManifest.ts
+            src/generated/naviVoiceIndex.json
           retention-days: 7
       - run: node scripts/validate-voice-pack.cjs
       - run: npm run typecheck
@@ -51,7 +51,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/audio src/generated/naviVoiceManifest.ts
+          git add assets/audio src/generated/naviVoiceManifest.ts src/generated/naviVoiceIndex.json
           git diff --cached --quiet && exit 0
           git commit -m "feat: add approved offline Navi voice pack"
           git push origin HEAD:${{ github.ref_name }}

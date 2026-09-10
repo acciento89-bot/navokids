@@ -16,14 +16,20 @@ interface Props {
   onProfilePress: () => void;
 }
 
-const islandPlacements: Record<CategoryId, { top: `${number}%`; side: 'left' | 'right' | 'center' }> = {
-  shapes: { top: '87%', side: 'right' },
-  numbers: { top: '17.5%', side: 'left' },
-  colors: { top: '36.5%', side: 'right' },
-  animals: { top: '55%', side: 'left' },
-  letters: { top: '72.5%', side: 'right' },
-  words: { top: '81%', side: 'left' },
+const islandPlacements: Record<CategoryId, { top: `${number}%`; side: 'left' | 'right'; panel: number }> = {
+  numbers: { top: '18%', side: 'left', panel: 0 },
+  colors: { top: '36%', side: 'right', panel: 0 },
+  animals: { top: '55%', side: 'left', panel: 0 },
+  letters: { top: '72%', side: 'right', panel: 0 },
+  words: { top: '85%', side: 'left', panel: 0 },
+  shapes: { top: '23%', side: 'right', panel: 1 },
+  nature: { top: '51%', side: 'left', panel: 1 },
+  time: { top: '80%', side: 'right', panel: 1 },
 };
+const mapPanels = [
+  { image: require('../../assets/adventure-map-v1.jpg'), ratio: 852 / 1846 },
+  { image: require('../../assets/adventure-map-extension-v2.png'), ratio: 1024 / 1792 },
+];
 
 export function WorldScreen({ language, profile, premiumUnlocked, onLanguageChange, onCategoryPress, onParentsPress, onProfilePress }: Props) {
   const totalStars = countStars(profile.progress);
@@ -53,17 +59,19 @@ export function WorldScreen({ language, profile, premiumUnlocked, onLanguageChan
       <Text style={styles.sectionTitle}>{language === 'de' ? 'Navis Abenteuerkarte' : 'Navi’s adventure map'}</Text>
       <Text style={styles.mapIntro}>{language === 'de' ? 'Tippe auf eine Insel und starte deine Reise!' : 'Tap an island and start your journey!'}</Text>
       <View style={styles.mapShell}>
-        <ImageBackground source={require('../../assets/adventure-map-v1.jpg')} resizeMode="cover" style={styles.map} imageStyle={styles.mapImage}>
-          <View style={styles.mapLegend}>
-            <Text style={styles.mapLegendText}>🧭 {language === 'de' ? '6 Inseln · 180 Stufen' : '6 islands · 180 stages'}</Text>
-          </View>
+        <View style={styles.mapClip}>
+        {mapPanels.map((panel, panelIndex) => (
+        <ImageBackground key={panelIndex} source={panel.image} resizeMode="stretch" style={[styles.map, { aspectRatio: panel.ratio }]}>
+          {panelIndex === 0 && <View style={styles.mapLegend}>
+            <Text style={styles.mapLegendText}>🧭 {language === 'de' ? '8 Inseln · 240 Stufen' : '8 islands · 240 stages'}</Text>
+          </View>}
 
-          {categories.map((category) => {
+          {categories.filter(category => islandPlacements[category.id].panel === panelIndex).map((category) => {
             const completed = normalizeCategoryProgress(profile.progress[category.id]).completedQuestions;
             const percentage = Math.min(100, Math.round((completed / TOTAL_QUESTIONS_PER_CATEGORY) * 100));
             const placement = islandPlacements[category.id];
             return (
-              <View key={category.id} pointerEvents="box-none" style={[styles.nodeAnchor, { top: placement.top }, placement.side === 'right' && styles.nodeAnchorRight, placement.side === 'center' && styles.nodeAnchorCenter]}>
+              <View key={category.id} pointerEvents="box-none" style={[styles.nodeAnchor, { top: placement.top }, placement.side === 'right' && styles.nodeAnchorRight]}>
                 <Pressable
                   accessibilityRole="button"
                   accessibilityLabel={`${t(category.title, language)}, ${percentage}%`}
@@ -73,7 +81,7 @@ export function WorldScreen({ language, profile, premiumUnlocked, onLanguageChan
                 >
                   <View style={styles.islandSignTop}>
                     <View style={[styles.islandIconBadge, { backgroundColor: category.lightColor }]}><Text style={styles.islandIcon}>{category.icon}</Text></View>
-                    <Text numberOfLines={1} style={styles.islandTitle}>{t(category.title, language)}</Text>
+                    <Text style={styles.islandTitle}>{t(category.title, language)}</Text>
                     {!premiumUnlocked && <View style={styles.stageBadge}><Text style={styles.stageBadgeText}>{FREE_STAGES_PER_CATEGORY} {language === 'de' ? 'frei' : 'free'}</Text></View>}
                   </View>
                   <View style={styles.progressRow}>
@@ -85,13 +93,15 @@ export function WorldScreen({ language, profile, premiumUnlocked, onLanguageChan
             );
           })}
 
-          {nextCategory && (
+          {nextCategory && nextPlacement.panel === panelIndex && (
             <View pointerEvents="none" style={[styles.naviMarker, { top: nextPlacement.top }, nextPlacement.side === 'left' ? styles.naviMarkerRight : styles.naviMarkerLeft]}>
               <Image source={require('../../assets/navi-mascot-optimized.png')} resizeMode="contain" style={styles.mapMascot} />
             </View>
           )}
 
         </ImageBackground>
+        ))}
+        </View>
       </View>
       <Text style={styles.safetyNote}>{language === 'de' ? 'Werbefrei · Kindgerecht · Auch offline' : 'Ad-free · Child-friendly · Works offline'}</Text>
     </ScrollView>
@@ -119,18 +129,19 @@ const styles = StyleSheet.create({
   sectionTitle: { color: colors.ink, fontSize: 23, fontWeight: '900', marginTop: 27 },
   mapIntro: { color: colors.muted, fontSize: 13, fontWeight: '700', marginTop: 4, marginBottom: 14 },
   mapShell: { borderRadius: 34, backgroundColor: '#7FD8F2', ...shadows.card },
-  map: { position: 'relative', width: '100%', aspectRatio: 852 / 1846 },
+  mapClip: { borderRadius: 34, overflow: 'hidden' },
+  map: { position: 'relative', width: '100%', minHeight: 0 },
   mapImage: { borderRadius: 34 },
   mapLegend: { position: 'absolute', top: 13, alignSelf: 'center', borderRadius: 16, backgroundColor: 'rgba(255,255,255,0.92)', paddingHorizontal: 13, paddingVertical: 7, borderWidth: 2, borderColor: 'rgba(24,59,63,0.12)' },
   mapLegendText: { color: colors.ink, fontSize: 11, fontWeight: '900' },
-  nodeAnchor: { position: 'absolute', left: '4%', width: '49%' },
+  nodeAnchor: { position: 'absolute', left: '4%', width: '60%' },
   nodeAnchorRight: { left: undefined, right: '4%' },
   nodeAnchorCenter: { left: '25.5%' },
   islandSign: { minHeight: 68, borderRadius: 19, borderWidth: 3, backgroundColor: 'rgba(255,249,226,0.96)', paddingHorizontal: 9, paddingVertical: 8, ...shadows.card },
   islandSignTop: { flexDirection: 'row', alignItems: 'center', gap: 6 },
   islandIconBadge: { width: 31, height: 31, borderRadius: 11, alignItems: 'center', justifyContent: 'center' },
   islandIcon: { color: colors.ink, fontSize: 15, fontWeight: '900' },
-  islandTitle: { flex: 1, color: colors.ink, fontSize: 15, fontWeight: '900' },
+  islandTitle: { flex: 1, color: colors.ink, fontSize: 15, lineHeight: 19, fontWeight: '900' },
   stageBadge: { position: 'absolute', right: -4, top: -17, borderRadius: 9, backgroundColor: colors.paper, paddingHorizontal: 6, paddingVertical: 3, borderWidth: 1, borderColor: 'rgba(24,59,63,0.12)' },
   stageBadgeText: { color: colors.ink, fontSize: 8, fontWeight: '900' },
   progressRow: { flexDirection: 'row', alignItems: 'center', gap: 6, marginTop: 6 },

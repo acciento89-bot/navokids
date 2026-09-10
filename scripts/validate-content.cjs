@@ -39,11 +39,11 @@ for (const category of categories) {
       }
       if (/[a-zäöüß]{2}/i.test(question.visual) && (!question.localizedVisual?.de || !question.localizedVisual?.en)) throw new Error(`${question.id}: word visual needs German and English translations`);
       if (question.localizedVisual && !question.prompt.en.includes(question.localizedVisual.en)) throw new Error(`${question.id}: English word visual must match the spoken task`);
-      if (germanPrompts.has(question.prompt.de)) throw new Error(`${category.id}/${ageGroup}: repeated German task: ${question.prompt.de}`);
-      if (englishPrompts.has(question.prompt.en)) throw new Error(`${category.id}/${ageGroup}: repeated English task: ${question.prompt.en}`);
-      germanPrompts.add(question.prompt.de);
-      englishPrompts.add(question.prompt.en);
-      taskSignatures.add(`${question.prompt.de}\n${question.visual}`);
+      // Repeated instructional wording is valid when the actual puzzle differs.
+      // Compare the visible exercise (including clock geometry and choices), not just its sentence.
+      const signature = JSON.stringify([question.prompt, question.visual, question.localizedVisual, question.clock, question.answers]);
+      if (taskSignatures.has(signature)) throw new Error(`${question.id}: duplicate complete exercise`);
+      taskSignatures.add(signature);
       if (question.answers.length !== expectedAnswers) throw new Error(`${question.id}: expected exactly ${expectedAnswers} answers for ${ageGroup}`);
       if (new Set(question.answers.map((answer) => answer.id)).size !== question.answers.length) throw new Error(`${question.id}: duplicate answer choices`);
       if (!question.answers.some((answer) => answer.id === question.correctAnswerId)) throw new Error(`${question.id}: correct answer is missing`);

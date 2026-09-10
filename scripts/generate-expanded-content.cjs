@@ -850,6 +850,8 @@ function buildDiscovererWords() {
 }
 
 const buildShapes = require('./generate-shapes.cjs');
+const buildNature = require('./generate-nature.cjs');
+const buildTime = require('./generate-time.cjs');
 const categories = [
   { id: 'numbers', title: localized('Zahlen', 'Numbers'), subtitle: localized('Zählen und Mengen entdecken', 'Discover counting and quantities'), icon: '123', color: '#F29A38', lightColor: '#FFF0D7', questionsByAge: { discoverer: buildDiscovererNumbers(), adventurer: buildNumbers() } },
   { id: 'colors', title: localized('Farben', 'Colors'), subtitle: localized('Farben finden und mischen', 'Find and mix colors'), icon: '●', color: '#F05E62', lightColor: '#FFE1E2', questionsByAge: { discoverer: buildDiscovererColors(), adventurer: buildColors() } },
@@ -857,6 +859,8 @@ const categories = [
   { id: 'letters', title: localized('Buchstaben', 'Letters'), subtitle: localized('Laute hören und Buchstaben finden', 'Hear sounds and find letters'), icon: 'ABC', color: '#7A72D1', lightColor: '#EAE7FF', questionsByAge: { discoverer: buildDiscovererLetters(), adventurer: buildLetters() } },
   { id: 'words', title: localized('Wörter', 'Words'), subtitle: localized('Bilder, Laute und Wörter verbinden', 'Connect pictures, sounds, and words'), icon: 'Aa', color: '#3E9FD6', lightColor: '#E0F3FF', questionsByAge: { discoverer: buildDiscovererWords(), adventurer: buildWords() } },
   { id: 'shapes', title: localized('Formen', 'Shapes'), subtitle: localized('Formen erkennen und Muster fortsetzen', 'Recognize shapes and continue patterns'), icon: '◆', color: '#7862B3', lightColor: '#EFE9FF', questionsByAge: { discoverer: buildShapes('discoverer'), adventurer: buildShapes('adventurer') } },
+  { id: 'nature', title: localized('Natur & Wetter', 'Nature & Weather'), subtitle: localized('Wetter, Pflanzen und die Umwelt erkunden', 'Explore weather, plants, and the world around us'), icon: '🌦️', color: '#29855D', lightColor: '#E4F4E5', questionsByAge: { discoverer: buildNature('discoverer'), adventurer: buildNature('adventurer') } },
+  { id: 'time', title: localized('Uhr & Zeit', 'Clock & Time'), subtitle: localized('Uhrzeiten und Tagesabläufe verstehen', 'Learn clock times and daily routines'), icon: '◷', color: '#B76C19', lightColor: '#FFF0CD', questionsByAge: { discoverer: buildTime('discoverer'), adventurer: buildTime('adventurer') } },
 ];
 
 for (const category of categories) {

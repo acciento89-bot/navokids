@@ -22,18 +22,18 @@ module.exports = function buildShapes(age) {
       });
     };
     if (age === 'discoverer') {
-      add(`Suche diese Form: ${a[2]}. Daneben wartet diese Form: ${b[2]}.`, `Find the ${a[3]}. The other choice is a ${b[3]}.`, a[1], a,
+      add('Welche Form passt zur Karte?', 'Which shape matches the card?', a[1], a,
         'Vergleiche die Form auf der Karte mit den beiden Antworten.', 'Match the shape on the card to one of the two answers.');
-      add(`Zweimal ${a[2]}, einmal ${b[2]}: Welche Form ist anders?`, `Two ${a[3]} shapes and one ${b[3]}: which shape is different?`, `${a[1]} ${b[1]} ${a[1]}`, b,
+      add('Welche Form gibt es nur einmal?', 'Which shape appears only once?', `${a[1]} ${b[1]} ${a[1]}`, b,
         'Eine Form ist nur einmal zu sehen. Tippe auf diese Form.', 'One shape appears only once. Tap that shape.');
-      add(`Erst ${a[2]}, dann ${b[2]}: Welche Form kommt am Ende?`, `First a ${a[3]}, then a ${b[3]}: which shape comes next?`, `${a[1]} ${b[1]} ${a[1]} ${b[1]} ?`, a,
+      add('Welche Form kommt als Nächstes?', 'Which shape comes next?', `${a[1]} ${b[1]} ${a[1]} ${b[1]} ?`, a,
         'Die beiden Formen wechseln sich immer ab.', 'The two shapes take turns.');
     } else {
-      add(`Zweimal ${a[2]}, dann ${b[2]}: Setze das Muster fort.`, `Two ${a[3]} shapes, then a ${b[3]}: continue the pattern.`, `${a[1]} ${a[1]} ${b[1]} ${a[1]} ${a[1]} ${b[1]} ?`, a,
+      add('Setze das Muster fort. Welche Form fehlt am Ende?', 'Continue the pattern. Which shape is missing at the end?', `${a[1]} ${a[1]} ${b[1]} ${a[1]} ${a[1]} ${b[1]} ?`, a,
         'Suche die Dreiergruppe, die sich wiederholt.', 'Find the repeating group of three.');
-      add(`${a[2]}, ${b[2]}, ${c[2]}: Welche Form fehlt in der zweiten Gruppe?`, `${a[3]}, ${b[3]}, ${c[3]}: which shape is missing from the second group?`, `${a[1]} ${b[1]} ${c[1]} | ${a[1]} ? ${c[1]}`, b,
+      add('Welche Form fehlt in der zweiten Gruppe?', 'Which shape is missing from the second group?', `${a[1]} ${b[1]} ${c[1]} | ${a[1]} ? ${c[1]}`, b,
         'Vergleiche die mittlere Stelle der beiden Gruppen.', 'Compare the middle position in both groups.');
-      add(`Nach ${a[2]} und ${b[2]} folgt ${c[2]}. Ergänze das Ende.`, `A ${a[3]} and a ${b[3]} are followed by a ${c[3]}. Complete the ending.`, `${a[1]} ${b[1]} ${c[1]} ${a[1]} ${b[1]} ?`, c,
+      add('Welche Form vervollständigt das Muster?', 'Which shape completes the pattern?', `${a[1]} ${b[1]} ${c[1]} ${a[1]} ${b[1]} ?`, c,
         'Die drei Formen kommen immer in derselben Reihenfolge.', 'The three shapes always appear in the same order.');
     }
     stage++;

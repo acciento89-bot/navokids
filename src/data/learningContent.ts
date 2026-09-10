@@ -28949,8 +28949,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-1",
           "prompt": {
-            "de": "Suche diese Form: Kreis. Daneben wartet diese Form: Dreieck.",
-            "en": "Find the circle. The other choice is a triangle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "●",
           "answers": [
@@ -28976,8 +28976,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-2",
           "prompt": {
-            "de": "Zweimal Kreis, einmal Dreieck: Welche Form ist anders?",
-            "en": "Two circle shapes and one triangle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "● ▲ ●",
           "answers": [
@@ -29003,8 +29003,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-3",
           "prompt": {
-            "de": "Erst Kreis, dann Dreieck: Welche Form kommt am Ende?",
-            "en": "First a circle, then a triangle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "● ▲ ● ▲ ?",
           "answers": [
@@ -29030,8 +29030,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-4",
           "prompt": {
-            "de": "Suche diese Form: Kreis. Daneben wartet diese Form: Quadrat.",
-            "en": "Find the circle. The other choice is a square."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "●",
           "answers": [
@@ -29057,8 +29057,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-5",
           "prompt": {
-            "de": "Zweimal Kreis, einmal Quadrat: Welche Form ist anders?",
-            "en": "Two circle shapes and one square: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "● ■ ●",
           "answers": [
@@ -29084,8 +29084,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-6",
           "prompt": {
-            "de": "Erst Kreis, dann Quadrat: Welche Form kommt am Ende?",
-            "en": "First a circle, then a square: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "● ■ ● ■ ?",
           "answers": [
@@ -29111,8 +29111,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-7",
           "prompt": {
-            "de": "Suche diese Form: Kreis. Daneben wartet diese Form: Rechteck.",
-            "en": "Find the circle. The other choice is a rectangle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "●",
           "answers": [
@@ -29138,8 +29138,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-8",
           "prompt": {
-            "de": "Zweimal Kreis, einmal Rechteck: Welche Form ist anders?",
-            "en": "Two circle shapes and one rectangle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "● ▬ ●",
           "answers": [
@@ -29165,8 +29165,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-9",
           "prompt": {
-            "de": "Erst Kreis, dann Rechteck: Welche Form kommt am Ende?",
-            "en": "First a circle, then a rectangle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "● ▬ ● ▬ ?",
           "answers": [
@@ -29192,8 +29192,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-10",
           "prompt": {
-            "de": "Suche diese Form: Kreis. Daneben wartet diese Form: Raute.",
-            "en": "Find the circle. The other choice is a diamond."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "●",
           "answers": [
@@ -29219,8 +29219,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-11",
           "prompt": {
-            "de": "Zweimal Kreis, einmal Raute: Welche Form ist anders?",
-            "en": "Two circle shapes and one diamond: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "● ◆ ●",
           "answers": [
@@ -29246,8 +29246,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-12",
           "prompt": {
-            "de": "Erst Kreis, dann Raute: Welche Form kommt am Ende?",
-            "en": "First a circle, then a diamond: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "● ◆ ● ◆ ?",
           "answers": [
@@ -29273,8 +29273,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-13",
           "prompt": {
-            "de": "Suche diese Form: Kreis. Daneben wartet diese Form: Stern.",
-            "en": "Find the circle. The other choice is a star."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "●",
           "answers": [
@@ -29300,8 +29300,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-14",
           "prompt": {
-            "de": "Zweimal Kreis, einmal Stern: Welche Form ist anders?",
-            "en": "Two circle shapes and one star: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "● ★ ●",
           "answers": [
@@ -29327,8 +29327,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-15",
           "prompt": {
-            "de": "Erst Kreis, dann Stern: Welche Form kommt am Ende?",
-            "en": "First a circle, then a star: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "● ★ ● ★ ?",
           "answers": [
@@ -29354,8 +29354,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-16",
           "prompt": {
-            "de": "Suche diese Form: Dreieck. Daneben wartet diese Form: Kreis.",
-            "en": "Find the triangle. The other choice is a circle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "▲",
           "answers": [
@@ -29381,8 +29381,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-17",
           "prompt": {
-            "de": "Zweimal Dreieck, einmal Kreis: Welche Form ist anders?",
-            "en": "Two triangle shapes and one circle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "▲ ● ▲",
           "answers": [
@@ -29408,8 +29408,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-18",
           "prompt": {
-            "de": "Erst Dreieck, dann Kreis: Welche Form kommt am Ende?",
-            "en": "First a triangle, then a circle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "▲ ● ▲ ● ?",
           "answers": [
@@ -29435,8 +29435,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-19",
           "prompt": {
-            "de": "Suche diese Form: Dreieck. Daneben wartet diese Form: Quadrat.",
-            "en": "Find the triangle. The other choice is a square."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "▲",
           "answers": [
@@ -29462,8 +29462,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-20",
           "prompt": {
-            "de": "Zweimal Dreieck, einmal Quadrat: Welche Form ist anders?",
-            "en": "Two triangle shapes and one square: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "▲ ■ ▲",
           "answers": [
@@ -29489,8 +29489,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-21",
           "prompt": {
-            "de": "Erst Dreieck, dann Quadrat: Welche Form kommt am Ende?",
-            "en": "First a triangle, then a square: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "▲ ■ ▲ ■ ?",
           "answers": [
@@ -29516,8 +29516,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-22",
           "prompt": {
-            "de": "Suche diese Form: Dreieck. Daneben wartet diese Form: Rechteck.",
-            "en": "Find the triangle. The other choice is a rectangle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "▲",
           "answers": [
@@ -29543,8 +29543,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-23",
           "prompt": {
-            "de": "Zweimal Dreieck, einmal Rechteck: Welche Form ist anders?",
-            "en": "Two triangle shapes and one rectangle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "▲ ▬ ▲",
           "answers": [
@@ -29570,8 +29570,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-24",
           "prompt": {
-            "de": "Erst Dreieck, dann Rechteck: Welche Form kommt am Ende?",
-            "en": "First a triangle, then a rectangle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "▲ ▬ ▲ ▬ ?",
           "answers": [
@@ -29597,8 +29597,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-25",
           "prompt": {
-            "de": "Suche diese Form: Dreieck. Daneben wartet diese Form: Raute.",
-            "en": "Find the triangle. The other choice is a diamond."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "▲",
           "answers": [
@@ -29624,8 +29624,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-26",
           "prompt": {
-            "de": "Zweimal Dreieck, einmal Raute: Welche Form ist anders?",
-            "en": "Two triangle shapes and one diamond: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "▲ ◆ ▲",
           "answers": [
@@ -29651,8 +29651,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-27",
           "prompt": {
-            "de": "Erst Dreieck, dann Raute: Welche Form kommt am Ende?",
-            "en": "First a triangle, then a diamond: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "▲ ◆ ▲ ◆ ?",
           "answers": [
@@ -29678,8 +29678,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-28",
           "prompt": {
-            "de": "Suche diese Form: Dreieck. Daneben wartet diese Form: Stern.",
-            "en": "Find the triangle. The other choice is a star."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "▲",
           "answers": [
@@ -29705,8 +29705,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-29",
           "prompt": {
-            "de": "Zweimal Dreieck, einmal Stern: Welche Form ist anders?",
-            "en": "Two triangle shapes and one star: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "▲ ★ ▲",
           "answers": [
@@ -29732,8 +29732,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-30",
           "prompt": {
-            "de": "Erst Dreieck, dann Stern: Welche Form kommt am Ende?",
-            "en": "First a triangle, then a star: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "▲ ★ ▲ ★ ?",
           "answers": [
@@ -29759,8 +29759,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-31",
           "prompt": {
-            "de": "Suche diese Form: Quadrat. Daneben wartet diese Form: Kreis.",
-            "en": "Find the square. The other choice is a circle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "■",
           "answers": [
@@ -29786,8 +29786,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-32",
           "prompt": {
-            "de": "Zweimal Quadrat, einmal Kreis: Welche Form ist anders?",
-            "en": "Two square shapes and one circle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "■ ● ■",
           "answers": [
@@ -29813,8 +29813,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-33",
           "prompt": {
-            "de": "Erst Quadrat, dann Kreis: Welche Form kommt am Ende?",
-            "en": "First a square, then a circle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "■ ● ■ ● ?",
           "answers": [
@@ -29840,8 +29840,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-34",
           "prompt": {
-            "de": "Suche diese Form: Quadrat. Daneben wartet diese Form: Dreieck.",
-            "en": "Find the square. The other choice is a triangle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "■",
           "answers": [
@@ -29867,8 +29867,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-35",
           "prompt": {
-            "de": "Zweimal Quadrat, einmal Dreieck: Welche Form ist anders?",
-            "en": "Two square shapes and one triangle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "■ ▲ ■",
           "answers": [
@@ -29894,8 +29894,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-36",
           "prompt": {
-            "de": "Erst Quadrat, dann Dreieck: Welche Form kommt am Ende?",
-            "en": "First a square, then a triangle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "■ ▲ ■ ▲ ?",
           "answers": [
@@ -29921,8 +29921,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-37",
           "prompt": {
-            "de": "Suche diese Form: Quadrat. Daneben wartet diese Form: Rechteck.",
-            "en": "Find the square. The other choice is a rectangle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "■",
           "answers": [
@@ -29948,8 +29948,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-38",
           "prompt": {
-            "de": "Zweimal Quadrat, einmal Rechteck: Welche Form ist anders?",
-            "en": "Two square shapes and one rectangle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "■ ▬ ■",
           "answers": [
@@ -29975,8 +29975,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-39",
           "prompt": {
-            "de": "Erst Quadrat, dann Rechteck: Welche Form kommt am Ende?",
-            "en": "First a square, then a rectangle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "■ ▬ ■ ▬ ?",
           "answers": [
@@ -30002,8 +30002,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-40",
           "prompt": {
-            "de": "Suche diese Form: Quadrat. Daneben wartet diese Form: Raute.",
-            "en": "Find the square. The other choice is a diamond."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "■",
           "answers": [
@@ -30029,8 +30029,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-41",
           "prompt": {
-            "de": "Zweimal Quadrat, einmal Raute: Welche Form ist anders?",
-            "en": "Two square shapes and one diamond: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "■ ◆ ■",
           "answers": [
@@ -30056,8 +30056,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-42",
           "prompt": {
-            "de": "Erst Quadrat, dann Raute: Welche Form kommt am Ende?",
-            "en": "First a square, then a diamond: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "■ ◆ ■ ◆ ?",
           "answers": [
@@ -30083,8 +30083,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-43",
           "prompt": {
-            "de": "Suche diese Form: Quadrat. Daneben wartet diese Form: Stern.",
-            "en": "Find the square. The other choice is a star."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "■",
           "answers": [
@@ -30110,8 +30110,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-44",
           "prompt": {
-            "de": "Zweimal Quadrat, einmal Stern: Welche Form ist anders?",
-            "en": "Two square shapes and one star: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "■ ★ ■",
           "answers": [
@@ -30137,8 +30137,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-45",
           "prompt": {
-            "de": "Erst Quadrat, dann Stern: Welche Form kommt am Ende?",
-            "en": "First a square, then a star: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "■ ★ ■ ★ ?",
           "answers": [
@@ -30164,8 +30164,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-46",
           "prompt": {
-            "de": "Suche diese Form: Rechteck. Daneben wartet diese Form: Kreis.",
-            "en": "Find the rectangle. The other choice is a circle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "▬",
           "answers": [
@@ -30191,8 +30191,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-47",
           "prompt": {
-            "de": "Zweimal Rechteck, einmal Kreis: Welche Form ist anders?",
-            "en": "Two rectangle shapes and one circle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "▬ ● ▬",
           "answers": [
@@ -30218,8 +30218,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-48",
           "prompt": {
-            "de": "Erst Rechteck, dann Kreis: Welche Form kommt am Ende?",
-            "en": "First a rectangle, then a circle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "▬ ● ▬ ● ?",
           "answers": [
@@ -30245,8 +30245,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-49",
           "prompt": {
-            "de": "Suche diese Form: Rechteck. Daneben wartet diese Form: Dreieck.",
-            "en": "Find the rectangle. The other choice is a triangle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "▬",
           "answers": [
@@ -30272,8 +30272,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-50",
           "prompt": {
-            "de": "Zweimal Rechteck, einmal Dreieck: Welche Form ist anders?",
-            "en": "Two rectangle shapes and one triangle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "▬ ▲ ▬",
           "answers": [
@@ -30299,8 +30299,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-51",
           "prompt": {
-            "de": "Erst Rechteck, dann Dreieck: Welche Form kommt am Ende?",
-            "en": "First a rectangle, then a triangle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "▬ ▲ ▬ ▲ ?",
           "answers": [
@@ -30326,8 +30326,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-52",
           "prompt": {
-            "de": "Suche diese Form: Rechteck. Daneben wartet diese Form: Quadrat.",
-            "en": "Find the rectangle. The other choice is a square."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "▬",
           "answers": [
@@ -30353,8 +30353,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-53",
           "prompt": {
-            "de": "Zweimal Rechteck, einmal Quadrat: Welche Form ist anders?",
-            "en": "Two rectangle shapes and one square: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "▬ ■ ▬",
           "answers": [
@@ -30380,8 +30380,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-54",
           "prompt": {
-            "de": "Erst Rechteck, dann Quadrat: Welche Form kommt am Ende?",
-            "en": "First a rectangle, then a square: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "▬ ■ ▬ ■ ?",
           "answers": [
@@ -30407,8 +30407,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-55",
           "prompt": {
-            "de": "Suche diese Form: Rechteck. Daneben wartet diese Form: Raute.",
-            "en": "Find the rectangle. The other choice is a diamond."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "▬",
           "answers": [
@@ -30434,8 +30434,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-56",
           "prompt": {
-            "de": "Zweimal Rechteck, einmal Raute: Welche Form ist anders?",
-            "en": "Two rectangle shapes and one diamond: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "▬ ◆ ▬",
           "answers": [
@@ -30461,8 +30461,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-57",
           "prompt": {
-            "de": "Erst Rechteck, dann Raute: Welche Form kommt am Ende?",
-            "en": "First a rectangle, then a diamond: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "▬ ◆ ▬ ◆ ?",
           "answers": [
@@ -30488,8 +30488,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-58",
           "prompt": {
-            "de": "Suche diese Form: Rechteck. Daneben wartet diese Form: Stern.",
-            "en": "Find the rectangle. The other choice is a star."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "▬",
           "answers": [
@@ -30515,8 +30515,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-59",
           "prompt": {
-            "de": "Zweimal Rechteck, einmal Stern: Welche Form ist anders?",
-            "en": "Two rectangle shapes and one star: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "▬ ★ ▬",
           "answers": [
@@ -30542,8 +30542,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-60",
           "prompt": {
-            "de": "Erst Rechteck, dann Stern: Welche Form kommt am Ende?",
-            "en": "First a rectangle, then a star: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "▬ ★ ▬ ★ ?",
           "answers": [
@@ -30569,8 +30569,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-61",
           "prompt": {
-            "de": "Suche diese Form: Raute. Daneben wartet diese Form: Kreis.",
-            "en": "Find the diamond. The other choice is a circle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "◆",
           "answers": [
@@ -30596,8 +30596,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-62",
           "prompt": {
-            "de": "Zweimal Raute, einmal Kreis: Welche Form ist anders?",
-            "en": "Two diamond shapes and one circle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "◆ ● ◆",
           "answers": [
@@ -30623,8 +30623,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-63",
           "prompt": {
-            "de": "Erst Raute, dann Kreis: Welche Form kommt am Ende?",
-            "en": "First a diamond, then a circle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "◆ ● ◆ ● ?",
           "answers": [
@@ -30650,8 +30650,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-64",
           "prompt": {
-            "de": "Suche diese Form: Raute. Daneben wartet diese Form: Dreieck.",
-            "en": "Find the diamond. The other choice is a triangle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "◆",
           "answers": [
@@ -30677,8 +30677,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-65",
           "prompt": {
-            "de": "Zweimal Raute, einmal Dreieck: Welche Form ist anders?",
-            "en": "Two diamond shapes and one triangle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "◆ ▲ ◆",
           "answers": [
@@ -30704,8 +30704,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-66",
           "prompt": {
-            "de": "Erst Raute, dann Dreieck: Welche Form kommt am Ende?",
-            "en": "First a diamond, then a triangle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "◆ ▲ ◆ ▲ ?",
           "answers": [
@@ -30731,8 +30731,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-67",
           "prompt": {
-            "de": "Suche diese Form: Raute. Daneben wartet diese Form: Quadrat.",
-            "en": "Find the diamond. The other choice is a square."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "◆",
           "answers": [
@@ -30758,8 +30758,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-68",
           "prompt": {
-            "de": "Zweimal Raute, einmal Quadrat: Welche Form ist anders?",
-            "en": "Two diamond shapes and one square: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "◆ ■ ◆",
           "answers": [
@@ -30785,8 +30785,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-69",
           "prompt": {
-            "de": "Erst Raute, dann Quadrat: Welche Form kommt am Ende?",
-            "en": "First a diamond, then a square: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "◆ ■ ◆ ■ ?",
           "answers": [
@@ -30812,8 +30812,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-70",
           "prompt": {
-            "de": "Suche diese Form: Raute. Daneben wartet diese Form: Rechteck.",
-            "en": "Find the diamond. The other choice is a rectangle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "◆",
           "answers": [
@@ -30839,8 +30839,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-71",
           "prompt": {
-            "de": "Zweimal Raute, einmal Rechteck: Welche Form ist anders?",
-            "en": "Two diamond shapes and one rectangle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "◆ ▬ ◆",
           "answers": [
@@ -30866,8 +30866,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-72",
           "prompt": {
-            "de": "Erst Raute, dann Rechteck: Welche Form kommt am Ende?",
-            "en": "First a diamond, then a rectangle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "◆ ▬ ◆ ▬ ?",
           "answers": [
@@ -30893,8 +30893,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-73",
           "prompt": {
-            "de": "Suche diese Form: Raute. Daneben wartet diese Form: Stern.",
-            "en": "Find the diamond. The other choice is a star."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "◆",
           "answers": [
@@ -30920,8 +30920,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-74",
           "prompt": {
-            "de": "Zweimal Raute, einmal Stern: Welche Form ist anders?",
-            "en": "Two diamond shapes and one star: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "◆ ★ ◆",
           "answers": [
@@ -30947,8 +30947,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-75",
           "prompt": {
-            "de": "Erst Raute, dann Stern: Welche Form kommt am Ende?",
-            "en": "First a diamond, then a star: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "◆ ★ ◆ ★ ?",
           "answers": [
@@ -30974,8 +30974,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-76",
           "prompt": {
-            "de": "Suche diese Form: Stern. Daneben wartet diese Form: Kreis.",
-            "en": "Find the star. The other choice is a circle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "★",
           "answers": [
@@ -31001,8 +31001,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-77",
           "prompt": {
-            "de": "Zweimal Stern, einmal Kreis: Welche Form ist anders?",
-            "en": "Two star shapes and one circle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "★ ● ★",
           "answers": [
@@ -31028,8 +31028,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-78",
           "prompt": {
-            "de": "Erst Stern, dann Kreis: Welche Form kommt am Ende?",
-            "en": "First a star, then a circle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "★ ● ★ ● ?",
           "answers": [
@@ -31055,8 +31055,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-79",
           "prompt": {
-            "de": "Suche diese Form: Stern. Daneben wartet diese Form: Dreieck.",
-            "en": "Find the star. The other choice is a triangle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "★",
           "answers": [
@@ -31082,8 +31082,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-80",
           "prompt": {
-            "de": "Zweimal Stern, einmal Dreieck: Welche Form ist anders?",
-            "en": "Two star shapes and one triangle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "★ ▲ ★",
           "answers": [
@@ -31109,8 +31109,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-81",
           "prompt": {
-            "de": "Erst Stern, dann Dreieck: Welche Form kommt am Ende?",
-            "en": "First a star, then a triangle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "★ ▲ ★ ▲ ?",
           "answers": [
@@ -31136,8 +31136,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-82",
           "prompt": {
-            "de": "Suche diese Form: Stern. Daneben wartet diese Form: Quadrat.",
-            "en": "Find the star. The other choice is a square."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "★",
           "answers": [
@@ -31163,8 +31163,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-83",
           "prompt": {
-            "de": "Zweimal Stern, einmal Quadrat: Welche Form ist anders?",
-            "en": "Two star shapes and one square: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "★ ■ ★",
           "answers": [
@@ -31190,8 +31190,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-84",
           "prompt": {
-            "de": "Erst Stern, dann Quadrat: Welche Form kommt am Ende?",
-            "en": "First a star, then a square: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "★ ■ ★ ■ ?",
           "answers": [
@@ -31217,8 +31217,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-85",
           "prompt": {
-            "de": "Suche diese Form: Stern. Daneben wartet diese Form: Rechteck.",
-            "en": "Find the star. The other choice is a rectangle."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "★",
           "answers": [
@@ -31244,8 +31244,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-86",
           "prompt": {
-            "de": "Zweimal Stern, einmal Rechteck: Welche Form ist anders?",
-            "en": "Two star shapes and one rectangle: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "★ ▬ ★",
           "answers": [
@@ -31271,8 +31271,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-87",
           "prompt": {
-            "de": "Erst Stern, dann Rechteck: Welche Form kommt am Ende?",
-            "en": "First a star, then a rectangle: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "★ ▬ ★ ▬ ?",
           "answers": [
@@ -31298,8 +31298,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-88",
           "prompt": {
-            "de": "Suche diese Form: Stern. Daneben wartet diese Form: Raute.",
-            "en": "Find the star. The other choice is a diamond."
+            "de": "Welche Form passt zur Karte?",
+            "en": "Which shape matches the card?"
           },
           "visual": "★",
           "answers": [
@@ -31325,8 +31325,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-89",
           "prompt": {
-            "de": "Zweimal Stern, einmal Raute: Welche Form ist anders?",
-            "en": "Two star shapes and one diamond: which shape is different?"
+            "de": "Welche Form gibt es nur einmal?",
+            "en": "Which shape appears only once?"
           },
           "visual": "★ ◆ ★",
           "answers": [
@@ -31352,8 +31352,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-discoverer-90",
           "prompt": {
-            "de": "Erst Stern, dann Raute: Welche Form kommt am Ende?",
-            "en": "First a star, then a diamond: which shape comes next?"
+            "de": "Welche Form kommt als Nächstes?",
+            "en": "Which shape comes next?"
           },
           "visual": "★ ◆ ★ ◆ ?",
           "answers": [
@@ -31381,8 +31381,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-1",
           "prompt": {
-            "de": "Zweimal Kreis, dann Dreieck: Setze das Muster fort.",
-            "en": "Two circle shapes, then a triangle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "● ● ▲ ● ● ▲ ?",
           "answers": [
@@ -31412,8 +31412,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-2",
           "prompt": {
-            "de": "Kreis, Dreieck, Quadrat: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "circle, triangle, square: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "● ▲ ■ | ● ? ■",
           "answers": [
@@ -31443,8 +31443,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-3",
           "prompt": {
-            "de": "Nach Kreis und Dreieck folgt Quadrat. Ergänze das Ende.",
-            "en": "A circle and a triangle are followed by a square. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "● ▲ ■ ● ▲ ?",
           "answers": [
@@ -31474,8 +31474,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-4",
           "prompt": {
-            "de": "Zweimal Kreis, dann Quadrat: Setze das Muster fort.",
-            "en": "Two circle shapes, then a square: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "● ● ■ ● ● ■ ?",
           "answers": [
@@ -31505,8 +31505,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-5",
           "prompt": {
-            "de": "Kreis, Quadrat, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "circle, square, triangle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "● ■ ▲ | ● ? ▲",
           "answers": [
@@ -31536,8 +31536,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-6",
           "prompt": {
-            "de": "Nach Kreis und Quadrat folgt Dreieck. Ergänze das Ende.",
-            "en": "A circle and a square are followed by a triangle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "● ■ ▲ ● ■ ?",
           "answers": [
@@ -31567,8 +31567,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-7",
           "prompt": {
-            "de": "Zweimal Kreis, dann Rechteck: Setze das Muster fort.",
-            "en": "Two circle shapes, then a rectangle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "● ● ▬ ● ● ▬ ?",
           "answers": [
@@ -31598,8 +31598,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-8",
           "prompt": {
-            "de": "Kreis, Rechteck, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "circle, rectangle, triangle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "● ▬ ▲ | ● ? ▲",
           "answers": [
@@ -31629,8 +31629,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-9",
           "prompt": {
-            "de": "Nach Kreis und Rechteck folgt Dreieck. Ergänze das Ende.",
-            "en": "A circle and a rectangle are followed by a triangle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "● ▬ ▲ ● ▬ ?",
           "answers": [
@@ -31660,8 +31660,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-10",
           "prompt": {
-            "de": "Zweimal Kreis, dann Raute: Setze das Muster fort.",
-            "en": "Two circle shapes, then a diamond: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "● ● ◆ ● ● ◆ ?",
           "answers": [
@@ -31691,8 +31691,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-11",
           "prompt": {
-            "de": "Kreis, Raute, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "circle, diamond, triangle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "● ◆ ▲ | ● ? ▲",
           "answers": [
@@ -31722,8 +31722,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-12",
           "prompt": {
-            "de": "Nach Kreis und Raute folgt Dreieck. Ergänze das Ende.",
-            "en": "A circle and a diamond are followed by a triangle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "● ◆ ▲ ● ◆ ?",
           "answers": [
@@ -31753,8 +31753,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-13",
           "prompt": {
-            "de": "Zweimal Kreis, dann Stern: Setze das Muster fort.",
-            "en": "Two circle shapes, then a star: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "● ● ★ ● ● ★ ?",
           "answers": [
@@ -31784,8 +31784,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-14",
           "prompt": {
-            "de": "Kreis, Stern, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "circle, star, triangle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "● ★ ▲ | ● ? ▲",
           "answers": [
@@ -31815,8 +31815,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-15",
           "prompt": {
-            "de": "Nach Kreis und Stern folgt Dreieck. Ergänze das Ende.",
-            "en": "A circle and a star are followed by a triangle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "● ★ ▲ ● ★ ?",
           "answers": [
@@ -31846,8 +31846,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-16",
           "prompt": {
-            "de": "Zweimal Dreieck, dann Kreis: Setze das Muster fort.",
-            "en": "Two triangle shapes, then a circle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "▲ ▲ ● ▲ ▲ ● ?",
           "answers": [
@@ -31877,8 +31877,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-17",
           "prompt": {
-            "de": "Dreieck, Kreis, Quadrat: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "triangle, circle, square: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "▲ ● ■ | ▲ ? ■",
           "answers": [
@@ -31908,8 +31908,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-18",
           "prompt": {
-            "de": "Nach Dreieck und Kreis folgt Quadrat. Ergänze das Ende.",
-            "en": "A triangle and a circle are followed by a square. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "▲ ● ■ ▲ ● ?",
           "answers": [
@@ -31939,8 +31939,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-19",
           "prompt": {
-            "de": "Zweimal Dreieck, dann Quadrat: Setze das Muster fort.",
-            "en": "Two triangle shapes, then a square: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "▲ ▲ ■ ▲ ▲ ■ ?",
           "answers": [
@@ -31970,8 +31970,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-20",
           "prompt": {
-            "de": "Dreieck, Quadrat, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "triangle, square, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "▲ ■ ● | ▲ ? ●",
           "answers": [
@@ -32001,8 +32001,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-21",
           "prompt": {
-            "de": "Nach Dreieck und Quadrat folgt Kreis. Ergänze das Ende.",
-            "en": "A triangle and a square are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "▲ ■ ● ▲ ■ ?",
           "answers": [
@@ -32032,8 +32032,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-22",
           "prompt": {
-            "de": "Zweimal Dreieck, dann Rechteck: Setze das Muster fort.",
-            "en": "Two triangle shapes, then a rectangle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "▲ ▲ ▬ ▲ ▲ ▬ ?",
           "answers": [
@@ -32063,8 +32063,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-23",
           "prompt": {
-            "de": "Dreieck, Rechteck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "triangle, rectangle, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "▲ ▬ ● | ▲ ? ●",
           "answers": [
@@ -32094,8 +32094,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-24",
           "prompt": {
-            "de": "Nach Dreieck und Rechteck folgt Kreis. Ergänze das Ende.",
-            "en": "A triangle and a rectangle are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "▲ ▬ ● ▲ ▬ ?",
           "answers": [
@@ -32125,8 +32125,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-25",
           "prompt": {
-            "de": "Zweimal Dreieck, dann Raute: Setze das Muster fort.",
-            "en": "Two triangle shapes, then a diamond: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "▲ ▲ ◆ ▲ ▲ ◆ ?",
           "answers": [
@@ -32156,8 +32156,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-26",
           "prompt": {
-            "de": "Dreieck, Raute, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "triangle, diamond, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "▲ ◆ ● | ▲ ? ●",
           "answers": [
@@ -32187,8 +32187,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-27",
           "prompt": {
-            "de": "Nach Dreieck und Raute folgt Kreis. Ergänze das Ende.",
-            "en": "A triangle and a diamond are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "▲ ◆ ● ▲ ◆ ?",
           "answers": [
@@ -32218,8 +32218,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-28",
           "prompt": {
-            "de": "Zweimal Dreieck, dann Stern: Setze das Muster fort.",
-            "en": "Two triangle shapes, then a star: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "▲ ▲ ★ ▲ ▲ ★ ?",
           "answers": [
@@ -32249,8 +32249,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-29",
           "prompt": {
-            "de": "Dreieck, Stern, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "triangle, star, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "▲ ★ ● | ▲ ? ●",
           "answers": [
@@ -32280,8 +32280,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-30",
           "prompt": {
-            "de": "Nach Dreieck und Stern folgt Kreis. Ergänze das Ende.",
-            "en": "A triangle and a star are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "▲ ★ ● ▲ ★ ?",
           "answers": [
@@ -32311,8 +32311,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-31",
           "prompt": {
-            "de": "Zweimal Quadrat, dann Kreis: Setze das Muster fort.",
-            "en": "Two square shapes, then a circle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "■ ■ ● ■ ■ ● ?",
           "answers": [
@@ -32342,8 +32342,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-32",
           "prompt": {
-            "de": "Quadrat, Kreis, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "square, circle, triangle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "■ ● ▲ | ■ ? ▲",
           "answers": [
@@ -32373,8 +32373,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-33",
           "prompt": {
-            "de": "Nach Quadrat und Kreis folgt Dreieck. Ergänze das Ende.",
-            "en": "A square and a circle are followed by a triangle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "■ ● ▲ ■ ● ?",
           "answers": [
@@ -32404,8 +32404,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-34",
           "prompt": {
-            "de": "Zweimal Quadrat, dann Dreieck: Setze das Muster fort.",
-            "en": "Two square shapes, then a triangle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "■ ■ ▲ ■ ■ ▲ ?",
           "answers": [
@@ -32435,8 +32435,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-35",
           "prompt": {
-            "de": "Quadrat, Dreieck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "square, triangle, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "■ ▲ ● | ■ ? ●",
           "answers": [
@@ -32466,8 +32466,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-36",
           "prompt": {
-            "de": "Nach Quadrat und Dreieck folgt Kreis. Ergänze das Ende.",
-            "en": "A square and a triangle are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "■ ▲ ● ■ ▲ ?",
           "answers": [
@@ -32497,8 +32497,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-37",
           "prompt": {
-            "de": "Zweimal Quadrat, dann Rechteck: Setze das Muster fort.",
-            "en": "Two square shapes, then a rectangle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "■ ■ ▬ ■ ■ ▬ ?",
           "answers": [
@@ -32528,8 +32528,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-38",
           "prompt": {
-            "de": "Quadrat, Rechteck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "square, rectangle, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "■ ▬ ● | ■ ? ●",
           "answers": [
@@ -32559,8 +32559,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-39",
           "prompt": {
-            "de": "Nach Quadrat und Rechteck folgt Kreis. Ergänze das Ende.",
-            "en": "A square and a rectangle are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "■ ▬ ● ■ ▬ ?",
           "answers": [
@@ -32590,8 +32590,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-40",
           "prompt": {
-            "de": "Zweimal Quadrat, dann Raute: Setze das Muster fort.",
-            "en": "Two square shapes, then a diamond: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "■ ■ ◆ ■ ■ ◆ ?",
           "answers": [
@@ -32621,8 +32621,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-41",
           "prompt": {
-            "de": "Quadrat, Raute, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "square, diamond, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "■ ◆ ● | ■ ? ●",
           "answers": [
@@ -32652,8 +32652,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-42",
           "prompt": {
-            "de": "Nach Quadrat und Raute folgt Kreis. Ergänze das Ende.",
-            "en": "A square and a diamond are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "■ ◆ ● ■ ◆ ?",
           "answers": [
@@ -32683,8 +32683,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-43",
           "prompt": {
-            "de": "Zweimal Quadrat, dann Stern: Setze das Muster fort.",
-            "en": "Two square shapes, then a star: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "■ ■ ★ ■ ■ ★ ?",
           "answers": [
@@ -32714,8 +32714,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-44",
           "prompt": {
-            "de": "Quadrat, Stern, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "square, star, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "■ ★ ● | ■ ? ●",
           "answers": [
@@ -32745,8 +32745,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-45",
           "prompt": {
-            "de": "Nach Quadrat und Stern folgt Kreis. Ergänze das Ende.",
-            "en": "A square and a star are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "■ ★ ● ■ ★ ?",
           "answers": [
@@ -32776,8 +32776,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-46",
           "prompt": {
-            "de": "Zweimal Rechteck, dann Kreis: Setze das Muster fort.",
-            "en": "Two rectangle shapes, then a circle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "▬ ▬ ● ▬ ▬ ● ?",
           "answers": [
@@ -32807,8 +32807,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-47",
           "prompt": {
-            "de": "Rechteck, Kreis, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "rectangle, circle, triangle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "▬ ● ▲ | ▬ ? ▲",
           "answers": [
@@ -32838,8 +32838,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-48",
           "prompt": {
-            "de": "Nach Rechteck und Kreis folgt Dreieck. Ergänze das Ende.",
-            "en": "A rectangle and a circle are followed by a triangle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "▬ ● ▲ ▬ ● ?",
           "answers": [
@@ -32869,8 +32869,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-49",
           "prompt": {
-            "de": "Zweimal Rechteck, dann Dreieck: Setze das Muster fort.",
-            "en": "Two rectangle shapes, then a triangle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "▬ ▬ ▲ ▬ ▬ ▲ ?",
           "answers": [
@@ -32900,8 +32900,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-50",
           "prompt": {
-            "de": "Rechteck, Dreieck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "rectangle, triangle, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "▬ ▲ ● | ▬ ? ●",
           "answers": [
@@ -32931,8 +32931,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-51",
           "prompt": {
-            "de": "Nach Rechteck und Dreieck folgt Kreis. Ergänze das Ende.",
-            "en": "A rectangle and a triangle are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "▬ ▲ ● ▬ ▲ ?",
           "answers": [
@@ -32962,8 +32962,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-52",
           "prompt": {
-            "de": "Zweimal Rechteck, dann Quadrat: Setze das Muster fort.",
-            "en": "Two rectangle shapes, then a square: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "▬ ▬ ■ ▬ ▬ ■ ?",
           "answers": [
@@ -32993,8 +32993,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-53",
           "prompt": {
-            "de": "Rechteck, Quadrat, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "rectangle, square, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "▬ ■ ● | ▬ ? ●",
           "answers": [
@@ -33024,8 +33024,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-54",
           "prompt": {
-            "de": "Nach Rechteck und Quadrat folgt Kreis. Ergänze das Ende.",
-            "en": "A rectangle and a square are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "▬ ■ ● ▬ ■ ?",
           "answers": [
@@ -33055,8 +33055,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-55",
           "prompt": {
-            "de": "Zweimal Rechteck, dann Raute: Setze das Muster fort.",
-            "en": "Two rectangle shapes, then a diamond: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "▬ ▬ ◆ ▬ ▬ ◆ ?",
           "answers": [
@@ -33086,8 +33086,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-56",
           "prompt": {
-            "de": "Rechteck, Raute, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "rectangle, diamond, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "▬ ◆ ● | ▬ ? ●",
           "answers": [
@@ -33117,8 +33117,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-57",
           "prompt": {
-            "de": "Nach Rechteck und Raute folgt Kreis. Ergänze das Ende.",
-            "en": "A rectangle and a diamond are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "▬ ◆ ● ▬ ◆ ?",
           "answers": [
@@ -33148,8 +33148,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-58",
           "prompt": {
-            "de": "Zweimal Rechteck, dann Stern: Setze das Muster fort.",
-            "en": "Two rectangle shapes, then a star: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "▬ ▬ ★ ▬ ▬ ★ ?",
           "answers": [
@@ -33179,8 +33179,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-59",
           "prompt": {
-            "de": "Rechteck, Stern, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "rectangle, star, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "▬ ★ ● | ▬ ? ●",
           "answers": [
@@ -33210,8 +33210,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-60",
           "prompt": {
-            "de": "Nach Rechteck und Stern folgt Kreis. Ergänze das Ende.",
-            "en": "A rectangle and a star are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "▬ ★ ● ▬ ★ ?",
           "answers": [
@@ -33241,8 +33241,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-61",
           "prompt": {
-            "de": "Zweimal Raute, dann Kreis: Setze das Muster fort.",
-            "en": "Two diamond shapes, then a circle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "◆ ◆ ● ◆ ◆ ● ?",
           "answers": [
@@ -33272,8 +33272,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-62",
           "prompt": {
-            "de": "Raute, Kreis, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "diamond, circle, triangle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "◆ ● ▲ | ◆ ? ▲",
           "answers": [
@@ -33303,8 +33303,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-63",
           "prompt": {
-            "de": "Nach Raute und Kreis folgt Dreieck. Ergänze das Ende.",
-            "en": "A diamond and a circle are followed by a triangle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "◆ ● ▲ ◆ ● ?",
           "answers": [
@@ -33334,8 +33334,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-64",
           "prompt": {
-            "de": "Zweimal Raute, dann Dreieck: Setze das Muster fort.",
-            "en": "Two diamond shapes, then a triangle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "◆ ◆ ▲ ◆ ◆ ▲ ?",
           "answers": [
@@ -33365,8 +33365,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-65",
           "prompt": {
-            "de": "Raute, Dreieck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "diamond, triangle, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "◆ ▲ ● | ◆ ? ●",
           "answers": [
@@ -33396,8 +33396,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-66",
           "prompt": {
-            "de": "Nach Raute und Dreieck folgt Kreis. Ergänze das Ende.",
-            "en": "A diamond and a triangle are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "◆ ▲ ● ◆ ▲ ?",
           "answers": [
@@ -33427,8 +33427,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-67",
           "prompt": {
-            "de": "Zweimal Raute, dann Quadrat: Setze das Muster fort.",
-            "en": "Two diamond shapes, then a square: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "◆ ◆ ■ ◆ ◆ ■ ?",
           "answers": [
@@ -33458,8 +33458,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-68",
           "prompt": {
-            "de": "Raute, Quadrat, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "diamond, square, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "◆ ■ ● | ◆ ? ●",
           "answers": [
@@ -33489,8 +33489,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-69",
           "prompt": {
-            "de": "Nach Raute und Quadrat folgt Kreis. Ergänze das Ende.",
-            "en": "A diamond and a square are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "◆ ■ ● ◆ ■ ?",
           "answers": [
@@ -33520,8 +33520,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-70",
           "prompt": {
-            "de": "Zweimal Raute, dann Rechteck: Setze das Muster fort.",
-            "en": "Two diamond shapes, then a rectangle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "◆ ◆ ▬ ◆ ◆ ▬ ?",
           "answers": [
@@ -33551,8 +33551,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-71",
           "prompt": {
-            "de": "Raute, Rechteck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "diamond, rectangle, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "◆ ▬ ● | ◆ ? ●",
           "answers": [
@@ -33582,8 +33582,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-72",
           "prompt": {
-            "de": "Nach Raute und Rechteck folgt Kreis. Ergänze das Ende.",
-            "en": "A diamond and a rectangle are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "◆ ▬ ● ◆ ▬ ?",
           "answers": [
@@ -33613,8 +33613,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-73",
           "prompt": {
-            "de": "Zweimal Raute, dann Stern: Setze das Muster fort.",
-            "en": "Two diamond shapes, then a star: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "◆ ◆ ★ ◆ ◆ ★ ?",
           "answers": [
@@ -33644,8 +33644,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-74",
           "prompt": {
-            "de": "Raute, Stern, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "diamond, star, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "◆ ★ ● | ◆ ? ●",
           "answers": [
@@ -33675,8 +33675,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-75",
           "prompt": {
-            "de": "Nach Raute und Stern folgt Kreis. Ergänze das Ende.",
-            "en": "A diamond and a star are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "◆ ★ ● ◆ ★ ?",
           "answers": [
@@ -33706,8 +33706,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-76",
           "prompt": {
-            "de": "Zweimal Stern, dann Kreis: Setze das Muster fort.",
-            "en": "Two star shapes, then a circle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "★ ★ ● ★ ★ ● ?",
           "answers": [
@@ -33737,8 +33737,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-77",
           "prompt": {
-            "de": "Stern, Kreis, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "star, circle, triangle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "★ ● ▲ | ★ ? ▲",
           "answers": [
@@ -33768,8 +33768,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-78",
           "prompt": {
-            "de": "Nach Stern und Kreis folgt Dreieck. Ergänze das Ende.",
-            "en": "A star and a circle are followed by a triangle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "★ ● ▲ ★ ● ?",
           "answers": [
@@ -33799,8 +33799,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-79",
           "prompt": {
-            "de": "Zweimal Stern, dann Dreieck: Setze das Muster fort.",
-            "en": "Two star shapes, then a triangle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "★ ★ ▲ ★ ★ ▲ ?",
           "answers": [
@@ -33830,8 +33830,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-80",
           "prompt": {
-            "de": "Stern, Dreieck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "star, triangle, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "★ ▲ ● | ★ ? ●",
           "answers": [
@@ -33861,8 +33861,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-81",
           "prompt": {
-            "de": "Nach Stern und Dreieck folgt Kreis. Ergänze das Ende.",
-            "en": "A star and a triangle are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "★ ▲ ● ★ ▲ ?",
           "answers": [
@@ -33892,8 +33892,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-82",
           "prompt": {
-            "de": "Zweimal Stern, dann Quadrat: Setze das Muster fort.",
-            "en": "Two star shapes, then a square: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "★ ★ ■ ★ ★ ■ ?",
           "answers": [
@@ -33923,8 +33923,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-83",
           "prompt": {
-            "de": "Stern, Quadrat, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "star, square, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "★ ■ ● | ★ ? ●",
           "answers": [
@@ -33954,8 +33954,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-84",
           "prompt": {
-            "de": "Nach Stern und Quadrat folgt Kreis. Ergänze das Ende.",
-            "en": "A star and a square are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "★ ■ ● ★ ■ ?",
           "answers": [
@@ -33985,8 +33985,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-85",
           "prompt": {
-            "de": "Zweimal Stern, dann Rechteck: Setze das Muster fort.",
-            "en": "Two star shapes, then a rectangle: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "★ ★ ▬ ★ ★ ▬ ?",
           "answers": [
@@ -34016,8 +34016,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-86",
           "prompt": {
-            "de": "Stern, Rechteck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "star, rectangle, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "★ ▬ ● | ★ ? ●",
           "answers": [
@@ -34047,8 +34047,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-87",
           "prompt": {
-            "de": "Nach Stern und Rechteck folgt Kreis. Ergänze das Ende.",
-            "en": "A star and a rectangle are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "★ ▬ ● ★ ▬ ?",
           "answers": [
@@ -34078,8 +34078,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-88",
           "prompt": {
-            "de": "Zweimal Stern, dann Raute: Setze das Muster fort.",
-            "en": "Two star shapes, then a diamond: continue the pattern."
+            "de": "Setze das Muster fort. Welche Form fehlt am Ende?",
+            "en": "Continue the pattern. Which shape is missing at the end?"
           },
           "visual": "★ ★ ◆ ★ ★ ◆ ?",
           "answers": [
@@ -34109,8 +34109,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-89",
           "prompt": {
-            "de": "Stern, Raute, Kreis: Welche Form fehlt in der zweiten Gruppe?",
-            "en": "star, diamond, circle: which shape is missing from the second group?"
+            "de": "Welche Form fehlt in der zweiten Gruppe?",
+            "en": "Which shape is missing from the second group?"
           },
           "visual": "★ ◆ ● | ★ ? ●",
           "answers": [
@@ -34140,8 +34140,8 @@ export const categories: LearningCategory[] = [
         {
           "id": "shapes-adventurer-90",
           "prompt": {
-            "de": "Nach Stern und Raute folgt Kreis. Ergänze das Ende.",
-            "en": "A star and a diamond are followed by a circle. Complete the ending."
+            "de": "Welche Form vervollständigt das Muster?",
+            "en": "Which shape completes the pattern?"
           },
           "visual": "★ ◆ ● ★ ◆ ?",
           "answers": [
@@ -34166,6 +34166,14212 @@ export const categories: LearningCategory[] = [
           "hint": {
             "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
             "en": "The three shapes always appear in the same order."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "nature",
+    "title": {
+      "de": "Natur & Wetter",
+      "en": "Nature & Weather"
+    },
+    "subtitle": {
+      "de": "Wetter, Pflanzen und die Umwelt erkunden",
+      "en": "Explore weather, plants, and the world around us"
+    },
+    "icon": "🌦️",
+    "color": "#29855D",
+    "lightColor": "#E4F4E5",
+    "questionsByAge": {
+      "discoverer": [
+        {
+          "id": "nature-discoverer-1",
+          "prompt": {
+            "de": "Finde dieses Bild: Sonne.",
+            "en": "Find this picture: sun."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sun",
+              "label": "☀️"
+            },
+            {
+              "id": "summer",
+              "label": "🏖️"
+            }
+          ],
+          "correctAnswerId": "sun",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Sonne.",
+            "en": "Yes! This is the picture for: sun."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "sun"
+        },
+        {
+          "id": "nature-discoverer-2",
+          "prompt": {
+            "de": "Was ist gemeint? Sie wärmt die Erde und macht den Tag hell.",
+            "en": "What is it? It warms Earth and makes the day bright."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "palm",
+              "label": "🌴"
+            },
+            {
+              "id": "sun",
+              "label": "☀️"
+            }
+          ],
+          "correctAnswerId": "sun",
+          "success": {
+            "de": "Gut zugehört! Sonne passt.",
+            "en": "Good listening! sun fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "sun"
+        },
+        {
+          "id": "nature-discoverer-3",
+          "prompt": {
+            "de": "Was schützt deine Augen bei hellem Sonnenschein?",
+            "en": "What protects your eyes in bright sunshine?"
+          },
+          "visual": "☀️",
+          "answers": [
+            {
+              "id": "related",
+              "label": "🕶️"
+            },
+            {
+              "id": "unrelated",
+              "label": "🧤"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Sonnenbrille.",
+            "en": "Correct: sunglasses."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "sun"
+        },
+        {
+          "id": "nature-discoverer-4",
+          "prompt": {
+            "de": "Finde dieses Bild: Regen.",
+            "en": "Find this picture: rain."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "autumn",
+              "label": "🍂"
+            },
+            {
+              "id": "rain",
+              "label": "🌧️"
+            }
+          ],
+          "correctAnswerId": "rain",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Regen.",
+            "en": "Yes! This is the picture for: rain."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "rain"
+        },
+        {
+          "id": "nature-discoverer-5",
+          "prompt": {
+            "de": "Was ist gemeint? Viele Wassertropfen fallen aus einer Wolke.",
+            "en": "What is it? Many drops of water fall from a cloud."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "rain",
+              "label": "🌧️"
+            },
+            {
+              "id": "leaf",
+              "label": "🍃"
+            }
+          ],
+          "correctAnswerId": "rain",
+          "success": {
+            "de": "Gut zugehört! Regen passt.",
+            "en": "Good listening! rain fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "rain"
+        },
+        {
+          "id": "nature-discoverer-6",
+          "prompt": {
+            "de": "Was hält Regen von deinem Kopf fern?",
+            "en": "What keeps rain off your head?"
+          },
+          "visual": "🌧️",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🪮"
+            },
+            {
+              "id": "related",
+              "label": "☂️"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Regenschirm.",
+            "en": "Correct: umbrella."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "rain"
+        },
+        {
+          "id": "nature-discoverer-7",
+          "prompt": {
+            "de": "Finde dieses Bild: Schnee.",
+            "en": "Find this picture: snow."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "snow",
+              "label": "❄️"
+            },
+            {
+              "id": "winter",
+              "label": "☃️"
+            }
+          ],
+          "correctAnswerId": "snow",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Schnee.",
+            "en": "Yes! This is the picture for: snow."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "snow"
+        },
+        {
+          "id": "nature-discoverer-8",
+          "prompt": {
+            "de": "Was ist gemeint? Die Flocken sind kalt und können auf dem Boden liegen bleiben.",
+            "en": "What is it? The flakes are cold and can settle on the ground."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "seed",
+              "label": "🫘"
+            },
+            {
+              "id": "snow",
+              "label": "❄️"
+            }
+          ],
+          "correctAnswerId": "snow",
+          "success": {
+            "de": "Gut zugehört! Schnee passt.",
+            "en": "Good listening! snow fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "snow"
+        },
+        {
+          "id": "nature-discoverer-9",
+          "prompt": {
+            "de": "Was kannst du aus Schnee bauen?",
+            "en": "What can you build out of snow?"
+          },
+          "visual": "❄️",
+          "answers": [
+            {
+              "id": "related",
+              "label": "☃️"
+            },
+            {
+              "id": "unrelated",
+              "label": "🪁"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Schneemann.",
+            "en": "Correct: snowman."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "snow"
+        },
+        {
+          "id": "nature-discoverer-10",
+          "prompt": {
+            "de": "Finde dieses Bild: Wind.",
+            "en": "Find this picture: wind."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "tree",
+              "label": "🌳"
+            },
+            {
+              "id": "wind",
+              "label": "💨"
+            }
+          ],
+          "correctAnswerId": "wind",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Wind.",
+            "en": "Yes! This is the picture for: wind."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "wind"
+        },
+        {
+          "id": "nature-discoverer-11",
+          "prompt": {
+            "de": "Was ist gemeint? Du kannst ihn fühlen. Er bewegt Blätter und Zweige.",
+            "en": "What is it? You can feel it. It moves leaves and branches."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "wind",
+              "label": "💨"
+            },
+            {
+              "id": "mountain",
+              "label": "⛰️"
+            }
+          ],
+          "correctAnswerId": "wind",
+          "success": {
+            "de": "Gut zugehört! Wind passt.",
+            "en": "Good listening! wind fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "wind"
+        },
+        {
+          "id": "nature-discoverer-12",
+          "prompt": {
+            "de": "Was kann der Wind am Himmel tragen?",
+            "en": "What can the wind lift into the sky?"
+          },
+          "visual": "💨",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🪨"
+            },
+            {
+              "id": "related",
+              "label": "🪁"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Drachen.",
+            "en": "Correct: kite."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "wind"
+        },
+        {
+          "id": "nature-discoverer-13",
+          "prompt": {
+            "de": "Finde dieses Bild: Regenbogen.",
+            "en": "Find this picture: rainbow."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "rainbow",
+              "label": "🌈"
+            },
+            {
+              "id": "flower",
+              "label": "🌸"
+            }
+          ],
+          "correctAnswerId": "rainbow",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Regenbogen.",
+            "en": "Yes! This is the picture for: rainbow."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "rainbow"
+        },
+        {
+          "id": "nature-discoverer-14",
+          "prompt": {
+            "de": "Was ist gemeint? Ein bunter Bogen erscheint manchmal, wenn Sonne auf Regentropfen scheint.",
+            "en": "What is it? A colorful arc sometimes appears when sunlight shines on raindrops."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sea",
+              "label": "🌊"
+            },
+            {
+              "id": "rainbow",
+              "label": "🌈"
+            }
+          ],
+          "correctAnswerId": "rainbow",
+          "success": {
+            "de": "Gut zugehört! Regenbogen passt.",
+            "en": "Good listening! rainbow fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "rainbow"
+        },
+        {
+          "id": "nature-discoverer-15",
+          "prompt": {
+            "de": "Was braucht ein Regenbogen außer Regentropfen?",
+            "en": "What does a rainbow need besides raindrops?"
+          },
+          "visual": "🌈",
+          "answers": [
+            {
+              "id": "related",
+              "label": "☀️"
+            },
+            {
+              "id": "unrelated",
+              "label": "🔦"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Sonnenlicht.",
+            "en": "Correct: sunlight."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "rainbow"
+        },
+        {
+          "id": "nature-discoverer-16",
+          "prompt": {
+            "de": "Finde dieses Bild: Wolke.",
+            "en": "Find this picture: cloud."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "seedling",
+              "label": "🌱"
+            },
+            {
+              "id": "cloud",
+              "label": "☁️"
+            }
+          ],
+          "correctAnswerId": "cloud",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Wolke.",
+            "en": "Yes! This is the picture for: cloud."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "cloud"
+        },
+        {
+          "id": "nature-discoverer-17",
+          "prompt": {
+            "de": "Was ist gemeint? Viele winzige Wassertröpfchen oder Eiskristalle schweben zusammen am Himmel.",
+            "en": "What is it? Tiny water droplets or ice crystals float together in the sky."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "cloud",
+              "label": "☁️"
+            },
+            {
+              "id": "forest",
+              "label": "🌳🌲"
+            }
+          ],
+          "correctAnswerId": "cloud",
+          "success": {
+            "de": "Gut zugehört! Wolke passt.",
+            "en": "Good listening! cloud fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "cloud"
+        },
+        {
+          "id": "nature-discoverer-18",
+          "prompt": {
+            "de": "Was kann aus einer dunklen Wolke fallen?",
+            "en": "What can fall from a dark cloud?"
+          },
+          "visual": "☁️",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🍎"
+            },
+            {
+              "id": "related",
+              "label": "💧"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Regentropfen.",
+            "en": "Correct: raindrops."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "cloud"
+        },
+        {
+          "id": "nature-discoverer-19",
+          "prompt": {
+            "de": "Finde dieses Bild: Frühling.",
+            "en": "Find this picture: spring."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "spring",
+              "label": "🌷"
+            },
+            {
+              "id": "cactus",
+              "label": "🌵"
+            }
+          ],
+          "correctAnswerId": "spring",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Frühling.",
+            "en": "Yes! This is the picture for: spring."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "spring"
+        },
+        {
+          "id": "nature-discoverer-20",
+          "prompt": {
+            "de": "Was ist gemeint? Nach dem Winter wird es wärmer und viele Blumen beginnen zu blühen.",
+            "en": "What is it? After winter it gets warmer and many flowers begin to bloom."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "desert",
+              "label": "🏜️"
+            },
+            {
+              "id": "spring",
+              "label": "🌷"
+            }
+          ],
+          "correctAnswerId": "spring",
+          "success": {
+            "de": "Gut zugehört! Frühling passt.",
+            "en": "Good listening! spring fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "spring"
+        },
+        {
+          "id": "nature-discoverer-21",
+          "prompt": {
+            "de": "Welche Blume blüht bei uns oft im Frühling?",
+            "en": "Which flower often blooms here in spring?"
+          },
+          "visual": "🌷",
+          "answers": [
+            {
+              "id": "related",
+              "label": "🌷"
+            },
+            {
+              "id": "unrelated",
+              "label": "🌻"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Tulpe.",
+            "en": "Correct: tulip."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "spring"
+        },
+        {
+          "id": "nature-discoverer-22",
+          "prompt": {
+            "de": "Finde dieses Bild: Sommer.",
+            "en": "Find this picture: summer."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sunflower",
+              "label": "🌻"
+            },
+            {
+              "id": "summer",
+              "label": "🏖️"
+            }
+          ],
+          "correctAnswerId": "summer",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Sommer.",
+            "en": "Yes! This is the picture for: summer."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "summer"
+        },
+        {
+          "id": "nature-discoverer-23",
+          "prompt": {
+            "de": "Was ist gemeint? Zwischen Frühling und Herbst sind die Tage bei uns besonders lang.",
+            "en": "What is it? Between spring and fall, our days are especially long."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "summer",
+              "label": "🏖️"
+            },
+            {
+              "id": "island",
+              "label": "🏝️"
+            }
+          ],
+          "correctAnswerId": "summer",
+          "success": {
+            "de": "Gut zugehört! Sommer passt.",
+            "en": "Good listening! summer fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "summer"
+        },
+        {
+          "id": "nature-discoverer-24",
+          "prompt": {
+            "de": "Was schützt deinen Kopf an einem heißen Sommertag?",
+            "en": "What protects your head on a hot summer day?"
+          },
+          "visual": "🏖️",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🧦"
+            },
+            {
+              "id": "related",
+              "label": "👒"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Sonnenhut.",
+            "en": "Correct: sun hat."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "summer"
+        },
+        {
+          "id": "nature-discoverer-25",
+          "prompt": {
+            "de": "Finde dieses Bild: Herbst.",
+            "en": "Find this picture: fall."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "autumn",
+              "label": "🍂"
+            },
+            {
+              "id": "tulip",
+              "label": "🌷"
+            }
+          ],
+          "correctAnswerId": "autumn",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Herbst.",
+            "en": "Yes! This is the picture for: fall."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "autumn"
+        },
+        {
+          "id": "nature-discoverer-26",
+          "prompt": {
+            "de": "Was ist gemeint? Nach dem Sommer werden viele Blätter bunt und fallen von den Bäumen.",
+            "en": "What is it? After summer, many leaves change color and fall from trees."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "moon",
+              "label": "🌙"
+            },
+            {
+              "id": "autumn",
+              "label": "🍂"
+            }
+          ],
+          "correctAnswerId": "autumn",
+          "success": {
+            "de": "Gut zugehört! Herbst passt.",
+            "en": "Good listening! fall fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "autumn"
+        },
+        {
+          "id": "nature-discoverer-27",
+          "prompt": {
+            "de": "Was liegt im Herbst oft unter einem Laubbaum?",
+            "en": "What often lies under a leafy tree in fall?"
+          },
+          "visual": "🍂",
+          "answers": [
+            {
+              "id": "related",
+              "label": "🍂"
+            },
+            {
+              "id": "unrelated",
+              "label": "🐚"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Laub.",
+            "en": "Correct: fallen leaves."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "autumn"
+        },
+        {
+          "id": "nature-discoverer-28",
+          "prompt": {
+            "de": "Finde dieses Bild: Winter.",
+            "en": "Find this picture: winter."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "evergreen",
+              "label": "🌲"
+            },
+            {
+              "id": "winter",
+              "label": "☃️"
+            }
+          ],
+          "correctAnswerId": "winter",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Winter.",
+            "en": "Yes! This is the picture for: winter."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "winter"
+        },
+        {
+          "id": "nature-discoverer-29",
+          "prompt": {
+            "de": "Was ist gemeint? Nach dem Herbst sind die Tage kurz. Draußen kann es sehr kalt werden.",
+            "en": "What is it? After fall, the days are short. It can get very cold outside."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "winter",
+              "label": "☃️"
+            },
+            {
+              "id": "star",
+              "label": "⭐"
+            }
+          ],
+          "correctAnswerId": "winter",
+          "success": {
+            "de": "Gut zugehört! Winter passt.",
+            "en": "Good listening! winter fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "winter"
+        },
+        {
+          "id": "nature-discoverer-30",
+          "prompt": {
+            "de": "Was hält deine Hände im Winter warm?",
+            "en": "What keeps your hands warm in winter?"
+          },
+          "visual": "☃️",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🕶️"
+            },
+            {
+              "id": "related",
+              "label": "🧤"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Handschuhe.",
+            "en": "Correct: gloves."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "winter"
+        },
+        {
+          "id": "nature-discoverer-31",
+          "prompt": {
+            "de": "Finde dieses Bild: Baum.",
+            "en": "Find this picture: tree."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "tree",
+              "label": "🌳"
+            },
+            {
+              "id": "palm",
+              "label": "🌴"
+            }
+          ],
+          "correctAnswerId": "tree",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Baum.",
+            "en": "Yes! This is the picture for: tree."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "tree"
+        },
+        {
+          "id": "nature-discoverer-32",
+          "prompt": {
+            "de": "Was ist gemeint? Er hat einen festen Stamm und viele Äste.",
+            "en": "What is it? It has a sturdy trunk and many branches."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "stone",
+              "label": "🪨"
+            },
+            {
+              "id": "tree",
+              "label": "🌳"
+            }
+          ],
+          "correctAnswerId": "tree",
+          "success": {
+            "de": "Gut zugehört! Baum passt.",
+            "en": "Good listening! tree fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "tree"
+        },
+        {
+          "id": "nature-discoverer-33",
+          "prompt": {
+            "de": "Was wächst an den Zweigen eines Laubbaums?",
+            "en": "What grows on the twigs of a leafy tree?"
+          },
+          "visual": "🌳",
+          "answers": [
+            {
+              "id": "related",
+              "label": "🍃"
+            },
+            {
+              "id": "unrelated",
+              "label": "🐚"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Blätter.",
+            "en": "Correct: leaves."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "tree"
+        },
+        {
+          "id": "nature-discoverer-34",
+          "prompt": {
+            "de": "Finde dieses Bild: Blume.",
+            "en": "Find this picture: flower."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "leaf",
+              "label": "🍃"
+            },
+            {
+              "id": "flower",
+              "label": "🌸"
+            }
+          ],
+          "correctAnswerId": "flower",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Blume.",
+            "en": "Yes! This is the picture for: flower."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "flower"
+        },
+        {
+          "id": "nature-discoverer-35",
+          "prompt": {
+            "de": "Was ist gemeint? Ihre bunten Blüten locken oft Bienen an.",
+            "en": "What is it? Its colorful blossoms often attract bees."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "flower",
+              "label": "🌸"
+            },
+            {
+              "id": "wood",
+              "label": "🪵"
+            }
+          ],
+          "correctAnswerId": "flower",
+          "success": {
+            "de": "Gut zugehört! Blume passt.",
+            "en": "Good listening! flower fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "flower"
+        },
+        {
+          "id": "nature-discoverer-36",
+          "prompt": {
+            "de": "Was besucht Blüten, um Nektar zu sammeln?",
+            "en": "What visits blossoms to collect nectar?"
+          },
+          "visual": "🌸",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🐟"
+            },
+            {
+              "id": "related",
+              "label": "🐝"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Biene.",
+            "en": "Correct: bee."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "flower"
+        },
+        {
+          "id": "nature-discoverer-37",
+          "prompt": {
+            "de": "Finde dieses Bild: Keimling.",
+            "en": "Find this picture: seedling."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "seedling",
+              "label": "🌱"
+            },
+            {
+              "id": "seed",
+              "label": "🫘"
+            }
+          ],
+          "correctAnswerId": "seedling",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Keimling.",
+            "en": "Yes! This is the picture for: seedling."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "seedling"
+        },
+        {
+          "id": "nature-discoverer-38",
+          "prompt": {
+            "de": "Was ist gemeint? Aus einem Samen wächst eine kleine neue Pflanze.",
+            "en": "What is it? A small new plant grows from a seed."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "mushroom",
+              "label": "🍄"
+            },
+            {
+              "id": "seedling",
+              "label": "🌱"
+            }
+          ],
+          "correctAnswerId": "seedling",
+          "success": {
+            "de": "Gut zugehört! Keimling passt.",
+            "en": "Good listening! seedling fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "seedling"
+        },
+        {
+          "id": "nature-discoverer-39",
+          "prompt": {
+            "de": "Was braucht ein Keimling zum Wachsen außer Licht?",
+            "en": "What does a seedling need to grow besides light?"
+          },
+          "visual": "🌱",
+          "answers": [
+            {
+              "id": "related",
+              "label": "💧"
+            },
+            {
+              "id": "unrelated",
+              "label": "🧼"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Wasser.",
+            "en": "Correct: water."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "seedling"
+        },
+        {
+          "id": "nature-discoverer-40",
+          "prompt": {
+            "de": "Finde dieses Bild: Kaktus.",
+            "en": "Find this picture: cactus."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "mountain",
+              "label": "⛰️"
+            },
+            {
+              "id": "cactus",
+              "label": "🌵"
+            }
+          ],
+          "correctAnswerId": "cactus",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Kaktus.",
+            "en": "Yes! This is the picture for: cactus."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "cactus"
+        },
+        {
+          "id": "nature-discoverer-41",
+          "prompt": {
+            "de": "Was ist gemeint? Diese Pflanze speichert Wasser und hat oft Stacheln.",
+            "en": "What is it? This plant stores water and often has spines."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "cactus",
+              "label": "🌵"
+            },
+            {
+              "id": "sun",
+              "label": "☀️"
+            }
+          ],
+          "correctAnswerId": "cactus",
+          "success": {
+            "de": "Gut zugehört! Kaktus passt.",
+            "en": "Good listening! cactus fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "cactus"
+        },
+        {
+          "id": "nature-discoverer-42",
+          "prompt": {
+            "de": "Wo können viele Kakteen gut wachsen?",
+            "en": "Where can many cacti grow well?"
+          },
+          "visual": "🌵",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🌊"
+            },
+            {
+              "id": "related",
+              "label": "🏜️"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: In der Wüste.",
+            "en": "Correct: in the desert."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "cactus"
+        },
+        {
+          "id": "nature-discoverer-43",
+          "prompt": {
+            "de": "Finde dieses Bild: Sonnenblume.",
+            "en": "Find this picture: sunflower."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sunflower",
+              "label": "🌻"
+            },
+            {
+              "id": "sea",
+              "label": "🌊"
+            }
+          ],
+          "correctAnswerId": "sunflower",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Sonnenblume.",
+            "en": "Yes! This is the picture for: sunflower."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "sunflower"
+        },
+        {
+          "id": "nature-discoverer-44",
+          "prompt": {
+            "de": "Was ist gemeint? Diese große Blume hat meist gelbe Blütenblätter und eine dunkle Mitte.",
+            "en": "What is it? This tall flower usually has yellow petals and a dark center."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "rain",
+              "label": "🌧️"
+            },
+            {
+              "id": "sunflower",
+              "label": "🌻"
+            }
+          ],
+          "correctAnswerId": "sunflower",
+          "success": {
+            "de": "Gut zugehört! Sonnenblume passt.",
+            "en": "Good listening! sunflower fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "sunflower"
+        },
+        {
+          "id": "nature-discoverer-45",
+          "prompt": {
+            "de": "Wo findest du die Kerne einer Sonnenblume?",
+            "en": "Where do you find sunflower seeds?"
+          },
+          "visual": "🌻",
+          "answers": [
+            {
+              "id": "related",
+              "label": "🌻"
+            },
+            {
+              "id": "unrelated",
+              "label": "☁️"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Im Blütenkopf.",
+            "en": "Correct: in the flower head."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "sunflower"
+        },
+        {
+          "id": "nature-discoverer-46",
+          "prompt": {
+            "de": "Finde dieses Bild: Tulpe.",
+            "en": "Find this picture: tulip."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "forest",
+              "label": "🌳🌲"
+            },
+            {
+              "id": "tulip",
+              "label": "🌷"
+            }
+          ],
+          "correctAnswerId": "tulip",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Tulpe.",
+            "en": "Yes! This is the picture for: tulip."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "tulip"
+        },
+        {
+          "id": "nature-discoverer-47",
+          "prompt": {
+            "de": "Was ist gemeint? Diese Frühlingsblume wächst aus einer Zwiebel und hat eine kelchförmige Blüte.",
+            "en": "What is it? This spring flower grows from a bulb and has a cup-shaped bloom."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "tulip",
+              "label": "🌷"
+            },
+            {
+              "id": "snow",
+              "label": "❄️"
+            }
+          ],
+          "correctAnswerId": "tulip",
+          "success": {
+            "de": "Gut zugehört! Tulpe passt.",
+            "en": "Good listening! tulip fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "tulip"
+        },
+        {
+          "id": "nature-discoverer-48",
+          "prompt": {
+            "de": "Welche Jahreszeit passt zur Tulpenblüte bei uns?",
+            "en": "Which season matches tulip blooms here?"
+          },
+          "visual": "🌷",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "☃️"
+            },
+            {
+              "id": "related",
+              "label": "🌷"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Frühling.",
+            "en": "Correct: spring."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "tulip"
+        },
+        {
+          "id": "nature-discoverer-49",
+          "prompt": {
+            "de": "Finde dieses Bild: Nadelbaum.",
+            "en": "Find this picture: evergreen tree."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "evergreen",
+              "label": "🌲"
+            },
+            {
+              "id": "desert",
+              "label": "🏜️"
+            }
+          ],
+          "correctAnswerId": "evergreen",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Nadelbaum.",
+            "en": "Yes! This is the picture for: evergreen tree."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "evergreen"
+        },
+        {
+          "id": "nature-discoverer-50",
+          "prompt": {
+            "de": "Was ist gemeint? Seine Blätter sind schmale Nadeln. Viele bleiben im Winter grün.",
+            "en": "What is it? Its leaves are narrow needles. Many stay green in winter."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "wind",
+              "label": "💨"
+            },
+            {
+              "id": "evergreen",
+              "label": "🌲"
+            }
+          ],
+          "correctAnswerId": "evergreen",
+          "success": {
+            "de": "Gut zugehört! Nadelbaum passt.",
+            "en": "Good listening! evergreen tree fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "evergreen"
+        },
+        {
+          "id": "nature-discoverer-51",
+          "prompt": {
+            "de": "Was findest du an einer Kiefer?",
+            "en": "What can you find on a pine tree?"
+          },
+          "visual": "🌲",
+          "answers": [
+            {
+              "id": "related",
+              "label": "🌲"
+            },
+            {
+              "id": "unrelated",
+              "label": "🌸"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Nadeln.",
+            "en": "Correct: needles."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "evergreen"
+        },
+        {
+          "id": "nature-discoverer-52",
+          "prompt": {
+            "de": "Finde dieses Bild: Palme.",
+            "en": "Find this picture: palm tree."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "island",
+              "label": "🏝️"
+            },
+            {
+              "id": "palm",
+              "label": "🌴"
+            }
+          ],
+          "correctAnswerId": "palm",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Palme.",
+            "en": "Yes! This is the picture for: palm tree."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "palm"
+        },
+        {
+          "id": "nature-discoverer-53",
+          "prompt": {
+            "de": "Was ist gemeint? Oben an ihrem Stamm wachsen lange große Blätter wie ein Schopf.",
+            "en": "What is it? Long, large leaves grow like a crown at the top of its trunk."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "palm",
+              "label": "🌴"
+            },
+            {
+              "id": "rainbow",
+              "label": "🌈"
+            }
+          ],
+          "correctAnswerId": "palm",
+          "success": {
+            "de": "Gut zugehört! Palme passt.",
+            "en": "Good listening! palm tree fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "palm"
+        },
+        {
+          "id": "nature-discoverer-54",
+          "prompt": {
+            "de": "Welche Frucht kann an einer Kokospalme wachsen?",
+            "en": "Which fruit can grow on a coconut palm?"
+          },
+          "visual": "🌴",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🍓"
+            },
+            {
+              "id": "related",
+              "label": "🥥"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Kokosnuss.",
+            "en": "Correct: coconut."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "palm"
+        },
+        {
+          "id": "nature-discoverer-55",
+          "prompt": {
+            "de": "Finde dieses Bild: Blatt.",
+            "en": "Find this picture: leaf."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "leaf",
+              "label": "🍃"
+            },
+            {
+              "id": "moon",
+              "label": "🌙"
+            }
+          ],
+          "correctAnswerId": "leaf",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Blatt.",
+            "en": "Yes! This is the picture for: leaf."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "leaf"
+        },
+        {
+          "id": "nature-discoverer-56",
+          "prompt": {
+            "de": "Was ist gemeint? Dieser grüne Pflanzenteil fängt Sonnenlicht ein.",
+            "en": "What is it? This green plant part catches sunlight."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "cloud",
+              "label": "☁️"
+            },
+            {
+              "id": "leaf",
+              "label": "🍃"
+            }
+          ],
+          "correctAnswerId": "leaf",
+          "success": {
+            "de": "Gut zugehört! Blatt passt.",
+            "en": "Good listening! leaf fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "leaf"
+        },
+        {
+          "id": "nature-discoverer-57",
+          "prompt": {
+            "de": "Was braucht ein grünes Blatt, um Nahrung für die Pflanze herzustellen?",
+            "en": "What does a green leaf need to make food for the plant?"
+          },
+          "visual": "🍃",
+          "answers": [
+            {
+              "id": "related",
+              "label": "☀️"
+            },
+            {
+              "id": "unrelated",
+              "label": "🧊"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Sonnenlicht.",
+            "en": "Correct: sunlight."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "leaf"
+        },
+        {
+          "id": "nature-discoverer-58",
+          "prompt": {
+            "de": "Finde dieses Bild: Samen.",
+            "en": "Find this picture: seed."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "star",
+              "label": "⭐"
+            },
+            {
+              "id": "seed",
+              "label": "🫘"
+            }
+          ],
+          "correctAnswerId": "seed",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Samen.",
+            "en": "Yes! This is the picture for: seed."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "seed"
+        },
+        {
+          "id": "nature-discoverer-59",
+          "prompt": {
+            "de": "Was ist gemeint? In ihm steckt der Anfang einer neuen Pflanze.",
+            "en": "What is it? It holds the beginning of a new plant."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "seed",
+              "label": "🫘"
+            },
+            {
+              "id": "spring",
+              "label": "🌷"
+            }
+          ],
+          "correctAnswerId": "seed",
+          "success": {
+            "de": "Gut zugehört! Samen passt.",
+            "en": "Good listening! seed fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "seed"
+        },
+        {
+          "id": "nature-discoverer-60",
+          "prompt": {
+            "de": "Was kann aus einem Bohnensamen wachsen?",
+            "en": "What can grow from a bean seed?"
+          },
+          "visual": "🫘",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🪨"
+            },
+            {
+              "id": "related",
+              "label": "🌱"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Neue Pflanze.",
+            "en": "Correct: new plant."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "seed"
+        },
+        {
+          "id": "nature-discoverer-61",
+          "prompt": {
+            "de": "Finde dieses Bild: Berg.",
+            "en": "Find this picture: mountain."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "mountain",
+              "label": "⛰️"
+            },
+            {
+              "id": "stone",
+              "label": "🪨"
+            }
+          ],
+          "correctAnswerId": "mountain",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Berg.",
+            "en": "Yes! This is the picture for: mountain."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "mountain"
+        },
+        {
+          "id": "nature-discoverer-62",
+          "prompt": {
+            "de": "Was ist gemeint? Er ragt hoch über die Landschaft hinaus und hat einen Gipfel.",
+            "en": "What is it? It rises high above the landscape and has a peak."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "summer",
+              "label": "🏖️"
+            },
+            {
+              "id": "mountain",
+              "label": "⛰️"
+            }
+          ],
+          "correctAnswerId": "mountain",
+          "success": {
+            "de": "Gut zugehört! Berg passt.",
+            "en": "Good listening! mountain fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "mountain"
+        },
+        {
+          "id": "nature-discoverer-63",
+          "prompt": {
+            "de": "Wie nennt man die höchste Stelle eines Berges?",
+            "en": "What is the highest point of a mountain called?"
+          },
+          "visual": "⛰️",
+          "answers": [
+            {
+              "id": "related",
+              "label": "⛰️"
+            },
+            {
+              "id": "unrelated",
+              "label": "🏖️"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Gipfel.",
+            "en": "Correct: peak."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "mountain"
+        },
+        {
+          "id": "nature-discoverer-64",
+          "prompt": {
+            "de": "Finde dieses Bild: Meer.",
+            "en": "Find this picture: sea."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "wood",
+              "label": "🪵"
+            },
+            {
+              "id": "sea",
+              "label": "🌊"
+            }
+          ],
+          "correctAnswerId": "sea",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Meer.",
+            "en": "Yes! This is the picture for: sea."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "sea"
+        },
+        {
+          "id": "nature-discoverer-65",
+          "prompt": {
+            "de": "Was ist gemeint? Eine riesige Fläche aus salzigem Wasser.",
+            "en": "What is it? A huge area of salty water."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sea",
+              "label": "🌊"
+            },
+            {
+              "id": "autumn",
+              "label": "🍂"
+            }
+          ],
+          "correctAnswerId": "sea",
+          "success": {
+            "de": "Gut zugehört! Meer passt.",
+            "en": "Good listening! sea fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "sea"
+        },
+        {
+          "id": "nature-discoverer-66",
+          "prompt": {
+            "de": "Wie schmeckt Meerwasser?",
+            "en": "What does seawater taste like?"
+          },
+          "visual": "🌊",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🍯"
+            },
+            {
+              "id": "related",
+              "label": "🧂"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Salzig.",
+            "en": "Correct: salty."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "sea"
+        },
+        {
+          "id": "nature-discoverer-67",
+          "prompt": {
+            "de": "Finde dieses Bild: Wald.",
+            "en": "Find this picture: forest."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "forest",
+              "label": "🌳🌲"
+            },
+            {
+              "id": "mushroom",
+              "label": "🍄"
+            }
+          ],
+          "correctAnswerId": "forest",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Wald.",
+            "en": "Yes! This is the picture for: forest."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "forest"
+        },
+        {
+          "id": "nature-discoverer-68",
+          "prompt": {
+            "de": "Was ist gemeint? Viele Bäume wachsen hier dicht beieinander.",
+            "en": "What is it? Many trees grow close together here."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "winter",
+              "label": "☃️"
+            },
+            {
+              "id": "forest",
+              "label": "🌳🌲"
+            }
+          ],
+          "correctAnswerId": "forest",
+          "success": {
+            "de": "Gut zugehört! Wald passt.",
+            "en": "Good listening! forest fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "forest"
+        },
+        {
+          "id": "nature-discoverer-69",
+          "prompt": {
+            "de": "Was wächst in einem Wald besonders häufig?",
+            "en": "What grows especially often in a forest?"
+          },
+          "visual": "🌳🌲",
+          "answers": [
+            {
+              "id": "related",
+              "label": "🌳"
+            },
+            {
+              "id": "unrelated",
+              "label": "🌵"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Bäume.",
+            "en": "Correct: trees."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "forest"
+        },
+        {
+          "id": "nature-discoverer-70",
+          "prompt": {
+            "de": "Finde dieses Bild: Wüste.",
+            "en": "Find this picture: desert."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sun",
+              "label": "☀️"
+            },
+            {
+              "id": "desert",
+              "label": "🏜️"
+            }
+          ],
+          "correctAnswerId": "desert",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Wüste.",
+            "en": "Yes! This is the picture for: desert."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "desert"
+        },
+        {
+          "id": "nature-discoverer-71",
+          "prompt": {
+            "de": "Was ist gemeint? Hier fällt sehr wenig Regen. Manche sind sandig, andere steinig.",
+            "en": "What is it? Very little rain falls here. Some are sandy, others rocky."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "desert",
+              "label": "🏜️"
+            },
+            {
+              "id": "tree",
+              "label": "🌳"
+            }
+          ],
+          "correctAnswerId": "desert",
+          "success": {
+            "de": "Gut zugehört! Wüste passt.",
+            "en": "Good listening! desert fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "desert"
+        },
+        {
+          "id": "nature-discoverer-72",
+          "prompt": {
+            "de": "Was fehlt in einer Wüste besonders oft?",
+            "en": "What is especially scarce in a desert?"
+          },
+          "visual": "🏜️",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "☀️"
+            },
+            {
+              "id": "related",
+              "label": "💧"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Wasser.",
+            "en": "Correct: water."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "desert"
+        },
+        {
+          "id": "nature-discoverer-73",
+          "prompt": {
+            "de": "Finde dieses Bild: Insel.",
+            "en": "Find this picture: island."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "island",
+              "label": "🏝️"
+            },
+            {
+              "id": "rain",
+              "label": "🌧️"
+            }
+          ],
+          "correctAnswerId": "island",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Insel.",
+            "en": "Yes! This is the picture for: island."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "island"
+        },
+        {
+          "id": "nature-discoverer-74",
+          "prompt": {
+            "de": "Was ist gemeint? Dieses Stück Land ist auf allen Seiten von Wasser umgeben.",
+            "en": "What is it? This piece of land has water on every side."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "flower",
+              "label": "🌸"
+            },
+            {
+              "id": "island",
+              "label": "🏝️"
+            }
+          ],
+          "correctAnswerId": "island",
+          "success": {
+            "de": "Gut zugehört! Insel passt.",
+            "en": "Good listening! island fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "island"
+        },
+        {
+          "id": "nature-discoverer-75",
+          "prompt": {
+            "de": "Was umgibt eine Insel?",
+            "en": "What surrounds an island?"
+          },
+          "visual": "🏝️",
+          "answers": [
+            {
+              "id": "related",
+              "label": "🌊"
+            },
+            {
+              "id": "unrelated",
+              "label": "🛣️"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Wasser.",
+            "en": "Correct: water."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "island"
+        },
+        {
+          "id": "nature-discoverer-76",
+          "prompt": {
+            "de": "Finde dieses Bild: Mond.",
+            "en": "Find this picture: moon."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "snow",
+              "label": "❄️"
+            },
+            {
+              "id": "moon",
+              "label": "🌙"
+            }
+          ],
+          "correctAnswerId": "moon",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Mond.",
+            "en": "Yes! This is the picture for: moon."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "moon"
+        },
+        {
+          "id": "nature-discoverer-77",
+          "prompt": {
+            "de": "Was ist gemeint? Er umkreist die Erde und leuchtet mit dem Licht der Sonne.",
+            "en": "What is it? It goes around Earth and shines with light from the sun."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "moon",
+              "label": "🌙"
+            },
+            {
+              "id": "seedling",
+              "label": "🌱"
+            }
+          ],
+          "correctAnswerId": "moon",
+          "success": {
+            "de": "Gut zugehört! Mond passt.",
+            "en": "Good listening! moon fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "moon"
+        },
+        {
+          "id": "nature-discoverer-78",
+          "prompt": {
+            "de": "Woher kommt das Licht, das der Mond zurückwirft?",
+            "en": "Where does the light reflected by the moon come from?"
+          },
+          "visual": "🌙",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🔦"
+            },
+            {
+              "id": "related",
+              "label": "☀️"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Von der Sonne.",
+            "en": "Correct: from the sun."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "moon"
+        },
+        {
+          "id": "nature-discoverer-79",
+          "prompt": {
+            "de": "Finde dieses Bild: Stern.",
+            "en": "Find this picture: star."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "star",
+              "label": "⭐"
+            },
+            {
+              "id": "wind",
+              "label": "💨"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Stern.",
+            "en": "Yes! This is the picture for: star."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "star"
+        },
+        {
+          "id": "nature-discoverer-80",
+          "prompt": {
+            "de": "Was ist gemeint? Am Nachthimmel sieht er winzig aus, obwohl er sehr weit weg und groß ist.",
+            "en": "What is it? It looks tiny in the night sky, although it is far away and large."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "cactus",
+              "label": "🌵"
+            },
+            {
+              "id": "star",
+              "label": "⭐"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Gut zugehört! Stern passt.",
+            "en": "Good listening! star fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "star"
+        },
+        {
+          "id": "nature-discoverer-81",
+          "prompt": {
+            "de": "Wann kannst du die meisten Sterne gut sehen?",
+            "en": "When can you see most stars clearly?"
+          },
+          "visual": "⭐",
+          "answers": [
+            {
+              "id": "related",
+              "label": "🌃"
+            },
+            {
+              "id": "unrelated",
+              "label": "🌅"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Bei dunkler Nacht.",
+            "en": "Correct: on a dark night."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "star"
+        },
+        {
+          "id": "nature-discoverer-82",
+          "prompt": {
+            "de": "Finde dieses Bild: Stein.",
+            "en": "Find this picture: stone."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "rainbow",
+              "label": "🌈"
+            },
+            {
+              "id": "stone",
+              "label": "🪨"
+            }
+          ],
+          "correctAnswerId": "stone",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Stein.",
+            "en": "Yes! This is the picture for: stone."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "stone"
+        },
+        {
+          "id": "nature-discoverer-83",
+          "prompt": {
+            "de": "Was ist gemeint? Er ist hart. Du findest ihn zum Beispiel auf einem steinigen Weg.",
+            "en": "What is it? It is hard. You might find it on a rocky path."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "stone",
+              "label": "🪨"
+            },
+            {
+              "id": "sunflower",
+              "label": "🌻"
+            }
+          ],
+          "correctAnswerId": "stone",
+          "success": {
+            "de": "Gut zugehört! Stein passt.",
+            "en": "Good listening! stone fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "stone"
+        },
+        {
+          "id": "nature-discoverer-84",
+          "prompt": {
+            "de": "Woraus bestehen viele Berge?",
+            "en": "What are many mountains made of?"
+          },
+          "visual": "🪨",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🧸"
+            },
+            {
+              "id": "related",
+              "label": "🪨"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Gestein.",
+            "en": "Correct: rock."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "stone"
+        },
+        {
+          "id": "nature-discoverer-85",
+          "prompt": {
+            "de": "Finde dieses Bild: Holz.",
+            "en": "Find this picture: wood."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "wood",
+              "label": "🪵"
+            },
+            {
+              "id": "cloud",
+              "label": "☁️"
+            }
+          ],
+          "correctAnswerId": "wood",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Holz.",
+            "en": "Yes! This is the picture for: wood."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "wood"
+        },
+        {
+          "id": "nature-discoverer-86",
+          "prompt": {
+            "de": "Was ist gemeint? Dieses feste Material stammt aus dem Stamm und den Ästen von Bäumen.",
+            "en": "What is it? This firm material comes from tree trunks and branches."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "tulip",
+              "label": "🌷"
+            },
+            {
+              "id": "wood",
+              "label": "🪵"
+            }
+          ],
+          "correctAnswerId": "wood",
+          "success": {
+            "de": "Gut zugehört! Holz passt.",
+            "en": "Good listening! wood fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "wood"
+        },
+        {
+          "id": "nature-discoverer-87",
+          "prompt": {
+            "de": "Woher kommt Holz?",
+            "en": "Where does wood come from?"
+          },
+          "visual": "🪵",
+          "answers": [
+            {
+              "id": "related",
+              "label": "🌳"
+            },
+            {
+              "id": "unrelated",
+              "label": "🌊"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Von Bäumen.",
+            "en": "Correct: from trees."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "wood"
+        },
+        {
+          "id": "nature-discoverer-88",
+          "prompt": {
+            "de": "Finde dieses Bild: Pilz.",
+            "en": "Find this picture: mushroom."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "spring",
+              "label": "🌷"
+            },
+            {
+              "id": "mushroom",
+              "label": "🍄"
+            }
+          ],
+          "correctAnswerId": "mushroom",
+          "success": {
+            "de": "Ja! Das ist das Bild für: Pilz.",
+            "en": "Yes! This is the picture for: mushroom."
+          },
+          "hint": {
+            "de": "Schau dir die beiden Bilder genau an.",
+            "en": "Look closely at both pictures."
+          },
+          "conceptKey": "mushroom"
+        },
+        {
+          "id": "nature-discoverer-89",
+          "prompt": {
+            "de": "Was ist gemeint? Dieser Pilz hat einen Stiel und einen Hut. Er kann im Wald wachsen.",
+            "en": "What is it? This mushroom has a stalk and a cap. It can grow in a forest."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "mushroom",
+              "label": "🍄"
+            },
+            {
+              "id": "evergreen",
+              "label": "🌲"
+            }
+          ],
+          "correctAnswerId": "mushroom",
+          "success": {
+            "de": "Gut zugehört! Pilz passt.",
+            "en": "Good listening! mushroom fits."
+          },
+          "hint": {
+            "de": "Höre auf den Hinweis und vergleiche die Bilder.",
+            "en": "Listen to the clue and compare the pictures."
+          },
+          "conceptKey": "mushroom"
+        },
+        {
+          "id": "nature-discoverer-90",
+          "prompt": {
+            "de": "Was machst du mit einem unbekannten Pilz im Wald?",
+            "en": "What do you do with an unfamiliar mushroom in the forest?"
+          },
+          "visual": "🍄",
+          "answers": [
+            {
+              "id": "unrelated",
+              "label": "🍽️"
+            },
+            {
+              "id": "related",
+              "label": "👀"
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Richtig: Nur anschauen.",
+            "en": "Correct: only look at it."
+          },
+          "hint": {
+            "de": "Welches Bild passt zu der Frage?",
+            "en": "Which picture fits the question?"
+          },
+          "conceptKey": "mushroom"
+        }
+      ],
+      "adventurer": [
+        {
+          "id": "nature-adventurer-1",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Sie wärmt die Erde und macht den Tag hell.",
+            "en": "Navi’s nature riddle: It warms Earth and makes the day bright."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sun",
+              "label": {
+                "de": "Sonne",
+                "en": "sun"
+              }
+            },
+            {
+              "id": "summer",
+              "label": {
+                "de": "Sommer",
+                "en": "summer"
+              }
+            },
+            {
+              "id": "palm",
+              "label": {
+                "de": "Palme",
+                "en": "palm tree"
+              }
+            }
+          ],
+          "correctAnswerId": "sun",
+          "success": {
+            "de": "Richtig erkannt: Sonne.",
+            "en": "Well spotted: sun."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "sun"
+        },
+        {
+          "id": "nature-adventurer-2",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Sonne?",
+            "en": "Which group does sun belong to?"
+          },
+          "visual": "☀️",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "sky",
+              "label": {
+                "de": "Himmelskörper",
+                "en": "object in space"
+              }
+            }
+          ],
+          "correctAnswerId": "sky",
+          "success": {
+            "de": "Sonne gehört zur Gruppe: Himmelskörper.",
+            "en": "sun belongs in the group: object in space."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "sun"
+        },
+        {
+          "id": "nature-adventurer-3",
+          "prompt": {
+            "de": "Denke weiter: Was schützt deine Augen bei hellem Sonnenschein?",
+            "en": "Think a little further: What protects your eyes in bright sunshine?"
+          },
+          "visual": "☀️",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Sonnenbrille",
+                "en": "sunglasses"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Handschuhe",
+                "en": "gloves"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Sonnenbrille.",
+            "en": "Exactly: sunglasses."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "sun"
+        },
+        {
+          "id": "nature-adventurer-4",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Viele Wassertropfen fallen aus einer Wolke.",
+            "en": "Navi’s nature riddle: Many drops of water fall from a cloud."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "rain",
+              "label": {
+                "de": "Regen",
+                "en": "rain"
+              }
+            },
+            {
+              "id": "autumn",
+              "label": {
+                "de": "Herbst",
+                "en": "fall"
+              }
+            },
+            {
+              "id": "leaf",
+              "label": {
+                "de": "Blatt",
+                "en": "leaf"
+              }
+            }
+          ],
+          "correctAnswerId": "rain",
+          "success": {
+            "de": "Richtig erkannt: Regen.",
+            "en": "Well spotted: rain."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "rain"
+        },
+        {
+          "id": "nature-adventurer-5",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Regen?",
+            "en": "Which group does rain belong to?"
+          },
+          "visual": "🌧️",
+          "answers": [
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            },
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            }
+          ],
+          "correctAnswerId": "weather",
+          "success": {
+            "de": "Regen gehört zur Gruppe: Wetter.",
+            "en": "rain belongs in the group: weather."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "rain"
+        },
+        {
+          "id": "nature-adventurer-6",
+          "prompt": {
+            "de": "Denke weiter: Was hält Regen von deinem Kopf fern?",
+            "en": "Think a little further: What keeps rain off your head?"
+          },
+          "visual": "🌧️",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Regenschirm",
+                "en": "umbrella"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Kamm",
+                "en": "comb"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Regenschirm.",
+            "en": "Exactly: umbrella."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "rain"
+        },
+        {
+          "id": "nature-adventurer-7",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Die Flocken sind kalt und können auf dem Boden liegen bleiben.",
+            "en": "Navi’s nature riddle: The flakes are cold and can settle on the ground."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "snow",
+              "label": {
+                "de": "Schnee",
+                "en": "snow"
+              }
+            },
+            {
+              "id": "winter",
+              "label": {
+                "de": "Winter",
+                "en": "winter"
+              }
+            },
+            {
+              "id": "seed",
+              "label": {
+                "de": "Samen",
+                "en": "seed"
+              }
+            }
+          ],
+          "correctAnswerId": "snow",
+          "success": {
+            "de": "Richtig erkannt: Schnee.",
+            "en": "Well spotted: snow."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "snow"
+        },
+        {
+          "id": "nature-adventurer-8",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Schnee?",
+            "en": "Which group does snow belong to?"
+          },
+          "visual": "❄️",
+          "answers": [
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            },
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            }
+          ],
+          "correctAnswerId": "weather",
+          "success": {
+            "de": "Schnee gehört zur Gruppe: Wetter.",
+            "en": "snow belongs in the group: weather."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "snow"
+        },
+        {
+          "id": "nature-adventurer-9",
+          "prompt": {
+            "de": "Denke weiter: Was kannst du aus Schnee bauen?",
+            "en": "Think a little further: What can you build out of snow?"
+          },
+          "visual": "❄️",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Schneemann",
+                "en": "snowman"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Drachen",
+                "en": "kite"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Schneemann.",
+            "en": "Exactly: snowman."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "snow"
+        },
+        {
+          "id": "nature-adventurer-10",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Du kannst ihn fühlen. Er bewegt Blätter und Zweige.",
+            "en": "Navi’s nature riddle: You can feel it. It moves leaves and branches."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "wind",
+              "label": {
+                "de": "Wind",
+                "en": "wind"
+              }
+            },
+            {
+              "id": "tree",
+              "label": {
+                "de": "Baum",
+                "en": "tree"
+              }
+            },
+            {
+              "id": "mountain",
+              "label": {
+                "de": "Berg",
+                "en": "mountain"
+              }
+            }
+          ],
+          "correctAnswerId": "wind",
+          "success": {
+            "de": "Richtig erkannt: Wind.",
+            "en": "Well spotted: wind."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "wind"
+        },
+        {
+          "id": "nature-adventurer-11",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Wind?",
+            "en": "Which group does wind belong to?"
+          },
+          "visual": "💨",
+          "answers": [
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            },
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            }
+          ],
+          "correctAnswerId": "weather",
+          "success": {
+            "de": "Wind gehört zur Gruppe: Wetter.",
+            "en": "wind belongs in the group: weather."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "wind"
+        },
+        {
+          "id": "nature-adventurer-12",
+          "prompt": {
+            "de": "Denke weiter: Was kann der Wind am Himmel tragen?",
+            "en": "Think a little further: What can the wind lift into the sky?"
+          },
+          "visual": "💨",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Drachen",
+                "en": "kite"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Stein",
+                "en": "stone"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Drachen.",
+            "en": "Exactly: kite."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "wind"
+        },
+        {
+          "id": "nature-adventurer-13",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Ein bunter Bogen erscheint manchmal, wenn Sonne auf Regentropfen scheint.",
+            "en": "Navi’s nature riddle: A colorful arc sometimes appears when sunlight shines on raindrops."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "rainbow",
+              "label": {
+                "de": "Regenbogen",
+                "en": "rainbow"
+              }
+            },
+            {
+              "id": "flower",
+              "label": {
+                "de": "Blume",
+                "en": "flower"
+              }
+            },
+            {
+              "id": "sea",
+              "label": {
+                "de": "Meer",
+                "en": "sea"
+              }
+            }
+          ],
+          "correctAnswerId": "rainbow",
+          "success": {
+            "de": "Richtig erkannt: Regenbogen.",
+            "en": "Well spotted: rainbow."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "rainbow"
+        },
+        {
+          "id": "nature-adventurer-14",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Regenbogen?",
+            "en": "Which group does rainbow belong to?"
+          },
+          "visual": "🌈",
+          "answers": [
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            },
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            }
+          ],
+          "correctAnswerId": "weather",
+          "success": {
+            "de": "Regenbogen gehört zur Gruppe: Wetter.",
+            "en": "rainbow belongs in the group: weather."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "rainbow"
+        },
+        {
+          "id": "nature-adventurer-15",
+          "prompt": {
+            "de": "Denke weiter: Was braucht ein Regenbogen außer Regentropfen?",
+            "en": "Think a little further: What does a rainbow need besides raindrops?"
+          },
+          "visual": "🌈",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Sonnenlicht",
+                "en": "sunlight"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Taschenlampe",
+                "en": "flashlight"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Sonnenlicht.",
+            "en": "Exactly: sunlight."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "rainbow"
+        },
+        {
+          "id": "nature-adventurer-16",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Viele winzige Wassertröpfchen oder Eiskristalle schweben zusammen am Himmel.",
+            "en": "Navi’s nature riddle: Tiny water droplets or ice crystals float together in the sky."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "cloud",
+              "label": {
+                "de": "Wolke",
+                "en": "cloud"
+              }
+            },
+            {
+              "id": "seedling",
+              "label": {
+                "de": "Keimling",
+                "en": "seedling"
+              }
+            },
+            {
+              "id": "forest",
+              "label": {
+                "de": "Wald",
+                "en": "forest"
+              }
+            }
+          ],
+          "correctAnswerId": "cloud",
+          "success": {
+            "de": "Richtig erkannt: Wolke.",
+            "en": "Well spotted: cloud."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "cloud"
+        },
+        {
+          "id": "nature-adventurer-17",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Wolke?",
+            "en": "Which group does cloud belong to?"
+          },
+          "visual": "☁️",
+          "answers": [
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            },
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            }
+          ],
+          "correctAnswerId": "weather",
+          "success": {
+            "de": "Wolke gehört zur Gruppe: Wetter.",
+            "en": "cloud belongs in the group: weather."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "cloud"
+        },
+        {
+          "id": "nature-adventurer-18",
+          "prompt": {
+            "de": "Denke weiter: Was kann aus einer dunklen Wolke fallen?",
+            "en": "Think a little further: What can fall from a dark cloud?"
+          },
+          "visual": "☁️",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Regentropfen",
+                "en": "raindrops"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Äpfel",
+                "en": "apples"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Regentropfen.",
+            "en": "Exactly: raindrops."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "cloud"
+        },
+        {
+          "id": "nature-adventurer-19",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Nach dem Winter wird es wärmer und viele Blumen beginnen zu blühen.",
+            "en": "Navi’s nature riddle: After winter it gets warmer and many flowers begin to bloom."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "spring",
+              "label": {
+                "de": "Frühling",
+                "en": "spring"
+              }
+            },
+            {
+              "id": "cactus",
+              "label": {
+                "de": "Kaktus",
+                "en": "cactus"
+              }
+            },
+            {
+              "id": "desert",
+              "label": {
+                "de": "Wüste",
+                "en": "desert"
+              }
+            }
+          ],
+          "correctAnswerId": "spring",
+          "success": {
+            "de": "Richtig erkannt: Frühling.",
+            "en": "Well spotted: spring."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "spring"
+        },
+        {
+          "id": "nature-adventurer-20",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Frühling?",
+            "en": "Which group does spring belong to?"
+          },
+          "visual": "🌷",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            }
+          ],
+          "correctAnswerId": "season",
+          "success": {
+            "de": "Frühling gehört zur Gruppe: Jahreszeit.",
+            "en": "spring belongs in the group: season."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "spring"
+        },
+        {
+          "id": "nature-adventurer-21",
+          "prompt": {
+            "de": "Denke weiter: Welche Blume blüht bei uns oft im Frühling?",
+            "en": "Think a little further: Which flower often blooms here in spring?"
+          },
+          "visual": "🌷",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Tulpe",
+                "en": "tulip"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Sonnenblume",
+                "en": "sunflower"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Tulpe.",
+            "en": "Exactly: tulip."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "spring"
+        },
+        {
+          "id": "nature-adventurer-22",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Zwischen Frühling und Herbst sind die Tage bei uns besonders lang.",
+            "en": "Navi’s nature riddle: Between spring and fall, our days are especially long."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "summer",
+              "label": {
+                "de": "Sommer",
+                "en": "summer"
+              }
+            },
+            {
+              "id": "sunflower",
+              "label": {
+                "de": "Sonnenblume",
+                "en": "sunflower"
+              }
+            },
+            {
+              "id": "island",
+              "label": {
+                "de": "Insel",
+                "en": "island"
+              }
+            }
+          ],
+          "correctAnswerId": "summer",
+          "success": {
+            "de": "Richtig erkannt: Sommer.",
+            "en": "Well spotted: summer."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "summer"
+        },
+        {
+          "id": "nature-adventurer-23",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Sommer?",
+            "en": "Which group does summer belong to?"
+          },
+          "visual": "🏖️",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            }
+          ],
+          "correctAnswerId": "season",
+          "success": {
+            "de": "Sommer gehört zur Gruppe: Jahreszeit.",
+            "en": "summer belongs in the group: season."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "summer"
+        },
+        {
+          "id": "nature-adventurer-24",
+          "prompt": {
+            "de": "Denke weiter: Was schützt deinen Kopf an einem heißen Sommertag?",
+            "en": "Think a little further: What protects your head on a hot summer day?"
+          },
+          "visual": "🏖️",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Sonnenhut",
+                "en": "sun hat"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Socken",
+                "en": "socks"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Sonnenhut.",
+            "en": "Exactly: sun hat."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "summer"
+        },
+        {
+          "id": "nature-adventurer-25",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Nach dem Sommer werden viele Blätter bunt und fallen von den Bäumen.",
+            "en": "Navi’s nature riddle: After summer, many leaves change color and fall from trees."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "autumn",
+              "label": {
+                "de": "Herbst",
+                "en": "fall"
+              }
+            },
+            {
+              "id": "tulip",
+              "label": {
+                "de": "Tulpe",
+                "en": "tulip"
+              }
+            },
+            {
+              "id": "moon",
+              "label": {
+                "de": "Mond",
+                "en": "moon"
+              }
+            }
+          ],
+          "correctAnswerId": "autumn",
+          "success": {
+            "de": "Richtig erkannt: Herbst.",
+            "en": "Well spotted: fall."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "autumn"
+        },
+        {
+          "id": "nature-adventurer-26",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Herbst?",
+            "en": "Which group does fall belong to?"
+          },
+          "visual": "🍂",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            }
+          ],
+          "correctAnswerId": "season",
+          "success": {
+            "de": "Herbst gehört zur Gruppe: Jahreszeit.",
+            "en": "fall belongs in the group: season."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "autumn"
+        },
+        {
+          "id": "nature-adventurer-27",
+          "prompt": {
+            "de": "Denke weiter: Was liegt im Herbst oft unter einem Laubbaum?",
+            "en": "Think a little further: What often lies under a leafy tree in fall?"
+          },
+          "visual": "🍂",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Laub",
+                "en": "fallen leaves"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Muscheln",
+                "en": "seashells"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Laub.",
+            "en": "Exactly: fallen leaves."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "autumn"
+        },
+        {
+          "id": "nature-adventurer-28",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Nach dem Herbst sind die Tage kurz. Draußen kann es sehr kalt werden.",
+            "en": "Navi’s nature riddle: After fall, the days are short. It can get very cold outside."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "winter",
+              "label": {
+                "de": "Winter",
+                "en": "winter"
+              }
+            },
+            {
+              "id": "evergreen",
+              "label": {
+                "de": "Nadelbaum",
+                "en": "evergreen tree"
+              }
+            },
+            {
+              "id": "star",
+              "label": {
+                "de": "Stern",
+                "en": "star"
+              }
+            }
+          ],
+          "correctAnswerId": "winter",
+          "success": {
+            "de": "Richtig erkannt: Winter.",
+            "en": "Well spotted: winter."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "winter"
+        },
+        {
+          "id": "nature-adventurer-29",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Winter?",
+            "en": "Which group does winter belong to?"
+          },
+          "visual": "☃️",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            }
+          ],
+          "correctAnswerId": "season",
+          "success": {
+            "de": "Winter gehört zur Gruppe: Jahreszeit.",
+            "en": "winter belongs in the group: season."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "winter"
+        },
+        {
+          "id": "nature-adventurer-30",
+          "prompt": {
+            "de": "Denke weiter: Was hält deine Hände im Winter warm?",
+            "en": "Think a little further: What keeps your hands warm in winter?"
+          },
+          "visual": "☃️",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Handschuhe",
+                "en": "gloves"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Sonnenbrille",
+                "en": "sunglasses"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Handschuhe.",
+            "en": "Exactly: gloves."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "winter"
+        },
+        {
+          "id": "nature-adventurer-31",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Er hat einen festen Stamm und viele Äste.",
+            "en": "Navi’s nature riddle: It has a sturdy trunk and many branches."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "tree",
+              "label": {
+                "de": "Baum",
+                "en": "tree"
+              }
+            },
+            {
+              "id": "palm",
+              "label": {
+                "de": "Palme",
+                "en": "palm tree"
+              }
+            },
+            {
+              "id": "stone",
+              "label": {
+                "de": "Stein",
+                "en": "stone"
+              }
+            }
+          ],
+          "correctAnswerId": "tree",
+          "success": {
+            "de": "Richtig erkannt: Baum.",
+            "en": "Well spotted: tree."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "tree"
+        },
+        {
+          "id": "nature-adventurer-32",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Baum?",
+            "en": "Which group does tree belong to?"
+          },
+          "visual": "🌳",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            }
+          ],
+          "correctAnswerId": "plant",
+          "success": {
+            "de": "Baum gehört zur Gruppe: Pflanze.",
+            "en": "tree belongs in the group: plant."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "tree"
+        },
+        {
+          "id": "nature-adventurer-33",
+          "prompt": {
+            "de": "Denke weiter: Was wächst an den Zweigen eines Laubbaums?",
+            "en": "Think a little further: What grows on the twigs of a leafy tree?"
+          },
+          "visual": "🌳",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Blätter",
+                "en": "leaves"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Muscheln",
+                "en": "seashells"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Blätter.",
+            "en": "Exactly: leaves."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "tree"
+        },
+        {
+          "id": "nature-adventurer-34",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Ihre bunten Blüten locken oft Bienen an.",
+            "en": "Navi’s nature riddle: Its colorful blossoms often attract bees."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "flower",
+              "label": {
+                "de": "Blume",
+                "en": "flower"
+              }
+            },
+            {
+              "id": "leaf",
+              "label": {
+                "de": "Blatt",
+                "en": "leaf"
+              }
+            },
+            {
+              "id": "wood",
+              "label": {
+                "de": "Holz",
+                "en": "wood"
+              }
+            }
+          ],
+          "correctAnswerId": "flower",
+          "success": {
+            "de": "Richtig erkannt: Blume.",
+            "en": "Well spotted: flower."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "flower"
+        },
+        {
+          "id": "nature-adventurer-35",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Blume?",
+            "en": "Which group does flower belong to?"
+          },
+          "visual": "🌸",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            }
+          ],
+          "correctAnswerId": "plant",
+          "success": {
+            "de": "Blume gehört zur Gruppe: Pflanze.",
+            "en": "flower belongs in the group: plant."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "flower"
+        },
+        {
+          "id": "nature-adventurer-36",
+          "prompt": {
+            "de": "Denke weiter: Was besucht Blüten, um Nektar zu sammeln?",
+            "en": "Think a little further: What visits blossoms to collect nectar?"
+          },
+          "visual": "🌸",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Biene",
+                "en": "bee"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Fisch",
+                "en": "fish"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Biene.",
+            "en": "Exactly: bee."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "flower"
+        },
+        {
+          "id": "nature-adventurer-37",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Aus einem Samen wächst eine kleine neue Pflanze.",
+            "en": "Navi’s nature riddle: A small new plant grows from a seed."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "seedling",
+              "label": {
+                "de": "Keimling",
+                "en": "seedling"
+              }
+            },
+            {
+              "id": "seed",
+              "label": {
+                "de": "Samen",
+                "en": "seed"
+              }
+            },
+            {
+              "id": "mushroom",
+              "label": {
+                "de": "Pilz",
+                "en": "mushroom"
+              }
+            }
+          ],
+          "correctAnswerId": "seedling",
+          "success": {
+            "de": "Richtig erkannt: Keimling.",
+            "en": "Well spotted: seedling."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "seedling"
+        },
+        {
+          "id": "nature-adventurer-38",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Keimling?",
+            "en": "Which group does seedling belong to?"
+          },
+          "visual": "🌱",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            }
+          ],
+          "correctAnswerId": "plant",
+          "success": {
+            "de": "Keimling gehört zur Gruppe: Pflanze.",
+            "en": "seedling belongs in the group: plant."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "seedling"
+        },
+        {
+          "id": "nature-adventurer-39",
+          "prompt": {
+            "de": "Denke weiter: Was braucht ein Keimling zum Wachsen außer Licht?",
+            "en": "Think a little further: What does a seedling need to grow besides light?"
+          },
+          "visual": "🌱",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Wasser",
+                "en": "water"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Seife",
+                "en": "soap"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Wasser.",
+            "en": "Exactly: water."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "seedling"
+        },
+        {
+          "id": "nature-adventurer-40",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Diese Pflanze speichert Wasser und hat oft Stacheln.",
+            "en": "Navi’s nature riddle: This plant stores water and often has spines."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "cactus",
+              "label": {
+                "de": "Kaktus",
+                "en": "cactus"
+              }
+            },
+            {
+              "id": "mountain",
+              "label": {
+                "de": "Berg",
+                "en": "mountain"
+              }
+            },
+            {
+              "id": "sun",
+              "label": {
+                "de": "Sonne",
+                "en": "sun"
+              }
+            }
+          ],
+          "correctAnswerId": "cactus",
+          "success": {
+            "de": "Richtig erkannt: Kaktus.",
+            "en": "Well spotted: cactus."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "cactus"
+        },
+        {
+          "id": "nature-adventurer-41",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Kaktus?",
+            "en": "Which group does cactus belong to?"
+          },
+          "visual": "🌵",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            }
+          ],
+          "correctAnswerId": "plant",
+          "success": {
+            "de": "Kaktus gehört zur Gruppe: Pflanze.",
+            "en": "cactus belongs in the group: plant."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "cactus"
+        },
+        {
+          "id": "nature-adventurer-42",
+          "prompt": {
+            "de": "Denke weiter: Wo können viele Kakteen gut wachsen?",
+            "en": "Think a little further: Where can many cacti grow well?"
+          },
+          "visual": "🌵",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "In der Wüste",
+                "en": "in the desert"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Im Meer",
+                "en": "in the sea"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: In der Wüste.",
+            "en": "Exactly: in the desert."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "cactus"
+        },
+        {
+          "id": "nature-adventurer-43",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Diese große Blume hat meist gelbe Blütenblätter und eine dunkle Mitte.",
+            "en": "Navi’s nature riddle: This tall flower usually has yellow petals and a dark center."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sunflower",
+              "label": {
+                "de": "Sonnenblume",
+                "en": "sunflower"
+              }
+            },
+            {
+              "id": "sea",
+              "label": {
+                "de": "Meer",
+                "en": "sea"
+              }
+            },
+            {
+              "id": "rain",
+              "label": {
+                "de": "Regen",
+                "en": "rain"
+              }
+            }
+          ],
+          "correctAnswerId": "sunflower",
+          "success": {
+            "de": "Richtig erkannt: Sonnenblume.",
+            "en": "Well spotted: sunflower."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "sunflower"
+        },
+        {
+          "id": "nature-adventurer-44",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Sonnenblume?",
+            "en": "Which group does sunflower belong to?"
+          },
+          "visual": "🌻",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            }
+          ],
+          "correctAnswerId": "plant",
+          "success": {
+            "de": "Sonnenblume gehört zur Gruppe: Pflanze.",
+            "en": "sunflower belongs in the group: plant."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "sunflower"
+        },
+        {
+          "id": "nature-adventurer-45",
+          "prompt": {
+            "de": "Denke weiter: Wo findest du die Kerne einer Sonnenblume?",
+            "en": "Think a little further: Where do you find sunflower seeds?"
+          },
+          "visual": "🌻",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Im Blütenkopf",
+                "en": "in the flower head"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "In einer Wolke",
+                "en": "in a cloud"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Im Blütenkopf.",
+            "en": "Exactly: in the flower head."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "sunflower"
+        },
+        {
+          "id": "nature-adventurer-46",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Diese Frühlingsblume wächst aus einer Zwiebel und hat eine kelchförmige Blüte.",
+            "en": "Navi’s nature riddle: This spring flower grows from a bulb and has a cup-shaped bloom."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "tulip",
+              "label": {
+                "de": "Tulpe",
+                "en": "tulip"
+              }
+            },
+            {
+              "id": "forest",
+              "label": {
+                "de": "Wald",
+                "en": "forest"
+              }
+            },
+            {
+              "id": "snow",
+              "label": {
+                "de": "Schnee",
+                "en": "snow"
+              }
+            }
+          ],
+          "correctAnswerId": "tulip",
+          "success": {
+            "de": "Richtig erkannt: Tulpe.",
+            "en": "Well spotted: tulip."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "tulip"
+        },
+        {
+          "id": "nature-adventurer-47",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Tulpe?",
+            "en": "Which group does tulip belong to?"
+          },
+          "visual": "🌷",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            }
+          ],
+          "correctAnswerId": "plant",
+          "success": {
+            "de": "Tulpe gehört zur Gruppe: Pflanze.",
+            "en": "tulip belongs in the group: plant."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "tulip"
+        },
+        {
+          "id": "nature-adventurer-48",
+          "prompt": {
+            "de": "Denke weiter: Welche Jahreszeit passt zur Tulpenblüte bei uns?",
+            "en": "Think a little further: Which season matches tulip blooms here?"
+          },
+          "visual": "🌷",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Frühling",
+                "en": "spring"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Winter",
+                "en": "winter"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Frühling.",
+            "en": "Exactly: spring."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "tulip"
+        },
+        {
+          "id": "nature-adventurer-49",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Seine Blätter sind schmale Nadeln. Viele bleiben im Winter grün.",
+            "en": "Navi’s nature riddle: Its leaves are narrow needles. Many stay green in winter."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "evergreen",
+              "label": {
+                "de": "Nadelbaum",
+                "en": "evergreen tree"
+              }
+            },
+            {
+              "id": "desert",
+              "label": {
+                "de": "Wüste",
+                "en": "desert"
+              }
+            },
+            {
+              "id": "wind",
+              "label": {
+                "de": "Wind",
+                "en": "wind"
+              }
+            }
+          ],
+          "correctAnswerId": "evergreen",
+          "success": {
+            "de": "Richtig erkannt: Nadelbaum.",
+            "en": "Well spotted: evergreen tree."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "evergreen"
+        },
+        {
+          "id": "nature-adventurer-50",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Nadelbaum?",
+            "en": "Which group does evergreen tree belong to?"
+          },
+          "visual": "🌲",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            }
+          ],
+          "correctAnswerId": "plant",
+          "success": {
+            "de": "Nadelbaum gehört zur Gruppe: Pflanze.",
+            "en": "evergreen tree belongs in the group: plant."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "evergreen"
+        },
+        {
+          "id": "nature-adventurer-51",
+          "prompt": {
+            "de": "Denke weiter: Was findest du an einer Kiefer?",
+            "en": "Think a little further: What can you find on a pine tree?"
+          },
+          "visual": "🌲",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Nadeln",
+                "en": "needles"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Rosa Blüten",
+                "en": "pink blossoms"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Nadeln.",
+            "en": "Exactly: needles."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "evergreen"
+        },
+        {
+          "id": "nature-adventurer-52",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Oben an ihrem Stamm wachsen lange große Blätter wie ein Schopf.",
+            "en": "Navi’s nature riddle: Long, large leaves grow like a crown at the top of its trunk."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "palm",
+              "label": {
+                "de": "Palme",
+                "en": "palm tree"
+              }
+            },
+            {
+              "id": "island",
+              "label": {
+                "de": "Insel",
+                "en": "island"
+              }
+            },
+            {
+              "id": "rainbow",
+              "label": {
+                "de": "Regenbogen",
+                "en": "rainbow"
+              }
+            }
+          ],
+          "correctAnswerId": "palm",
+          "success": {
+            "de": "Richtig erkannt: Palme.",
+            "en": "Well spotted: palm tree."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "palm"
+        },
+        {
+          "id": "nature-adventurer-53",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Palme?",
+            "en": "Which group does palm tree belong to?"
+          },
+          "visual": "🌴",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "plant",
+              "label": {
+                "de": "Pflanze",
+                "en": "plant"
+              }
+            }
+          ],
+          "correctAnswerId": "plant",
+          "success": {
+            "de": "Palme gehört zur Gruppe: Pflanze.",
+            "en": "palm tree belongs in the group: plant."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "palm"
+        },
+        {
+          "id": "nature-adventurer-54",
+          "prompt": {
+            "de": "Denke weiter: Welche Frucht kann an einer Kokospalme wachsen?",
+            "en": "Think a little further: Which fruit can grow on a coconut palm?"
+          },
+          "visual": "🌴",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Kokosnuss",
+                "en": "coconut"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Erdbeere",
+                "en": "strawberry"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Kokosnuss.",
+            "en": "Exactly: coconut."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "palm"
+        },
+        {
+          "id": "nature-adventurer-55",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Dieser grüne Pflanzenteil fängt Sonnenlicht ein.",
+            "en": "Navi’s nature riddle: This green plant part catches sunlight."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "leaf",
+              "label": {
+                "de": "Blatt",
+                "en": "leaf"
+              }
+            },
+            {
+              "id": "moon",
+              "label": {
+                "de": "Mond",
+                "en": "moon"
+              }
+            },
+            {
+              "id": "cloud",
+              "label": {
+                "de": "Wolke",
+                "en": "cloud"
+              }
+            }
+          ],
+          "correctAnswerId": "leaf",
+          "success": {
+            "de": "Richtig erkannt: Blatt.",
+            "en": "Well spotted: leaf."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "leaf"
+        },
+        {
+          "id": "nature-adventurer-56",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Blatt?",
+            "en": "Which group does leaf belong to?"
+          },
+          "visual": "🍃",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "part",
+              "label": {
+                "de": "Pflanzenteil",
+                "en": "plant part"
+              }
+            }
+          ],
+          "correctAnswerId": "part",
+          "success": {
+            "de": "Blatt gehört zur Gruppe: Pflanzenteil.",
+            "en": "leaf belongs in the group: plant part."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "leaf"
+        },
+        {
+          "id": "nature-adventurer-57",
+          "prompt": {
+            "de": "Denke weiter: Was braucht ein grünes Blatt, um Nahrung für die Pflanze herzustellen?",
+            "en": "Think a little further: What does a green leaf need to make food for the plant?"
+          },
+          "visual": "🍃",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Sonnenlicht",
+                "en": "sunlight"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Eiswürfel",
+                "en": "ice cubes"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Sonnenlicht.",
+            "en": "Exactly: sunlight."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "leaf"
+        },
+        {
+          "id": "nature-adventurer-58",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: In ihm steckt der Anfang einer neuen Pflanze.",
+            "en": "Navi’s nature riddle: It holds the beginning of a new plant."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "seed",
+              "label": {
+                "de": "Samen",
+                "en": "seed"
+              }
+            },
+            {
+              "id": "star",
+              "label": {
+                "de": "Stern",
+                "en": "star"
+              }
+            },
+            {
+              "id": "spring",
+              "label": {
+                "de": "Frühling",
+                "en": "spring"
+              }
+            }
+          ],
+          "correctAnswerId": "seed",
+          "success": {
+            "de": "Richtig erkannt: Samen.",
+            "en": "Well spotted: seed."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "seed"
+        },
+        {
+          "id": "nature-adventurer-59",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Samen?",
+            "en": "Which group does seed belong to?"
+          },
+          "visual": "🫘",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "part",
+              "label": {
+                "de": "Pflanzenteil",
+                "en": "plant part"
+              }
+            }
+          ],
+          "correctAnswerId": "part",
+          "success": {
+            "de": "Samen gehört zur Gruppe: Pflanzenteil.",
+            "en": "seed belongs in the group: plant part."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "seed"
+        },
+        {
+          "id": "nature-adventurer-60",
+          "prompt": {
+            "de": "Denke weiter: Was kann aus einem Bohnensamen wachsen?",
+            "en": "Think a little further: What can grow from a bean seed?"
+          },
+          "visual": "🫘",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Neue Pflanze",
+                "en": "new plant"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Stein",
+                "en": "stone"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Neue Pflanze.",
+            "en": "Exactly: new plant."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "seed"
+        },
+        {
+          "id": "nature-adventurer-61",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Er ragt hoch über die Landschaft hinaus und hat einen Gipfel.",
+            "en": "Navi’s nature riddle: It rises high above the landscape and has a peak."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "mountain",
+              "label": {
+                "de": "Berg",
+                "en": "mountain"
+              }
+            },
+            {
+              "id": "stone",
+              "label": {
+                "de": "Stein",
+                "en": "stone"
+              }
+            },
+            {
+              "id": "summer",
+              "label": {
+                "de": "Sommer",
+                "en": "summer"
+              }
+            }
+          ],
+          "correctAnswerId": "mountain",
+          "success": {
+            "de": "Richtig erkannt: Berg.",
+            "en": "Well spotted: mountain."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "mountain"
+        },
+        {
+          "id": "nature-adventurer-62",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Berg?",
+            "en": "Which group does mountain belong to?"
+          },
+          "visual": "⛰️",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "land",
+              "label": {
+                "de": "Landschaft",
+                "en": "landscape"
+              }
+            }
+          ],
+          "correctAnswerId": "land",
+          "success": {
+            "de": "Berg gehört zur Gruppe: Landschaft.",
+            "en": "mountain belongs in the group: landscape."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "mountain"
+        },
+        {
+          "id": "nature-adventurer-63",
+          "prompt": {
+            "de": "Denke weiter: Wie nennt man die höchste Stelle eines Berges?",
+            "en": "Think a little further: What is the highest point of a mountain called?"
+          },
+          "visual": "⛰️",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Gipfel",
+                "en": "peak"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Strand",
+                "en": "beach"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Gipfel.",
+            "en": "Exactly: peak."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "mountain"
+        },
+        {
+          "id": "nature-adventurer-64",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Eine riesige Fläche aus salzigem Wasser.",
+            "en": "Navi’s nature riddle: A huge area of salty water."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "sea",
+              "label": {
+                "de": "Meer",
+                "en": "sea"
+              }
+            },
+            {
+              "id": "wood",
+              "label": {
+                "de": "Holz",
+                "en": "wood"
+              }
+            },
+            {
+              "id": "autumn",
+              "label": {
+                "de": "Herbst",
+                "en": "fall"
+              }
+            }
+          ],
+          "correctAnswerId": "sea",
+          "success": {
+            "de": "Richtig erkannt: Meer.",
+            "en": "Well spotted: sea."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "sea"
+        },
+        {
+          "id": "nature-adventurer-65",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Meer?",
+            "en": "Which group does sea belong to?"
+          },
+          "visual": "🌊",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "land",
+              "label": {
+                "de": "Landschaft",
+                "en": "landscape"
+              }
+            }
+          ],
+          "correctAnswerId": "land",
+          "success": {
+            "de": "Meer gehört zur Gruppe: Landschaft.",
+            "en": "sea belongs in the group: landscape."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "sea"
+        },
+        {
+          "id": "nature-adventurer-66",
+          "prompt": {
+            "de": "Denke weiter: Wie schmeckt Meerwasser?",
+            "en": "Think a little further: What does seawater taste like?"
+          },
+          "visual": "🌊",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Salzig",
+                "en": "salty"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Süß",
+                "en": "sweet"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Salzig.",
+            "en": "Exactly: salty."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "sea"
+        },
+        {
+          "id": "nature-adventurer-67",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Viele Bäume wachsen hier dicht beieinander.",
+            "en": "Navi’s nature riddle: Many trees grow close together here."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "forest",
+              "label": {
+                "de": "Wald",
+                "en": "forest"
+              }
+            },
+            {
+              "id": "mushroom",
+              "label": {
+                "de": "Pilz",
+                "en": "mushroom"
+              }
+            },
+            {
+              "id": "winter",
+              "label": {
+                "de": "Winter",
+                "en": "winter"
+              }
+            }
+          ],
+          "correctAnswerId": "forest",
+          "success": {
+            "de": "Richtig erkannt: Wald.",
+            "en": "Well spotted: forest."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "forest"
+        },
+        {
+          "id": "nature-adventurer-68",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Wald?",
+            "en": "Which group does forest belong to?"
+          },
+          "visual": "🌳🌲",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "land",
+              "label": {
+                "de": "Landschaft",
+                "en": "landscape"
+              }
+            }
+          ],
+          "correctAnswerId": "land",
+          "success": {
+            "de": "Wald gehört zur Gruppe: Landschaft.",
+            "en": "forest belongs in the group: landscape."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "forest"
+        },
+        {
+          "id": "nature-adventurer-69",
+          "prompt": {
+            "de": "Denke weiter: Was wächst in einem Wald besonders häufig?",
+            "en": "Think a little further: What grows especially often in a forest?"
+          },
+          "visual": "🌳🌲",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Bäume",
+                "en": "trees"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Kakteen",
+                "en": "cacti"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Bäume.",
+            "en": "Exactly: trees."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "forest"
+        },
+        {
+          "id": "nature-adventurer-70",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Hier fällt sehr wenig Regen. Manche sind sandig, andere steinig.",
+            "en": "Navi’s nature riddle: Very little rain falls here. Some are sandy, others rocky."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "desert",
+              "label": {
+                "de": "Wüste",
+                "en": "desert"
+              }
+            },
+            {
+              "id": "sun",
+              "label": {
+                "de": "Sonne",
+                "en": "sun"
+              }
+            },
+            {
+              "id": "tree",
+              "label": {
+                "de": "Baum",
+                "en": "tree"
+              }
+            }
+          ],
+          "correctAnswerId": "desert",
+          "success": {
+            "de": "Richtig erkannt: Wüste.",
+            "en": "Well spotted: desert."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "desert"
+        },
+        {
+          "id": "nature-adventurer-71",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Wüste?",
+            "en": "Which group does desert belong to?"
+          },
+          "visual": "🏜️",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "land",
+              "label": {
+                "de": "Landschaft",
+                "en": "landscape"
+              }
+            }
+          ],
+          "correctAnswerId": "land",
+          "success": {
+            "de": "Wüste gehört zur Gruppe: Landschaft.",
+            "en": "desert belongs in the group: landscape."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "desert"
+        },
+        {
+          "id": "nature-adventurer-72",
+          "prompt": {
+            "de": "Denke weiter: Was fehlt in einer Wüste besonders oft?",
+            "en": "Think a little further: What is especially scarce in a desert?"
+          },
+          "visual": "🏜️",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Wasser",
+                "en": "water"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Sonnenlicht",
+                "en": "sunlight"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Wasser.",
+            "en": "Exactly: water."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "desert"
+        },
+        {
+          "id": "nature-adventurer-73",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Dieses Stück Land ist auf allen Seiten von Wasser umgeben.",
+            "en": "Navi’s nature riddle: This piece of land has water on every side."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "island",
+              "label": {
+                "de": "Insel",
+                "en": "island"
+              }
+            },
+            {
+              "id": "rain",
+              "label": {
+                "de": "Regen",
+                "en": "rain"
+              }
+            },
+            {
+              "id": "flower",
+              "label": {
+                "de": "Blume",
+                "en": "flower"
+              }
+            }
+          ],
+          "correctAnswerId": "island",
+          "success": {
+            "de": "Richtig erkannt: Insel.",
+            "en": "Well spotted: island."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "island"
+        },
+        {
+          "id": "nature-adventurer-74",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Insel?",
+            "en": "Which group does island belong to?"
+          },
+          "visual": "🏝️",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "land",
+              "label": {
+                "de": "Landschaft",
+                "en": "landscape"
+              }
+            }
+          ],
+          "correctAnswerId": "land",
+          "success": {
+            "de": "Insel gehört zur Gruppe: Landschaft.",
+            "en": "island belongs in the group: landscape."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "island"
+        },
+        {
+          "id": "nature-adventurer-75",
+          "prompt": {
+            "de": "Denke weiter: Was umgibt eine Insel?",
+            "en": "Think a little further: What surrounds an island?"
+          },
+          "visual": "🏝️",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Wasser",
+                "en": "water"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Straßen",
+                "en": "roads"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Wasser.",
+            "en": "Exactly: water."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "island"
+        },
+        {
+          "id": "nature-adventurer-76",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Er umkreist die Erde und leuchtet mit dem Licht der Sonne.",
+            "en": "Navi’s nature riddle: It goes around Earth and shines with light from the sun."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "moon",
+              "label": {
+                "de": "Mond",
+                "en": "moon"
+              }
+            },
+            {
+              "id": "snow",
+              "label": {
+                "de": "Schnee",
+                "en": "snow"
+              }
+            },
+            {
+              "id": "seedling",
+              "label": {
+                "de": "Keimling",
+                "en": "seedling"
+              }
+            }
+          ],
+          "correctAnswerId": "moon",
+          "success": {
+            "de": "Richtig erkannt: Mond.",
+            "en": "Well spotted: moon."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "moon"
+        },
+        {
+          "id": "nature-adventurer-77",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Mond?",
+            "en": "Which group does moon belong to?"
+          },
+          "visual": "🌙",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "sky",
+              "label": {
+                "de": "Himmelskörper",
+                "en": "object in space"
+              }
+            }
+          ],
+          "correctAnswerId": "sky",
+          "success": {
+            "de": "Mond gehört zur Gruppe: Himmelskörper.",
+            "en": "moon belongs in the group: object in space."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "moon"
+        },
+        {
+          "id": "nature-adventurer-78",
+          "prompt": {
+            "de": "Denke weiter: Woher kommt das Licht, das der Mond zurückwirft?",
+            "en": "Think a little further: Where does the light reflected by the moon come from?"
+          },
+          "visual": "🌙",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Von der Sonne",
+                "en": "from the sun"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Von einer Lampe",
+                "en": "from a lamp"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Von der Sonne.",
+            "en": "Exactly: from the sun."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "moon"
+        },
+        {
+          "id": "nature-adventurer-79",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Am Nachthimmel sieht er winzig aus, obwohl er sehr weit weg und groß ist.",
+            "en": "Navi’s nature riddle: It looks tiny in the night sky, although it is far away and large."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "star",
+              "label": {
+                "de": "Stern",
+                "en": "star"
+              }
+            },
+            {
+              "id": "wind",
+              "label": {
+                "de": "Wind",
+                "en": "wind"
+              }
+            },
+            {
+              "id": "cactus",
+              "label": {
+                "de": "Kaktus",
+                "en": "cactus"
+              }
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Richtig erkannt: Stern.",
+            "en": "Well spotted: star."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "star"
+        },
+        {
+          "id": "nature-adventurer-80",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Stern?",
+            "en": "Which group does star belong to?"
+          },
+          "visual": "⭐",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "sky",
+              "label": {
+                "de": "Himmelskörper",
+                "en": "object in space"
+              }
+            }
+          ],
+          "correctAnswerId": "sky",
+          "success": {
+            "de": "Stern gehört zur Gruppe: Himmelskörper.",
+            "en": "star belongs in the group: object in space."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "star"
+        },
+        {
+          "id": "nature-adventurer-81",
+          "prompt": {
+            "de": "Denke weiter: Wann kannst du die meisten Sterne gut sehen?",
+            "en": "Think a little further: When can you see most stars clearly?"
+          },
+          "visual": "⭐",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Bei dunkler Nacht",
+                "en": "on a dark night"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Bei hellem Tag",
+                "en": "in bright daylight"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Bei dunkler Nacht.",
+            "en": "Exactly: on a dark night."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "star"
+        },
+        {
+          "id": "nature-adventurer-82",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Er ist hart. Du findest ihn zum Beispiel auf einem steinigen Weg.",
+            "en": "Navi’s nature riddle: It is hard. You might find it on a rocky path."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "stone",
+              "label": {
+                "de": "Stein",
+                "en": "stone"
+              }
+            },
+            {
+              "id": "rainbow",
+              "label": {
+                "de": "Regenbogen",
+                "en": "rainbow"
+              }
+            },
+            {
+              "id": "sunflower",
+              "label": {
+                "de": "Sonnenblume",
+                "en": "sunflower"
+              }
+            }
+          ],
+          "correctAnswerId": "stone",
+          "success": {
+            "de": "Richtig erkannt: Stein.",
+            "en": "Well spotted: stone."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "stone"
+        },
+        {
+          "id": "nature-adventurer-83",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Stein?",
+            "en": "Which group does stone belong to?"
+          },
+          "visual": "🪨",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "material",
+              "label": {
+                "de": "Naturmaterial",
+                "en": "natural material"
+              }
+            }
+          ],
+          "correctAnswerId": "material",
+          "success": {
+            "de": "Stein gehört zur Gruppe: Naturmaterial.",
+            "en": "stone belongs in the group: natural material."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "stone"
+        },
+        {
+          "id": "nature-adventurer-84",
+          "prompt": {
+            "de": "Denke weiter: Woraus bestehen viele Berge?",
+            "en": "Think a little further: What are many mountains made of?"
+          },
+          "visual": "🪨",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Gestein",
+                "en": "rock"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Kuscheligem Stoff",
+                "en": "soft fabric"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Gestein.",
+            "en": "Exactly: rock."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "stone"
+        },
+        {
+          "id": "nature-adventurer-85",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Dieses feste Material stammt aus dem Stamm und den Ästen von Bäumen.",
+            "en": "Navi’s nature riddle: This firm material comes from tree trunks and branches."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "wood",
+              "label": {
+                "de": "Holz",
+                "en": "wood"
+              }
+            },
+            {
+              "id": "cloud",
+              "label": {
+                "de": "Wolke",
+                "en": "cloud"
+              }
+            },
+            {
+              "id": "tulip",
+              "label": {
+                "de": "Tulpe",
+                "en": "tulip"
+              }
+            }
+          ],
+          "correctAnswerId": "wood",
+          "success": {
+            "de": "Richtig erkannt: Holz.",
+            "en": "Well spotted: wood."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "wood"
+        },
+        {
+          "id": "nature-adventurer-86",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Holz?",
+            "en": "Which group does wood belong to?"
+          },
+          "visual": "🪵",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "material",
+              "label": {
+                "de": "Naturmaterial",
+                "en": "natural material"
+              }
+            }
+          ],
+          "correctAnswerId": "material",
+          "success": {
+            "de": "Holz gehört zur Gruppe: Naturmaterial.",
+            "en": "wood belongs in the group: natural material."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "wood"
+        },
+        {
+          "id": "nature-adventurer-87",
+          "prompt": {
+            "de": "Denke weiter: Woher kommt Holz?",
+            "en": "Think a little further: Where does wood come from?"
+          },
+          "visual": "🪵",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Von Bäumen",
+                "en": "from trees"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Aus dem Meer",
+                "en": "from the sea"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Von Bäumen.",
+            "en": "Exactly: from trees."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "wood"
+        },
+        {
+          "id": "nature-adventurer-88",
+          "prompt": {
+            "de": "Navis Natur-Rätsel: Dieser Pilz hat einen Stiel und einen Hut. Er kann im Wald wachsen.",
+            "en": "Navi’s nature riddle: This mushroom has a stalk and a cap. It can grow in a forest."
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "mushroom",
+              "label": {
+                "de": "Pilz",
+                "en": "mushroom"
+              }
+            },
+            {
+              "id": "spring",
+              "label": {
+                "de": "Frühling",
+                "en": "spring"
+              }
+            },
+            {
+              "id": "evergreen",
+              "label": {
+                "de": "Nadelbaum",
+                "en": "evergreen tree"
+              }
+            }
+          ],
+          "correctAnswerId": "mushroom",
+          "success": {
+            "de": "Richtig erkannt: Pilz.",
+            "en": "Well spotted: mushroom."
+          },
+          "hint": {
+            "de": "Welche Antwort passt zu allen Eigenschaften?",
+            "en": "Which answer fits all the clues?"
+          },
+          "conceptKey": "mushroom"
+        },
+        {
+          "id": "nature-adventurer-89",
+          "prompt": {
+            "de": "Zu welcher Gruppe gehört: Pilz?",
+            "en": "Which group does mushroom belong to?"
+          },
+          "visual": "🍄",
+          "answers": [
+            {
+              "id": "weather",
+              "label": {
+                "de": "Wetter",
+                "en": "weather"
+              }
+            },
+            {
+              "id": "season",
+              "label": {
+                "de": "Jahreszeit",
+                "en": "season"
+              }
+            },
+            {
+              "id": "fungus",
+              "label": {
+                "de": "Pilz",
+                "en": "fungus"
+              }
+            }
+          ],
+          "correctAnswerId": "fungus",
+          "success": {
+            "de": "Pilz gehört zur Gruppe: Pilz.",
+            "en": "mushroom belongs in the group: fungus."
+          },
+          "hint": {
+            "de": "Denke daran, was das Bild zeigt und wo du es findest.",
+            "en": "Think about what the picture shows and where you find it."
+          },
+          "conceptKey": "mushroom"
+        },
+        {
+          "id": "nature-adventurer-90",
+          "prompt": {
+            "de": "Denke weiter: Was machst du mit einem unbekannten Pilz im Wald?",
+            "en": "Think a little further: What do you do with an unfamiliar mushroom in the forest?"
+          },
+          "visual": "🍄",
+          "answers": [
+            {
+              "id": "toy",
+              "label": {
+                "de": "Spielzeugauto",
+                "en": "toy car"
+              }
+            },
+            {
+              "id": "related",
+              "label": {
+                "de": "Nur anschauen",
+                "en": "only look at it"
+              }
+            },
+            {
+              "id": "unrelated",
+              "label": {
+                "de": "Essen",
+                "en": "eat it"
+              }
+            }
+          ],
+          "correctAnswerId": "related",
+          "success": {
+            "de": "Genau: Nur anschauen.",
+            "en": "Exactly: only look at it."
+          },
+          "hint": {
+            "de": "Nutze dein Wissen über die Natur.",
+            "en": "Use what you know about nature."
+          },
+          "conceptKey": "mushroom"
+        }
+      ]
+    }
+  },
+  {
+    "id": "time",
+    "title": {
+      "de": "Uhr & Zeit",
+      "en": "Clock & Time"
+    },
+    "subtitle": {
+      "de": "Uhrzeiten und Tagesabläufe verstehen",
+      "en": "Learn clock times and daily routines"
+    },
+    "icon": "◷",
+    "color": "#B76C19",
+    "lightColor": "#FFF0CD",
+    "questionsByAge": {
+      "discoverer": [
+        {
+          "id": "time-discoverer-1",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "1:00",
+              "label": "1:00"
+            },
+            {
+              "id": "2:00",
+              "label": "2:00"
+            }
+          ],
+          "correctAnswerId": "1:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt ein Uhr.",
+            "en": "Correct, the clock shows one o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 1,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 1,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-2",
+          "prompt": {
+            "de": "Welche Uhr zeigt ein Uhr?",
+            "en": "Which clock shows one o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:00",
+              "label": "2:00",
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              }
+            },
+            {
+              "id": "1:00",
+              "label": "1:00",
+              "clock": {
+                "hour": 1,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "1:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt ein Uhr.",
+            "en": "Correct, the clock shows one o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 1,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-3",
+          "prompt": {
+            "de": "Es ist ein Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is one o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:00",
+              "label": "2:00",
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              }
+            },
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "2:00",
+          "success": {
+            "de": "Genau! Dann ist es zwei Uhr.",
+            "en": "Exactly! Then it is two o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 1,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 1,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-discoverer-4",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:00",
+              "label": "3:00"
+            },
+            {
+              "id": "2:00",
+              "label": "2:00"
+            }
+          ],
+          "correctAnswerId": "2:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zwei Uhr.",
+            "en": "Correct, the clock shows two o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 2,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 2,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-5",
+          "prompt": {
+            "de": "Welche Uhr zeigt zwei Uhr?",
+            "en": "Which clock shows two o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:00",
+              "label": "2:00",
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              }
+            },
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "2:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zwei Uhr.",
+            "en": "Correct, the clock shows two o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 2,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-6",
+          "prompt": {
+            "de": "Es ist zwei Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is two o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            },
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "3:00",
+          "success": {
+            "de": "Genau! Dann ist es drei Uhr.",
+            "en": "Exactly! Then it is three o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 2,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 2,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-discoverer-7",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:00",
+              "label": "3:00"
+            },
+            {
+              "id": "4:00",
+              "label": "4:00"
+            }
+          ],
+          "correctAnswerId": "3:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt drei Uhr.",
+            "en": "Correct, the clock shows three o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 3,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 3,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-8",
+          "prompt": {
+            "de": "Welche Uhr zeigt drei Uhr?",
+            "en": "Which clock shows three o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            },
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "3:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt drei Uhr.",
+            "en": "Correct, the clock shows three o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 3,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-9",
+          "prompt": {
+            "de": "Es ist drei Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is three o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            },
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "4:00",
+          "success": {
+            "de": "Genau! Dann ist es vier Uhr.",
+            "en": "Exactly! Then it is four o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 3,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 3,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-discoverer-10",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:00",
+              "label": "5:00"
+            },
+            {
+              "id": "4:00",
+              "label": "4:00"
+            }
+          ],
+          "correctAnswerId": "4:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt vier Uhr.",
+            "en": "Correct, the clock shows four o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 4,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 4,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-11",
+          "prompt": {
+            "de": "Welche Uhr zeigt vier Uhr?",
+            "en": "Which clock shows four o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            },
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "4:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt vier Uhr.",
+            "en": "Correct, the clock shows four o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 4,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-12",
+          "prompt": {
+            "de": "Es ist vier Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is four o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            },
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "5:00",
+          "success": {
+            "de": "Genau! Dann ist es fünf Uhr.",
+            "en": "Exactly! Then it is five o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 4,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 4,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-discoverer-13",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:00",
+              "label": "5:00"
+            },
+            {
+              "id": "6:00",
+              "label": "6:00"
+            }
+          ],
+          "correctAnswerId": "5:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt fünf Uhr.",
+            "en": "Correct, the clock shows five o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 5,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-14",
+          "prompt": {
+            "de": "Welche Uhr zeigt fünf Uhr?",
+            "en": "Which clock shows five o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            },
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "5:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt fünf Uhr.",
+            "en": "Correct, the clock shows five o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 5,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-15",
+          "prompt": {
+            "de": "Es ist fünf Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is five o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            },
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "6:00",
+          "success": {
+            "de": "Genau! Dann ist es sechs Uhr.",
+            "en": "Exactly! Then it is six o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 5,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-discoverer-16",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "7:00",
+              "label": "7:00"
+            },
+            {
+              "id": "6:00",
+              "label": "6:00"
+            }
+          ],
+          "correctAnswerId": "6:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt sechs Uhr.",
+            "en": "Correct, the clock shows six o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 6,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 6,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-17",
+          "prompt": {
+            "de": "Welche Uhr zeigt sechs Uhr?",
+            "en": "Which clock shows six o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            },
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "6:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt sechs Uhr.",
+            "en": "Correct, the clock shows six o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 6,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-18",
+          "prompt": {
+            "de": "Es ist sechs Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is six o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "7:00",
+          "success": {
+            "de": "Genau! Dann ist es sieben Uhr.",
+            "en": "Exactly! Then it is seven o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 6,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 6,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-discoverer-19",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "7:00",
+              "label": "7:00"
+            },
+            {
+              "id": "8:00",
+              "label": "8:00"
+            }
+          ],
+          "correctAnswerId": "7:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt sieben Uhr.",
+            "en": "Correct, the clock shows seven o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 7,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 7,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-20",
+          "prompt": {
+            "de": "Welche Uhr zeigt sieben Uhr?",
+            "en": "Which clock shows seven o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "7:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt sieben Uhr.",
+            "en": "Correct, the clock shows seven o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 7,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-21",
+          "prompt": {
+            "de": "Es ist sieben Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is seven o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "8:00",
+          "success": {
+            "de": "Genau! Dann ist es acht Uhr.",
+            "en": "Exactly! Then it is eight o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 7,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 7,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-discoverer-22",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "9:00",
+              "label": "9:00"
+            },
+            {
+              "id": "8:00",
+              "label": "8:00"
+            }
+          ],
+          "correctAnswerId": "8:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt acht Uhr.",
+            "en": "Correct, the clock shows eight o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-23",
+          "prompt": {
+            "de": "Welche Uhr zeigt acht Uhr?",
+            "en": "Which clock shows eight o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "8:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt acht Uhr.",
+            "en": "Correct, the clock shows eight o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-24",
+          "prompt": {
+            "de": "Es ist acht Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is eight o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "10:00",
+              "label": "10:00",
+              "clock": {
+                "hour": 10,
+                "minute": 0
+              }
+            },
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "9:00",
+          "success": {
+            "de": "Genau! Dann ist es neun Uhr.",
+            "en": "Exactly! Then it is nine o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-discoverer-25",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "9:00",
+              "label": "9:00"
+            },
+            {
+              "id": "10:00",
+              "label": "10:00"
+            }
+          ],
+          "correctAnswerId": "9:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt neun Uhr.",
+            "en": "Correct, the clock shows nine o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 9,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 9,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-26",
+          "prompt": {
+            "de": "Welche Uhr zeigt neun Uhr?",
+            "en": "Which clock shows nine o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "10:00",
+              "label": "10:00",
+              "clock": {
+                "hour": 10,
+                "minute": 0
+              }
+            },
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "9:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt neun Uhr.",
+            "en": "Correct, the clock shows nine o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 9,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-27",
+          "prompt": {
+            "de": "Es ist neun Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is nine o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "10:00",
+              "label": "10:00",
+              "clock": {
+                "hour": 10,
+                "minute": 0
+              }
+            },
+            {
+              "id": "11:00",
+              "label": "11:00",
+              "clock": {
+                "hour": 11,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "10:00",
+          "success": {
+            "de": "Genau! Dann ist es zehn Uhr.",
+            "en": "Exactly! Then it is ten o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 9,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 9,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-discoverer-28",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "11:00",
+              "label": "11:00"
+            },
+            {
+              "id": "10:00",
+              "label": "10:00"
+            }
+          ],
+          "correctAnswerId": "10:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zehn Uhr.",
+            "en": "Correct, the clock shows ten o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 10,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 10,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-29",
+          "prompt": {
+            "de": "Welche Uhr zeigt zehn Uhr?",
+            "en": "Which clock shows ten o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "10:00",
+              "label": "10:00",
+              "clock": {
+                "hour": 10,
+                "minute": 0
+              }
+            },
+            {
+              "id": "11:00",
+              "label": "11:00",
+              "clock": {
+                "hour": 11,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "10:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zehn Uhr.",
+            "en": "Correct, the clock shows ten o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 10,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-30",
+          "prompt": {
+            "de": "Es ist zehn Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is ten o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "12:00",
+              "label": "12:00",
+              "clock": {
+                "hour": 12,
+                "minute": 0
+              }
+            },
+            {
+              "id": "11:00",
+              "label": "11:00",
+              "clock": {
+                "hour": 11,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "11:00",
+          "success": {
+            "de": "Genau! Dann ist es elf Uhr.",
+            "en": "Exactly! Then it is eleven o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 10,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 10,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-discoverer-31",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "11:00",
+              "label": "11:00"
+            },
+            {
+              "id": "12:00",
+              "label": "12:00"
+            }
+          ],
+          "correctAnswerId": "11:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt elf Uhr.",
+            "en": "Correct, the clock shows eleven o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 11,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 11,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-32",
+          "prompt": {
+            "de": "Welche Uhr zeigt elf Uhr?",
+            "en": "Which clock shows eleven o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "12:00",
+              "label": "12:00",
+              "clock": {
+                "hour": 12,
+                "minute": 0
+              }
+            },
+            {
+              "id": "11:00",
+              "label": "11:00",
+              "clock": {
+                "hour": 11,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "11:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt elf Uhr.",
+            "en": "Correct, the clock shows eleven o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 11,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-33",
+          "prompt": {
+            "de": "Es ist elf Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is eleven o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "12:00",
+              "label": "12:00",
+              "clock": {
+                "hour": 12,
+                "minute": 0
+              }
+            },
+            {
+              "id": "1:00",
+              "label": "1:00",
+              "clock": {
+                "hour": 1,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "12:00",
+          "success": {
+            "de": "Genau! Dann ist es zwölf Uhr.",
+            "en": "Exactly! Then it is twelve o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 11,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 11,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-discoverer-34",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "1:00",
+              "label": "1:00"
+            },
+            {
+              "id": "12:00",
+              "label": "12:00"
+            }
+          ],
+          "correctAnswerId": "12:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zwölf Uhr.",
+            "en": "Correct, the clock shows twelve o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 12,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 12,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-35",
+          "prompt": {
+            "de": "Welche Uhr zeigt zwölf Uhr?",
+            "en": "Which clock shows twelve o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "12:00",
+              "label": "12:00",
+              "clock": {
+                "hour": 12,
+                "minute": 0
+              }
+            },
+            {
+              "id": "1:00",
+              "label": "1:00",
+              "clock": {
+                "hour": 1,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "12:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zwölf Uhr.",
+            "en": "Correct, the clock shows twelve o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 12,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-discoverer-36",
+          "prompt": {
+            "de": "Es ist zwölf Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is twelve o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:00",
+              "label": "2:00",
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              }
+            },
+            {
+              "id": "1:00",
+              "label": "1:00",
+              "clock": {
+                "hour": 1,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "1:00",
+          "success": {
+            "de": "Genau! Dann ist es ein Uhr.",
+            "en": "Exactly! Then it is one o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 12,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 12,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-discoverer-37",
+          "prompt": {
+            "de": "Navi wacht auf, wäscht sich und frühstückt. Was passiert zuerst?",
+            "en": "Navi wakes up, washes, and eats breakfast. What happens first?"
+          },
+          "visual": "🛏️ → 🚿 → 🥣",
+          "answers": [
+            {
+              "id": "0",
+              "label": "🛏️"
+            },
+            {
+              "id": "1",
+              "label": "🚿"
+            }
+          ],
+          "correctAnswerId": "0",
+          "success": {
+            "de": "Genau! Das ist der Anfang.",
+            "en": "Exactly! That is the beginning."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-38",
+          "prompt": {
+            "de": "Navi wacht auf, wäscht sich und frühstückt. Was passiert danach, in der Mitte?",
+            "en": "Navi wakes up, washes, and eats breakfast. What happens next, in the middle?"
+          },
+          "visual": "🛏️ → 🚿 → 🥣",
+          "answers": [
+            {
+              "id": "2",
+              "label": "🥣"
+            },
+            {
+              "id": "1",
+              "label": "🚿"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Genau! Das kommt in der Mitte.",
+            "en": "Exactly! That comes in the middle."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-39",
+          "prompt": {
+            "de": "Navi wacht auf, wäscht sich und frühstückt. Was passiert zuletzt?",
+            "en": "Navi wakes up, washes, and eats breakfast. What happens last?"
+          },
+          "visual": "🛏️ → 🚿 → 🥣",
+          "answers": [
+            {
+              "id": "2",
+              "label": "🥣"
+            },
+            {
+              "id": "0",
+              "label": "🛏️"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Genau! Das kommt am Ende.",
+            "en": "Exactly! That comes at the end."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-40",
+          "prompt": {
+            "de": "Navi spielt, räumt die Spielsachen auf und liest ein Buch. Was passiert zuerst?",
+            "en": "Navi plays, puts the toys away, and reads a book. What happens first?"
+          },
+          "visual": "🧸 → 🧺 → 📖",
+          "answers": [
+            {
+              "id": "1",
+              "label": "🧺"
+            },
+            {
+              "id": "0",
+              "label": "🧸"
+            }
+          ],
+          "correctAnswerId": "0",
+          "success": {
+            "de": "Genau! Das ist der Anfang.",
+            "en": "Exactly! That is the beginning."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-41",
+          "prompt": {
+            "de": "Navi spielt, räumt die Spielsachen auf und liest ein Buch. Was passiert danach, in der Mitte?",
+            "en": "Navi plays, puts the toys away, and reads a book. What happens next, in the middle?"
+          },
+          "visual": "🧸 → 🧺 → 📖",
+          "answers": [
+            {
+              "id": "1",
+              "label": "🧺"
+            },
+            {
+              "id": "2",
+              "label": "📖"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Genau! Das kommt in der Mitte.",
+            "en": "Exactly! That comes in the middle."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-42",
+          "prompt": {
+            "de": "Navi spielt, räumt die Spielsachen auf und liest ein Buch. Was passiert zuletzt?",
+            "en": "Navi plays, puts the toys away, and reads a book. What happens last?"
+          },
+          "visual": "🧸 → 🧺 → 📖",
+          "answers": [
+            {
+              "id": "0",
+              "label": "🧸"
+            },
+            {
+              "id": "2",
+              "label": "📖"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Genau! Das kommt am Ende.",
+            "en": "Exactly! That comes at the end."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-43",
+          "prompt": {
+            "de": "Navi zieht die Jacke an, geht spazieren und zieht danach die Schuhe aus. Was passiert zuerst?",
+            "en": "Navi puts on a coat, goes for a walk, and then takes off the shoes. What happens first?"
+          },
+          "visual": "🧥 → 🚶 → 👟",
+          "answers": [
+            {
+              "id": "0",
+              "label": "🧥"
+            },
+            {
+              "id": "1",
+              "label": "🚶"
+            }
+          ],
+          "correctAnswerId": "0",
+          "success": {
+            "de": "Genau! Das ist der Anfang.",
+            "en": "Exactly! That is the beginning."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-44",
+          "prompt": {
+            "de": "Navi zieht die Jacke an, geht spazieren und zieht danach die Schuhe aus. Was passiert danach, in der Mitte?",
+            "en": "Navi puts on a coat, goes for a walk, and then takes off the shoes. What happens next, in the middle?"
+          },
+          "visual": "🧥 → 🚶 → 👟",
+          "answers": [
+            {
+              "id": "2",
+              "label": "👟"
+            },
+            {
+              "id": "1",
+              "label": "🚶"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Genau! Das kommt in der Mitte.",
+            "en": "Exactly! That comes in the middle."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-45",
+          "prompt": {
+            "de": "Navi zieht die Jacke an, geht spazieren und zieht danach die Schuhe aus. Was passiert zuletzt?",
+            "en": "Navi puts on a coat, goes for a walk, and then takes off the shoes. What happens last?"
+          },
+          "visual": "🧥 → 🚶 → 👟",
+          "answers": [
+            {
+              "id": "2",
+              "label": "👟"
+            },
+            {
+              "id": "0",
+              "label": "🧥"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Genau! Das kommt am Ende.",
+            "en": "Exactly! That comes at the end."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-46",
+          "prompt": {
+            "de": "Navi wäscht die Hände, isst zu Mittag und putzt danach die Zähne. Was passiert zuerst?",
+            "en": "Navi washes hands, eats lunch, and then brushes teeth. What happens first?"
+          },
+          "visual": "🧼 → 🍝 → 🪥",
+          "answers": [
+            {
+              "id": "1",
+              "label": "🍝"
+            },
+            {
+              "id": "0",
+              "label": "🧼"
+            }
+          ],
+          "correctAnswerId": "0",
+          "success": {
+            "de": "Genau! Das ist der Anfang.",
+            "en": "Exactly! That is the beginning."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-47",
+          "prompt": {
+            "de": "Navi wäscht die Hände, isst zu Mittag und putzt danach die Zähne. Was passiert danach, in der Mitte?",
+            "en": "Navi washes hands, eats lunch, and then brushes teeth. What happens next, in the middle?"
+          },
+          "visual": "🧼 → 🍝 → 🪥",
+          "answers": [
+            {
+              "id": "1",
+              "label": "🍝"
+            },
+            {
+              "id": "2",
+              "label": "🪥"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Genau! Das kommt in der Mitte.",
+            "en": "Exactly! That comes in the middle."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-48",
+          "prompt": {
+            "de": "Navi wäscht die Hände, isst zu Mittag und putzt danach die Zähne. Was passiert zuletzt?",
+            "en": "Navi washes hands, eats lunch, and then brushes teeth. What happens last?"
+          },
+          "visual": "🧼 → 🍝 → 🪥",
+          "answers": [
+            {
+              "id": "0",
+              "label": "🧼"
+            },
+            {
+              "id": "2",
+              "label": "🪥"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Genau! Das kommt am Ende.",
+            "en": "Exactly! That comes at the end."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-49",
+          "prompt": {
+            "de": "Navi malt ein Bild, hängt es auf und packt dann die Stifte ein. Was passiert zuerst?",
+            "en": "Navi draws a picture, hangs it up, and then packs the crayons away. What happens first?"
+          },
+          "visual": "🖍️ → 🖼️ → 🎒",
+          "answers": [
+            {
+              "id": "0",
+              "label": "🖍️"
+            },
+            {
+              "id": "1",
+              "label": "🖼️"
+            }
+          ],
+          "correctAnswerId": "0",
+          "success": {
+            "de": "Genau! Das ist der Anfang.",
+            "en": "Exactly! That is the beginning."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-50",
+          "prompt": {
+            "de": "Navi malt ein Bild, hängt es auf und packt dann die Stifte ein. Was passiert danach, in der Mitte?",
+            "en": "Navi draws a picture, hangs it up, and then packs the crayons away. What happens next, in the middle?"
+          },
+          "visual": "🖍️ → 🖼️ → 🎒",
+          "answers": [
+            {
+              "id": "2",
+              "label": "🎒"
+            },
+            {
+              "id": "1",
+              "label": "🖼️"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Genau! Das kommt in der Mitte.",
+            "en": "Exactly! That comes in the middle."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-51",
+          "prompt": {
+            "de": "Navi malt ein Bild, hängt es auf und packt dann die Stifte ein. Was passiert zuletzt?",
+            "en": "Navi draws a picture, hangs it up, and then packs the crayons away. What happens last?"
+          },
+          "visual": "🖍️ → 🖼️ → 🎒",
+          "answers": [
+            {
+              "id": "2",
+              "label": "🎒"
+            },
+            {
+              "id": "0",
+              "label": "🖍️"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Genau! Das kommt am Ende.",
+            "en": "Exactly! That comes at the end."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-52",
+          "prompt": {
+            "de": "Navi zieht den Schlafanzug an, hört eine Geschichte und schläft ein. Was passiert zuerst?",
+            "en": "Navi puts on pajamas, listens to a story, and falls asleep. What happens first?"
+          },
+          "visual": "👕 → 📖 → 😴",
+          "answers": [
+            {
+              "id": "1",
+              "label": "📖"
+            },
+            {
+              "id": "0",
+              "label": "👕"
+            }
+          ],
+          "correctAnswerId": "0",
+          "success": {
+            "de": "Genau! Das ist der Anfang.",
+            "en": "Exactly! That is the beginning."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-53",
+          "prompt": {
+            "de": "Navi zieht den Schlafanzug an, hört eine Geschichte und schläft ein. Was passiert danach, in der Mitte?",
+            "en": "Navi puts on pajamas, listens to a story, and falls asleep. What happens next, in the middle?"
+          },
+          "visual": "👕 → 📖 → 😴",
+          "answers": [
+            {
+              "id": "1",
+              "label": "📖"
+            },
+            {
+              "id": "2",
+              "label": "😴"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Genau! Das kommt in der Mitte.",
+            "en": "Exactly! That comes in the middle."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-54",
+          "prompt": {
+            "de": "Navi zieht den Schlafanzug an, hört eine Geschichte und schläft ein. Was passiert zuletzt?",
+            "en": "Navi puts on pajamas, listens to a story, and falls asleep. What happens last?"
+          },
+          "visual": "👕 → 📖 → 😴",
+          "answers": [
+            {
+              "id": "0",
+              "label": "👕"
+            },
+            {
+              "id": "2",
+              "label": "😴"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Genau! Das kommt am Ende.",
+            "en": "Exactly! That comes at the end."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-55",
+          "prompt": {
+            "de": "Navi pflanzt einen Samen, gießt ihn und sieht später einen Keimling. Was passiert zuerst?",
+            "en": "Navi plants a seed, waters it, and later sees a seedling. What happens first?"
+          },
+          "visual": "🫘 → 💧 → 🌱",
+          "answers": [
+            {
+              "id": "0",
+              "label": "🫘"
+            },
+            {
+              "id": "1",
+              "label": "💧"
+            }
+          ],
+          "correctAnswerId": "0",
+          "success": {
+            "de": "Genau! Das ist der Anfang.",
+            "en": "Exactly! That is the beginning."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-56",
+          "prompt": {
+            "de": "Navi pflanzt einen Samen, gießt ihn und sieht später einen Keimling. Was passiert danach, in der Mitte?",
+            "en": "Navi plants a seed, waters it, and later sees a seedling. What happens next, in the middle?"
+          },
+          "visual": "🫘 → 💧 → 🌱",
+          "answers": [
+            {
+              "id": "2",
+              "label": "🌱"
+            },
+            {
+              "id": "1",
+              "label": "💧"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Genau! Das kommt in der Mitte.",
+            "en": "Exactly! That comes in the middle."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-57",
+          "prompt": {
+            "de": "Navi pflanzt einen Samen, gießt ihn und sieht später einen Keimling. Was passiert zuletzt?",
+            "en": "Navi plants a seed, waters it, and later sees a seedling. What happens last?"
+          },
+          "visual": "🫘 → 💧 → 🌱",
+          "answers": [
+            {
+              "id": "2",
+              "label": "🌱"
+            },
+            {
+              "id": "0",
+              "label": "🫘"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Genau! Das kommt am Ende.",
+            "en": "Exactly! That comes at the end."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-58",
+          "prompt": {
+            "de": "Navi packt die Tasche, fährt mit dem Bus und kommt am Kindergarten an. Was passiert zuerst?",
+            "en": "Navi packs a bag, takes the bus, and arrives at preschool. What happens first?"
+          },
+          "visual": "🎒 → 🚌 → 🏫",
+          "answers": [
+            {
+              "id": "1",
+              "label": "🚌"
+            },
+            {
+              "id": "0",
+              "label": "🎒"
+            }
+          ],
+          "correctAnswerId": "0",
+          "success": {
+            "de": "Genau! Das ist der Anfang.",
+            "en": "Exactly! That is the beginning."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-59",
+          "prompt": {
+            "de": "Navi packt die Tasche, fährt mit dem Bus und kommt am Kindergarten an. Was passiert danach, in der Mitte?",
+            "en": "Navi packs a bag, takes the bus, and arrives at preschool. What happens next, in the middle?"
+          },
+          "visual": "🎒 → 🚌 → 🏫",
+          "answers": [
+            {
+              "id": "1",
+              "label": "🚌"
+            },
+            {
+              "id": "2",
+              "label": "🏫"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Genau! Das kommt in der Mitte.",
+            "en": "Exactly! That comes in the middle."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-60",
+          "prompt": {
+            "de": "Navi packt die Tasche, fährt mit dem Bus und kommt am Kindergarten an. Was passiert zuletzt?",
+            "en": "Navi packs a bag, takes the bus, and arrives at preschool. What happens last?"
+          },
+          "visual": "🎒 → 🚌 → 🏫",
+          "answers": [
+            {
+              "id": "0",
+              "label": "🎒"
+            },
+            {
+              "id": "2",
+              "label": "🏫"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Genau! Das kommt am Ende.",
+            "en": "Exactly! That comes at the end."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-61",
+          "prompt": {
+            "de": "Navi knetet Teig, backt Brot und isst später eine Scheibe. Was passiert zuerst?",
+            "en": "Navi kneads dough, bakes bread, and later eats a slice. What happens first?"
+          },
+          "visual": "🥣 → 🍞 → 😋",
+          "answers": [
+            {
+              "id": "0",
+              "label": "🥣"
+            },
+            {
+              "id": "1",
+              "label": "🍞"
+            }
+          ],
+          "correctAnswerId": "0",
+          "success": {
+            "de": "Genau! Das ist der Anfang.",
+            "en": "Exactly! That is the beginning."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-62",
+          "prompt": {
+            "de": "Navi knetet Teig, backt Brot und isst später eine Scheibe. Was passiert danach, in der Mitte?",
+            "en": "Navi kneads dough, bakes bread, and later eats a slice. What happens next, in the middle?"
+          },
+          "visual": "🥣 → 🍞 → 😋",
+          "answers": [
+            {
+              "id": "2",
+              "label": "😋"
+            },
+            {
+              "id": "1",
+              "label": "🍞"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Genau! Das kommt in der Mitte.",
+            "en": "Exactly! That comes in the middle."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-63",
+          "prompt": {
+            "de": "Navi knetet Teig, backt Brot und isst später eine Scheibe. Was passiert zuletzt?",
+            "en": "Navi kneads dough, bakes bread, and later eats a slice. What happens last?"
+          },
+          "visual": "🥣 → 🍞 → 😋",
+          "answers": [
+            {
+              "id": "2",
+              "label": "😋"
+            },
+            {
+              "id": "0",
+              "label": "🥣"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Genau! Das kommt am Ende.",
+            "en": "Exactly! That comes at the end."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-64",
+          "prompt": {
+            "de": "Navi zieht die Badehose an, schwimmt und duscht danach. Was passiert zuerst?",
+            "en": "Navi puts on swim shorts, swims, and then showers. What happens first?"
+          },
+          "visual": "🩳 → 🏊 → 🚿",
+          "answers": [
+            {
+              "id": "1",
+              "label": "🏊"
+            },
+            {
+              "id": "0",
+              "label": "🩳"
+            }
+          ],
+          "correctAnswerId": "0",
+          "success": {
+            "de": "Genau! Das ist der Anfang.",
+            "en": "Exactly! That is the beginning."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-65",
+          "prompt": {
+            "de": "Navi zieht die Badehose an, schwimmt und duscht danach. Was passiert danach, in der Mitte?",
+            "en": "Navi puts on swim shorts, swims, and then showers. What happens next, in the middle?"
+          },
+          "visual": "🩳 → 🏊 → 🚿",
+          "answers": [
+            {
+              "id": "1",
+              "label": "🏊"
+            },
+            {
+              "id": "2",
+              "label": "🚿"
+            }
+          ],
+          "correctAnswerId": "1",
+          "success": {
+            "de": "Genau! Das kommt in der Mitte.",
+            "en": "Exactly! That comes in the middle."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-66",
+          "prompt": {
+            "de": "Navi zieht die Badehose an, schwimmt und duscht danach. Was passiert zuletzt?",
+            "en": "Navi puts on swim shorts, swims, and then showers. What happens last?"
+          },
+          "visual": "🩳 → 🏊 → 🚿",
+          "answers": [
+            {
+              "id": "0",
+              "label": "🩳"
+            },
+            {
+              "id": "2",
+              "label": "🚿"
+            }
+          ],
+          "correctAnswerId": "2",
+          "success": {
+            "de": "Genau! Das kommt am Ende.",
+            "en": "Exactly! That comes at the end."
+          },
+          "hint": {
+            "de": "Folge den Bildern von links nach rechts.",
+            "en": "Follow the pictures from left to right."
+          }
+        },
+        {
+          "id": "time-discoverer-67",
+          "prompt": {
+            "de": "Es ist ein Uhr. Welche Uhr zeigt zwei Stunden später?",
+            "en": "It is one o’clock. Which clock shows two hours later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            },
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "3:00",
+          "success": {
+            "de": "Genau! Dann ist es drei Uhr.",
+            "en": "Exactly! Then it is three o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 1,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 1,
+              "minute": 0
+            },
+            "minutes": 120
+          }
+        },
+        {
+          "id": "time-discoverer-68",
+          "prompt": {
+            "de": "Es ist drei Uhr. Welche Uhr zeigt eine Stunde früher?",
+            "en": "It is three o’clock. Which clock shows one hour earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            },
+            {
+              "id": "2:00",
+              "label": "2:00",
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "2:00",
+          "success": {
+            "de": "Genau! Dann ist es zwei Uhr.",
+            "en": "Exactly! Then it is two o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 3,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 3,
+              "minute": 0
+            },
+            "minutes": -60
+          }
+        },
+        {
+          "id": "time-discoverer-69",
+          "prompt": {
+            "de": "Es ist vier Uhr. Welche Uhr zeigt zwei Stunden früher?",
+            "en": "It is four o’clock. Which clock shows two hours earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:00",
+              "label": "2:00",
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              }
+            },
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "2:00",
+          "success": {
+            "de": "Genau! Dann ist es zwei Uhr.",
+            "en": "Exactly! Then it is two o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 4,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 4,
+              "minute": 0
+            },
+            "minutes": -120
+          }
+        },
+        {
+          "id": "time-discoverer-70",
+          "prompt": {
+            "de": "Es ist zwei Uhr. Welche Uhr zeigt zwei Stunden später?",
+            "en": "It is two o’clock. Which clock shows two hours later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            },
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "4:00",
+          "success": {
+            "de": "Genau! Dann ist es vier Uhr.",
+            "en": "Exactly! Then it is four o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 2,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 2,
+              "minute": 0
+            },
+            "minutes": 120
+          }
+        },
+        {
+          "id": "time-discoverer-71",
+          "prompt": {
+            "de": "Es ist vier Uhr. Welche Uhr zeigt eine Stunde früher?",
+            "en": "It is four o’clock. Which clock shows one hour earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            },
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "3:00",
+          "success": {
+            "de": "Genau! Dann ist es drei Uhr.",
+            "en": "Exactly! Then it is three o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 4,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 4,
+              "minute": 0
+            },
+            "minutes": -60
+          }
+        },
+        {
+          "id": "time-discoverer-72",
+          "prompt": {
+            "de": "Es ist fünf Uhr. Welche Uhr zeigt zwei Stunden früher?",
+            "en": "It is five o’clock. Which clock shows two hours earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            },
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "3:00",
+          "success": {
+            "de": "Genau! Dann ist es drei Uhr.",
+            "en": "Exactly! Then it is three o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 5,
+              "minute": 0
+            },
+            "minutes": -120
+          }
+        },
+        {
+          "id": "time-discoverer-73",
+          "prompt": {
+            "de": "Es ist drei Uhr. Welche Uhr zeigt zwei Stunden später?",
+            "en": "It is three o’clock. Which clock shows two hours later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            },
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "5:00",
+          "success": {
+            "de": "Genau! Dann ist es fünf Uhr.",
+            "en": "Exactly! Then it is five o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 3,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 3,
+              "minute": 0
+            },
+            "minutes": 120
+          }
+        },
+        {
+          "id": "time-discoverer-74",
+          "prompt": {
+            "de": "Es ist fünf Uhr. Welche Uhr zeigt eine Stunde früher?",
+            "en": "It is five o’clock. Which clock shows one hour earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            },
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "4:00",
+          "success": {
+            "de": "Genau! Dann ist es vier Uhr.",
+            "en": "Exactly! Then it is four o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 5,
+              "minute": 0
+            },
+            "minutes": -60
+          }
+        },
+        {
+          "id": "time-discoverer-75",
+          "prompt": {
+            "de": "Es ist sechs Uhr. Welche Uhr zeigt zwei Stunden früher?",
+            "en": "It is six o’clock. Which clock shows two hours earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            },
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "4:00",
+          "success": {
+            "de": "Genau! Dann ist es vier Uhr.",
+            "en": "Exactly! Then it is four o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 6,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 6,
+              "minute": 0
+            },
+            "minutes": -120
+          }
+        },
+        {
+          "id": "time-discoverer-76",
+          "prompt": {
+            "de": "Es ist vier Uhr. Welche Uhr zeigt zwei Stunden später?",
+            "en": "It is four o’clock. Which clock shows two hours later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            },
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "6:00",
+          "success": {
+            "de": "Genau! Dann ist es sechs Uhr.",
+            "en": "Exactly! Then it is six o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 4,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 4,
+              "minute": 0
+            },
+            "minutes": 120
+          }
+        },
+        {
+          "id": "time-discoverer-77",
+          "prompt": {
+            "de": "Es ist sechs Uhr. Welche Uhr zeigt eine Stunde früher?",
+            "en": "It is six o’clock. Which clock shows one hour earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            },
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "5:00",
+          "success": {
+            "de": "Genau! Dann ist es fünf Uhr.",
+            "en": "Exactly! Then it is five o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 6,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 6,
+              "minute": 0
+            },
+            "minutes": -60
+          }
+        },
+        {
+          "id": "time-discoverer-78",
+          "prompt": {
+            "de": "Es ist sieben Uhr. Welche Uhr zeigt zwei Stunden früher?",
+            "en": "It is seven o’clock. Which clock shows two hours earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            },
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "5:00",
+          "success": {
+            "de": "Genau! Dann ist es fünf Uhr.",
+            "en": "Exactly! Then it is five o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 7,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 7,
+              "minute": 0
+            },
+            "minutes": -120
+          }
+        },
+        {
+          "id": "time-discoverer-79",
+          "prompt": {
+            "de": "Es ist fünf Uhr. Welche Uhr zeigt zwei Stunden später?",
+            "en": "It is five o’clock. Which clock shows two hours later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            },
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "7:00",
+          "success": {
+            "de": "Genau! Dann ist es sieben Uhr.",
+            "en": "Exactly! Then it is seven o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 5,
+              "minute": 0
+            },
+            "minutes": 120
+          }
+        },
+        {
+          "id": "time-discoverer-80",
+          "prompt": {
+            "de": "Es ist sieben Uhr. Welche Uhr zeigt eine Stunde früher?",
+            "en": "It is seven o’clock. Which clock shows one hour earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            },
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "6:00",
+          "success": {
+            "de": "Genau! Dann ist es sechs Uhr.",
+            "en": "Exactly! Then it is six o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 7,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 7,
+              "minute": 0
+            },
+            "minutes": -60
+          }
+        },
+        {
+          "id": "time-discoverer-81",
+          "prompt": {
+            "de": "Es ist acht Uhr. Welche Uhr zeigt zwei Stunden früher?",
+            "en": "It is eight o’clock. Which clock shows two hours earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            },
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "6:00",
+          "success": {
+            "de": "Genau! Dann ist es sechs Uhr.",
+            "en": "Exactly! Then it is six o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "minutes": -120
+          }
+        },
+        {
+          "id": "time-discoverer-82",
+          "prompt": {
+            "de": "Es ist sechs Uhr. Welche Uhr zeigt zwei Stunden später?",
+            "en": "It is six o’clock. Which clock shows two hours later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "8:00",
+          "success": {
+            "de": "Genau! Dann ist es acht Uhr.",
+            "en": "Exactly! Then it is eight o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 6,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 6,
+              "minute": 0
+            },
+            "minutes": 120
+          }
+        },
+        {
+          "id": "time-discoverer-83",
+          "prompt": {
+            "de": "Es ist acht Uhr. Welche Uhr zeigt eine Stunde früher?",
+            "en": "It is eight o’clock. Which clock shows one hour earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            },
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "7:00",
+          "success": {
+            "de": "Genau! Dann ist es sieben Uhr.",
+            "en": "Exactly! Then it is seven o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "minutes": -60
+          }
+        },
+        {
+          "id": "time-discoverer-84",
+          "prompt": {
+            "de": "Es ist neun Uhr. Welche Uhr zeigt zwei Stunden früher?",
+            "en": "It is nine o’clock. Which clock shows two hours earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "7:00",
+          "success": {
+            "de": "Genau! Dann ist es sieben Uhr.",
+            "en": "Exactly! Then it is seven o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 9,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 9,
+              "minute": 0
+            },
+            "minutes": -120
+          }
+        },
+        {
+          "id": "time-discoverer-85",
+          "prompt": {
+            "de": "Es ist sieben Uhr. Welche Uhr zeigt zwei Stunden später?",
+            "en": "It is seven o’clock. Which clock shows two hours later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "id": "10:00",
+              "label": "10:00",
+              "clock": {
+                "hour": 10,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "9:00",
+          "success": {
+            "de": "Genau! Dann ist es neun Uhr.",
+            "en": "Exactly! Then it is nine o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 7,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 7,
+              "minute": 0
+            },
+            "minutes": 120
+          }
+        },
+        {
+          "id": "time-discoverer-86",
+          "prompt": {
+            "de": "Es ist neun Uhr. Welche Uhr zeigt eine Stunde früher?",
+            "en": "It is nine o’clock. Which clock shows one hour earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "8:00",
+          "success": {
+            "de": "Genau! Dann ist es acht Uhr.",
+            "en": "Exactly! Then it is eight o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 9,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 9,
+              "minute": 0
+            },
+            "minutes": -60
+          }
+        },
+        {
+          "id": "time-discoverer-87",
+          "prompt": {
+            "de": "Es ist zehn Uhr. Welche Uhr zeigt zwei Stunden früher?",
+            "en": "It is ten o’clock. Which clock shows two hours earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "8:00",
+          "success": {
+            "de": "Genau! Dann ist es acht Uhr.",
+            "en": "Exactly! Then it is eight o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 10,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 10,
+              "minute": 0
+            },
+            "minutes": -120
+          }
+        },
+        {
+          "id": "time-discoverer-88",
+          "prompt": {
+            "de": "Es ist acht Uhr. Welche Uhr zeigt zwei Stunden später?",
+            "en": "It is eight o’clock. Which clock shows two hours later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "11:00",
+              "label": "11:00",
+              "clock": {
+                "hour": 11,
+                "minute": 0
+              }
+            },
+            {
+              "id": "10:00",
+              "label": "10:00",
+              "clock": {
+                "hour": 10,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "10:00",
+          "success": {
+            "de": "Genau! Dann ist es zehn Uhr.",
+            "en": "Exactly! Then it is ten o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 8,
+              "minute": 0
+            },
+            "minutes": 120
+          }
+        },
+        {
+          "id": "time-discoverer-89",
+          "prompt": {
+            "de": "Es ist zehn Uhr. Welche Uhr zeigt eine Stunde früher?",
+            "en": "It is ten o’clock. Which clock shows one hour earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "id": "10:00",
+              "label": "10:00",
+              "clock": {
+                "hour": 10,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "9:00",
+          "success": {
+            "de": "Genau! Dann ist es neun Uhr.",
+            "en": "Exactly! Then it is nine o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 10,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 10,
+              "minute": 0
+            },
+            "minutes": -60
+          }
+        },
+        {
+          "id": "time-discoverer-90",
+          "prompt": {
+            "de": "Es ist elf Uhr. Welche Uhr zeigt zwei Stunden früher?",
+            "en": "It is eleven o’clock. Which clock shows two hours earlier?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "10:00",
+              "label": "10:00",
+              "clock": {
+                "hour": 10,
+                "minute": 0
+              }
+            },
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "9:00",
+          "success": {
+            "de": "Genau! Dann ist es neun Uhr.",
+            "en": "Exactly! Then it is nine o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr zurück. Die Stunden wiederholen sich nach zwölf.",
+            "en": "Move back around the clock. The hours repeat after twelve."
+          },
+          "clock": {
+            "hour": 11,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 11,
+              "minute": 0
+            },
+            "minutes": -120
+          }
+        }
+      ],
+      "adventurer": [
+        {
+          "id": "time-adventurer-1",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "1:00",
+              "label": "1:00"
+            },
+            {
+              "id": "2:00",
+              "label": "2:00"
+            },
+            {
+              "id": "12:00",
+              "label": "12:00"
+            }
+          ],
+          "correctAnswerId": "1:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt ein Uhr.",
+            "en": "Correct, the clock shows one o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 1,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 1,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-2",
+          "prompt": {
+            "de": "Welche Uhr zeigt ein Uhr?",
+            "en": "Which clock shows one o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:00",
+              "label": "2:00",
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              }
+            },
+            {
+              "id": "12:00",
+              "label": "12:00",
+              "clock": {
+                "hour": 12,
+                "minute": 0
+              }
+            },
+            {
+              "id": "1:00",
+              "label": "1:00",
+              "clock": {
+                "hour": 1,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "1:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt ein Uhr.",
+            "en": "Correct, the clock shows one o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 1,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-3",
+          "prompt": {
+            "de": "Es ist ein Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is one o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "1:00",
+              "label": "1:00",
+              "clock": {
+                "hour": 1,
+                "minute": 0
+              }
+            },
+            {
+              "id": "2:00",
+              "label": "2:00",
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              }
+            },
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "2:00",
+          "success": {
+            "de": "Genau! Dann ist es zwei Uhr.",
+            "en": "Exactly! Then it is two o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 1,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 1,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-adventurer-4",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:00",
+              "label": "3:00"
+            },
+            {
+              "id": "4:00",
+              "label": "4:00"
+            },
+            {
+              "id": "2:00",
+              "label": "2:00"
+            }
+          ],
+          "correctAnswerId": "3:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt drei Uhr.",
+            "en": "Correct, the clock shows three o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 3,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 3,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-5",
+          "prompt": {
+            "de": "Welche Uhr zeigt drei Uhr?",
+            "en": "Which clock shows three o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            },
+            {
+              "id": "2:00",
+              "label": "2:00",
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              }
+            },
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "3:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt drei Uhr.",
+            "en": "Correct, the clock shows three o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 3,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-6",
+          "prompt": {
+            "de": "Es ist drei Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is three o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            },
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            },
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "4:00",
+          "success": {
+            "de": "Genau! Dann ist es vier Uhr.",
+            "en": "Exactly! Then it is four o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 3,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 3,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-adventurer-7",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:00",
+              "label": "5:00"
+            },
+            {
+              "id": "6:00",
+              "label": "6:00"
+            },
+            {
+              "id": "4:00",
+              "label": "4:00"
+            }
+          ],
+          "correctAnswerId": "5:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt fünf Uhr.",
+            "en": "Correct, the clock shows five o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 5,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-8",
+          "prompt": {
+            "de": "Welche Uhr zeigt fünf Uhr?",
+            "en": "Which clock shows five o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            },
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            },
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "5:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt fünf Uhr.",
+            "en": "Correct, the clock shows five o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 5,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-9",
+          "prompt": {
+            "de": "Es ist fünf Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is five o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            },
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            },
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "6:00",
+          "success": {
+            "de": "Genau! Dann ist es sechs Uhr.",
+            "en": "Exactly! Then it is six o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 5,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-adventurer-10",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "7:00",
+              "label": "7:00"
+            },
+            {
+              "id": "8:00",
+              "label": "8:00"
+            },
+            {
+              "id": "6:00",
+              "label": "6:00"
+            }
+          ],
+          "correctAnswerId": "7:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt sieben Uhr.",
+            "en": "Correct, the clock shows seven o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 7,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 7,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-11",
+          "prompt": {
+            "de": "Welche Uhr zeigt sieben Uhr?",
+            "en": "Which clock shows seven o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            },
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "7:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt sieben Uhr.",
+            "en": "Correct, the clock shows seven o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 7,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-12",
+          "prompt": {
+            "de": "Es ist sieben Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is seven o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            },
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "8:00",
+          "success": {
+            "de": "Genau! Dann ist es acht Uhr.",
+            "en": "Exactly! Then it is eight o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 7,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 7,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-adventurer-13",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "9:00",
+              "label": "9:00"
+            },
+            {
+              "id": "10:00",
+              "label": "10:00"
+            },
+            {
+              "id": "8:00",
+              "label": "8:00"
+            }
+          ],
+          "correctAnswerId": "9:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt neun Uhr.",
+            "en": "Correct, the clock shows nine o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 9,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 9,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-14",
+          "prompt": {
+            "de": "Welche Uhr zeigt neun Uhr?",
+            "en": "Which clock shows nine o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "10:00",
+              "label": "10:00",
+              "clock": {
+                "hour": 10,
+                "minute": 0
+              }
+            },
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "9:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt neun Uhr.",
+            "en": "Correct, the clock shows nine o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 9,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-15",
+          "prompt": {
+            "de": "Es ist neun Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is nine o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "id": "10:00",
+              "label": "10:00",
+              "clock": {
+                "hour": 10,
+                "minute": 0
+              }
+            },
+            {
+              "id": "11:00",
+              "label": "11:00",
+              "clock": {
+                "hour": 11,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "10:00",
+          "success": {
+            "de": "Genau! Dann ist es zehn Uhr.",
+            "en": "Exactly! Then it is ten o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 9,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 9,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-adventurer-16",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "11:00",
+              "label": "11:00"
+            },
+            {
+              "id": "12:00",
+              "label": "12:00"
+            },
+            {
+              "id": "10:00",
+              "label": "10:00"
+            }
+          ],
+          "correctAnswerId": "11:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt elf Uhr.",
+            "en": "Correct, the clock shows eleven o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 11,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 11,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-17",
+          "prompt": {
+            "de": "Welche Uhr zeigt elf Uhr?",
+            "en": "Which clock shows eleven o’clock?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "12:00",
+              "label": "12:00",
+              "clock": {
+                "hour": 12,
+                "minute": 0
+              }
+            },
+            {
+              "id": "10:00",
+              "label": "10:00",
+              "clock": {
+                "hour": 10,
+                "minute": 0
+              }
+            },
+            {
+              "id": "11:00",
+              "label": "11:00",
+              "clock": {
+                "hour": 11,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "11:00",
+          "success": {
+            "de": "Richtig, die Uhr zeigt elf Uhr.",
+            "en": "Correct, the clock shows eleven o’clock."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 11,
+              "minute": 0
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-18",
+          "prompt": {
+            "de": "Es ist elf Uhr. Welche Uhr zeigt eine Stunde später?",
+            "en": "It is eleven o’clock. Which clock shows one hour later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "11:00",
+              "label": "11:00",
+              "clock": {
+                "hour": 11,
+                "minute": 0
+              }
+            },
+            {
+              "id": "12:00",
+              "label": "12:00",
+              "clock": {
+                "hour": 12,
+                "minute": 0
+              }
+            },
+            {
+              "id": "1:00",
+              "label": "1:00",
+              "clock": {
+                "hour": 1,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "12:00",
+          "success": {
+            "de": "Genau! Dann ist es zwölf Uhr.",
+            "en": "Exactly! Then it is twelve o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 11,
+            "minute": 0
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 11,
+              "minute": 0
+            },
+            "minutes": 60
+          }
+        },
+        {
+          "id": "time-adventurer-19",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "1:30",
+              "label": "1:30"
+            },
+            {
+              "id": "1:45",
+              "label": "1:45"
+            },
+            {
+              "id": "1:15",
+              "label": "1:15"
+            }
+          ],
+          "correctAnswerId": "1:30",
+          "success": {
+            "de": "Richtig: halb zwei, also 1:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past one, or 1:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 1,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 1,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-20",
+          "prompt": {
+            "de": "Welche Uhr zeigt halb zwei?",
+            "en": "Which clock shows half past one?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "1:45",
+              "label": "1:45",
+              "clock": {
+                "hour": 1,
+                "minute": 45
+              }
+            },
+            {
+              "id": "1:15",
+              "label": "1:15",
+              "clock": {
+                "hour": 1,
+                "minute": 15
+              }
+            },
+            {
+              "id": "1:30",
+              "label": "1:30",
+              "clock": {
+                "hour": 1,
+                "minute": 30
+              }
+            }
+          ],
+          "correctAnswerId": "1:30",
+          "success": {
+            "de": "Richtig: halb zwei, also 1:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past one, or 1:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 1,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-21",
+          "prompt": {
+            "de": "Es ist halb zwei. Welche Uhr zeigt 30 Minuten später?",
+            "en": "It is half past one. Which clock shows 30 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "1:45",
+              "label": "1:45",
+              "clock": {
+                "hour": 1,
+                "minute": 45
+              }
+            },
+            {
+              "id": "2:00",
+              "label": "2:00",
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              }
+            },
+            {
+              "id": "2:15",
+              "label": "2:15",
+              "clock": {
+                "hour": 2,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "2:00",
+          "success": {
+            "de": "Genau! Dann ist es zwei Uhr.",
+            "en": "Exactly! Then it is two o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 1,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 1,
+              "minute": 30
+            },
+            "minutes": 30
+          }
+        },
+        {
+          "id": "time-adventurer-22",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:30",
+              "label": "2:30"
+            },
+            {
+              "id": "2:45",
+              "label": "2:45"
+            },
+            {
+              "id": "2:15",
+              "label": "2:15"
+            }
+          ],
+          "correctAnswerId": "2:30",
+          "success": {
+            "de": "Richtig: halb drei, also 2:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past two, or 2:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 2,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 2,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-23",
+          "prompt": {
+            "de": "Welche Uhr zeigt halb drei?",
+            "en": "Which clock shows half past two?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:45",
+              "label": "2:45",
+              "clock": {
+                "hour": 2,
+                "minute": 45
+              }
+            },
+            {
+              "id": "2:15",
+              "label": "2:15",
+              "clock": {
+                "hour": 2,
+                "minute": 15
+              }
+            },
+            {
+              "id": "2:30",
+              "label": "2:30",
+              "clock": {
+                "hour": 2,
+                "minute": 30
+              }
+            }
+          ],
+          "correctAnswerId": "2:30",
+          "success": {
+            "de": "Richtig: halb drei, also 2:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past two, or 2:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 2,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-24",
+          "prompt": {
+            "de": "Es ist halb drei. Welche Uhr zeigt 30 Minuten später?",
+            "en": "It is half past two. Which clock shows 30 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:45",
+              "label": "2:45",
+              "clock": {
+                "hour": 2,
+                "minute": 45
+              }
+            },
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            },
+            {
+              "id": "3:15",
+              "label": "3:15",
+              "clock": {
+                "hour": 3,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "3:00",
+          "success": {
+            "de": "Genau! Dann ist es drei Uhr.",
+            "en": "Exactly! Then it is three o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 2,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 2,
+              "minute": 30
+            },
+            "minutes": 30
+          }
+        },
+        {
+          "id": "time-adventurer-25",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:30",
+              "label": "3:30"
+            },
+            {
+              "id": "3:45",
+              "label": "3:45"
+            },
+            {
+              "id": "3:15",
+              "label": "3:15"
+            }
+          ],
+          "correctAnswerId": "3:30",
+          "success": {
+            "de": "Richtig: halb vier, also 3:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past three, or 3:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 3,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 3,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-26",
+          "prompt": {
+            "de": "Welche Uhr zeigt halb vier?",
+            "en": "Which clock shows half past three?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:45",
+              "label": "3:45",
+              "clock": {
+                "hour": 3,
+                "minute": 45
+              }
+            },
+            {
+              "id": "3:15",
+              "label": "3:15",
+              "clock": {
+                "hour": 3,
+                "minute": 15
+              }
+            },
+            {
+              "id": "3:30",
+              "label": "3:30",
+              "clock": {
+                "hour": 3,
+                "minute": 30
+              }
+            }
+          ],
+          "correctAnswerId": "3:30",
+          "success": {
+            "de": "Richtig: halb vier, also 3:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past three, or 3:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 3,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-27",
+          "prompt": {
+            "de": "Es ist halb vier. Welche Uhr zeigt 30 Minuten später?",
+            "en": "It is half past three. Which clock shows 30 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:45",
+              "label": "3:45",
+              "clock": {
+                "hour": 3,
+                "minute": 45
+              }
+            },
+            {
+              "id": "4:00",
+              "label": "4:00",
+              "clock": {
+                "hour": 4,
+                "minute": 0
+              }
+            },
+            {
+              "id": "4:15",
+              "label": "4:15",
+              "clock": {
+                "hour": 4,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "4:00",
+          "success": {
+            "de": "Genau! Dann ist es vier Uhr.",
+            "en": "Exactly! Then it is four o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 3,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 3,
+              "minute": 30
+            },
+            "minutes": 30
+          }
+        },
+        {
+          "id": "time-adventurer-28",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:30",
+              "label": "4:30"
+            },
+            {
+              "id": "4:45",
+              "label": "4:45"
+            },
+            {
+              "id": "4:15",
+              "label": "4:15"
+            }
+          ],
+          "correctAnswerId": "4:30",
+          "success": {
+            "de": "Richtig: halb fünf, also 4:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past four, or 4:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 4,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 4,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-29",
+          "prompt": {
+            "de": "Welche Uhr zeigt halb fünf?",
+            "en": "Which clock shows half past four?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:45",
+              "label": "4:45",
+              "clock": {
+                "hour": 4,
+                "minute": 45
+              }
+            },
+            {
+              "id": "4:15",
+              "label": "4:15",
+              "clock": {
+                "hour": 4,
+                "minute": 15
+              }
+            },
+            {
+              "id": "4:30",
+              "label": "4:30",
+              "clock": {
+                "hour": 4,
+                "minute": 30
+              }
+            }
+          ],
+          "correctAnswerId": "4:30",
+          "success": {
+            "de": "Richtig: halb fünf, also 4:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past four, or 4:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 4,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-30",
+          "prompt": {
+            "de": "Es ist halb fünf. Welche Uhr zeigt 30 Minuten später?",
+            "en": "It is half past four. Which clock shows 30 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:45",
+              "label": "4:45",
+              "clock": {
+                "hour": 4,
+                "minute": 45
+              }
+            },
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            },
+            {
+              "id": "5:15",
+              "label": "5:15",
+              "clock": {
+                "hour": 5,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "5:00",
+          "success": {
+            "de": "Genau! Dann ist es fünf Uhr.",
+            "en": "Exactly! Then it is five o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 4,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 4,
+              "minute": 30
+            },
+            "minutes": 30
+          }
+        },
+        {
+          "id": "time-adventurer-31",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:30",
+              "label": "6:30"
+            },
+            {
+              "id": "6:45",
+              "label": "6:45"
+            },
+            {
+              "id": "6:15",
+              "label": "6:15"
+            }
+          ],
+          "correctAnswerId": "6:30",
+          "success": {
+            "de": "Richtig: halb sieben, also 6:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past six, or 6:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 6,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 6,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-32",
+          "prompt": {
+            "de": "Welche Uhr zeigt halb sieben?",
+            "en": "Which clock shows half past six?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:45",
+              "label": "6:45",
+              "clock": {
+                "hour": 6,
+                "minute": 45
+              }
+            },
+            {
+              "id": "6:15",
+              "label": "6:15",
+              "clock": {
+                "hour": 6,
+                "minute": 15
+              }
+            },
+            {
+              "id": "6:30",
+              "label": "6:30",
+              "clock": {
+                "hour": 6,
+                "minute": 30
+              }
+            }
+          ],
+          "correctAnswerId": "6:30",
+          "success": {
+            "de": "Richtig: halb sieben, also 6:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past six, or 6:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 6,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-33",
+          "prompt": {
+            "de": "Es ist halb sieben. Welche Uhr zeigt 30 Minuten später?",
+            "en": "It is half past six. Which clock shows 30 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:45",
+              "label": "6:45",
+              "clock": {
+                "hour": 6,
+                "minute": 45
+              }
+            },
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            },
+            {
+              "id": "7:15",
+              "label": "7:15",
+              "clock": {
+                "hour": 7,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "7:00",
+          "success": {
+            "de": "Genau! Dann ist es sieben Uhr.",
+            "en": "Exactly! Then it is seven o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 6,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 6,
+              "minute": 30
+            },
+            "minutes": 30
+          }
+        },
+        {
+          "id": "time-adventurer-34",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:30",
+              "label": "8:30"
+            },
+            {
+              "id": "8:45",
+              "label": "8:45"
+            },
+            {
+              "id": "8:15",
+              "label": "8:15"
+            }
+          ],
+          "correctAnswerId": "8:30",
+          "success": {
+            "de": "Richtig: halb neun, also 8:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past eight, or 8:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 8,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-35",
+          "prompt": {
+            "de": "Welche Uhr zeigt halb neun?",
+            "en": "Which clock shows half past eight?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:45",
+              "label": "8:45",
+              "clock": {
+                "hour": 8,
+                "minute": 45
+              }
+            },
+            {
+              "id": "8:15",
+              "label": "8:15",
+              "clock": {
+                "hour": 8,
+                "minute": 15
+              }
+            },
+            {
+              "id": "8:30",
+              "label": "8:30",
+              "clock": {
+                "hour": 8,
+                "minute": 30
+              }
+            }
+          ],
+          "correctAnswerId": "8:30",
+          "success": {
+            "de": "Richtig: halb neun, also 8:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past eight, or 8:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 8,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-36",
+          "prompt": {
+            "de": "Es ist halb neun. Welche Uhr zeigt 30 Minuten später?",
+            "en": "It is half past eight. Which clock shows 30 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:45",
+              "label": "8:45",
+              "clock": {
+                "hour": 8,
+                "minute": 45
+              }
+            },
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "id": "9:15",
+              "label": "9:15",
+              "clock": {
+                "hour": 9,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "9:00",
+          "success": {
+            "de": "Genau! Dann ist es neun Uhr.",
+            "en": "Exactly! Then it is nine o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 8,
+              "minute": 30
+            },
+            "minutes": 30
+          }
+        },
+        {
+          "id": "time-adventurer-37",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "10:30",
+              "label": "10:30"
+            },
+            {
+              "id": "10:45",
+              "label": "10:45"
+            },
+            {
+              "id": "10:15",
+              "label": "10:15"
+            }
+          ],
+          "correctAnswerId": "10:30",
+          "success": {
+            "de": "Richtig: halb elf, also 10:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past ten, or 10:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 10,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 10,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-38",
+          "prompt": {
+            "de": "Welche Uhr zeigt halb elf?",
+            "en": "Which clock shows half past ten?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "10:45",
+              "label": "10:45",
+              "clock": {
+                "hour": 10,
+                "minute": 45
+              }
+            },
+            {
+              "id": "10:15",
+              "label": "10:15",
+              "clock": {
+                "hour": 10,
+                "minute": 15
+              }
+            },
+            {
+              "id": "10:30",
+              "label": "10:30",
+              "clock": {
+                "hour": 10,
+                "minute": 30
+              }
+            }
+          ],
+          "correctAnswerId": "10:30",
+          "success": {
+            "de": "Richtig: halb elf, also 10:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past ten, or 10:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 10,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-39",
+          "prompt": {
+            "de": "Es ist halb elf. Welche Uhr zeigt 30 Minuten später?",
+            "en": "It is half past ten. Which clock shows 30 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "10:45",
+              "label": "10:45",
+              "clock": {
+                "hour": 10,
+                "minute": 45
+              }
+            },
+            {
+              "id": "11:00",
+              "label": "11:00",
+              "clock": {
+                "hour": 11,
+                "minute": 0
+              }
+            },
+            {
+              "id": "11:15",
+              "label": "11:15",
+              "clock": {
+                "hour": 11,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "11:00",
+          "success": {
+            "de": "Genau! Dann ist es elf Uhr.",
+            "en": "Exactly! Then it is eleven o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 10,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 10,
+              "minute": 30
+            },
+            "minutes": 30
+          }
+        },
+        {
+          "id": "time-adventurer-40",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "12:30",
+              "label": "12:30"
+            },
+            {
+              "id": "12:45",
+              "label": "12:45"
+            },
+            {
+              "id": "12:15",
+              "label": "12:15"
+            }
+          ],
+          "correctAnswerId": "12:30",
+          "success": {
+            "de": "Richtig: halb eins, also 12:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past twelve, or 12:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 12,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 12,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-41",
+          "prompt": {
+            "de": "Welche Uhr zeigt halb eins?",
+            "en": "Which clock shows half past twelve?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "12:45",
+              "label": "12:45",
+              "clock": {
+                "hour": 12,
+                "minute": 45
+              }
+            },
+            {
+              "id": "12:15",
+              "label": "12:15",
+              "clock": {
+                "hour": 12,
+                "minute": 15
+              }
+            },
+            {
+              "id": "12:30",
+              "label": "12:30",
+              "clock": {
+                "hour": 12,
+                "minute": 30
+              }
+            }
+          ],
+          "correctAnswerId": "12:30",
+          "success": {
+            "de": "Richtig: halb eins, also 12:30 Uhr. Bei „halb“ nennen wir die nächste Stunde.",
+            "en": "Correct: half past twelve, or 12:30. The long hand points to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 12,
+              "minute": 30
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-42",
+          "prompt": {
+            "de": "Es ist halb eins. Welche Uhr zeigt 30 Minuten später?",
+            "en": "It is half past twelve. Which clock shows 30 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "12:45",
+              "label": "12:45",
+              "clock": {
+                "hour": 12,
+                "minute": 45
+              }
+            },
+            {
+              "id": "1:00",
+              "label": "1:00",
+              "clock": {
+                "hour": 1,
+                "minute": 0
+              }
+            },
+            {
+              "id": "1:15",
+              "label": "1:15",
+              "clock": {
+                "hour": 1,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "1:00",
+          "success": {
+            "de": "Genau! Dann ist es ein Uhr.",
+            "en": "Exactly! Then it is one o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 12,
+            "minute": 30
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 12,
+              "minute": 30
+            },
+            "minutes": 30
+          }
+        },
+        {
+          "id": "time-adventurer-43",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:15",
+              "label": "2:15"
+            },
+            {
+              "id": "2:30",
+              "label": "2:30"
+            },
+            {
+              "id": "2:00",
+              "label": "2:00"
+            }
+          ],
+          "correctAnswerId": "2:15",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel nach zwei.",
+            "en": "Correct, the clock shows quarter past two."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 2,
+            "minute": 15
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 2,
+              "minute": 15
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-44",
+          "prompt": {
+            "de": "Welche Uhr zeigt Viertel nach zwei?",
+            "en": "Which clock shows quarter past two?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:30",
+              "label": "2:30",
+              "clock": {
+                "hour": 2,
+                "minute": 30
+              }
+            },
+            {
+              "id": "2:00",
+              "label": "2:00",
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              }
+            },
+            {
+              "id": "2:15",
+              "label": "2:15",
+              "clock": {
+                "hour": 2,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "2:15",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel nach zwei.",
+            "en": "Correct, the clock shows quarter past two."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 2,
+              "minute": 15
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-45",
+          "prompt": {
+            "de": "Es ist Viertel nach zwei. Welche Uhr zeigt 15 Minuten später?",
+            "en": "It is quarter past two. Which clock shows 15 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:15",
+              "label": "2:15",
+              "clock": {
+                "hour": 2,
+                "minute": 15
+              }
+            },
+            {
+              "id": "2:30",
+              "label": "2:30",
+              "clock": {
+                "hour": 2,
+                "minute": 30
+              }
+            },
+            {
+              "id": "2:45",
+              "label": "2:45",
+              "clock": {
+                "hour": 2,
+                "minute": 45
+              }
+            }
+          ],
+          "correctAnswerId": "2:30",
+          "success": {
+            "de": "Genau! Dann ist es halb drei.",
+            "en": "Exactly! Then it is half past two."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 2,
+            "minute": 15
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 2,
+              "minute": 15
+            },
+            "minutes": 15
+          }
+        },
+        {
+          "id": "time-adventurer-46",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:45",
+              "label": "2:45"
+            },
+            {
+              "id": "3:00",
+              "label": "3:00"
+            },
+            {
+              "id": "2:30",
+              "label": "2:30"
+            }
+          ],
+          "correctAnswerId": "2:45",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel vor drei.",
+            "en": "Correct, the clock shows quarter to three."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 2,
+            "minute": 45
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 2,
+              "minute": 45
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-47",
+          "prompt": {
+            "de": "Welche Uhr zeigt Viertel vor drei?",
+            "en": "Which clock shows quarter to three?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            },
+            {
+              "id": "2:30",
+              "label": "2:30",
+              "clock": {
+                "hour": 2,
+                "minute": 30
+              }
+            },
+            {
+              "id": "2:45",
+              "label": "2:45",
+              "clock": {
+                "hour": 2,
+                "minute": 45
+              }
+            }
+          ],
+          "correctAnswerId": "2:45",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel vor drei.",
+            "en": "Correct, the clock shows quarter to three."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 2,
+              "minute": 45
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-48",
+          "prompt": {
+            "de": "Es ist Viertel vor drei. Welche Uhr zeigt 15 Minuten später?",
+            "en": "It is quarter to three. Which clock shows 15 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:45",
+              "label": "2:45",
+              "clock": {
+                "hour": 2,
+                "minute": 45
+              }
+            },
+            {
+              "id": "3:00",
+              "label": "3:00",
+              "clock": {
+                "hour": 3,
+                "minute": 0
+              }
+            },
+            {
+              "id": "3:15",
+              "label": "3:15",
+              "clock": {
+                "hour": 3,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "3:00",
+          "success": {
+            "de": "Genau! Dann ist es drei Uhr.",
+            "en": "Exactly! Then it is three o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 2,
+            "minute": 45
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 2,
+              "minute": 45
+            },
+            "minutes": 15
+          }
+        },
+        {
+          "id": "time-adventurer-49",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:15",
+              "label": "5:15"
+            },
+            {
+              "id": "5:30",
+              "label": "5:30"
+            },
+            {
+              "id": "5:00",
+              "label": "5:00"
+            }
+          ],
+          "correctAnswerId": "5:15",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel nach fünf.",
+            "en": "Correct, the clock shows quarter past five."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 15
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 5,
+              "minute": 15
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-50",
+          "prompt": {
+            "de": "Welche Uhr zeigt Viertel nach fünf?",
+            "en": "Which clock shows quarter past five?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:30",
+              "label": "5:30",
+              "clock": {
+                "hour": 5,
+                "minute": 30
+              }
+            },
+            {
+              "id": "5:00",
+              "label": "5:00",
+              "clock": {
+                "hour": 5,
+                "minute": 0
+              }
+            },
+            {
+              "id": "5:15",
+              "label": "5:15",
+              "clock": {
+                "hour": 5,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "5:15",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel nach fünf.",
+            "en": "Correct, the clock shows quarter past five."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 5,
+              "minute": 15
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-51",
+          "prompt": {
+            "de": "Es ist Viertel nach fünf. Welche Uhr zeigt 15 Minuten später?",
+            "en": "It is quarter past five. Which clock shows 15 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:15",
+              "label": "5:15",
+              "clock": {
+                "hour": 5,
+                "minute": 15
+              }
+            },
+            {
+              "id": "5:30",
+              "label": "5:30",
+              "clock": {
+                "hour": 5,
+                "minute": 30
+              }
+            },
+            {
+              "id": "5:45",
+              "label": "5:45",
+              "clock": {
+                "hour": 5,
+                "minute": 45
+              }
+            }
+          ],
+          "correctAnswerId": "5:30",
+          "success": {
+            "de": "Genau! Dann ist es halb sechs.",
+            "en": "Exactly! Then it is half past five."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 15
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 5,
+              "minute": 15
+            },
+            "minutes": 15
+          }
+        },
+        {
+          "id": "time-adventurer-52",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:45",
+              "label": "5:45"
+            },
+            {
+              "id": "6:00",
+              "label": "6:00"
+            },
+            {
+              "id": "5:30",
+              "label": "5:30"
+            }
+          ],
+          "correctAnswerId": "5:45",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel vor sechs.",
+            "en": "Correct, the clock shows quarter to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 45
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 5,
+              "minute": 45
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-53",
+          "prompt": {
+            "de": "Welche Uhr zeigt Viertel vor sechs?",
+            "en": "Which clock shows quarter to six?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            },
+            {
+              "id": "5:30",
+              "label": "5:30",
+              "clock": {
+                "hour": 5,
+                "minute": 30
+              }
+            },
+            {
+              "id": "5:45",
+              "label": "5:45",
+              "clock": {
+                "hour": 5,
+                "minute": 45
+              }
+            }
+          ],
+          "correctAnswerId": "5:45",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel vor sechs.",
+            "en": "Correct, the clock shows quarter to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 5,
+              "minute": 45
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-54",
+          "prompt": {
+            "de": "Es ist Viertel vor sechs. Welche Uhr zeigt 15 Minuten später?",
+            "en": "It is quarter to six. Which clock shows 15 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:45",
+              "label": "5:45",
+              "clock": {
+                "hour": 5,
+                "minute": 45
+              }
+            },
+            {
+              "id": "6:00",
+              "label": "6:00",
+              "clock": {
+                "hour": 6,
+                "minute": 0
+              }
+            },
+            {
+              "id": "6:15",
+              "label": "6:15",
+              "clock": {
+                "hour": 6,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "6:00",
+          "success": {
+            "de": "Genau! Dann ist es sechs Uhr.",
+            "en": "Exactly! Then it is six o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 45
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 5,
+              "minute": 45
+            },
+            "minutes": 15
+          }
+        },
+        {
+          "id": "time-adventurer-55",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:15",
+              "label": "8:15"
+            },
+            {
+              "id": "8:30",
+              "label": "8:30"
+            },
+            {
+              "id": "8:00",
+              "label": "8:00"
+            }
+          ],
+          "correctAnswerId": "8:15",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel nach acht.",
+            "en": "Correct, the clock shows quarter past eight."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 15
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 8,
+              "minute": 15
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-56",
+          "prompt": {
+            "de": "Welche Uhr zeigt Viertel nach acht?",
+            "en": "Which clock shows quarter past eight?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:30",
+              "label": "8:30",
+              "clock": {
+                "hour": 8,
+                "minute": 30
+              }
+            },
+            {
+              "id": "8:00",
+              "label": "8:00",
+              "clock": {
+                "hour": 8,
+                "minute": 0
+              }
+            },
+            {
+              "id": "8:15",
+              "label": "8:15",
+              "clock": {
+                "hour": 8,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "8:15",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel nach acht.",
+            "en": "Correct, the clock shows quarter past eight."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 8,
+              "minute": 15
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-57",
+          "prompt": {
+            "de": "Es ist Viertel nach acht. Welche Uhr zeigt 15 Minuten später?",
+            "en": "It is quarter past eight. Which clock shows 15 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:15",
+              "label": "8:15",
+              "clock": {
+                "hour": 8,
+                "minute": 15
+              }
+            },
+            {
+              "id": "8:30",
+              "label": "8:30",
+              "clock": {
+                "hour": 8,
+                "minute": 30
+              }
+            },
+            {
+              "id": "8:45",
+              "label": "8:45",
+              "clock": {
+                "hour": 8,
+                "minute": 45
+              }
+            }
+          ],
+          "correctAnswerId": "8:30",
+          "success": {
+            "de": "Genau! Dann ist es halb neun.",
+            "en": "Exactly! Then it is half past eight."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 15
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 8,
+              "minute": 15
+            },
+            "minutes": 15
+          }
+        },
+        {
+          "id": "time-adventurer-58",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:45",
+              "label": "8:45"
+            },
+            {
+              "id": "9:00",
+              "label": "9:00"
+            },
+            {
+              "id": "8:30",
+              "label": "8:30"
+            }
+          ],
+          "correctAnswerId": "8:45",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel vor neun.",
+            "en": "Correct, the clock shows quarter to nine."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 45
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 8,
+              "minute": 45
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-59",
+          "prompt": {
+            "de": "Welche Uhr zeigt Viertel vor neun?",
+            "en": "Which clock shows quarter to nine?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "id": "8:30",
+              "label": "8:30",
+              "clock": {
+                "hour": 8,
+                "minute": 30
+              }
+            },
+            {
+              "id": "8:45",
+              "label": "8:45",
+              "clock": {
+                "hour": 8,
+                "minute": 45
+              }
+            }
+          ],
+          "correctAnswerId": "8:45",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel vor neun.",
+            "en": "Correct, the clock shows quarter to nine."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 8,
+              "minute": 45
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-60",
+          "prompt": {
+            "de": "Es ist Viertel vor neun. Welche Uhr zeigt 15 Minuten später?",
+            "en": "It is quarter to nine. Which clock shows 15 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:45",
+              "label": "8:45",
+              "clock": {
+                "hour": 8,
+                "minute": 45
+              }
+            },
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "id": "9:15",
+              "label": "9:15",
+              "clock": {
+                "hour": 9,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "9:00",
+          "success": {
+            "de": "Genau! Dann ist es neun Uhr.",
+            "en": "Exactly! Then it is nine o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 45
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 8,
+              "minute": 45
+            },
+            "minutes": 15
+          }
+        },
+        {
+          "id": "time-adventurer-61",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "11:15",
+              "label": "11:15"
+            },
+            {
+              "id": "11:30",
+              "label": "11:30"
+            },
+            {
+              "id": "11:00",
+              "label": "11:00"
+            }
+          ],
+          "correctAnswerId": "11:15",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel nach elf.",
+            "en": "Correct, the clock shows quarter past eleven."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 11,
+            "minute": 15
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 11,
+              "minute": 15
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-62",
+          "prompt": {
+            "de": "Welche Uhr zeigt Viertel nach elf?",
+            "en": "Which clock shows quarter past eleven?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "11:30",
+              "label": "11:30",
+              "clock": {
+                "hour": 11,
+                "minute": 30
+              }
+            },
+            {
+              "id": "11:00",
+              "label": "11:00",
+              "clock": {
+                "hour": 11,
+                "minute": 0
+              }
+            },
+            {
+              "id": "11:15",
+              "label": "11:15",
+              "clock": {
+                "hour": 11,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "11:15",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel nach elf.",
+            "en": "Correct, the clock shows quarter past eleven."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 11,
+              "minute": 15
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-63",
+          "prompt": {
+            "de": "Es ist Viertel nach elf. Welche Uhr zeigt 15 Minuten später?",
+            "en": "It is quarter past eleven. Which clock shows 15 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "11:15",
+              "label": "11:15",
+              "clock": {
+                "hour": 11,
+                "minute": 15
+              }
+            },
+            {
+              "id": "11:30",
+              "label": "11:30",
+              "clock": {
+                "hour": 11,
+                "minute": 30
+              }
+            },
+            {
+              "id": "11:45",
+              "label": "11:45",
+              "clock": {
+                "hour": 11,
+                "minute": 45
+              }
+            }
+          ],
+          "correctAnswerId": "11:30",
+          "success": {
+            "de": "Genau! Dann ist es halb zwölf.",
+            "en": "Exactly! Then it is half past eleven."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 11,
+            "minute": 15
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 11,
+              "minute": 15
+            },
+            "minutes": 15
+          }
+        },
+        {
+          "id": "time-adventurer-64",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "11:45",
+              "label": "11:45"
+            },
+            {
+              "id": "12:00",
+              "label": "12:00"
+            },
+            {
+              "id": "11:30",
+              "label": "11:30"
+            }
+          ],
+          "correctAnswerId": "11:45",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel vor zwölf.",
+            "en": "Correct, the clock shows quarter to twelve."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 11,
+            "minute": 45
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 11,
+              "minute": 45
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-65",
+          "prompt": {
+            "de": "Welche Uhr zeigt Viertel vor zwölf?",
+            "en": "Which clock shows quarter to twelve?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "12:00",
+              "label": "12:00",
+              "clock": {
+                "hour": 12,
+                "minute": 0
+              }
+            },
+            {
+              "id": "11:30",
+              "label": "11:30",
+              "clock": {
+                "hour": 11,
+                "minute": 30
+              }
+            },
+            {
+              "id": "11:45",
+              "label": "11:45",
+              "clock": {
+                "hour": 11,
+                "minute": 45
+              }
+            }
+          ],
+          "correctAnswerId": "11:45",
+          "success": {
+            "de": "Richtig, die Uhr zeigt Viertel vor zwölf.",
+            "en": "Correct, the clock shows quarter to twelve."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 11,
+              "minute": 45
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-66",
+          "prompt": {
+            "de": "Es ist Viertel vor zwölf. Welche Uhr zeigt 15 Minuten später?",
+            "en": "It is quarter to twelve. Which clock shows 15 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "11:45",
+              "label": "11:45",
+              "clock": {
+                "hour": 11,
+                "minute": 45
+              }
+            },
+            {
+              "id": "12:00",
+              "label": "12:00",
+              "clock": {
+                "hour": 12,
+                "minute": 0
+              }
+            },
+            {
+              "id": "12:15",
+              "label": "12:15",
+              "clock": {
+                "hour": 12,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "12:00",
+          "success": {
+            "de": "Genau! Dann ist es zwölf Uhr.",
+            "en": "Exactly! Then it is twelve o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 11,
+            "minute": 45
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 11,
+              "minute": 45
+            },
+            "minutes": 15
+          }
+        },
+        {
+          "id": "time-adventurer-67",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "1:05",
+              "label": "1:05"
+            },
+            {
+              "id": "1:20",
+              "label": "1:20"
+            },
+            {
+              "id": "12:50",
+              "label": "12:50"
+            }
+          ],
+          "correctAnswerId": "1:05",
+          "success": {
+            "de": "Richtig, die Uhr zeigt fünf nach eins.",
+            "en": "Correct, the clock shows five past one."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 1,
+            "minute": 5
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 1,
+              "minute": 5
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-68",
+          "prompt": {
+            "de": "Welche Uhr zeigt fünf nach eins?",
+            "en": "Which clock shows five past one?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "1:20",
+              "label": "1:20",
+              "clock": {
+                "hour": 1,
+                "minute": 20
+              }
+            },
+            {
+              "id": "12:50",
+              "label": "12:50",
+              "clock": {
+                "hour": 12,
+                "minute": 50
+              }
+            },
+            {
+              "id": "1:05",
+              "label": "1:05",
+              "clock": {
+                "hour": 1,
+                "minute": 5
+              }
+            }
+          ],
+          "correctAnswerId": "1:05",
+          "success": {
+            "de": "Richtig, die Uhr zeigt fünf nach eins.",
+            "en": "Correct, the clock shows five past one."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 1,
+              "minute": 5
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-69",
+          "prompt": {
+            "de": "Es ist fünf nach eins. Welche Uhr zeigt 5 Minuten später?",
+            "en": "It is five past one. Which clock shows 5 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "12:55",
+              "label": "12:55",
+              "clock": {
+                "hour": 12,
+                "minute": 55
+              }
+            },
+            {
+              "id": "1:10",
+              "label": "1:10",
+              "clock": {
+                "hour": 1,
+                "minute": 10
+              }
+            },
+            {
+              "id": "1:25",
+              "label": "1:25",
+              "clock": {
+                "hour": 1,
+                "minute": 25
+              }
+            }
+          ],
+          "correctAnswerId": "1:10",
+          "success": {
+            "de": "Genau! Dann ist es zehn nach eins.",
+            "en": "Exactly! Then it is ten past one."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 1,
+            "minute": 5
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 1,
+              "minute": 5
+            },
+            "minutes": 5
+          }
+        },
+        {
+          "id": "time-adventurer-70",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:10",
+              "label": "2:10"
+            },
+            {
+              "id": "2:25",
+              "label": "2:25"
+            },
+            {
+              "id": "1:55",
+              "label": "1:55"
+            }
+          ],
+          "correctAnswerId": "2:10",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zehn nach zwei.",
+            "en": "Correct, the clock shows ten past two."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 2,
+            "minute": 10
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 2,
+              "minute": 10
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-71",
+          "prompt": {
+            "de": "Welche Uhr zeigt zehn nach zwei?",
+            "en": "Which clock shows ten past two?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:25",
+              "label": "2:25",
+              "clock": {
+                "hour": 2,
+                "minute": 25
+              }
+            },
+            {
+              "id": "1:55",
+              "label": "1:55",
+              "clock": {
+                "hour": 1,
+                "minute": 55
+              }
+            },
+            {
+              "id": "2:10",
+              "label": "2:10",
+              "clock": {
+                "hour": 2,
+                "minute": 10
+              }
+            }
+          ],
+          "correctAnswerId": "2:10",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zehn nach zwei.",
+            "en": "Correct, the clock shows ten past two."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 2,
+              "minute": 10
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-72",
+          "prompt": {
+            "de": "Es ist zehn nach zwei. Welche Uhr zeigt 5 Minuten später?",
+            "en": "It is ten past two. Which clock shows 5 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "2:00",
+              "label": "2:00",
+              "clock": {
+                "hour": 2,
+                "minute": 0
+              }
+            },
+            {
+              "id": "2:15",
+              "label": "2:15",
+              "clock": {
+                "hour": 2,
+                "minute": 15
+              }
+            },
+            {
+              "id": "2:30",
+              "label": "2:30",
+              "clock": {
+                "hour": 2,
+                "minute": 30
+              }
+            }
+          ],
+          "correctAnswerId": "2:15",
+          "success": {
+            "de": "Genau! Dann ist es Viertel nach zwei.",
+            "en": "Exactly! Then it is quarter past two."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 2,
+            "minute": 10
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 2,
+              "minute": 10
+            },
+            "minutes": 5
+          }
+        },
+        {
+          "id": "time-adventurer-73",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:20",
+              "label": "3:20"
+            },
+            {
+              "id": "3:35",
+              "label": "3:35"
+            },
+            {
+              "id": "3:05",
+              "label": "3:05"
+            }
+          ],
+          "correctAnswerId": "3:20",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zwanzig nach drei.",
+            "en": "Correct, the clock shows twenty past three."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 3,
+            "minute": 20
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 3,
+              "minute": 20
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-74",
+          "prompt": {
+            "de": "Welche Uhr zeigt zwanzig nach drei?",
+            "en": "Which clock shows twenty past three?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:35",
+              "label": "3:35",
+              "clock": {
+                "hour": 3,
+                "minute": 35
+              }
+            },
+            {
+              "id": "3:05",
+              "label": "3:05",
+              "clock": {
+                "hour": 3,
+                "minute": 5
+              }
+            },
+            {
+              "id": "3:20",
+              "label": "3:20",
+              "clock": {
+                "hour": 3,
+                "minute": 20
+              }
+            }
+          ],
+          "correctAnswerId": "3:20",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zwanzig nach drei.",
+            "en": "Correct, the clock shows twenty past three."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 3,
+              "minute": 20
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-75",
+          "prompt": {
+            "de": "Es ist zwanzig nach drei. Welche Uhr zeigt 5 Minuten später?",
+            "en": "It is twenty past three. Which clock shows 5 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "3:10",
+              "label": "3:10",
+              "clock": {
+                "hour": 3,
+                "minute": 10
+              }
+            },
+            {
+              "id": "3:25",
+              "label": "3:25",
+              "clock": {
+                "hour": 3,
+                "minute": 25
+              }
+            },
+            {
+              "id": "3:40",
+              "label": "3:40",
+              "clock": {
+                "hour": 3,
+                "minute": 40
+              }
+            }
+          ],
+          "correctAnswerId": "3:25",
+          "success": {
+            "de": "Genau! Dann ist es fünfundzwanzig nach drei.",
+            "en": "Exactly! Then it is twenty-five past three."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 3,
+            "minute": 20
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 3,
+              "minute": 20
+            },
+            "minutes": 5
+          }
+        },
+        {
+          "id": "time-adventurer-76",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:25",
+              "label": "4:25"
+            },
+            {
+              "id": "4:40",
+              "label": "4:40"
+            },
+            {
+              "id": "4:10",
+              "label": "4:10"
+            }
+          ],
+          "correctAnswerId": "4:25",
+          "success": {
+            "de": "Richtig, die Uhr zeigt fünfundzwanzig nach vier.",
+            "en": "Correct, the clock shows twenty-five past four."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 4,
+            "minute": 25
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 4,
+              "minute": 25
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-77",
+          "prompt": {
+            "de": "Welche Uhr zeigt fünfundzwanzig nach vier?",
+            "en": "Which clock shows twenty-five past four?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:40",
+              "label": "4:40",
+              "clock": {
+                "hour": 4,
+                "minute": 40
+              }
+            },
+            {
+              "id": "4:10",
+              "label": "4:10",
+              "clock": {
+                "hour": 4,
+                "minute": 10
+              }
+            },
+            {
+              "id": "4:25",
+              "label": "4:25",
+              "clock": {
+                "hour": 4,
+                "minute": 25
+              }
+            }
+          ],
+          "correctAnswerId": "4:25",
+          "success": {
+            "de": "Richtig, die Uhr zeigt fünfundzwanzig nach vier.",
+            "en": "Correct, the clock shows twenty-five past four."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 4,
+              "minute": 25
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-78",
+          "prompt": {
+            "de": "Es ist fünfundzwanzig nach vier. Welche Uhr zeigt 5 Minuten später?",
+            "en": "It is twenty-five past four. Which clock shows 5 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "4:15",
+              "label": "4:15",
+              "clock": {
+                "hour": 4,
+                "minute": 15
+              }
+            },
+            {
+              "id": "4:30",
+              "label": "4:30",
+              "clock": {
+                "hour": 4,
+                "minute": 30
+              }
+            },
+            {
+              "id": "4:45",
+              "label": "4:45",
+              "clock": {
+                "hour": 4,
+                "minute": 45
+              }
+            }
+          ],
+          "correctAnswerId": "4:30",
+          "success": {
+            "de": "Genau! Dann ist es halb fünf.",
+            "en": "Exactly! Then it is half past four."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 4,
+            "minute": 25
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 4,
+              "minute": 25
+            },
+            "minutes": 5
+          }
+        },
+        {
+          "id": "time-adventurer-79",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:35",
+              "label": "5:35"
+            },
+            {
+              "id": "5:50",
+              "label": "5:50"
+            },
+            {
+              "id": "5:20",
+              "label": "5:20"
+            }
+          ],
+          "correctAnswerId": "5:35",
+          "success": {
+            "de": "Richtig, die Uhr zeigt fünfundzwanzig vor sechs.",
+            "en": "Correct, the clock shows twenty-five to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 35
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 5,
+              "minute": 35
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-80",
+          "prompt": {
+            "de": "Welche Uhr zeigt fünfundzwanzig vor sechs?",
+            "en": "Which clock shows twenty-five to six?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:50",
+              "label": "5:50",
+              "clock": {
+                "hour": 5,
+                "minute": 50
+              }
+            },
+            {
+              "id": "5:20",
+              "label": "5:20",
+              "clock": {
+                "hour": 5,
+                "minute": 20
+              }
+            },
+            {
+              "id": "5:35",
+              "label": "5:35",
+              "clock": {
+                "hour": 5,
+                "minute": 35
+              }
+            }
+          ],
+          "correctAnswerId": "5:35",
+          "success": {
+            "de": "Richtig, die Uhr zeigt fünfundzwanzig vor sechs.",
+            "en": "Correct, the clock shows twenty-five to six."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 5,
+              "minute": 35
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-81",
+          "prompt": {
+            "de": "Es ist fünfundzwanzig vor sechs. Welche Uhr zeigt 5 Minuten später?",
+            "en": "It is twenty-five to six. Which clock shows 5 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "5:25",
+              "label": "5:25",
+              "clock": {
+                "hour": 5,
+                "minute": 25
+              }
+            },
+            {
+              "id": "5:40",
+              "label": "5:40",
+              "clock": {
+                "hour": 5,
+                "minute": 40
+              }
+            },
+            {
+              "id": "5:55",
+              "label": "5:55",
+              "clock": {
+                "hour": 5,
+                "minute": 55
+              }
+            }
+          ],
+          "correctAnswerId": "5:40",
+          "success": {
+            "de": "Genau! Dann ist es zwanzig vor sechs.",
+            "en": "Exactly! Then it is twenty to six."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 5,
+            "minute": 35
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 5,
+              "minute": 35
+            },
+            "minutes": 5
+          }
+        },
+        {
+          "id": "time-adventurer-82",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:40",
+              "label": "6:40"
+            },
+            {
+              "id": "6:55",
+              "label": "6:55"
+            },
+            {
+              "id": "6:25",
+              "label": "6:25"
+            }
+          ],
+          "correctAnswerId": "6:40",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zwanzig vor sieben.",
+            "en": "Correct, the clock shows twenty to seven."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 6,
+            "minute": 40
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 6,
+              "minute": 40
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-83",
+          "prompt": {
+            "de": "Welche Uhr zeigt zwanzig vor sieben?",
+            "en": "Which clock shows twenty to seven?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:55",
+              "label": "6:55",
+              "clock": {
+                "hour": 6,
+                "minute": 55
+              }
+            },
+            {
+              "id": "6:25",
+              "label": "6:25",
+              "clock": {
+                "hour": 6,
+                "minute": 25
+              }
+            },
+            {
+              "id": "6:40",
+              "label": "6:40",
+              "clock": {
+                "hour": 6,
+                "minute": 40
+              }
+            }
+          ],
+          "correctAnswerId": "6:40",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zwanzig vor sieben.",
+            "en": "Correct, the clock shows twenty to seven."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 6,
+              "minute": 40
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-84",
+          "prompt": {
+            "de": "Es ist zwanzig vor sieben. Welche Uhr zeigt 5 Minuten später?",
+            "en": "It is twenty to seven. Which clock shows 5 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "6:30",
+              "label": "6:30",
+              "clock": {
+                "hour": 6,
+                "minute": 30
+              }
+            },
+            {
+              "id": "6:45",
+              "label": "6:45",
+              "clock": {
+                "hour": 6,
+                "minute": 45
+              }
+            },
+            {
+              "id": "7:00",
+              "label": "7:00",
+              "clock": {
+                "hour": 7,
+                "minute": 0
+              }
+            }
+          ],
+          "correctAnswerId": "6:45",
+          "success": {
+            "de": "Genau! Dann ist es Viertel vor sieben.",
+            "en": "Exactly! Then it is quarter to seven."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 6,
+            "minute": 40
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 6,
+              "minute": 40
+            },
+            "minutes": 5
+          }
+        },
+        {
+          "id": "time-adventurer-85",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "7:50",
+              "label": "7:50"
+            },
+            {
+              "id": "8:05",
+              "label": "8:05"
+            },
+            {
+              "id": "7:35",
+              "label": "7:35"
+            }
+          ],
+          "correctAnswerId": "7:50",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zehn vor acht.",
+            "en": "Correct, the clock shows ten to eight."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 7,
+            "minute": 50
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 7,
+              "minute": 50
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-86",
+          "prompt": {
+            "de": "Welche Uhr zeigt zehn vor acht?",
+            "en": "Which clock shows ten to eight?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:05",
+              "label": "8:05",
+              "clock": {
+                "hour": 8,
+                "minute": 5
+              }
+            },
+            {
+              "id": "7:35",
+              "label": "7:35",
+              "clock": {
+                "hour": 7,
+                "minute": 35
+              }
+            },
+            {
+              "id": "7:50",
+              "label": "7:50",
+              "clock": {
+                "hour": 7,
+                "minute": 50
+              }
+            }
+          ],
+          "correctAnswerId": "7:50",
+          "success": {
+            "de": "Richtig, die Uhr zeigt zehn vor acht.",
+            "en": "Correct, the clock shows ten to eight."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 7,
+              "minute": 50
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-87",
+          "prompt": {
+            "de": "Es ist zehn vor acht. Welche Uhr zeigt 5 Minuten später?",
+            "en": "It is ten to eight. Which clock shows 5 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "7:40",
+              "label": "7:40",
+              "clock": {
+                "hour": 7,
+                "minute": 40
+              }
+            },
+            {
+              "id": "7:55",
+              "label": "7:55",
+              "clock": {
+                "hour": 7,
+                "minute": 55
+              }
+            },
+            {
+              "id": "8:10",
+              "label": "8:10",
+              "clock": {
+                "hour": 8,
+                "minute": 10
+              }
+            }
+          ],
+          "correctAnswerId": "7:55",
+          "success": {
+            "de": "Genau! Dann ist es fünf vor acht.",
+            "en": "Exactly! Then it is five to eight."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 7,
+            "minute": 50
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 7,
+              "minute": 50
+            },
+            "minutes": 5
+          }
+        },
+        {
+          "id": "time-adventurer-88",
+          "prompt": {
+            "de": "Wie spät ist es auf dieser Uhr?",
+            "en": "What time does this clock show?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:55",
+              "label": "8:55"
+            },
+            {
+              "id": "9:10",
+              "label": "9:10"
+            },
+            {
+              "id": "8:40",
+              "label": "8:40"
+            }
+          ],
+          "correctAnswerId": "8:55",
+          "success": {
+            "de": "Richtig, die Uhr zeigt fünf vor neun.",
+            "en": "Correct, the clock shows five to nine."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 55
+          },
+          "timeExercise": {
+            "kind": "read",
+            "start": {
+              "hour": 8,
+              "minute": 55
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-89",
+          "prompt": {
+            "de": "Welche Uhr zeigt fünf vor neun?",
+            "en": "Which clock shows five to nine?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "9:10",
+              "label": "9:10",
+              "clock": {
+                "hour": 9,
+                "minute": 10
+              }
+            },
+            {
+              "id": "8:40",
+              "label": "8:40",
+              "clock": {
+                "hour": 8,
+                "minute": 40
+              }
+            },
+            {
+              "id": "8:55",
+              "label": "8:55",
+              "clock": {
+                "hour": 8,
+                "minute": 55
+              }
+            }
+          ],
+          "correctAnswerId": "8:55",
+          "success": {
+            "de": "Richtig, die Uhr zeigt fünf vor neun.",
+            "en": "Correct, the clock shows five to nine."
+          },
+          "hint": {
+            "de": "Der kurze Zeiger zeigt die Stunde. Der lange Zeiger zeigt die Minuten.",
+            "en": "The short hand shows the hour. The long hand shows the minutes."
+          },
+          "timeExercise": {
+            "kind": "match",
+            "start": {
+              "hour": 8,
+              "minute": 55
+            },
+            "minutes": 0
+          }
+        },
+        {
+          "id": "time-adventurer-90",
+          "prompt": {
+            "de": "Es ist fünf vor neun. Welche Uhr zeigt 5 Minuten später?",
+            "en": "It is five to nine. Which clock shows 5 minutes later?"
+          },
+          "visual": "",
+          "answers": [
+            {
+              "id": "8:45",
+              "label": "8:45",
+              "clock": {
+                "hour": 8,
+                "minute": 45
+              }
+            },
+            {
+              "id": "9:00",
+              "label": "9:00",
+              "clock": {
+                "hour": 9,
+                "minute": 0
+              }
+            },
+            {
+              "id": "9:15",
+              "label": "9:15",
+              "clock": {
+                "hour": 9,
+                "minute": 15
+              }
+            }
+          ],
+          "correctAnswerId": "9:00",
+          "success": {
+            "de": "Genau! Dann ist es neun Uhr.",
+            "en": "Exactly! Then it is nine o’clock."
+          },
+          "hint": {
+            "de": "Gehe auf der Uhr weiter. Nach zwölf kommt wieder eins.",
+            "en": "Move forward around the clock. After twelve comes one again."
+          },
+          "clock": {
+            "hour": 8,
+            "minute": 55
+          },
+          "timeExercise": {
+            "kind": "elapsed",
+            "start": {
+              "hour": 8,
+              "minute": 55
+            },
+            "minutes": 5
           }
         }
       ]

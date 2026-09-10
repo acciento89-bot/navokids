@@ -18,6 +18,7 @@ jobs:
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
+      - run: npm ci
       - name: Read the two existing builds
         run: |
           node scripts/inspect-release-040.cjs

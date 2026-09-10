@@ -1,6 +1,6 @@
 # NavoKids 0.4.0
 
-NavoKids now has eight illustrated islands and 240 stages per age track. The existing five-island illustration is followed by a matching three-island landscape: Shapes, Nature & Weather, and Clock & Time. Each new category has its own island, label, and progress meter; no extra button is squeezed into the Words island.
+NavoKids now has eight illustrated islands and 240 stages per age track. One seamless illustration contains all eight islands, including distinct landscapes for Shapes, Nature & Weather, and Clock & Time. Each new category has its own island, label, and progress meter; no extra button is squeezed into the Words island.
 
 ## Learning content
 
@@ -26,10 +26,12 @@ The component tests exercise both platform branches and both languages, includin
 
 ## Illustration provenance
 
-`assets/adventure-map-extension-v2.png` was generated with the built-in Imagegen tool using `assets/adventure-map-v1.jpg` as a style and continuity reference. The existing five-island asset is preserved. The extension is wired into `src/screens/WorldScreen.tsx` as the lower panel of the same scrolling map.
+`assets/adventure-map-eight-islands-v3.png` was generated with the built-in Imagegen tool using the original five-island artwork and the three-island extension as references. The existing five-island asset is preserved. The final single image is wired into `src/screens/WorldScreen.tsx`; it replaces a two-panel draft after native screenshots exposed its visible join.
 
-Prompt: Create only a new lower continuation panel matching the original colorful 3D floating-island adventure illustration, portrait 1024×1792. Exactly three large separate islands, connected by curved wooden bridges: shapes and repeating geometric toys at upper right; a garden, seedlings, tree, sun, raincloud and rainbow at middle left; a decorative learning clock, hourglass, sun and moon at lower right. Leave clear lower grassy ledges for localized labels. Soft cloud entrance from upper left and waterfall/cloud ending. No UI labels, extra foreground islands, books, alphabet blocks, animals, watermarks, or borders. Preserve the original map's style, foliage, lighting and materials.
+Initial extension prompt: Create only a new lower continuation panel matching the original colorful 3D floating-island adventure illustration, portrait 1024×1792. Exactly three large separate islands, connected by curved wooden bridges: shapes and repeating geometric toys at upper right; a garden, seedlings, tree, sun, raincloud and rainbow at middle left; a decorative learning clock, hourglass, sun and moon at lower right. Leave clear lower grassy ledges for localized labels. Soft cloud entrance from upper left and waterfall/cloud ending. No UI labels, extra foreground islands, books, alphabet blocks, animals, watermarks, or borders. Preserve the original map's style, foliage, lighting and materials.
 
 ## Release
 
 Version 0.4.0 uses the existing EAS project, app identifiers, remote build-number incrementing, and signing credentials. Store availability must be reported separately from EAS builds, TestFlight upload, and Google Play internal testing.
+
+Final map prompt: Combine both reference illustrations into one seamless tall 1:3 map with exactly eight separate islands, connected by wooden bridges in this order: Numbers, Colors, Animals, Letters, Words, Shapes, Nature & Weather, Clock & Time. Alternate left/right placement, retain clear theme props and front ledges for localized labels, match the existing toy-like 3D style, and avoid any horizontal cut or collage boundary. No UI, captions, or watermarks.

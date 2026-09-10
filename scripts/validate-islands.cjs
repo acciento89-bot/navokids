@@ -46,6 +46,6 @@ for(const q of categories.find(c=>c.id==='shapes').questionsByAge.discoverer.fil
  assert.equal(new Set(symbols).size,2);
 }
 const map=fs.readFileSync('src/screens/WorldScreen.tsx','utf8');
-assert.ok(map.includes('adventure-map-extension-v2.png'));
-for(const id of ['shapes','nature','time'])assert.match(map,new RegExp(`${id}: \\{[^}]*panel: 1`));
+assert.ok(map.includes('adventure-map-eight-islands-v3.png'));
+for(const id of ['shapes','nature','time'])assert.match(map,new RegExp(`${id}: \\{[^}]*panel: 0`));
 console.log('Validated eight islands, exact clock hands and answers, time wraparound, age limits, bilingual half-hours, sequences and unambiguous unique-shape questions.');

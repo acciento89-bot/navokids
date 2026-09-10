@@ -1,4 +1,5 @@
 name: Native eight-island screenshots
+# Verify the final seamless eight-island map.
 on:
   push:
     branches: [feat/eight-learning-islands]

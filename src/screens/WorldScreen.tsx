@@ -17,18 +17,17 @@ interface Props {
 }
 
 const islandPlacements: Record<CategoryId, { top: `${number}%`; side: 'left' | 'right'; panel: number }> = {
-  numbers: { top: '18%', side: 'left', panel: 0 },
-  colors: { top: '36%', side: 'right', panel: 0 },
-  animals: { top: '55%', side: 'left', panel: 0 },
-  letters: { top: '72%', side: 'right', panel: 0 },
-  words: { top: '85%', side: 'left', panel: 0 },
-  shapes: { top: '23%', side: 'right', panel: 1 },
-  nature: { top: '51%', side: 'left', panel: 1 },
-  time: { top: '80%', side: 'right', panel: 1 },
+  numbers: { top: '11%', side: 'left', panel: 0 },
+  colors: { top: '22%', side: 'right', panel: 0 },
+  animals: { top: '34%', side: 'left', panel: 0 },
+  letters: { top: '45%', side: 'right', panel: 0 },
+  words: { top: '56.5%', side: 'left', panel: 0 },
+  shapes: { top: '67.5%', side: 'right', panel: 0 },
+  nature: { top: '79.5%', side: 'left', panel: 0 },
+  time: { top: '92%', side: 'right', panel: 0 },
 };
 const mapPanels = [
-  { image: require('../../assets/adventure-map-v1.jpg'), ratio: 852 / 1846 },
-  { image: require('../../assets/adventure-map-extension-v2.png'), ratio: 1024 / 1792 },
+  { image: require('../../assets/adventure-map-eight-islands-v3.png'), ratio: 1 / 3 },
 ];
 
 export function WorldScreen({ language, profile, premiumUnlocked, onLanguageChange, onCategoryPress, onParentsPress, onProfilePress }: Props) {

@@ -70,7 +70,7 @@ const text = tree => JSON.stringify(tree.toJSON());
     for (const language of ['de', 'en']) {
       let world;
       await act(() => { world = create(React.createElement(WorldScreen, { language, profile: { nickname: 'Alex', avatar: '🦊', progress: createEmptyProgress() }, premiumUnlocked: false, onLanguageChange() {}, onCategoryPress() {}, onParentsPress() {}, onProfilePress() {} })); });
-      assert.equal(world.root.findAllByType('ImageBackground').length, 2, 'Two illustrated panels make eight actual islands');
+      assert.equal(world.root.findAllByType('ImageBackground').length, 1, 'One seamless illustrated map contains eight actual islands');
       const islandButtons = world.root.findAllByType('Pressable').filter(n => n.props.accessibilityHint);
       assert.equal(islandButtons.length, 8);
       for (const id of ['shapes', 'nature', 'time']) assert.ok(islandButtons.some(n => n.props.accessibilityLabel.startsWith(categories.find(c => c.id === id).title[language])));

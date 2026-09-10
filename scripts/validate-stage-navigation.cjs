@@ -6,7 +6,7 @@ const React = require('react');
 const { create, act } = require('react-test-renderer');
 global.IS_REACT_ACT_ENVIRONMENT = true;
 const cache = new Map();
-const native = { Image: 'Image', Text: 'Text', View: 'View', Pressable: 'Pressable', ScrollView: 'ScrollView', StyleSheet: { create: x => x }, Platform: { OS: 'ios' } };
+const native = { Image: 'Image', ImageBackground: 'ImageBackground', Text: 'Text', View: 'View', Pressable: 'Pressable', ScrollView: 'ScrollView', StyleSheet: { create: x => x }, Platform: { OS: 'ios' } };
 function load(file) {
   file = path.resolve(file);
   if (cache.has(file)) return cache.get(file).exports;
@@ -15,7 +15,7 @@ function load(file) {
   const localRequire = id => {
     if (id === 'react-native') return native;
     if (id.endsWith('/services/speech')) return { speak() {}, stopSpeaking() {} };
-    if (id.endsWith('.png')) return 1;
+    if ((/\.(png|jpg)$/.test(id))) return 1;
     if (!id.startsWith('.')) return require(id);
     const base = path.resolve(path.dirname(file), id);
     return load(['.ts', '.tsx'].map(ext => base + ext).find(fs.existsSync));
@@ -24,6 +24,7 @@ function load(file) {
   return module.exports;
 }
 const { GameScreen } = load('src/screens/GameScreen.tsx');
+const { WorldScreen } = load('src/screens/WorldScreen.tsx');
 const { StagesScreen } = load('src/screens/StagesScreen.tsx');
 const { categories } = load('src/data/learningContent.ts');
 const { createEmptyProgress } = load('src/data/progress.ts');
@@ -65,6 +66,30 @@ const text = tree => JSON.stringify(tree.toJSON());
       }
       assert.equal(tree.root.findAllByType('Pressable').length, 1, 'No stage 31 action');
       await act(() => tree.unmount());
+    }
+    for (const language of ['de', 'en']) {
+      let world;
+      await act(() => { world = create(React.createElement(WorldScreen, { language, profile: { nickname: 'Alex', avatar: '🦊', progress: createEmptyProgress() }, premiumUnlocked: false, onLanguageChange() {}, onCategoryPress() {}, onParentsPress() {}, onProfilePress() {} })); });
+      assert.equal(world.root.findAllByType('ImageBackground').length, 2, 'Two illustrated panels make eight actual islands');
+      const islandButtons = world.root.findAllByType('Pressable').filter(n => n.props.accessibilityHint);
+      assert.equal(islandButtons.length, 8);
+      for (const id of ['shapes', 'nature', 'time']) assert.ok(islandButtons.some(n => n.props.accessibilityLabel.startsWith(categories.find(c => c.id === id).title[language])));
+      await act(() => world.unmount());
+      for (const [id, age, stage] of [['shapes','discoverer',1], ['nature','discoverer',30], ['nature','adventurer',30], ['time','discoverer',12], ['time','discoverer',20], ['time','adventurer',7], ['time','adventurer',15], ['time','adventurer',23], ['time','adventurer',30]]) {
+        let tree, done = 0; const scrolls = [];
+        const category = categories.find(c => c.id === id);
+        await act(() => { tree = create(React.createElement(GameScreen, { category, stage, ageGroup: age, language, onCompleted: () => done++, onNextStage() {}, onBack() {} }), { createNodeMock: element => element.type === 'ScrollView' ? { scrollTo: p => scrolls.push(p) } : null }); });
+        for (const q of category.questionsByAge[age].slice((stage-1)*3, stage*3)) {
+          const answers = tree.root.findAllByType('Pressable').filter(n => typeof n.props.disabled === 'boolean');
+          assert.equal(answers.length, age === 'discoverer' ? 2 : 3);
+          await act(() => answers[q.answers.findIndex(a => a.id === q.correctAnswerId)].props.onPress());
+          const buttons = tree.root.findAllByType('Pressable');
+          await act(() => buttons[buttons.length-1].props.onPress());
+        }
+        assert.equal(done, 1);
+        assert.ok(scrolls.length >= 3, 'New questions return to the top after scrolling');
+        await act(() => tree.unmount());
+      }
     }
     let tree; const positions = [];
     await act(() => { tree = create(React.createElement(StagesScreen, { category: categories[0], language: 'en', progress: createEmptyProgress().numbers, premiumUnlocked: false, focusStage: 20, onBack() {}, onStage() {} }), { createNodeMock: element => element.type === 'ScrollView' ? { scrollTo: p => positions.push(p) } : null }); });

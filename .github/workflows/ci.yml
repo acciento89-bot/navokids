@@ -18,6 +18,7 @@ jobs:
       - run: npm ci
       - run: npm run typecheck
       - run: npm run content:check
+      - run: npm run islands:check
       - run: npm run progress:check
       - run: npm run navigation:check
       - run: node scripts/validate-voice-pack.cjs

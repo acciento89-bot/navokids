@@ -86,13 +86,14 @@ async function main() {
   };
 
   await Promise.all(Array.from({ length: concurrency }, () => generateNext()));
+  // Persist completed text/audio integrity metadata before optional cleanup.
+  await fs.writeFile(indexPath, JSON.stringify(current, null, 2) + '\n');
 
   const expectedAudioPaths = new Set(entries.map((entry) => path.resolve(process.cwd(), entry.relativePath)));
   for (const language of languages) {
     const languageDirectory = path.join(process.cwd(), 'assets/audio', language);
     for (const filename of await fs.readdir(languageDirectory)) {
-      if (expectedSignatures.get(key) !== item.signature) continue;
-    const audioPath = path.join(languageDirectory, filename);
+      const audioPath = path.join(languageDirectory, filename);
       if (filename.endsWith('.aac') && !expectedAudioPaths.has(path.resolve(audioPath))) await fs.unlink(audioPath);
     }
   }

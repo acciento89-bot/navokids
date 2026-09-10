@@ -1,0 +1,69 @@
+name: NavoKids 0.4.0 Store Uploads
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/navokids-release-040.yml']
+permissions:
+  contents: read
+concurrency:
+  group: navokids-store-release
+  cancel-in-progress: false
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [ios, android]
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+      - run: npm ci
+      - run: npm run typecheck && npm run content:check && npm run islands:check && npm run progress:check && npm run navigation:check
+      - run: node scripts/validate-voice-pack.cjs
+      - name: Inspect previous versions and queue signed production build
+        env:
+          RELEASE_PLATFORM: ${{ matrix.platform }}
+        run: node scripts/queue-release.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-build-${{ matrix.platform }}
+          path: build.json
+          if-no-files-found: error
+          retention-days: 14
+  upload:
+    needs: build
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [ios, android]
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: release-build-${{ matrix.platform }}
+      - name: Wait for exact build and upload to store
+        env:
+          RELEASE_PLATFORM: ${{ matrix.platform }}
+          RELEASE_VERSION: 0.4.0
+        run: node scripts/upload-release.cjs

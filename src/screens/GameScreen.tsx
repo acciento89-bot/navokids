@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SpeakerButton } from '../components/SpeakerButton';
 import { ClockFace } from '../components/ClockFace';
@@ -17,12 +17,15 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
     const start = (stage - 1) * QUESTIONS_PER_STAGE;
     return category.questionsByAge[ageGroup].slice(start, start + QUESTIONS_PER_STAGE);
   }, [ageGroup, category, stage]);
+  const scrollRef = useRef<ScrollView>(null);
   const [completed, setCompleted] = useState(false);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState(false);
   const [wrongAttempts, setWrongAttempts] = useState(0);
   const question = questions[index];
+
+  useEffect(() => { scrollRef.current?.scrollTo({ y: 0, animated: false }); }, [index, completed]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -35,7 +38,7 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
   }, [question, language, ageGroup]);
 
   if (completed) return (
-    <ScrollView contentContainerStyle={[styles.completion, { backgroundColor: category.lightColor }]}>
+    <ScrollView key="completion" contentContainerStyle={[styles.completion, { backgroundColor: category.lightColor }]}>
       <Text style={styles.completionStars}>⭐⭐⭐</Text>
       <Text accessibilityRole="header" style={styles.completionTitle}>{language === 'de' ? `Stufe ${stage} geschafft!` : `Stage ${stage} complete!`}</Text>
       <Text style={styles.completionCopy}>{stage === STAGES_PER_CATEGORY
@@ -71,7 +74,7 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
   };
 
   return (
-    <ScrollView contentContainerStyle={[styles.screen, { backgroundColor: category.lightColor }]}>
+    <ScrollView key="exercise" ref={scrollRef} contentContainerStyle={[styles.screen, { backgroundColor: category.lightColor }]}>
       <View style={styles.topbar}>
         <Pressable onPress={onBack} style={styles.close}><Text style={styles.closeText}>×</Text></Pressable>
         <View style={styles.progress}><View style={[styles.progressFill, { width: `${((index + (isCorrect ? 1 : 0)) / questions.length) * 100}%`, backgroundColor: category.color }]} /></View>

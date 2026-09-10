@@ -89,7 +89,7 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
           {question.clock ? <ClockFace time={question.clock} language={language} /> : <>
           {question.showNavi ? <Image source={require('../../assets/navi-mascot-optimized.png')} resizeMode="contain" style={styles.naviVisualMascot} /> : null}
           <View style={question.showNavi ? styles.naviCueCard : undefined}>
-            <Text style={[styles.visual, category.id === 'shapes' && styles.shapeVisual, question.showNavi && styles.naviCueText]}>{question.localizedVisual ? t(question.localizedVisual, language) : question.visual}</Text>
+            <Text style={[styles.visual, category.id === 'shapes' && (question.visual.length > 8 ? styles.patternVisual : styles.shapeVisual), question.showNavi && styles.naviCueText]}>{question.localizedVisual ? t(question.localizedVisual, language) : question.visual}</Text>
           </View>
           </>}
         </View>
@@ -140,6 +140,7 @@ const styles = StyleSheet.create({
   naviVisualMascot: { width: '45%', height: '100%', minHeight: 165 },
   naviCueCard: { minWidth: 118, minHeight: 118, borderRadius: 30, backgroundColor: '#FFF8E8', borderWidth: 5, borderColor: '#F3C862', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 16, transform: [{ rotate: '2deg' }], ...shadows.card },
   naviCueText: { fontSize: 58, lineHeight: 70 },
+  patternVisual: { fontSize: 26, letterSpacing: 0 },
   shapeVisual: { fontSize: 30, letterSpacing: 0 },
   visual: { color: colors.ink, fontSize: 44, fontWeight: '900', textAlign: 'center', letterSpacing: 2 },
   discovererHint: { color: colors.muted, fontSize: 14, lineHeight: 20, fontWeight: '800', textAlign: 'center', marginTop: 12 },

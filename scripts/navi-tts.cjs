@@ -15,7 +15,9 @@ async function synthesize({ apiKey, text, language, voice, outputPath }) {
   await fs.mkdir(path.dirname(outputPath), { recursive: true });
 
   for (let attempt = 1; attempt <= 6; attempt += 1) {
-    const response = await fetch(endpoint, {
+    let response;
+    try {
+    response = await fetch(endpoint, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${apiKey}`,
@@ -33,6 +35,12 @@ async function synthesize({ apiKey, text, language, voice, outputPath }) {
     if (response.ok) {
       await fs.writeFile(outputPath, Buffer.from(await response.arrayBuffer()));
       return;
+    }
+
+    } catch (error) {
+      if (attempt === 6) throw error;
+      await sleep(Math.min(30000, 1000 * 2 ** (attempt - 1)));
+      continue;
     }
 
     const details = await response.text();

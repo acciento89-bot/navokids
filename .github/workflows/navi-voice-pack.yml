@@ -36,6 +36,15 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           NAVI_VOICE: ${{ inputs.voice }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: navi-shapes-marin-checkpoint
+          path: |
+            assets/audio/de/question.shapes-*.aac
+            assets/audio/en/question.shapes-*.aac
+            src/generated/naviVoiceManifest.ts
+          retention-days: 7
       - run: node scripts/validate-voice-pack.cjs
       - run: npm run typecheck
       - name: Commit generated audio to the selected branch

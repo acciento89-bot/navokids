@@ -17,7 +17,7 @@ interface Props {
 }
 
 const islandPlacements: Record<CategoryId, { top: `${number}%`; side: 'left' | 'right' | 'center' }> = {
-  shapes: { top: '92%', side: 'right' },
+  shapes: { top: '87%', side: 'right' },
   numbers: { top: '17.5%', side: 'left' },
   colors: { top: '36.5%', side: 'right' },
   animals: { top: '55%', side: 'left' },

@@ -55,3 +55,14 @@ assert(migrated.shapes.completedStages.length === 0, 'Existing profiles receive 
 assert(migrated.numbers.completedStages.join(',') === '1,2', 'Adding shapes must preserve existing progress');
 assert(isStageNextInSequence(migrated.shapes, 1), 'First shapes stage is available');
 assert(!isStageNextInSequence(migrated.shapes, 2), 'Second shapes stage still requires first completion');
+
+const oldSix = sandbox.exports.createEmptyProgress();
+oldSix.shapes = afterTwo;
+delete oldSix.nature; delete oldSix.time;
+const eight = sandbox.exports.normalizeProgress(oldSix);
+assert(eight.shapes.completedStages.join(',') === '1,2', 'Eight islands preserve existing shapes progress');
+for (const id of ['nature', 'time']) {
+  assert(eight[id].completedStages.length === 0, 'New island begins empty');
+  assert(isStageNextInSequence(eight[id], 1), 'New island begins with stage one');
+  assert(!isStageNextInSequence(eight[id], 2), 'New island cannot skip stages');
+}

@@ -1,6 +1,6 @@
 export type Language = 'de' | 'en';
 
-export type CategoryId = 'numbers' | 'colors' | 'animals' | 'letters' | 'words' | 'shapes';
+export type CategoryId = 'numbers' | 'colors' | 'animals' | 'letters' | 'words' | 'shapes' | 'nature' | 'time';
 
 export type Screen =
   | { name: 'setup'; mode: 'first' | 'add' }
@@ -20,13 +20,18 @@ export interface Answer {
   id: string;
   label: string | LocalizedText;
   color?: string;
+  clock?: ClockTime;
 }
+
+export interface ClockTime { hour: number; minute: number }
 
 export interface Question {
   id: string;
   prompt: LocalizedText;
   visual: string;
   localizedVisual?: LocalizedText;
+  clock?: ClockTime;
+  timeExercise?: { kind: 'read' | 'match' | 'elapsed'; start: ClockTime; minutes: number };
   showNavi?: boolean;
   conceptKey?: string;
   answers: Answer[];

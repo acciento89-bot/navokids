@@ -1,0 +1,28 @@
+name: Inspect exact NavoKids 0.4.0 releases
+on:
+  push:
+    branches: [release/status-040]
+    paths: [.github/workflows/navokids-status-040.yml]
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+      - name: Read the two existing builds
+        run: |
+          node scripts/inspect-release-040.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: navokids-040-build-status
+          path: release-status.json
+          retention-days: 14

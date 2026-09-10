@@ -24,7 +24,7 @@ const islandPlacements: Record<CategoryId, { top: `${number}%`; side: 'left' | '
   words: { top: '56.5%', side: 'left', panel: 0 },
   shapes: { top: '67.5%', side: 'right', panel: 0 },
   nature: { top: '79.5%', side: 'left', panel: 0 },
-  time: { top: '92%', side: 'right', panel: 0 },
+  time: { top: '90%', side: 'right', panel: 0 },
 };
 const mapPanels = [
   { image: require('../../assets/adventure-map-eight-islands-v3.png'), ratio: 1 / 3 },

@@ -35,3 +35,7 @@ Initial extension prompt: Create only a new lower continuation panel matching th
 Version 0.4.0 uses the existing EAS project, app identifiers, remote build-number incrementing, and signing credentials. Store availability must be reported separately from EAS builds, TestFlight upload, and Google Play internal testing.
 
 Final map prompt: Combine both reference illustrations into one seamless tall 1:3 map with exactly eight separate islands, connected by wooden bridges in this order: Numbers, Colors, Animals, Letters, Words, Shapes, Nature & Weather, Clock & Time. Alternate left/right placement, retain clear theme props and front ledges for localized labels, match the existing toy-like 3D style, and avoid any horizontal cut or collage boundary. No UI, captions, or watermarks.
+
+## Native validation evidence
+
+CI run 34539091061 passed every content, voice, migration and navigation check plus full iOS/Android export. Native Android run 34539087522 produced phone (320 dp) and tablet captures in both languages. The eight-island illustration is continuous, themes are distinct, and every category and clock answer is reachable. The final clock-island label was lifted from 92% to 90% after the small-phone capture showed its bottom border touching the rounded map edge; this leaves room below the existing 68 dp label. Screenshot-only harnesses are isolated from the shipping app. Native iPhone/iPad App Store captures run independently in appideenchatgpt.

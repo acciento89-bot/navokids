@@ -25255,6 +25255,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Cheese belong to?"
           },
           "visual": "Käse",
+          "localizedVisual": {
+            "de": "Käse",
+            "en": "Cheese"
+          },
           "answers": [
             {
               "id": "vehicles",
@@ -25375,6 +25379,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Milk belong to?"
           },
           "visual": "Milch",
+          "localizedVisual": {
+            "de": "Milch",
+            "en": "Milk"
+          },
           "answers": [
             {
               "id": "fruit",
@@ -25495,6 +25503,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Water belong to?"
           },
           "visual": "Wasser",
+          "localizedVisual": {
+            "de": "Wasser",
+            "en": "Water"
+          },
           "answers": [
             {
               "id": "drinks",
@@ -25615,6 +25627,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does House belong to?"
           },
           "visual": "Haus",
+          "localizedVisual": {
+            "de": "Haus",
+            "en": "House"
+          },
           "answers": [
             {
               "id": "nature",
@@ -25735,6 +25751,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does School belong to?"
           },
           "visual": "Schule",
+          "localizedVisual": {
+            "de": "Schule",
+            "en": "School"
+          },
           "answers": [
             {
               "id": "vegetables",
@@ -25855,6 +25875,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Car belong to?"
           },
           "visual": "Auto",
+          "localizedVisual": {
+            "de": "Auto",
+            "en": "Car"
+          },
           "answers": [
             {
               "id": "vehicles",
@@ -25975,6 +25999,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Bus belong to?"
           },
           "visual": "Bus",
+          "localizedVisual": {
+            "de": "Bus",
+            "en": "Bus"
+          },
           "answers": [
             {
               "id": "fruit",
@@ -26095,6 +26123,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Train belong to?"
           },
           "visual": "Zug",
+          "localizedVisual": {
+            "de": "Zug",
+            "en": "Train"
+          },
           "answers": [
             {
               "id": "food",
@@ -26215,6 +26247,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Bicycle belong to?"
           },
           "visual": "Fahrrad",
+          "localizedVisual": {
+            "de": "Fahrrad",
+            "en": "Bicycle"
+          },
           "answers": [
             {
               "id": "vehicles",
@@ -26335,6 +26371,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Boat belong to?"
           },
           "visual": "Boot",
+          "localizedVisual": {
+            "de": "Boot",
+            "en": "Boat"
+          },
           "answers": [
             {
               "id": "fruit",
@@ -26455,6 +26495,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Airplane belong to?"
           },
           "visual": "Flugzeug",
+          "localizedVisual": {
+            "de": "Flugzeug",
+            "en": "Airplane"
+          },
           "answers": [
             {
               "id": "food",
@@ -26575,6 +26619,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Sun belong to?"
           },
           "visual": "Sonne",
+          "localizedVisual": {
+            "de": "Sonne",
+            "en": "Sun"
+          },
           "answers": [
             {
               "id": "sky",
@@ -26695,6 +26743,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Moon belong to?"
           },
           "visual": "Mond",
+          "localizedVisual": {
+            "de": "Mond",
+            "en": "Moon"
+          },
           "answers": [
             {
               "id": "vegetables",
@@ -26815,6 +26867,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Star belong to?"
           },
           "visual": "Stern",
+          "localizedVisual": {
+            "de": "Stern",
+            "en": "Star"
+          },
           "answers": [
             {
               "id": "drinks",
@@ -26935,6 +26991,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Cloud belong to?"
           },
           "visual": "Wolke",
+          "localizedVisual": {
+            "de": "Wolke",
+            "en": "Cloud"
+          },
           "answers": [
             {
               "id": "sky",
@@ -27055,6 +27115,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Tree belong to?"
           },
           "visual": "Baum",
+          "localizedVisual": {
+            "de": "Baum",
+            "en": "Tree"
+          },
           "answers": [
             {
               "id": "food",
@@ -27175,6 +27239,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Flower belong to?"
           },
           "visual": "Blume",
+          "localizedVisual": {
+            "de": "Blume",
+            "en": "Flower"
+          },
           "answers": [
             {
               "id": "places",
@@ -27295,6 +27363,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Grass belong to?"
           },
           "visual": "Gras",
+          "localizedVisual": {
+            "de": "Gras",
+            "en": "Grass"
+          },
           "answers": [
             {
               "id": "nature",
@@ -27415,6 +27487,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Mountain belong to?"
           },
           "visual": "Berg",
+          "localizedVisual": {
+            "de": "Berg",
+            "en": "Mountain"
+          },
           "answers": [
             {
               "id": "food",
@@ -27535,6 +27611,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does River belong to?"
           },
           "visual": "Fluss",
+          "localizedVisual": {
+            "de": "Fluss",
+            "en": "River"
+          },
           "answers": [
             {
               "id": "places",
@@ -27655,6 +27735,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Apple belong to?"
           },
           "visual": "Apfel",
+          "localizedVisual": {
+            "de": "Apfel",
+            "en": "Apple"
+          },
           "answers": [
             {
               "id": "fruit",
@@ -27775,6 +27859,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Pear belong to?"
           },
           "visual": "Birne",
+          "localizedVisual": {
+            "de": "Birne",
+            "en": "Pear"
+          },
           "answers": [
             {
               "id": "drinks",
@@ -27895,6 +27983,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Banana belong to?"
           },
           "visual": "Banane",
+          "localizedVisual": {
+            "de": "Banane",
+            "en": "Banana"
+          },
           "answers": [
             {
               "id": "vehicles",
@@ -28015,6 +28107,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Strawberry belong to?"
           },
           "visual": "Erdbeere",
+          "localizedVisual": {
+            "de": "Erdbeere",
+            "en": "Strawberry"
+          },
           "answers": [
             {
               "id": "fruit",
@@ -28135,6 +28231,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Cherry belong to?"
           },
           "visual": "Kirsche",
+          "localizedVisual": {
+            "de": "Kirsche",
+            "en": "Cherry"
+          },
           "answers": [
             {
               "id": "drinks",
@@ -28255,6 +28355,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Grape belong to?"
           },
           "visual": "Traube",
+          "localizedVisual": {
+            "de": "Traube",
+            "en": "Grape"
+          },
           "answers": [
             {
               "id": "vehicles",
@@ -28375,6 +28479,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Lemon belong to?"
           },
           "visual": "Zitrone",
+          "localizedVisual": {
+            "de": "Zitrone",
+            "en": "Lemon"
+          },
           "answers": [
             {
               "id": "fruit",
@@ -28495,6 +28603,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Carrot belong to?"
           },
           "visual": "Karotte",
+          "localizedVisual": {
+            "de": "Karotte",
+            "en": "Carrot"
+          },
           "answers": [
             {
               "id": "places",
@@ -28615,6 +28727,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Tomato belong to?"
           },
           "visual": "Tomate",
+          "localizedVisual": {
+            "de": "Tomate",
+            "en": "Tomato"
+          },
           "answers": [
             {
               "id": "sky",
@@ -28735,6 +28851,10 @@ export const categories: LearningCategory[] = [
             "en": "Which word group does Bread belong to?"
           },
           "visual": "Brot",
+          "localizedVisual": {
+            "de": "Brot",
+            "en": "Bread"
+          },
           "answers": [
             {
               "id": "food",
@@ -28806,6 +28926,5246 @@ export const categories: LearningCategory[] = [
           "hint": {
             "de": "Sprich Regen und Mantel direkt hintereinander.",
             "en": "Say rain and coat together."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "shapes",
+    "title": {
+      "de": "Formen",
+      "en": "Shapes"
+    },
+    "subtitle": {
+      "de": "Formen erkennen und Muster fortsetzen",
+      "en": "Recognize shapes and continue patterns"
+    },
+    "icon": "◆",
+    "color": "#7862B3",
+    "lightColor": "#EFE9FF",
+    "questionsByAge": {
+      "discoverer": [
+        {
+          "id": "shapes-discoverer-1",
+          "prompt": {
+            "de": "Suche diese Form: Kreis. Daneben wartet diese Form: Dreieck.",
+            "en": "Find the circle. The other choice is a triangle."
+          },
+          "visual": "●",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-2",
+          "prompt": {
+            "de": "Zweimal Kreis, einmal Dreieck: Welche Form ist anders?",
+            "en": "Two circle shapes and one triangle: which shape is different?"
+          },
+          "visual": "● ▲ ●",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-3",
+          "prompt": {
+            "de": "Erst Kreis, dann Dreieck: Welche Form kommt am Ende?",
+            "en": "First a circle, then a triangle: which shape comes next?"
+          },
+          "visual": "● ▲ ● ▲ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-4",
+          "prompt": {
+            "de": "Suche diese Form: Kreis. Daneben wartet diese Form: Quadrat.",
+            "en": "Find the circle. The other choice is a square."
+          },
+          "visual": "●",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-5",
+          "prompt": {
+            "de": "Zweimal Kreis, einmal Quadrat: Welche Form ist anders?",
+            "en": "Two circle shapes and one square: which shape is different?"
+          },
+          "visual": "● ■ ●",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-6",
+          "prompt": {
+            "de": "Erst Kreis, dann Quadrat: Welche Form kommt am Ende?",
+            "en": "First a circle, then a square: which shape comes next?"
+          },
+          "visual": "● ■ ● ■ ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-7",
+          "prompt": {
+            "de": "Suche diese Form: Kreis. Daneben wartet diese Form: Rechteck.",
+            "en": "Find the circle. The other choice is a rectangle."
+          },
+          "visual": "●",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-8",
+          "prompt": {
+            "de": "Zweimal Kreis, einmal Rechteck: Welche Form ist anders?",
+            "en": "Two circle shapes and one rectangle: which shape is different?"
+          },
+          "visual": "● ▬ ●",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-9",
+          "prompt": {
+            "de": "Erst Kreis, dann Rechteck: Welche Form kommt am Ende?",
+            "en": "First a circle, then a rectangle: which shape comes next?"
+          },
+          "visual": "● ▬ ● ▬ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-10",
+          "prompt": {
+            "de": "Suche diese Form: Kreis. Daneben wartet diese Form: Raute.",
+            "en": "Find the circle. The other choice is a diamond."
+          },
+          "visual": "●",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-11",
+          "prompt": {
+            "de": "Zweimal Kreis, einmal Raute: Welche Form ist anders?",
+            "en": "Two circle shapes and one diamond: which shape is different?"
+          },
+          "visual": "● ◆ ●",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-12",
+          "prompt": {
+            "de": "Erst Kreis, dann Raute: Welche Form kommt am Ende?",
+            "en": "First a circle, then a diamond: which shape comes next?"
+          },
+          "visual": "● ◆ ● ◆ ?",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-13",
+          "prompt": {
+            "de": "Suche diese Form: Kreis. Daneben wartet diese Form: Stern.",
+            "en": "Find the circle. The other choice is a star."
+          },
+          "visual": "●",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-14",
+          "prompt": {
+            "de": "Zweimal Kreis, einmal Stern: Welche Form ist anders?",
+            "en": "Two circle shapes and one star: which shape is different?"
+          },
+          "visual": "● ★ ●",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-15",
+          "prompt": {
+            "de": "Erst Kreis, dann Stern: Welche Form kommt am Ende?",
+            "en": "First a circle, then a star: which shape comes next?"
+          },
+          "visual": "● ★ ● ★ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-16",
+          "prompt": {
+            "de": "Suche diese Form: Dreieck. Daneben wartet diese Form: Kreis.",
+            "en": "Find the triangle. The other choice is a circle."
+          },
+          "visual": "▲",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-17",
+          "prompt": {
+            "de": "Zweimal Dreieck, einmal Kreis: Welche Form ist anders?",
+            "en": "Two triangle shapes and one circle: which shape is different?"
+          },
+          "visual": "▲ ● ▲",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-18",
+          "prompt": {
+            "de": "Erst Dreieck, dann Kreis: Welche Form kommt am Ende?",
+            "en": "First a triangle, then a circle: which shape comes next?"
+          },
+          "visual": "▲ ● ▲ ● ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-19",
+          "prompt": {
+            "de": "Suche diese Form: Dreieck. Daneben wartet diese Form: Quadrat.",
+            "en": "Find the triangle. The other choice is a square."
+          },
+          "visual": "▲",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-20",
+          "prompt": {
+            "de": "Zweimal Dreieck, einmal Quadrat: Welche Form ist anders?",
+            "en": "Two triangle shapes and one square: which shape is different?"
+          },
+          "visual": "▲ ■ ▲",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-21",
+          "prompt": {
+            "de": "Erst Dreieck, dann Quadrat: Welche Form kommt am Ende?",
+            "en": "First a triangle, then a square: which shape comes next?"
+          },
+          "visual": "▲ ■ ▲ ■ ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-22",
+          "prompt": {
+            "de": "Suche diese Form: Dreieck. Daneben wartet diese Form: Rechteck.",
+            "en": "Find the triangle. The other choice is a rectangle."
+          },
+          "visual": "▲",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-23",
+          "prompt": {
+            "de": "Zweimal Dreieck, einmal Rechteck: Welche Form ist anders?",
+            "en": "Two triangle shapes and one rectangle: which shape is different?"
+          },
+          "visual": "▲ ▬ ▲",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-24",
+          "prompt": {
+            "de": "Erst Dreieck, dann Rechteck: Welche Form kommt am Ende?",
+            "en": "First a triangle, then a rectangle: which shape comes next?"
+          },
+          "visual": "▲ ▬ ▲ ▬ ?",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-25",
+          "prompt": {
+            "de": "Suche diese Form: Dreieck. Daneben wartet diese Form: Raute.",
+            "en": "Find the triangle. The other choice is a diamond."
+          },
+          "visual": "▲",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-26",
+          "prompt": {
+            "de": "Zweimal Dreieck, einmal Raute: Welche Form ist anders?",
+            "en": "Two triangle shapes and one diamond: which shape is different?"
+          },
+          "visual": "▲ ◆ ▲",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-27",
+          "prompt": {
+            "de": "Erst Dreieck, dann Raute: Welche Form kommt am Ende?",
+            "en": "First a triangle, then a diamond: which shape comes next?"
+          },
+          "visual": "▲ ◆ ▲ ◆ ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-28",
+          "prompt": {
+            "de": "Suche diese Form: Dreieck. Daneben wartet diese Form: Stern.",
+            "en": "Find the triangle. The other choice is a star."
+          },
+          "visual": "▲",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-29",
+          "prompt": {
+            "de": "Zweimal Dreieck, einmal Stern: Welche Form ist anders?",
+            "en": "Two triangle shapes and one star: which shape is different?"
+          },
+          "visual": "▲ ★ ▲",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-30",
+          "prompt": {
+            "de": "Erst Dreieck, dann Stern: Welche Form kommt am Ende?",
+            "en": "First a triangle, then a star: which shape comes next?"
+          },
+          "visual": "▲ ★ ▲ ★ ?",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-31",
+          "prompt": {
+            "de": "Suche diese Form: Quadrat. Daneben wartet diese Form: Kreis.",
+            "en": "Find the square. The other choice is a circle."
+          },
+          "visual": "■",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-32",
+          "prompt": {
+            "de": "Zweimal Quadrat, einmal Kreis: Welche Form ist anders?",
+            "en": "Two square shapes and one circle: which shape is different?"
+          },
+          "visual": "■ ● ■",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-33",
+          "prompt": {
+            "de": "Erst Quadrat, dann Kreis: Welche Form kommt am Ende?",
+            "en": "First a square, then a circle: which shape comes next?"
+          },
+          "visual": "■ ● ■ ● ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-34",
+          "prompt": {
+            "de": "Suche diese Form: Quadrat. Daneben wartet diese Form: Dreieck.",
+            "en": "Find the square. The other choice is a triangle."
+          },
+          "visual": "■",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-35",
+          "prompt": {
+            "de": "Zweimal Quadrat, einmal Dreieck: Welche Form ist anders?",
+            "en": "Two square shapes and one triangle: which shape is different?"
+          },
+          "visual": "■ ▲ ■",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-36",
+          "prompt": {
+            "de": "Erst Quadrat, dann Dreieck: Welche Form kommt am Ende?",
+            "en": "First a square, then a triangle: which shape comes next?"
+          },
+          "visual": "■ ▲ ■ ▲ ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-37",
+          "prompt": {
+            "de": "Suche diese Form: Quadrat. Daneben wartet diese Form: Rechteck.",
+            "en": "Find the square. The other choice is a rectangle."
+          },
+          "visual": "■",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-38",
+          "prompt": {
+            "de": "Zweimal Quadrat, einmal Rechteck: Welche Form ist anders?",
+            "en": "Two square shapes and one rectangle: which shape is different?"
+          },
+          "visual": "■ ▬ ■",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-39",
+          "prompt": {
+            "de": "Erst Quadrat, dann Rechteck: Welche Form kommt am Ende?",
+            "en": "First a square, then a rectangle: which shape comes next?"
+          },
+          "visual": "■ ▬ ■ ▬ ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-40",
+          "prompt": {
+            "de": "Suche diese Form: Quadrat. Daneben wartet diese Form: Raute.",
+            "en": "Find the square. The other choice is a diamond."
+          },
+          "visual": "■",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-41",
+          "prompt": {
+            "de": "Zweimal Quadrat, einmal Raute: Welche Form ist anders?",
+            "en": "Two square shapes and one diamond: which shape is different?"
+          },
+          "visual": "■ ◆ ■",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-42",
+          "prompt": {
+            "de": "Erst Quadrat, dann Raute: Welche Form kommt am Ende?",
+            "en": "First a square, then a diamond: which shape comes next?"
+          },
+          "visual": "■ ◆ ■ ◆ ?",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-43",
+          "prompt": {
+            "de": "Suche diese Form: Quadrat. Daneben wartet diese Form: Stern.",
+            "en": "Find the square. The other choice is a star."
+          },
+          "visual": "■",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-44",
+          "prompt": {
+            "de": "Zweimal Quadrat, einmal Stern: Welche Form ist anders?",
+            "en": "Two square shapes and one star: which shape is different?"
+          },
+          "visual": "■ ★ ■",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-45",
+          "prompt": {
+            "de": "Erst Quadrat, dann Stern: Welche Form kommt am Ende?",
+            "en": "First a square, then a star: which shape comes next?"
+          },
+          "visual": "■ ★ ■ ★ ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-46",
+          "prompt": {
+            "de": "Suche diese Form: Rechteck. Daneben wartet diese Form: Kreis.",
+            "en": "Find the rectangle. The other choice is a circle."
+          },
+          "visual": "▬",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-47",
+          "prompt": {
+            "de": "Zweimal Rechteck, einmal Kreis: Welche Form ist anders?",
+            "en": "Two rectangle shapes and one circle: which shape is different?"
+          },
+          "visual": "▬ ● ▬",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-48",
+          "prompt": {
+            "de": "Erst Rechteck, dann Kreis: Welche Form kommt am Ende?",
+            "en": "First a rectangle, then a circle: which shape comes next?"
+          },
+          "visual": "▬ ● ▬ ● ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-49",
+          "prompt": {
+            "de": "Suche diese Form: Rechteck. Daneben wartet diese Form: Dreieck.",
+            "en": "Find the rectangle. The other choice is a triangle."
+          },
+          "visual": "▬",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-50",
+          "prompt": {
+            "de": "Zweimal Rechteck, einmal Dreieck: Welche Form ist anders?",
+            "en": "Two rectangle shapes and one triangle: which shape is different?"
+          },
+          "visual": "▬ ▲ ▬",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-51",
+          "prompt": {
+            "de": "Erst Rechteck, dann Dreieck: Welche Form kommt am Ende?",
+            "en": "First a rectangle, then a triangle: which shape comes next?"
+          },
+          "visual": "▬ ▲ ▬ ▲ ?",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-52",
+          "prompt": {
+            "de": "Suche diese Form: Rechteck. Daneben wartet diese Form: Quadrat.",
+            "en": "Find the rectangle. The other choice is a square."
+          },
+          "visual": "▬",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-53",
+          "prompt": {
+            "de": "Zweimal Rechteck, einmal Quadrat: Welche Form ist anders?",
+            "en": "Two rectangle shapes and one square: which shape is different?"
+          },
+          "visual": "▬ ■ ▬",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-54",
+          "prompt": {
+            "de": "Erst Rechteck, dann Quadrat: Welche Form kommt am Ende?",
+            "en": "First a rectangle, then a square: which shape comes next?"
+          },
+          "visual": "▬ ■ ▬ ■ ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-55",
+          "prompt": {
+            "de": "Suche diese Form: Rechteck. Daneben wartet diese Form: Raute.",
+            "en": "Find the rectangle. The other choice is a diamond."
+          },
+          "visual": "▬",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-56",
+          "prompt": {
+            "de": "Zweimal Rechteck, einmal Raute: Welche Form ist anders?",
+            "en": "Two rectangle shapes and one diamond: which shape is different?"
+          },
+          "visual": "▬ ◆ ▬",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-57",
+          "prompt": {
+            "de": "Erst Rechteck, dann Raute: Welche Form kommt am Ende?",
+            "en": "First a rectangle, then a diamond: which shape comes next?"
+          },
+          "visual": "▬ ◆ ▬ ◆ ?",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-58",
+          "prompt": {
+            "de": "Suche diese Form: Rechteck. Daneben wartet diese Form: Stern.",
+            "en": "Find the rectangle. The other choice is a star."
+          },
+          "visual": "▬",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-59",
+          "prompt": {
+            "de": "Zweimal Rechteck, einmal Stern: Welche Form ist anders?",
+            "en": "Two rectangle shapes and one star: which shape is different?"
+          },
+          "visual": "▬ ★ ▬",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-60",
+          "prompt": {
+            "de": "Erst Rechteck, dann Stern: Welche Form kommt am Ende?",
+            "en": "First a rectangle, then a star: which shape comes next?"
+          },
+          "visual": "▬ ★ ▬ ★ ?",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-61",
+          "prompt": {
+            "de": "Suche diese Form: Raute. Daneben wartet diese Form: Kreis.",
+            "en": "Find the diamond. The other choice is a circle."
+          },
+          "visual": "◆",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-62",
+          "prompt": {
+            "de": "Zweimal Raute, einmal Kreis: Welche Form ist anders?",
+            "en": "Two diamond shapes and one circle: which shape is different?"
+          },
+          "visual": "◆ ● ◆",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-63",
+          "prompt": {
+            "de": "Erst Raute, dann Kreis: Welche Form kommt am Ende?",
+            "en": "First a diamond, then a circle: which shape comes next?"
+          },
+          "visual": "◆ ● ◆ ● ?",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-64",
+          "prompt": {
+            "de": "Suche diese Form: Raute. Daneben wartet diese Form: Dreieck.",
+            "en": "Find the diamond. The other choice is a triangle."
+          },
+          "visual": "◆",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-65",
+          "prompt": {
+            "de": "Zweimal Raute, einmal Dreieck: Welche Form ist anders?",
+            "en": "Two diamond shapes and one triangle: which shape is different?"
+          },
+          "visual": "◆ ▲ ◆",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-66",
+          "prompt": {
+            "de": "Erst Raute, dann Dreieck: Welche Form kommt am Ende?",
+            "en": "First a diamond, then a triangle: which shape comes next?"
+          },
+          "visual": "◆ ▲ ◆ ▲ ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-67",
+          "prompt": {
+            "de": "Suche diese Form: Raute. Daneben wartet diese Form: Quadrat.",
+            "en": "Find the diamond. The other choice is a square."
+          },
+          "visual": "◆",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-68",
+          "prompt": {
+            "de": "Zweimal Raute, einmal Quadrat: Welche Form ist anders?",
+            "en": "Two diamond shapes and one square: which shape is different?"
+          },
+          "visual": "◆ ■ ◆",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-69",
+          "prompt": {
+            "de": "Erst Raute, dann Quadrat: Welche Form kommt am Ende?",
+            "en": "First a diamond, then a square: which shape comes next?"
+          },
+          "visual": "◆ ■ ◆ ■ ?",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-70",
+          "prompt": {
+            "de": "Suche diese Form: Raute. Daneben wartet diese Form: Rechteck.",
+            "en": "Find the diamond. The other choice is a rectangle."
+          },
+          "visual": "◆",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-71",
+          "prompt": {
+            "de": "Zweimal Raute, einmal Rechteck: Welche Form ist anders?",
+            "en": "Two diamond shapes and one rectangle: which shape is different?"
+          },
+          "visual": "◆ ▬ ◆",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-72",
+          "prompt": {
+            "de": "Erst Raute, dann Rechteck: Welche Form kommt am Ende?",
+            "en": "First a diamond, then a rectangle: which shape comes next?"
+          },
+          "visual": "◆ ▬ ◆ ▬ ?",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-73",
+          "prompt": {
+            "de": "Suche diese Form: Raute. Daneben wartet diese Form: Stern.",
+            "en": "Find the diamond. The other choice is a star."
+          },
+          "visual": "◆",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-74",
+          "prompt": {
+            "de": "Zweimal Raute, einmal Stern: Welche Form ist anders?",
+            "en": "Two diamond shapes and one star: which shape is different?"
+          },
+          "visual": "◆ ★ ◆",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-75",
+          "prompt": {
+            "de": "Erst Raute, dann Stern: Welche Form kommt am Ende?",
+            "en": "First a diamond, then a star: which shape comes next?"
+          },
+          "visual": "◆ ★ ◆ ★ ?",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-76",
+          "prompt": {
+            "de": "Suche diese Form: Stern. Daneben wartet diese Form: Kreis.",
+            "en": "Find the star. The other choice is a circle."
+          },
+          "visual": "★",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-77",
+          "prompt": {
+            "de": "Zweimal Stern, einmal Kreis: Welche Form ist anders?",
+            "en": "Two star shapes and one circle: which shape is different?"
+          },
+          "visual": "★ ● ★",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-78",
+          "prompt": {
+            "de": "Erst Stern, dann Kreis: Welche Form kommt am Ende?",
+            "en": "First a star, then a circle: which shape comes next?"
+          },
+          "visual": "★ ● ★ ● ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-79",
+          "prompt": {
+            "de": "Suche diese Form: Stern. Daneben wartet diese Form: Dreieck.",
+            "en": "Find the star. The other choice is a triangle."
+          },
+          "visual": "★",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-80",
+          "prompt": {
+            "de": "Zweimal Stern, einmal Dreieck: Welche Form ist anders?",
+            "en": "Two star shapes and one triangle: which shape is different?"
+          },
+          "visual": "★ ▲ ★",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-81",
+          "prompt": {
+            "de": "Erst Stern, dann Dreieck: Welche Form kommt am Ende?",
+            "en": "First a star, then a triangle: which shape comes next?"
+          },
+          "visual": "★ ▲ ★ ▲ ?",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-82",
+          "prompt": {
+            "de": "Suche diese Form: Stern. Daneben wartet diese Form: Quadrat.",
+            "en": "Find the star. The other choice is a square."
+          },
+          "visual": "★",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-83",
+          "prompt": {
+            "de": "Zweimal Stern, einmal Quadrat: Welche Form ist anders?",
+            "en": "Two star shapes and one square: which shape is different?"
+          },
+          "visual": "★ ■ ★",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-84",
+          "prompt": {
+            "de": "Erst Stern, dann Quadrat: Welche Form kommt am Ende?",
+            "en": "First a star, then a square: which shape comes next?"
+          },
+          "visual": "★ ■ ★ ■ ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-85",
+          "prompt": {
+            "de": "Suche diese Form: Stern. Daneben wartet diese Form: Rechteck.",
+            "en": "Find the star. The other choice is a rectangle."
+          },
+          "visual": "★",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-86",
+          "prompt": {
+            "de": "Zweimal Stern, einmal Rechteck: Welche Form ist anders?",
+            "en": "Two star shapes and one rectangle: which shape is different?"
+          },
+          "visual": "★ ▬ ★",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-87",
+          "prompt": {
+            "de": "Erst Stern, dann Rechteck: Welche Form kommt am Ende?",
+            "en": "First a star, then a rectangle: which shape comes next?"
+          },
+          "visual": "★ ▬ ★ ▬ ?",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        },
+        {
+          "id": "shapes-discoverer-88",
+          "prompt": {
+            "de": "Suche diese Form: Stern. Daneben wartet diese Form: Raute.",
+            "en": "Find the star. The other choice is a diamond."
+          },
+          "visual": "★",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Vergleiche die Form auf der Karte mit den beiden Antworten.",
+            "en": "Match the shape on the card to one of the two answers."
+          }
+        },
+        {
+          "id": "shapes-discoverer-89",
+          "prompt": {
+            "de": "Zweimal Stern, einmal Raute: Welche Form ist anders?",
+            "en": "Two star shapes and one diamond: which shape is different?"
+          },
+          "visual": "★ ◆ ★",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Eine Form ist nur einmal zu sehen. Tippe auf diese Form.",
+            "en": "One shape appears only once. Tap that shape."
+          }
+        },
+        {
+          "id": "shapes-discoverer-90",
+          "prompt": {
+            "de": "Erst Stern, dann Raute: Welche Form kommt am Ende?",
+            "en": "First a star, then a diamond: which shape comes next?"
+          },
+          "visual": "★ ◆ ★ ◆ ?",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Die beiden Formen wechseln sich immer ab.",
+            "en": "The two shapes take turns."
+          }
+        }
+      ],
+      "adventurer": [
+        {
+          "id": "shapes-adventurer-1",
+          "prompt": {
+            "de": "Zweimal Kreis, dann Dreieck: Setze das Muster fort.",
+            "en": "Two circle shapes, then a triangle: continue the pattern."
+          },
+          "visual": "● ● ▲ ● ● ▲ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-2",
+          "prompt": {
+            "de": "Kreis, Dreieck, Quadrat: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "circle, triangle, square: which shape is missing from the second group?"
+          },
+          "visual": "● ▲ ■ | ● ? ■",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-3",
+          "prompt": {
+            "de": "Nach Kreis und Dreieck folgt Quadrat. Ergänze das Ende.",
+            "en": "A circle and a triangle are followed by a square. Complete the ending."
+          },
+          "visual": "● ▲ ■ ● ▲ ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-4",
+          "prompt": {
+            "de": "Zweimal Kreis, dann Quadrat: Setze das Muster fort.",
+            "en": "Two circle shapes, then a square: continue the pattern."
+          },
+          "visual": "● ● ■ ● ● ■ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-5",
+          "prompt": {
+            "de": "Kreis, Quadrat, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "circle, square, triangle: which shape is missing from the second group?"
+          },
+          "visual": "● ■ ▲ | ● ? ▲",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-6",
+          "prompt": {
+            "de": "Nach Kreis und Quadrat folgt Dreieck. Ergänze das Ende.",
+            "en": "A circle and a square are followed by a triangle. Complete the ending."
+          },
+          "visual": "● ■ ▲ ● ■ ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-7",
+          "prompt": {
+            "de": "Zweimal Kreis, dann Rechteck: Setze das Muster fort.",
+            "en": "Two circle shapes, then a rectangle: continue the pattern."
+          },
+          "visual": "● ● ▬ ● ● ▬ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-8",
+          "prompt": {
+            "de": "Kreis, Rechteck, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "circle, rectangle, triangle: which shape is missing from the second group?"
+          },
+          "visual": "● ▬ ▲ | ● ? ▲",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-9",
+          "prompt": {
+            "de": "Nach Kreis und Rechteck folgt Dreieck. Ergänze das Ende.",
+            "en": "A circle and a rectangle are followed by a triangle. Complete the ending."
+          },
+          "visual": "● ▬ ▲ ● ▬ ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-10",
+          "prompt": {
+            "de": "Zweimal Kreis, dann Raute: Setze das Muster fort.",
+            "en": "Two circle shapes, then a diamond: continue the pattern."
+          },
+          "visual": "● ● ◆ ● ● ◆ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-11",
+          "prompt": {
+            "de": "Kreis, Raute, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "circle, diamond, triangle: which shape is missing from the second group?"
+          },
+          "visual": "● ◆ ▲ | ● ? ▲",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-12",
+          "prompt": {
+            "de": "Nach Kreis und Raute folgt Dreieck. Ergänze das Ende.",
+            "en": "A circle and a diamond are followed by a triangle. Complete the ending."
+          },
+          "visual": "● ◆ ▲ ● ◆ ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-13",
+          "prompt": {
+            "de": "Zweimal Kreis, dann Stern: Setze das Muster fort.",
+            "en": "Two circle shapes, then a star: continue the pattern."
+          },
+          "visual": "● ● ★ ● ● ★ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-14",
+          "prompt": {
+            "de": "Kreis, Stern, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "circle, star, triangle: which shape is missing from the second group?"
+          },
+          "visual": "● ★ ▲ | ● ? ▲",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-15",
+          "prompt": {
+            "de": "Nach Kreis und Stern folgt Dreieck. Ergänze das Ende.",
+            "en": "A circle and a star are followed by a triangle. Complete the ending."
+          },
+          "visual": "● ★ ▲ ● ★ ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-16",
+          "prompt": {
+            "de": "Zweimal Dreieck, dann Kreis: Setze das Muster fort.",
+            "en": "Two triangle shapes, then a circle: continue the pattern."
+          },
+          "visual": "▲ ▲ ● ▲ ▲ ● ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-17",
+          "prompt": {
+            "de": "Dreieck, Kreis, Quadrat: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "triangle, circle, square: which shape is missing from the second group?"
+          },
+          "visual": "▲ ● ■ | ▲ ? ■",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-18",
+          "prompt": {
+            "de": "Nach Dreieck und Kreis folgt Quadrat. Ergänze das Ende.",
+            "en": "A triangle and a circle are followed by a square. Complete the ending."
+          },
+          "visual": "▲ ● ■ ▲ ● ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-19",
+          "prompt": {
+            "de": "Zweimal Dreieck, dann Quadrat: Setze das Muster fort.",
+            "en": "Two triangle shapes, then a square: continue the pattern."
+          },
+          "visual": "▲ ▲ ■ ▲ ▲ ■ ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-20",
+          "prompt": {
+            "de": "Dreieck, Quadrat, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "triangle, square, circle: which shape is missing from the second group?"
+          },
+          "visual": "▲ ■ ● | ▲ ? ●",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-21",
+          "prompt": {
+            "de": "Nach Dreieck und Quadrat folgt Kreis. Ergänze das Ende.",
+            "en": "A triangle and a square are followed by a circle. Complete the ending."
+          },
+          "visual": "▲ ■ ● ▲ ■ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-22",
+          "prompt": {
+            "de": "Zweimal Dreieck, dann Rechteck: Setze das Muster fort.",
+            "en": "Two triangle shapes, then a rectangle: continue the pattern."
+          },
+          "visual": "▲ ▲ ▬ ▲ ▲ ▬ ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-23",
+          "prompt": {
+            "de": "Dreieck, Rechteck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "triangle, rectangle, circle: which shape is missing from the second group?"
+          },
+          "visual": "▲ ▬ ● | ▲ ? ●",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-24",
+          "prompt": {
+            "de": "Nach Dreieck und Rechteck folgt Kreis. Ergänze das Ende.",
+            "en": "A triangle and a rectangle are followed by a circle. Complete the ending."
+          },
+          "visual": "▲ ▬ ● ▲ ▬ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-25",
+          "prompt": {
+            "de": "Zweimal Dreieck, dann Raute: Setze das Muster fort.",
+            "en": "Two triangle shapes, then a diamond: continue the pattern."
+          },
+          "visual": "▲ ▲ ◆ ▲ ▲ ◆ ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-26",
+          "prompt": {
+            "de": "Dreieck, Raute, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "triangle, diamond, circle: which shape is missing from the second group?"
+          },
+          "visual": "▲ ◆ ● | ▲ ? ●",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-27",
+          "prompt": {
+            "de": "Nach Dreieck und Raute folgt Kreis. Ergänze das Ende.",
+            "en": "A triangle and a diamond are followed by a circle. Complete the ending."
+          },
+          "visual": "▲ ◆ ● ▲ ◆ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-28",
+          "prompt": {
+            "de": "Zweimal Dreieck, dann Stern: Setze das Muster fort.",
+            "en": "Two triangle shapes, then a star: continue the pattern."
+          },
+          "visual": "▲ ▲ ★ ▲ ▲ ★ ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-29",
+          "prompt": {
+            "de": "Dreieck, Stern, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "triangle, star, circle: which shape is missing from the second group?"
+          },
+          "visual": "▲ ★ ● | ▲ ? ●",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-30",
+          "prompt": {
+            "de": "Nach Dreieck und Stern folgt Kreis. Ergänze das Ende.",
+            "en": "A triangle and a star are followed by a circle. Complete the ending."
+          },
+          "visual": "▲ ★ ● ▲ ★ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-31",
+          "prompt": {
+            "de": "Zweimal Quadrat, dann Kreis: Setze das Muster fort.",
+            "en": "Two square shapes, then a circle: continue the pattern."
+          },
+          "visual": "■ ■ ● ■ ■ ● ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-32",
+          "prompt": {
+            "de": "Quadrat, Kreis, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "square, circle, triangle: which shape is missing from the second group?"
+          },
+          "visual": "■ ● ▲ | ■ ? ▲",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-33",
+          "prompt": {
+            "de": "Nach Quadrat und Kreis folgt Dreieck. Ergänze das Ende.",
+            "en": "A square and a circle are followed by a triangle. Complete the ending."
+          },
+          "visual": "■ ● ▲ ■ ● ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-34",
+          "prompt": {
+            "de": "Zweimal Quadrat, dann Dreieck: Setze das Muster fort.",
+            "en": "Two square shapes, then a triangle: continue the pattern."
+          },
+          "visual": "■ ■ ▲ ■ ■ ▲ ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-35",
+          "prompt": {
+            "de": "Quadrat, Dreieck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "square, triangle, circle: which shape is missing from the second group?"
+          },
+          "visual": "■ ▲ ● | ■ ? ●",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-36",
+          "prompt": {
+            "de": "Nach Quadrat und Dreieck folgt Kreis. Ergänze das Ende.",
+            "en": "A square and a triangle are followed by a circle. Complete the ending."
+          },
+          "visual": "■ ▲ ● ■ ▲ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-37",
+          "prompt": {
+            "de": "Zweimal Quadrat, dann Rechteck: Setze das Muster fort.",
+            "en": "Two square shapes, then a rectangle: continue the pattern."
+          },
+          "visual": "■ ■ ▬ ■ ■ ▬ ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-38",
+          "prompt": {
+            "de": "Quadrat, Rechteck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "square, rectangle, circle: which shape is missing from the second group?"
+          },
+          "visual": "■ ▬ ● | ■ ? ●",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-39",
+          "prompt": {
+            "de": "Nach Quadrat und Rechteck folgt Kreis. Ergänze das Ende.",
+            "en": "A square and a rectangle are followed by a circle. Complete the ending."
+          },
+          "visual": "■ ▬ ● ■ ▬ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-40",
+          "prompt": {
+            "de": "Zweimal Quadrat, dann Raute: Setze das Muster fort.",
+            "en": "Two square shapes, then a diamond: continue the pattern."
+          },
+          "visual": "■ ■ ◆ ■ ■ ◆ ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-41",
+          "prompt": {
+            "de": "Quadrat, Raute, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "square, diamond, circle: which shape is missing from the second group?"
+          },
+          "visual": "■ ◆ ● | ■ ? ●",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-42",
+          "prompt": {
+            "de": "Nach Quadrat und Raute folgt Kreis. Ergänze das Ende.",
+            "en": "A square and a diamond are followed by a circle. Complete the ending."
+          },
+          "visual": "■ ◆ ● ■ ◆ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-43",
+          "prompt": {
+            "de": "Zweimal Quadrat, dann Stern: Setze das Muster fort.",
+            "en": "Two square shapes, then a star: continue the pattern."
+          },
+          "visual": "■ ■ ★ ■ ■ ★ ?",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-44",
+          "prompt": {
+            "de": "Quadrat, Stern, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "square, star, circle: which shape is missing from the second group?"
+          },
+          "visual": "■ ★ ● | ■ ? ●",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-45",
+          "prompt": {
+            "de": "Nach Quadrat und Stern folgt Kreis. Ergänze das Ende.",
+            "en": "A square and a star are followed by a circle. Complete the ending."
+          },
+          "visual": "■ ★ ● ■ ★ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-46",
+          "prompt": {
+            "de": "Zweimal Rechteck, dann Kreis: Setze das Muster fort.",
+            "en": "Two rectangle shapes, then a circle: continue the pattern."
+          },
+          "visual": "▬ ▬ ● ▬ ▬ ● ?",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-47",
+          "prompt": {
+            "de": "Rechteck, Kreis, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "rectangle, circle, triangle: which shape is missing from the second group?"
+          },
+          "visual": "▬ ● ▲ | ▬ ? ▲",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-48",
+          "prompt": {
+            "de": "Nach Rechteck und Kreis folgt Dreieck. Ergänze das Ende.",
+            "en": "A rectangle and a circle are followed by a triangle. Complete the ending."
+          },
+          "visual": "▬ ● ▲ ▬ ● ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-49",
+          "prompt": {
+            "de": "Zweimal Rechteck, dann Dreieck: Setze das Muster fort.",
+            "en": "Two rectangle shapes, then a triangle: continue the pattern."
+          },
+          "visual": "▬ ▬ ▲ ▬ ▬ ▲ ?",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-50",
+          "prompt": {
+            "de": "Rechteck, Dreieck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "rectangle, triangle, circle: which shape is missing from the second group?"
+          },
+          "visual": "▬ ▲ ● | ▬ ? ●",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-51",
+          "prompt": {
+            "de": "Nach Rechteck und Dreieck folgt Kreis. Ergänze das Ende.",
+            "en": "A rectangle and a triangle are followed by a circle. Complete the ending."
+          },
+          "visual": "▬ ▲ ● ▬ ▲ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-52",
+          "prompt": {
+            "de": "Zweimal Rechteck, dann Quadrat: Setze das Muster fort.",
+            "en": "Two rectangle shapes, then a square: continue the pattern."
+          },
+          "visual": "▬ ▬ ■ ▬ ▬ ■ ?",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-53",
+          "prompt": {
+            "de": "Rechteck, Quadrat, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "rectangle, square, circle: which shape is missing from the second group?"
+          },
+          "visual": "▬ ■ ● | ▬ ? ●",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-54",
+          "prompt": {
+            "de": "Nach Rechteck und Quadrat folgt Kreis. Ergänze das Ende.",
+            "en": "A rectangle and a square are followed by a circle. Complete the ending."
+          },
+          "visual": "▬ ■ ● ▬ ■ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-55",
+          "prompt": {
+            "de": "Zweimal Rechteck, dann Raute: Setze das Muster fort.",
+            "en": "Two rectangle shapes, then a diamond: continue the pattern."
+          },
+          "visual": "▬ ▬ ◆ ▬ ▬ ◆ ?",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-56",
+          "prompt": {
+            "de": "Rechteck, Raute, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "rectangle, diamond, circle: which shape is missing from the second group?"
+          },
+          "visual": "▬ ◆ ● | ▬ ? ●",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-57",
+          "prompt": {
+            "de": "Nach Rechteck und Raute folgt Kreis. Ergänze das Ende.",
+            "en": "A rectangle and a diamond are followed by a circle. Complete the ending."
+          },
+          "visual": "▬ ◆ ● ▬ ◆ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-58",
+          "prompt": {
+            "de": "Zweimal Rechteck, dann Stern: Setze das Muster fort.",
+            "en": "Two rectangle shapes, then a star: continue the pattern."
+          },
+          "visual": "▬ ▬ ★ ▬ ▬ ★ ?",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-59",
+          "prompt": {
+            "de": "Rechteck, Stern, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "rectangle, star, circle: which shape is missing from the second group?"
+          },
+          "visual": "▬ ★ ● | ▬ ? ●",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-60",
+          "prompt": {
+            "de": "Nach Rechteck und Stern folgt Kreis. Ergänze das Ende.",
+            "en": "A rectangle and a star are followed by a circle. Complete the ending."
+          },
+          "visual": "▬ ★ ● ▬ ★ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-61",
+          "prompt": {
+            "de": "Zweimal Raute, dann Kreis: Setze das Muster fort.",
+            "en": "Two diamond shapes, then a circle: continue the pattern."
+          },
+          "visual": "◆ ◆ ● ◆ ◆ ● ?",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-62",
+          "prompt": {
+            "de": "Raute, Kreis, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "diamond, circle, triangle: which shape is missing from the second group?"
+          },
+          "visual": "◆ ● ▲ | ◆ ? ▲",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-63",
+          "prompt": {
+            "de": "Nach Raute und Kreis folgt Dreieck. Ergänze das Ende.",
+            "en": "A diamond and a circle are followed by a triangle. Complete the ending."
+          },
+          "visual": "◆ ● ▲ ◆ ● ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-64",
+          "prompt": {
+            "de": "Zweimal Raute, dann Dreieck: Setze das Muster fort.",
+            "en": "Two diamond shapes, then a triangle: continue the pattern."
+          },
+          "visual": "◆ ◆ ▲ ◆ ◆ ▲ ?",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-65",
+          "prompt": {
+            "de": "Raute, Dreieck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "diamond, triangle, circle: which shape is missing from the second group?"
+          },
+          "visual": "◆ ▲ ● | ◆ ? ●",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-66",
+          "prompt": {
+            "de": "Nach Raute und Dreieck folgt Kreis. Ergänze das Ende.",
+            "en": "A diamond and a triangle are followed by a circle. Complete the ending."
+          },
+          "visual": "◆ ▲ ● ◆ ▲ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-67",
+          "prompt": {
+            "de": "Zweimal Raute, dann Quadrat: Setze das Muster fort.",
+            "en": "Two diamond shapes, then a square: continue the pattern."
+          },
+          "visual": "◆ ◆ ■ ◆ ◆ ■ ?",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-68",
+          "prompt": {
+            "de": "Raute, Quadrat, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "diamond, square, circle: which shape is missing from the second group?"
+          },
+          "visual": "◆ ■ ● | ◆ ? ●",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-69",
+          "prompt": {
+            "de": "Nach Raute und Quadrat folgt Kreis. Ergänze das Ende.",
+            "en": "A diamond and a square are followed by a circle. Complete the ending."
+          },
+          "visual": "◆ ■ ● ◆ ■ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-70",
+          "prompt": {
+            "de": "Zweimal Raute, dann Rechteck: Setze das Muster fort.",
+            "en": "Two diamond shapes, then a rectangle: continue the pattern."
+          },
+          "visual": "◆ ◆ ▬ ◆ ◆ ▬ ?",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-71",
+          "prompt": {
+            "de": "Raute, Rechteck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "diamond, rectangle, circle: which shape is missing from the second group?"
+          },
+          "visual": "◆ ▬ ● | ◆ ? ●",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-72",
+          "prompt": {
+            "de": "Nach Raute und Rechteck folgt Kreis. Ergänze das Ende.",
+            "en": "A diamond and a rectangle are followed by a circle. Complete the ending."
+          },
+          "visual": "◆ ▬ ● ◆ ▬ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-73",
+          "prompt": {
+            "de": "Zweimal Raute, dann Stern: Setze das Muster fort.",
+            "en": "Two diamond shapes, then a star: continue the pattern."
+          },
+          "visual": "◆ ◆ ★ ◆ ◆ ★ ?",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-74",
+          "prompt": {
+            "de": "Raute, Stern, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "diamond, star, circle: which shape is missing from the second group?"
+          },
+          "visual": "◆ ★ ● | ◆ ? ●",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-75",
+          "prompt": {
+            "de": "Nach Raute und Stern folgt Kreis. Ergänze das Ende.",
+            "en": "A diamond and a star are followed by a circle. Complete the ending."
+          },
+          "visual": "◆ ★ ● ◆ ★ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-76",
+          "prompt": {
+            "de": "Zweimal Stern, dann Kreis: Setze das Muster fort.",
+            "en": "Two star shapes, then a circle: continue the pattern."
+          },
+          "visual": "★ ★ ● ★ ★ ● ?",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-77",
+          "prompt": {
+            "de": "Stern, Kreis, Dreieck: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "star, circle, triangle: which shape is missing from the second group?"
+          },
+          "visual": "★ ● ▲ | ★ ? ▲",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-78",
+          "prompt": {
+            "de": "Nach Stern und Kreis folgt Dreieck. Ergänze das Ende.",
+            "en": "A star and a circle are followed by a triangle. Complete the ending."
+          },
+          "visual": "★ ● ▲ ★ ● ?",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-79",
+          "prompt": {
+            "de": "Zweimal Stern, dann Dreieck: Setze das Muster fort.",
+            "en": "Two star shapes, then a triangle: continue the pattern."
+          },
+          "visual": "★ ★ ▲ ★ ★ ▲ ?",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-80",
+          "prompt": {
+            "de": "Stern, Dreieck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "star, triangle, circle: which shape is missing from the second group?"
+          },
+          "visual": "★ ▲ ● | ★ ? ●",
+          "answers": [
+            {
+              "id": "triangle",
+              "label": "▲"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "triangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Dreieck.",
+            "en": "Well done! The matching shape is a triangle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-81",
+          "prompt": {
+            "de": "Nach Stern und Dreieck folgt Kreis. Ergänze das Ende.",
+            "en": "A star and a triangle are followed by a circle. Complete the ending."
+          },
+          "visual": "★ ▲ ● ★ ▲ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "triangle",
+              "label": "▲"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-82",
+          "prompt": {
+            "de": "Zweimal Stern, dann Quadrat: Setze das Muster fort.",
+            "en": "Two star shapes, then a square: continue the pattern."
+          },
+          "visual": "★ ★ ■ ★ ★ ■ ?",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-83",
+          "prompt": {
+            "de": "Stern, Quadrat, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "star, square, circle: which shape is missing from the second group?"
+          },
+          "visual": "★ ■ ● | ★ ? ●",
+          "answers": [
+            {
+              "id": "square",
+              "label": "■"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "square",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Quadrat.",
+            "en": "Well done! The matching shape is a square."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-84",
+          "prompt": {
+            "de": "Nach Stern und Quadrat folgt Kreis. Ergänze das Ende.",
+            "en": "A star and a square are followed by a circle. Complete the ending."
+          },
+          "visual": "★ ■ ● ★ ■ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "square",
+              "label": "■"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-85",
+          "prompt": {
+            "de": "Zweimal Stern, dann Rechteck: Setze das Muster fort.",
+            "en": "Two star shapes, then a rectangle: continue the pattern."
+          },
+          "visual": "★ ★ ▬ ★ ★ ▬ ?",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-86",
+          "prompt": {
+            "de": "Stern, Rechteck, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "star, rectangle, circle: which shape is missing from the second group?"
+          },
+          "visual": "★ ▬ ● | ★ ? ●",
+          "answers": [
+            {
+              "id": "rectangle",
+              "label": "▬"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "rectangle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Rechteck.",
+            "en": "Well done! The matching shape is a rectangle."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-87",
+          "prompt": {
+            "de": "Nach Stern und Rechteck folgt Kreis. Ergänze das Ende.",
+            "en": "A star and a rectangle are followed by a circle. Complete the ending."
+          },
+          "visual": "★ ▬ ● ★ ▬ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "rectangle",
+              "label": "▬"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
+          }
+        },
+        {
+          "id": "shapes-adventurer-88",
+          "prompt": {
+            "de": "Zweimal Stern, dann Raute: Setze das Muster fort.",
+            "en": "Two star shapes, then a diamond: continue the pattern."
+          },
+          "visual": "★ ★ ◆ ★ ★ ◆ ?",
+          "answers": [
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            }
+          ],
+          "correctAnswerId": "star",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Stern.",
+            "en": "Well done! The matching shape is a star."
+          },
+          "hint": {
+            "de": "Suche die Dreiergruppe, die sich wiederholt.",
+            "en": "Find the repeating group of three."
+          }
+        },
+        {
+          "id": "shapes-adventurer-89",
+          "prompt": {
+            "de": "Stern, Raute, Kreis: Welche Form fehlt in der zweiten Gruppe?",
+            "en": "star, diamond, circle: which shape is missing from the second group?"
+          },
+          "visual": "★ ◆ ● | ★ ? ●",
+          "answers": [
+            {
+              "id": "diamond",
+              "label": "◆"
+            },
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            }
+          ],
+          "correctAnswerId": "diamond",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Raute.",
+            "en": "Well done! The matching shape is a diamond."
+          },
+          "hint": {
+            "de": "Vergleiche die mittlere Stelle der beiden Gruppen.",
+            "en": "Compare the middle position in both groups."
+          }
+        },
+        {
+          "id": "shapes-adventurer-90",
+          "prompt": {
+            "de": "Nach Stern und Raute folgt Kreis. Ergänze das Ende.",
+            "en": "A star and a diamond are followed by a circle. Complete the ending."
+          },
+          "visual": "★ ◆ ● ★ ◆ ?",
+          "answers": [
+            {
+              "id": "circle",
+              "label": "●"
+            },
+            {
+              "id": "star",
+              "label": "★"
+            },
+            {
+              "id": "diamond",
+              "label": "◆"
+            }
+          ],
+          "correctAnswerId": "circle",
+          "success": {
+            "de": "Geschafft! Die passende Form ist: Kreis.",
+            "en": "Well done! The matching shape is a circle."
+          },
+          "hint": {
+            "de": "Die drei Formen kommen immer in derselben Reihenfolge.",
+            "en": "The three shapes always appear in the same order."
           }
         }
       ]

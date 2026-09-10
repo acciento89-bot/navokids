@@ -37,6 +37,8 @@ for (const category of categories) {
       if (!question.prompt.de || !question.prompt.en || !question.success.de || !question.success.en || !question.hint.de || !question.hint.en) {
         throw new Error(`${question.id}: incomplete translation`);
       }
+      if (/[a-zäöüß]{2}/i.test(question.visual) && (!question.localizedVisual?.de || !question.localizedVisual?.en)) throw new Error(`${question.id}: word visual needs German and English translations`);
+      if (question.localizedVisual && !question.prompt.en.includes(question.localizedVisual.en)) throw new Error(`${question.id}: English word visual must match the spoken task`);
       if (germanPrompts.has(question.prompt.de)) throw new Error(`${category.id}/${ageGroup}: repeated German task: ${question.prompt.de}`);
       if (englishPrompts.has(question.prompt.en)) throw new Error(`${category.id}/${ageGroup}: repeated English task: ${question.prompt.en}`);
       germanPrompts.add(question.prompt.de);

@@ -46,3 +46,12 @@ assert(!isStageNextInSequence(malformedJump, 30), 'A malformed stage-29 record m
 assert(completeStageProgress(malformedJump, 30).completedStages.length === 0, 'Completing stage 30 must require every earlier stage');
 
 console.log('Validated strict sequential stage progression and isolated completion state.');
+
+const oldProgress = sandbox.exports.createEmptyProgress();
+delete oldProgress.shapes;
+oldProgress.numbers = afterTwo;
+const migrated = sandbox.exports.normalizeProgress(oldProgress);
+assert(migrated.shapes.completedStages.length === 0, 'Existing profiles receive an empty shapes island');
+assert(migrated.numbers.completedStages.join(',') === '1,2', 'Adding shapes must preserve existing progress');
+assert(isStageNextInSequence(migrated.shapes, 1), 'First shapes stage is available');
+assert(!isStageNextInSequence(migrated.shapes, 2), 'Second shapes stage still requires first completion');

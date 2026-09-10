@@ -418,6 +418,7 @@ function buildWords() {
     return {
       prompt: localized(`Zu welcher Wortgruppe gehört ${de}?`, `Which word group does ${en} belong to?`),
       visual: de,
+      localizedVisual: localized(de, en),
       answers: choices.map((group) => localizedAnswer(group.id, group.de, group.en)),
       correctAnswerId: correct.id,
       success: localized(`${de} gehört zur Wortgruppe ${correct.de}.`, `${en} belongs to the word group ${correct.en}.`),
@@ -848,12 +849,14 @@ function buildDiscovererWords() {
   return questions;
 }
 
+const buildShapes = require('./generate-shapes.cjs');
 const categories = [
   { id: 'numbers', title: localized('Zahlen', 'Numbers'), subtitle: localized('Zählen und Mengen entdecken', 'Discover counting and quantities'), icon: '123', color: '#F29A38', lightColor: '#FFF0D7', questionsByAge: { discoverer: buildDiscovererNumbers(), adventurer: buildNumbers() } },
   { id: 'colors', title: localized('Farben', 'Colors'), subtitle: localized('Farben finden und mischen', 'Find and mix colors'), icon: '●', color: '#F05E62', lightColor: '#FFE1E2', questionsByAge: { discoverer: buildDiscovererColors(), adventurer: buildColors() } },
   { id: 'animals', title: localized('Tiere', 'Animals'), subtitle: localized('Tiere und ihre Welt kennenlernen', 'Meet animals and their world'), icon: '🐾', color: '#58AE75', lightColor: '#E1F5E7', questionsByAge: { discoverer: buildDiscovererAnimals(), adventurer: buildAnimals() } },
   { id: 'letters', title: localized('Buchstaben', 'Letters'), subtitle: localized('Laute hören und Buchstaben finden', 'Hear sounds and find letters'), icon: 'ABC', color: '#7A72D1', lightColor: '#EAE7FF', questionsByAge: { discoverer: buildDiscovererLetters(), adventurer: buildLetters() } },
   { id: 'words', title: localized('Wörter', 'Words'), subtitle: localized('Bilder, Laute und Wörter verbinden', 'Connect pictures, sounds, and words'), icon: 'Aa', color: '#3E9FD6', lightColor: '#E0F3FF', questionsByAge: { discoverer: buildDiscovererWords(), adventurer: buildWords() } },
+  { id: 'shapes', title: localized('Formen', 'Shapes'), subtitle: localized('Formen erkennen und Muster fortsetzen', 'Recognize shapes and continue patterns'), icon: '◆', color: '#7862B3', lightColor: '#EFE9FF', questionsByAge: { discoverer: buildShapes('discoverer'), adventurer: buildShapes('adventurer') } },
 ];
 
 for (const category of categories) {

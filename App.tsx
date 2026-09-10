@@ -129,7 +129,6 @@ export default function App() {
         };
       }),
     }));
-    setScreen({ name: 'stages', categoryId });
   };
 
   if (!hydrated) return <View style={styles.loading} />;
@@ -141,8 +140,8 @@ export default function App() {
         {screen.name === 'setup' && <ProfileSetupScreen language={appState.language} mode={screen.mode} onCancel={screen.mode === 'add' ? () => setScreen({ name: 'parents' }) : undefined} onSave={createProfile} />}
         {screen.name === 'profiles' && <ProfilePickerScreen language={appState.language} profiles={appState.profiles} onSelect={selectProfile} onAdd={() => requestGate('addProfile')} />}
         {screen.name === 'world' && activeProfile && <WorldScreen language={appState.language} profile={activeProfile} premiumUnlocked={appState.premiumUnlocked} onLanguageChange={setLanguage} onCategoryPress={(categoryId) => setScreen({ name: 'stages', categoryId })} onParentsPress={() => requestGate('parents')} onProfilePress={() => setScreen({ name: 'profiles' })} />}
-        {screen.name === 'stages' && activeProfile && <StagesScreen category={categoryById(screen.categoryId)} language={appState.language} progress={activeProfile.progress[screen.categoryId]} premiumUnlocked={appState.premiumUnlocked} onBack={() => setScreen({ name: 'world' })} onStage={(stage) => requestStage(screen.categoryId, stage)} />}
-        {screen.name === 'game' && activeProfile && <GameScreen category={categoryById(screen.categoryId)} stage={screen.stage} language={appState.language} ageGroup={activeProfile.ageGroup} onBack={() => setScreen({ name: 'stages', categoryId: screen.categoryId })} onCompleted={(answered) => completeStage(screen.categoryId, screen.stage, answered)} />}
+        {screen.name === 'stages' && activeProfile && <StagesScreen focusStage={screen.focusStage} category={categoryById(screen.categoryId)} language={appState.language} progress={activeProfile.progress[screen.categoryId]} premiumUnlocked={appState.premiumUnlocked} onBack={() => setScreen({ name: 'world' })} onStage={(stage) => requestStage(screen.categoryId, stage)} />}
+        {screen.name === 'game' && activeProfile && <GameScreen key={`${activeProfile.id}:${screen.categoryId}:${screen.stage}`} onNextStage={() => requestStage(screen.categoryId, screen.stage + 1)} category={categoryById(screen.categoryId)} stage={screen.stage} language={appState.language} ageGroup={activeProfile.ageGroup} onBack={() => setScreen({ name: 'stages', categoryId: screen.categoryId, focusStage: screen.stage })} onCompleted={(answered) => completeStage(screen.categoryId, screen.stage, answered)} />}
         {screen.name === 'parents' && activeProfile && <ParentsScreen language={appState.language} progress={activeProfile.progress} profiles={appState.profiles} activeProfileId={activeProfile.id} premiumUnlocked={appState.premiumUnlocked} onBack={() => setScreen({ name: 'world' })} onAddProfile={() => setScreen({ name: 'setup', mode: 'add' })} onSwitchProfile={() => setScreen({ name: 'profiles' })} onPremium={() => !appState.premiumUnlocked && setScreen({ name: 'premium' })} />}
         {screen.name === 'premium' && <PremiumScreen language={appState.language} store={premiumStore} onBack={() => setScreen({ name: 'parents' })} onUnlocked={() => setScreen({ name: 'parents' })} />}
       </View>

@@ -4,8 +4,8 @@ Eine werbefreie, zweisprachige Lernspiel-App für Kinder von etwa 3 bis 7 Jahren
 
 ## Enthalten in Version 0.3.0
 
-- fünf Lerninseln: Zahlen, Farben, Tiere, Buchstaben und Wörter
-- 30 Stufen je Insel – 150 Missionen mit 450 gesprochenen Aufgabenrunden
+- sechs Lerninseln: Zahlen, Farben, Tiere, Buchstaben, Wörter und Formen
+- 30 Stufen je Insel – 180 Missionen mit 540 gesprochenen Aufgabenrunden
 - die ersten zwei Stufen jeder Insel sind kostenlos
 - altersgerechte Varianten für 3–4 und 5–7 Jahre
 - kindlich abgestimmte deutsche und englische Navi-Sprachausgabe mit bevorzugten Enhanced-Stimmen
@@ -14,7 +14,7 @@ Eine werbefreie, zweisprachige Lernspiel-App für Kinder von etwa 3 bis 7 Jahren
 - lokaler Lernfortschritt ohne Kinderkonto
 - geschützter Elternbereich mit Fortschrittsübersicht und wechselnden Lernempfehlungen
 - bis zu vier getrennte Kinderprofile mit Altersstufe
-- illustrierte Abenteuerkarte mit fünf verbundenen Lerninseln
+- illustrierte Abenteuerkarte mit sechs verbundenen Lerninseln
 - Premium-Stufen hinter einer Elternschranke
 - native Apple- und Google-Kaufanbindung mit Wiederherstellung
 - responsives, kindgerechtes Design für Smartphones und Tablets

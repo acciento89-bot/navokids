@@ -1,0 +1,71 @@
+name: Upload icon-safe NavoKids Android
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/upload-icon-safe-android.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: navokids-icon-safe-android
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+      - run: npm ci
+      - name: Verify canonical icon and splash
+        run: |
+          node - <<'NODE'
+          const c=require('./app.json').expo;
+          if(c.icon !== './assets/app-icon.png') throw new Error('Unexpected app icon');
+          if(c.splash?.image !== c.icon) throw new Error('Splash must use canonical app icon');
+          if(c.android.package !== 'com.kamilunavo.navokids') throw new Error('Unexpected Android package');
+          NODE
+      - name: Queue signed production AAB
+        env:
+          RELEASE_PLATFORM: android
+        run: node scripts/queue-release.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: navokids-icon-safe-build
+          path: build.json
+          retention-days: 14
+  upload:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: navokids-icon-safe-build
+      - name: Wait for exact build and upload to Google Play
+        env:
+          RELEASE_PLATFORM: android
+          RELEASE_VERSION: 0.4.0
+        run: node scripts/upload-release.cjs

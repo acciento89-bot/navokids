@@ -7,7 +7,7 @@
     "userInterfaceStyle": "light",
     "icon": "./assets/app-icon.png",
     "splash": {
-      "image": "./assets/navi-mascot-optimized.png",
+      "image": "./assets/app-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#FFF8E8"
     },

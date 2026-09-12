@@ -17,7 +17,14 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Verify app and launch icon identity
-        run: node -e "const c=require('./app.json').expo; if(c.icon!==c.splash?.image) throw new Error('NavoKids splash image must use the same canonical app icon as expo.icon');"
+        run: |
+          node - <<'NODE'
+          const c=require('./app.json').expo;
+          if(c.icon !== './assets/app-icon.png') throw new Error('Unexpected canonical NavoKids app icon');
+          if(c.icon !== c.splash?.image) throw new Error('NavoKids splash image must use the same canonical app icon as expo.icon');
+          if(c.android?.adaptiveIcon) throw new Error('NavoKids adaptiveIcon must stay disabled so Android installs the canonical app icon directly');
+          if(c.android?.package !== 'com.kamilunavo.navokids') throw new Error('Unexpected NavoKids Android package');
+          NODE
       - run: npm run typecheck
       - run: npm run content:check
       - run: npm run islands:check

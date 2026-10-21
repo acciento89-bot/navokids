@@ -5,7 +5,7 @@ import { copy, t } from '../i18n';
 import { colors, shadows } from '../theme';
 import { ChildProfile, Language, Progress } from '../types';
 
-export function ParentsScreen({ language, progress, profiles, activeProfileId, premiumUnlocked, onBack, onAddProfile, onSwitchProfile, onPremium }: { language: Language; progress: Progress; profiles: ChildProfile[]; activeProfileId: string; premiumUnlocked: boolean; onBack: () => void; onAddProfile: () => void; onSwitchProfile: () => void; onPremium: () => void }) {
+export function ParentsScreen({ language, progress, profiles, activeProfileId, premiumUnlocked, onBack, onAddProfile, onSwitchProfile, onPremium, onPractice }: { language: Language; progress: Progress; profiles: ChildProfile[]; activeProfileId: string; premiumUnlocked: boolean; onBack: () => void; onAddProfile: () => void; onSwitchProfile: () => void; onPremium: () => void; onPractice: () => void }) {
   const completed = Object.values(progress).reduce((sum, value) => sum + value.completedQuestions, 0);
   const percent = Math.min(100, Math.round((completed / TOTAL_QUESTIONS) * 100));
   const focusCategory = [...categories].sort((a, b) => progress[a.id].completedQuestions - progress[b.id].completedQuestions)[0] ?? categories[0];
@@ -21,6 +21,7 @@ export function ParentsScreen({ language, progress, profiles, activeProfileId, p
   return (
     <ScrollView contentContainerStyle={styles.content}>
       <View style={styles.topbar}><Pressable onPress={onBack} style={styles.back}><Text style={styles.backText}>‹</Text></Pressable><Text style={styles.title}>{t(copy.parentArea, language)}</Text></View>
+      <Pressable accessibilityRole="button" testID="practice-open-planner" onPress={onPractice} style={styles.addProfile}><Text style={styles.addProfileText}>{language === 'de' ? 'Übungsrunden planen' : 'Plan practice sessions'}</Text></Pressable>
       <Text style={styles.intro}>{t(copy.dashboardIntro, language)}</Text>
       <View style={styles.profileStrip}>
         <View style={styles.profileInfo}><Text style={styles.profileAvatar}>{profiles.find((profile) => profile.id === activeProfileId)?.avatar}</Text><View><Text style={styles.profileName}>{profiles.find((profile) => profile.id === activeProfileId)?.nickname}</Text><Text style={styles.profileMeta}>{profiles.length} {language === 'de' ? 'Kinderprofil(e)' : 'child profile(s)'}</Text></View></View>

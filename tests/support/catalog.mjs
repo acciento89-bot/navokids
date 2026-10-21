@@ -1,0 +1,12 @@
+import { readFileSync } from 'node:fs';
+const source = readFileSync(new URL('../../src/data/learningContent.ts', import.meta.url), 'utf8');
+const start = source.indexOf('= [') + 2;
+const end = source.indexOf('\n];', start) + 2;
+if (start < 2 || end < start) throw Error('Actual learning catalog boundary changed');
+export const catalog = JSON.parse(source.slice(start, end));
+export const at = (day = 21, second = 0) => `2026-10-${day}T10:00:${String(second).padStart(2, '0')}.000Z`;
+export const profile = (id = 'child-qa-one', ageGroup = 'discoverer') => ({ id, nickname: 'QA Explorer', avatar: '🦊', ageGroup, createdAt: at(), progress: Object.fromEntries(catalog.map((category) => [category.id, { completedQuestions: 0, stars: 0, completedStages: [] }])) });
+export const planInput = (id = 'plan-qa-one') => ({ id, title: 'Numbers and colors', selections: [{ categoryId: 'numbers', stage: 1 }, { categoryId: 'colors', stage: 1 }] });
+export const question = (session, index) => { const ref = session.questions[index]; return catalog.find((item) => item.id === ref.categoryId).questionsByAge[session.ageGroup].find((item) => item.id === ref.questionId); };
+export const command = (session, answerId, attemptId = `attempt-${session.revision}`) => ({ sessionId: session.id, profileId: session.profileId, questionId: session.questions[session.answers.filter((answer) => answer.completedAt !== null).length].questionId, expectedRevision: session.revision, attemptId, answerId });
+export const emptyArchive = (id = 'child-qa-one') => ({ schemaVersion: 1, profileId: id, revision: 0, plans: [], sessions: [] });

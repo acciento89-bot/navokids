@@ -9,7 +9,9 @@ export type Screen =
   | { name: 'stages'; categoryId: CategoryId; focusStage?: number }
   | { name: 'game'; categoryId: CategoryId; stage: number }
   | { name: 'parents' }
-  | { name: 'premium' };
+  | { name: 'premium' }
+  | { name: 'practicePlans' }
+  | { name: 'practiceSession' };
 
 export interface LocalizedText {
   de: string;

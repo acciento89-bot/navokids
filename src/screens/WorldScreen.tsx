@@ -14,6 +14,7 @@ interface Props {
   onCategoryPress: (id: CategoryId) => void;
   onParentsPress: () => void;
   onProfilePress: () => void;
+  onPracticeContinue?: () => void;
 }
 
 const islandPlacements: Record<CategoryId, { top: `${number}%`; side: 'left' | 'right'; panel: number }> = {
@@ -30,7 +31,7 @@ const mapPanels = [
   { image: require('../../assets/adventure-map-eight-islands-v3.png'), ratio: 1 / 3 },
 ];
 
-export function WorldScreen({ language, profile, premiumUnlocked, onLanguageChange, onCategoryPress, onParentsPress, onProfilePress }: Props) {
+export function WorldScreen({ language, profile, premiumUnlocked, onLanguageChange, onCategoryPress, onParentsPress, onProfilePress, onPracticeContinue }: Props) {
   const totalStars = countStars(profile.progress);
   const nextCategory = categories.find((category) => profile.progress[category.id].completedQuestions < TOTAL_QUESTIONS_PER_CATEGORY);
   const nextPlacement = nextCategory ? islandPlacements[nextCategory.id] : islandPlacements.words;
@@ -55,6 +56,7 @@ export function WorldScreen({ language, profile, premiumUnlocked, onLanguageChan
         <Image source={require('../../assets/navi-mascot-optimized.png')} resizeMode="contain" style={styles.mascot} />
       </View>
 
+      {onPracticeContinue && <Pressable accessibilityRole="button" testID="practice-world-continue" onPress={onPracticeContinue} style={{ minHeight: 52, padding: 16, marginTop: 18, borderRadius: 18, backgroundColor: colors.paper, borderWidth: 1, borderColor: colors.teal }}><Text style={{ color: colors.tealDark, fontSize: 17, fontWeight: '800' }}>{language === 'de' ? 'Deine Übungsrunde fortsetzen' : 'Continue your practice session'}</Text></Pressable>}
       <Text style={styles.sectionTitle}>{language === 'de' ? 'Navis Abenteuerkarte' : 'Navi’s adventure map'}</Text>
       <Text style={styles.mapIntro}>{language === 'de' ? 'Tippe auf eine Insel und starte deine Reise!' : 'Tap an island and start your journey!'}</Text>
       <View style={styles.mapShell}>

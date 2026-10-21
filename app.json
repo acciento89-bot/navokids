@@ -15,6 +15,7 @@
       "**/*"
     ],
     "plugins": [
+      "./plugins/with-space-safe-ios.cjs",
       "expo-iap",
       [
         "expo-audio",

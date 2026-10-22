@@ -41,7 +41,7 @@ public final class PracticeNativeTest {
  private BySelector id(String id){return By.res(Pattern.compile("(?:"+Pattern.quote(APP)+":id/)?"+Pattern.quote(id)));}
  private void click(BySelector selector){UiObject2 n=find(selector);assertTrue("Target disabled",n.isEnabled());n.click();device.waitForIdle();}
  private void text(String value){click(By.text(value));}
- private void test(String value){click(id(value));}
+ private void test(String value){if(value.equals("practice-session-back")||value.equals("practice-planner-back"))top();click(id(value));}
  private void expect(String value){assertNotNull(find(By.text(value)));}
  private void hideKeyboard(){for(AccessibilityWindowInfo w:InstrumentationRegistry.getInstrumentation().getUiAutomation().getWindows())if(w.getType()==AccessibilityWindowInfo.TYPE_INPUT_METHOD){device.pressBack();device.waitForIdle();return;}}
  private void enter(BySelector selector,String value){UiObject2 n=find(selector);n.click();device.waitForIdle();unique(selector).setText(value);device.waitForIdle();assertEquals(value,unique(selector).getText());hideKeyboard();}

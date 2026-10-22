@@ -32,6 +32,10 @@ public final class PracticeNativeTest {
  private void launch(){Intent i=host.getPackageManager().getLaunchIntentForPackage(APP);assertNotNull(i);host.startActivity(i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));assertTrue(device.wait(Until.hasObject(By.pkg(APP)),20000));device.waitForIdle();}
  private UiObject2 unique(BySelector selector){List<UiObject2> nodes=device.findObjects(selector);assertEquals("Unique visible target: "+selector,1,nodes.size());return nodes.get(0);}
  private UiObject2 find(BySelector selector){
+  // React can finish navigation after Android becomes idle; wait for a visible target first.
+  if(device.wait(Until.hasObject(selector),1500))return unique(selector);
+  // A target may be above the retained viewport. Search from the actual top, never only downward.
+  top();
   for(int n=0;n<18;n++){
    List<UiObject2> nodes=device.findObjects(selector);if(nodes.size()==1)return nodes.get(0);if(nodes.size()>1)fail("Ambiguous target "+selector);
    device.swipe(device.getDisplayWidth()/2,(int)(device.getDisplayHeight()*.78),device.getDisplayWidth()/2,(int)(device.getDisplayHeight()*.28),25);device.waitForIdle();
@@ -41,7 +45,7 @@ public final class PracticeNativeTest {
  private BySelector id(String id){return By.res(Pattern.compile("(?:"+Pattern.quote(APP)+":id/)?"+Pattern.quote(id)));}
  private void click(BySelector selector){UiObject2 n=find(selector);assertTrue("Target disabled",n.isEnabled());n.click();device.waitForIdle();}
  private void text(String value){click(By.text(value));}
- private void test(String value){if(value.equals("practice-session-back")||value.equals("practice-planner-back"))top();click(id(value));}
+ private void test(String value){if(value.equals("practice-session-back")||value.equals("practice-planner-back")||value.equals("practice-new-plan"))top();click(id(value));}
  private void expect(String value){assertNotNull(find(By.text(value)));}
  private void hideKeyboard(){for(AccessibilityWindowInfo w:InstrumentationRegistry.getInstrumentation().getUiAutomation().getWindows())if(w.getType()==AccessibilityWindowInfo.TYPE_INPUT_METHOD){device.pressBack();device.waitForIdle();return;}}
  private void enter(BySelector selector,String value){UiObject2 n=find(selector);n.click();device.waitForIdle();unique(selector).setText(value);device.waitForIdle();assertEquals(value,unique(selector).getText());hideKeyboard();}

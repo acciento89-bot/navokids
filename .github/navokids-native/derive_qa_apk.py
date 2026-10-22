@@ -1,6 +1,7 @@
 """Installable APK re-signed only with the owned disposable debug key; verify every DEX and asset."""
 import hashlib,pathlib,subprocess,os,zipfile
-folder=pathlib.Path('candidate');tool=pathlib.Path(os.environ['RUNNER_TEMP'])/'bundletool.jar';ks=pathlib.Path.home()/'.android/debug.keystore';assert ks.is_file()
+from disposable_key import create_disposable_key
+folder=pathlib.Path('candidate');tool=pathlib.Path(os.environ['RUNNER_TEMP'])/'bundletool.jar';ks=create_disposable_key(pathlib.Path(os.environ['RUNNER_TEMP'])/'navokids-owned-qa-signing')
 subprocess.run(['java','-jar',str(tool),'build-apks','--bundle='+str(folder/'app-release.aab'),'--output='+str(folder/'candidate.apks'),'--mode=universal','--ks='+str(ks),'--ks-pass=pass:android','--ks-key-alias=androiddebugkey','--key-pass=pass:android'],check=True,stdout=subprocess.DEVNULL)
 with zipfile.ZipFile(folder/'candidate.apks')as z:
  with z.open('universal.apk')as src,(folder/'universal.apk').open('xb')as dst:

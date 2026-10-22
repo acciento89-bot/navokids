@@ -1,5 +1,6 @@
 """Bind a native run to one successful same-project, main-owned managed artifact."""
 import hashlib,json,os,pathlib,re,subprocess,zipfile
+from artifact_source import assert_same_product
 repo='acciento89-bot/navokids';run=os.environ['SOURCE_RUN_ID'];artifact=os.environ['SOURCE_ARTIFACT_ID'];digest=os.environ['SOURCE_ARTIFACT_DIGEST']
 assert os.environ['GITHUB_REPOSITORY']==repo and run.isdecimal()and artifact.isdecimal()and re.fullmatch('sha256:[0-9a-f]{64}',digest)
 def api(path):return json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/'+path]))
@@ -17,5 +18,6 @@ with zipfile.ZipFile(archive)as z:
   assert member.file_size<(512*1024*1024 if member.filename=='app-release.aab'else 256*1024)
   with z.open(member)as src,(folder/member.filename).open('xb')as dst:
    while chunk:=src.read(1024*1024):dst.write(chunk)
-p=json.loads((folder/'provenance.json').read_text());assert p['sourceCommit']==sha and str(p['workflowRun'])==run and p['repository']==repo
+p=json.loads((folder/'provenance.json').read_text());assert p.get('workflowCommit',p['sourceCommit'])==sha and str(p['workflowRun'])==run and p['repository']==repo
+assert_same_product(pathlib.Path.cwd(),p['sourceCommit'],sha)
 print('Exact successful main artifact and native product source bound')

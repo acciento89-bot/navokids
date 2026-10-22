@@ -7,6 +7,10 @@ on:
         type: choice
         options: [validate, signed, native]
         default: validate
+      recover_eas_build_id:
+        description: Recover only an existing finished build with identical product source
+        type: string
+        required: false
       source_run_id:
         type: string
         required: false
@@ -55,9 +59,11 @@ jobs:
     if: github.event_name == 'workflow_dispatch' && inputs.mode == 'signed' && github.ref == 'refs/heads/main' && github.repository == 'acciento89-bot/navokids'
     runs-on: ubuntu-latest
     timeout-minutes: 50
+    env:
+      RECOVER_EAS_BUILD_ID: ${{ inputs.recover_eas_build_id }}
     steps:
       - uses: actions/checkout@v5
-        with: {persist-credentials: false}
+        with: {persist-credentials: false, fetch-depth: 0}
       - uses: actions/setup-node@v4
         with: {node-version: '24', cache: npm}
       - uses: actions/setup-java@v5

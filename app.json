@@ -37,7 +37,13 @@
     "android": {
       "package": "com.kamilunavo.navokids",
       "versionCode": 8,
-      "permissions": []
+      "permissions": [],
+      "allowBackup": false,
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ]
     },
     "extra": {
       "eas": {

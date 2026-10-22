@@ -1,49 +1,143 @@
-name: Android Internal APK
-
+name: NavoKids Android release validation
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: Validate, build with the existing managed key, or test that exact artifact
+        type: choice
+        options: [validate, signed, native]
+        default: validate
+      source_run_id:
+        type: string
+        required: false
+      source_artifact_id:
+        type: string
+        required: false
+      source_artifact_digest:
+        type: string
+        required: false
+  pull_request:
+    paths: ['App.tsx','app.json','package.json','package-lock.json','src/**','.github/navokids-native/**','.github/workflows/android-internal.yml']
   push:
     branches: [main]
-    paths:
-      - "App.tsx"
-      - "app.json"
-      - "package.json"
-      - "package-lock.json"
-      - "src/**"
-      - "assets/**"
-      - ".github/workflows/android-internal.yml"
-
+    paths: ['App.tsx','app.json','package.json','package-lock.json','src/**','.github/navokids-native/**','.github/workflows/android-internal.yml']
+permissions: {contents: read}
+concurrency:
+  group: navokids-android-${{ github.ref }}-${{ inputs.mode || 'validate' }}
+  cancel-in-progress: false
+env:
+  BUNDLETOOL_URL: https://github.com/google/bundletool/releases/download/1.18.2/bundletool-all-1.18.2.jar
+  BUNDLETOOL_SHA256: 378b5434cd1378bef6b2bc527b8c7f0ff2584b273830335bce54d6d0813c8584
 jobs:
-  build-apk:
+  validate:
+    if: github.event_name != 'workflow_dispatch' || inputs.mode == 'validate'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+        with: {persist-credentials: false}
       - uses: actions/setup-node@v4
+        with: {node-version: '24', cache: npm}
+      - name: Actual catalog, persistence, privacy and existing shipping contracts
+        run: |
+          set -euo pipefail
+          npm ci
+          node --test tests/*.test.mjs
+          python3 -m unittest discover -s .github/navokids-native/tests -v
+          npm run typecheck
+          npm run content:check
+          npm run progress:check
+          npm run navigation:check
+          npm run islands:check
+          npm run store:check
+          node scripts/validate-voice-pack.cjs
+  signed:
+    if: github.event_name == 'workflow_dispatch' && inputs.mode == 'signed' && github.ref == 'refs/heads/main' && github.repository == 'acciento89-bot/navokids'
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v5
+        with: {persist-credentials: false}
+      - uses: actions/setup-node@v4
+        with: {node-version: '24', cache: npm}
+      - uses: actions/setup-java@v5
+        with: {distribution: temurin, java-version: '17'}
+      - uses: expo/expo-github-action@v8
         with:
-          node-version: 24
-          cache: npm
-      - uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: "17"
-      - uses: gradle/actions/setup-gradle@v4
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
       - run: npm ci
-      - run: npm run typecheck
-      - run: npm run content:check
-      - run: npm run progress:check
-      - run: node scripts/validate-voice-pack.cjs
-      - run: npm run store:check
-      - name: Generate native Android project
-        run: npm run prebuild:android
-        env:
-          CI: "1"
-      - name: Build installable debug APK
-        working-directory: android
-        run: ./gradlew assembleDebug --no-daemon
+      - name: Build Android only, retaining the existing remote key and exact version8
+        run: python3 .github/navokids-native/eas-release.py
+      - name: Verify actual Google-observed certificate, version and native privacy boundary
+        run: |
+          set -euo pipefail
+          curl -fsSL "$BUNDLETOOL_URL" -o "$RUNNER_TEMP/bundletool.jar"
+          printf '%s  %s\n' "$BUNDLETOOL_SHA256" "$RUNNER_TEMP/bundletool.jar" | sha256sum --check --strict
+          python3 .github/navokids-native/verify_bundle.py managed-release
       - uses: actions/upload-artifact@v4
         with:
-          name: navokids-android-internal-v0.3.1-build5
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          name: NavoKids-0.5.0-8-managed-signed-aab
+          path: managed-release/
           if-no-files-found: error
-          retention-days: 14
+          retention-days: 30
+  native:
+    if: github.event_name == 'workflow_dispatch' && inputs.mode == 'native' && github.repository == 'acciento89-bot/navokids'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions: {contents: read, actions: read}
+    env:
+      SOURCE_RUN_ID: ${{ inputs.source_run_id }}
+      SOURCE_ARTIFACT_ID: ${{ inputs.source_artifact_id }}
+      SOURCE_ARTIFACT_DIGEST: ${{ inputs.source_artifact_digest }}
+    steps:
+      - uses: actions/checkout@v5
+        with: {persist-credentials: false, fetch-depth: 0}
+      - name: Record exact source and check proof controller
+        run: |
+          mkdir -p "$RUNNER_TEMP/navokids-native-acceptance/navokids"
+          git rev-parse HEAD > "$RUNNER_TEMP/navokids-native-acceptance/navokids/source-commit.txt"
+          python3 -m unittest discover -s .github/navokids-native/tests -v
+      - uses: actions/setup-java@v5
+        with: {distribution: temurin, java-version: '17'}
+      - uses: android-actions/setup-android@v3
+        with: {packages: platform-tools}
+      - uses: gradle/actions/setup-gradle@v4
+        with: {gradle-version: '9.5.0'}
+      - name: Bind the native run to the actual immutable signed candidate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python3 .github/navokids-native/download_candidate.py
+          curl -fsSL "$BUNDLETOOL_URL" -o "$RUNNER_TEMP/bundletool.jar"
+          printf '%s  %s\n' "$BUNDLETOOL_SHA256" "$RUNNER_TEMP/bundletool.jar" | sha256sum --check --strict
+          python3 .github/navokids-native/verify_bundle.py candidate
+      - name: Build only the small external host and derive an exact-Dex QA APK
+        run: |
+          set -euo pipefail
+          gradle -p .github/navokids-native/host --no-daemon --max-workers=1 :app:assembleDebug :app:assembleDebugAndroidTest > "$RUNNER_TEMP/navokids-native-acceptance/navokids/host-build.log" 2>&1
+          python3 .github/navokids-native/derive_qa_apk.py
+      - name: Enable official KVM
+        run: test -e /dev/kvm && sudo chmod 666 /dev/kvm
+      - name: Actual parent gate, mixed practice, cold resume and profile isolation
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 35
+          arch: x86_64
+          profile: pixel_7
+          avd-name: NavoKidsPracticeAcceptance-35
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -memory 2048
+          disk-size: 4096M
+          disable-animations: true
+          script: bash .github/navokids-native/run-cloud.sh
+      - name: Encrypt bounded own synthetic evidence
+        if: always()
+        run: python3 .github/navokids-native/encrypt_evidence.py "$RUNNER_TEMP/navokids-native-acceptance/navokids" "$RUNNER_TEMP/navokids-native-encrypted/navokids/acceptance.cms"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: NavoKids-native-${{ github.sha }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/navokids-native-encrypted/navokids/acceptance.cms
+          if-no-files-found: warn
+          retention-days: 7

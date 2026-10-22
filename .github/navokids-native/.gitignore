@@ -1,0 +1,4 @@
+__pycache__/
+host/.gradle/
+host/**/build/
+host/local.properties

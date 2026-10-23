@@ -10,7 +10,7 @@ export type PracticeArchive = { schemaVersion: 1; profileId: string; revision: n
 export type AnswerCommand = { sessionId: string; profileId: string; questionId: string; expectedRevision: number; attemptId: string; answerId: string };
 export const MAX_PRACTICE_BYTES = 2_000_000;
 export class PracticeError extends Error {
-  readonly code: 'invalid' | 'unavailable' | 'identity' | 'conflict' | 'capacity' | 'corrupt' | 'future';
+  readonly code: 'invalid' | 'unavailable' | 'identity' | 'conflict' | 'capacity' | 'corrupt' | 'future' | 'uncertain';
   constructor(code: PracticeError['code']) { super(code); this.name = 'PracticeError'; this.code = code; }
 }
 function ensure(value: unknown, code: PracticeError['code'] = 'invalid'): asserts value { if (!value) throw new PracticeError(code); }

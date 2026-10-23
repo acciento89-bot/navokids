@@ -118,12 +118,12 @@ function AppContent() {
     void repository.load().then((archive) => {
       if (request !== practiceLoad.current || id !== activeIDRef.current) return;
       publishPractice(archive);
-    }).catch(() => { if (request === practiceLoad.current && id === activeIDRef.current) { setPracticeError(practiceCopy[appState.language].loadError); setPracticeBlocked(true); } });
+    }).catch((cause) => { if (request === practiceLoad.current && id === activeIDRef.current) { setPracticeError(cause instanceof Error && 'code' in cause && cause.code === 'uncertain' ? practiceCopy[appState.language].uncertain : practiceCopy[appState.language].loadError); setPracticeBlocked(true); } });
     return () => { practiceLoad.current++; };
   }, [repository, activeID, hydrated, legacyReadError, practiceAttempt]);
   const explainPractice = (cause: unknown) => {
     const code = cause && typeof cause === 'object' && 'code' in cause ? String(cause.code) : '';
-    return code === 'unavailable' || code === 'identity' ? p.unavailable : code === 'capacity' ? p.capacity : code === 'conflict' ? p.conflict : code === 'invalid' ? p.invalid : p.saveError;
+    return code === 'uncertain' ? p.uncertain : code === 'unavailable' || code === 'identity' ? p.unavailable : code === 'capacity' ? p.capacity : code === 'conflict' ? p.conflict : code === 'invalid' ? p.invalid : p.saveError;
   };
   const persistPractice = async (change: (archive: PracticeArchive, at: string) => PracticeArchive): Promise<PracticeArchive | null> => {
     const current = practiceRef.current, id = activeID;
@@ -134,7 +134,7 @@ function AppContent() {
       const saved = await repository.save(next, current.revision);
       if (activeIDRef.current !== id) return null;
       publishPractice(saved); return saved;
-    } catch (cause) { if (activeIDRef.current === id) setPracticeError(explainPractice(cause)); return null; }
+    } catch (cause) { if (activeIDRef.current === id) { setPracticeError(explainPractice(cause)); if (cause instanceof Error && 'code' in cause && cause.code === 'uncertain') setPracticeBlocked(true); } return null; }
     finally { practiceBusyRef.current = false; setPracticeBusy(false); }
   };
   const savePracticePlan = async (input: { id: string; title: string; selections: Selection[] }) => !!await persistPractice((archive, at) => {

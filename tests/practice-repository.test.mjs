@@ -21,7 +21,7 @@ test('real disk cold reopen preserves isolated plans and untouched original prog
   } finally { fixture.cleanup(); }
 });
 
-test('failed atomic replacement retains old saved archive, exact committed lost receipt recovers without duplicate revision', async () => {
+test('rejected replacement requires cold recovery even when the native receipt was lost', async () => {
   const fixture = disk();
   try {
     const { storage } = fixture, repo = new PracticeRepository(storage, 'child-qa-one');
@@ -29,11 +29,15 @@ test('failed atomic replacement retains old saved archive, exact committed lost 
     const key = practiceStorageKey('child-qa-one'), previous = await storage.getItem(key);
     const next = { ...saved(), revision: 2 };
     storage.failBeforeReplace = true;
-    await assert.rejects(repo.save(next, 1));
-    assert.equal(await storage.getItem(key), previous); assert.deepEqual(await repo.load(), saved());
+    await assert.rejects(repo.save(next, 1), (cause) => cause.code === 'uncertain');
+    assert.equal(await storage.getItem(key), previous);
+    await assert.rejects(repo.load(), (cause) => cause.code === 'uncertain');
+    const reopened = fixture.reopen(), cold = new PracticeRepository(reopened, 'child-qa-one');
+    assert.deepEqual(await cold.load(), saved());
     storage.failBeforeReplace = false; storage.failAfterReplace = true;
-    await repo.save(next, 1);
-    assert.deepEqual(await repo.load(), next);
+    await assert.rejects(cold.save(next, 1), (cause) => cause.code === 'uncertain');
+    await assert.rejects(cold.load(), (cause) => cause.code === 'uncertain');
+    assert.deepEqual(await new PracticeRepository(fixture.reopen(), 'child-qa-one').load(), next);
   } finally { fixture.cleanup(); }
 });
 
@@ -58,5 +62,28 @@ test('shared profile queue rejects a stale concurrent save rather than replacing
     const results = await Promise.allSettled([first.save(one, 0), second.save(two, 0)]);
     assert.equal(results.filter((result) => result.status === 'fulfilled').length, 1);
     assert.deepEqual(await first.load(), one);
+  } finally { fixture.cleanup(); }
+});
+
+test('native-style cache after failed disk write never counts as success and requires cold recovery', async () => {
+  const fixture = disk();
+  try {
+    const durable = fixture.storage, cache = new Map();
+    let fail = false;
+    const nativeCached = {
+      async getItem(key) { return cache.has(key) ? cache.get(key) : durable.getItem(key); },
+      async setItem(key, value) { cache.set(key, value); if (fail) throw Error('native disk write failed after cache update'); await durable.setItem(key, value); },
+    };
+    const repo = new PracticeRepository(nativeCached, 'child-qa-one');
+    await repo.save(saved(), 0); fail = true;
+    const next = { ...saved(), revision: 2 };
+    await assert.rejects(repo.save(next, 1), (cause) => cause.code === 'uncertain');
+    assert.deepEqual(JSON.parse(await durable.getItem(practiceStorageKey('child-qa-one'))), saved());
+    await assert.rejects(repo.load(), (cause) => cause.code === 'uncertain');
+    await assert.rejects(new PracticeRepository(nativeCached, 'child-qa-one').load(), (cause) => cause.code === 'uncertain');
+    await assert.rejects(repo.save(next, 1), (cause) => cause.code === 'uncertain');
+    const cold = new PracticeRepository(fixture.reopen(), 'child-qa-one');
+    assert.deepEqual(await cold.load(), saved());
+    await cold.save(next, 1); assert.deepEqual(await cold.load(), next);
   } finally { fixture.cleanup(); }
 });

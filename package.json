@@ -15,7 +15,8 @@
     "voice:generate": "node scripts/generate-voice-pack.cjs",
     "prebuild:android": "expo prebuild --platform android --clean",
     "navigation:check": "node scripts/validate-stage-navigation.cjs",
-    "islands:check": "node scripts/validate-islands.cjs"
+    "islands:check": "node scripts/validate-islands.cjs",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs tests/build-paths/*.test.cjs tests/provider-isolation.test.cjs"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",

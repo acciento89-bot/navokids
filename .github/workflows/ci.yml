@@ -26,6 +26,7 @@ jobs:
           if(c.android?.package !== 'com.kamilunavo.navokids') throw new Error('Unexpected NavoKids Android package');
           NODE
       - run: npm run typecheck
+      - run: npm test
       - run: npm run content:check
       - run: npm run islands:check
       - run: npm run progress:check

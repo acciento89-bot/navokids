@@ -4,7 +4,7 @@ import { allProductIds, productIds, subscriptionProductIds } from '../config/pro
 
 export type PremiumPlanId = keyof typeof productIds;
 
-export function usePremiumStore(onEntitlementChange: (unlocked: boolean, verifiedAt: string) => void) {
+function useConnectedPremiumStore(onEntitlementChange: (unlocked: boolean, verifiedAt: string) => void) {
   const [message, setMessage] = useState<string | null>(null);
   const [processing, setProcessing] = useState(false);
   const [storeChecked, setStoreChecked] = useState(false);
@@ -132,5 +132,17 @@ export function usePremiumStore(onEntitlementChange: (unlocked: boolean, verifie
     restore,
   };
 }
+
+// This module-level choice is fixed for the lifetime of a test build, so hook
+// ordering never changes. Release always uses the existing native store hook.
+function useDisabledPremiumStore(_onEntitlementChange: (unlocked: boolean, verifiedAt: string) => void): ReturnType<typeof useConnectedPremiumStore> {
+  const [message, setMessage] = useState<string | null>(null);
+  const unavailable = useCallback(async () => { setMessage('STORE_NOT_CONNECTED'); }, []);
+  // Do not reconcile/grant/clear an entitlement or even initialize the IAP hook.
+  return { connected: false, products: [], processing: false, message, entitled: false,
+    storeChecked: false, refreshProducts: unavailable, buy: unavailable, restore: unavailable };
+}
+export const usePremiumStore = __DEV__ && process.env.EXPO_PUBLIC_NAVOKIDS_PROVIDER_DISABLED_QA === '1'
+  ? useDisabledPremiumStore : useConnectedPremiumStore;
 
 export type PremiumStoreController = ReturnType<typeof usePremiumStore>;

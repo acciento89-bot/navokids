@@ -11,6 +11,11 @@ export const copy = {
   stage: { de: 'Stufe', en: 'Stage' },
   locked: { de: 'Premium', en: 'Premium' },
   listenAgain: { de: 'Noch einmal anhören', en: 'Listen again' },
+  voiceDisclosure: { de: 'Navis Stimme ist KI-generiert.', en: 'Navi’s voice is AI-generated.' },
+  voiceInfo: {
+    de: 'Navi spricht mit einer KI-generierten Stimme. Die vorbereiteten Sprachaufnahmen sind in der App gespeichert.',
+    en: 'Navi speaks with an AI-generated voice. The prepared recordings are stored in the app.',
+  },
   next: { de: 'Weiter', en: 'Next' },
   finish: { de: 'Zur Lernwelt', en: 'Back to the world' },
   wrong: { de: 'Fast! Versuch es noch einmal.', en: 'Almost! Try again.' },

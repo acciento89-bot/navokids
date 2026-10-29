@@ -85,6 +85,7 @@ export function GameScreen({ category, stage, language, ageGroup, onBack, onComp
         <Text style={styles.prompt}>{t(question.prompt, language)}</Text>
         <SpeakerButton label={t(copy.listenAgain, language)} onPress={() => speak(t(question.prompt, language), language, ageGroup === 'discoverer', questionVoiceKey(question.id, 'prompt'))} />
       </View>
+      <Text style={styles.voiceDisclosure}>{t(copy.voiceDisclosure, language)}</Text>
       {question.visual || question.clock ? (
         <View style={[styles.visualCard, question.showNavi && styles.naviVisualCard]}>
           {question.clock ? <ClockFace time={question.clock} language={language} /> : <>
@@ -136,6 +137,7 @@ const styles = StyleSheet.create({
   counter: { color: colors.muted, fontWeight: '900' },
   promptRow: { minHeight: 110, flexDirection: 'row', alignItems: 'center', gap: 14, marginTop: 20 },
   prompt: { flex: 1, color: colors.ink, fontSize: 27, lineHeight: 34, fontWeight: '900' },
+  voiceDisclosure: { color: colors.ink, fontSize: 14, lineHeight: 20, marginBottom: 12 },
   visualCard: { minHeight: 268, borderRadius: 34, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', padding: 20, ...shadows.card },
   naviVisualCard: { flexDirection: 'row', gap: 8, overflow: 'hidden', paddingHorizontal: 12 },
   naviVisualMascot: { width: '45%', height: '100%', minHeight: 165 },

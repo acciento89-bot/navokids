@@ -6,7 +6,7 @@ import { ClockFace } from '../components/ClockFace';
 import { SpeakerButton } from '../components/SpeakerButton';
 import { speak, stopSpeaking } from '../services/speech';
 import { commonVoiceKey, questionVoiceKey } from '../services/naviVoiceKeys';
-import { t } from '../i18n';
+import { copy as sharedCopy, t } from '../i18n';
 import { practiceCopy } from '../practice/copy';
 import { practiceRecap } from '../practice/core';
 import type { AnswerCommand, PracticeSession } from '../practice/core';
@@ -58,6 +58,7 @@ export function PracticeSessionScreen({ profile, language, premium, session, bus
     {error && <View style={s.warning}><Text accessibilityRole="alert" style={s.error}>{error}</Text>{button(copy.retry, onRetry)}</View>}
     {!available ? <Text accessibilityRole="alert" style={s.error}>{copy.unavailableSession}</Text> : question && <>
       <View style={s.row}><Text accessibilityRole="header" style={s.title}>{t(question.prompt, language)}</Text><SpeakerButton label={copy.listen} onPress={() => { void speak(t(question.prompt, language), language, profile.ageGroup === 'discoverer', questionVoiceKey(question.id, 'prompt')); }} /></View>
+      <Text style={{ color: colors.ink, fontSize: 14, lineHeight: 20 }}>{t(sharedCopy.voiceDisclosure, language)}</Text>
       {(question.visual || question.clock) && <View style={s.visual}>{question.clock ? <ClockFace time={question.clock} language={language} /> : <>{question.showNavi && <Image source={require('../../assets/navi-mascot-optimized.png')} resizeMode="contain" style={s.navi} />}<Text style={s.visualText}>{question.localizedVisual ? t(question.localizedVisual, language) : question.visual}</Text></>}</View>}
       {profile.ageGroup === 'discoverer' && <Text style={s.body}>💡 {t(question.hint, language)}</Text>}
       <View style={s.answers}>{question.answers.map((answer) => {

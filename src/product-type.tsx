@@ -3,6 +3,9 @@ import { ActivityIndicator, StyleSheet, Text as NativeText, TextInput as NativeT
 import { useFonts } from 'expo-font';
 import type { PropsWithChildren, ElementRef } from 'react';
 import type { StyleProp, TextProps, TextInputProps, TextStyle } from 'react-native';
+// Bundle the original font license as a local asset alongside the font files.
+require('../assets/fonts/abeezee/OFL.txt');
+
 const Ready = createContext(false);
 const fontAssets = {
   abeezeeRegular: require('../assets/fonts/abeezee/ABeeZee-Regular.ttf'),

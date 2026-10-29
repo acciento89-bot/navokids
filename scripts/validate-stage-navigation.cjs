@@ -14,6 +14,8 @@ function load(file) {
   const code = ts.transpileModule(fs.readFileSync(file, 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX, target: ts.ScriptTarget.ES2022 } }).outputText;
   const localRequire = id => {
     if (id === 'react-native') return native;
+    // Navigation uses the native Text host; real font loading is an APK/device gate.
+    if (id.endsWith('/product-type')) return { Text: native.Text };
     if (id.endsWith('/services/speech')) return { speak() {}, stopSpeaking() {} };
     if ((/\.(png|jpg)$/.test(id))) return 1;
     if (!id.startsWith('.')) return require(id);

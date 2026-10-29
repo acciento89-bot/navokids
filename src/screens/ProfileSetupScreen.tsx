@@ -1,5 +1,6 @@
+import { Text, TextInput } from '../product-type';
 import { useState } from 'react';
-import { Image, KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Image, KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { colors, shadows } from '../theme';
 import { AgeGroup, ChildProfile, Language } from '../types';
 

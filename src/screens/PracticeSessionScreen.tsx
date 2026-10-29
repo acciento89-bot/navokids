@@ -1,5 +1,6 @@
+import { Text } from '../product-type';
 import { useEffect, useRef, useState } from 'react';
-import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { categories } from '../data/learningContent';
 import { ClockFace } from '../components/ClockFace';
 import { SpeakerButton } from '../components/SpeakerButton';

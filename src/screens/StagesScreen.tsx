@@ -1,5 +1,6 @@
+import { Text } from '../product-type';
 import { useRef } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { t } from '../i18n';
 import { FREE_STAGES_PER_CATEGORY, STAGES_PER_CATEGORY } from '../config/learning';
 import { isStageCompleted, isStageNextInSequence } from '../data/progress';

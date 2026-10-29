@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Text } from '../product-type';
+import { StyleSheet, View } from 'react-native';
 import { ClockTime, Language } from '../types';
 
 export function clockAngles({ hour, minute }: ClockTime) {

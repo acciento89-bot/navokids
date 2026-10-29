@@ -1,4 +1,5 @@
-import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Text } from '../product-type';
+import { Image, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { countStars } from '../data/progress';
 import { colors, shadows } from '../theme';
 import { ChildProfile, Language } from '../types';

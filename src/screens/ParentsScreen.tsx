@@ -1,4 +1,5 @@
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Text } from '../product-type';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { categories } from '../data/learningContent';
 import { QUESTIONS_PER_STAGE, STAGES_PER_CATEGORY, TOTAL_QUESTIONS, TOTAL_QUESTIONS_PER_CATEGORY } from '../config/learning';
 import { copy, t } from '../i18n';
@@ -47,7 +48,7 @@ export function ParentsScreen({ language, progress, profiles, activeProfileId, p
 }
 
 const styles = StyleSheet.create({
-  content: { backgroundColor: '#F4F8F6', minHeight: '100%', padding: 20, paddingBottom: 50 },
+  content: { backgroundColor: '#F5F0E4', minHeight: '100%', padding: 20, paddingBottom: 50 },
   topbar: { flexDirection: 'row', alignItems: 'center', gap: 16 },
   back: { width: 48, height: 48, borderRadius: 18, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', ...shadows.card },
   backText: { color: colors.ink, fontSize: 40, lineHeight: 40 },
@@ -56,7 +57,7 @@ const styles = StyleSheet.create({
   profileStrip: { backgroundColor: colors.paper, borderRadius: 22, padding: 14, marginTop: 17, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
   profileInfo: { flexDirection: 'row', alignItems: 'center', gap: 10 }, profileAvatar: { fontSize: 33 }, profileName: { color: colors.ink, fontSize: 17, fontWeight: '900' }, profileMeta: { color: colors.muted, fontSize: 11, fontWeight: '700', marginTop: 2 },
   smallButton: { backgroundColor: '#E3F5F1', borderRadius: 14, paddingHorizontal: 13, paddingVertical: 9 }, smallButtonText: { color: colors.tealDark, fontSize: 12, fontWeight: '900' },
-  overview: { backgroundColor: colors.paper, borderRadius: 30, padding: 22, marginTop: 20, flexDirection: 'row', alignItems: 'center', gap: 22, ...shadows.card },
+  overview: { backgroundColor: colors.paper, borderRadius: 6, borderLeftWidth: 4, borderColor: colors.tealDark, padding: 22, marginTop: 20, flexDirection: 'column', alignItems: 'center', gap: 22, ...shadows.card },
   ring: { width: 130, height: 130, borderRadius: 65, borderWidth: 14, borderColor: colors.teal, alignItems: 'center', justifyContent: 'center' },
   percent: { color: colors.ink, fontSize: 29, fontWeight: '900' },
   ringLabel: { color: colors.muted, fontSize: 10, fontWeight: '800', textAlign: 'center' },
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
   statLabel: { color: colors.muted, fontSize: 12, fontWeight: '700', marginBottom: 8 },
   sectionTitle: { color: colors.ink, fontSize: 21, fontWeight: '900', marginTop: 28, marginBottom: 13 },
   list: { gap: 11 },
-  category: { backgroundColor: colors.paper, borderRadius: 21, padding: 14, flexDirection: 'row', alignItems: 'center' },
+  category: { backgroundColor: colors.paper, borderBottomWidth: 1, borderBottomColor: colors.line, borderRadius: 4, padding: 14, flexDirection: 'row', alignItems: 'center' },
   categoryIcon: { width: 49, height: 49, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
   categoryIconText: { fontWeight: '900', fontSize: 17 },
   categoryMain: { flex: 1, marginLeft: 13 },

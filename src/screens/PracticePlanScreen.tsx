@@ -1,5 +1,6 @@
+import { Text, TextInput } from '../product-type';
 import { useMemo, useState } from 'react';
-import { Keyboard, KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Keyboard, KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { categories } from '../data/learningContent';
 import { isStageNextInSequence } from '../data/progress';
 import { FREE_STAGES_PER_CATEGORY, STAGES_PER_CATEGORY } from '../config/learning';

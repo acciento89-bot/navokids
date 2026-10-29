@@ -1,5 +1,6 @@
+import { Text } from '../product-type';
 import { useEffect } from 'react';
-import { ActivityIndicator, Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, Linking, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { productIds } from '../config/products';
 import { PremiumPlanId, PremiumStoreController } from '../services/usePremiumStore';
 import { colors, shadows } from '../theme';

@@ -1,4 +1,5 @@
-import { Image, ImageBackground, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Text } from '../product-type';
+import { Image, ImageBackground, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { categories } from '../data/learningContent';
 import { FREE_STAGES_PER_CATEGORY, TOTAL_QUESTIONS_PER_CATEGORY } from '../config/learning';
 import { countStars, normalizeCategoryProgress } from '../data/progress';
@@ -56,7 +57,7 @@ export function WorldScreen({ language, profile, premiumUnlocked, onLanguageChan
         <Image source={require('../../assets/navi-mascot-optimized.png')} resizeMode="contain" style={styles.mascot} />
       </View>
 
-      {onPracticeContinue && <Pressable accessibilityRole="button" testID="practice-world-continue" onPress={onPracticeContinue} style={{ minHeight: 52, padding: 16, marginTop: 18, borderRadius: 18, backgroundColor: colors.paper, borderWidth: 1, borderColor: colors.teal }}><Text style={{ color: colors.tealDark, fontSize: 17, fontWeight: '800' }}>{language === 'de' ? 'Deine Übungsrunde fortsetzen' : 'Continue your practice session'}</Text></Pressable>}
+      {onPracticeContinue && <Pressable accessibilityRole="button" testID="practice-world-continue" onPress={onPracticeContinue} style={{ minHeight: 52, padding: 16, marginTop: 18, borderRadius: 8, backgroundColor: colors.yellow, borderBottomWidth: 5, borderColor: colors.tealDark }}><Text style={{ color: colors.tealDark, fontSize: 17, fontWeight: '800' }}>{language === 'de' ? 'Deine Übungsrunde fortsetzen' : 'Continue your practice session'}</Text></Pressable>}
       <Text style={styles.sectionTitle}>{language === 'de' ? 'Navis Abenteuerkarte' : 'Navi’s adventure map'}</Text>
       <Text style={styles.mapIntro}>{language === 'de' ? 'Tippe auf eine Insel und starte deine Reise!' : 'Tap an island and start your journey!'}</Text>
       <View style={styles.mapShell}>
@@ -115,12 +116,12 @@ const styles = StyleSheet.create({
   brand: { flexDirection: 'row', alignItems: 'baseline' },
   brandNavo: { color: colors.tealDark, fontSize: 27, fontWeight: '900' }, brandKids: { color: colors.coral, fontSize: 27, fontWeight: '900' },
   actions: { flexDirection: 'row', gap: 7, alignItems: 'center' },
-  languageButton: { height: 44, minWidth: 46, borderRadius: 15, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', ...shadows.card },
+  languageButton: { minHeight: 48, minWidth: 48, borderRadius: 15, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', ...shadows.card },
   languageText: { color: colors.tealDark, fontWeight: '900' },
-  profileButton: { height: 44, maxWidth: 120, paddingHorizontal: 9, borderRadius: 15, backgroundColor: colors.paper, flexDirection: 'row', alignItems: 'center', gap: 6, ...shadows.card },
+  profileButton: { minHeight: 48, maxWidth: 120, paddingHorizontal: 9, borderRadius: 15, backgroundColor: colors.paper, flexDirection: 'row', alignItems: 'center', gap: 6, ...shadows.card },
   profileAvatar: { fontSize: 21 }, profileName: { color: colors.ink, fontWeight: '900', maxWidth: 62 },
-  parentButton: { width: 44, height: 44, borderRadius: 15, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', ...shadows.card }, parentIcon: { color: colors.tealDark, fontSize: 24, fontWeight: '900' },
-  hero: { height: 220, marginTop: 18, borderRadius: 32, backgroundColor: '#CDEFEA', overflow: 'hidden', flexDirection: 'row', ...shadows.card },
+  parentButton: { width: 48, height: 48, borderRadius: 15, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', ...shadows.card }, parentIcon: { color: colors.tealDark, fontSize: 24, fontWeight: '900' },
+  hero: { minHeight: 220, marginTop: 18, borderRadius: 32, backgroundColor: '#CDEFEA', overflow: 'hidden', flexDirection: 'row', ...shadows.card },
   heroBubbleOne: { position: 'absolute', width: 150, height: 150, borderRadius: 75, backgroundColor: 'rgba(255,255,255,0.28)', right: -25, top: -55 },
   heroBubbleTwo: { position: 'absolute', width: 95, height: 95, borderRadius: 48, backgroundColor: 'rgba(255,255,255,0.22)', left: -20, bottom: -30 },
   heroCopy: { flex: 1, padding: 20, zIndex: 2, justifyContent: 'center' },
@@ -138,11 +139,11 @@ const styles = StyleSheet.create({
   nodeAnchor: { position: 'absolute', left: '4%', width: '60%' },
   nodeAnchorRight: { left: undefined, right: '4%' },
   nodeAnchorCenter: { left: '25.5%' },
-  islandSign: { minHeight: 68, borderRadius: 19, borderWidth: 3, backgroundColor: 'rgba(255,249,226,0.96)', paddingHorizontal: 9, paddingVertical: 8, ...shadows.card },
+  islandSign: { minHeight: 78, borderRadius: 8, borderWidth: 2, borderBottomWidth: 6, backgroundColor: 'rgba(255,249,226,0.96)', paddingHorizontal: 9, paddingVertical: 8, ...shadows.card },
   islandSignTop: { flexDirection: 'row', alignItems: 'center', gap: 6 },
   islandIconBadge: { width: 31, height: 31, borderRadius: 11, alignItems: 'center', justifyContent: 'center' },
   islandIcon: { color: colors.ink, fontSize: 15, fontWeight: '900' },
-  islandTitle: { flex: 1, color: colors.ink, fontSize: 15, lineHeight: 19, fontWeight: '900' },
+  islandTitle: { flex: 1, color: colors.ink, fontSize: 17, lineHeight: 23, fontWeight: '900' },
   stageBadge: { position: 'absolute', right: -4, top: -17, borderRadius: 9, backgroundColor: colors.paper, paddingHorizontal: 6, paddingVertical: 3, borderWidth: 1, borderColor: 'rgba(24,59,63,0.12)' },
   stageBadgeText: { color: colors.ink, fontSize: 8, fontWeight: '900' },
   progressRow: { flexDirection: 'row', alignItems: 'center', gap: 6, marginTop: 6 },

@@ -1,5 +1,6 @@
+import { Text } from '../product-type';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SpeakerButton } from '../components/SpeakerButton';
 import { ClockFace } from '../components/ClockFace';
 import { QUESTIONS_PER_STAGE, STAGES_PER_CATEGORY } from '../config/learning';
@@ -128,7 +129,7 @@ const styles = StyleSheet.create({
   selectionText: { color: colors.ink, fontSize: 17, fontWeight: '800', textAlign: 'center' },
   screen: { flexGrow: 1, paddingHorizontal: 20, paddingTop: 14, paddingBottom: 24 },
   topbar: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  close: { width: 46, height: 46, borderRadius: 17, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', ...shadows.card },
+  close: { width: 48, height: 48, borderRadius: 17, backgroundColor: colors.paper, alignItems: 'center', justifyContent: 'center', ...shadows.card },
   closeText: { color: colors.ink, fontSize: 31, lineHeight: 33 },
   progress: { flex: 1, height: 13, borderRadius: 8, backgroundColor: 'rgba(255,255,255,0.85)', overflow: 'hidden' },
   progressFill: { height: 13, borderRadius: 8 },
@@ -145,7 +146,7 @@ const styles = StyleSheet.create({
   visual: { color: colors.ink, fontSize: 44, fontWeight: '900', textAlign: 'center', letterSpacing: 2 },
   discovererHint: { color: colors.muted, fontSize: 14, lineHeight: 20, fontWeight: '800', textAlign: 'center', marginTop: 12 },
   answers: { flexDirection: 'row', gap: 11, marginTop: 20 },
-  answer: { flex: 1, minHeight: 84, borderRadius: 24, backgroundColor: colors.paper, borderWidth: 4, borderColor: 'transparent', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 8, ...shadows.card },
+  answer: { flex: 1, minHeight: 92, borderBottomWidth: 7, borderRadius: 12, backgroundColor: colors.paper, borderWidth: 4, borderColor: 'transparent', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 8, ...shadows.card },
   clockAnswers: { flexWrap: 'wrap', justifyContent: 'center' },
   clockAnswer: { flex: 0, flexBasis: '47%', minWidth: 128, minHeight: 146, paddingVertical: 12 },
   longAnswerText: { fontSize: 18, lineHeight: 24 },

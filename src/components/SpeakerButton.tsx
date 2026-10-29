@@ -1,4 +1,5 @@
-import { Pressable, StyleSheet, Text } from 'react-native';
+import { Text } from '../product-type';
+import { Pressable, StyleSheet} from 'react-native';
 import { colors, shadows } from '../theme';
 
 export function SpeakerButton({ onPress, label }: { onPress: () => void; label: string }) {

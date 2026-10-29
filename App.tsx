@@ -1,7 +1,9 @@
+import { ProductFontGate } from "./src/product-type";
+import { Text } from './src/product-type';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { StatusBar } from 'expo-status-bar';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { BackHandler, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { BackHandler, Pressable, StyleSheet, View, useWindowDimensions } from 'react-native';
 import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ParentGate } from './src/components/ParentGate';
 import { categories, categoryById } from './src/data/learningContent';
@@ -27,7 +29,7 @@ import { practiceCopy } from './src/practice/copy';
 const initialState: AppState = { profiles: [], activeProfileId: null, premiumUnlocked: false, progressSchemaVersion: 2, language: 'de' };
 
 export default function App() {
-  return <SafeAreaProvider><AppContent /></SafeAreaProvider>;
+  return <SafeAreaProvider><ProductFontGate><AppContent /></ProductFontGate></SafeAreaProvider>;
 }
 function AppContent() {
   const insets = useSafeAreaInsets(), window = useWindowDimensions();

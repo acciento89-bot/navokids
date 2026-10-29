@@ -73,7 +73,7 @@ jobs:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
       - run: npm ci
-      - name: Build Android only, retaining the existing remote key and exact version8
+      - name: Build Android only, retaining the existing remote key and exact version9
         run: python3 .github/navokids-native/eas-release.py
       - name: Verify actual Google-observed certificate, version and native privacy boundary
         run: |
@@ -83,7 +83,7 @@ jobs:
           python3 .github/navokids-native/verify_bundle.py managed-release
       - uses: actions/upload-artifact@v4
         with:
-          name: NavoKids-0.5.0-8-managed-signed-aab
+          name: NavoKids-0.6.0-9-managed-signed-aab
           path: managed-release/
           if-no-files-found: error
           retention-days: 30

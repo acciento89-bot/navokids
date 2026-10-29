@@ -5,8 +5,8 @@ repo='acciento89-bot/navokids';run=os.environ['SOURCE_RUN_ID'];artifact=os.envir
 assert os.environ['GITHUB_REPOSITORY']==repo and run.isdecimal()and artifact.isdecimal()and re.fullmatch('sha256:[0-9a-f]{64}',digest)
 def api(path):return json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/'+path]))
 r=api('actions/runs/'+run);a=api('actions/artifacts/'+artifact);sha=r['head_sha'];assert re.fullmatch('[0-9a-f]{40}',sha)
-assert r['head_branch']=='main'and r['status']=='completed'and r['conclusion']=='success'and r['path']=='.github/workflows/android-internal.yml'
-assert a['name']=='NavoKids-0.5.0-8-managed-signed-aab'and not a['expired']and a['digest']==digest and str(a['workflow_run']['id'])==run and a['workflow_run']['head_sha']==sha
+assert r['head_branch']=='main'and r['status']=='completed'and r['conclusion']=='success'and r['path']=='.github/workflows/android-internal.yml'and r['event']=='workflow_dispatch'and r['repository']['full_name']==repo and r['head_repository']['full_name']==repo and str(r['id'])==run
+assert str(a['id'])==artifact and a['workflow_run']['head_branch']=='main'and a['name']=='NavoKids-0.6.0-9-managed-signed-aab'and not a['expired']and a['digest']==digest and str(a['workflow_run']['id'])==run and a['workflow_run']['head_sha']==sha
 assert not subprocess.run(['git','diff','--quiet',sha,'HEAD','--','App.tsx','app.json','package.json','package-lock.json','src','assets','plugins','babel.config.js','metro.config.js','tsconfig.json','eas.json']).returncode,'Native and signed product source differ'
 archive=pathlib.Path(os.environ['RUNNER_TEMP'])/'managed-candidate.zip'
 with archive.open('xb')as f:subprocess.run(['gh','api',f'repos/{repo}/actions/artifacts/{artifact}/zip'],stdout=f,check=True)

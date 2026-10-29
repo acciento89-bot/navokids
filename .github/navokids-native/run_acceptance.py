@@ -31,7 +31,7 @@ def reject_anr_window(data):
  assert not re.search(rb'ANR in|Application Not Responding|isn.t responding',data,re.I),'Observed ANR window'
 def run():
  runtime=pathlib.Path(os.environ['RUNNER_TEMP']).resolve();proof=runtime/'navokids-native-acceptance/navokids';assert not proof.is_symlink() and not proof.parent.is_symlink();proof.mkdir(parents=True,exist_ok=True,mode=0o700)
- result={'status':'STARTED','package':APP,'version':'0.5.0(8)','realTransactions':False,'fixtureRecordsInjected':False,'scope':'Own QA Owl/Fox profiles, plans and all answers created only through shipping Release UI'};validated=False
+ result={'status':'STARTED','package':APP,'version':'0.6.0(9)','realTransactions':False,'fixtureRecordsInjected':False,'scope':'Own QA Owl/Fox profiles, plans and all answers created only through shipping Release UI'};validated=False
  def call(args,timeout=20):
   p=subprocess.run(['adb','-s','emulator-5554',*args],stdout=subprocess.PIPE,stderr=subprocess.PIPE,timeout=timeout)
   if p.returncode:raise RuntimeError('Owned adb command failed: '+args[0])
@@ -56,7 +56,7 @@ def run():
   result['apkSha256']={str(p):hashlib.sha256(p.read_bytes()).hexdigest()for p in apks}
   for apk in apks:call(['install','-r',str(apk)],180)
   identity=call(['shell','dumpsys','package',APP]);(proof/'installed-identity.txt').write_bytes(identity)
-  assert re.search(rb'\bversionCode=8(?=\s|$)',identity)and re.search(rb'\bversionName=0\.5\.0(?=\s|$)',identity)
+  assert re.search(rb'\bversionCode=9(?=\s|$)',identity)and re.search(rb'\bversionName=0\.6\.0(?=\s|$)',identity)
   for forbidden in [b'ALLOW_BACKUP',b'android.permission.RECORD_AUDIO',b'android.permission.SYSTEM_ALERT_WINDOW',b'android.permission.READ_EXTERNAL_STORAGE',b'android.permission.WRITE_EXTERNAL_STORAGE',b'com.google.android.gms.permission.AD_ID']:
    assert forbidden not in identity,'Unexpected backup/permission: '+forbidden.decode()
   snapshots=[]
